@@ -1,0 +1,37 @@
+# Normalize text; leave binary documents and model assets byte-for-byte intact.
+* text=auto
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.editorconfig text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.svg text eol=lf
+
+# KiCad source formats and project-local library tables
+*.kicad_pro text eol=lf
+*.kicad_sch text eol=lf
+*.kicad_pcb text eol=lf
+*.kicad_sym text eol=lf
+*.kicad_mod text eol=lf
+*.kicad_dru text eol=lf
+*.kicad_wks text eol=lf
+*.kicad_jobset text eol=lf
+fp-lib-table text eol=lf
+sym-lib-table text eol=lf
+design-block-lib-table text eol=lf
+*.lib text eol=lf
+*.dcm text eol=lf
+
+*.pdf binary
+*.xlsx binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+*.step binary
+*.stp binary
+*.wrl binary
