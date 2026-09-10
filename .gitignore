@@ -15,6 +15,7 @@
 # KiCad backups
 *-backups/*.
 *.bak
+.history/
 
 # Production outputs
 production/
