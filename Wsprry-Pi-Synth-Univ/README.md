@@ -16,6 +16,7 @@ other missing assets, and repository conventions.
 ## Design considerations
 
 [Optional GPS frequency calibration for Pi and Pico](GPS-FREQUENCY-CALIBRATION.md)
-describes a proposed CLK2 feedback circuit for measuring TCXO error against GPS
-PPS, its benefits, standalone operation and holdover, and an optional external
-GPSDO reference. This proposal has not been implemented or physically validated.
+records the selected LS7366R counter and a proposed common 3.3 V circuit for Pi
+and Pico. It describes CLK2 measurement against GPS PPS, SPI capture readout,
+benefits, standalone operation and holdover, and an optional external GPSDO
+reference. The circuit has not been implemented or physically validated.
