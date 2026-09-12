@@ -4,6 +4,13 @@ Status: proposed design consideration, recorded 2026-09-12. This proposal has
 not been implemented in the schematic, PCB, or transmitter firmware and has no
 physical or RF qualification evidence.
 
+The authoritative design target is the Si5351A in the three-output MSOP-10
+package. Use the Skyworks Si5351 documentation for electrical limits, reference
+inputs, clock routing, and register behavior throughout this proposal. The
+existing board's clone assignment is baseline history, not the specification
+for the proposed circuit. Si5351C is discussed only as an optional alternative
+for a dedicated external-reference input.
+
 ## Purpose and benefits
 
 Retain the board's 27 MHz temperature-compensated crystal oscillator (TCXO) as
@@ -38,10 +45,8 @@ The baseline is Synth Universal v1.0.0 at repository commit `cf6e53a`. The
 | CLK1 | Pin 9, marked unconnected |
 | CLK2 | Pin 6, marked unconnected |
 
-The design presently has no CLK1/CLK2 calibration route. The specified MS5351M
-must be evaluated using its own documentation and hardware measurements;
-Si5351A documentation alone does not establish identical behavior or electrical
-limits for this part.
+The design presently has no CLK1/CLK2 calibration route. The table records the
+existing source assets; the proposed circuit uses Si5351A as specified above.
 
 ## Proposed circuit
 
@@ -61,7 +66,7 @@ validity information.
 
 ```mermaid
 flowchart LR
-    TCXO[27 MHz TCXO] --> SYN[Si5351 / MS5351 synthesizer]
+    TCXO[27 MHz TCXO] --> SYN[Si5351A synthesizer]
     SYN -->|CLK0| RF[RF output chain]
     SYN -->|CLK2 calibration clock| COUNT[Hardware counter / Pico]
     GPS[GPS receiver] -->|PPS| COUNT
@@ -72,7 +77,7 @@ flowchart LR
 
 Use a known, fixed ratio between CLK2 and the TCXO during each measurement.
 A reference-derived output or a separately allocated PLL is a candidate, subject
-to verification on the selected chip. RF tone changes, PLL resets, output
+to verification of the Si5351A configuration. RF tone changes, PLL resets, output
 disables, and calibration updates must not silently change the measurement
 ratio. Discard any interval affected by such an event. The synthesizer controller
 must own both RF and calibration configuration so that independent writers do
@@ -88,7 +93,7 @@ determine useful accuracy and averaging time.
 QRP Labs provides a precedent: its Si5351A VFO uses CLK2 at one-quarter of the
 27 MHz reference, measures it with a microcontroller timer against GPS PPS, and
 uses the measured reference in frequency calculations. That is an architectural
-example, not validation of this board or its MS5351M configuration.
+example, not validation of the proposed board or its Si5351A configuration.
 
 ## Pi and Pico integration
 
@@ -139,15 +144,14 @@ duration; those require measurements.
 ## Optional direct GPSDO reference
 
 A clean external GPSDO reference is a possible later alternative to the local
-TCXO. For a genuine Si5351A, the manufacturer documents a 25/27 MHz reference
+TCXO. For the Si5351A, the manufacturer documents a 25/27 MHz reference
 through an AC-coupled XA input with XB floating. A future external-reference
 option would need source isolation or selection, correct amplitude and coupling,
 and configuration matched to the selected reference. Do not connect an external
 source in parallel with an active TCXO output.
 
-The present MS5351M requires separate confirmation of external-drive conditions.
-XA is not a general-purpose 3.3 V logic input. GPS 1 PPS cannot directly replace
-the MHz reference. A standard 10 MHz GPSDO has a documented input route through
+Si5351A XA is not a general-purpose 3.3 V logic input. GPS 1 PPS cannot directly
+replace the MHz reference. A standard 10 MHz GPSDO has a documented input route through
 Si5351C CLKIN, requiring a different device/package and circuit design rather
 than a direct substitution on the existing board.
 
@@ -158,10 +162,11 @@ frequency-stability and spectral measurements establish a need.
 
 ## Implementation and validation gates
 
-Before adopting this proposal, select the actual synthesizer part and verify
-its reference-input limits, calibration-output routing, PLL allocation, and
-register behavior. Complete counter sizing, PPS capture design, electrical
-interface checks, and firmware ownership of shared resources.
+Before adopting this proposal, finalize the Si5351A ordering code and verify the
+circuit against its reference-input limits, calibration-output routing, PLL
+allocation, and register behavior. Update the schematic and BOM to specify the
+Si5351A as part of implementation. Complete counter sizing, PPS capture design,
+electrical interface checks, and firmware ownership of shared resources.
 
 For the eventual circuit change, run ERC/DRC and inspect the schematic and PCB.
 Then measure calibration convergence, behavior during RF tone changes, GPS loss
@@ -179,7 +184,6 @@ limitations remain documented in the [repository README](../README.md).
 
 - [QRP Labs VFO operating manual, page 9](https://www.qrp-labs.com/images/vfo/vs_op_1.04_A4.pdf): CLK2 measurement against GPS PPS and software reference correction.
 - [Skyworks Si5351A/B/C datasheet, sections 4.1 and 6.6](https://www.skyworksinc.com/-/media/Skyworks/SL/documents/public/data-sheets/Si5351-B.pdf): reference inputs, device variants, and external XA drive.
-- [Ruimeng MS5351M datasheet, mirrored manufacturer document](https://www.elsin.ru/pdf/MS5351_M.pdf): specified device pinout and electrical limits.
 - [Raspberry Pi RP2040 datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf): PIO and frequency-counter reference-clock behavior.
 - [Chrony reference-clock documentation](https://chrony-project.org/doc/4.7/chrony.conf.html#refclock): PPS and system-time synchronization.
 - [u-blox GPS timing application note](https://content.u-blox.com/sites/default/files/products/documents/Timing_AppNote_%28GPS.G6-X-11007%29.pdf): time-pulse quantization and external clock cleanup.
