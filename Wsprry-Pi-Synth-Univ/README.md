@@ -12,3 +12,10 @@ The project uses its own custom footprint library under
 Treat this design as untested unless a specific revision has documented
 validation. See the [repository README](../README.md) for KiCad version details,
 other missing assets, and repository conventions.
+
+## Design considerations
+
+[Optional GPS frequency calibration for Pi and Pico](GPS-FREQUENCY-CALIBRATION.md)
+describes a proposed CLK2 feedback circuit for measuring TCXO error against GPS
+PPS, its benefits, standalone operation and holdover, and an optional external
+GPSDO reference. This proposal has not been implemented or physically validated.
