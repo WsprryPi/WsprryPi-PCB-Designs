@@ -515,7 +515,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Wsprry-Pi-GPIO-Univ.kicad_pro",
+    "filename": "WsprryPi-GPIO-Univ.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -854,8 +854,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Wsprry-Pi-GPIO-Univ.kicad_sch",
-        "name": "Wsprry-Pi-GPIO-Univ",
+        "filename": "WsprryPi-GPIO-Univ.kicad_sch",
+        "name": "WsprryPi-GPIO-Univ",
         "uuid": "60ef3af7-8b10-418f-8641-22e32be97950"
       }
     ],
@@ -865,7 +865,7 @@
   "sheets": [
     [
       "60ef3af7-8b10-418f-8641-22e32be97950",
-      "Wsprry-Pi-GPIO-Univ"
+      "WsprryPi-GPIO-Univ"
     ]
   ],
   "text_variables": {},

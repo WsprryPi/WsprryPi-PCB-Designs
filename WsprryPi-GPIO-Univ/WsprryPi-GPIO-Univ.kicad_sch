@@ -198,161 +198,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Wsprry Pi:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Wsprry Pi:Conn_01x04"
 			(pin_names
 				(offset 1.016)
@@ -1829,362 +1674,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Wsprry Pi:EEEFK1V470P"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at -4.064 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "47µF"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Wsprry Pi:CAP-SMD_BD6.3-L6.6-W6.6-FD"
-				(at 0 -2.794 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893102903316480"
-				(at 0 -16.51 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "-55℃~+105℃ 180mA@120Hz 2000hrs@105℃ 35V 47µF ±20% SMD Aluminum Electrolytic Capacitors - SMD ROHS"
-				(at 0 -13.462 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC" "C178565"
-				(at 0 11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC_PART" "C178565"
-				(at 0 13.97 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CAP-* C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "EEEFK1V470P_1_0"
-				(rectangle
-					(start -2.54 1.4986)
-					(end -1.524 1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0.762) (xy 2.54 0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.032 1.016)
-					(end -2.0066 2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.54 -1.016)
-					(mid -1.3208 -0.4064)
-					(end 0 -0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -0.254)
-					(mid 1.3208 -0.4064)
-					(end 2.54 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 4.318)
-					(name "1"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 4.826)
-					(name "2"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Wsprry Pi:FerriteBead"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "FB"
-				(at -3.81 0.635 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "FerriteBead"
-				(at 3.81 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Ferrite bead"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "L ferrite bead inductor filter"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "FerriteBead_0_1"
-				(polyline
-					(pts
-						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 1.2954)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -1.2192)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "FerriteBead_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Wsprry Pi:GND"
 			(power global)
 			(pin_numbers
@@ -3237,7 +2726,7 @@
 	(text_box "Pi Control Circuit (10-series PNs)"
 		(exclude_from_sim no)
 		(at 39.37 35.56 0)
-		(size 76.2 85.09)
+		(size 71.12 85.09)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3293,12 +2782,6 @@
 		(uuid "2fcdbad9-3676-4ee9-ad72-57777c69f3a8")
 	)
 	(junction
-		(at 81.28 58.42)
-		(diameter 1.016)
-		(color 0 0 0 0)
-		(uuid "3fb724da-fca8-4dd3-8f40-976bd55d74f9")
-	)
-	(junction
 		(at 109.22 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3347,22 +2830,10 @@
 		(uuid "bfcae0a9-a16c-4799-a8b6-5e0222875506")
 	)
 	(junction
-		(at 90.17 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d621cfa6-e669-43c4-bf31-81ac77de3c78")
-	)
-	(junction
 		(at 81.28 99.06)
 		(diameter 1.016)
 		(color 0 0 0 0)
 		(uuid "da4ef76a-1954-4b7e-87ab-0274d73567d7")
-	)
-	(junction
-		(at 101.6 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "de0e336f-e455-43ba-a608-1bc2a91cbfe8")
 	)
 	(junction
 		(at 58.42 101.6)
@@ -3519,16 +2990,6 @@
 			(type solid)
 		)
 		(uuid "162c908d-f3a8-450e-8518-4ebd2f7fbf40")
-	)
-	(wire
-		(pts
-			(xy 90.17 58.42) (xy 90.17 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17c1b2f6-42a2-4a0f-9a24-4c87dc5c4537")
 	)
 	(wire
 		(pts
@@ -3692,36 +3153,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 49.53) (xy 101.6 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "669955b1-86b5-4c4b-b83c-974ba26071ef")
-	)
-	(wire
-		(pts
-			(xy 90.17 46.99) (xy 90.17 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71e5675b-3c50-4cc7-be77-d6799deb6051")
-	)
-	(wire
-		(pts
-			(xy 88.9 58.42) (xy 90.17 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79db6241-de5c-45b1-9bf4-159bd5e48414")
-	)
-	(wire
-		(pts
 			(xy 62.23 78.74) (xy 66.04 78.74)
 		)
 		(stroke
@@ -3769,16 +3200,6 @@
 			(type default)
 		)
 		(uuid "88c3af42-807f-461f-a2d8-1770223d4d08")
-	)
-	(wire
-		(pts
-			(xy 101.6 58.42) (xy 111.76 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b35b419-4bf0-45a8-a8aa-1b4c2998f33a")
 	)
 	(wire
 		(pts
@@ -3892,16 +3313,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 58.42) (xy 101.6 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c61ff9f5-91b3-4b16-8f17-93bb757ec5b7")
-	)
-	(wire
-		(pts
 			(xy 81.28 63.5) (xy 78.74 63.5)
 		)
 		(stroke
@@ -3959,16 +3370,6 @@
 			(type default)
 		)
 		(uuid "d6fc60fd-4229-4e00-9871-1ec13886967a")
-	)
-	(wire
-		(pts
-			(xy 101.6 57.15) (xy 101.6 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e36212ae-ca52-4aa5-8636-41d76ce19801")
 	)
 	(wire
 		(pts
@@ -4089,16 +3490,6 @@
 			(justify left bottom)
 		)
 		(uuid "12dd4322-2c83-4896-9e90-959f40eeb297")
-	)
-	(label "5V_RAIL"
-		(at 111.76 58.42 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6e6f4b84-8504-4870-88eb-597a11f2853b")
 	)
 	(label "3V3"
 		(at 54.61 78.74 0)
@@ -4249,7 +3640,7 @@
 			(uuid "4f638a68-fedb-4ff9-8791-f142d1c62437")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "#PWR024")
 					(unit 1)
@@ -4383,144 +3774,9 @@
 			(uuid "40d2e2ea-2fa6-4479-a911-87146169c3ae")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Wsprry Pi:C")
-		(at 101.6 53.34 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "17b8c646-de11-4230-a694-de2194060c85")
-		(property "Reference" "C12"
-			(at 99.568 55.372 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 98.552 51.308 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Wsprry Pi:C_0603_1608Metric"
-			(at 102.5652 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
-			(at 101.6 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100nF 50V X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 101.6 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C14663"
-			(at 101.6 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C14663"
-			(at 101.6 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JCSC_PART" ""
-			(at 101.6 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 101.6 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSCl" ""
-			(at 101.6 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d7befbdd-062d-4169-9654-bc158f0f1997")
-		)
-		(pin "2"
-			(uuid "a89afabe-93e9-46da-8133-284ffabd6933")
-		)
-		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
-				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
-					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -4597,7 +3853,7 @@
 			(uuid "12f9ce80-d1a1-4193-b52a-9847d2ce92c4")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "#PWR09")
 					(unit 1)
@@ -4740,7 +3996,7 @@
 			(uuid "b153251f-9a94-4ed2-bb35-921f675a3e08")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "SW11")
 					(unit 1)
@@ -4820,7 +4076,7 @@
 			(uuid "aa08dca0-72d0-4e59-925b-c8b9971b29c0")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "#FLG03")
 					(unit 1)
@@ -5069,7 +4325,7 @@
 			(uuid "25fb2b85-0194-4ee7-ba6b-05df893d3f04")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "J11")
 					(unit 1)
@@ -5149,7 +4405,7 @@
 			(uuid "aa08dca0-72d0-4e59-925b-c8b9971b29c1")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "#FLG02")
 					(unit 1)
@@ -5233,7 +4489,7 @@
 			(uuid "2e3e18f4-fc3b-4e93-862e-312a17882255")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "J21")
 					(unit 1)
@@ -5310,145 +4566,9 @@
 			(uuid "20c0f381-b89c-40ab-a712-82b46f74f654")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Wsprry Pi:FerriteBead")
-		(at 85.09 58.42 90)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6322af28-05fc-49ac-abb0-6376ba7e47b9")
-		(property "Reference" "FB11"
-			(at 85.09 54.61 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "600Ω@100MHz"
-			(at 89.662 62.23 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Wsprry Pi:L_0603_1608Metric"
-			(at 85.09 56.642 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588894465835094016"
-			(at 85.09 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "-55℃~+125℃ 1 150mΩ 1A 600Ω@100MHz ±25% 0603 Ferrite Beads ROHS"
-			(at 85.09 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C107335"
-			(at 85.09 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C107335"
-			(at 85.09 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JCSC_PART" ""
-			(at 85.09 58.42 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 85.09 58.42 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSCl" ""
-			(at 85.09 58.42 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1b3a395b-5aea-4568-9ed2-48bbbcaf5d3b")
-		)
-		(pin "1"
-			(uuid "c85b2de9-ab60-4f47-b1d6-b12507af4815")
-		)
-		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
-				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
-					(reference "FB11")
 					(unit 1)
 				)
 			)
@@ -5523,7 +4643,7 @@
 			(uuid "767ebccd-61ab-4568-a255-bc2e3a043f12")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "#PWR025")
 					(unit 1)
@@ -5600,7 +4720,7 @@
 			(uuid "8ef36168-126a-438a-aad7-6f196538262f")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "#PWR020")
 					(unit 1)
@@ -5704,7 +4824,7 @@
 			(uuid "ca444b3d-a39e-4fd6-ae95-0533f13d76cd")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "J83")
 					(unit 1)
@@ -5779,7 +4899,7 @@
 			(uuid "3603d952-f1b2-4de6-9f0c-3036cec9f79a")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "#PWR01")
 					(unit 1)
@@ -5921,87 +5041,9 @@
 			(uuid "38cab358-e17d-4ef4-9921-e3416dca160c")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "J82")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Wsprry Pi:GND")
-		(at 101.6 45.72 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8247f936-ef7d-4a19-9fcb-b5a0fecc541d")
-		(property "Reference" "#PWR018"
-			(at 101.6 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 101.6 41.656 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.6 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 101.6 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b116d545-806c-475b-a03f-e531c0e23c2c")
-		)
-		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
-				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
-					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -6074,7 +5116,7 @@
 			(uuid "a2126177-a86c-414f-85b3-94a18153d4ce")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "#PWR02")
 					(unit 1)
@@ -6152,7 +5194,7 @@
 			(uuid "78a94649-f1ea-4e84-aaf1-fac18d8f64d9")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "#PWR05")
 					(unit 1)
@@ -6297,7 +5339,7 @@
 			(uuid "1cf472f4-192d-4341-987e-b602e59b5335")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "D11")
 					(unit 1)
@@ -6439,145 +5481,9 @@
 			(uuid "38cab358-e17d-4ef4-9921-e3416dca160d")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "J81")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Wsprry Pi:EEEFK1V470P")
-		(at 90.17 52.07 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a94d582b-40de-4caf-b087-4dcb4e0a4178")
-		(property "Reference" "C11"
-			(at 89.916 50.038 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "47µF"
-			(at 93.472 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Wsprry Pi:CAP-SMD_BD6.3-L6.6-W6.6-FD"
-			(at 90.17 49.276 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893102903316480"
-			(at 90.17 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "-55℃~+105℃ 180mA@120Hz 2000hrs@105℃ 35V 47µF ±20% SMD Aluminum Electrolytic Capacitors - SMD ROHS"
-			(at 90.17 38.608 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C178565"
-			(at 90.17 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C178565"
-			(at 90.17 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JCSC_PART" ""
-			(at 90.17 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 90.17 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSCl" ""
-			(at 90.17 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "75f4c5e5-35a1-476c-9ce7-337b506fb5c6")
-		)
-		(pin "2"
-			(uuid "09e49a2a-7aef-4e7f-9ab8-b8aa6c497db2")
-		)
-		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
-				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
-					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -6652,87 +5558,9 @@
 			(uuid "070eb11d-db13-4169-9922-bd16934c4bdd")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Wsprry Pi:GND")
-		(at 90.17 45.72 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ab8521e1-5117-4a61-810d-a95a30382591")
-		(property "Reference" "#PWR03"
-			(at 90.17 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 90.17 41.656 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 90.17 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 90.17 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 90.17 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c450418b-5250-4aef-b219-8ed1634cd5c4")
-		)
-		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
-				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -6810,7 +5638,7 @@
 			(uuid "aa08dca0-72d0-4e59-925b-c8b9971b29c2")
 		)
 		(instances
-			(project "Wsprry-Pi-GPIO-Univ"
+			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "#FLG01")
 					(unit 1)
@@ -6832,8 +5660,7 @@
 			"0d567ccd-12f5-45b0-bc1e-037ab7c571c7" "0e4f9617-b6ec-492f-bfc5-e1316717786f"
 			"0f3bd46f-2228-49f1-87e6-743a757489f0" "0f779924-db05-4e67-b7e8-6a1c5897c033"
 			"1386a18d-115c-49a7-98fb-e95d779814a5" "15d3415b-9669-4a65-b76d-ba6e2e1ef6f1"
-			"162c908d-f3a8-450e-8518-4ebd2f7fbf40" "17b8c646-de11-4230-a694-de2194060c85"
-			"17c1b2f6-42a2-4a0f-9a24-4c87dc5c4537" "1dda1cab-75e2-45fa-9b30-867a31b509b3"
+			"162c908d-f3a8-450e-8518-4ebd2f7fbf40" "1dda1cab-75e2-45fa-9b30-867a31b509b3"
 			"1e3c531d-ee0e-4b7b-9916-dab8211e859a" "1ebedef2-cdf0-41e9-82cd-8d1a52babc3a"
 			"27a5274c-c1a3-4e26-8d0b-657f0befbe57" "285ce3ca-690c-413c-8bb9-10c2c1ac1b1b"
 			"2a34f77c-792c-49c8-9a0b-e6074a539f84" "2ae41727-071f-4a6f-88f6-92768c14a0e5"
@@ -6841,42 +5668,35 @@
 			"30399871-10ec-4e10-9e83-cb507507a28c" "30b30fef-1235-4900-bddf-1825d1d4fb48"
 			"336352f0-969d-473f-986c-d267c38b707b" "35e870f1-d30d-4a39-8d84-fe966b587ec2"
 			"38a3e0b1-a7a8-427d-8e9b-3b8754cf1d72" "3b812c01-88bd-4e1c-8384-741a3f5aa798"
-			"3fb724da-fca8-4dd3-8f40-976bd55d74f9" "42cf10b6-7b36-426b-8ee3-716855727ae0"
-			"43d195cd-3610-47fb-9938-4c9851ef7f33" "457dcb75-d0fd-4a5f-8f9f-397edb6153d1"
-			"45e12e1e-c940-4de5-83db-afe04a53b764" "463a98da-aef4-42cf-ad1a-4cc68b23297c"
-			"59d6ee69-ae80-4763-8039-37cf4692cc2b" "59eb5b61-0836-4c5e-ba4a-ab072ec9a319"
-			"5a2a12e3-8c5a-42f0-827b-76cba4824348" "5c395136-6e19-4c8f-8a73-55a36c8ff962"
-			"5ceb066d-640c-47f4-ad59-37fc573f8d05" "610095cb-f0fb-4cf0-837c-5f05ea1411f2"
-			"61958fd5-f129-4195-9b7a-2bb9b07b5e6b" "6322af28-05fc-49ac-abb0-6376ba7e47b9"
-			"633fb561-3d6d-4cb9-87d9-3ef3cda73292" "669955b1-86b5-4c4b-b83c-974ba26071ef"
-			"6e6f4b84-8504-4870-88eb-597a11f2853b" "6fc9eab7-9524-4a61-9cfc-574cfc59251b"
-			"70777117-a075-46ae-b05f-70fdfb400b5e" "71e5675b-3c50-4cc7-be77-d6799deb6051"
-			"78e3024f-4a3f-4841-b2e6-ae526ddd4bf9" "79db6241-de5c-45b1-9bf4-159bd5e48414"
+			"42cf10b6-7b36-426b-8ee3-716855727ae0" "43d195cd-3610-47fb-9938-4c9851ef7f33"
+			"457dcb75-d0fd-4a5f-8f9f-397edb6153d1" "45e12e1e-c940-4de5-83db-afe04a53b764"
+			"463a98da-aef4-42cf-ad1a-4cc68b23297c" "59d6ee69-ae80-4763-8039-37cf4692cc2b"
+			"59eb5b61-0836-4c5e-ba4a-ab072ec9a319" "5a2a12e3-8c5a-42f0-827b-76cba4824348"
+			"5c395136-6e19-4c8f-8a73-55a36c8ff962" "5ceb066d-640c-47f4-ad59-37fc573f8d05"
+			"610095cb-f0fb-4cf0-837c-5f05ea1411f2" "61958fd5-f129-4195-9b7a-2bb9b07b5e6b"
+			"633fb561-3d6d-4cb9-87d9-3ef3cda73292" "6fc9eab7-9524-4a61-9cfc-574cfc59251b"
+			"70777117-a075-46ae-b05f-70fdfb400b5e" "78e3024f-4a3f-4841-b2e6-ae526ddd4bf9"
 			"7b111ecc-3810-4491-a992-efff7694cebd" "7b85e855-df70-4ceb-9c91-2996233265e9"
-			"7e5912bc-7b89-41e7-a264-0f8723042b82" "8247f936-ef7d-4a19-9fcb-b5a0fecc541d"
-			"82763531-cf30-4aa8-b522-ebd5edc93fa0" "85733317-795b-4c87-8146-dafbfebdbafc"
-			"8613454e-2e04-4d5e-8c20-8dcc8c89298e" "86992512-59cc-412a-ba55-1f4429c084fb"
-			"86b63f9f-0adb-4601-9cd0-daf18f1314df" "87622a89-c797-4b28-9ed1-c3a33300153d"
-			"884a6c92-ac8b-42a1-b20e-a8352b50273e" "88c3af42-807f-461f-a2d8-1770223d4d08"
-			"89c62dcb-b14b-4c4e-a600-e64b34bb283b" "8b35b419-4bf0-45a8-a8aa-1b4c2998f33a"
+			"7e5912bc-7b89-41e7-a264-0f8723042b82" "82763531-cf30-4aa8-b522-ebd5edc93fa0"
+			"85733317-795b-4c87-8146-dafbfebdbafc" "8613454e-2e04-4d5e-8c20-8dcc8c89298e"
+			"86992512-59cc-412a-ba55-1f4429c084fb" "86b63f9f-0adb-4601-9cd0-daf18f1314df"
+			"87622a89-c797-4b28-9ed1-c3a33300153d" "884a6c92-ac8b-42a1-b20e-a8352b50273e"
+			"88c3af42-807f-461f-a2d8-1770223d4d08" "89c62dcb-b14b-4c4e-a600-e64b34bb283b"
 			"8d86a07b-34a7-48de-afb4-31ed155806d4" "914316ae-3926-4e2f-be7f-084b7c78db43"
 			"93245cab-168d-479a-9f72-c713435e30db" "93e9e0ae-d120-4aa4-9207-d35f6b22d604"
 			"9e909732-25e7-4d53-87a4-f031d3cd6d6d" "9f0aed22-75b0-40d4-b2f8-d14981d670c7"
 			"a2cd4ec5-aaba-4288-9d43-38e010153cd3" "a3a0102f-edf0-4a0e-8e16-6a27bdd872b9"
 			"a3bf9bbc-152f-486e-b491-448717fef32e" "a60bb854-4184-40ae-9303-1cfe55bf2782"
-			"a94d582b-40de-4caf-b087-4dcb4e0a4178" "a9e6b900-cb0c-442f-9fb3-f19b7c5637cf"
-			"aaa65e65-a1b1-4252-a603-47281cf07e70" "ab8521e1-5117-4a61-810d-a95a30382591"
+			"a9e6b900-cb0c-442f-9fb3-f19b7c5637cf" "aaa65e65-a1b1-4252-a603-47281cf07e70"
 			"ad77a40a-ec7c-45c6-ba96-f198638e5ec0" "aea5b21c-fbfa-493a-945e-96cccc777f0f"
 			"b59d4e17-e5c7-4d89-95af-192fec2f512a" "be2b193e-f350-44ea-96a5-eb7a6946678a"
 			"bf04a7f9-e07a-48a8-895a-ba57ae9f2e18" "bfcae0a9-a16c-4799-a8b6-5e0222875506"
 			"c0ecab92-c92e-4d28-80ae-db42113db35b" "c5d5045f-2ca8-4a48-a7f3-d89bb38a5d29"
-			"c61caf35-ee56-4300-aa99-5d8797da6400" "c61ff9f5-91b3-4b16-8f17-93bb757ec5b7"
-			"c864f620-de63-4cff-9488-9be4b5d7602e" "ce5bff1a-1de2-4c93-951d-c2fea3b418e2"
-			"d05c41db-3d05-4680-a4c3-8edd5c55a694" "d1c3e9f5-fc54-4522-a1fc-4e6535246356"
-			"d3213f8b-8c59-4b21-ae4f-5adb3d1946b9" "d621cfa6-e669-43c4-bf31-81ac77de3c78"
+			"c61caf35-ee56-4300-aa99-5d8797da6400" "c864f620-de63-4cff-9488-9be4b5d7602e"
+			"ce5bff1a-1de2-4c93-951d-c2fea3b418e2" "d05c41db-3d05-4680-a4c3-8edd5c55a694"
+			"d1c3e9f5-fc54-4522-a1fc-4e6535246356" "d3213f8b-8c59-4b21-ae4f-5adb3d1946b9"
 			"d6fc60fd-4229-4e00-9871-1ec13886967a" "da4ef76a-1954-4b7e-87ab-0274d73567d7"
-			"de0e336f-e455-43ba-a608-1bc2a91cbfe8" "de49a88d-a5be-461c-a419-e4355459683a"
-			"dfe44264-1c33-4e51-ad52-6ce4bbf8fafa" "e36212ae-ca52-4aa5-8636-41d76ce19801"
+			"de49a88d-a5be-461c-a419-e4355459683a" "dfe44264-1c33-4e51-ad52-6ce4bbf8fafa"
 			"f093e7b9-59f9-44de-aa85-30b3970b244d" "f1663e2e-ba37-414b-b1a3-fc050659619a"
 			"f1b686e6-93d7-4ed3-bdcb-e3ad506a3347" "f7d8b50a-ca2a-44f7-bdd0-9c0dd1c18e76"
 			"fb2678a0-43db-411c-b5b1-475ed1173fd7" "fd284396-32a8-49cc-a72c-ac76e22e84e5"

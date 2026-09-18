@@ -9,7 +9,7 @@ These designs require revision-specific validation before production. KiCad sour
 | Project | Purpose | Reference export |
 | --- | --- | --- |
 | [Synth Universal](Wsprry-Pi-Synth-Univ/README.md) | Si5351-synthesized transmission board | [Schematic PDF](Wsprry-Pi-Synth-Univ/Wsprry-Pi-Synth-Univ.pdf) |
-| [GPIO Universal](Wsprry-Pi-GPIO-Univ/README.md) | GPIO transmission board | [Schematic PDF](Wsprry-Pi-GPIO-Univ/Wsprry-Pi-GPIO-Univ.pdf) |
+| [GPIO Universal](WsprryPi-GPIO-Univ/README.md) | GPIO transmission board | [Schematic PDF](WsprryPi-GPIO-Univ/WsprryPi-GPIO-Univ.pdf) |
 | [LPF](Wsprry-Pi-LPF/README.md) | Low-pass filter board and design workbook | Export from the KiCad source |
 | [Pico 2W Wattmeter Shield](Pico%202W%20Wattmeter%20Shield/README.md) | ADL5904 RF detector and ADS1115 ADC shield | See project assembly drawings |
 | [Pico 2W Shield Template](Pico%202W%20Shield%20Template/README.md) | Unwired shield interface, outline, and antenna notch | KiCad project template |
@@ -32,7 +32,7 @@ Project library tables use `${KIPRJMOD}` paths. Keep each project's local librar
 Synth, GPIO, and LPF include local copies of every symbol and footprint used by their designs, plus available STEP models. Each folder resolves its libraries independently through `${KIPRJMOD}`. Their local library assets require KiCad 10.0.1 or newer; the board and schematic generator versions above describe their saved formats.
 
 - [Synth library contents and limits](Wsprry-Pi-Synth-Univ/libraries/README.md)
-- [GPIO library contents and limits](Wsprry-Pi-GPIO-Univ/libraries/README.md)
+- [GPIO library contents and limits](WsprryPi-GPIO-Univ/libraries/README.md)
 - [LPF library contents and limits](Wsprry-Pi-LPF/libraries/README.md)
 
 The edge-launch SMA option in each library is the wattmeter's Adafruit 1865 part. GPIO now uses it as J83; Synth still uses a different through-hole SMA connector. The switch and through-hole SMA models are included locally. GPIO C11 now uses a local generic KiCad electrolytic model. Remaining model gaps are the unplaced large through-hole capacitor footprint and Synth's Y21 oscillator; LPF's toroid uses a generic axial-inductor visualization.
