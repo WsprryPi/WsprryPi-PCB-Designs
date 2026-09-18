@@ -1,0 +1,5 @@
+# Local JLCPCB plugin database and generated files.
+/jlcpcb/
+
+# Repository rules cover generated/, production/, fabrication/, KiCad backups,
+# local preferences, locks, caches, and editor state.

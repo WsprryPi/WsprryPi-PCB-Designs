@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "pico-wattmeter") (type "KiCad") (uri "${KIPRJMOD}/pico-shield.pretty") (options "") (descr "Pico 2 W shield header interface"))
+)

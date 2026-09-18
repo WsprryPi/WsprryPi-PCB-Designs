@@ -13,15 +13,17 @@ the KiCad source files are authoritative.
 | [Synth Universal](Wsprry-Pi-Synth-Univ/README.md) | Si5351-synthesized transmission board | [PDF](Wsprry-Pi-Synth-Univ/Wsprry-Pi-Synth-Univ.pdf) |
 | [GPIO Universal](Wsprry-Pi-GPIO-Univ/README.md) | Traditional GPIO transmission board | [PDF](Wsprry-Pi-GPIO-Univ/Wsprry-Pi-GPIO-Univ.pdf) |
 | [LPF](Wsprry-Pi-LPF/README.md) | Low-pass filter board | [PDF](Wsprry-Pi-LPF/Wsprry-Pi-LPF.pdf) |
+| [Pico 2W Shield Template](Pico%202W%20Shield%20Template/README.md) | Reusable Pico 2 W shield outline, header interface, and antenna notch | KiCad 10 starter project |
 
 ## Opening a project
 
 Clone [WsprryPi/WsprryPi-PCB-Designs](https://github.com/WsprryPi/WsprryPi-PCB-Designs)
 and open the desired project's `.kicad_pro` file in KiCad. The checked-in
-schematics and boards identify KiCad 9.0 as their generator. Record the KiCad
+Synth, GPIO, and LPF schematics and boards identify KiCad 9.0 as their generator.
+The Pico 2W Shield Template was prepared with KiCad 10.0.1. Record the KiCad
 version used for any edits, and review format upgrades before committing them.
 
-Each project keeps its own `libraries` folder and library tables. Paths use
+Each project keeps its own local libraries and library tables. Paths use
 `${KIPRJMOD}`, which refers to that project's directory. Preserve this structure
 when copying a project. No shared library outside the repository is required by
 the project library tables.
