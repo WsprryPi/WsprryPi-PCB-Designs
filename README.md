@@ -22,8 +22,8 @@ Clone [WsprryPi/WsprryPi-PCB-Designs](https://github.com/WsprryPi/WsprryPi-PCB-D
 
 | Project | Saved schematic and PCB generator version |
 | --- | --- |
-| Synth Universal, Pico 2W Wattmeter Shield, Pico 2W Shield Template | KiCad 10.0 |
-| GPIO Universal, LPF | KiCad 9.0 |
+| Synth Universal, LPF, Pico 2W Wattmeter Shield, Pico 2W Shield Template | KiCad 10.0 |
+| GPIO Universal | KiCad 9.0 |
 
 Project library tables use `${KIPRJMOD}` paths. Keep each project's local libraries together when copying it. The Pico projects use installed KiCad models where their project documentation specifies them.
 
