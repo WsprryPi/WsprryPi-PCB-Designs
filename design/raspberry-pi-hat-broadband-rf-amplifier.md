@@ -1,6 +1,6 @@
 # Raspberry Pi HAT broadband RF amplifier — proposed design
 
-This is an architecture proposal, not a completed schematic or validated hardware design.
+This proposal defines the amplifier architecture and engineering requirements. The schematic, component selection, and hardware validation are incomplete; all output and supply figures are provisional design targets.
 
 ## Goals and constraints
 
@@ -9,13 +9,13 @@ Build a compact, solid-state Raspberry Pi HAT that accepts a 3.3 V clock/RF sour
 - Cover **135 kHz–144 MHz** with one broadband amplifier circuit.
 - Accept either the intended Pi GPIO clock output or a Si5351 clock output.
 - Use the Pi’s 5 V header supply, with sufficient system power headroom.
-- Retain software-selectable power levels and transmit enable.
+- Provide software-selectable power levels and transmit enable.
 - Require no end-user tuning: no adjustable resistors, capacitors, coils, or manual alignment.
 - Use one fixed DC/DC supply and fixed broadband supply decoupling across the frequency range.
 - Place the selected band LPF immediately after the PA.
-- Accept reduced maximum output, particularly at 144 MHz, as the compromise; retain the frequency coverage and adjustment-free operation.
+- Allow reduced maximum output at the upper end of the frequency range while preserving coverage and adjustment-free operation.
 
-The HAT does not require a tuned PA matching network or a different PA supply filter for each band. The downstream LPF remains band-appropriate and may be switched separately.
+The proposed PA uses the same broadband circuit and supply decoupling across all bands. The downstream LPF is selected for the operating band.
 
 ## Proposed signal and power paths
 
@@ -38,11 +38,11 @@ Pi header 5 V -> fixed DC/DC -> approximately ±12 to ±15 V
 Software -> attenuation selection and hardware transmit enable
 ```
 
-This is a wideband power line-driver approach. A THS3491-class current-feedback amplifier is the candidate final stage; THS3491DDA is the proposed prototype device. Component selection, package thermal design, feedback values, input interface, and converter topology remain open.
+The candidate final stage is a THS3491 current-feedback power amplifier, with THS3491DDA proposed for the prototype. Final component selection, package thermal design, feedback values, input interface, and converter topology remain open.
 
 ## Input compatibility and drive conditioning
 
-The source requirements are approximately 3.3 V logic, with Pi GPIO drive settings described as 2–16 mA and Si5351 settings of 2/4/6/8 mA. These are source-drive settings, not calibrated RF power levels or constant-current outputs. Pi capabilities and clock-generation methods depend on the exact Pi model; the input requirement does not establish that every Pi can generate every requested frequency.
+The intended inputs are approximately 3.3 V logic, with Pi GPIO drive settings of 2–16 mA and Si5351 settings of 2/4/6/8 mA. These are source-drive settings, not calibrated RF power levels or constant-current outputs. Pi capabilities and clock-generation methods depend on the exact Pi model; the input requirement does not establish that every Pi can generate every requested frequency.
 
 Use a high-impedance input, so neither source must directly drive a 50-ohm termination. Input capacitance, trace length, edge quality, and protection loading still matter at 144 MHz. Select or connect only one source at a time.
 
@@ -57,7 +57,7 @@ TI lists the THS3491 with a ±7 to ±16 V supply range, typical ±420 mA linear 
 For a sine wave into 50 ohms:
 
 | RF power | RMS voltage | Peak voltage | Peak-to-peak voltage |
-|---|---:|---:|---:|
+| --- | ---: | ---: | ---: |
 | 100 mW | 2.24 V | 3.16 V | 6.32 V |
 | 250 mW | 3.54 V | 5.00 V | 10.0 V |
 | 500 mW | 5.00 V | 7.07 V | 14.1 V |
@@ -65,9 +65,9 @@ For a sine wave into 50 ohms:
 
 At 1 W, the sinusoidal load current is 200 mA peak. A series output-termination resistor would consume voltage headroom and dissipate power; “50-ohm environment” does not mean a 50-ohm series resistor can be added without revisiting the output target.
 
-The intended rating is **up to 1 W nominal, with approximately 0.5–0.75 W at 144 MHz as a provisional target**. No frequency-dependent rating is established until measured.
+The output target is **up to 1 W nominal, with approximately 0.5–0.75 W at 144 MHz**. Frequency-dependent ratings require measurement.
 
-Using the quoted typical slew rate as a first estimate:
+Using the typical slew rate for an initial estimate:
 
 ```text
 SR = 2πf × Vpeak
@@ -85,7 +85,7 @@ Generate one fixed bipolar supply from 5 V, initially considering ±12 to ±15 V
 
 Physical header pins **2 and 4** are the 5 V supply connections; they are not programmable GPIO outputs. Use both power pins and multiple ground pins with suitable copper and connector current capacity. Available HAT power depends on the Pi supply, Pi workload, other peripherals, cable drop, board power path, and connector limits.
 
-The provisional power budget is approximately **0.4–0.7 A at 5 V near 1 W RF**, with **about 1 A as a provisional HAT design budget**. These estimates are not measured consumption or an established maximum. Include amplifier quiescent consumption, converter losses, buffer/control loads, startup, and sustained transmit duty cycle in the final budget.
+Estimated demand near 1 W RF is **0.4–0.7 A at 5 V**; reserve **about 1 A for the HAT** as a provisional design budget. Include amplifier quiescent consumption, converter losses, buffer/control loads, startup, and sustained transmit duty cycle when establishing the measured requirement.
 
 For illustration, 1 W RF at 40% complete-chain efficiency requires 0.50 A from 5 V; at 30%, it requires 0.67 A. Efficiency must be established for the implemented circuit and each operating condition.
 
@@ -93,12 +93,12 @@ Raspberry Pi recommends 5 V/3 A for Pi 4 and 5 V/5 A for Pi 5. A Pi 5 system sho
 
 Provide local bulk capacitance and the converter’s specified ceramic input network. An initial bulk-capacitance range is 470–1000 µF; size it against transient response and inrush. Select rail bypass components and placement for impedance across the operating spectrum. This is one fixed supply network, independent of band.
 
-## Software power levels and no end-user tuning
+## Power control
 
 Use digitally switched resistive attenuation ahead of the PA instead of treating source drive-strength settings as calibrated output control.
 
 | Control bits | Additional attenuation | Relative power | Nominal power if full scale is 1 W |
-|---|---:|---:|---:|
+| --- | ---: | ---: | ---: |
 | 00 | 0 dB | 100% | 1 W |
 | 01 | 6 dB | 25.1% | 251 mW |
 | 10 | 12 dB | 6.31% | 63 mW |
@@ -114,10 +114,10 @@ Place the selected LPF directly after the amplifier with a short RF connection. 
 
 Verify the PA with the actual LPFs: a filter can present a reactive, reflective load outside its passband. The design must tolerate that load while meeting output and spectral requirements. The amplifier hardware remains broadband even though LPF selection is band-dependent.
 
-## Recommended four-layer PCB stackup
+## Proposed four-layer PCB stackup
 
 | Layer | Intended use |
-|---|---|
+| --- | --- |
 | **L1** | RF components, short RF traces, PA feedback and local decoupling |
 | **L2** | **Primary uninterrupted RF ground reference plane immediately under L1** |
 | **L3** | Power distribution and slow control signals |
@@ -138,5 +138,3 @@ Keep feedback components and rail bypass capacitors physically close to the PA. 
 3. Measure fundamental power, harmonics, spurs, attenuation accuracy, and transmit-enable leakage across 135 kHz–144 MHz with both source types.
 4. Verify 5 V demand, startup/inrush, rail ripple, Pi voltage stability, and PA/converter temperature during sustained operation.
 5. Confirm the upper-frequency derating and publish only measured power ratings.
-
-The proposal does not establish source compatibility on every Pi model, full-range output power, thermal suitability, or RF qualification.
