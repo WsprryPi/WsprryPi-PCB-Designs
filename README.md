@@ -25,22 +25,19 @@ Clone [WsprryPi/WsprryPi-PCB-Designs](https://github.com/WsprryPi/WsprryPi-PCB-D
 | Synth Universal, Pico 2W Wattmeter Shield, Pico 2W Shield Template | KiCad 10.0 |
 | GPIO Universal, LPF | KiCad 9.0 |
 
-Project library tables use `${KIPRJMOD}` paths. Keep each project's local libraries together when copying it. Standard footprints and models require the corresponding installed KiCad libraries.
+Project library tables use `${KIPRJMOD}` paths. Keep each project's local libraries together when copying it. The Pico projects use installed KiCad models where their project documentation specifies them.
 
-### Missing library assets
+### Project-local libraries
 
-The following project-relative symbol libraries are referenced but absent:
+Synth, GPIO, and LPF include local copies of every symbol and footprint used by their designs, plus available STEP models. Each folder resolves its libraries independently through `${KIPRJMOD}`. Their local library assets require KiCad 10.0.1 or newer; the board and schematic generator versions above describe their saved formats.
 
-| Project | Missing path |
-| --- | --- |
-| Synth Universal | `libraries/symbols/Wsprry-Pi.kicad_sym` |
-| GPIO Universal | `libraries/symbols/Wsprry-Pi.kicad_sym` |
-| LPF | `libraries/symbols/New_Library.kicad_sym` |
-| LPF | `libraries/symbols/Wsprry-Pi-LPF.kicad_sym` |
+- [Synth library contents and limits](Wsprry-Pi-Synth-Univ/libraries/README.md)
+- [GPIO library contents and limits](Wsprry-Pi-GPIO-Univ/libraries/README.md)
+- [LPF library contents and limits](Wsprry-Pi-LPF/libraries/README.md)
 
-The schematics contain embedded symbol definitions. Library editing and updates require the missing libraries or deliberate resolution of their references.
+The edge-launch SMA option in each library is the wattmeter's Adafruit 1865 part. Synth and GPIO currently use a different through-hole SMA connector on their boards. The switch and through-hole SMA models are included locally. Remaining model gaps are the unplaced large through-hole capacitor footprint and Synth's Y21 oscillator; LPF's toroid uses a generic axial-inductor visualization.
 
-Custom footprints also reference absent STEP files under `EASYEDA_MODELS`: the large through-hole capacitor in Synth, GPIO, and LPF, plus the pushbutton and through-hole SMA connector in Synth and GPIO. These omissions affect 3D visualization. See each project's documentation for other model limitations.
+Synth and GPIO C11 carry a 100 µF value but a 47 µF LCSC part number. Resolve that purchasing conflict before assembly. Library documentation also records the remaining ERC/DRC findings.
 
 ## Design proposals
 

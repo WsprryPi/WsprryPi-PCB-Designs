@@ -703,7 +703,7 @@
 			(uuid "e002eaee-c9f6-41f4-a750-081f640f33b8")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/EASYEDA_MODELS/SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/vendor/SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -715,7 +715,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "Wsprry Pi:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "02a56564-04c6-4e77-b3ab-1e1f41d77902")
 		(at 133.09701 80.69 180)
@@ -934,7 +934,7 @@
 			(uuid "a751622e-ba7e-430e-ad54-1d103c5fb9ca")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -946,7 +946,7 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0603_1608Metric"
+	(footprint "Wsprry Pi:LED_0603_1608Metric"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "02c32930-06b9-4c58-8eb6-2d8c6003b1e4")
@@ -1230,7 +1230,7 @@
 			(uuid "a58e5dcd-724e-4b65-8bc1-c41eb661daf4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1242,7 +1242,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0805_2012Metric"
+	(footprint "Wsprry Pi:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "03a93f4f-cbeb-47bd-8fbc-9244cf885bac")
 		(at 146.694973 83.11)
@@ -1422,7 +1422,7 @@
 			(uuid "4b179335-f3d8-46f1-aa4c-b518c828d860")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1434,7 +1434,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0402_1005Metric"
+	(footprint "Wsprry Pi:C_0402_1005Metric"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "0683b472-776f-4db8-861a-fc378695b179")
@@ -1643,7 +1643,7 @@
 			(uuid "8313d09f-e941-4c06-8df5-7f771b7fe31b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1655,7 +1655,7 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
+	(footprint "Wsprry Pi:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
 		(uuid "0beff73c-ea66-46e4-96f9-c0c7195d2160")
 		(at 161.5 73.5)
@@ -2269,7 +2269,7 @@
 			(uuid "591a68ab-0a9c-4e63-94e8-ef9ddb75c4d0")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/EASYEDA_MODELS/SMA-TH_5P-L14.5-W6.0-H9.6_BWSMA-KWE-Z001.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/vendor/SMA-TH_5P-L14.5-W6.0-H9.6_BWSMA-KWE-Z001.step"
 			(offset
 				(xyz 4.315 0 -3.5)
 			)
@@ -2281,7 +2281,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0402_1005Metric"
+	(footprint "Wsprry Pi:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "25e12f0b-3885-4d7a-ad00-8905b4eb4d58")
 		(at 125.575027 81.17 90)
@@ -2463,7 +2463,7 @@
 			(uuid "1dcd646a-8ba3-459b-b471-859d06e4835a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2475,7 +2475,7 @@
 			)
 		)
 	)
-	(footprint "Inductor_SMD:L_0603_1608Metric"
+	(footprint "Wsprry Pi:L_0603_1608Metric"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "2804b723-ccd8-46e2-9137-b109cb14bb2d")
@@ -2684,7 +2684,7 @@
 			(uuid "b598908a-dbb2-4a2e-8be7-b3faa42b159d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2696,7 +2696,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0402_1005Metric"
+	(footprint "Wsprry Pi:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "384fb1c1-de5c-4ed5-bf0a-ce94e3355eea")
 		(at 142.88 87.605 90)
@@ -2904,7 +2904,7 @@
 			(uuid "09b851f3-498e-467f-853c-0137d319bad8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2916,7 +2916,7 @@
 			)
 		)
 	)
-	(footprint "Inductor_SMD:L_0603_1608Metric"
+	(footprint "Wsprry Pi:L_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "508ad00c-d18e-4085-a021-7041cc046b38")
 		(at 138.5425 88.0875)
@@ -3124,7 +3124,7 @@
 			(uuid "58213968-e581-4a52-847b-61d7f02c2e4a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3136,7 +3136,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0402_1005Metric"
+	(footprint "Wsprry Pi:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "54d7e58c-f3a9-42b0-8c4a-0167ba75a5a6")
 		(at 126.490027 81.17 90)
@@ -3344,7 +3344,7 @@
 			(uuid "b9375d0c-c046-4a93-bd27-64acbd5768fd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3356,7 +3356,7 @@
 			)
 		)
 	)
-	(footprint "Inductor_SMD:L_0603_1608Metric"
+	(footprint "Wsprry Pi:L_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "572d53d3-b354-485a-922e-b17d7f9ea935")
 		(at 125.16 79.25)
@@ -3575,7 +3575,7 @@
 			(uuid "2641e18a-a8f5-4664-b3a7-a320b8cbbfe7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3587,7 +3587,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0603_1608Metric"
+	(footprint "Wsprry Pi:R_0603_1608Metric"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "576fbfd8-aaef-45c0-9cb6-1b70d91fe3ff")
@@ -3768,7 +3768,7 @@
 			(uuid "938b6f24-130e-4ad4-959f-532b129441e9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4205,7 +4205,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Resistor_SMD:R_0805_2012Metric"
+	(footprint "Wsprry Pi:R_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "6e9817b6-786d-4e54-a741-6422c081ffac")
 		(at 145.04 88.0875)
@@ -4385,7 +4385,7 @@
 			(uuid "889573e7-fba5-458a-aa21-2acd9775d59b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4397,7 +4397,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0402_1005Metric"
+	(footprint "Wsprry Pi:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "7141542f-194f-49c2-afb9-6c1f2d5b4d26")
 		(at 131.25701 80.69)
@@ -4616,7 +4616,7 @@
 			(uuid "0dd25380-b279-4ede-a100-3ba1b76ff675")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4628,7 +4628,7 @@
 			)
 		)
 	)
-	(footprint "Inductor_SMD:L_0603_1608Metric"
+	(footprint "Wsprry Pi:L_0603_1608Metric"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "7a1a1dc5-f8aa-4c75-8e70-efda240fea9d")
@@ -4848,7 +4848,7 @@
 			(uuid "6f416183-9ab4-44e6-ad9d-8ae6869a8b0c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4860,7 +4860,7 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
+	(footprint "Wsprry Pi:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
 		(uuid "7e8d827e-a7ed-44d4-95fc-a91af7cef820")
 		(at 103.5 96.5)
@@ -4949,7 +4949,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Resistor_SMD:R_0603_1608Metric"
+	(footprint "Wsprry Pi:R_0603_1608Metric"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "898c765c-ee6c-4276-8e9c-d27e913c8905")
@@ -5130,7 +5130,7 @@
 			(uuid "bca36fef-0267-40f9-a088-3b66bee1d625")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5142,7 +5142,7 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
+	(footprint "Wsprry Pi:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
 		(uuid "89efe179-e83b-40db-abd4-3fc7739e57ac")
 		(at 103.5 73.5)
@@ -5231,7 +5231,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "Wsprry Pi:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "908ce112-24ad-4ad1-9d3f-1040d0ac9e9f")
 		(at 124.375027 81.466626 90)
@@ -5439,7 +5439,7 @@
 			(uuid "cda2b3c3-80f8-44c3-84e3-61351a91b3b1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5451,7 +5451,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0603_1608Metric"
+	(footprint "Wsprry Pi:R_0603_1608Metric"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "92bb394a-242a-4517-ae8c-f77a4c46c49b")
@@ -5632,7 +5632,7 @@
 			(uuid "c95dbade-5d17-473f-bdbf-7a2a44efd758")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5644,7 +5644,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "Wsprry Pi:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "9ac26b59-423b-48af-b475-80920800a7a1")
 		(at 140.7625 87.3125 90)
@@ -5852,7 +5852,7 @@
 			(uuid "a668dfd0-ef3e-4b00-9d67-10fb0fc9c18b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5864,7 +5864,7 @@
 			)
 		)
 	)
-	(footprint "Package_SO:MSOP-10_3x3mm_P0.5mm"
+	(footprint "Wsprry Pi:MSOP-10_3x3mm_P0.5mm"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "a7328c1a-537a-4b3a-b32d-e21a87e21b2e")
@@ -6372,7 +6372,7 @@
 			(uuid "34099256-84dc-4251-b1dd-72d25afc5afc")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-10_3x3mm_P0.5mm.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Package_SO.3dshapes/MSOP-10_3x3mm_P0.5mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6384,7 +6384,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "Wsprry Pi:C_0603_1608Metric"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "ab027acc-47ff-4ccc-ba62-72f806411052")
@@ -6593,7 +6593,7 @@
 			(uuid "e0326d7a-4cfc-4ff4-a88a-5c3834f7af40")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6605,7 +6605,7 @@
 			)
 		)
 	)
-	(footprint "Oscillator:Oscillator_SMD_SeikoEpson_TG2520SMN-xxx-xxxxxx-4Pin_2.5x2.0mm"
+	(footprint "Wsprry Pi:Oscillator_SMD_SeikoEpson_TG2520SMN-xxx-xxxxxx-4Pin_2.5x2.0mm"
 		(layer "F.Cu")
 		(uuid "b20fe6dc-a39d-4ec0-aed6-dd7c03bb3803")
 		(at 128.64701 81.386358 90)
@@ -6992,7 +6992,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-89-3"
+	(footprint "Wsprry Pi:SOT-89-3"
 		(layer "F.Cu")
 		(uuid "b4c880d4-b4ab-4eae-a039-640c008d3203")
 		(at 149.6 86.5875)
@@ -7337,7 +7337,7 @@
 			(uuid "59dd4dbf-194b-45f8-9100-77fc0ae0107b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-89-3.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-89-3.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7349,7 +7349,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "Wsprry Pi:R_0402_1005Metric"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "c502f6ad-7da3-4abc-9601-6d7c5e3fe0ae")
@@ -7569,7 +7569,7 @@
 			(uuid "2281509b-a8ca-4281-8926-9cca6a843eb8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7581,7 +7581,7 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
+	(footprint "Wsprry Pi:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
 		(uuid "c5d6c104-5680-4140-a821-8340078f5018")
 		(at 161.5 96.5)
@@ -7670,7 +7670,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "Wsprry Pi:R_0402_1005Metric"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "c665c22c-f397-426b-81bd-160a51b41e92")
@@ -7890,7 +7890,7 @@
 			(uuid "5f9fb069-fdef-4817-9649-fce60ea49151")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7902,7 +7902,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+	(footprint "Wsprry Pi:PinSocket_1x04_P2.54mm_Vertical"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "c76e0a8f-45c2-4267-8208-446062bd9f13")
@@ -8258,7 +8258,7 @@
 			(uuid "7859ae6d-65ac-4477-a82b-17911237ab9d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x04_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x04_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8270,7 +8270,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0402_1005Metric"
+	(footprint "Wsprry Pi:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "cee6ecc6-cd0d-4851-aece-efce2eccf4f4")
 		(at 141.96 87.605 90)
@@ -8478,7 +8478,7 @@
 			(uuid "de09a32b-9a49-4ff1-9e1c-8eb90a0e6291")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8490,7 +8490,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0402_1005Metric"
+	(footprint "Wsprry Pi:C_0402_1005Metric"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "cf0b2f85-d4e5-4c32-a680-e73e8e4d15d2")
@@ -8699,7 +8699,7 @@
 			(uuid "3692365d-3d5b-44ee-a6f6-7d1973613978")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8711,7 +8711,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0805_2012Metric"
+	(footprint "Wsprry Pi:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "d033d28a-cb0c-4924-bfb0-07ef0b6921f8")
 		(at 147.65 90.795 -90)
@@ -8891,7 +8891,7 @@
 			(uuid "3b4ced90-4176-4787-ab36-f52afc16bcd4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8903,7 +8903,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0603_1608Metric"
+	(footprint "Wsprry Pi:R_0603_1608Metric"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "d3ab2223-48ef-41d5-960e-36d3dec6610f")
@@ -9123,7 +9123,7 @@
 			(uuid "da351bfc-a9a1-4b1e-ba21-13c3b9b945ab")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9135,7 +9135,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0402_1005Metric"
+	(footprint "Wsprry Pi:C_0402_1005Metric"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "e2d260c5-76dc-474d-954e-6d5e4c2d3954")
@@ -9344,7 +9344,7 @@
 			(uuid "4c25bd50-2713-423a-ae8a-464d87774b44")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9356,7 +9356,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+	(footprint "Wsprry Pi:PinSocket_1x04_P2.54mm_Vertical"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "e836db4a-6688-476f-94bd-289789424d3a")
@@ -9712,7 +9712,7 @@
 			(uuid "757dc5bf-459d-4100-80c3-0f91efbf4577")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x04_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x04_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9724,7 +9724,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "Wsprry Pi:C_0603_1608Metric"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "ea65598d-7659-4638-ab7d-8ab94e7568d7")
@@ -9944,7 +9944,7 @@
 			(uuid "dc2e609e-b1e9-417f-b9ad-9504c20c398a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9956,7 +9956,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical"
+	(footprint "Wsprry Pi:PinSocket_2x20_P2.54mm_Vertical"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005a793e9f")
 		(at 108.37 74.77 -90)
@@ -10799,7 +10799,7 @@
 			(uuid "f91f8431-b2e1-470b-81cc-9238fbdf7500")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x20_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x20_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)

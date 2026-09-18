@@ -1,5 +1,4 @@
 (sym_lib_table
-  (version 7)
-  (lib (name "New_Library")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/New_Library.kicad_sym")(options "")(descr ""))
-  (lib (name "Wsprry Pi LPF")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/Wsprry-Pi-LPF.kicad_sym")(options "")(descr ""))
+ (version 7)
+ (lib (name "Wsprry Pi LPF")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/Wsprry-Pi-LPF.kicad_sym")(options "")(descr "Project-local symbols"))
 )

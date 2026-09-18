@@ -127,7 +127,7 @@
 	(net 3 "/RF_OUT")
 	(net 4 "Net-(CA3-Pad2)")
 	(net 5 "Net-(CA5-Pad2)")
-	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "0ba6f5b9-0297-4a79-bb5b-897589470b47")
 		(at 149.676165 95.53 -90)
@@ -281,7 +281,7 @@
 			(uuid "d8be7df1-6ee4-4c0e-b307-d4d8672089cc")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -515,7 +515,7 @@
 			(uuid "02d1ca02-b234-4276-9b53-cb6a62d7bc8d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Inductor_THT.3dshapes/L_Axial_L5.3mm_D2.2mm_P7.62mm_Horizontal_Vishay_IM-1.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Inductor_THT.3dshapes/L_Axial_L5.3mm_D2.2mm_P7.62mm_Horizontal_Vishay_IM-1.step"
 			(offset
 				(xyz -5 0 0)
 			)
@@ -749,7 +749,7 @@
 			(uuid "365a376c-ec69-4ddc-9207-135af7a3a1d9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Inductor_THT.3dshapes/L_Axial_L5.3mm_D2.2mm_P7.62mm_Horizontal_Vishay_IM-1.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Inductor_THT.3dshapes/L_Axial_L5.3mm_D2.2mm_P7.62mm_Horizontal_Vishay_IM-1.step"
 			(offset
 				(xyz -5 0 0)
 			)
@@ -761,7 +761,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "2d55f8b0-92a8-446d-8fd3-3cdda249cac0")
 		(at 133.42 95.504327)
@@ -916,7 +916,7 @@
 			(uuid "cfcf2428-0074-49ce-b08e-598e2416e420")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -928,7 +928,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "3e81f3e4-60e5-40f7-a4db-f7aa605363e7")
 		(at 124.262405 95.54 -90)
@@ -1082,7 +1082,7 @@
 			(uuid "ac345d6d-604f-4019-8a8e-f433198faabc")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1317,7 +1317,7 @@
 			(uuid "3e9f6403-f6f9-4259-b820-72ca41cb043f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Inductor_THT.3dshapes/L_Axial_L5.3mm_D2.2mm_P7.62mm_Horizontal_Vishay_IM-1.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Inductor_THT.3dshapes/L_Axial_L5.3mm_D2.2mm_P7.62mm_Horizontal_Vishay_IM-1.step"
 			(offset
 				(xyz -5 0 0)
 			)
@@ -1329,7 +1329,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "5c7a8100-4656-4e27-a799-4b3a0cf1b2c3")
 		(at 124.262405 102.64 90)
@@ -1483,7 +1483,7 @@
 			(uuid "b21604e6-f6f2-4bc6-80ee-31bcd98ab2c1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1495,7 +1495,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "63ca81a6-e0ae-4ec7-87ca-08f9e86323c2")
 		(at 133.43 102.644327)
@@ -1649,7 +1649,7 @@
 			(uuid "58ca7377-4fd7-42c6-aed0-60c17aebb17e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1661,7 +1661,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "6ee6a1ce-241f-4e00-bdc0-5878f133e878")
 		(at 140.54 95.504327 180)
@@ -1815,7 +1815,7 @@
 			(uuid "177d3e02-1005-4185-a260-559f0facd2ba")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1827,7 +1827,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "a5381ebd-b92b-451e-b59c-fb5873b09802")
 		(at 140.53 102.644327 180)
@@ -1982,7 +1982,7 @@
 			(uuid "d5b83649-6a3f-4185-8bc1-69f178194d82")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1994,7 +1994,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "dccbbbb7-d1e9-446b-9b61-b952aa48be14")
 		(at 149.674736 102.63 90)
@@ -2148,7 +2148,7 @@
 			(uuid "b7a856af-f406-4b66-9b99-1ebbc51372bd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W1.6mm_P2.50mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2160,7 +2160,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+	(footprint "Wsprry Pi LPF:PinHeader_1x04_P2.54mm_Vertical"
 		(locked yes)
 		(layer "B.Cu")
 		(uuid "07700b55-2e53-49d0-89f6-5b460f0d4d72")
@@ -2502,7 +2502,7 @@
 			(uuid "f978eaae-f582-4015-8195-36905b606fe7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2514,7 +2514,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+	(footprint "Wsprry Pi LPF:PinHeader_1x04_P2.54mm_Vertical"
 		(locked yes)
 		(layer "B.Cu")
 		(uuid "5e9ffdfe-29fc-44ea-94b2-2ecde5c95f69")
@@ -2856,7 +2856,7 @@
 			(uuid "31521a70-e937-446f-98ed-7cccd762e225")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)

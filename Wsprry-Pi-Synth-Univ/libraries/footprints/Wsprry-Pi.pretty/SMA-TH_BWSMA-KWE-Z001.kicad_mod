@@ -385,7 +385,7 @@
 		(uuid "830c9ac7-d9e7-46c2-ba1b-59f46f599bb3")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/EASYEDA_MODELS/SMA-TH_5P-L14.5-W6.0-H9.6_BWSMA-KWE-Z001.step"
+	(model "${KIPRJMOD}/libraries/3dmodels/vendor/SMA-TH_5P-L14.5-W6.0-H9.6_BWSMA-KWE-Z001.step"
 		(offset
 			(xyz 4.315 0 -3.5)
 		)

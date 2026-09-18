@@ -480,7 +480,7 @@
 		(uuid "dea1a517-4222-48aa-913d-686cc6754f40")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/EASYEDA_MODELS/SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5.step"
+	(model "${KIPRJMOD}/libraries/3dmodels/vendor/SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5.step"
 		(offset
 			(xyz 0 0 0)
 		)
