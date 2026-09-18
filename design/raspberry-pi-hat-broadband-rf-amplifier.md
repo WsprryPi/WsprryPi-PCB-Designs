@@ -8,11 +8,17 @@ Build a compact, solid-state Raspberry Pi HAT that accepts a 3.3 V clock/RF sour
 
 - Cover **135 kHz–144 MHz** with one broadband amplifier circuit.
 - Accept either the intended Pi GPIO clock output or a Si5351 clock output.
+- Design for universal use with every Raspberry Pi model family having the
+  standard 40-pin GPIO header. Testing every model is not required; measured
+  results apply only to the identified hosts tested, and amateur-radio
+  experimentation on other compatible hosts is expected.
 - Use the Pi’s 5 V header supply, with sufficient system power headroom.
-- Provide software-selectable power levels and transmit enable.
+- Provide hardware transmit enable and a fixed full-power revision-one signal path.
 - Require no end-user tuning: no adjustable resistors, capacitors, coils, or manual alignment.
 - Use one fixed DC/DC supply and fixed broadband supply decoupling across the frequency range.
-- Place the selected band LPF immediately after the PA.
+- Place one manually selected plug-in band LPF immediately after the PA using
+  the existing J81/J82 interface; revision one has no automatic filter
+  switching.
 - Allow reduced maximum output at the upper end of the frequency range while preserving coverage and adjustment-free operation.
 
 The proposed PA uses the same broadband circuit and supply decoupling across all bands. The downstream LPF is selected for the operating band.
@@ -24,18 +30,18 @@ Pi GPIO clock OR Si5351 clock
               |
 High-impedance input buffer/level conditioning
               |
-Fixed drive scaling + digitally switched attenuation
+Fixed full-power drive scaling
               |
 THS3491-style wideband power amplifier
               |
-Selected band LPF — immediately after PA
+Manually selected plug-in band LPF at J81/J82 — immediately after PA
               |
 50-ohm load/antenna
 
 Pi header 5 V -> fixed DC/DC -> approximately ±12 to ±15 V
                                 -> local PA rail decoupling
 
-Software -> attenuation selection and hardware transmit enable
+WsprryPi -> hardware transmit enable
 ```
 
 The candidate final stage is a THS3491 current-feedback power amplifier, with THS3491DDA proposed for the prototype. Final component selection, package thermal design, feedback values, input interface, and converter topology remain open.
@@ -46,7 +52,7 @@ The intended inputs are approximately 3.3 V logic, with Pi GPIO drive settings o
 
 Use a high-impedance input, so neither source must directly drive a 50-ohm termination. Input capacitance, trace length, edge quality, and protection loading still matter at 144 MHz. Select or connect only one source at a time.
 
-The interface must remove or accommodate the logic signal’s DC offset and establish a suitable PA drive amplitude. A 3.3 V logic waveform cannot simply feed a gain-of-20 stage without substantial scaling. Any AC coupling must preserve the 135 kHz endpoint. Input conditioning and any attenuation switches must tolerate the actual signal voltage and bias.
+The interface must remove or accommodate the logic signal’s DC offset and establish a suitable PA drive amplitude. A 3.3 V logic waveform cannot simply feed a gain-of-20 stage without substantial scaling. Any AC coupling must preserve the 135 kHz endpoint. Input conditioning and fixed drive scaling must tolerate the actual signal voltage and bias.
 
 ## Wideband PA and output target
 
@@ -65,7 +71,24 @@ For a sine wave into 50 ohms:
 
 At 1 W, the sinusoidal load current is 200 mA peak. A series output-termination resistor would consume voltage headroom and dissipate power; “50-ohm environment” does not mean a 50-ohm series resistor can be added without revisiting the output target.
 
-The output target is **up to 1 W nominal, with approximately 0.5–0.75 W at 144 MHz**. Frequency-dependent ratings require measurement.
+The frozen pre-LPF fundamental-power targets into nominal 50 ohms are **1.0 W
+from 135 kHz through 70 MHz** and **0.5 W above 70 MHz through 144 MHz** during
+continuous transmission across the 4.75–5.25 V input range. A **0.75 W target
+at 144 MHz** remains a stretch goal and shall not be published as a rating
+unless physical testing demonstrates it. Delivered power at J83 is the
+measured pre-LPF power minus the actual selected-filter and interconnect loss.
+
+These ratings apply from 0 degrees C through 40 degrees C ambient at 100%
+transmit duty in still air, without relying on a Pi fan, host airflow, or an
+external heatsink. Board-owned copper, thermal vias, and heat spreading are
+part of the design. Operation above 40 degrees C is experimental and has no
+guaranteed power rating. Protect the THS3491 from exceeding 125 degrees C
+junction temperature, using controlled shutdown when necessary.
+
+Rated power is required only into nominal 50 ohms. The PA must remain stable
+and undamaged during continuous operation below 3:1 VSWR at every reflection
+phase, but reduced power or increased distortion under mismatch is acceptable.
+Open- and short-circuit survival are outside the revision-one requirement.
 
 Using the typical slew rate for an initial estimate:
 
@@ -83,9 +106,31 @@ The inputs are clock waveforms with harmonics. Define measured power consistentl
 
 Generate one fixed bipolar supply from 5 V, initially considering ±12 to ±15 V. Bipolar rails allow ground-centered input/output operation and may avoid a large output coupling capacitor, subject to DC-offset and fault analysis. Do not change supply rails or supply-filter components by band.
 
-Physical header pins **2 and 4** are the 5 V supply connections; they are not programmable GPIO outputs. Use both power pins and multiple ground pins with suitable copper and connector current capacity. Available HAT power depends on the Pi supply, Pi workload, other peripherals, cable drop, board power path, and connector limits.
+Physical header pins **2 and 4** are the only 5 V supply connections; there is
+no separate amplifier power input. They are not programmable GPIO outputs. Use
+both power pins and multiple ground pins with suitable copper and connector
+current capacity. Power the GPIO receiver and control logic from the Pi 3.3 V
+rail and the PA and converter from 5 V. Available HAT power depends on the Pi
+supply, Pi workload, other peripherals, cable drop, board power path, and
+connector limits.
 
-Estimated demand near 1 W RF is **0.4–0.7 A at 5 V**; reserve **about 1 A for the HAT** as a provisional design budget. Include amplifier quiescent consumption, converter losses, buffer/control loads, startup, and sustained transmit duty cycle when establishing the measured requirement.
+No circuit may feed a GPIO or the Pi 3.3 V rail from 5 V or a PA rail. With
+3.3 V absent and 5 V present, HAT-sourced current into GPIO4, GPIO20, GPIO23,
+or the Pi 3.3 V rail shall not exceed 10 uA per connection. Use devices with
+specified partial-power-down or `Ioff` behavior. A missing, falling, or
+undervoltage 3.3 V rail must force the PA disabled while its power rails remain
+energized.
+
+The frozen input range is **4.75–5.25 V** at the HAT connector. Estimated
+demand near 1 W RF is **0.4–0.7 A at 5 V**; use **700 mA** as the full-power
+design target and **1.0 A** as the absolute board limit, both continuously and
+during startup. These limits cover the amplifier, converter losses,
+buffer/control loads, startup, and 100% transmit duty.
+
+Use converter soft-start or input-current limiting so bulk capacitance does not
+exceed the 1.0 A startup limit. An out-of-range or collapsing 5 V input must
+disable the PA cleanly without uncontrolled RF, Pi undervoltage, or a Pi reboot
+caused by the HAT.
 
 For illustration, 1 W RF at 40% complete-chain efficiency requires 0.50 A from 5 V; at 30%, it requires 0.67 A. Efficiency must be established for the implemented circuit and each operating condition.
 
@@ -93,48 +138,109 @@ Raspberry Pi recommends 5 V/3 A for Pi 4 and 5 V/5 A for Pi 5. A Pi 5 system sho
 
 Provide local bulk capacitance and the converter’s specified ceramic input network. An initial bulk-capacitance range is 470–1000 µF; size it against transient response and inrush. Select rail bypass components and placement for impedance across the operating spectrum. This is one fixed supply network, independent of band.
 
-## Power control
+## Revision-one power control
 
-Use digitally switched resistive attenuation ahead of the PA instead of treating source drive-strength settings as calibrated output control.
+Revision one uses fixed full-power drive scaling and contains no
+software-selectable or switched attenuator. WsprryPi's GPIO `Power Level`
+setting controls source-pad drive strength and is not calibrated RF-output
+control; the qualified setting for this board is 2 mA.
 
-| Control bits | Additional attenuation | Relative power | Nominal power if full scale is 1 W |
-| --- | ---: | ---: | ---: |
-| 00 | 0 dB | 100% | 1 W |
-| 01 | 6 dB | 25.1% | 251 mW |
-| 10 | 12 dB | 6.31% | 63 mW |
-| 11 | 18 dB | 1.58% | 16 mW |
+Use a qualified external 50-ohm attenuator after J83 when less power is needed.
+Optional unpopulated input-scaling footprints may be included for future
+engineering only if they add no loading or discontinuity to the assembled
+production path. Selectable attenuation would require a future hardware and
+software revision plus a new RF qualification campaign.
 
-The zero-dB setting means no additional selectable attenuation; fixed input scaling is still required. A 3/6/12 dB arrangement could provide eight settings spanning 21 dB. Actual power scales with the measured full-scale output at each frequency and need not track ideal ratios near compression.
+Use fixed components and, if needed, stored manufacturing calibration
+constants. Provide hardware transmit enable with a defined default-off state.
+The disabled-state target is zero RF. Acceptance means no carrier, harmonic,
+spur, or oscillation detectable above the calibrated conducted measurement
+floor. Record that floor and the complete measurement configuration with each
+result; amplifier power-down alone is not proof of zero output.
 
-Use fixed components and, if needed, stored manufacturing calibration constants. Provide hardware transmit enable with a defined default-off state. Verify off-state RF leakage and switching behavior; amplifier power-down alone is not proof of zero output.
+## Fail-safe hardware transmit enable
+
+Use WsprryPi's active-high BCM GPIO23 on physical pin 16. Connect GPIO23 to the
+input of a [TI SN74LVC1G17DBVR Schmitt buffer](https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf),
+powered from the Pi 3.3 V rail, and fit a 47 kOhm pull-down from that input to
+ground. Connect the buffer output through 3.3 kOhm to the THS3491 PD pin, fit a
+separate 10 kOhm pull-down directly from PD to ground, and tie THS3491 REF to
+ground. Bypass the buffer supply locally with 100 nF.
+
+Monitor the Pi 3.3 V rail with a
+[TI TLV803EB29DBZR](https://www.ti.com/lit/ds/symlink/tlv803e.pdf), using its
+2.93 V threshold and open-drain active-low reset output to clamp THS3491 PD
+low. Bypass the supervisor supply locally with 100 nF. Its startup-release
+delay applies only when the 3.3 V rail becomes valid, not to each transmission.
+
+The noninverting buffer preserves the selected active-high polarity and has
+specified partial-power-down `Ioff` behavior. If 3.3 V is absent, the buffer
+output becomes high impedance and the 10 kOhm PD pull-down holds the PA off.
+The THS3491's specified maximum 25 uA low-state PD bias develops no more than
+0.25 V across that resistor, below its 0.8 V disable threshold. When enabled,
+the 3.3 kOhm/10 kOhm network produces approximately 2.5 V at PD, above the
+1.5 V enable threshold. The series resistor also limits current while the
+supervisor clamps PD during startup or brownout.
+
+This circuit adds no intentional delay to normal GPIO23 transmit switching;
+the PA rails remain established. Qualify PD voltage margin, GPIO and Pi-rail
+back-drive current, power sequencing, supervisor response, and turn-on/turn-off
+timing over voltage, component tolerance, and temperature.
 
 ## LPF immediately after the PA
 
-Place the selected LPF directly after the amplifier with a short RF connection. Its role is to reject source harmonics and amplifier-generated distortion before the antenna. It does not automatically correct an unstable PA or provide broadband impedance matching.
+Retain the existing manual plug-in J81/J82 interface and place the selected LPF
+directly after the amplifier with a short RF connection. J81 pins 2 and 3 carry
+the pre-LPF PA output, J82 pins 2 and 3 carry the post-LPF signal to J83, and
+pins 1 and 4 of both headers are ground. This matches J1 and J2 on the existing
+Wsprry-Pi-LPF board.
+
+Revision one accepts one manually selected, band-specific LPF at a time and
+contains no relay, analog switch, selection GPIO, software selection, or
+automatic filter identification. Disable transmission before installing,
+removing, or changing the filter. Do not transmit without a filter or with a
+filter that is not qualified for the selected frequency and power; revision
+one provides no electronic interlock for this operator requirement.
+
+The LPF rejects source harmonics and amplifier-generated distortion before the
+antenna. It does not automatically correct an unstable PA or provide broadband
+impedance matching. Treat J81 as the pre-LPF measurement plane and J83 as the
+final post-LPF 50-ohm output plane. Record the installed filter identity during
+qualification.
 
 Verify the PA with the actual LPFs: a filter can present a reactive, reflective load outside its passband. The design must tolerate that load while meeting output and spectral requirements. The amplifier hardware remains broadband even though LPF selection is band-dependent.
 
-## Proposed four-layer PCB stackup
+## Required two-layer PCB construction
+
+The amplifier must be implementable on a **two-copper-layer PCB**. The design
+must not depend on internal power, RF-reference, shielding, or thermal planes.
 
 | Layer | Intended use |
 | --- | --- |
-| **L1** | RF components, short RF traces, PA feedback and local decoupling |
-| **L2** | **Primary uninterrupted RF ground reference plane immediately under L1** |
-| **L3** | Power distribution and slow control signals |
-| **L4** | **Secondary ground/shield/thermal/control-return plane**, predominantly ground |
+| **L1** | Components; short RF, PA-feedback, power, and control routes; local ground copper |
+| **L2** | Essentially continuous RF ground reference, control return, shielding, and thermal spreading |
 
-**L2 is the critical RF reference.** Keep it close to L1 and continuous beneath RF routes so high-frequency return currents have short paths directly under those routes. Do not route signals through L2 or split it into power islands. L1-to-L2 dielectric thickness and copper geometry determine RF trace impedance and return-path behavior. At 144 MHz, this geometry is part of the circuit.
+Keep L2 continuous beneath the input path, PA feedback and output paths, RF
+connectors, and DC/DC switching-current loops. Route power and control on L1;
+use L1 zero-ohm bridges where useful rather than cutting the L2 return plane.
+Any unavoidable L2 route requires an explicit return-path review and must not
+cross beneath an RF or fast-switching path.
 
-**L4 supplements L2.** It provides secondary shielding, ground connectivity, thermal spreading, and a nearby return plane for appropriate L3 control routing. It does not replace the adjacent L2 reference for L1 RF traces or the PA feedback/output loop. A few slow signals may use L4 if necessary without compromising required ground continuity.
+Connect L1 ground copper to L2 with dense stitching vias, particularly near the
+PA, RF connectors, board edges, and converter boundary. Use thermal vias and
+back-side copper as permitted by the selected device's exposed-pad electrical
+connection; do not assume that a thermal pad is ground.
 
-Connect L1 ground copper, L2, and L4 with **stitching vias**, particularly near the PA, RF connectors, board edges, and converter boundary. Add nearby ground-return vias wherever an RF route changes layers, and use thermal vias as required by the selected PA package.
-
-Keep feedback components and rail bypass capacitors physically close to the PA. Keep converter switching-current loops compact and away from sensitive RF nodes. Preserve L2 return continuity while following device-specific layout guidance for any strictly local clearance needed beneath sensitive pads; review such clearances explicitly rather than introducing broad plane breaks.
+Keep feedback components and rail bypass capacitors physically close to the PA.
+Keep converter switching-current loops compact and away from sensitive RF
+nodes. Calculate RF trace geometry from the selected two-layer fabrication
+stackup and validate the implemented return paths, temperature, and RF behavior
+on the physical board.
 
 ## Remaining engineering work
 
-1. Select the exact Pi/source interface, buffer, attenuation switches, PA package, fixed rails, and DC/DC topology; complete the component-level schematic.
+1. Select the exact Pi/source interface, buffer, PA package, fixed rails, and DC/DC topology; complete the component-level schematic.
 2. Establish PA gain, fixed input scaling, coupling, feedback stability, and compatibility with the actual LPF impedances.
-3. Measure fundamental power, harmonics, spurs, attenuation accuracy, and transmit-enable leakage across 135 kHz–144 MHz with both source types.
+3. Measure fundamental power, harmonics, spurs, and transmit-enable leakage across 135 kHz–144 MHz with both source types.
 4. Verify 5 V demand, startup/inrush, rail ripple, Pi voltage stability, and PA/converter temperature during sustained operation.
 5. Confirm the upper-frequency derating and publish only measured power ratings.
