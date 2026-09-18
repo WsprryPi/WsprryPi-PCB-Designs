@@ -22,6 +22,9 @@ production/
 fabrication/
 generated/
 
+# Local JLCPCB plugin databases, caches, and generated output in any project.
+jlcpcb/
+
 # macOS and Windows filesystem metadata
 .DS_Store
 .AppleDouble

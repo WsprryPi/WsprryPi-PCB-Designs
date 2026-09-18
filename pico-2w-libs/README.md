@@ -35,4 +35,4 @@ The supplied README identifies the assets as MIT-licensed, but the files include
 
 ## Repository contents
 
-Keep the symbol, footprints, STEP model, and documentation in Git. The repository's root ignore rules exclude KiCad caches, backups, local preferences, and outputs under `generated/`, `production/`, or `fabrication/`. The local ignore rule excludes `jlcpcb/` plugin state and output. Reusable library and model files remain tracked.
+Keep the symbol, footprints, STEP model, and documentation in Git. The repository's root ignore rules exclude KiCad caches, backups, local preferences, `jlcpcb/` plugin state, and outputs under `generated/`, `production/`, or `fabrication/`. Reusable library and model files remain tracked.

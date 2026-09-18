@@ -53,7 +53,7 @@ These documents describe proposed circuits and outstanding engineering requireme
 
 Track design sources, local libraries, reusable models, design calculations, intentional reference exports, and documentation. Preserve legacy cache or rescue libraries required by a design.
 
-Git ignores KiCad local preferences, locks, caches, automatic backups, and `.history`. Put regenerable exports in `generated/`, `production/`, or `fabrication/`. Project-local `jlcpcb/` ignore rules cover plugin state where applicable. See [`.gitignore`](.gitignore).
+The root [`.gitignore`](.gitignore) covers KiCad local preferences, locks, caches, automatic backups, `.history`, and `jlcpcb/` plugin state and output throughout the repository. Put regenerable exports in `generated/`, `production/`, or `fabrication/`.
 
 Publish manufacturing packages with the corresponding GitHub release, identifying the source commit, board revision, KiCad version, and validation status. Keep assembly and fabrication requirements in the project's maintained documentation.
 
