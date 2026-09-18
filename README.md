@@ -15,6 +15,10 @@ the KiCad source files are authoritative.
 | [LPF](Wsprry-Pi-LPF/README.md) | Low-pass filter board | [PDF](Wsprry-Pi-LPF/Wsprry-Pi-LPF.pdf) |
 | [Pico 2W Shield Template](Pico%202W%20Shield%20Template/README.md) | Reusable Pico 2 W shield outline, header interface, and antenna notch | KiCad 10 starter project |
 
+## Standalone library assets
+
+[Pico 2 W library assets](pico-2w-libs/README.md) contains standalone symbols, footprints, and a STEP model. Read its compatibility and provenance limitations before use; the shield projects use their own local libraries.
+
 ## Opening a project
 
 Clone [WsprryPi/WsprryPi-PCB-Designs](https://github.com/WsprryPi/WsprryPi-PCB-Designs)
