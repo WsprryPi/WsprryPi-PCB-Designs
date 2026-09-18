@@ -8318,7 +8318,7 @@
 		(layers "F.Cu" "B.Cu")
 		(tenting
 			(front no)
-			(back no)
+			(back yes)
 		)
 		(capping yes)
 		(covering
@@ -8351,7 +8351,7 @@
 		(layers "F.Cu" "B.Cu")
 		(tenting
 			(front no)
-			(back no)
+			(back yes)
 		)
 		(capping yes)
 		(covering
@@ -8464,7 +8464,7 @@
 		(layers "F.Cu" "B.Cu")
 		(tenting
 			(front no)
-			(back no)
+			(back yes)
 		)
 		(capping yes)
 		(covering
@@ -8597,7 +8597,7 @@
 		(layers "F.Cu" "B.Cu")
 		(tenting
 			(front no)
-			(back no)
+			(back yes)
 		)
 		(capping yes)
 		(covering
@@ -8630,7 +8630,7 @@
 		(layers "F.Cu" "B.Cu")
 		(tenting
 			(front no)
-			(back no)
+			(back yes)
 		)
 		(capping yes)
 		(covering

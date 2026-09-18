@@ -1,11 +1,12 @@
-PICO 2W WATTMETER SHIELD - DEV 2026-09-18
+PICO 2W WATTMETER SHIELD
 Two copper layers; nominal board thickness 1.6 mm.
 
 U1 VIA-IN-PAD - REQUIRED SELECTIVE PROCESS
 Fill with nonconductive epoxy, planarize, and copper-cap ONLY the five
 0.30 mm drilled vias inside U1 exposed GND pad 17 (IPC-4761 Type VII).
-Provide a flat solderable top surface. All other vias retain their specified
-treatment. Do NOT fill all holes of the same diameter.
+Provide a flat solderable top surface. Cover the rear pads of these five vias
+with soldermask; keep the front paddle solderable. Retain epoxy filling and
+copper capping on all five. All other vias retain their specified treatment. Do NOT fill all holes of the same diameter.
 See U1-VIA-TREATMENT.svg for locations; coordinates are in board mm.
 Confirm that the selected two-layer process supports this treatment.
 Request production-file confirmation before manufacture.
