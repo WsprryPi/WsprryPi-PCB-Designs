@@ -10,7 +10,7 @@ These designs require revision-specific validation before production. KiCad sour
 | --- | --- | --- |
 | [Synth Universal](Wsprry-Pi-Synth-Univ/README.md) | Si5351-synthesized transmission board | [Schematic PDF](Wsprry-Pi-Synth-Univ/Wsprry-Pi-Synth-Univ.pdf) |
 | [GPIO Universal](Wsprry-Pi-GPIO-Univ/README.md) | GPIO transmission board | [Schematic PDF](Wsprry-Pi-GPIO-Univ/Wsprry-Pi-GPIO-Univ.pdf) |
-| [LPF](Wsprry-Pi-LPF/README.md) | Low-pass filter board and design workbook | [Schematic PDF](Wsprry-Pi-LPF/Wsprry-Pi-LPF.pdf) |
+| [LPF](Wsprry-Pi-LPF/README.md) | Low-pass filter board and design workbook | Export from the KiCad source |
 | [Pico 2W Wattmeter Shield](Pico%202W%20Wattmeter%20Shield/README.md) | ADL5904 RF detector and ADS1115 ADC shield | See project assembly drawings |
 | [Pico 2W Shield Template](Pico%202W%20Shield%20Template/README.md) | Unwired shield interface, outline, and antenna notch | KiCad project template |
 
