@@ -43,7 +43,7 @@ Synth and GPIO C11 carry a 100 µF value but a 47 µF LCSC part number. Resolve 
 
 These documents describe proposed circuits and outstanding engineering requirements; they do not establish implemented or validated hardware.
 
-- [GPS frequency calibration for Pi and Pico](Wsprry-Pi-Synth-Univ/GPS-FREQUENCY-CALIBRATION.md): LS7366R capture of Si5351 CLK2 against GPS PPS.
+- [GPS frequency calibration for Pi and Pico](design/GPS-FREQUENCY-CALIBRATION.md): LS7366R capture of Si5351 CLK2 against GPS PPS.
 - [Broadband RF amplifier HAT](design/raspberry-pi-hat-broadband-rf-amplifier.md): a proposed clock-input amplifier, power control, and supply architecture.
 
 ## Repository contents
