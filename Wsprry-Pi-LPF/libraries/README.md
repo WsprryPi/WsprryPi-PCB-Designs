@@ -4,11 +4,13 @@ This folder contains the project's symbol library, footprint library, and availa
 
 | Asset | Location | Contents |
 | --- | --- | --- |
-| Symbols | [Symbol library](symbols/Wsprry-Pi-LPF.kicad_sym) | 5 symbols, including all definitions used by the schematic |
+| Symbols | [Symbol library](symbols/Wsprry-Pi-LPF.kicad_sym) | 6 symbols, including all definitions used by the schematic |
 | Footprints | [Footprint library](footprints/Wsprry-Pi-LPF.pretty/) | 6 footprints, including all footprints used by the board |
 | Models | [3D models](3dmodels/) | 3 local STEP files |
 
 The registered library nickname is `Wsprry Pi LPF`. Instance values and purchasing fields remain the design's responsibility; a generic library symbol does not select a component value or supplier part.
+
+The local `PWR_FLAG` symbol documents the externally supplied ground connection at J1.
 
 ## SMA connectors
 

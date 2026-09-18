@@ -674,6 +674,127 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Wsprry Pi LPF:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 105.41 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97d7f0ff-6013-4c93-accc-ef894d938335")
 	)
 	(junction
 		(at 105.41 107.95)
@@ -821,6 +942,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 104.14) (xy 105.41 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7dd00b2-e8c9-4ddc-a41a-4abfb8e3dbbb")
+	)
+	(wire
+		(pts
 			(xy 115.57 90.17) (xy 120.65 90.17)
 		)
 		(stroke
@@ -928,16 +1059,6 @@
 			(type default)
 		)
 		(uuid "537d9e0d-0a98-4a54-847b-bf6e00e3a9ae")
-	)
-	(wire
-		(pts
-			(xy 93.98 107.95) (xy 105.41 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "551460a3-4bfa-4fad-86f7-2486032d6bfd")
 	)
 	(wire
 		(pts
@@ -1439,15 +1560,25 @@
 		)
 		(uuid "b6551f60-2131-4ba6-a5da-d108a3f4c67b")
 	)
-	(label "VDRN_FEED"
-		(at 93.98 107.95 0)
+	(text "VDRN_FEED"
+		(exclude_from_sim no)
+		(at 93.98 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
 		)
-		(uuid "e4380b3d-e1bd-48a6-8ed9-474ab1a16761")
+		(uuid "b7f8c301-9aa7-4b02-a6e2-759841f93cba")
+	)
+	(text "External equipment supplies GND"
+		(exclude_from_sim no)
+		(at 81.28 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ee56dbe5-7ec7-461c-bb2c-273ceb8725c9")
 	)
 	(symbol
 		(lib_id "Wsprry Pi LPF:GND")
@@ -3222,6 +3353,84 @@
 			(project "Wsprry-Pi-LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "CB5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi LPF:PWR_FLAG")
+		(at 101.6 104.14 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d9959110-3de6-4a4c-b975-79cbcabd12b6")
+		(property "Reference" "#FLG01"
+			(at 101.6 106.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 101.6 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 101.6 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9cfd2a46-d0b5-4f9b-b3d5-d8b0f3b769d2")
+		)
+		(instances
+			(project "Wsprry-Pi-LPF"
+				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
