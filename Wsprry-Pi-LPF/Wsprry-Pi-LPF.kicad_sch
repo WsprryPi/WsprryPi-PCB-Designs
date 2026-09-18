@@ -790,11 +790,25 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 105.41 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "97d7f0ff-6013-4c93-accc-ef894d938335")
+	(text "(VDRN_FEED)"
+		(exclude_from_sim no)
+		(at 92.456 107.188 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b7f8c301-9aa7-4b02-a6e2-759841f93cba")
+	)
+	(text "External equipment supplies GND"
+		(exclude_from_sim no)
+		(at 86.36 100.584 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ee56dbe5-7ec7-461c-bb2c-273ceb8725c9")
 	)
 	(junction
 		(at 105.41 107.95)
@@ -851,6 +865,12 @@
 		(uuid "93d19fb4-dd3b-4e03-87e5-eab2f6c9c0ef")
 	)
 	(junction
+		(at 105.41 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97d7f0ff-6013-4c93-accc-ef894d938335")
+	)
+	(junction
 		(at 161.29 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -879,6 +899,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd415513-ac77-4b73-b3d8-ab5e930a0c94")
+	)
+	(wire
+		(pts
+			(xy 99.06 107.95) (xy 105.41 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0173511e-33fb-4773-8d37-5cd5c2577c72")
 	)
 	(wire
 		(pts
@@ -939,16 +969,6 @@
 			(type default)
 		)
 		(uuid "19100929-18eb-46d3-923e-ae976122ac0d")
-	)
-	(wire
-		(pts
-			(xy 101.6 104.14) (xy 105.41 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7dd00b2-e8c9-4ddc-a41a-4abfb8e3dbbb")
 	)
 	(wire
 		(pts
@@ -1432,6 +1452,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 104.14) (xy 105.41 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7dd00b2-e8c9-4ddc-a41a-4abfb8e3dbbb")
+	)
+	(wire
+		(pts
 			(xy 196.85 111.76) (xy 195.58 111.76)
 		)
 		(stroke
@@ -1550,6 +1580,16 @@
 		)
 		(uuid "1f42fc46-7ef1-4193-9c9b-969cd61a9595")
 	)
+	(label "RF_IN"
+		(at 99.06 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2a774e96-681c-40e6-9217-cd68a7bf5a91")
+	)
 	(label "RF_OUT"
 		(at 204.47 107.95 180)
 		(effects
@@ -1559,26 +1599,6 @@
 			(justify right bottom)
 		)
 		(uuid "b6551f60-2131-4ba6-a5da-d108a3f4c67b")
-	)
-	(text "VDRN_FEED"
-		(exclude_from_sim no)
-		(at 93.98 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b7f8c301-9aa7-4b02-a6e2-759841f93cba")
-	)
-	(text "External equipment supplies GND"
-		(exclude_from_sim no)
-		(at 81.28 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ee56dbe5-7ec7-461c-bb2c-273ceb8725c9")
 	)
 	(symbol
 		(lib_id "Wsprry Pi LPF:GND")
@@ -3197,6 +3217,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Wsprry Pi LPF:PWR_FLAG")
+		(at 101.6 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d9959110-3de6-4a4c-b975-79cbcabd12b6")
+		(property "Reference" "#FLG01"
+			(at 101.6 102.235 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 101.6 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 101.6 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9cfd2a46-d0b5-4f9b-b3d5-d8b0f3b769d2")
+		)
+		(instances
+			(project "Wsprry-Pi-LPF"
+				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Wsprry Pi LPF:L")
 		(at 151.13 107.95 0)
 		(unit 1)
@@ -3353,84 +3451,6 @@
 			(project "Wsprry-Pi-LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "CB5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Wsprry Pi LPF:PWR_FLAG")
-		(at 101.6 104.14 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d9959110-3de6-4a4c-b975-79cbcabd12b6")
-		(property "Reference" "#FLG01"
-			(at 101.6 106.045 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 101.6 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.6 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 101.6 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9cfd2a46-d0b5-4f9b-b3d5-d8b0f3b769d2")
-		)
-		(instances
-			(project "Wsprry-Pi-LPF"
-				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
-					(reference "#FLG01")
 					(unit 1)
 				)
 			)
