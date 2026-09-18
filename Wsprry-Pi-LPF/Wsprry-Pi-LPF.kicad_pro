@@ -519,8 +519,12 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "Wsprry Pi LPF"
+    ],
+    "pinned_symbol_libs": [
+      "Wsprry Pi LPF"
+    ]
   },
   "meta": {
     "filename": "Wsprry-Pi-LPF.kicad_pro",
