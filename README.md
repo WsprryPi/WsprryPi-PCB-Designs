@@ -23,7 +23,7 @@ Clone [WsprryPi/WsprryPi-PCB-Designs](https://github.com/WsprryPi/WsprryPi-PCB-D
 | Project | Saved schematic and PCB generator version |
 | --- | --- |
 | Synth Universal, LPF, Pico 2W Wattmeter Shield, Pico 2W Shield Template | KiCad 10.0 |
-| GPIO Universal | KiCad 9.0 |
+| GPIO Universal | KiCad 10.0 |
 
 Project library tables use `${KIPRJMOD}` paths. Keep each project's local libraries together when copying it. The Pico projects use installed KiCad models where their project documentation specifies them.
 
@@ -35,9 +35,9 @@ Synth, GPIO, and LPF include local copies of every symbol and footprint used by 
 - [GPIO library contents and limits](Wsprry-Pi-GPIO-Univ/libraries/README.md)
 - [LPF library contents and limits](Wsprry-Pi-LPF/libraries/README.md)
 
-The edge-launch SMA option in each library is the wattmeter's Adafruit 1865 part. Synth and GPIO currently use a different through-hole SMA connector on their boards. The switch and through-hole SMA models are included locally. Remaining model gaps are the unplaced large through-hole capacitor footprint and Synth's Y21 oscillator; LPF's toroid uses a generic axial-inductor visualization.
+The edge-launch SMA option in each library is the wattmeter's Adafruit 1865 part. GPIO now uses it as J83; Synth still uses a different through-hole SMA connector. The switch and through-hole SMA models are included locally. GPIO C11 now uses a local generic KiCad electrolytic model. Remaining model gaps are the unplaced large through-hole capacitor footprint and Synth's Y21 oscillator; LPF's toroid uses a generic axial-inductor visualization.
 
-Synth and GPIO C11 carry a 100 µF value but a 47 µF LCSC part number. Resolve that purchasing conflict before assembly. Library documentation also records the remaining ERC/DRC findings.
+GPIO C11 is consistently specified as the 47 µF Panasonic part. Synth C11 still carries a 100 µF value with a 47 µF LCSC part number; resolve that purchasing conflict before assembly. Library documentation also records the remaining ERC/DRC findings.
 
 ## Design proposals
 

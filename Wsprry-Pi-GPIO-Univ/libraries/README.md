@@ -6,19 +6,21 @@ This folder contains the project's symbol library, footprint library, and availa
 | --- | --- | --- |
 | Symbols | [Symbol library](symbols/Wsprry-Pi.kicad_sym) | 13 symbols, including all definitions used by the schematic |
 | Footprints | [Footprint library](footprints/Wsprry-Pi.pretty/) | 23 footprints, including all footprints used by the board |
-| Models | [3D models](3dmodels/) | 12 local STEP files |
+| Models | [3D models](3dmodels/) | 13 local STEP files |
 
 The registered library nickname is `Wsprry Pi`. Instance values and purchasing fields remain the design's responsibility; a generic library symbol does not select a component value or supplier part.
 
 ## SMA connectors
 
-[SMA_Adafruit_1865_EdgeMount](footprints/Wsprry-Pi.pretty/SMA_Adafruit_1865_EdgeMount.kicad_mod) is the same edge-launch footprint used by the Pico 2W Wattmeter Shield. Select `Wsprry Pi:SMA_Adafruit_1865` for the matching symbol. Pin 1 is signal and pin 2 is ground. The part is an Adafruit 1865 standard-polarity female SMA connector for a 1.6 mm board, fitted by hand with no paste apertures. Its symbol and footprint are excluded from the assembly BOM by default, and its footprint is excluded from position files. Set these options for the intended assembly process.
+[SMA_Adafruit_1865_EdgeMount](footprints/Wsprry-Pi.pretty/SMA_Adafruit_1865_EdgeMount.kicad_mod) is the same edge-launch footprint used by the Pico 2W Wattmeter Shield and is placed as J83 on this board. Select `Wsprry Pi:SMA_Adafruit_1865` for the matching symbol. Pin 1 is signal and pin 2 is ground. The part is an Adafruit 1865 standard-polarity female SMA connector for a 1.6 mm board, fitted by hand with no paste apertures. Its symbol and footprint are excluded from the assembly BOM, and its footprint is excluded from position files.
 
 The footprint origin is the board seating edge on the signal centerline. Copper extends 0.500–4.064 mm into the board. Place the origin at the board edge and check physical fit against the [Adafruit connector drawing](https://cdn-shop.adafruit.com/product-files/1865/C2387-001_datasheet.pdf). It has no attached 3D model.
 
 ## Model limits
 
 The optional `CAP-TH_L17.5-W11.1-P7.50-D0.8` footprint references an unavailable `EASYEDA_MODELS/CAP-TH_L17.5-W11.1-P7.50-D0.8.step` file. That footprint is not placed on this board.
+
+The C11 footprint references the local [CP_Elec_6.3x5.8 STEP model](3dmodels/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step), copied from the KiCad 3D model library. It represents the nominal 6.3 mm diameter by 5.8 mm package of the selected 47 µF capacitor, but it is a generic visualization and has not been validated against an assembled board.
 
 The switch and through-hole SMA models correspond to [C318884](https://www.lcsc.com/product-detail/C318884.html) and [C496551](https://www.lcsc.com/product-detail/C496551.html). Verify model alignment and physical fit before using the 3D view for mechanical design.
 

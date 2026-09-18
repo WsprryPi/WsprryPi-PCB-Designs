@@ -9,7 +9,7 @@
 		(at 0 -5.5 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "a20181d0-d2e4-4951-8921-695d02374b8d")
+		(uuid "c9ec9ab9-d9d0-4f91-afdd-8bd19f0bd07d")
 		(effects
 			(font
 				(size 1 1)
@@ -21,7 +21,7 @@
 		(at 0 -6.7 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "62d77963-13df-466e-804d-52f0febc6a1b")
+		(uuid "fe34cd8e-75a5-4285-8651-1b037e1c7322")
 		(effects
 			(font
 				(size 1 1)
@@ -33,7 +33,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "e5c8f2fb-2014-4eb7-ac53-4db0b82b0c84")
+		(uuid "52fadad2-21b0-4d22-9c04-32f1127928be")
 		(effects
 			(font
 				(size 1 1)
@@ -41,11 +41,11 @@
 			)
 		)
 	)
-	(property "Description" "Adafruit 1865 SMA female edge-launch connector, 1.6 mm PCB; pin 1 signal, pin 2 ground"
+	(property "Description" "Adafruit 1865 SMA female edge-launch connector, 1.6 mm PCB; hand solder; pin 1 signal, pin 2 ground"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "5c0eed12-5cbf-4d07-a49f-57c3034a6986")
+		(uuid "f3547f9e-a6f5-45d3-b793-7778fa053f06")
 		(effects
 			(font
 				(size 1 1)
@@ -57,7 +57,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "a6e763b4-42cc-4bb1-a1b1-0b0da6416a7d")
+		(uuid "17343dad-fc4b-4584-958e-e9e6483f35a7")
 		(effects
 			(font
 				(size 1 1)
@@ -69,7 +69,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "5bbe4dde-cd45-4f4e-8c38-30b776cd8775")
+		(uuid "b450df60-b4de-4118-beda-36941108bc62")
 		(effects
 			(font
 				(size 1 1)
@@ -87,7 +87,7 @@
 			(type dash)
 		)
 		(layer "Dwgs.User")
-		(uuid "3439cb83-b60a-486a-9b29-1221ef638c40")
+		(uuid "4d3a092c-f6cb-466b-8544-fdfecb55e175")
 	)
 	(fp_rect
 		(start -3.55 -4.4)
@@ -98,7 +98,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "cfc9134e-8602-46b6-9206-b5b7622e5fb3")
+		(uuid "6cc64dc1-ea00-4e9e-b1a0-9d67699372dd")
 	)
 	(fp_rect
 		(start -3.25 -3.9)
@@ -109,7 +109,7 @@
 		)
 		(fill no)
 		(layer "B.Fab")
-		(uuid "cf3b2bc8-4ef9-4e42-a94d-1bf9138cc6c1")
+		(uuid "a1e3967b-255d-439a-9c2a-05ff185d9be6")
 	)
 	(fp_rect
 		(start 2.25 -3.9)
@@ -120,7 +120,7 @@
 		)
 		(fill no)
 		(layer "B.Fab")
-		(uuid "1fee6990-b2b6-4c4f-bb81-18bc6b70fb2d")
+		(uuid "1f478c7d-a159-462e-a64c-86276a3c98cf")
 	)
 	(fp_rect
 		(start -3.25 -3.9)
@@ -131,7 +131,7 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "8b2bd4f8-f2a8-4189-bb28-0af04e7f63d6")
+		(uuid "a4c246dc-b4a1-42f8-ad11-720f94a0cea9")
 	)
 	(fp_rect
 		(start -3.25 0)
@@ -142,7 +142,7 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "5b98ebf2-741b-4c7a-8cef-f3f4ba45fa09")
+		(uuid "901533a1-37ee-46dc-8fd3-9c9fa227983a")
 	)
 	(fp_rect
 		(start -3.05 1.8)
@@ -153,7 +153,7 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "0b4a4a44-8df4-457b-a45e-a909d3b49965")
+		(uuid "86314a6c-d007-43e5-b2bd-cc55cb8d997a")
 	)
 	(fp_rect
 		(start -0.4 -3.9)
@@ -164,7 +164,7 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "55af32df-176a-408a-817c-b60bfd734fec")
+		(uuid "8080a44e-c7b8-467e-bf8a-6bdc9a00c800")
 	)
 	(fp_rect
 		(start 2.25 -3.9)
@@ -175,37 +175,37 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "c5b93f5e-44f6-4bed-9f24-ac2de5fd394f")
+		(uuid "82c4fc24-e26f-4411-ae70-17aac18f1ebd")
 	)
 	(pad "1" smd rect
 		(at 0 -2.282)
 		(size 1.27 3.564)
 		(layers "F.Cu" "F.Mask")
-		(uuid "79b29d50-011e-4283-986b-af19fa51326c")
+		(uuid "74b6bf58-1558-4742-b392-3d0c7df13d66")
 	)
 	(pad "2" smd rect
 		(at -2.54 -2.282)
 		(size 1.524 3.564)
 		(layers "F.Cu" "F.Mask")
-		(uuid "9cbc9827-b886-4aa0-ad66-7f986ed0bd67")
+		(uuid "70bac0fe-71ec-4941-8e8e-18af284d25ab")
 	)
 	(pad "2" smd rect
 		(at -2.54 -2.282)
 		(size 1.524 3.564)
 		(layers "B.Cu" "B.Mask")
-		(uuid "72e89ee5-4a7e-4bcc-8f83-ebd80c563a35")
+		(uuid "6d09def7-ef6a-49f7-bb7a-308bf846a682")
 	)
 	(pad "2" smd rect
 		(at 2.54 -2.282)
 		(size 1.524 3.564)
 		(layers "F.Cu" "F.Mask")
-		(uuid "bc62a441-0df8-4395-88e9-98049b3f503d")
+		(uuid "b558a7f4-64f6-4be5-8a68-8246ba89cbeb")
 	)
 	(pad "2" smd rect
 		(at 2.54 -2.282)
 		(size 1.524 3.564)
 		(layers "B.Cu" "B.Mask")
-		(uuid "093d86bc-5f2d-42e8-9b18-85092c4058b1")
+		(uuid "37a0d60b-a0a4-4ee5-a86b-2d9bd7f468f3")
 	)
 	(embedded_fonts no)
 )
