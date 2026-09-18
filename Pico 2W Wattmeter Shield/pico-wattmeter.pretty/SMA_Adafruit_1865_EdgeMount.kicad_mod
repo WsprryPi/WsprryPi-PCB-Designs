@@ -1,0 +1,211 @@
+(footprint "SMA_Adafruit_1865_EdgeMount"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Adafruit 1865 SMA female edge-launch connector, 1.6 mm PCB; pin 1 signal, pin 2 ground. Adapted from Adafruit public-domain SMA_EDGELAUNCH: https://github.com/adafruit/Adafruit-Eagle-Library ; https://www.adafruit.com/product/1865 ; 0.5 mm copper setback, hand solder, no paste.")
+	(tags "SMA Adafruit 1865 edge launch 1.6mm")
+	(property "Reference" "REF**"
+		(at 0 -5.5 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a20181d0-d2e4-4951-8921-695d02374b8d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SMA_Adafruit_1865_EdgeMount"
+		(at 0 -6.7 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "62d77963-13df-466e-804d-52f0febc6a1b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1865/C2387-001_datasheet.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e5c8f2fb-2014-4eb7-ac53-4db0b82b0c84")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Adafruit 1865 SMA female edge-launch connector, 1.6 mm PCB; pin 1 signal, pin 2 ground"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5c0eed12-5cbf-4d07-a49f-57c3034a6986")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "Adafruit"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a6e763b4-42cc-4bb1-a1b1-0b0da6416a7d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "1865"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5bbe4dde-cd45-4f4e-8c38-30b776cd8775")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.55 0)
+		(end 3.55 0)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(layer "Dwgs.User")
+		(uuid "3439cb83-b60a-486a-9b29-1221ef638c40")
+	)
+	(fp_rect
+		(start -3.55 -4.4)
+		(end 3.55 9.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "cfc9134e-8602-46b6-9206-b5b7622e5fb3")
+	)
+	(fp_rect
+		(start -3.25 -3.9)
+		(end -2.25 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.Fab")
+		(uuid "cf3b2bc8-4ef9-4e42-a94d-1bf9138cc6c1")
+	)
+	(fp_rect
+		(start 2.25 -3.9)
+		(end 3.25 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.Fab")
+		(uuid "1fee6990-b2b6-4c4f-bb81-18bc6b70fb2d")
+	)
+	(fp_rect
+		(start -3.25 -3.9)
+		(end -2.25 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8b2bd4f8-f2a8-4189-bb28-0af04e7f63d6")
+	)
+	(fp_rect
+		(start -3.25 0)
+		(end 3.25 1.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "5b98ebf2-741b-4c7a-8cef-f3f4ba45fa09")
+	)
+	(fp_rect
+		(start -3.05 1.8)
+		(end 3.05 9.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0b4a4a44-8df4-457b-a45e-a909d3b49965")
+	)
+	(fp_rect
+		(start -0.4 -3.9)
+		(end 0.4 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "55af32df-176a-408a-817c-b60bfd734fec")
+	)
+	(fp_rect
+		(start 2.25 -3.9)
+		(end 3.25 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "c5b93f5e-44f6-4bed-9f24-ac2de5fd394f")
+	)
+	(pad "1" smd rect
+		(at 0 -2.282)
+		(size 1.27 3.564)
+		(layers "F.Cu" "F.Mask")
+		(uuid "79b29d50-011e-4283-986b-af19fa51326c")
+	)
+	(pad "2" smd rect
+		(at -2.54 -2.282)
+		(size 1.524 3.564)
+		(layers "F.Cu" "F.Mask")
+		(uuid "9cbc9827-b886-4aa0-ad66-7f986ed0bd67")
+	)
+	(pad "2" smd rect
+		(at -2.54 -2.282)
+		(size 1.524 3.564)
+		(layers "B.Cu" "B.Mask")
+		(uuid "72e89ee5-4a7e-4bcc-8f83-ebd80c563a35")
+	)
+	(pad "2" smd rect
+		(at 2.54 -2.282)
+		(size 1.524 3.564)
+		(layers "F.Cu" "F.Mask")
+		(uuid "bc62a441-0df8-4395-88e9-98049b3f503d")
+	)
+	(pad "2" smd rect
+		(at 2.54 -2.282)
+		(size 1.524 3.564)
+		(layers "B.Cu" "B.Mask")
+		(uuid "093d86bc-5f2d-42e8-9b18-85092c4058b1")
+	)
+	(embedded_fonts no)
+)

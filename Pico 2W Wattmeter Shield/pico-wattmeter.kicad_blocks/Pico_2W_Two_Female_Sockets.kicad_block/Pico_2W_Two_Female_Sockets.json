@@ -1,0 +1,5 @@
+{
+  "description": "Pico 2 W interface, combined 40-pad footprint at 17.78 mm row spacing, two hand-fitted female 1x20 2.54 mm sockets. Sockets and Pico module excluded from factory assembly BOM. Join footprint antenna-notch endpoints to the carrier board edge.",
+  "keywords": "Pico 2 W female socket 1x20 2.54mm 17.78mm antenna notch",
+  "fields": {}
+}

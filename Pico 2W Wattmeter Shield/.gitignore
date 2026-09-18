@@ -1,0 +1,9 @@
+# Local JLCPCB plugin database/cache. Part identifiers and assembly exclusions
+# are maintained in the KiCad source files; do not version this mutable copy.
+/jlcpcb/project.db
+/jlcpcb/project.db-journal
+/jlcpcb/project.db-wal
+/jlcpcb/project.db-shm
+
+# The repository-level .gitignore already covers generated/, production/,
+# fabrication/, KiCad backups, locks, local preferences, and editor/tool state.
