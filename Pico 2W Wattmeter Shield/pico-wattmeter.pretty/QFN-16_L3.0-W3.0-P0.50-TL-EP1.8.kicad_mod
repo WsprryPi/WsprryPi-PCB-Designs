@@ -1076,4 +1076,15 @@
 	)
 	(embedded_fonts no)
 	(attr smd)
+	(model "${KIPRJMOD}/pico-wattmeter.3dshapes/LFCSP-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
