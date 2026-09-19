@@ -198,6 +198,162 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Wsprry Pi:Conn_01x04"
 			(pin_names
 				(offset 1.016)
@@ -1990,6 +2146,430 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Wsprry Pi:LTC6752HS5#TRMPBF"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 3.81 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LTC6752HS5#TRMPBF"
+				(at 3.81 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Wsprry Pi:TSOT-23-5"
+				(at 0 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/6752fc.pdf"
+				(at -1.27 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Analog Devices 280 MHz, 2.9 ns comparator with rail-to-rail inputs and CMOS output, 5-lead TSOT-23, -40 C to 125 C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Analog Devices"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "LTC6752HS5#TRMPBF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C689467"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "single comparator high speed CMOS LTC6752 C689467"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TSOT?23?5*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LTC6752HS5#TRMPBF_1_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "Q"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "VEE"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+IN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-IN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Wsprry Pi:PESD3V6Z1BCSF_ES"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PESD3V6Z1BCSF(ES)"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Wsprry Pi:DFN0603-2L_L0.62-W0.32-P0.40"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C42400210.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "ElecSuper 0.28 pF typical ultra-low-capacitance bidirectional ESD protection diode, DFN0603-2L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "ElecSuper"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "PESD3V6Z1BCSF(ES)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C42400210"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "bidirectional ESD TVS low capacitance C42400210"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "DFN0603?2L*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PESD3V6Z1BCSF_ES_0_1"
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PESD3V6Z1BCSF_ES_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Wsprry Pi:PWR_FLAG"
 			(power global)
 			(pin_numbers
@@ -2702,11 +3282,150 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3V3"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
-	(text_box "GPIO Select"
+	(text_box "GPIO Clock Input Buffer and Conditioning (20-series)"
 		(exclude_from_sim no)
-		(at 39.37 125.73 0)
-		(size 33.02 22.86)
+		(at 133.35 33.02 0)
+		(size 90.17 88.9)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2721,32 +3440,12 @@
 			)
 			(justify left top)
 		)
-		(uuid "02572a2e-9c36-49f3-be6c-bf835273a33e")
-	)
-	(text_box "Pi Control Circuit (10-series PNs)"
-		(exclude_from_sim no)
-		(at 39.37 35.56 0)
-		(size 71.12 85.09)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "0f3bd46f-2228-49f1-87e6-743a757489f0")
+		(uuid "0728b425-5074-4c7b-9d98-ff677bb51b3e")
 	)
 	(text_box "LPF Section (80-series PNs)"
 		(exclude_from_sim no)
-		(at 78.74 125.73 0)
-		(size 49.53 33.02)
+		(at 38.1 124.46 0)
+		(size 50.8 33.02)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2763,11 +3462,43 @@
 		)
 		(uuid "701b6ae6-628b-47a5-a942-8b123528c4d3")
 	)
+	(text_box "GPIIO Bus and Controls (10-Series)"
+		(exclude_from_sim no)
+		(at 38.1 33.02 0)
+		(size 90.17 88.9)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "fb7c0ed0-4213-4611-842f-e349db467f7e")
+	)
+	(junction
+		(at 200.66 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "097314a4-c3ad-4721-a687-0aa2737927f7")
+	)
 	(junction
 		(at 80.01 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "15d3415b-9669-4a65-b76d-ba6e2e1ef6f1")
+	)
+	(junction
+		(at 191.77 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b7c894e-f94a-4f8a-9745-20cf20812eaa")
 	)
 	(junction
 		(at 81.28 73.66)
@@ -2782,10 +3513,16 @@
 		(uuid "2fcdbad9-3676-4ee9-ad72-57777c69f3a8")
 	)
 	(junction
-		(at 109.22 142.24)
+		(at 69.85 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b3a137e-3b37-409f-95f0-68674fd6e4bd")
+	)
+	(junction
+		(at 200.66 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58df5840-960f-4b16-8858-173310e1e7c0")
 	)
 	(junction
 		(at 63.5 109.22)
@@ -2794,10 +3531,22 @@
 		(uuid "61958fd5-f129-4195-9b7a-2bb9b07b5e6b")
 	)
 	(junction
+		(at 186.69 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64a4f8ea-0340-4bfe-aebf-57e822b30532")
+	)
+	(junction
 		(at 62.23 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "93245cab-168d-479a-9f72-c713435e30db")
+	)
+	(junction
+		(at 191.77 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9cc8783c-de89-457f-97fb-3daf7f744516")
 	)
 	(junction
 		(at 63.5 88.9)
@@ -2812,7 +3561,7 @@
 		(uuid "a3a0102f-edf0-4a0e-8e16-6a27bdd872b9")
 	)
 	(junction
-		(at 92.71 142.24)
+		(at 53.34 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad35ca68-7878-45bf-964b-80defc1786b2")
@@ -2830,6 +3579,24 @@
 		(uuid "bfcae0a9-a16c-4799-a8b6-5e0222875506")
 	)
 	(junction
+		(at 163.83 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2fe5d07-3840-4ce4-b3cb-857cf4826d0d")
+	)
+	(junction
+		(at 173.99 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d247082d-6613-4fc3-b4e8-0962ea911026")
+	)
+	(junction
+		(at 191.77 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d468a84a-eb9d-485f-b56f-fffdd87158aa")
+	)
+	(junction
 		(at 81.28 99.06)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -2840,6 +3607,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f1663e2e-ba37-414b-b1a3-fc050659619a")
+	)
+	(junction
+		(at 184.15 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9637930-2a3d-4fd4-8115-13490e44d5a7")
 	)
 	(no_connect
 		(at 78.74 78.74)
@@ -2943,6 +3716,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 106.68) (xy 200.66 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "042cd8ce-173a-4503-8b2f-29e7cbc01b43")
+	)
+	(wire
+		(pts
 			(xy 63.5 88.9) (xy 63.5 106.68)
 		)
 		(stroke
@@ -2963,7 +3746,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 142.24) (xy 124.46 142.24)
+			(xy 83.82 140.97) (xy 85.09 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2973,7 +3756,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 140.97) (xy 109.22 142.24)
+			(xy 69.85 139.7) (xy 69.85 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2983,13 +3766,23 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 78.74) (xy 62.23 78.74)
+			(xy 135.89 78.74) (xy 147.32 78.74)
 		)
 		(stroke
 			(width 0)
-			(type solid)
+			(type default)
 		)
-		(uuid "162c908d-f3a8-450e-8518-4ebd2f7fbf40")
+		(uuid "1058c674-f5e7-4231-8792-098cef7788db")
+	)
+	(wire
+		(pts
+			(xy 193.04 49.53) (xy 191.77 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "188bb069-189e-4ec8-b49f-b1aad7fd87ba")
 	)
 	(wire
 		(pts
@@ -3023,6 +3816,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 49.53) (xy 191.77 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31b8cfcf-0a16-4b28-8b2c-5b064613e9aa")
+	)
+	(wire
+		(pts
 			(xy 58.42 101.6) (xy 66.04 101.6)
 		)
 		(stroke
@@ -3033,7 +3836,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 140.97) (xy 92.71 142.24)
+			(xy 53.34 139.7) (xy 53.34 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3043,13 +3846,33 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 142.24) (xy 109.22 143.51)
+			(xy 165.1 81.28) (xy 163.83 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d5005c2-66f9-42c0-9959-b9d07ca1f666")
+	)
+	(wire
+		(pts
+			(xy 69.85 140.97) (xy 69.85 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3f02fbf9-14dc-4c94-be0a-defbf2fa44e3")
+	)
+	(wire
+		(pts
+			(xy 191.77 92.71) (xy 191.77 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f202570-2432-4b64-a0c6-6ba73bbd3cfb")
 	)
 	(wire
 		(pts
@@ -3073,13 +3896,53 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 139.7) (xy 53.34 139.7)
+			(xy 193.04 72.39) (xy 191.77 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4604a39a-f0d6-4756-832c-c230bb8635cc")
+		(uuid "47b5b086-2e6b-476c-a559-cd9b118b10ba")
+	)
+	(wire
+		(pts
+			(xy 173.99 90.17) (xy 173.99 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b8a123f-5f2f-4fbf-ac3a-60613693db1c")
+	)
+	(wire
+		(pts
+			(xy 212.09 83.82) (xy 220.98 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d611ee2-f47c-4569-aaa4-eb637f1d3dea")
+	)
+	(wire
+		(pts
+			(xy 191.77 60.96) (xy 193.04 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53c7c395-a0f9-4478-9ff0-86e6407afdc0")
+	)
+	(wire
+		(pts
+			(xy 191.77 49.53) (xy 191.77 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56bb5c95-2449-491f-901f-eef2c3987c63")
 	)
 	(wire
 		(pts
@@ -3123,7 +3986,17 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 140.97) (xy 109.22 140.97)
+			(xy 186.69 86.36) (xy 184.15 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6086c73a-5610-41ee-9eab-b37e94106f3d")
+	)
+	(wire
+		(pts
+			(xy 68.58 139.7) (xy 69.85 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3153,6 +4026,46 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 107.95) (xy 186.69 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66d1487f-b50c-472b-a10d-fc89530df51f")
+	)
+	(wire
+		(pts
+			(xy 200.66 72.39) (xy 200.66 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68d44b39-659d-4c54-9b63-dd96e8b29c63")
+	)
+	(wire
+		(pts
+			(xy 199.39 106.68) (xy 200.66 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75bcd20c-981b-4960-84a8-56e34719c350")
+	)
+	(wire
+		(pts
+			(xy 184.15 106.68) (xy 184.15 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a53617f-6d69-4e07-998f-f6e44f558342")
+	)
+	(wire
+		(pts
 			(xy 62.23 78.74) (xy 66.04 78.74)
 		)
 		(stroke
@@ -3163,13 +4076,13 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 134.62) (xy 53.34 134.62)
+			(xy 135.89 83.82) (xy 147.32 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7ea6f957-0be1-4bff-8874-602e421043f0")
+		(uuid "836d27cc-bc7f-40a2-a99e-53b5f1d70eed")
 	)
 	(wire
 		(pts
@@ -3203,6 +4116,16 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 106.68) (xy 191.77 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d2ad78d-42ea-4cab-bf78-385712fc87d5")
+	)
+	(wire
+		(pts
 			(xy 44.45 102.87) (xy 44.45 101.6)
 		)
 		(stroke
@@ -3223,7 +4146,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 142.24) (xy 92.71 143.51)
+			(xy 53.34 140.97) (xy 53.34 142.24)
 		)
 		(stroke
 			(width 0)
@@ -3240,6 +4163,46 @@
 			(type solid)
 		)
 		(uuid "93e9e0ae-d120-4aa4-9207-d35f6b22d604")
+	)
+	(wire
+		(pts
+			(xy 198.12 72.39) (xy 200.66 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9aca6e79-43c5-4661-93c5-5eecb0d69f59")
+	)
+	(wire
+		(pts
+			(xy 184.15 106.68) (xy 186.69 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b99a8a2-b439-4a87-b9ed-da10fc734c26")
+	)
+	(wire
+		(pts
+			(xy 59.69 78.74) (xy 62.23 78.74)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "9f230540-3bf3-489f-b9c3-9d43ad77e327")
+	)
+	(wire
+		(pts
+			(xy 191.77 72.39) (xy 191.77 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2806975-47d5-4405-bee8-ec1bdfc22283")
 	)
 	(wire
 		(pts
@@ -3263,7 +4226,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 146.05) (xy 92.71 147.32)
+			(xy 53.34 144.78) (xy 53.34 146.05)
 		)
 		(stroke
 			(width 0)
@@ -3290,6 +4253,36 @@
 			(type default)
 		)
 		(uuid "ad77a40a-ec7c-45c6-ba96-f198638e5ec0")
+	)
+	(wire
+		(pts
+			(xy 198.12 60.96) (xy 200.66 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae6bcc00-f21b-4f9f-8808-1685396339ad")
+	)
+	(wire
+		(pts
+			(xy 173.99 81.28) (xy 173.99 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b584b161-41a8-481d-855b-0bc74377778d")
+	)
+	(wire
+		(pts
+			(xy 186.69 113.03) (xy 186.69 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bec12d16-e0b9-4575-a899-63832e634c12")
 	)
 	(wire
 		(pts
@@ -3323,13 +4316,33 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 142.24) (xy 124.46 143.51)
+			(xy 85.09 140.97) (xy 85.09 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ccdc631a-e256-4407-99c6-44142d271052")
+	)
+	(wire
+		(pts
+			(xy 175.26 104.14) (xy 175.26 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd93d847-adaa-4df8-83db-008cda64329e")
+	)
+	(wire
+		(pts
+			(xy 201.93 83.82) (xy 204.47 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce48bb49-29b3-4aae-9aac-5fca1c6d40ac")
 	)
 	(wire
 		(pts
@@ -3340,6 +4353,16 @@
 			(type solid)
 		)
 		(uuid "ce5bff1a-1de2-4c93-951d-c2fea3b418e2")
+	)
+	(wire
+		(pts
+			(xy 172.72 81.28) (xy 173.99 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d00a2207-e05d-4b39-8dbf-6d471d835c0a")
 	)
 	(wire
 		(pts
@@ -3373,7 +4396,27 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 143.51) (xy 109.22 143.51)
+			(xy 163.83 82.55) (xy 163.83 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de6ba8de-f46b-42f3-9409-b9ee767160a1")
+	)
+	(wire
+		(pts
+			(xy 200.66 49.53) (xy 200.66 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e29bc5a8-99ee-4194-9b08-c2375a58483b")
+	)
+	(wire
+		(pts
+			(xy 68.58 142.24) (xy 69.85 142.24)
 		)
 		(stroke
 			(width 0)
@@ -3383,7 +4426,17 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 142.24) (xy 118.11 142.24)
+			(xy 173.99 81.28) (xy 186.69 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e72a43a7-211e-4e03-8c26-36cd1e7b4ca6")
+	)
+	(wire
+		(pts
+			(xy 69.85 140.97) (xy 78.74 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3393,7 +4446,17 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 142.24) (xy 92.71 142.24)
+			(xy 200.66 60.96) (xy 200.66 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb2b5149-c630-44d0-a37d-79f2f7749c19")
+	)
+	(wire
+		(pts
+			(xy 41.91 140.97) (xy 53.34 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3403,17 +4466,17 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 137.16) (xy 69.85 137.16)
+			(xy 200.66 49.53) (xy 198.12 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ec9d9679-eb26-433a-98ad-46fe2fb6e1ee")
+		(uuid "ec71c124-45b5-4b38-94af-19aa0f00e380")
 	)
 	(wire
 		(pts
-			(xy 92.71 138.43) (xy 92.71 137.16)
+			(xy 53.34 137.16) (xy 53.34 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3433,13 +4496,33 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 138.43) (xy 107.95 137.16)
+			(xy 68.58 137.16) (xy 68.58 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f3ac988a-8e3a-4771-a2d4-5a9a83cab52f")
+	)
+	(wire
+		(pts
+			(xy 163.83 90.17) (xy 163.83 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4a26930-ee04-4853-97bc-6ad79c932a0a")
+	)
+	(wire
+		(pts
+			(xy 191.77 72.39) (xy 191.77 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4dd5c07-0852-4b09-b079-9baf47707d82")
 	)
 	(wire
 		(pts
@@ -3450,6 +4533,16 @@
 			(type solid)
 		)
 		(uuid "f7d8b50a-ca2a-44f7-bdd0-9c0dd1c18e76")
+	)
+	(wire
+		(pts
+			(xy 176.53 106.68) (xy 175.26 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8da69e5-c6ab-40b4-a8fd-79a1d0b0b7d5")
 	)
 	(wire
 		(pts
@@ -3473,7 +4566,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 146.05) (xy 107.95 147.32)
+			(xy 68.58 144.78) (xy 68.58 146.05)
 		)
 		(stroke
 			(width 0)
@@ -3481,25 +4574,35 @@
 		)
 		(uuid "fe939539-fb13-477d-92e2-47dadeb2baef")
 	)
-	(label "GPIO_CLK4"
-		(at 41.91 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
+	(wire
+		(pts
+			(xy 147.32 81.28) (xy 163.83 81.28)
 		)
-		(uuid "12dd4322-2c83-4896-9e90-959f40eeb297")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff425b51-73ef-4c81-bd73-08211b354177")
 	)
-	(label "3V3"
-		(at 54.61 78.74 0)
+	(label "GPIO_CLK20"
+		(at 135.89 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "78e3024f-4a3f-4841-b2e6-ae526ddd4bf9")
+		(uuid "0cad4aba-7ff9-4ad9-9e58-3ff5ce4da0ed")
+	)
+	(label "GPIO_CLK4"
+		(at 135.89 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "106ba6ed-40ad-4053-87d2-4eac565d6d36")
 	)
 	(label "5V"
 		(at 80.01 58.42 180)
@@ -3522,7 +4625,7 @@
 		(uuid "884a6c92-ac8b-42a1-b20e-a8352b50273e")
 	)
 	(label "RF_OUT"
-		(at 110.49 142.24 0)
+		(at 71.12 140.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3531,18 +4634,8 @@
 		)
 		(uuid "8e7d60dd-50f7-490a-aed3-c48445cb7e50")
 	)
-	(label "GPIO_CLK20"
-		(at 41.91 139.7 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "976b97c9-1f21-497c-9d6b-846dd7f7bee7")
-	)
 	(label "FINAL_OUT"
-		(at 81.28 142.24 0)
+		(at 41.91 140.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3562,18 +4655,28 @@
 		(uuid "aea5b21c-fbfa-493a-945e-96cccc777f0f")
 	)
 	(label "GPIO_CLK"
-		(at 69.85 137.16 180)
+		(at 163.83 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "dab9474d-0b41-49bf-8a04-98f50739b46b")
+		(uuid "dd6b90fa-1555-462c-a717-344f7b32fc01")
+	)
+	(label "BUF_CLK"
+		(at 220.98 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ed950d56-8ead-49ee-a1dd-2723c093d101")
 	)
 	(symbol
-		(lib_id "Wsprry Pi:GND")
-		(at 92.71 137.16 180)
+		(lib_id "power:+3V3")
+		(at 175.26 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3581,9 +4684,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "094f7631-bc1f-45ce-8891-a520ae7fad43")
-		(property "Reference" "#PWR024"
-			(at 92.71 130.81 0)
+		(uuid "06d6a243-918e-4ca8-bcef-a88844d8384d")
+		(property "Reference" "#PWR04"
+			(at 175.26 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3593,8 +4696,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 92.71 133.35 0)
+		(property "Value" "+3V3"
+			(at 175.26 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3604,7 +4707,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 137.16 0)
+			(at 175.26 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3615,7 +4718,84 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 137.16 0)
+			(at 175.26 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 175.26 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6de87044-0440-4c11-9f93-658c787f72ba")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi:GND")
+		(at 53.34 135.89 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "094f7631-bc1f-45ce-8891-a520ae7fad43")
+		(property "Reference" "#PWR024"
+			(at 53.34 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 53.34 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3626,7 +4806,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 92.71 137.16 0)
+			(at 53.34 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3777,6 +4957,164 @@
 			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 59.69 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1baf6943-61ec-4652-a2f1-4ad89099bac1")
+		(property "Reference" "#PWR013"
+			(at 59.69 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 59.69 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 59.69 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c0bf0f2b-ca7b-43bf-be91-066c8b4af695")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi:R_US")
+		(at 180.34 106.68 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c01147a-943d-45b3-81d5-3bb37883ef39")
+		(property "Reference" "R23"
+			(at 180.34 100.33 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 180.34 102.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 180.594 105.664 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 180.34 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "08f35614-87b5-4ace-a35e-8de622ee9b11")
+		)
+		(pin "1"
+			(uuid "6f41aab2-d409-49d1-9d07-fe651c10d1ad")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -4334,6 +5672,201 @@
 		)
 	)
 	(symbol
+		(lib_id "Wsprry Pi:PESD3V6Z1BCSF_ES")
+		(at 163.83 86.36 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "36313ded-feda-4f28-b875-861aa2f1ac92")
+		(property "Reference" "D21"
+			(at 162.052 85.09 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PESD3V6Z1BCSF(ES)"
+			(at 162.052 87.63 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Wsprry Pi:DFN0603-2L_L0.62-W0.32-P0.40"
+			(at 163.83 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C42400210.pdf"
+			(at 163.83 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ElecSuper 0.28 pF typical ultra-low-capacitance bidirectional ESD protection diode, DFN0603-2L"
+			(at 163.83 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "ElecSuper"
+			(at 163.83 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PESD3V6Z1BCSF(ES)"
+			(at 163.83 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C42400210"
+			(at 163.83 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f0a73f5a-f192-4360-b6f3-875732181f1d")
+		)
+		(pin "2"
+			(uuid "90240a9d-32dc-4d96-aa71-26781bc0f97e")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 186.69 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "381c2de1-6a2b-4e9e-9192-5fa31864ea16")
+		(property "Reference" "C21"
+			(at 188.976 109.728 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 188.722 112.268 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 186.69 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 186.69 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d885a45a-4a16-452a-b545-685af1d7c17d")
+		)
+		(pin "2"
+			(uuid "20c19bf7-4c73-4497-b885-ee5d24671b6b")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Wsprry Pi:PWR_FLAG")
 		(at 63.5 109.22 270)
 		(unit 1)
@@ -4414,92 +5947,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 58.42 137.16 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4db17752-f30a-4f19-93c7-a25f6ebb9f75")
-		(property "Reference" "J21"
-			(at 52.324 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "GPIO Select"
-			(at 52.324 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical"
-			(at 58.42 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 58.42 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "eb81701b-157f-44e6-8b82-db5ee6ce80ff")
-		)
-		(pin "3"
-			(uuid "fccf4543-7990-47d4-b0f5-1d2d3dcd90a9")
-		)
-		(pin "1"
-			(uuid "2e3e18f4-fc3b-4e93-862e-312a17882255")
-		)
-		(instances
-			(project "WsprryPi-GPIO-Univ"
-				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
-					(reference "J21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Wsprry Pi:GND")
-		(at 124.46 143.51 0)
+		(at 186.69 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4507,9 +5956,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "5afa24ad-f975-4500-a010-7681e8247e99")
-		(property "Reference" "#PWR022"
-			(at 124.46 149.86 0)
+		(uuid "4231b537-e5cc-4d7f-93d9-90b79dff15ce")
+		(property "Reference" "#PWR08"
+			(at 186.69 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4520,7 +5969,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 147.32 0)
+			(at 186.69 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4530,7 +5979,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 143.51 0)
+			(at 186.69 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4541,7 +5990,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 143.51 0)
+			(at 186.69 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4552,7 +6001,240 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 143.51 0)
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c48af0ba-fadb-4bda-9dcc-ed898ea7f118")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi:R_US")
+		(at 208.28 83.82 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "456435cc-dd5d-4249-9103-5d8a436894e3")
+		(property "Reference" "R25"
+			(at 208.28 78.74 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33Ω"
+			(at 208.28 81.28 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 208.534 82.804 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 208.28 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "865da89e-6a8a-4a8c-8f16-f0959c6747a4")
+		)
+		(pin "1"
+			(uuid "b5a4836c-b5d0-4068-b532-247d87eed5b0")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi:GND")
+		(at 191.77 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "580d6062-086e-40a8-b5fa-6006aa6215ae")
+		(property "Reference" "#PWR012"
+			(at 191.77 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 191.77 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 191.77 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b4609e08-3dba-41f4-9a41-10f4b35e8e68")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi:GND")
+		(at 85.09 142.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5afa24ad-f975-4500-a010-7681e8247e99")
+		(property "Reference" "#PWR022"
+			(at 85.09 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.09 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 85.09 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4575,8 +6257,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi:GND")
-		(at 107.95 137.16 180)
+		(lib_id "Device:C_Small")
+		(at 195.58 72.39 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4584,10 +6266,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "751dea6f-edc0-4728-a40d-219a742e39db")
-		(property "Reference" "#PWR025"
-			(at 107.95 130.81 0)
-			(hide yes)
+		(uuid "67a3e231-dab4-4272-bd2b-ba66704fae84")
+		(property "Reference" "C22"
+			(at 195.58 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4596,8 +6277,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 107.95 133.35 0)
+		(property "Value" "100nF"
+			(at 195.58 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4606,8 +6287,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 107.95 137.16 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 195.58 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4618,7 +6299,87 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 137.16 0)
+			(at 195.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 195.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "daf7addf-1693-461e-80d0-f1b5ef6e9dd4")
+		)
+		(pin "2"
+			(uuid "532a78a2-fa09-49d2-8e0d-6d392ac79ea9")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi:GND")
+		(at 68.58 135.89 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "751dea6f-edc0-4728-a40d-219a742e39db")
+		(property "Reference" "#PWR025"
+			(at 68.58 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 68.58 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4629,7 +6390,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 107.95 137.16 0)
+			(at 68.58 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4653,7 +6414,7 @@
 	)
 	(symbol
 		(lib_id "Wsprry Pi:GND")
-		(at 107.95 147.32 0)
+		(at 163.83 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4661,9 +6422,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "7ae3e8c0-309d-49a6-9008-8c0e7e9a002c")
-		(property "Reference" "#PWR020"
-			(at 107.95 153.67 0)
+		(uuid "7a076e23-598c-4b9d-939e-87aac779914f")
+		(property "Reference" "#PWR015"
+			(at 163.83 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4674,7 +6435,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 107.95 151.13 0)
+			(at 163.83 95.504 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4684,7 +6445,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 147.32 0)
+			(at 163.83 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4695,7 +6456,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 147.32 0)
+			(at 163.83 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4706,7 +6467,84 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 107.95 147.32 0)
+			(at 163.83 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "46a225ef-535b-473e-9d94-29e09654cdda")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi:GND")
+		(at 68.58 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7ae3e8c0-309d-49a6-9008-8c0e7e9a002c")
+		(property "Reference" "#PWR020"
+			(at 68.58 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 68.58 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4730,7 +6568,7 @@
 	)
 	(symbol
 		(lib_id "Wsprry Pi:SMA_Adafruit_1865")
-		(at 120.65 142.24 0)
+		(at 81.28 140.97 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4740,7 +6578,7 @@
 		(dnp no)
 		(uuid "7b13a48c-9cff-4f6d-ab2a-f746003f5ba0")
 		(property "Reference" "J83"
-			(at 122.428 139.7 0)
+			(at 83.058 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4751,7 +6589,7 @@
 			)
 		)
 		(property "Value" "SMA_Adafruit_1865"
-			(at 142.24 143.5099 0)
+			(at 102.87 142.2399 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4763,7 +6601,7 @@
 			)
 		)
 		(property "Footprint" "Wsprry Pi:SMA_Adafruit_1865_EdgeMount"
-			(at 125.73 155.956 0)
+			(at 86.36 154.686 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4774,7 +6612,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1865/C2387-001_datasheet.pdf"
-			(at 125.73 119.126 0)
+			(at 86.36 117.856 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4785,7 +6623,7 @@
 			)
 		)
 		(property "Description" "Adafruit 1865 SMA female edge-launch connector, 1.6 mm PCB; hand solder; pin 1 signal, pin 2 ground"
-			(at 125.73 129.794 0)
+			(at 86.36 128.524 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4796,7 +6634,7 @@
 			)
 		)
 		(property "MPN" "1865"
-			(at 125.73 126.492 0)
+			(at 86.36 125.222 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4807,7 +6645,7 @@
 			)
 		)
 		(property "Manufacturer" "Adafruit"
-			(at 125.73 122.936 0)
+			(at 86.36 121.666 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4909,7 +6747,7 @@
 	)
 	(symbol
 		(lib_id "Wsprry Pi:Conn_01x04")
-		(at 102.87 140.97 0)
+		(at 63.5 139.7 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4920,7 +6758,7 @@
 		(dnp no)
 		(uuid "7e7c959c-0c4b-4e99-a2bb-eddca318095f")
 		(property "Reference" "J82"
-			(at 102.87 135.89 0)
+			(at 63.5 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4930,7 +6768,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04"
-			(at 102.87 149.86 0)
+			(at 63.5 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4941,7 +6779,7 @@
 			)
 		)
 		(property "Footprint" "Wsprry Pi:PinSocket_1x04_P2.54mm_Vertical"
-			(at 102.87 140.97 0)
+			(at 63.5 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4952,7 +6790,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8555109420836753409"
-			(at 102.87 140.97 0)
+			(at 63.5 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4963,7 +6801,7 @@
 			)
 		)
 		(property "Description" "-40℃~+105℃ 1 1x4P 2.54mm 3A 4P Bronze Square Hole Through Hole Top Plugin,P=2.54mm Female Headers ROHS"
-			(at 102.87 140.97 0)
+			(at 63.5 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4974,7 +6812,7 @@
 			)
 		)
 		(property "LCSC_PART" "C2718488"
-			(at 102.87 140.97 0)
+			(at 63.5 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4985,7 +6823,7 @@
 			)
 		)
 		(property "LCSC" "C2718488"
-			(at 102.87 140.97 0)
+			(at 63.5 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4996,7 +6834,7 @@
 			)
 		)
 		(property "JCSC_PART" ""
-			(at 102.87 140.97 0)
+			(at 63.5 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5007,7 +6845,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 102.87 140.97 0)
+			(at 63.5 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5018,7 +6856,7 @@
 			)
 		)
 		(property "LCSCl" ""
-			(at 102.87 140.97 0)
+			(at 63.5 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5348,8 +7186,166 @@
 		)
 	)
 	(symbol
+		(lib_id "Wsprry Pi:R_US")
+		(at 168.91 81.28 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "883d7fe8-64c6-4824-8c25-d41e49815ceb")
+		(property "Reference" "R21"
+			(at 168.91 76.2 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100Ω"
+			(at 168.91 78.74 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 169.164 80.264 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 168.91 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8ae6006f-fbce-4b76-807a-dc21ee420324")
+		)
+		(pin "1"
+			(uuid "1220e852-d3e8-4d6e-8f4a-01580a204862")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi:R_US")
+		(at 195.58 106.68 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8e6f8f2a-29aa-47b9-a075-39cd43fdd34b")
+		(property "Reference" "R24"
+			(at 195.58 101.6 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 195.58 104.14 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 195.834 105.664 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 195.58 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "eff61a89-6677-40eb-b0ae-711d9f2d3a84")
+		)
+		(pin "1"
+			(uuid "9ba2f8a6-5b01-47c2-a6bb-ed34d6c82fe6")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Wsprry Pi:Conn_01x04")
-		(at 97.79 140.97 0)
+		(at 58.42 139.7 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5359,7 +7355,7 @@
 		(dnp no)
 		(uuid "92cd5825-653b-4d7a-aee5-27397ae79caf")
 		(property "Reference" "J81"
-			(at 97.79 135.89 0)
+			(at 58.42 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5369,7 +7365,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04"
-			(at 100.33 143.5099 0)
+			(at 60.96 142.2399 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5381,7 +7377,7 @@
 			)
 		)
 		(property "Footprint" "Wsprry Pi:PinSocket_1x04_P2.54mm_Vertical"
-			(at 97.79 140.97 0)
+			(at 58.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5392,7 +7388,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8555109420836753409"
-			(at 97.79 140.97 0)
+			(at 58.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5403,7 +7399,7 @@
 			)
 		)
 		(property "Description" "-40℃~+105℃ 1 1x4P 2.54mm 3A 4P Bronze Square Hole Through Hole Top Plugin,P=2.54mm Female Headers ROHS"
-			(at 97.79 140.97 0)
+			(at 58.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5414,7 +7410,7 @@
 			)
 		)
 		(property "LCSC_PART" "C2718488"
-			(at 97.79 140.97 0)
+			(at 58.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5425,7 +7421,7 @@
 			)
 		)
 		(property "LCSC" "C2718488"
-			(at 97.79 140.97 0)
+			(at 58.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5436,7 +7432,7 @@
 			)
 		)
 		(property "JCSC_PART" ""
-			(at 97.79 140.97 0)
+			(at 58.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5447,7 +7443,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 97.79 140.97 0)
+			(at 58.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5458,7 +7454,7 @@
 			)
 		)
 		(property "LCSCl" ""
-			(at 97.79 140.97 0)
+			(at 58.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5490,8 +7486,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi:GND")
-		(at 92.71 147.32 0)
+		(lib_id "Device:C_Small")
+		(at 195.58 60.96 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5499,10 +7495,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "aa0986a4-2ca0-4f01-b8c6-75837ccfaf7c")
-		(property "Reference" "#PWR021"
-			(at 92.71 153.67 0)
-			(hide yes)
+		(uuid "95a98c1b-2f23-469a-a9dc-3dca4f84944d")
+		(property "Reference" "C23"
+			(at 195.58 55.88 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5511,8 +7506,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 92.71 151.13 0)
+		(property "Value" "100nF"
+			(at 195.58 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5521,8 +7516,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 92.71 147.32 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 195.58 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5533,7 +7528,87 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 147.32 0)
+			(at 195.58 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 195.58 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "27f6c843-bbcc-45dd-b1fc-e56e0044e513")
+		)
+		(pin "2"
+			(uuid "26cc32ee-11a9-4040-8d9e-adcbc60751ff")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi:GND")
+		(at 173.99 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a270f93d-9b23-49d2-ac86-823be32bd382")
+		(property "Reference" "#PWR03"
+			(at 173.99 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 173.99 95.504 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5544,7 +7619,84 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 92.71 147.32 0)
+			(at 173.99 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c63f299e-2214-4518-b165-a2860bdd1cea")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi:GND")
+		(at 53.34 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aa0986a4-2ca0-4f01-b8c6-75837ccfaf7c")
+		(property "Reference" "#PWR021"
+			(at 53.34 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 53.34 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 53.34 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5561,6 +7713,362 @@
 			(project "WsprryPi-GPIO-Univ"
 				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi:LTC6752HS5#TRMPBF")
+		(at 194.31 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ae576698-7167-44af-8a3f-0bf478f518be")
+		(property "Reference" "U21"
+			(at 196.088 87.122 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LTC6752HS5#TRMPBF"
+			(at 196.088 89.662 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Wsprry Pi:TSOT-23-5"
+			(at 194.31 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/6752fc.pdf"
+			(at 193.04 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Analog Devices 280 MHz, 2.9 ns comparator with rail-to-rail inputs and CMOS output, 5-lead TSOT-23, -40 C to 125 C"
+			(at 194.31 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 194.31 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "LTC6752HS5#TRMPBF"
+			(at 194.31 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C689467"
+			(at 194.31 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "bdaff2a2-e9a7-4524-b8a6-97cec1fc26f7")
+		)
+		(pin "4"
+			(uuid "badd119d-5a4a-45ed-96a4-579277bc64e6")
+		)
+		(pin "1"
+			(uuid "000111cd-8e2c-494a-b87a-6468a32914af")
+		)
+		(pin "2"
+			(uuid "a6dae825-4cfc-4bc0-95df-c827273f0593")
+		)
+		(pin "5"
+			(uuid "f90f77d9-7a8f-4aba-8e96-a68943320213")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "U21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi:GND")
+		(at 200.66 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b22c4fab-1c7b-4470-b14a-a2dda8dcbaab")
+		(property "Reference" "#PWR014"
+			(at 200.66 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9dd90230-a3f7-47ec-a3f4-1575e41d0347")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 195.58 49.53 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b6c6816e-d2c3-4e72-a3bd-345655fa46d4")
+		(property "Reference" "C24"
+			(at 195.58 44.45 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2µF"
+			(at 195.58 46.99 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 195.58 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 195.58 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a8804b2e-10bb-4d5c-8524-1e4a49f39d63")
+		)
+		(pin "2"
+			(uuid "b994a565-c4f8-498a-8153-019e95ad06ee")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi:GND")
+		(at 200.66 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bccb28da-3c59-40d4-932d-fe8843484812")
+		(property "Reference" "#PWR011"
+			(at 200.66 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d5b9a079-5d85-41fa-866f-a445a07c9273")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5646,36 +8154,270 @@
 			)
 		)
 	)
-	(group ""
-		(uuid "2499dca1-56c4-4774-ae7a-bf863c4d1416")
-		(members "02572a2e-9c36-49f3-be6c-bf835273a33e" "12dd4322-2c83-4896-9e90-959f40eeb297"
-			"4604a39a-f0d6-4756-832c-c230bb8635cc" "4db17752-f30a-4f19-93c7-a25f6ebb9f75"
-			"7ea6f957-0be1-4bff-8874-602e421043f0" "976b97c9-1f21-497c-9d6b-846dd7f7bee7"
-			"dab9474d-0b41-49bf-8a04-98f50739b46b" "ec9d9679-eb26-433a-98ad-46fe2fb6e1ee"
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 152.4 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d6a69be3-1057-41dc-b9bc-11ba71b97bea")
+		(property "Reference" "J21"
+			(at 147.828 73.152 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "GPIO Select"
+			(at 147.828 75.692 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical"
+			(at 152.4 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 152.4 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "90fcf9db-7055-4509-a802-325ee0d06c34")
+		)
+		(pin "3"
+			(uuid "df8d3480-329c-4364-87df-92e5c170454d")
+		)
+		(pin "1"
+			(uuid "94803a71-bc52-48f9-9d45-97c10e530074")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "J21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 191.77 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "daca7685-b0b5-4d3a-bbd6-594fc571063c")
+		(property "Reference" "#PWR010"
+			(at 191.77 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 191.77 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 191.77 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d2a184c-239a-4d23-95bc-336040cd0b78")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wsprry Pi:R_US")
+		(at 173.99 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fe2c2103-2306-4997-910a-686b35ebf72f")
+		(property "Reference" "R22"
+			(at 172.212 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100kΩ"
+			(at 172.212 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 175.006 86.614 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 173.99 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "35f2625f-f267-44e0-ae89-2051dec2fb2d")
+		)
+		(pin "1"
+			(uuid "b128ae14-33ad-43f3-8a45-ec2e2d4d64fc")
+		)
+		(instances
+			(project "WsprryPi-GPIO-Univ"
+				(path "/60ef3af7-8b10-418f-8641-22e32be97950"
+					(reference "R22")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(group ""
 		(uuid "46f24402-cce7-4458-a40c-c5fe42e7afda")
 		(members "016b165a-636b-40e9-8b49-683fb0728ebb" "085303b7-29b0-4b18-8109-e814c2b376cc"
 			"0d567ccd-12f5-45b0-bc1e-037ab7c571c7" "0e4f9617-b6ec-492f-bfc5-e1316717786f"
-			"0f3bd46f-2228-49f1-87e6-743a757489f0" "0f779924-db05-4e67-b7e8-6a1c5897c033"
-			"1386a18d-115c-49a7-98fb-e95d779814a5" "15d3415b-9669-4a65-b76d-ba6e2e1ef6f1"
-			"162c908d-f3a8-450e-8518-4ebd2f7fbf40" "1dda1cab-75e2-45fa-9b30-867a31b509b3"
-			"1e3c531d-ee0e-4b7b-9916-dab8211e859a" "1ebedef2-cdf0-41e9-82cd-8d1a52babc3a"
-			"27a5274c-c1a3-4e26-8d0b-657f0befbe57" "285ce3ca-690c-413c-8bb9-10c2c1ac1b1b"
-			"2a34f77c-792c-49c8-9a0b-e6074a539f84" "2ae41727-071f-4a6f-88f6-92768c14a0e5"
-			"2f93152c-d7b2-4562-85e4-5ef557d3eccc" "2fcdbad9-3676-4ee9-ad72-57777c69f3a8"
-			"30399871-10ec-4e10-9e83-cb507507a28c" "30b30fef-1235-4900-bddf-1825d1d4fb48"
-			"336352f0-969d-473f-986c-d267c38b707b" "35e870f1-d30d-4a39-8d84-fe966b587ec2"
-			"38a3e0b1-a7a8-427d-8e9b-3b8754cf1d72" "3b812c01-88bd-4e1c-8384-741a3f5aa798"
-			"42cf10b6-7b36-426b-8ee3-716855727ae0" "43d195cd-3610-47fb-9938-4c9851ef7f33"
-			"457dcb75-d0fd-4a5f-8f9f-397edb6153d1" "45e12e1e-c940-4de5-83db-afe04a53b764"
-			"463a98da-aef4-42cf-ad1a-4cc68b23297c" "59d6ee69-ae80-4763-8039-37cf4692cc2b"
-			"59eb5b61-0836-4c5e-ba4a-ab072ec9a319" "5a2a12e3-8c5a-42f0-827b-76cba4824348"
-			"5c395136-6e19-4c8f-8a73-55a36c8ff962" "5ceb066d-640c-47f4-ad59-37fc573f8d05"
-			"610095cb-f0fb-4cf0-837c-5f05ea1411f2" "61958fd5-f129-4195-9b7a-2bb9b07b5e6b"
-			"633fb561-3d6d-4cb9-87d9-3ef3cda73292" "6fc9eab7-9524-4a61-9cfc-574cfc59251b"
-			"70777117-a075-46ae-b05f-70fdfb400b5e" "78e3024f-4a3f-4841-b2e6-ae526ddd4bf9"
+			"0f779924-db05-4e67-b7e8-6a1c5897c033" "1386a18d-115c-49a7-98fb-e95d779814a5"
+			"15d3415b-9669-4a65-b76d-ba6e2e1ef6f1" "1baf6943-61ec-4652-a2f1-4ad89099bac1"
+			"1dda1cab-75e2-45fa-9b30-867a31b509b3" "1e3c531d-ee0e-4b7b-9916-dab8211e859a"
+			"1ebedef2-cdf0-41e9-82cd-8d1a52babc3a" "27a5274c-c1a3-4e26-8d0b-657f0befbe57"
+			"285ce3ca-690c-413c-8bb9-10c2c1ac1b1b" "2a34f77c-792c-49c8-9a0b-e6074a539f84"
+			"2ae41727-071f-4a6f-88f6-92768c14a0e5" "2f93152c-d7b2-4562-85e4-5ef557d3eccc"
+			"2fcdbad9-3676-4ee9-ad72-57777c69f3a8" "30399871-10ec-4e10-9e83-cb507507a28c"
+			"30b30fef-1235-4900-bddf-1825d1d4fb48" "336352f0-969d-473f-986c-d267c38b707b"
+			"35e870f1-d30d-4a39-8d84-fe966b587ec2" "38a3e0b1-a7a8-427d-8e9b-3b8754cf1d72"
+			"3b812c01-88bd-4e1c-8384-741a3f5aa798" "42cf10b6-7b36-426b-8ee3-716855727ae0"
+			"43d195cd-3610-47fb-9938-4c9851ef7f33" "457dcb75-d0fd-4a5f-8f9f-397edb6153d1"
+			"45e12e1e-c940-4de5-83db-afe04a53b764" "463a98da-aef4-42cf-ad1a-4cc68b23297c"
+			"59d6ee69-ae80-4763-8039-37cf4692cc2b" "59eb5b61-0836-4c5e-ba4a-ab072ec9a319"
+			"5a2a12e3-8c5a-42f0-827b-76cba4824348" "5c395136-6e19-4c8f-8a73-55a36c8ff962"
+			"5ceb066d-640c-47f4-ad59-37fc573f8d05" "610095cb-f0fb-4cf0-837c-5f05ea1411f2"
+			"61958fd5-f129-4195-9b7a-2bb9b07b5e6b" "633fb561-3d6d-4cb9-87d9-3ef3cda73292"
+			"6fc9eab7-9524-4a61-9cfc-574cfc59251b" "70777117-a075-46ae-b05f-70fdfb400b5e"
 			"7b111ecc-3810-4491-a992-efff7694cebd" "7b85e855-df70-4ceb-9c91-2996233265e9"
 			"7e5912bc-7b89-41e7-a264-0f8723042b82" "82763531-cf30-4aa8-b522-ebd5edc93fa0"
 			"85733317-795b-4c87-8146-dafbfebdbafc" "8613454e-2e04-4d5e-8c20-8dcc8c89298e"
@@ -5685,22 +8427,22 @@
 			"8d86a07b-34a7-48de-afb4-31ed155806d4" "914316ae-3926-4e2f-be7f-084b7c78db43"
 			"93245cab-168d-479a-9f72-c713435e30db" "93e9e0ae-d120-4aa4-9207-d35f6b22d604"
 			"9e909732-25e7-4d53-87a4-f031d3cd6d6d" "9f0aed22-75b0-40d4-b2f8-d14981d670c7"
-			"a2cd4ec5-aaba-4288-9d43-38e010153cd3" "a3a0102f-edf0-4a0e-8e16-6a27bdd872b9"
-			"a3bf9bbc-152f-486e-b491-448717fef32e" "a60bb854-4184-40ae-9303-1cfe55bf2782"
-			"a9e6b900-cb0c-442f-9fb3-f19b7c5637cf" "aaa65e65-a1b1-4252-a603-47281cf07e70"
-			"ad77a40a-ec7c-45c6-ba96-f198638e5ec0" "aea5b21c-fbfa-493a-945e-96cccc777f0f"
-			"b59d4e17-e5c7-4d89-95af-192fec2f512a" "be2b193e-f350-44ea-96a5-eb7a6946678a"
-			"bf04a7f9-e07a-48a8-895a-ba57ae9f2e18" "bfcae0a9-a16c-4799-a8b6-5e0222875506"
-			"c0ecab92-c92e-4d28-80ae-db42113db35b" "c5d5045f-2ca8-4a48-a7f3-d89bb38a5d29"
-			"c61caf35-ee56-4300-aa99-5d8797da6400" "c864f620-de63-4cff-9488-9be4b5d7602e"
-			"ce5bff1a-1de2-4c93-951d-c2fea3b418e2" "d05c41db-3d05-4680-a4c3-8edd5c55a694"
-			"d1c3e9f5-fc54-4522-a1fc-4e6535246356" "d3213f8b-8c59-4b21-ae4f-5adb3d1946b9"
-			"d6fc60fd-4229-4e00-9871-1ec13886967a" "da4ef76a-1954-4b7e-87ab-0274d73567d7"
-			"de49a88d-a5be-461c-a419-e4355459683a" "dfe44264-1c33-4e51-ad52-6ce4bbf8fafa"
-			"f093e7b9-59f9-44de-aa85-30b3970b244d" "f1663e2e-ba37-414b-b1a3-fc050659619a"
-			"f1b686e6-93d7-4ed3-bdcb-e3ad506a3347" "f7d8b50a-ca2a-44f7-bdd0-9c0dd1c18e76"
-			"fb2678a0-43db-411c-b5b1-475ed1173fd7" "fd284396-32a8-49cc-a72c-ac76e22e84e5"
-			"fd6e2428-b55f-470f-9c18-ef11795ea43e"
+			"9f230540-3bf3-489f-b9c3-9d43ad77e327" "a2cd4ec5-aaba-4288-9d43-38e010153cd3"
+			"a3a0102f-edf0-4a0e-8e16-6a27bdd872b9" "a3bf9bbc-152f-486e-b491-448717fef32e"
+			"a60bb854-4184-40ae-9303-1cfe55bf2782" "a9e6b900-cb0c-442f-9fb3-f19b7c5637cf"
+			"aaa65e65-a1b1-4252-a603-47281cf07e70" "ad77a40a-ec7c-45c6-ba96-f198638e5ec0"
+			"aea5b21c-fbfa-493a-945e-96cccc777f0f" "b59d4e17-e5c7-4d89-95af-192fec2f512a"
+			"be2b193e-f350-44ea-96a5-eb7a6946678a" "bf04a7f9-e07a-48a8-895a-ba57ae9f2e18"
+			"bfcae0a9-a16c-4799-a8b6-5e0222875506" "c0ecab92-c92e-4d28-80ae-db42113db35b"
+			"c5d5045f-2ca8-4a48-a7f3-d89bb38a5d29" "c61caf35-ee56-4300-aa99-5d8797da6400"
+			"c864f620-de63-4cff-9488-9be4b5d7602e" "ce5bff1a-1de2-4c93-951d-c2fea3b418e2"
+			"d05c41db-3d05-4680-a4c3-8edd5c55a694" "d1c3e9f5-fc54-4522-a1fc-4e6535246356"
+			"d3213f8b-8c59-4b21-ae4f-5adb3d1946b9" "d6fc60fd-4229-4e00-9871-1ec13886967a"
+			"da4ef76a-1954-4b7e-87ab-0274d73567d7" "de49a88d-a5be-461c-a419-e4355459683a"
+			"dfe44264-1c33-4e51-ad52-6ce4bbf8fafa" "f093e7b9-59f9-44de-aa85-30b3970b244d"
+			"f1663e2e-ba37-414b-b1a3-fc050659619a" "f1b686e6-93d7-4ed3-bdcb-e3ad506a3347"
+			"f7d8b50a-ca2a-44f7-bdd0-9c0dd1c18e76" "fb2678a0-43db-411c-b5b1-475ed1173fd7"
+			"fd284396-32a8-49cc-a72c-ac76e22e84e5" "fd6e2428-b55f-470f-9c18-ef11795ea43e"
 		)
 	)
 	(group ""
@@ -5719,6 +8461,53 @@
 			"e9a5d4f5-669b-49dc-8987-aedc20d8bbca" "eb7b309c-af6d-4d58-83a2-ca7eaab342b6"
 			"f019da6e-0ac4-4752-a500-aaaf8e876cf5" "f3ac988a-8e3a-4771-a2d4-5a9a83cab52f"
 			"fe939539-fb13-477d-92e2-47dadeb2baef"
+		)
+	)
+	(group ""
+		(uuid "cc9e5706-4478-47fc-b214-8df075b1c267")
+		(members "0728b425-5074-4c7b-9d98-ff677bb51b3e")
+	)
+	(group ""
+		(uuid "dd1038c6-466a-4a6a-8170-3ef5d45bf243")
+		(members "fb7c0ed0-4213-4611-842f-e349db467f7e")
+	)
+	(group ""
+		(uuid "f2a6f580-f678-42db-ac2c-84da940ffbd6")
+		(members "042cd8ce-173a-4503-8b2f-29e7cbc01b43" "06d6a243-918e-4ca8-bcef-a88844d8384d"
+			"097314a4-c3ad-4721-a687-0aa2737927f7" "0cad4aba-7ff9-4ad9-9e58-3ff5ce4da0ed"
+			"1058c674-f5e7-4231-8792-098cef7788db" "106ba6ed-40ad-4053-87d2-4eac565d6d36"
+			"188bb069-189e-4ec8-b49f-b1aad7fd87ba" "1b7c894e-f94a-4f8a-9745-20cf20812eaa"
+			"2c01147a-943d-45b3-81d5-3bb37883ef39" "31b8cfcf-0a16-4b28-8b2c-5b064613e9aa"
+			"36313ded-feda-4f28-b875-861aa2f1ac92" "381c2de1-6a2b-4e9e-9192-5fa31864ea16"
+			"3d5005c2-66f9-42c0-9959-b9d07ca1f666" "3f202570-2432-4b64-a0c6-6ba73bbd3cfb"
+			"4231b537-e5cc-4d7f-93d9-90b79dff15ce" "456435cc-dd5d-4249-9103-5d8a436894e3"
+			"47b5b086-2e6b-476c-a559-cd9b118b10ba" "4b8a123f-5f2f-4fbf-ac3a-60613693db1c"
+			"4d611ee2-f47c-4569-aaa4-eb637f1d3dea" "53c7c395-a0f9-4478-9ff0-86e6407afdc0"
+			"56bb5c95-2449-491f-901f-eef2c3987c63" "580d6062-086e-40a8-b5fa-6006aa6215ae"
+			"58df5840-960f-4b16-8858-173310e1e7c0" "6086c73a-5610-41ee-9eab-b37e94106f3d"
+			"64a4f8ea-0340-4bfe-aebf-57e822b30532" "66d1487f-b50c-472b-a10d-fc89530df51f"
+			"67a3e231-dab4-4272-bd2b-ba66704fae84" "68d44b39-659d-4c54-9b63-dd96e8b29c63"
+			"75bcd20c-981b-4960-84a8-56e34719c350" "7a076e23-598c-4b9d-939e-87aac779914f"
+			"7a53617f-6d69-4e07-998f-f6e44f558342" "836d27cc-bc7f-40a2-a99e-53b5f1d70eed"
+			"883d7fe8-64c6-4824-8c25-d41e49815ceb" "8d2ad78d-42ea-4cab-bf78-385712fc87d5"
+			"8e6f8f2a-29aa-47b9-a075-39cd43fdd34b" "95a98c1b-2f23-469a-a9dc-3dca4f84944d"
+			"9aca6e79-43c5-4661-93c5-5eecb0d69f59" "9b99a8a2-b439-4a87-b9ed-da10fc734c26"
+			"9cc8783c-de89-457f-97fb-3daf7f744516" "a270f93d-9b23-49d2-ac86-823be32bd382"
+			"a2806975-47d5-4405-bee8-ec1bdfc22283" "ae576698-7167-44af-8a3f-0bf478f518be"
+			"ae6bcc00-f21b-4f9f-8808-1685396339ad" "b22c4fab-1c7b-4470-b14a-a2dda8dcbaab"
+			"b584b161-41a8-481d-855b-0bc74377778d" "b6c6816e-d2c3-4e72-a3bd-345655fa46d4"
+			"bccb28da-3c59-40d4-932d-fe8843484812" "bec12d16-e0b9-4575-a899-63832e634c12"
+			"c2fe5d07-3840-4ce4-b3cb-857cf4826d0d" "cc9e5706-4478-47fc-b214-8df075b1c267"
+			"cd93d847-adaa-4df8-83db-008cda64329e" "ce48bb49-29b3-4aae-9aac-5fca1c6d40ac"
+			"d00a2207-e05d-4b39-8dbf-6d471d835c0a" "d247082d-6613-4fc3-b4e8-0962ea911026"
+			"d468a84a-eb9d-485f-b56f-fffdd87158aa" "d6a69be3-1057-41dc-b9bc-11ba71b97bea"
+			"daca7685-b0b5-4d3a-bbd6-594fc571063c" "dd6b90fa-1555-462c-a717-344f7b32fc01"
+			"de6ba8de-f46b-42f3-9409-b9ee767160a1" "e29bc5a8-99ee-4194-9b08-c2375a58483b"
+			"e72a43a7-211e-4e03-8c26-36cd1e7b4ca6" "eb2b5149-c630-44d0-a37d-79f2f7749c19"
+			"ec71c124-45b5-4b38-94af-19aa0f00e380" "ed950d56-8ead-49ee-a1dd-2723c093d101"
+			"f4a26930-ee04-4853-97bc-6ad79c932a0a" "f4dd5c07-0852-4b09-b079-9baf47707d82"
+			"f8da69e5-c6ab-40b4-a8fd-79a1d0b0b7d5" "f9637930-2a3d-4fd4-8115-13490e44d5a7"
+			"fe2c2103-2306-4997-910a-686b35ebf72f" "ff425b51-73ef-4c81-bd73-08211b354177"
 		)
 	)
 	(sheet_instances
