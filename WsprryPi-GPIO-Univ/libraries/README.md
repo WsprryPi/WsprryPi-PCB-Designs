@@ -4,9 +4,9 @@ This folder contains the project's symbol library, footprint library, and availa
 
 | Asset | Location | Contents |
 | --- | --- | --- |
-| Symbols | [Symbol library](symbols/Wsprry-Pi.kicad_sym) | 13 symbols, including all definitions used by the schematic |
-| Footprints | [Footprint library](footprints/Wsprry-Pi.pretty/) | 23 footprints, including all footprints used by the board |
-| Models | [3D models](3dmodels/) | 13 local STEP files |
+| Symbols | [Symbol library](symbols/Wsprry-Pi.kicad_sym) | 15 symbols, including all definitions used by the schematic and the two amplifier-input parts below |
+| Footprints | [Footprint library](footprints/Wsprry-Pi.pretty/) | 25 footprints, including all footprints used by the board and the two amplifier-input packages below |
+| Models | [3D models](3dmodels/) | 15 local STEP files |
 
 The registered library nickname is `Wsprry Pi`. Instance values and purchasing fields remain the design's responsibility; a generic library symbol does not select a component value or supplier part.
 
@@ -17,6 +17,24 @@ The registered library nickname is `Wsprry Pi`. Instance values and purchasing f
 The footprint origin is the board seating edge on the signal centerline. Copper extends 0.500–4.064 mm into the board. Place the origin at the board edge and check physical fit against the [Adafruit connector drawing](https://cdn-shop.adafruit.com/product-files/1865/C2387-001_datasheet.pdf). It has no attached 3D model.
 
 ## Model limits
+
+The project library includes unplaced assets for the proposed amplifier input:
+
+- `C689467` is Analog Devices `LTC6752HS5#TRMPBF`. Its local symbol follows the
+  manufacturer's TSOT-23-5 pinout, and `TSOT-23-5` plus its STEP model are
+  project-local copies of the KiCad library assets. See the
+  [Analog Devices datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/6752fc.pdf).
+- `C42400210` is ElecSuper `PESD3V6Z1BCSF(ES)`. Its bidirectional TVS symbol
+  identifies the exact MPN and LCSC number. The
+  `DFN0603-2L_L0.62-W0.32-P0.40` footprint implements the 0.40 mm-pitch,
+  0.25 mm by 0.32 mm pad recommendation in the manufacturer's Rev 1.2
+  [datasheet](https://www.lcsc.com/datasheet/C42400210.pdf). Its supplier STEP
+  model is stored locally.
+
+These assets are not placed on the schematic or board. The DFN0603-2L package
+is exceptionally small; verify stencil capability, assembly yield, model
+alignment, and physical fit before production. The STEP models are
+visualization aids, not physical-fit evidence.
 
 The optional `CAP-TH_L17.5-W11.1-P7.50-D0.8` footprint references an unavailable `EASYEDA_MODELS/CAP-TH_L17.5-W11.1-P7.50-D0.8.step` file. That footprint is not placed on this board.
 
@@ -32,6 +50,13 @@ Standard symbols, footprints, and STEP models derive from KiCad libraries. Local
 
 The Adafruit land pattern derives from `SMA_EDGELAUNCH` in the public-domain [Adafruit Eagle Library](https://github.com/adafruit/Adafruit-Eagle-Library). Its description retains attribution. Its matching coaxial symbol derives from KiCad's `Conn_Coaxial_Small` symbol under the KiCad library license.
 
-The custom BWSMA-KWE-Z001, EEEFK1V470P, and TS-1187A-B-A-B symbols include supplier metadata and datasheet links. Switch and through-hole SMA STEP assets are supplied by EasyEDA/LCSC for the identified part numbers. Supplier attribution and embedded notices apply to those models.
+The custom BWSMA-KWE-Z001, EEEFK1V470P, TS-1187A-B-A-B,
+LTC6752HS5#TRMPBF, and PESD3V6Z1BCSF(ES) symbols include supplier metadata and
+datasheet links. The LTC6752 symbol and TSOT-23-5 package assets derive from the
+KiCad libraries and the Analog Devices datasheet. The PESD3V6Z1BCSF(ES) symbol
+derives from KiCad's bidirectional TVS symbol, and its footprint dimensions
+come from the ElecSuper datasheet. Switch, through-hole SMA, and
+PESD3V6Z1BCSF(ES) STEP assets are supplied by EasyEDA/LCSC for the identified
+part numbers. Supplier attribution and embedded notices apply to those models.
 
 The repository MIT license does not replace third-party license terms.
