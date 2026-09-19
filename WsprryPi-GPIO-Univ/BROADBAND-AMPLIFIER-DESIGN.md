@@ -51,6 +51,36 @@ targets until they are measured on an identified board revision and assembly.
     stability, and load mismatch on each identified Pi model used for physical
     validation and across the tested bands.
 
+### Remaining circuit building blocks
+
+After the GPIO selection and GPIO clock input buffer, seven distinct circuit
+building blocks remain. This is a circuit-level grouping of the development
+roadmap above, not an additional sequence of work:
+
+1. **Signal coupling and fixed drive conditioning** — combine development
+   blocks 4 and 5 to remove DC, establish the required bias, and scale the
+   buffered clock to the PA's safe full-drive level.
+2. **Fail-safe amplifier enable and supervision** — combine development blocks
+   7 and 14 around the GPIO23 control receiver, default-off behavior, 3.3 V
+   supervision, and THS3491 power-down control.
+3. **Wideband PA core** — implement development block 8 around the THS3491,
+   including gain, feedback, compensation, stability, and thermal design.
+4. **PA output conditioning and protection** — implement development block 9,
+   including output isolation, DC blocking, stability with the plug-in LPFs,
+   and the specified mismatch tolerance.
+5. **Bipolar DC/DC supply** — implement development block 11 to generate the PA
+   rails from the Pi's 5 V header supply.
+6. **Header power input and distribution** — implement development block 12,
+   including both 5 V pins, bulk capacitance, inrush, undervoltage, grounding,
+   and no-backfeed behavior.
+7. **Monitoring and protection** — implement development block 13 for the rail,
+   current, temperature, and fault functions required to protect the PA and Pi.
+
+Development block 6 is a fixed-power architectural constraint, block 10 uses
+the existing J81/J82 LPF interface, block 15 is PCB/mechanical/thermal
+implementation, and block 16 is qualification. They therefore do not add
+separate circuit building blocks to the seven above.
+
 ## Block 1: requirements and interfaces
 
 ### Requirement status
