@@ -1546,7 +1546,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical"
+	(footprint "Wsprry Pi:PinHeader_1x03_P1.00mm_Vertical"
 		(layer "F.Cu")
 		(uuid "9558fcf2-ace6-42b4-a349-67a276739d75")
 		(at 120.99 79 90)
@@ -1829,7 +1829,7 @@
 			(uuid "478a6142-eca9-417a-8a26-47301f0e1694")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_1.00mm.3dshapes/PinHeader_1x03_P1.00mm_Vertical.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/Connector_PinHeader_1.00mm.3dshapes/PinHeader_1x03_P1.00mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
