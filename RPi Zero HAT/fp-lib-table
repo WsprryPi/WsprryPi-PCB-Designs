@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "zero-hat") (type "KiCad") (uri "${KIPRJMOD}/zero-hat.pretty") (options "") (descr "Raspberry Pi Zero HAT mechanical interface"))
+)

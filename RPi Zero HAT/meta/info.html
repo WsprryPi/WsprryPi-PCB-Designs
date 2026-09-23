@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RPi Zero HAT</title>
+</head>
+<body>
+  <h1>RPi Zero HAT</h1>
+  <p>A KiCad 10 project template using the official through-hole-connector Raspberry Pi uHAT geometry and the current HAT+ electrical interface.</p>
+  <p><img src="board.png" width="600" alt="Raspberry Pi Zero-size HAT outline, 40-pin header, four mounting holes, and PoE keepout"></p>
+  <ul>
+    <li>65 &times; 30 mm board envelope with 3 mm outer corner radii.</li>
+    <li>Full 2&times;20 GPIO connector on 2.54 mm pitch.</li>
+    <li>Four 2.75 mm non-plated mounting holes with 6.2 mm clear lands.</li>
+    <li>Locked underside PoE-header component-placement keepout.</li>
+    <li>Locked mechanical interface and self-contained local symbol/footprint libraries.</li>
+    <li>One female 2&times;20 socket in the schematic purchasing BOM.</li>
+  </ul>
+  <p>The interface is deliberately unwired. Add the mandatory identification
+  EEPROM and application circuit, connect required pins, and mark only genuinely
+  unused pins with no-connect flags.</p>
+  <p>A derivative is not automatically HAT- or HAT+-compliant. Verify the current
+  electrical, EEPROM, spacing, model-clearance, marking, and documentation
+  requirements before using either name for a finished board.</p>
+  <p>Source: <a href="https://github.com/WsprryPi/WsprryPi-PCB-Designs">WsprryPi PCB Designs</a>.
+  Repository license included as LICENSE.md.</p>
+</body>
+</html>
