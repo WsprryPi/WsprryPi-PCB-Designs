@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "wsprrypi-amplified-gpio") (type "KiCad") (uri "${KIPRJMOD}/wsprrypi-amplified-gpio.kicad_sym") (options "") (descr "WsprryPi Amplified GPIO local symbols"))
+)
