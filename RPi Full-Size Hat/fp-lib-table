@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "full-size-hat") (type "KiCad") (uri "${KIPRJMOD}/full-size-hat.pretty") (options "") (descr "Raspberry Pi full-size HAT mechanical interface"))
+)
