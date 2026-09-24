@@ -9,12 +9,14 @@ These designs require revision-specific validation before production. KiCad sour
 | Project | Purpose | Reference export |
 | --- | --- | --- |
 | [Synth Universal](Wsprry-Pi-Synth-Univ/README.md) | Si5351-synthesized transmission board | [Schematic PDF](Wsprry-Pi-Synth-Univ/Wsprry-Pi-Synth-Univ.pdf) |
-| [GPIO Universal](WsprryPi-GPIO-Univ/README.md) | GPIO transmission board | [Schematic PDF](WsprryPi-GPIO-Univ/WsprryPi-GPIO-Univ.pdf) |
+| [GPIO Universal](WsprryPi-GPIO-Univ/README.md) | GPIO transmission board | Export from the KiCad source |
 | [LPF](Wsprry-Pi-LPF/README.md) | Low-pass filter board and design workbook | Export from the KiCad source |
 | [Pico 2W Wattmeter Shield](Pico%202W%20Wattmeter%20Shield/README.md) | ADL5904 RF detector and ADS1115 ADC shield | See project assembly drawings |
 | [Pico 2W Shield Template](Pico%202W%20Shield%20Template/README.md) | Unwired shield interface, outline, and antenna notch | KiCad project template |
 | [RPi Full-Size Hat](RPi%20Full-Size%20Hat/README.md) | Official full-size HAT geometry and complete 40-pin interface | KiCad project template |
+| [RPi Zero HAT](RPi%20Zero%20HAT/README.md) | Zero-size uHAT geometry and complete HAT+ capable 40-pin interface | KiCad project template |
 | [WsprryPi Amplified GPIO](WsprryPi%20Amplified%20GPIO/README.md) | Full-size Raspberry Pi HAT project for amplified GPIO development | In development |
+| [WsprryPi Zero GPIO](WsprryPi%20Zero%20GPIO/README.md) | Zero-size Raspberry Pi GPIO RF-amplifier project using uHAT geometry | **Not ready for order:** `YA9308-AEC` sourcing blocker |
 
 [Standalone Pico 2 W library assets](pico-2w-libs/README.md) include a symbol, footprints, and STEP model with documented compatibility and provenance limits. The shield projects use their own local libraries.
 
@@ -24,10 +26,10 @@ Clone [WsprryPi/WsprryPi-PCB-Designs](https://github.com/WsprryPi/WsprryPi-PCB-D
 
 | Project | Saved schematic and PCB generator version |
 | --- | --- |
-| Synth Universal, LPF, Pico 2W Wattmeter Shield, Pico 2W Shield Template, RPi Full-Size Hat, WsprryPi Amplified GPIO | KiCad 10.0 |
+| Synth Universal, LPF, Pico 2W Wattmeter Shield, Pico 2W Shield Template, RPi Full-Size Hat, RPi Zero HAT, WsprryPi Amplified GPIO, WsprryPi Zero GPIO | KiCad 10.0 |
 | GPIO Universal | KiCad 10.0 |
 
-Project library tables use `${KIPRJMOD}` paths. Keep each project's local libraries together when copying it. The Pico and full-size HAT projects use their own local libraries and installed KiCad models where their project documentation specifies them.
+Project library tables use `${KIPRJMOD}` paths. Keep each project's local libraries together when copying it. The Pico and HAT projects use their own local libraries and installed KiCad models where their project documentation specifies them.
 
 ### Project-local libraries
 

@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "wsprrypi-zero-gpio") (type "KiCad") (uri "${KIPRJMOD}/wsprrypi-zero-gpio.pretty") (options "") (descr "WsprryPi Zero GPIO mechanical interface and BOM footprints"))
+)
