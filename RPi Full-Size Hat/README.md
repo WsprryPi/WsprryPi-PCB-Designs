@@ -41,13 +41,13 @@ The original HAT specification is deprecated for new products in favor of HAT+, 
 
 ## Purchasing BOM
 
-U1 represents the electrical and mechanical interface and is excluded from the purchasing BOM and placement output. J1 is a pinless, schematic-only purchasing symbol for one female 2×20, 2.54 mm socket header.
+U1 represents the electrical and mechanical interface and is excluded from the purchasing BOM and placement output. J1 is a pinless, schematic-only purchasing symbol for one female 2×20, 2.54 mm socket header; it is excluded from the PCB so schematic-parity DRC does not require a footprint.
 
 The schematic's **HAT socket purchasing BOM** preset exports J1 as one row. Manufacturer and MPN fields are deliberately blank because mating height and supported Raspberry Pi models must be chosen for the finished design. Enter the selected part before fabrication.
 
 ## Local libraries and files
 
-Both library tables use the `full-size-hat` nickname and `${KIPRJMOD}` paths. All required template libraries are inside this directory. H1 is a separate, selectable footprint that shows the female 2×20 HAT socket on the underside of the board. Delete H1 when the 3D socket is not wanted, or place `full-size-hat:Raspberry_Pi_HAT_2x20_Socket_3D` to add it back. H1 has no electrical pads; U1 remains the authoritative electrical and mechanical interface, and J1 remains the purchasing item.
+Both library tables use the `full-size-hat` nickname and `${KIPRJMOD}` paths. All required template libraries are inside this directory. H1 is a separate, selectable footprint that shows the female 2×20 HAT socket on the underside of the board. Delete H1 when the 3D socket is not wanted, or place `full-size-hat:Raspberry_Pi_HAT_2x20_Socket_3D` to add it back. H1 has no electrical pads and is exempt from the courtyard requirement because it overlays the same physical socket already represented by U1's authoritative underside courtyard. U1 remains the authoritative electrical and mechanical interface, and J1 remains the purchasing item.
 
 The local library also includes `Dual_PinSocket_1x04_P2.54mm_J81_J82`, a single eight-pin symbol and footprint derived from J81 and J82 in `Wsprry-Pi-Synth-Univ`. Its two 1×4 socket centers are exactly 32.020 mm apart. Symbol/footprint pins 1–4 correspond to J81 pins 1–4; pins 5–8 correspond to J82 pins 1–4. The footprint origin is the midpoint between the two header centers. Its 29.36 × 11.20 mm rule area spans the complete underside between the two connector bodies and prohibits tracks, vias, pads, copper pours, and footprints on both copper layers. The two connector strips remain outside that rule area so their own through-hole pads do not violate it and their nets can route outward. This grouped 1×4 footprint intentionally has no 3D model.
 
@@ -66,7 +66,7 @@ KiCad renames the three project design files for the chosen project name and omi
 
 ## Validation and limits
 
-The unwired interface produces 34 expected ERC findings: 31 visible pins are unconnected and the three visible power inputs are undriven. The PCB has one expected DRC warning because the selectable, model-only H1 footprint deliberately has no duplicate courtyard; its physical socket courtyard remains in U1. There are zero other DRC rule violations and nine expected unrouted items for the shared 3V3, 5V, and GND header pads. Connect required pins, route the shared rails, and mark only genuinely unused pins with no-connect flags when developing a design.
+The unwired interface produces 34 expected ERC findings: 31 visible pins are unconnected and the three visible power inputs are undriven. The PCB has zero DRC rule violations and nine expected unrouted items for the shared 3V3, 5V, and GND header pads. The selectable, model-only H1 footprint is explicitly exempt from the missing-courtyard check because its physical socket courtyard remains in U1. Connect required pins, route the shared rails, and mark only genuinely unused pins with no-connect flags when developing a design.
 
 Run ERC and DRC after adding the ID EEPROM, application circuit, routing, and copper. This template has no verified physical assembly, connector fit, HAT identity data, Raspberry Pi model compatibility, electrical performance, or RF performance.
 

@@ -33,7 +33,7 @@
 		(uuid "a7c4d8e2-65a1-4f90-8b31-010000000004")
 		(effects (font (size 1.27 1.27) (thickness 0.15)))
 	)
-	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/full-size-hat.3dshapes/PinSocket_2x20_P2.54mm_Vertical.step"
 		(offset (xyz 0 0 0))
