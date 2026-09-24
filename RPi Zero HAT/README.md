@@ -46,7 +46,7 @@ This template follows the Raspberry Pi Zero/uHAT mechanical geometry and provide
 
 ## Purchasing BOM
 
-U1 represents the electrical and mechanical interface and is excluded from the purchasing BOM and placement output. J1 is a pinless, schematic-only purchasing symbol for one female 2×20, 2.54 mm socket header.
+U1 represents the electrical and mechanical interface and is excluded from the purchasing BOM and placement output. J1 is a pinless, schematic-only purchasing symbol for one female 2×20, 2.54 mm socket header; it is excluded from the PCB so schematic-parity DRC does not require a footprint.
 
 The schematic's **HAT socket purchasing BOM** preset exports J1 as one row. Manufacturer and MPN fields are deliberately blank because mating height and supported Raspberry Pi models must be chosen for the finished design. Enter the selected part before fabrication.
 
@@ -54,7 +54,7 @@ The schematic's **HAT socket purchasing BOM** preset exports J1 as one row. Manu
 
 Both library tables use the `zero-hat` nickname and `${KIPRJMOD}` paths. All required template libraries are inside this directory.
 
-H1 is a separate, selectable footprint that shows the female 2×20 HAT socket on the underside of the board. Delete H1 when the 3D socket is not wanted, or place `zero-hat:Raspberry_Pi_HAT_2x20_Socket_3D` to add it back. H1 has no electrical pads; U1 remains the authoritative electrical and mechanical interface, and J1 remains the purchasing item.
+H1 is a separate, selectable footprint that shows the female 2×20 HAT socket on the underside of the board. Delete H1 when the 3D socket is not wanted, or place `zero-hat:Raspberry_Pi_HAT_2x20_Socket_3D` to add it back. H1 has no electrical pads and is exempt from the courtyard requirement because it overlays the same physical socket already represented by U1's authoritative underside courtyard. U1 remains the authoritative electrical and mechanical interface, and J1 remains the purchasing item.
 
 The local library also copies the grouped 2×4 connector from the full-size template as `Dual_PinSocket_1x04_P2.54mm_J81_J82`. It represents two 1×4 sockets whose centers are exactly 32.020 mm apart. Symbol/footprint pins 1–4 correspond to J81 pins 1–4; pins 5–8 correspond to J82 pins 1–4. Its 29.36 × 11.20 mm inter-header rule area prohibits tracks, vias, pads, copper pours, and footprints on both copper layers while leaving the two connector strips routable.
 
@@ -73,7 +73,7 @@ KiCad renames the three project design files for the chosen project name and omi
 
 ## Validation and limits
 
-The template was checked with KiCad 10.0.6. ERC reports the expected 34 errors for this intentionally unwired template: 31 unconnected interface pins plus 3 undriven power-input pins, with no warnings. Native PCB Editor DRC reports no errors, one expected warning because the selectable model-only H1 footprint has no courtyard, and 9 expected unrouted items for the shared 3V3, 5V, and GND header pads. The authoritative physical socket courtyard is part of U1.
+The template was checked with KiCad 10.0.6. ERC reports the expected 34 errors for this intentionally unwired template: 31 unconnected interface pins plus 3 undriven power-input pins, with no warnings. Native PCB Editor DRC reports no rule violations and 9 expected unrouted items for the shared 3V3, 5V, and GND header pads. The selectable model-only H1 footprint is explicitly exempt from the missing-courtyard check because the authoritative physical socket courtyard is part of U1.
 
 Run ERC and DRC after adding the ID EEPROM, application circuit, routing, and copper. This template has no verified physical assembly, connector fit, HAT+ identity data, Raspberry Pi model compatibility, electrical performance, or RF performance.
 
