@@ -278,7 +278,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "C_0805_2012Metric"
+			(property "ki_fp_filters" "C_0805_2012Metric C_1206_3216Metric"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5802,6 +5802,118 @@
 		(uuid "fbaedb1e-1f06-59dd-86d7-062aefdb3380")
 	)
 	(symbol
+		(lib_id "wsprrypi-zero-gpio:C_0805")
+		(at 190.5 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0f77ba4f-c0fd-4b59-bbca-951d5bc282c2")
+		(property "Reference" "C32"
+			(at 190.5 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1µF"
+			(at 190.5 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio:C_1206_3216Metric"
+			(at 190.5 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C342628.pdf"
+			(at 190.5 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 1uF X8R 1206"
+			(at 190.5 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" "C342628"
+			(at 190.5 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 190.5 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 190.5 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bade1a6e-ed7a-4cdd-b559-0b0977bf01bc")
+		)
+		(pin "2"
+			(uuid "6307a651-e50e-4193-8564-a2e54eef5976")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "wsprrypi-zero-gpio:LTC6432-15")
 		(at 227.33 49.53 0)
 		(unit 1)
@@ -5812,7 +5924,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "216a5e0a-a372-5323-be3b-491557e7ec17")
-		(property "Reference" "U32"
+		(property "Reference" "U31"
 			(at 227.33 51.054 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5976,7 +6088,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "U32")
+					(reference "U31")
 					(unit 1)
 				)
 			)
@@ -5993,7 +6105,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "36036484-cb90-48e2-9d44-85077a8fde80")
-		(property "Reference" "J1"
+		(property "Reference" "J41"
 			(at 207.01 117.856 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6078,7 +6190,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "J1")
+					(reference "J41")
 					(unit 1)
 				)
 			)
@@ -6095,7 +6207,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3c52ee12-6b77-5d59-a497-ae8f5d6f2520")
-		(property "Reference" "T40"
+		(property "Reference" "T41"
 			(at 235.712 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6191,7 +6303,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "T40")
+					(reference "T41")
 					(unit 1)
 				)
 			)
@@ -6208,7 +6320,7 @@
 		(in_pos_files no)
 		(dnp no)
 		(uuid "4956bacf-ccac-441b-a2fa-51ce082195af")
-		(property "Reference" "U10"
+		(property "Reference" "U11"
 			(at 25.65 24.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6384,7 +6496,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "U10")
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -6754,7 +6866,7 @@
 				)
 			)
 		)
-		(property "Footprint" "wsprrypi-zero-gpio:C_0805_2012Metric"
+		(property "Footprint" "wsprrypi-zero-gpio:C_1206_3216Metric"
 			(at 111.76 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -6765,7 +6877,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C342628.pdf"
 			(at 111.76 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -6776,7 +6888,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic unpolarized capacitor using the local KiCad 0805 metric footprint"
+		(property "Description" "CAP CER 1uF X8R 1206"
 			(at 111.76 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -6787,7 +6899,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C28323"
+		(property "LCSC_PART" "C342628"
 			(at 111.76 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -6846,7 +6958,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "666f02d8-3cd9-48a8-9af9-fc87f4555b7c")
-		(property "Reference" "C55"
+		(property "Reference" "C53"
 			(at 148.59 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6941,231 +7053,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio:C_0805")
-		(at 224.79 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "69deb6c2-ca45-48f1-8503-9674f4518133")
-		(property "Reference" "C36"
-			(at 224.79 69.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1µF"
-			(at 224.79 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio:C_0805_2012Metric"
-			(at 224.79 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 224.79 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic unpolarized capacitor using the local KiCad 0805 metric footprint"
-			(at 224.79 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C28323"
-			(at 224.79 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 224.79 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 224.79 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6f603eff-3b85-4125-80cc-38631d76f6a0")
-		)
-		(pin "2"
-			(uuid "7c5d2531-2238-4142-88fd-8e9f0aa89e03")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio:C_0805")
-		(at 237.49 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6c1018cd-3538-454c-85b2-0e09b9139b8d")
-		(property "Reference" "C37"
-			(at 237.49 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1µF"
-			(at 237.49 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio:C_0805_2012Metric"
-			(at 237.49 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 237.49 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic unpolarized capacitor using the local KiCad 0805 metric footprint"
-			(at 237.49 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C28323"
-			(at 237.49 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 237.49 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 237.49 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4e3c327d-d675-45c7-b856-086fa563cc2e")
-		)
-		(pin "2"
-			(uuid "23650f79-d95f-4d10-9997-41b850e363c0")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C37")
+					(reference "C53")
 					(unit 1)
 				)
 			)
@@ -7182,7 +7070,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6d88ef84-61f8-589d-b14d-e25095a32183")
-		(property "Reference" "R20"
+		(property "Reference" "R21"
 			(at 103.378 24.742 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7277,7 +7165,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "R20")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -7371,7 +7259,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "767c4ab0-9d71-57cc-b197-f73998ea49d4")
-		(property "Reference" "C35"
+		(property "Reference" "C36"
 			(at 219.71 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7466,7 +7354,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C35")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -8001,7 +7889,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8d5393f9-1509-5469-a07a-bc56e489b7f7")
-		(property "Reference" "T22"
+		(property "Reference" "T21"
 			(at 130.556 25.908 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8097,7 +7985,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "T22")
+					(reference "T21")
 					(unit 1)
 				)
 			)
@@ -8192,7 +8080,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8dda3259-4714-5afa-8412-caa9a82a1232")
-		(property "Reference" "J41"
+		(property "Reference" "J42"
 			(at 231.57 116.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8272,7 +8160,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "J41")
+					(reference "J42")
 					(unit 1)
 				)
 			)
@@ -8356,6 +8244,118 @@
 		)
 	)
 	(symbol
+		(lib_id "wsprrypi-zero-gpio:C_0805")
+		(at 193.04 71.12 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9174a5c7-f9a8-4146-ae01-252a7e1a44d1")
+		(property "Reference" "C33"
+			(at 195.072 69.342 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1µF"
+			(at 195.072 73.152 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio:C_0805_2012Metric"
+			(at 193.04 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C28323.pdf"
+			(at 193.04 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 1uF 50V X7R 0805"
+			(at 193.04 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" "C28323"
+			(at 193.04 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 193.04 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 193.04 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "34df60fd-fd4e-4b5f-9f2e-80482f1a113a")
+		)
+		(pin "2"
+			(uuid "15faa828-12ac-499e-b6a6-bd98ebf6f872")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "wsprrypi-zero-gpio:C_0603")
 		(at 129.54 73.66 0)
 		(unit 1)
@@ -8366,7 +8366,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9844a9e5-fdb1-48b3-a040-81c1beb8e62a")
-		(property "Reference" "C53"
+		(property "Reference" "C52"
 			(at 129.54 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8461,7 +8461,119 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C53")
+					(reference "C52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "wsprrypi-zero-gpio:C_0805")
+		(at 190.5 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9ebe0eea-f8ff-4449-af54-bf84ee920aa8")
+		(property "Reference" "C31"
+			(at 190.5 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1µF"
+			(at 190.5 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio:C_1206_3216Metric"
+			(at 190.5 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C342628.pdf"
+			(at 190.5 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 1uF X8R 1206"
+			(at 190.5 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" "C342628"
+			(at 190.5 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 190.5 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 190.5 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73e11da6-2646-4d75-a9e5-8fab34fdb642")
+		)
+		(pin "2"
+			(uuid "88f0041e-df70-46df-93d3-1f07b1293401")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -8478,7 +8590,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a16971e8-3daa-58fb-9086-8144d9c99517")
-		(property "Reference" "R21"
+		(property "Reference" "R22"
 			(at 114.046 37.084 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8573,7 +8685,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "R21")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -8590,7 +8702,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aa029e73-d783-5060-9982-ffd631eb3b3e")
-		(property "Reference" "U50"
+		(property "Reference" "U51"
 			(at 116.586 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8697,7 +8809,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "U50")
+					(reference "U51")
 					(unit 1)
 				)
 			)
@@ -8866,118 +8978,6 @@
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio:C_0805")
-		(at 193.04 71.12 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b474b978-8e45-4815-b30a-41eb7858c4b8")
-		(property "Reference" "C32"
-			(at 195.326 69.088 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1µF"
-			(at 195.58 73.152 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio:C_0805_2012Metric"
-			(at 193.04 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 193.04 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic unpolarized capacitor using the local KiCad 0805 metric footprint"
-			(at 193.04 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C28323"
-			(at 193.04 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 193.04 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 193.04 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "41aea897-80ce-45a8-863a-03eb41956281")
-		)
-		(pin "2"
-			(uuid "4c6564f2-02fb-4566-ba07-bf34f90af51d")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -9381,7 +9381,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cf82ad50-56b6-405a-8da9-b12291e2e40e")
-		(property "Reference" "R52"
+		(property "Reference" "R51"
 			(at 96.266 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9476,7 +9476,119 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "R52")
+					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "wsprrypi-zero-gpio:C_0805")
+		(at 224.79 74.93 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d1fa382f-c01f-48a1-b2a9-ae2755cc338b")
+		(property "Reference" "C37"
+			(at 224.79 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1µF"
+			(at 224.79 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio:C_1206_3216Metric"
+			(at 224.79 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C342628.pdf"
+			(at 224.79 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 1uF X8R 1206"
+			(at 224.79 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" "C342628"
+			(at 224.79 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 224.79 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 224.79 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c854f5c2-5e1a-4697-8c28-b60d1c411c8d")
+		)
+		(pin "2"
+			(uuid "18dd645f-4f06-4b5b-969b-b0350168463e")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -9645,118 +9757,6 @@
 		)
 	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio:C_0805")
-		(at 196.85 57.15 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ea7ae933-514c-4018-9f71-e32d6db4764b")
-		(property "Reference" "C33"
-			(at 198.882 55.372 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1µF"
-			(at 198.882 59.182 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio:C_0805_2012Metric"
-			(at 196.85 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 196.85 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic unpolarized capacitor using the local KiCad 0805 metric footprint"
-			(at 196.85 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C28323"
-			(at 196.85 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 196.85 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 196.85 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "98234ef8-87fe-4629-bcd7-57416b47d1bb")
-		)
-		(pin "2"
-			(uuid "8be7bab8-9720-4cb8-b87f-baa8cafa0117")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "wsprrypi-zero-gpio:R_0603")
 		(at 138.43 69.85 0)
 		(unit 1)
@@ -9767,7 +9767,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ecd6f774-009f-571d-8575-07b0c8b346a5")
-		(property "Reference" "R54"
+		(property "Reference" "R52"
 			(at 138.43 67.564 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9862,7 +9862,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "R54")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -9870,7 +9870,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio:C_0805")
-		(at 190.5 39.37 0)
+		(at 196.85 57.15 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9878,9 +9878,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f224346c-b4da-4357-bab4-6e783afb0ef7")
-		(property "Reference" "C30"
-			(at 190.5 34.29 0)
+		(uuid "f6d02625-3cb4-4c0f-9806-66305c787a7b")
+		(property "Reference" "C34"
+			(at 198.882 55.372 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9890,7 +9890,7 @@
 			)
 		)
 		(property "Value" "1µF"
-			(at 190.5 36.83 0)
+			(at 198.882 59.182 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9900,7 +9900,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio:C_0805_2012Metric"
-			(at 190.5 39.37 0)
+			(at 196.85 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9910,8 +9910,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 190.5 39.37 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C28323.pdf"
+			(at 196.85 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9921,8 +9921,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic unpolarized capacitor using the local KiCad 0805 metric footprint"
-			(at 190.5 39.37 0)
+		(property "Description" "CAP CER 1uF 50V X7R 0805"
+			(at 196.85 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9933,7 +9933,7 @@
 			)
 		)
 		(property "LCSC_PART" "C28323"
-			(at 190.5 39.37 0)
+			(at 196.85 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9944,7 +9944,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 190.5 39.37 0)
+			(at 196.85 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9955,7 +9955,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 190.5 39.37 0)
+			(at 196.85 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9966,127 +9966,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ca20ca46-74f7-4700-8d0b-a4af4abef2dc")
+			(uuid "03b57890-08e3-49c7-9b6b-d50dcc64e45d")
 		)
 		(pin "2"
-			(uuid "d632ffd8-643d-4a01-bf80-e5468ce6ba60")
+			(uuid "115aa0d3-adf1-4a24-8f55-be252b5dae78")
 		)
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio:C_0805")
-		(at 190.5 46.99 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f8b2a5a8-4fc5-47a1-8774-56609670dc09")
-		(property "Reference" "C31"
-			(at 190.5 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1µF"
-			(at 190.5 44.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio:C_0805_2012Metric"
-			(at 190.5 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 190.5 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic unpolarized capacitor using the local KiCad 0805 metric footprint"
-			(at 190.5 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C28323"
-			(at 190.5 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 190.5 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 190.5 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7713d809-90b1-4be2-8b2f-d373450230e5")
-		)
-		(pin "2"
-			(uuid "77b68d37-1870-40f8-9992-56ed35d6e92e")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C31")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -10206,6 +10094,118 @@
 		)
 	)
 	(symbol
+		(lib_id "wsprrypi-zero-gpio:C_0805")
+		(at 237.49 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fda7d165-f493-43bd-a711-6c41ca94e4ee")
+		(property "Reference" "C38"
+			(at 237.49 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1µF"
+			(at 237.49 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio:C_1206_3216Metric"
+			(at 237.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C342628.pdf"
+			(at 237.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 1uF X8R 1206"
+			(at 237.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" "C342628"
+			(at 237.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 237.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 237.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4b6f0f32-c983-4c1b-9f61-51357aea7e51")
+		)
+		(pin "2"
+			(uuid "a55e6ca3-3b2f-49c5-889e-2e0ff8bd2140")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "C38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "wsprrypi-zero-gpio:C_0603")
 		(at 219.71 22.86 0)
 		(unit 1)
@@ -10216,7 +10216,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fee9b63a-8473-51a7-9ac0-31d42221e758")
-		(property "Reference" "C34"
+		(property "Reference" "C35"
 			(at 219.456 20.574 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10311,7 +10311,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C34")
+					(reference "C35")
 					(unit 1)
 				)
 			)

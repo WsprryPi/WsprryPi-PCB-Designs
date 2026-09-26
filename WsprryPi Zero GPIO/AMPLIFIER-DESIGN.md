@@ -54,9 +54,9 @@ This table is the likely BOM for estimating space and cost, not an order-ready B
 | --- | ---: | --- | --- | --- |
 | Differential gain block | 1 | `LTC6432AIUF-15#PBF`, `LCSC_PART` C689344 | Selected | 5 V, nominal 15.2 dB gain, 4 mm × 4 mm 24-QFN with exposed pad; confirm stock at order time. |
 | Input and output transformers | 2 | Coilcraft `YA9308-AEC` | **Required; order blocker** | 1:2 impedance ratio, 0.1 MHz to 950 MHz specified bandwidth, 0.5 dB maximum insertion loss, 250 mW RF rating. No normally stocked JLCPCB/LCSC substitute has been qualified. |
-| GPIO-side DC block | 1 | 1 µF, X8R, 10 V or greater, 0805 | Required | C21, in series between R20 and the R21/T22 primary node; exact MPN remains open. |
-| Input DC blocks | 2 | 1 µF, X8R, 10 V or greater, 0805 | Required | One in series with each differential input leg; X8R follows the amplifier vendor's linearity guidance. |
-| Feedback capacitors | 2 | 1 µF, X8R, 10 V or greater, 0805 | Required | One from each FDBK pin to its corresponding OUT pin. |
+| GPIO-side DC block | 1 | TDK `CGA5L3X8R1H105KT0Y0N`, 1 µF, X8R, 50 V, 1206; `LCSC_PART` C342628 | Required | C21, in series between R20 and the R21/T22 primary node. The schematic uses the project-local 1206 footprint; the PCB has not yet been updated. |
+| Input DC blocks | 2 | TDK `CGA5L3X8R1H105KT0Y0N`, 1 µF, X8R, 50 V, 1206; `LCSC_PART` C342628 | Required | C30 and C31; X8R follows the amplifier vendor's linearity guidance. The schematic uses the project-local 1206 footprint; the PCB has not yet been updated. |
+| Feedback capacitors | 2 | TDK `CGA5L3X8R1H105KT0Y0N`, 1 µF, X8R, 50 V, 1206; `LCSC_PART` C342628 | Required | C36 and C37, one from each FDBK pin to its corresponding OUT pin. The schematic uses the project-local 1206 footprint; the PCB has not yet been updated. |
 | Bias-noise filter capacitors | 2 | 1 µF, X8R, 10 V or greater, 0805 | Required | One from each NFILT pin to ground. |
 | High-frequency VCC bypass | 1 | 1 nF, 0402 or 0603 | Required | Place immediately at the amplifier VCC connection. |
 | VCC bypass | 1 | 100 nF, 0402 or 0603 | Required | Local amplifier bypass. |

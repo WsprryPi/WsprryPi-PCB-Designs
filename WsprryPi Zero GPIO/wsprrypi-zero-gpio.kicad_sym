@@ -533,7 +533,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "C_0805_2012Metric"
+		(property "ki_fp_filters" "C_0805_2012Metric C_1206_3216Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

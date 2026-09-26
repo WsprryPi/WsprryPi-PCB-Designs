@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.6,
-          "width": 1.325
+          "drill": 1.0,
+          "height": 1.7,
+          "width": 1.7
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -577,7 +577,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 0,
+    "annotate_start_num": 40,
     "annotation": {
       "method": 0,
       "sort_order": 0
@@ -778,7 +778,7 @@
         "uuid": "42fb2efa-c288-4686-a90a-043ad23a327d"
       }
     ],
-    "used_designators": "SW1,U1,U10,U32,U50,U60,J1-2,J11,J41,T22,T40,#PWR1-22,D11,C1-8,C22,C30-38,C51-53,C55-56,C63,R11,R20-22,R52,R54,R61-62,R64",
+    "used_designators": "R11,R20-22,R51-52,R54,R61-62,R64,C1-8,C21-22,C30-38,C51-53,C55-56,C63,D11,#PWR1-22,T21-22,T40-41,J1-2,J11-12,J41-42,U1,U10-11,U31-32,U50-51,U60,SW1,SW11",
     "variants": []
   },
   "sheets": [

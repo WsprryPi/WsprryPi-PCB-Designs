@@ -83,7 +83,7 @@ The same project-local library now contains symbols and assigned footprints for 
 - `LTC6432-15`, whose local master and placed U32 metadata select `LTC6432AIUF-15#PBF` and `LCSC_PART` C689344, with the Analog Devices UF24 4 × 4 mm QFN exposed-pad footprint and thermal vias;
 - `YA9308-AEC` with a custom footprint built from Coilcraft's recommended land pattern;
 - `TPS22918` with the KiCad SOT-23-6 footprint;
-- local `R_0603`, `C_0603`, and `C_0805` symbols with their matching KiCad footprints; `R_0603` uses the compact US zigzag graphic; and
+- local `R_0603`, `C_0603`, and `C_0805` symbols with local 0603 and 0805 KiCad footprints, plus the project-local `C_1206_3216Metric` footprint assigned in the schematic to C21, C31, C32, C37, and C38; the shared `C_0805` symbol's filter permits both local capacitor footprints while retaining 0805 as its default; `R_0603` uses the compact US zigzag graphic; and
 - local `R_US` and `LED` symbols supporting the placed R11 and D11 indicator circuit, with local 0603 footprints and an LED STEP model;
 - a project-local `GND` power symbol used by every placed ground-symbol instance;
 - the placed `SKRPANE010` momentary tactile switch SW11 for `LCSC_PART` C470426, with an Alps SKRP manufacturer-land-pattern footprint and local STEP model;
@@ -111,7 +111,7 @@ The current schematic and board remain active work and are not ready for order b
 
 KiCad 10.0.6 schematic ERC reports 0 errors and 0 warnings. KiCad 10.0.6 command-line PCB DRC reports 0 violations, 0 unconnected pads, and 0 footprint errors. These checks do not establish physical assembly, connector fit, Raspberry Pi model compatibility, electrical performance, thermal behavior, or RF performance.
 
-KiCad 10.0.6 successfully exported all 15 project-local symbols and all 13 project-local footprints. The resistor, LED, ground, SMA, SKRPANE010, and 1×3 header assets, four device symbols, and two custom RF footprints were visually inspected from those exports. Library inspection, ERC, DRC, routing, and 3D rendering do not establish land-pattern suitability for a particular assembly process, solderability, thermal performance, RF performance, or production readiness.
+KiCad 10.0.6 successfully exported all 15 project-local symbols and all 15 project-local footprints. The resistor, capacitor, LED, ground, SMA, SKRPANE010, and 1×3 header assets, four device symbols, and two custom RF footprints were visually inspected from those exports. Library inspection, ERC, DRC, routing, and 3D rendering do not establish land-pattern suitability for a particular assembly process, solderability, thermal performance, RF performance, or production readiness.
 
 ## Sources and license
 

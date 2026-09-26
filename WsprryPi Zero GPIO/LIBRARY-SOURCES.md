@@ -45,9 +45,11 @@ The following symbols were drawn or copied for this project from the named manuf
 
 `24AA32A-I/ST` and its TSSOP-8 footprint remain as unused, attributed local-library assets. They are not part of the current schematic, BOM, or selected design, which intentionally omits an identification EEPROM.
 
+C21, C31, C32, C37, and C38 reuse the generic local `C_0805` capacitor symbol but override its default footprint with the project-local `C_1206_3216Metric` footprint. The shared symbol's footprint filter permits both project-local capacitor footprints while retaining `C_0805_2012Metric` as the default.
+
 ## BOM footprints
 
-The SOT-23-6, TSSOP-8, 0603 resistor, 0603 capacitor, and 0805 capacitor footprints are unmodified copies from the KiCad 10.0.6 standard footprint installation. Their standard `${KICAD10_3DMODEL_DIR}` references are retained. The 2.54 mm 1×3 male-header footprint is a KiCad library copy whose model reference was redirected to the project-local STEP file and whose BOM and position-output exclusions implement this project's library policy.
+The SOT-23-6, TSSOP-8, 0603 resistor, 0603 capacitor, 0805 capacitor, and 1206 capacitor footprints are unmodified copies from the KiCad 10.0.6 standard footprint installation. Their standard `${KICAD10_3DMODEL_DIR}` references are retained. The 2.54 mm 1×3 male-header footprint is a KiCad library copy whose model reference was redirected to the project-local STEP file and whose BOM and position-output exclusions implement this project's library policy.
 
 The Analog Devices UF24 footprint began from KiCad's `WQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm_ThermalVias` geometry and was renamed and documented for the LTC6432-15. The 4 × 4 mm body, 0.5 mm pitch, and 2.45 × 2.45 mm exposed-pad land pattern agree with Analog Devices drawing 05-08-1697 Rev B. Its thermal-via pattern is an implementation candidate and must be reviewed against the selected fabricator's via, solder-mask, and paste-process capabilities.
 
