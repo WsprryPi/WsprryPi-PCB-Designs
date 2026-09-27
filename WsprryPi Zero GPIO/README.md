@@ -82,6 +82,7 @@ The same project-local library now contains symbols and assigned footprints for 
 
 - `LTC6432-15`, whose local master and placed U32 metadata select `LTC6432AIUF-15#PBF` and `LCSC_PART` C689344, with the Analog Devices UF24 4 × 4 mm QFN exposed-pad footprint and thermal vias;
 - `YA9308-AEC` with a custom footprint built from Coilcraft's recommended land pattern;
+- unplaced `WBC2-1TLC` with `LCSC_PART` C19191658 and a separate custom footprint built from Coilcraft's WBC recommended land pattern; this library addition does not select it for T22/T40 or resolve the order blocker;
 - `TPS22918` with the KiCad SOT-23-6 footprint;
 - local `R_0603`, `C_0603`, and `C_0805` symbols with local 0603 and 0805 KiCad footprints, plus the project-local `C_1206_3216Metric` footprint assigned in the schematic to C21, C31, C32, C37, and C38; the shared `C_0805` symbol's filter permits both local capacitor footprints while retaining 0805 as its default; `R_0603` uses the compact US zigzag graphic; and
 - local `R_US` and `LED` symbols supporting the placed R11 and D11 indicator circuit, with local 0603 footprints and an LED STEP model;

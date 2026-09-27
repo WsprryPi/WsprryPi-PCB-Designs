@@ -32,6 +32,7 @@ The following symbols were drawn or copied for this project from the named manuf
 | --- | --- | --- |
 | `LTC6432-15` | [Analog Devices LTC6432-15 data sheet](https://www.analog.com/media/en/technical-documentation/data-sheets/643215f.pdf) | `Analog_UF24_QFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm_ThermalVias` |
 | `YA9308-AEC` | [Coilcraft YA9308 data sheet](https://www.coilcraft.com/getmedia/508634a8-8a9d-4933-83b8-7660d3e9ca71/ya9308.pdf) | `Coilcraft_YA9308` |
+| `WBC2-1TLC` | [Coilcraft WBC data sheet](https://www.coilcraft.com/getmedia/f685d903-2563-4c96-8ba6-f82a58883aeb/wbc.pdf), [LCSC C19191658](https://www.lcsc.com/product-detail/C19191658.html) | `Coilcraft_WBC2-1TLC` |
 | `TPS22918` | [Texas Instruments TPS22918 data sheet](https://www.ti.com/lit/ds/symlink/tps22918.pdf) | `SOT-23-6` |
 | `24AA32A-I-ST` | [Microchip 24AA32A/24LC32A data sheet](https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/24AA32A-24LC32A-32-Kbit-I2C-Serial-EEPROM-DS20001713.pdf) | `TSSOP-8_4.4x3mm_P0.65mm` |
 | `R_0603` | Generic passive using the compact KiCad US zigzag convention | `R_0603_1608Metric` |
@@ -54,6 +55,8 @@ The SOT-23-6, TSSOP-8, 0603 resistor, 0603 capacitor, 0805 capacitor, and 1206 c
 The Analog Devices UF24 footprint began from KiCad's `WQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm_ThermalVias` geometry and was renamed and documented for the LTC6432-15. The 4 × 4 mm body, 0.5 mm pitch, and 2.45 × 2.45 mm exposed-pad land pattern agree with Analog Devices drawing 05-08-1697 Rev B. Its thermal-via pattern is an implementation candidate and must be reviewed against the selected fabricator's via, solder-mask, and paste-process capabilities.
 
 The `Coilcraft_YA9308` footprint was drawn from Coilcraft Document 1581-2. It uses 0.76 × 1.14 mm lands, 1.52 mm pad pitch within each row, and 3.05 mm row-center spacing. No YA9308 3D model has been added.
+
+The unplaced `WBC2-1TLC` symbol and `Coilcraft_WBC2-1TLC` footprint were drawn from Coilcraft WBC Document 424-1/424-2. Pins 4 and 6 are the primary; pin 5 is unconnected. Pins 1 and 3 are the secondary ends; pin 2 is the center tap. The dedicated footprint uses Coilcraft's recommended 0.76 × 1.14 mm lands, 1.52 mm pad pitch within each row, and 3.05 mm row-center spacing. Its geometry matches the existing YA9308 footprint, but its separate name and part metadata keep the two devices distinct. The library symbol records `LCSC_PART` C19191658. No WBC 3D model has been added, and no schematic or PCB instance has been changed. This library entry does not qualify WBC2-1TLC as a substitute for YA9308-AEC in the current amplifier.
 
 The `ALPS_SKRP_4.2x3.2mm` footprint was drawn from the Alps Alpine SKRP-series recommended land pattern. The manufacturer drawing specifies a 5.2 mm horizontal outside span, 3.1 mm horizontal inside gap, 2.8 mm vertical outside span, and 1.5 mm vertical inside gap; these resolve to four 1.05 × 0.65 mm lands centered at X = ±2.075 mm and Y = ±1.075 mm. The courtyard includes the pads, 4.2 × 3.2 mm body, and 0.25 mm nominal clearance.
 
