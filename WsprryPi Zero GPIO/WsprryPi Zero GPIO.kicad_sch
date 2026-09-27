@@ -3665,7 +3665,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "wsprrypi-zero-gpio:YA9308-AEC"
+		(symbol "wsprrypi-zero-gpio:WBC2-1TLC"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3681,7 +3681,7 @@
 					)
 				)
 			)
-			(property "Value" "YA9308-AEC"
+			(property "Value" "WBC2-1TLC"
 				(at 0 11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3691,7 +3691,7 @@
 					)
 				)
 			)
-			(property "Footprint" "wsprrypi-zero-gpio:Coilcraft_YA9308"
+			(property "Footprint" "wsprrypi-zero-gpio:Coilcraft_WBC2-1TLC"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3702,7 +3702,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.coilcraft.com/getmedia/508634a8-8a9d-4933-83b8-7660d3e9ca71/ya9308.pdf"
+			(property "Datasheet" "https://www.coilcraft.com/getmedia/f685d903-2563-4c96-8ba6-f82a58883aeb/wbc.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3713,7 +3713,7 @@
 					)
 				)
 			)
-			(property "Description" "1:2 impedance-ratio SMT wideband transformer, 0.1 MHz to 950 MHz, center-tapped secondary"
+			(property "Description" "1:2 impedance-ratio SMT wideband transformer, 0.2 MHz to 500 MHz, center-tapped secondary"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3735,7 +3735,18 @@
 					)
 				)
 			)
-			(property "MPN" "YA9308-AEC"
+			(property "MPN" "WBC2-1TLC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC_PART" "C19191658"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3757,7 +3768,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Coilcraft_YA9308"
+			(property "ki_fp_filters" "Coilcraft_WBC2-1TLC"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3768,7 +3779,7 @@
 					)
 				)
 			)
-			(symbol "YA9308-AEC_0_1"
+			(symbol "WBC2-1TLC_0_1"
 				(rectangle
 					(start -6.35 6.35)
 					(end 6.35 -6.35)
@@ -3789,7 +3800,7 @@
 					)
 				)
 			)
-			(symbol "YA9308-AEC_1_1"
+			(symbol "WBC2-1TLC_1_1"
 				(pin passive line
 					(at 8.89 2.54 180)
 					(length 2.54)
@@ -4142,6 +4153,10 @@
 	(no_connect
 		(at 64.77 80.01)
 		(uuid "128b64b1-cdc8-560a-ab4a-01bdb4ec4953")
+	)
+	(no_connect
+		(at 245.11 100.33)
+		(uuid "12b8b047-793c-4225-946d-509c624ba049")
 	)
 	(no_connect
 		(at 24.13 54.61)
@@ -6197,8 +6212,8 @@
 		)
 	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio:YA9308-AEC")
-		(at 236.22 100.33 180)
+		(lib_id "wsprrypi-zero-gpio:WBC2-1TLC")
+		(at 130.81 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6206,9 +6221,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "3c52ee12-6b77-5d59-a497-ae8f5d6f2520")
-		(property "Reference" "T41"
-			(at 235.712 105.41 0)
+		(uuid "47e3e98c-a77e-43bc-bd9a-b48440585921")
+		(property "Reference" "T21"
+			(at 130.81 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6217,8 +6232,8 @@
 				)
 			)
 		)
-		(property "Value" "YA9308-AEC"
-			(at 236.22 92.202 0)
+		(property "Value" "WBC2-1TLC"
+			(at 130.81 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6227,8 +6242,8 @@
 				)
 			)
 		)
-		(property "Footprint" "wsprrypi-zero-gpio:Coilcraft_YA9308"
-			(at 237.45 94.15 0)
+		(property "Footprint" "wsprrypi-zero-gpio:Coilcraft_WBC2-1TLC"
+			(at 130.81 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6238,8 +6253,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.coilcraft.com/getmedia/508634a8-8a9d-4933-83b8-7660d3e9ca71/ya9308.pdf"
-			(at 237.45 94.15 0)
+		(property "Datasheet" "https://www.coilcraft.com/getmedia/f685d903-2563-4c96-8ba6-f82a58883aeb/wbc.pdf"
+			(at 130.81 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6249,8 +6264,8 @@
 				)
 			)
 		)
-		(property "Description" "1:2 impedance-ratio SMT wideband transformer, 0.1 MHz to 950 MHz, center-tapped secondary"
-			(at 237.45 94.15 0)
+		(property "Description" "1:2 impedance-ratio SMT wideband transformer, 0.2 MHz to 500 MHz, center-tapped secondary"
+			(at 130.81 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6261,7 +6276,7 @@
 			)
 		)
 		(property "Manufacturer" "Coilcraft"
-			(at 237.45 94.15 0)
+			(at 130.81 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6271,8 +6286,8 @@
 				)
 			)
 		)
-		(property "MPN" "YA9308-AEC"
-			(at 237.45 94.15 0)
+		(property "MPN" "WBC2-1TLC"
+			(at 130.81 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6282,28 +6297,39 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "0a063199-adc1-545b-8935-d94fd9cb7f5d")
-		)
-		(pin "2"
-			(uuid "a7af6d60-e632-5ac3-a06c-551acf8aaac3")
-		)
-		(pin "3"
-			(uuid "c7fdfb0b-5e8d-5e04-8cf8-40bab411db6b")
-		)
-		(pin "4"
-			(uuid "0272bf4a-ac34-51ba-b839-7c7b07648774")
+		(property "LCSC_PART" "C19191658"
+			(at 130.81 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "5"
-			(uuid "3706c6c1-4a6b-5a99-8675-1b99ed765571")
+			(uuid "61a84738-1a79-45b5-bff7-89425fa1f62c")
+		)
+		(pin "2"
+			(uuid "4b40e18d-fbc4-490a-a94f-ef3563c1c68a")
+		)
+		(pin "3"
+			(uuid "55b71e16-bc86-4bfb-808e-6d3ecac1f190")
+		)
+		(pin "1"
+			(uuid "bd2f408f-4568-4799-ba6d-5fdf735ef4fb")
 		)
 		(pin "6"
-			(uuid "cb6166f9-ea84-5ed9-bb4e-a7e1b5faf4d6")
+			(uuid "b8276873-b2eb-48d2-a35e-15c71b69bd06")
+		)
+		(pin "4"
+			(uuid "543aabba-9d41-4b2f-8774-295b657eed80")
 		)
 		(instances
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "T41")
+					(reference "T21")
 					(unit 1)
 				)
 			)
@@ -7879,119 +7905,6 @@
 		)
 	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio:YA9308-AEC")
-		(at 130.81 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8d5393f9-1509-5469-a07a-bc56e489b7f7")
-		(property "Reference" "T21"
-			(at 130.556 25.908 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "YA9308-AEC"
-			(at 130.556 23.114 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio:Coilcraft_YA9308"
-			(at 131.03 36.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.coilcraft.com/getmedia/508634a8-8a9d-4933-83b8-7660d3e9ca71/ya9308.pdf"
-			(at 131.03 36.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1:2 impedance-ratio SMT wideband transformer, 0.1 MHz to 950 MHz, center-tapped secondary"
-			(at 131.03 36.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Coilcraft"
-			(at 131.03 36.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "YA9308-AEC"
-			(at 131.03 36.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b4f9e3b5-9774-5931-80c3-77ab1a01dd1b")
-		)
-		(pin "2"
-			(uuid "e87a532b-2630-5a4f-9b99-c93273dc5dd2")
-		)
-		(pin "3"
-			(uuid "7bb37f94-b8f2-50c0-8f6f-aa10f67807ac")
-		)
-		(pin "4"
-			(uuid "3ffc59f2-0c6e-5958-ad5f-b55a40b8f83e")
-		)
-		(pin "5"
-			(uuid "597f6517-c994-56da-b7c0-58a757fd627a")
-		)
-		(pin "6"
-			(uuid "3add21e0-3d8d-50da-9ac3-1cd312a35e6c")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "T21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "wsprrypi-zero-gpio:GND")
 		(at 91.44 80.01 0)
 		(unit 1)
@@ -8462,6 +8375,130 @@
 			(project "WsprryPi Zero GPIO"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "wsprrypi-zero-gpio:WBC2-1TLC")
+		(at 236.22 100.33 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "985bf4de-d96d-4f9c-bee5-34661df9e40a")
+		(property "Reference" "T41"
+			(at 236.22 100.584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WBC2-1TLC"
+			(at 236.22 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio:Coilcraft_WBC2-1TLC"
+			(at 236.22 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.coilcraft.com/getmedia/f685d903-2563-4c96-8ba6-f82a58883aeb/wbc.pdf"
+			(at 236.22 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1:2 impedance-ratio SMT wideband transformer, 0.2 MHz to 500 MHz, center-tapped secondary"
+			(at 236.22 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Coilcraft"
+			(at 236.22 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WBC2-1TLC"
+			(at 236.22 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" "C19191658"
+			(at 236.22 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "9c9e7ccf-8373-4ff2-8c9d-9758afb269c4")
+		)
+		(pin "4"
+			(uuid "62e050c4-73a6-4fd4-b511-446e6c9aa4cc")
+		)
+		(pin "1"
+			(uuid "d9289af8-da7f-4d56-b20c-3b75f6bee25a")
+		)
+		(pin "3"
+			(uuid "9af7e7b1-1166-4cc8-b41b-aa1e2cf7e56a")
+		)
+		(pin "6"
+			(uuid "4645af9a-a6bc-485f-a517-35e52c51af57")
+		)
+		(pin "2"
+			(uuid "fa215c29-51c9-4d68-a3b9-ff478d549dde")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "T41")
 					(unit 1)
 				)
 			)
