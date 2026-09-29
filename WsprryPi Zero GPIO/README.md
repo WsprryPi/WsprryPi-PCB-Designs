@@ -24,7 +24,7 @@ The schematic is arranged as five boxed functional sections. Circuit parts withi
 | --- | --- | --- |
 | 10 | Raspberry Pi HAT interface, GPIO indicator, GPIO-selection header, and socket purchasing item | `U10`, `D11`, `R11`, `J11`, `J12` |
 | 20 | GPIO damping, DC blocking, boot-state pull-down, and input transformer | `R20`, `C21`, `R21`, `T22` |
-| 30 | LTC6432-15 amplifier, coupling, feedback, noise filtering, and bypassing | `C30`–`C37`, `U32` |
+| 30 | LTC6432-15 amplifier, coupling, feedback, noise filtering, and bypassing | `C30`–`C37`, `U31` |
 | 40 | Output transformer and grouped J81/J82 LPF interface | `T40`, `J41` |
 | 50 | TPS22918 switched 5 V amplifier supply | `U50`, `C51`, `R52`, `C53`, `R54`, `C55` |
 
@@ -80,7 +80,7 @@ J1 uses the `SMA_Adafruit_1865` symbol and `SMA_Adafruit_1865_EdgeMount` footpri
 
 The same project-local library now contains symbols and assigned footprints for the proposed BOM:
 
-- `LTC6432-15`, whose local master and placed U32 metadata select `LTC6432AIUF-15#PBF` and `LCSC_PART` C689344, with the Analog Devices UF24 4 × 4 mm QFN exposed-pad footprint and thermal vias;
+- `LTC6432-15`, whose local master and placed U31 metadata select `LTC6432AIUF-15#PBF` and `LCSC_PART` C689344, with the Analog Devices UF24 4 × 4 mm QFN exposed-pad footprint and thermal vias;
 - `YA9308-AEC` with a custom footprint built from Coilcraft's recommended land pattern;
 - unplaced `WBC2-1TLC` with `LCSC_PART` C19191658 and a separate custom footprint built from Coilcraft's WBC recommended land pattern; this library addition does not select it for T22/T40 or resolve the order blocker;
 - `TPS22918` with the KiCad SOT-23-6 footprint;
@@ -96,6 +96,7 @@ Manufacturer, MPN, `LCSC_PART`, data-sheet, description, and local-footprint fie
 - [Project settings](WsprryPi%20Zero%20GPIO.kicad_pro): rules, defaults, and BOM preset.
 - [Schematic](WsprryPi%20Zero%20GPIO.kicad_sch): proposed five-block amplifier, power-control, and LPF-interface circuit.
 - [PCB](WsprryPi%20Zero%20GPIO.kicad_pcb): placed and routed two-layer board with the locked Zero-size outline, interface footprint, mounting-hole lands, PoE keepout, and LPF keepout.
+- [Fabrication notes](FABRICATION-NOTES.md): selective U31 via-in-pad fill/cap layer and JLCPCB review instructions.
 - [Symbol library](wsprrypi-zero-gpio.kicad_sym): GPIO interface, socket purchasing symbol, and grouped J81/J82 connector symbol.
 - [Interface footprint](wsprrypi-zero-gpio.pretty/Raspberry_Pi_Zero_HAT_Interface.kicad_mod).
 - [Selectable 2×20 socket footprint](wsprrypi-zero-gpio.pretty/Raspberry_Pi_HAT_2x20_Socket_3D.kicad_mod): board-only 3D representation used by H1.

@@ -71,7 +71,7 @@ This table is the likely BOM for estimating space and cost, not an order-ready B
 | Load-switch enable pull-down | 1 | 100 kohm | Provisional | Makes amplifier power off the hardware default. |
 | Load-switch rise-time capacitor | 1 | 1 nF, 50 V, X7R, 0603, `LCSC_PART` C1588 | Implemented; validate | C53 gives a nominal approximately 2.54 ms rise time at 5 V; verify startup behavior and 5 V droop. |
 | Load-switch output-discharge resistor | 1 | Initial value 1 kohm | Provisional | Select or omit after checking shutdown behavior. |
-| Load-switch output capacitor | 1 | 1 µF, 50 V, X7R, 0805, `LCSC_PART` C28323 | Implemented; validate | C55 is connected from `SW_5V` to ground. Together with the local U32 bypass capacitors, it keeps the local switched-rail capacitance well below C51's nominal input capacitance. |
+| Load-switch output capacitor | 1 | 1 µF, 50 V, X7R, 0805, `LCSC_PART` C28323 | Implemented; validate | C55 is connected from `SW_5V` to ground. Together with the local U31 bypass capacitors, it keeps the local switched-rail capacitance well below C51's nominal input capacitance. |
 | Raspberry Pi socket | 1 | Female 2×20, 2.54 mm | Required | Exact mating height remains a mechanical decision. |
 | LPF sockets | 2 | Female 1×4, 2.54 mm | Required | J81 and J82; the plug-in LPF itself is excluded from this BOM. |
 | RF output SMA | 1 | Adafruit 1865 or mechanically equivalent part matching the local footprint | Required; hand-soldered | J1 is placed and routed but intentionally excluded from automated BOM and placement output. |
@@ -100,7 +100,7 @@ The following choices are not locked by selecting the LTC6432-15:
 - final transformer acceptance after endpoint gain, return-loss, phase-balance, and distortion measurements;
 - exact passive manufacturers, packages, tolerances, and voltage ratings;
 - exact connector MPNs;
-- the production treatment of U32 exposed-pad thermal vias and stencil apertures;
+- JLCPCB CAM acceptance of the nine U31 exposed-pad holes marked for epoxy fill and copper capping in [FABRICATION-NOTES.md](FABRICATION-NOTES.md), and assembler acceptance of the stencil apertures;
 - startup rail droop, rise time, and power-loss behavior with the implemented `C51 = 10 µF`, `C53 = 1 nF`, and `C55 = 1 µF` network;
 - shutdown-request firmware behavior for SW11 and GPIO26;
 - output-power acceptance limits per band and per GPIO drive setting; and
