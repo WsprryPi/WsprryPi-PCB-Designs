@@ -1,17 +1,21 @@
-# WsprryPi Zero GPIO
+# WsprryPi Zero GPIO BS170
+
+This is a separate KiCad project in the same Git repository. It was copied from `WsprryPi Zero GPIO` as a starting point, with its own project files, project-local symbol and footprint libraries, and `${KIPRJMOD}` model paths. The copied schematic and PCB still contain the two-transformer LTC6432-15 circuit; no BS170 amplifier has been drawn or routed yet.
 
 A KiCad 10 project initialized from the `RPi Zero HAT` template for WsprryPi GPIO development. It provides the Raspberry Pi Zero-size uHAT geometry, a complete 40-pin GPIO interface, a selectable underside socket model, a socket purchasing item, and independent local libraries.
 
 The schematic and routed two-layer PCB contain the first implementation pass of the 5 V RF amplifier, load-switch circuit, GPIO selection header, LPF interface, and edge-launch SMA output. The design intentionally omits an identification EEPROM and leaves ID_SD and ID_SC unused. Placement and routing are saved, but the board has not been fabricated or physically qualified.
 
-The saved 5 V LTC6432-15 amplifier architecture, its original RF estimate, first-pass BOM, and remaining implementation decisions are recorded in [AMPLIFIER-DESIGN.md](AMPLIFIER-DESIGN.md). It is a new design and does not inherit the earlier 1 W amplifier requirements.
+**Cost redesign in progress:** the saved two-transformer LTC6432-15 implementation is too expensive and is no longer the forward design choice. See the [single-BS170 redesign proposal](BS170-REDESIGN-PROPOSAL.md) for the lower-cost candidate and its band-dependent power limits. The proposal has not been applied to the KiCad sources; this routed board remains unsuitable for ordering.
+
+The copied 5 V LTC6432-15 circuit, its original RF estimate, and first-pass BOM are recorded in [BASELINE-AMPLIFIER-DESIGN.md](BASELINE-AMPLIFIER-DESIGN.md). Those details document the copied baseline and do not define the proposed BS170 circuit.
 
 > **Order status: Not ready for order.** The saved implementation uses two Coilcraft `WBC2-1TLC` transformers and an LTC6432-15; it has been rejected on cost grounds. The transformer substitution and the board's electrical/RF performance have not been qualified. The WBC2-1TLC data sheet begins its specified frequency range at 0.2 MHz, above this project's 135 kHz lower target. Do not submit the saved board for fabrication or assembly as the lower-cost design.
 
 ## Develop this HAT project
 
-1. Open `WsprryPi Zero GPIO.kicad_pro` in KiCad 10 and review the saved schematic and routed board together.
-2. Resolve the cost, component, and compliance decisions recorded in [AMPLIFIER-DESIGN.md](AMPLIFIER-DESIGN.md) before preparing any order package.
+1. Open `WsprryPi Zero GPIO BS170.kicad_pro` in KiCad 10 and review the saved schematic and routed board together.
+2. Use the [BS170 redesign proposal](BS170-REDESIGN-PROPOSAL.md) to replace the copied RF stage in this project's schematic and board. Resolve its circuit, power, sourcing, and compliance decisions before preparing an order package.
 3. After any design change, update the PCB from the schematic as needed, refill copper zones, and rerun ERC and DRC before reviewing the resulting diff.
 
 This project has independent copies of the design files, symbol library, footprint library, and STEP model. Changes here do not update `RPi Zero HAT`, and later template changes do not update this project.
@@ -64,13 +68,13 @@ U10 represents the electrical and mechanical interface and is excluded from the 
 
 The schematic's **Amplifier purchasing BOM** preset exports all parts included in the automated purchasing BOM, including the canonical `LCSC_PART` supplier-ordering field; the legacy `LCSC` field is not used. U10 remains excluded as a non-purchasing interface representation. J11 appears as one row with deliberately blank manufacturer, MPN, and `LCSC_PART` fields because mating height and supported Raspberry Pi models must be chosen for the finished design. Enter the selected socket part before fabrication. J1 is a required hand-soldered SMA connector but is intentionally excluded from BOM and placement output. J12 is also excluded from BOM and placement output by design, while remaining placed for routing and 3D visualization.
 
-The exported BOM is for review of this cost-rejected implementation only. It is not an order-ready BOM.
+The exported BOM is for review of the cost-rejected saved implementation only. It is not an order-ready BOM or a BOM for the proposed BS170 redesign.
 
 ## Local libraries and files
 
-Both library tables use the `wsprrypi-zero-gpio` nickname and `${KIPRJMOD}` paths. All required project libraries are inside this directory.
+Both library tables use the `wsprrypi-zero-gpio-bs170` nickname and `${KIPRJMOD}` paths. All required project libraries are inside this directory.
 
-H1 is a separate, selectable footprint that shows the female 2×20 HAT socket on the underside of the board. Delete H1 when the 3D socket is not wanted, or place `wsprrypi-zero-gpio:Raspberry_Pi_HAT_2x20_Socket_3D` to add it back. H1 has no electrical pads and is exempt from the courtyard requirement because it overlays the same physical socket already represented by U10's authoritative underside courtyard. U10 remains the authoritative electrical and mechanical interface, and J11 remains the purchasing item.
+H1 is a separate, selectable footprint that shows the female 2×20 HAT socket on the underside of the board. Delete H1 when the 3D socket is not wanted, or place `wsprrypi-zero-gpio-bs170:Raspberry_Pi_HAT_2x20_Socket_3D` to add it back. H1 has no electrical pads and is exempt from the courtyard requirement because it overlays the same physical socket already represented by U10's authoritative underside courtyard. U10 remains the authoritative electrical and mechanical interface, and J11 remains the purchasing item.
 
 The local library includes the grouped 2×4 connector `Dual_PinSocket_1x04_P2.54mm_J81_J82`. Its two 1×4 socket centers are exactly 31.880 mm apart, matching J1/J2 on the current `Wsprry-Pi-LPF` board. Symbol/footprint pins 1–4 correspond to J81 pins 1–4; pins 5–8 correspond to J82 pins 1–4. Its 29.22 × 11.20 mm inter-header rule area prohibits tracks, vias, pads, copper pours, and footprints on `F.Cu` while intentionally allowing the bottom-layer ground pour beneath the LPF. This project-local footprint was adjusted from the Zero HAT template's older 32.020 mm, two-copper-layer definition.
 
@@ -93,27 +97,27 @@ The same project-local library contains symbols and assigned footprints for the 
 
 Manufacturer, MPN, `LCSC_PART`, data-sheet, description, and local-footprint fields are embedded in the device symbols where applicable. See [local library sources and licensing](LIBRARY-SOURCES.md) before modifying or redistributing the imported assets.
 
-- [Project settings](WsprryPi%20Zero%20GPIO.kicad_pro): rules, defaults, and BOM preset.
-- [Schematic](WsprryPi%20Zero%20GPIO.kicad_sch): proposed five-block amplifier, power-control, and LPF-interface circuit.
-- [PCB](WsprryPi%20Zero%20GPIO.kicad_pcb): placed and routed two-layer board with the locked Zero-size outline, interface footprint, mounting-hole lands, PoE keepout, and LPF keepout.
-- [Fabrication notes](FABRICATION-NOTES.md): selective U31 via-in-pad fill/cap layer and JLCPCB review instructions.
-- [Symbol library](wsprrypi-zero-gpio.kicad_sym): GPIO interface, socket purchasing symbol, and grouped J81/J82 connector symbol.
-- [Interface footprint](wsprrypi-zero-gpio.pretty/Raspberry_Pi_Zero_HAT_Interface.kicad_mod).
-- [Selectable 2×20 socket footprint](wsprrypi-zero-gpio.pretty/Raspberry_Pi_HAT_2x20_Socket_3D.kicad_mod): board-only 3D representation used by H1.
-- [Grouped 2×4 J81/J82 footprint](wsprrypi-zero-gpio.pretty/Dual_PinSocket_1x04_P2.54mm_J81_J82.kicad_mod): exact current LPF-board spacing plus an F.Cu inter-header copper and placement keepout.
+- [Project settings](WsprryPi%20Zero%20GPIO%20BS170.kicad_pro): copied rules, defaults, and BOM preset.
+- [Schematic](WsprryPi%20Zero%20GPIO%20BS170.kicad_sch): copied five-block LTC6432 baseline, power-control, and LPF-interface circuit.
+- [PCB](WsprryPi%20Zero%20GPIO%20BS170.kicad_pcb): copied placed and routed two-layer baseline with the locked Zero-size outline, interface footprint, mounting-hole lands, PoE keepout, and LPF keepout.
+- [Fabrication notes](FABRICATION-NOTES.md): process notes for the copied U31 baseline only; reassess after the BS170 layout replaces it.
+- [Symbol library](wsprrypi-zero-gpio-bs170.kicad_sym): GPIO interface, socket purchasing symbol, and grouped J81/J82 connector symbol.
+- [Interface footprint](wsprrypi-zero-gpio-bs170.pretty/Raspberry_Pi_Zero_HAT_Interface.kicad_mod).
+- [Selectable 2×20 socket footprint](wsprrypi-zero-gpio-bs170.pretty/Raspberry_Pi_HAT_2x20_Socket_3D.kicad_mod): board-only 3D representation used by H1.
+- [Grouped 2×4 J81/J82 footprint](wsprrypi-zero-gpio-bs170.pretty/Dual_PinSocket_1x04_P2.54mm_J81_J82.kicad_mod): exact current LPF-board spacing plus an F.Cu inter-header copper and placement keepout.
 - [Local library sources and licensing](LIBRARY-SOURCES.md): imported-footprint provenance, custom-part data sources, license, and validation limits.
-- [Local STEP models](wsprrypi-zero-gpio.3dshapes/README.md) for the 2×20 socket, 1×3 male header, 0603 LED, and SKRPANE010 tactile switch.
+- [Local STEP models](wsprrypi-zero-gpio-bs170.3dshapes/README.md) for the 2×20 socket, 1×3 male header, 0603 LED, and SKRPANE010 tactile switch.
 - [License](LICENSE.md): repository-owned project terms.
 
 The local-library filenames and nickname are unique to this project. Keep generated exports, backups, caches, and local preference files out of this directory.
 
 ## Validation and limits
 
-The saved schematic and board are a cost-rejected implementation and are not ready for order. Production decisions and physical/RF qualification remain open. J1, J12, and SW11 are placed; J1 and J12 retain their intentional BOM and placement-output exclusions. The HAT interface footprint keeps its original schematic UUID, so U10 remains associated with the PCB interface when the board is updated from the schematic.
+The saved schematic and board are a cost-rejected implementation and are not ready for order. The proposed BS170 redesign, production decisions, and physical/RF qualification remain open. J1, J12, and SW11 are placed; J1 and J12 retain their intentional BOM and placement-output exclusions. The HAT interface footprint keeps its original schematic UUID, so U10 remains associated with the PCB interface when the board is updated from the schematic.
 
-KiCad 10.0.6 schematic ERC reports 0 errors and 0 warnings. KiCad 10.0.6 command-line PCB DRC reports 0 violations, 0 unconnected pads, and 0 footprint errors. These checks do not establish physical assembly, connector fit, Raspberry Pi model compatibility, electrical performance, thermal behavior, or RF performance.
+KiCad 10.0.6 schematic ERC reports 0 violations. Standard command-line PCB DRC reports 0 violations and 0 unconnected items. A separate command-line DRC attempt with schematic parity enabled aborted, so schematic-to-PCB parity is not verified by that run. These checks do not establish physical assembly, connector fit, Raspberry Pi model compatibility, electrical performance, thermal behavior, or RF performance.
 
-KiCad 10.0.6 successfully exported all 15 project-local symbols and all 15 project-local footprints. The resistor, capacitor, LED, ground, SMA, SKRPANE010, and 1×3 header assets, four device symbols, and two custom RF footprints were visually inspected from those exports. Library inspection, ERC, DRC, routing, and 3D rendering do not establish land-pattern suitability for a particular assembly process, solderability, thermal performance, RF performance, or production readiness.
+KiCad 10.0.6 successfully exported all 17 project-local symbols and all 16 project-local footprints. The copied schematic and PCB were visually inspected from PDF plots. These exports, ERC, DRC, and visual inspection do not establish land-pattern suitability for a particular assembly process, solderability, thermal performance, RF performance, or production readiness.
 
 ## Sources and license
 

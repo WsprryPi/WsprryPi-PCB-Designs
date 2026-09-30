@@ -1,6 +1,6 @@
-# WsprryPi Zero GPIO amplifier design
+# Copied two-transformer amplifier baseline
 
-Status: **cost-rejected two-transformer implementation; not ready for order**. The saved schematic/PCB use two Coilcraft `WBC2-1TLC` transformers and an LTC6432-15. It has not been physically validated. Some purchasing details below still describe the earlier `YA9308-AEC` selection and must not be used as a current-order BOM.
+Status: **historical two-transformer implementation; not ready for order**. The saved schematic/PCB use two Coilcraft `WBC2-1TLC` transformers and an LTC6432-15. This implementation has been rejected on cost grounds. The [single-BS170 redesign proposal](BS170-REDESIGN-PROPOSAL.md) is the candidate for the next revision; it has not been implemented or physically validated. Some purchasing details below still describe the earlier `YA9308-AEC` selection and must not be used as a current-order BOM.
 
 This is a new Zero-size HAT amplifier effort. Requirements and component choices from the earlier 1 W `WsprryPi-GPIO-Univ` design are reference material only and are not inherited by this board.
 
@@ -8,7 +8,7 @@ This is a new Zero-size HAT amplifier effort. Requirements and component choices
 
 The design uses one LTC6432-15 differential gain block from a single 5 V rail. It does not require a bipolar converter or another amplifier supply. A 1:2 impedance transformer converts the single-ended GPIO source to the amplifier's 100 ohm differential input, and a second 1:2 transformer converts the 100 ohm differential output back to 50 ohms for the plug-in LPF interface.
 
-The following decisions defined this saved implementation:
+The following decisions defined this saved implementation; the [BS170 proposal](BS170-REDESIGN-PROPOSAL.md) states which constraints carry forward:
 
 - The amplifier is an LTC6432-15. The local library master, schematic instance, and PCB footprint all select `LTC6432AIUF-15#PBF`, identified by `LCSC_PART` C689344; its order-time availability must still be confirmed.
 - The RF amplifier and its power-control circuit operate entirely from the Raspberry Pi 5 V rail.
@@ -48,7 +48,7 @@ The GPIO drive-strength menu changes pad drive behavior, not a calibrated RF att
 
 ## First-pass purchasing BOM
 
-This historical first-pass table includes the earlier `YA9308-AEC` selection and is not a current-order BOM. The saved schematic instead uses two `WBC2-1TLC` transformers.
+This historical first-pass table includes the earlier `YA9308-AEC` selection and is not a current-order BOM. The saved schematic instead uses two `WBC2-1TLC` transformers. Neither this table nor the saved implementation is the BOM for the proposed BS170 redesign.
 
 | Function | Qty | Likely part or value | State | Notes |
 | --- | ---: | --- | --- | --- |

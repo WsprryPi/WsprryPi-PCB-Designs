@@ -1,6 +1,6 @@
 # Lower-cost BS170 amplifier proposal
 
-Status: **proposed for design review; not implemented**. The saved schematic and PCB still contain the LTC6432-15 and two WBC2-1TLC transformers. This proposal does not qualify that board or authorize its fabrication.
+Status: **proposed for design review; not implemented**. This independent KiCad project begins as a copy of `WsprryPi Zero GPIO`. Its saved schematic and PCB still contain the LTC6432-15 and two WBC2-1TLC transformers. This proposal does not qualify the copied board or authorize its fabrication.
 
 ## Decision and scope
 
