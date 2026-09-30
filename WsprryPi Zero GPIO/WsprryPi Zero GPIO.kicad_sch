@@ -7989,8 +7989,8 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
+		(on_board no)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "8dda3259-4714-5afa-8412-caa9a82a1232")
 		(property "Reference" "J42"
