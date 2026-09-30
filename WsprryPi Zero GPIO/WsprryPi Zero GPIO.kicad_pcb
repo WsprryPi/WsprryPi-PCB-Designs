@@ -3251,6 +3251,19 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Coilcraft"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70237676-b3ad-4b80-9294-37a872ce327b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "LCSC" "C19191658"
 			(at 0 0 90)
 			(unlocked yes)
@@ -4351,6 +4364,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Coilcraft"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "10995457-d2e1-40ae-8a11-e938ed7fd3b9")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
