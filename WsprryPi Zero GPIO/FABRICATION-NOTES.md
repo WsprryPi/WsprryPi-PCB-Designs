@@ -23,4 +23,4 @@ These nine holes are currently modeled as through-hole pads in the footprint, no
 
 JLCPCB's [via-covering guidance](https://jlcpcb.com/help/article/pcb-via-covering) distinguishes epoxy-filled/capped via-in-pad from ink plugging and asks customers to identify the selected holes. Its [Gerber preparation guide](https://jlcpcb.com/help/article/gerber-files-preparation) specifies an `sk` layer for holes to be filled. Its [production-file review guide](https://jlcpcb.com/help/article/how-to-confirm-the-production-file) explains how to inspect the CAM files before release.
 
-The separate `YA9308-AEC` transformer procurement and physical/RF qualification gates in [README.md](README.md) and [AMPLIFIER-DESIGN.md](AMPLIFIER-DESIGN.md) still apply.
+The saved two-transformer amplifier has been rejected on cost grounds; see [README.md](README.md) and the [BS170 redesign proposal](BS170-REDESIGN-PROPOSAL.md). These process notes describe the saved PCB only and do not apply to a future redesign without review.

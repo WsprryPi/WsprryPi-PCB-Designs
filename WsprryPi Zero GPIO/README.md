@@ -4,14 +4,16 @@ A KiCad 10 project initialized from the `RPi Zero HAT` template for WsprryPi GPI
 
 The schematic and routed two-layer PCB contain the first implementation pass of the 5 V RF amplifier, load-switch circuit, GPIO selection header, LPF interface, and edge-launch SMA output. The design intentionally omits an identification EEPROM and leaves ID_SD and ID_SC unused. Placement and routing are saved, but the board has not been fabricated or physically qualified.
 
-The selected 5 V LTC6432-15 amplifier architecture, expected RF level, first-pass BOM, and remaining implementation decisions are recorded in [AMPLIFIER-DESIGN.md](AMPLIFIER-DESIGN.md). It is a new design and does not inherit the earlier 1 W amplifier requirements.
+**Cost redesign in progress:** the saved two-transformer LTC6432-15 implementation is too expensive and is no longer the forward design choice. See the [single-BS170 redesign proposal](BS170-REDESIGN-PROPOSAL.md) for the lower-cost candidate and its band-dependent power limits. The proposal has not been applied to the KiCad sources; this routed board remains unsuitable for ordering.
 
-> **Order status: Not ready for order.** The selected architecture requires two Coilcraft `YA9308-AEC` transformers. They are not available through the normal JLCPCB/LCSC public parts inventory, and no normally stocked substitute has been qualified for the required impedance ratio, center-tapped output bias, current capacity, frequency span, and available board area. Do not submit this design for fabrication or assembly until the exact transformers have an accepted procurement path, or the circuit is redesigned around a separately qualified replacement.
+The saved 5 V LTC6432-15 amplifier architecture, its original RF estimate, first-pass BOM, and remaining implementation decisions are recorded in [AMPLIFIER-DESIGN.md](AMPLIFIER-DESIGN.md). It is a new design and does not inherit the earlier 1 W amplifier requirements.
+
+> **Order status: Not ready for order.** The saved implementation uses two Coilcraft `WBC2-1TLC` transformers and an LTC6432-15; it has been rejected on cost grounds. The transformer substitution and the board's electrical/RF performance have not been qualified. The WBC2-1TLC data sheet begins its specified frequency range at 0.2 MHz, above this project's 135 kHz lower target. Do not submit the saved board for fabrication or assembly as the lower-cost design.
 
 ## Develop this HAT project
 
 1. Open `WsprryPi Zero GPIO.kicad_pro` in KiCad 10 and review the saved schematic and routed board together.
-2. Resolve the `YA9308-AEC` sourcing blocker and the remaining provisional component and compliance decisions recorded in `AMPLIFIER-DESIGN.md`.
+2. Review the [BS170 redesign proposal](BS170-REDESIGN-PROPOSAL.md) and resolve its open circuit, power, sourcing, and compliance decisions before changing the KiCad sources.
 3. After any design change, update the PCB from the schematic as needed, refill copper zones, and rerun ERC and DRC before reviewing the resulting diff.
 
 This project has independent copies of the design files, symbol library, footprint library, and STEP model. Changes here do not update `RPi Zero HAT`, and later template changes do not update this project.
@@ -23,9 +25,9 @@ The schematic is arranged as five boxed functional sections. Circuit parts withi
 | Series | Functional block | References |
 | --- | --- | --- |
 | 10 | Raspberry Pi HAT interface, GPIO indicator, GPIO-selection header, and socket purchasing item | `U10`, `D11`, `R11`, `J11`, `J12` |
-| 20 | GPIO damping, DC blocking, boot-state pull-down, and input transformer | `R20`, `C21`, `R21`, `T22` |
+| 20 | GPIO damping, DC blocking, boot-state pull-down, and input transformer | `R20`, `C21`, `R21`, `T21` |
 | 30 | LTC6432-15 amplifier, coupling, feedback, noise filtering, and bypassing | `C30`–`C37`, `U31` |
-| 40 | Output transformer and grouped J81/J82 LPF interface | `T40`, `J41` |
+| 40 | Output transformer and grouped J81/J82 LPF interface | `T41`, `J41` |
 | 50 | TPS22918 switched 5 V amplifier supply | `U50`, `C51`, `R52`, `C53`, `R54`, `C55` |
 
 J1 is the hand-soldered edge-launch output connector, and H1 is the board-only 3D socket representation; those references sit outside the functional-decade annotation convention. SW11 is the software shutdown-request button in the 10-series. J12 permits GPIO4 or GPIO20 to be jumpered onto `GPIO_RF`. GPIO23 is the active-high `AMP_EN` control, and SW11 grounds GPIO26 for software to detect. GPIO drive-strength selection remains coarse and experimental rather than a calibrated power control.
@@ -64,7 +66,7 @@ U10 represents the electrical and mechanical interface and is excluded from the 
 
 The schematic's **Amplifier purchasing BOM** preset exports all parts included in the automated purchasing BOM, including the canonical `LCSC_PART` supplier-ordering field; the legacy `LCSC` field is not used. U10 remains excluded as a non-purchasing interface representation. J11 appears as one row with deliberately blank manufacturer, MPN, and `LCSC_PART` fields because mating height and supported Raspberry Pi models must be chosen for the finished design. Enter the selected socket part before fabrication. J1 is a required hand-soldered SMA connector but is intentionally excluded from BOM and placement output. J12 is also excluded from BOM and placement output by design, while remaining placed for routing and 3D visualization.
 
-The exported BOM is for design review and costing only. It is not an order-ready BOM while the two required `YA9308-AEC` transformers lack an accepted assembly-sourcing path.
+The exported BOM is for review of the cost-rejected saved implementation only. It is not an order-ready BOM or a BOM for the proposed BS170 redesign.
 
 ## Local libraries and files
 
@@ -78,11 +80,11 @@ J12 uses the local `Conn_01x03` symbol and `PinHeader_1x03_P2.54mm_Vertical` mal
 
 J1 uses the `SMA_Adafruit_1865` symbol and `SMA_Adafruit_1865_EdgeMount` footprint copied from `WsprryPi-GPIO-Univ`. This is the Adafruit 1865 standard-polarity female edge-launch SMA for a 1.6 mm board: pin 1 is signal, pin 2 is ground, the origin is the board seating edge on the signal centerline, and copper extends 0.500–4.064 mm into the board. It is placed and routed, hand-soldered, excluded from BOM and position output, and has no attached 3D model.
 
-The same project-local library now contains symbols and assigned footprints for the proposed BOM:
+The same project-local library contains symbols and assigned footprints for the saved implementation:
 
 - `LTC6432-15`, whose local master and placed U31 metadata select `LTC6432AIUF-15#PBF` and `LCSC_PART` C689344, with the Analog Devices UF24 4 × 4 mm QFN exposed-pad footprint and thermal vias;
-- `YA9308-AEC` with a custom footprint built from Coilcraft's recommended land pattern;
-- unplaced `WBC2-1TLC` with `LCSC_PART` C19191658 and a separate custom footprint built from Coilcraft's WBC recommended land pattern; this library addition does not select it for T22/T40 or resolve the order blocker;
+- unplaced `YA9308-AEC` with a custom footprint built from Coilcraft's recommended land pattern;
+- placed `WBC2-1TLC` on T21 and T41, with `LCSC_PART` C19191658 and a separate custom footprint built from Coilcraft's WBC recommended land pattern; its electrical performance on this board remains unqualified;
 - `TPS22918` with the KiCad SOT-23-6 footprint;
 - local `R_0603`, `C_0603`, and `C_0805` symbols with local 0603 and 0805 KiCad footprints, plus the project-local `C_1206_3216Metric` footprint assigned in the schematic to C21, C31, C32, C37, and C38; the shared `C_0805` symbol's filter permits both local capacitor footprints while retaining 0805 as its default; `R_0603` uses the compact US zigzag graphic; and
 - local `R_US` and `LED` symbols supporting the placed R11 and D11 indicator circuit, with local 0603 footprints and an LED STEP model;
@@ -109,7 +111,7 @@ The local-library filenames and nickname are unique to this project. Keep genera
 
 ## Validation and limits
 
-The current schematic and board remain active work and are not ready for order because of the unresolved `YA9308-AEC` sourcing requirement and the remaining production-readiness decisions in `AMPLIFIER-DESIGN.md`. J1, J12, and SW11 are placed; J1 and J12 retain their intentional BOM and placement-output exclusions. The HAT interface footprint keeps its original schematic UUID, so U10 remains associated with the PCB interface when the board is updated from the schematic.
+The saved schematic and board are a cost-rejected implementation and are not ready for order. The proposed BS170 redesign, production decisions, and physical/RF qualification remain open. J1, J12, and SW11 are placed; J1 and J12 retain their intentional BOM and placement-output exclusions. The HAT interface footprint keeps its original schematic UUID, so U10 remains associated with the PCB interface when the board is updated from the schematic.
 
 KiCad 10.0.6 schematic ERC reports 0 errors and 0 warnings. KiCad 10.0.6 command-line PCB DRC reports 0 violations, 0 unconnected pads, and 0 footprint errors. These checks do not establish physical assembly, connector fit, Raspberry Pi model compatibility, electrical performance, thermal behavior, or RF performance.
 

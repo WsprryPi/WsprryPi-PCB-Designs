@@ -1,14 +1,14 @@
 # WsprryPi Zero GPIO amplifier design
 
-Status: **not ready for order**. The selected architecture and saved schematic/PCB require two Coilcraft `YA9308-AEC` transformers, which do not have an accepted JLCPCB/LCSC assembly-sourcing path. The board is laid out and routed but has not been fabricated or physically validated.
+Status: **historical two-transformer implementation; not ready for order**. The saved schematic/PCB use two Coilcraft `WBC2-1TLC` transformers and an LTC6432-15. This implementation has been rejected on cost grounds. The [single-BS170 redesign proposal](BS170-REDESIGN-PROPOSAL.md) is the candidate for the next revision; it has not been implemented or physically validated. Some purchasing details below still describe the earlier `YA9308-AEC` selection and must not be used as a current-order BOM.
 
 This is a new Zero-size HAT amplifier effort. Requirements and component choices from the earlier 1 W `WsprryPi-GPIO-Univ` design are reference material only and are not inherited by this board.
 
-## Selected architecture
+## Saved historical architecture
 
 The design uses one LTC6432-15 differential gain block from a single 5 V rail. It does not require a bipolar converter or another amplifier supply. A 1:2 impedance transformer converts the single-ended GPIO source to the amplifier's 100 ohm differential input, and a second 1:2 transformer converts the 100 ohm differential output back to 50 ohms for the plug-in LPF interface.
 
-The following decisions are selected:
+The following decisions defined this saved implementation; the [BS170 proposal](BS170-REDESIGN-PROPOSAL.md) states which constraints carry forward:
 
 - The amplifier is an LTC6432-15. The local library master, schematic instance, and PCB footprint all select `LTC6432AIUF-15#PBF`, identified by `LCSC_PART` C689344; its order-time availability must still be confirmed.
 - The RF amplifier and its power-control circuit operate entirely from the Raspberry Pi 5 V rail.
@@ -40,7 +40,7 @@ Circuit parts within a functional block use a reference number inside its decade
 
 ## Expected RF level
 
-The LTC6432-15 specifies approximately 15.2 dB power gain and a typical 22.5 dBm 1 dB compression point. The two proposed YA9308-AEC transformers are each specified for no more than 0.5 dB insertion loss, so approximately 14 dB of pre-LPF small-signal board gain is a reasonable first estimate. LPF loss and layout loss reduce the delivered gain further.
+The LTC6432-15 specifies approximately 15.2 dB power gain and a typical 22.5 dBm 1 dB compression point. The originally proposed YA9308-AEC transformers were each specified for no more than 0.5 dB insertion loss, so approximately 14 dB of pre-LPF small-signal board gain was a first estimate for that earlier parts selection. The saved WBC2-1TLC implementation has not been RF-qualified and cannot inherit that estimate across the full target range. LPF loss and layout loss further reduce delivered gain.
 
 The first-pass output goal is **+20 dBm (100 mW) after the selected LPF**. **+21 dBm (125 mW)** is a stretch goal, not an acceptance value. Reaching either level over the entire 135 kHz to 144 MHz span depends on GPIO source amplitude and impedance, transformer behavior, LPF insertion loss, layout, and thermal performance. A 250 mW claim would be about +24 dBm, above the amplifier's typical compression point and at the transformer's RF rating, so this architecture must not be represented as a 250 mW design.
 
@@ -48,7 +48,7 @@ The GPIO drive-strength menu changes pad drive behavior, not a calibrated RF att
 
 ## First-pass purchasing BOM
 
-This table is the likely BOM for estimating space and cost, not an order-ready BOM. Parts marked **selected** define the architecture. Parts marked **provisional** remain subject to schematic, layout, and bench qualification. The required `YA9308-AEC` transformers are an order blocker until an accepted procurement path is established or the circuit is redesigned and qualified around a replacement.
+This historical first-pass table includes the earlier `YA9308-AEC` selection and is not a current-order BOM. The saved schematic instead uses two `WBC2-1TLC` transformers. Neither this table nor the saved implementation is the BOM for the proposed BS170 redesign.
 
 | Function | Qty | Likely part or value | State | Notes |
 | --- | ---: | --- | --- | --- |
