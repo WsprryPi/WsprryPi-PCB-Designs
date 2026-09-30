@@ -15,9 +15,9 @@ These nine holes are currently modeled as through-hole pads in the footprint, no
 ## JLCPCB package and order review
 
 1. Export and inspect the copper, mask, plated and non-plated drill, board-outline, and `sk` Gerbers. Include an annotated U31 image or drill drawing identifying the same nine holes.
-2. Choose JLCPCB's **Epoxy-filled & Capped** via-covering process if offered for the quoted two-layer configuration. In PCB Order Notes, enter:
+2. Choose JLCPCB's **Epoxy-filled & Capped** via-covering process if offered for the quoted two-layer configuration. In PCB Order Notes (200-character limit), enter:
 
-   > Epoxy-fill and copper-cap only the nine 0.20 mm holes marked on the `sk` Gerber beneath U31's exposed pad. Keep its front pad solderable. Tent all other vias on both sides. Leave all component through-holes open. These nine holes are modeled as through-hole pads in KiCad; please confirm selective via-in-pad treatment for this two-layer, 1.6 mm board before production.
+   > Epoxy-fill/copper-cap only 9 x 0.20mm holes on sk Gerber under U31. Keep top pad solderable. Tent other vias both sides; leave component holes open. Confirm selective fill for 2-layer, 1.6mm PCB.
 
 3. Select **Confirm Production Files**. Check JLCPCB's prepared `sk`, drill, copper, and mask layers against the submitted package before approving production. Obtain explicit CAM acceptance of the selective treatment and U31's stencil/paste apertures.
 
