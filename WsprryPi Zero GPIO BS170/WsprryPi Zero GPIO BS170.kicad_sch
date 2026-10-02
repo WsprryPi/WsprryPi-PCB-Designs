@@ -5,12 +5,359 @@
 	(uuid "019e854d-ef81-4c18-ad68-1e7228f2cc4b")
 	(paper "A")
 	(title_block
-		(title "WsprryPi Zero GPIO BS170 - Copied LTC6432 Baseline")
-		(date "2026-09-24")
+		(title "WsprryPi Zero GPIO BS170 - Unwired RF Stage")
+		(date "2026-10-01")
 		(rev "1.0.0")
 		(company "Lee Bussy [AA0NT]")
 	)
 	(lib_symbols
+		(symbol "wsprrypi-zero-gpio-bs170:BS170"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BS170"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "wsprrypi-zero-gpio-bs170:TO-92_Inline"
+				(at 5.08 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/mmbf170-d.pdf"
+				(at 5.08 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "0.5A Id, 60V Vds, N-Channel MOSFET, TO-92"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "onsemi"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "BS170"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC_PART" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "N-Channel MOSFET"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-92_Inline"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BS170_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BS170_1_1"
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "wsprrypi-zero-gpio-bs170:C_0603"
 			(pin_numbers
 				(hide yes)
@@ -926,6 +1273,217 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "wsprrypi-zero-gpio-bs170:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "wsprrypi-zero-gpio-bs170:L_Toroid_FT37-43_Vertical_P5.08mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.amidoncorp.com/ft-37-43/"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Hand-wound drain RF choke: 25 turns on FT37-43, approx. 220 uH nominal; upright mounting; 5.08 mm lead pitch; hand assembly; RF performance unqualified"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Amidon"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "FT-37-43 (core; wind 25 turns)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC_PART" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "wsprrypi-zero-gpio-bs170:LED"
 			(pin_numbers
 				(hide yes)
@@ -1127,587 +1685,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "wsprrypi-zero-gpio-bs170:LTC6432-15"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -19.05 20.32 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LTC6432AIUF-15#PBF"
-				(at 0 22.86 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "wsprrypi-zero-gpio-bs170:Analog_UF24_QFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm_ThermalVias"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/643215f.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "100 kHz to 1.4 GHz differential ADC driver and IF amplifier, 15.2 dB gain, 5 V, UF24 QFN"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "Analog Devices"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "LTC6432AIUF-15#PBF"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC_PART" "C689344"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "RF differential amplifier gain block ADC driver 5V"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Analog_UF24_QFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm_ThermalVias"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "LTC6432-15_0_1"
-				(rectangle
-					(start -19.05 15.24)
-					(end 19.05 -15.24)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "LTC6432-15_1_1"
-				(pin no_connect line
-					(at -16.51 -17.78 90)
-					(length 2.54)
-					(name "DNC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -13.97 -17.78 90)
-					(length 2.54)
-					(name "DNC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -11.43 -17.78 90)
-					(length 2.54)
-					(name "DNC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -8.89 -17.78 90)
-					(length 2.54)
-					(name "DNC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -21.59 0 0)
-					(length 2.54)
-					(name "NFILT2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -21.59 -2.54 0)
-					(length 2.54)
-					(name "NFILT1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -21.59 7.62 0)
-					(length 2.54)
-					(name "-IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -6.35 -17.78 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 17.78 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -3.81 -17.78 90)
-					(length 2.54)
-					(name "DNC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -1.27 -17.78 90)
-					(length 2.54)
-					(name "DNC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -21.59 -6.35 0)
-					(length 2.54)
-					(name "-FDBK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 21.59 7.62 180)
-					(length 2.54)
-					(name "-OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 1.27 -17.78 90)
-					(length 2.54)
-					(name "DNC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 21.59 0 180)
-					(length 2.54)
-					(name "T_DIODE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 3.81 -17.78 90)
-					(length 2.54)
-					(name "DNC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 6.35 -17.78 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 21.59 5.08 180)
-					(length 2.54)
-					(name "+OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -21.59 -8.89 0)
-					(length 2.54)
-					(name "+FDBK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 8.89 -17.78 90)
-					(length 2.54)
-					(name "DNC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 11.43 -17.78 90)
-					(length 2.54)
-					(name "DNC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 17.78 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 13.97 -17.78 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -21.59 5.08 0)
-					(length 2.54)
-					(name "+IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 16.51 -17.78 90)
-					(length 2.54)
-					(name "GND_EP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "wsprrypi-zero-gpio-bs170:R_0603"
 			(pin_numbers
 				(hide yes)
@@ -1863,6 +1840,466 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "wsprrypi-zero-gpio-bs170:R_0805"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0805_2012Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic resistor using a compact US zigzag symbol and the local KiCad 0805 metric footprint"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "resistor US zigzag 0805"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_0805_2012Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0805_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.286 0) (xy -1.905 1.016) (xy -1.524 0) (xy -1.143 -1.016) (xy -0.762 0) (xy -0.381 1.016)
+						(xy 0 0) (xy 0.381 -1.016) (xy 0.762 0) (xy 1.143 1.016) (xy 1.524 0) (xy 1.905 -1.016) (xy 2.286 0)
+						(xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_0805_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "wsprrypi-zero-gpio-bs170:R_Potentiometer_US"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer_US"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "wsprrypi-zero-gpio-bs170:Potentiometer_Bourns_TC33X_Vertical"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/TC33.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "5 kohm top-adjust SMD gate-bias trimmer; Bourns TC33X-2-502E; pin 2 wiper"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Type" "POT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Bourns"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "TC33X-2-502E"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC_PART" "C719177"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "resistor variable"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_US_0_1"
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3665,268 +4102,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "wsprrypi-zero-gpio-bs170:WBC2-1TLC"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "T"
-				(at -6.35 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "WBC2-1TLC"
-				(at 0 11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "wsprrypi-zero-gpio-bs170:Coilcraft_WBC2-1TLC"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.coilcraft.com/getmedia/f685d903-2563-4c96-8ba6-f82a58883aeb/wbc.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "1:2 impedance-ratio SMT wideband transformer, 0.2 MHz to 500 MHz, center-tapped secondary"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "Coilcraft"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "WBC2-1TLC"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC_PART" "C19191658"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "RF transformer balun wideband center tap 1:2"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Coilcraft_WBC2-1TLC"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "WBC2-1TLC_0_1"
-				(rectangle
-					(start -6.35 6.35)
-					(end 6.35 -6.35)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(text "1:2 Z"
-					(at 0 -5.08 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(symbol "WBC2-1TLC_1_1"
-				(pin passive line
-					(at 8.89 2.54 180)
-					(length 2.54)
-					(name "SEC1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 8.89 0 180)
-					(length 2.54)
-					(name "CT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 8.89 -2.54 180)
-					(length 2.54)
-					(name "SEC2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -8.89 -2.54 0)
-					(length 2.54)
-					(name "PRI2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -8.89 0 0)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -8.89 2.54 0)
-					(length 2.54)
-					(name "PRI1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
-	(text "GPIO drive-strength remains a coarse experimental setting."
+	(text "J81: amplifier side   J82: filtered-output side"
 		(exclude_from_sim no)
-		(at 93.472 21.082 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "25fc923c-5680-57f4-8e4b-03c2a9463ba5")
-	)
-	(text "J82: amplifier side   J81: filtered-output side"
-		(exclude_from_sim no)
-		(at 214.122 134.112 0)
+		(at 191.262 99.822 0)
 		(effects
 			(font
 				(size 1 1)
@@ -3957,7 +4136,7 @@
 		)
 		(uuid "c1c4d9f6-9fee-55e5-95b0-453ef746f319")
 	)
-	(text "R54 connects VOUT to QOD; C53 sets the output rise time."
+	(text "R52 connects VOUT to QOD; C52 sets the output rise time."
 		(exclude_from_sim no)
 		(at 97.282 87.122 0)
 		(effects
@@ -3968,10 +4147,10 @@
 		)
 		(uuid "eaa3b46d-d722-584f-860a-581d2f6c1408")
 	)
-	(text_box "Output Transformer and LPF Interface (40-Series)"
+	(text_box "Output Coupling and LPF Interface (40-Series)"
 		(exclude_from_sim no)
-		(at 198.72 86.12 0)
-		(size 65.44 51.04)
+		(at 173.355 64.53 0)
+		(size 67.945 37.705)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3988,10 +4167,10 @@
 		)
 		(uuid "0f741573-0997-5ca1-8964-370a95208ae7")
 	)
-	(text_box "GPIO Drive and Input Transformer (20-Series)"
+	(text_box "GPIO Input and Gate Bias (20-Series)"
 		(exclude_from_sim no)
-		(at 86.995 15.24 0)
-		(size 71.12 36.195)
+		(at 86.86 14.605 0)
+		(size 81.915 35.815)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -4006,7 +4185,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "3c3de517-88c7-5c08-8bd7-907d23e70772")
+		(uuid "140cc430-0663-4980-9b9a-ccbc772ba2e9")
 	)
 	(text_box "Raspberry Pi HAT Interface (10-Series)"
 		(exclude_from_sim no)
@@ -4048,10 +4227,10 @@
 		)
 		(uuid "7cde20dd-20ea-59de-babf-ea14073c0a34")
 	)
-	(text_box "LTC6432-15 Differential Amplifier (30-Series)"
+	(text_box "BS170 Amplifier and Drain Feed (30-Series)"
 		(exclude_from_sim no)
-		(at 174.625 14.605 0)
-		(size 89.535 69.215)
+		(at 173.355 14.605 0)
+		(size 49.53 46.355)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -4066,13 +4245,19 @@
 			)
 			(justify left top)
 		)
-		(uuid "ab4cf889-6403-5c43-82c1-1c69b99b0e71")
+		(uuid "d2c842af-caed-4532-8f87-d04411c8d36c")
 	)
 	(junction
-		(at 224.79 30.48)
+		(at 191.77 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "21a4dac2-ec26-47e3-abe5-677135870b8f")
+		(uuid "0a93cf89-33a2-4248-90a5-6ff92eef0648")
+	)
+	(junction
+		(at 226.06 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "25664d15-2f92-413c-92f7-a46f17a4b760")
 	)
 	(junction
 		(at 143.51 66.04)
@@ -4087,64 +4272,50 @@
 		(uuid "7faa6670-298a-48e7-8c86-cb8bf752a270")
 	)
 	(junction
-		(at 241.3 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "908bec87-2096-4147-979a-12265d5f3e47")
-	)
-	(junction
-		(at 246.38 124.46)
+		(at 228.6 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "94fe8338-3fa8-4c0b-ad5c-d0965cf52de9")
 	)
 	(junction
-		(at 252.73 119.38)
+		(at 198.12 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9bbcf393-9d4a-4a1d-b26b-b7603f35f753")
+		(uuid "c445714e-e654-474f-b646-8c39419298cd")
 	)
 	(junction
-		(at 224.79 22.86)
+		(at 113.03 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a094a76f-37a4-49c9-9c59-31c970a13f11")
+		(uuid "ce43753f-1a19-456d-8f32-7f8ac3e10b8b")
 	)
 	(junction
-		(at 116.84 27.94)
+		(at 191.77 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "aecb1f6f-51f0-4fa8-a936-942be87a948f")
+		(uuid "cefa42c0-34bf-4b0f-8495-74fd8d62e722")
 	)
 	(junction
-		(at 214.63 26.67)
+		(at 153.67 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "edda2f42-1639-4756-b507-177097d9ea18")
+		(uuid "d37ddf86-16ae-4955-bd50-e187fa02f58a")
 	)
 	(junction
-		(at 212.09 120.65)
+		(at 191.77 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f188131e-e19d-432c-bf24-407b7d8c7d24")
+	)
+	(junction
+		(at 187.96 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8f4d4aa-12ec-4999-88db-78071ae01027")
 	)
-	(junction
-		(at 233.68 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd7d00de-8136-46b1-94f7-e6e7af93fc65")
-	)
 	(no_connect
 		(at 64.77 67.31)
 		(uuid "034ad410-6ef3-5f32-a521-f11eb51ce20e")
-	)
-	(no_connect
-		(at 248.92 49.53)
-		(uuid "03fa96e7-728a-52f2-8882-785f95e49d67")
-	)
-	(no_connect
-		(at 139.7 30.48)
-		(uuid "10efb6e0-e174-5d83-9774-4ecd2db955bb")
 	)
 	(no_connect
 		(at 24.13 59.69)
@@ -4153,10 +4324,6 @@
 	(no_connect
 		(at 64.77 80.01)
 		(uuid "128b64b1-cdc8-560a-ab4a-01bdb4ec4953")
-	)
-	(no_connect
-		(at 245.11 100.33)
-		(uuid "12b8b047-793c-4225-946d-509c624ba049")
 	)
 	(no_connect
 		(at 24.13 54.61)
@@ -4215,10 +4382,6 @@
 		(uuid "9c253d1e-4dba-5653-8af1-ca5f8562b672")
 	)
 	(no_connect
-		(at 229.87 31.75)
-		(uuid "b23c2527-093e-4f22-8ca1-42450385b94f")
-	)
-	(no_connect
 		(at 64.77 77.47)
 		(uuid "bdd5bf03-4ecb-5c74-949f-03443f545db6")
 	)
@@ -4248,13 +4411,23 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 22.86) (xy 214.63 22.86)
+			(xy 113.03 34.29) (xy 113.03 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0482a631-8d9a-4247-89a8-5b280475c982")
+		(uuid "001ad387-bc5c-4c0f-b3a8-6b7c363be235")
+	)
+	(wire
+		(pts
+			(xy 121.92 33.02) (xy 127 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04bb102d-ac9d-4db3-b089-627f6b8bed7f")
 	)
 	(wire
 		(pts
@@ -4265,16 +4438,6 @@
 			(type default)
 		)
 		(uuid "058628fe-ef9a-425c-a690-f3553b6b2b59")
-	)
-	(wire
-		(pts
-			(xy 195.58 46.99) (xy 195.58 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0af88e0a-77b5-4eba-80a5-7fb203dce2c9")
 	)
 	(wire
 		(pts
@@ -4298,33 +4461,43 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 39.37) (xy 186.69 39.37)
+			(xy 191.77 41.91) (xy 201.93 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "121700cc-1d5a-45a3-bc6e-17028025961a")
+		(uuid "135f5c87-4ffc-4c1b-98ba-8e51da42f109")
 	)
 	(wire
 		(pts
-			(xy 245.11 119.38) (xy 252.73 119.38)
+			(xy 87.63 38.1) (xy 99.06 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "129a170f-6c0c-5938-8f41-dfa5c76cce34")
+		(uuid "151542ce-c0c8-48de-8ed2-f908721ae95b")
 	)
 	(wire
 		(pts
-			(xy 196.85 53.34) (xy 196.85 52.07)
+			(xy 193.04 22.86) (xy 191.77 22.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "19036c73-ef6e-4d17-9f66-fe45a62c236e")
+		(uuid "1620d062-af29-42aa-a8e1-4fe146476472")
+	)
+	(wire
+		(pts
+			(xy 193.04 29.21) (xy 191.77 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a2a1e02-67ed-43cb-a099-c6615928b6d6")
 	)
 	(wire
 		(pts
@@ -4348,16 +4521,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 58.42) (xy 204.47 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d166d14-07ea-5780-bcb5-4e1fd8dacc65")
-	)
-	(wire
-		(pts
 			(xy 77.47 67.31) (xy 77.47 69.85)
 		)
 		(stroke
@@ -4365,16 +4528,6 @@
 			(type default)
 		)
 		(uuid "1d31c7b4-a1fd-4f8b-9d4c-20f5fd673b01")
-	)
-	(wire
-		(pts
-			(xy 120.65 33.02) (xy 120.65 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ea0abc7-aaac-434b-ad5d-65aef24b5614")
 	)
 	(wire
 		(pts
@@ -4398,7 +4551,17 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 120.65) (xy 212.09 120.65)
+			(xy 204.47 29.21) (xy 204.47 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22b367a2-e9e9-493a-a467-7eb8836b7d2e")
+	)
+	(wire
+		(pts
+			(xy 185.42 86.36) (xy 187.96 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4408,7 +4571,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 119.38) (xy 212.09 120.65)
+			(xy 187.96 85.09) (xy 187.96 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4418,43 +4581,23 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 74.93) (xy 193.04 76.2)
+			(xy 191.77 21.59) (xy 191.77 22.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2b622780-e391-4a4c-a163-9475b4eedede")
+		(uuid "308509f6-fd5c-4d4e-8935-dc494e243109")
 	)
 	(wire
 		(pts
-			(xy 193.04 49.53) (xy 205.74 49.53)
+			(xy 226.06 87.63) (xy 226.06 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "318d2324-9a5b-4970-b9f3-1ef3e684890d")
-	)
-	(wire
-		(pts
-			(xy 203.2 74.93) (xy 220.98 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3510cc69-0de7-45fc-b2cc-73971b37b39c")
-	)
-	(wire
-		(pts
-			(xy 139.7 33.02) (xy 149.86 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3775c875-52b6-481c-a774-1db671432dae")
+		(uuid "35b5c4b1-9eb2-4ac3-810f-16580882972a")
 	)
 	(wire
 		(pts
@@ -4465,26 +4608,6 @@
 			(type default)
 		)
 		(uuid "37b7bd37-06da-40e2-9fd9-42eaf0c85cd2")
-	)
-	(wire
-		(pts
-			(xy 243.84 68.58) (xy 241.3 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "393f2239-7367-46f0-ba01-b26d451a6c4c")
-	)
-	(wire
-		(pts
-			(xy 194.31 46.99) (xy 195.58 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39eddb70-9e44-4dff-a8c9-16f5465aa8fe")
 	)
 	(wire
 		(pts
@@ -4508,23 +4631,23 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 43.18) (xy 116.84 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bec43af-265f-479c-9458-06c79962f38d")
-	)
-	(wire
-		(pts
-			(xy 246.38 116.84) (xy 246.38 124.46)
+			(xy 228.6 82.55) (xy 228.6 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3c45d337-d427-4133-bc7c-e1e236bdf006")
+	)
+	(wire
+		(pts
+			(xy 107.95 38.1) (xy 107.95 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ca19e2f-3bba-4f20-97f2-813c4df38dbb")
 	)
 	(wire
 		(pts
@@ -4538,43 +4661,33 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 22.86) (xy 214.63 30.48)
+			(xy 204.47 22.86) (xy 204.47 24.13)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "46edfef7-ac15-4d7e-92ea-4efd1647a56c")
+		(uuid "4d38a6e4-04c5-45c2-9879-4403e0ba1241")
 	)
 	(wire
 		(pts
-			(xy 223.52 22.86) (xy 224.79 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48dc493b-a3ac-40a5-9877-8ed5a6fdc831")
-	)
-	(wire
-		(pts
-			(xy 227.33 97.79) (xy 217.17 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4eec6a60-3964-4b9a-aa5f-a78a392fc481")
-	)
-	(wire
-		(pts
-			(xy 246.38 124.46) (xy 246.38 125.73)
+			(xy 228.6 90.17) (xy 228.6 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5049ba49-3b73-4cca-a459-6cad2dbdc366")
+	)
+	(wire
+		(pts
+			(xy 190.5 21.59) (xy 191.77 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5085d036-e094-4855-ba2d-42bc41bf4dcf")
 	)
 	(wire
 		(pts
@@ -4585,16 +4698,6 @@
 			(type default)
 		)
 		(uuid "521710bf-9afe-42e7-8159-71f252b4fb6d")
-	)
-	(wire
-		(pts
-			(xy 228.6 74.93) (xy 259.08 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "522c3a95-8902-4026-8bc5-b6ded08cdce6")
 	)
 	(wire
 		(pts
@@ -4618,63 +4721,33 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 121.92) (xy 212.09 121.92)
+			(xy 113.03 41.91) (xy 113.03 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "56dbc29c-947a-537b-991a-368f1a431126")
+		(uuid "5bc25c69-a072-43c7-880b-0e90c6466509")
 	)
 	(wire
 		(pts
-			(xy 245.11 97.79) (xy 257.81 97.79)
+			(xy 191.77 29.21) (xy 191.77 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5adffb01-b771-4530-9ca0-79871fa44959")
+		(uuid "5c193326-277a-4e78-a931-65750c75f937")
 	)
 	(wire
 		(pts
-			(xy 245.11 124.46) (xy 246.38 124.46)
+			(xy 102.87 34.29) (xy 102.87 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5c679a8d-9a5d-45ab-81f4-abd11518cb58")
-	)
-	(wire
-		(pts
-			(xy 241.3 78.74) (xy 260.35 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d9a17e2-8ab2-4c88-80ae-4f076ec12ad9")
-	)
-	(wire
-		(pts
-			(xy 176.53 46.99) (xy 186.69 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60708dfa-9955-4044-af39-2ef3c7a980aa")
-	)
-	(wire
-		(pts
-			(xy 252.73 119.38) (xy 252.73 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61132c09-bbc5-40eb-9c7a-d18c3a139e9a")
+		(uuid "6127e424-f91b-48ee-b1d4-0df779a1a497")
 	)
 	(wire
 		(pts
@@ -4698,6 +4771,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 33.02) (xy 114.3 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62e05d97-e18e-4bd4-81a3-bbd164216f4b")
+	)
+	(wire
+		(pts
 			(xy 60.96 93.98) (xy 60.96 95.25)
 		)
 		(stroke
@@ -4715,16 +4798,6 @@
 			(type default)
 		)
 		(uuid "636e397b-4a2b-4640-99f1-b13fa7558f58")
-	)
-	(wire
-		(pts
-			(xy 214.63 30.48) (xy 215.9 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "639ed00f-deac-4e15-8c3c-c5e8845353d5")
 	)
 	(wire
 		(pts
@@ -4748,6 +4821,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 25.4) (xy 153.67 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c3b8654-52e9-48ad-aafb-5e21195b8f17")
+	)
+	(wire
+		(pts
 			(xy 24.13 57.15) (xy 16.51 57.15)
 		)
 		(stroke
@@ -4755,16 +4838,6 @@
 			(type default)
 		)
 		(uuid "6d70a2e6-f88c-4339-b1df-e6d6b0d70fd8")
-	)
-	(wire
-		(pts
-			(xy 139.7 27.94) (xy 149.86 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e33d56a-c7c4-4d26-a8e7-5099966b1d98")
 	)
 	(wire
 		(pts
@@ -4778,56 +4851,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 41.91) (xy 259.08 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e724625-c550-56a7-89d4-a396eb17b46a")
-	)
-	(wire
-		(pts
-			(xy 248.92 44.45) (xy 260.35 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f9bd472-e9fd-59a3-a4bf-8df1daf1e75c")
-	)
-	(wire
-		(pts
-			(xy 220.98 68.58) (xy 233.68 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74617b72-a023-4bf0-b5dd-610ef3190ad6")
-	)
-	(wire
-		(pts
-			(xy 205.74 41.91) (xy 195.58 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "762b2da5-bd3b-4479-8024-41149837715d")
-	)
-	(wire
-		(pts
-			(xy 204.47 78.74) (xy 233.68 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76c12e72-c9a5-443e-ada0-ca9608f65a6e")
-	)
-	(wire
-		(pts
 			(xy 77.47 69.85) (xy 69.85 69.85)
 		)
 		(stroke
@@ -4838,43 +4861,13 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 27.94) (xy 116.84 27.94)
+			(xy 226.06 85.09) (xy 236.22 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7aea5b85-001c-4e36-937f-d977c0090225")
-	)
-	(wire
-		(pts
-			(xy 205.74 44.45) (xy 195.58 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7bcaa5c4-9df2-4782-be24-bfd50be1aec6")
-	)
-	(wire
-		(pts
-			(xy 245.11 121.92) (xy 252.73 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7da8188b-4a48-53de-b76a-4b7d4137aa7d")
-	)
-	(wire
-		(pts
-			(xy 227.33 102.87) (xy 217.17 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "851665a0-534f-4914-a0ad-b2f1e13353f3")
+		(uuid "83789c3e-7ae4-420e-aa95-146e3fab6036")
 	)
 	(wire
 		(pts
@@ -4888,53 +4881,13 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 35.56) (xy 116.84 27.94)
+			(xy 143.51 25.4) (xy 144.78 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "85f780bb-70db-4063-8a61-0f7eaa598143")
-	)
-	(wire
-		(pts
-			(xy 219.71 119.38) (xy 212.09 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87358c9b-6f1a-5fcf-8512-efdfcf990cd0")
-	)
-	(wire
-		(pts
-			(xy 91.44 27.94) (xy 99.06 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "891485e2-5288-4bd0-9b51-edc0a0d3d2c8")
-	)
-	(wire
-		(pts
-			(xy 227.33 100.33) (xy 217.17 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a854dfc-11aa-4bba-b478-a6bea1d3c7c9")
-	)
-	(wire
-		(pts
-			(xy 219.71 124.46) (xy 218.44 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bfe9e33-bc27-422c-a42b-d745db69c5c9")
+		(uuid "8ab4a9c4-fbaa-4583-8cfd-e19d5ecf9ee5")
 	)
 	(wire
 		(pts
@@ -4948,6 +4901,36 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 90.17) (xy 198.12 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f932d7a-a387-4512-8f0e-375457828ce0")
+	)
+	(wire
+		(pts
+			(xy 102.87 33.02) (xy 113.03 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90881693-cbcd-4269-a39a-6e1a59ead6a6")
+	)
+	(wire
+		(pts
+			(xy 199.39 85.09) (xy 187.96 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96cb8f12-8daa-4bd2-95cd-38ff99a1dc05")
+	)
+	(wire
+		(pts
 			(xy 95.25 66.04) (xy 93.98 66.04)
 		)
 		(stroke
@@ -4958,43 +4941,33 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 116.84) (xy 246.38 116.84)
+			(xy 236.22 85.09) (xy 236.22 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "97d2bf6d-6de8-49e9-856b-568f2d24d494")
+		(uuid "97d82f19-cab1-4e39-8198-2f646b203e97")
 	)
 	(wire
 		(pts
-			(xy 259.08 41.91) (xy 259.08 74.93)
+			(xy 191.77 22.86) (xy 191.77 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "98e771e6-74e5-49cd-a365-8837e13a3bf6")
+		(uuid "9a8e488e-bc96-4f69-a589-7426fd131d1e")
 	)
 	(wire
 		(pts
-			(xy 193.04 49.53) (xy 193.04 67.31)
+			(xy 199.39 87.63) (xy 187.96 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "99d115b3-3a62-4d04-8add-1f431b892ede")
-	)
-	(wire
-		(pts
-			(xy 218.44 124.46) (xy 218.44 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a879915-bf96-4415-9b07-a75ac3b36a4a")
+		(uuid "9f0a31f1-8123-4052-9a45-30dd1e69c3ec")
 	)
 	(wire
 		(pts
@@ -5008,16 +4981,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 55.88) (xy 203.2 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0ea88d3-d6f7-5055-9012-d99b6760b05c")
-	)
-	(wire
-		(pts
 			(xy 64.77 52.07) (xy 71.12 52.07)
 		)
 		(stroke
@@ -5025,16 +4988,6 @@
 			(type default)
 		)
 		(uuid "aa3965e0-a9e2-4273-b365-2f37b9321b35")
-	)
-	(wire
-		(pts
-			(xy 116.84 27.94) (xy 121.92 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa871c15-d932-422e-86a7-725b9ce8e275")
 	)
 	(wire
 		(pts
@@ -5048,23 +5001,13 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 44.45) (xy 260.35 78.74)
+			(xy 191.77 41.91) (xy 191.77 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b4ca1d43-bcc6-4e27-8571-b87135eac36e")
-	)
-	(wire
-		(pts
-			(xy 196.85 52.07) (xy 205.74 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b55b4d5e-6fcc-4374-9f54-6902b8198003")
+		(uuid "b7a4936e-9274-48bb-b04c-aa9e3b1164a8")
 	)
 	(wire
 		(pts
@@ -5078,6 +5021,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 82.55) (xy 198.12 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcc75e5e-5c02-4b60-a176-fc187f147cd1")
+	)
+	(wire
+		(pts
 			(xy 26.67 96.52) (xy 27.94 96.52)
 		)
 		(stroke
@@ -5085,16 +5038,6 @@
 			(type default)
 		)
 		(uuid "bd0d500b-cc7a-4df6-9f59-97922bd1a927")
-	)
-	(wire
-		(pts
-			(xy 233.68 68.58) (xy 233.68 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf6f2748-112d-4e1f-b737-989170af5b06")
 	)
 	(wire
 		(pts
@@ -5108,13 +5051,23 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 26.67) (xy 214.63 26.67)
+			(xy 199.39 90.17) (xy 198.12 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c29b8722-5f09-4a17-9f94-cdef2e4902bd")
+		(uuid "c295a7d2-6a20-4505-9823-fdf3038b8962")
+	)
+	(wire
+		(pts
+			(xy 224.79 90.17) (xy 228.6 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5673a55-57cb-442e-b226-73f7834422cf")
 	)
 	(wire
 		(pts
@@ -5138,27 +5091,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 68.58) (xy 233.68 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5ba2414-293d-48d4-884a-f09d0cee9b9a")
-	)
-	(wire
-		(pts
-			(xy 220.98 67.31) (xy 220.98 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c79cfdc0-8521-4c0b-aa1e-654649c553fe")
-	)
-	(wire
-		(pts
-			(xy 212.09 120.65) (xy 212.09 121.92)
+			(xy 187.96 86.36) (xy 187.96 87.63)
 		)
 		(stroke
 			(width 0)
@@ -5168,27 +5101,37 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 102.87) (xy 245.11 102.87)
+			(xy 199.39 82.55) (xy 198.12 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d76d8005-7c42-4ba6-9bce-89c0652e6e36")
+		(uuid "cdc1973f-4e7e-45a3-87b0-c90d709b312e")
 	)
 	(wire
 		(pts
-			(xy 106.68 27.94) (xy 107.95 27.94)
+			(xy 191.77 40.64) (xy 191.77 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d9fcfa10-502a-44a7-9c86-1a7aeb4c97aa")
+		(uuid "cde2ae6a-7c09-4ba4-ab9f-cdf14f8432f3")
 	)
 	(wire
 		(pts
-			(xy 204.47 120.65) (xy 203.2 120.65)
+			(xy 153.67 34.29) (xy 153.67 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d07aa529-567e-4638-bcd0-6f6d28e32ae2")
+	)
+	(wire
+		(pts
+			(xy 180.34 86.36) (xy 179.07 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5198,23 +5141,33 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 30.48) (xy 224.79 31.75)
+			(xy 182.88 21.59) (xy 176.53 21.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ddacc939-4b0e-4079-991b-ac2fbcc10ffe")
+		(uuid "dd6006fc-807e-4339-8998-f84c60d9e4c4")
 	)
 	(wire
 		(pts
-			(xy 243.84 67.31) (xy 243.84 68.58)
+			(xy 135.89 25.4) (xy 128.27 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e1b7e995-16df-4b7e-9336-2fa9435952c1")
+		(uuid "e153ca01-dde1-4a0e-87cd-7c7f1388b66e")
+	)
+	(wire
+		(pts
+			(xy 184.15 48.26) (xy 179.07 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1895c82-1859-47f5-a00d-eea378281c7d")
 	)
 	(wire
 		(pts
@@ -5228,13 +5181,13 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 22.86) (xy 228.6 22.86)
+			(xy 236.22 71.12) (xy 236.22 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e8ce6102-1c96-4a94-9110-301edc542d43")
+		(uuid "e2b26301-42e8-4889-8f13-b06f7027e66e")
 	)
 	(wire
 		(pts
@@ -5248,63 +5201,53 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 62.23) (xy 196.85 60.96)
+			(xy 153.67 25.4) (xy 152.4 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ed256ce8-c141-4f7c-931d-9454fa8b34bc")
+		(uuid "ecc9d00f-6308-4f68-8b91-d864b2534b33")
 	)
 	(wire
 		(pts
-			(xy 195.58 39.37) (xy 194.31 39.37)
+			(xy 200.66 22.86) (xy 204.47 22.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f0fbe2d9-ff89-4c0a-8fd4-1ea498348694")
+		(uuid "ed3eee1d-427f-46ce-b571-ffe54d8b6071")
 	)
 	(wire
 		(pts
-			(xy 121.92 33.02) (xy 120.65 33.02)
+			(xy 153.67 26.67) (xy 153.67 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f1291408-2454-41aa-a3b4-7f8ec0df62bf")
+		(uuid "ed7e40a3-87ec-495c-8ef6-81fec22fb402")
 	)
 	(wire
 		(pts
-			(xy 223.52 30.48) (xy 224.79 30.48)
+			(xy 191.77 53.34) (xy 191.77 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f24511d4-b235-442c-8047-abeb684cd243")
+		(uuid "ef3396d5-9434-4159-a95b-73e00c49fa68")
 	)
 	(wire
 		(pts
-			(xy 204.47 58.42) (xy 205.74 58.42)
+			(xy 224.79 82.55) (xy 228.6 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f2929476-7c3a-4d88-9b5c-b33ec2e7b9f9")
-	)
-	(wire
-		(pts
-			(xy 195.58 41.91) (xy 195.58 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f361efc3-6bd7-46e5-b706-9a7329faed17")
+		(uuid "f28df180-0cf0-47d4-89fd-0eb45c33f08f")
 	)
 	(wire
 		(pts
@@ -5338,17 +5281,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 97.79) (xy 257.81 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f825f42b-e16f-44cb-ad81-519dbd20b2b7")
-	)
-	(wire
-		(pts
-			(xy 203.2 120.65) (xy 203.2 121.92)
+			(xy 179.07 86.36) (xy 179.07 87.63)
 		)
 		(stroke
 			(width 0)
@@ -5358,53 +5291,43 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 55.88) (xy 203.2 74.93)
+			(xy 200.66 29.21) (xy 204.47 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f9e4852d-555f-48d8-8584-c3b768e57743")
+		(uuid "f976e97e-ef65-46ca-9315-0a056a66183d")
 	)
 	(wire
 		(pts
-			(xy 241.3 67.31) (xy 241.3 68.58)
+			(xy 224.79 87.63) (xy 226.06 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fca11beb-635c-4b35-bef1-f7c2c6a73d39")
+		(uuid "f9fb0982-18ba-4f24-b08e-6a74c97c88f4")
 	)
 	(wire
 		(pts
-			(xy 210.82 27.94) (xy 210.82 26.67)
+			(xy 106.68 38.1) (xy 107.95 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fd0d20fc-db10-4bb5-a593-254cfb98ec06")
+		(uuid "fc39a308-f5a2-47f4-b934-6e6a51d4b305")
 	)
 	(wire
 		(pts
-			(xy 252.73 102.87) (xy 252.73 119.38)
+			(xy 224.79 85.09) (xy 226.06 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fdd86d5a-8acb-4fa5-ab16-c99b6234eee4")
-	)
-	(wire
-		(pts
-			(xy 224.79 22.86) (xy 224.79 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe462859-3ca6-4fe8-b37a-e5dd189386dd")
+		(uuid "fed7eca8-0acf-484b-9666-e2f8c92e3110")
 	)
 	(wire
 		(pts
@@ -5416,63 +5339,23 @@
 		)
 		(uuid "ff595c6d-077c-477a-a5fe-71e50ea894d1")
 	)
-	(wire
-		(pts
-			(xy 241.3 69.85) (xy 241.3 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff8bae95-e288-4ed6-b564-96f42aba9713")
-	)
-	(label "TX_OUT"
-		(at 252.73 102.87 180)
+	(label "PA_DRAIN"
+		(at 201.93 41.91 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "03f93227-6d85-4848-80d4-07666e04c16b")
-	)
-	(label "SW_5V"
-		(at 217.17 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "18d8b88c-c387-4984-9234-9801e510d882")
-	)
-	(label "AMP_OUT_N"
-		(at 248.92 41.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "237f834a-bb7b-5b27-b9b7-2de700ca0581")
-	)
-	(label "RF_DIFF_P"
-		(at 176.53 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "23dac7a3-d5fd-5dc6-9592-be041c830108")
+		(uuid "28b3cd8d-894f-4ac2-b5d2-2278592e23bc")
 	)
 	(label "TX_OUT"
-		(at 245.11 119.38 0)
+		(at 236.22 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "2a3a481e-739b-424e-be2c-5dddf65f4a69")
 	)
@@ -5486,15 +5369,25 @@
 		)
 		(uuid "2cc31127-2007-4399-afb8-8747b5910c13")
 	)
-	(label "GND"
-		(at 121.92 33.02 180)
+	(label "GATE"
+		(at 179.07 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "34459b78-59da-413a-8925-306e97efe79a")
+	)
+	(label "GATE"
+		(at 157.48 25.4 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "51fa303f-7901-55f5-9229-de5875072a26")
+		(uuid "388af34b-2e4c-4fef-bc7c-10e233170f12")
 	)
 	(label "LED"
 		(at 19.05 49.53 0)
@@ -5516,15 +5409,25 @@
 		)
 		(uuid "5c82288c-edfe-4c1a-bada-9e132b868d1d")
 	)
-	(label "GND"
-		(at 219.71 116.84 180)
+	(label "PRE_CHOKE"
+		(at 191.77 31.75 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "69670844-cbe8-598d-8be7-a585663043ae")
+		(uuid "5d136b33-5533-4151-803a-b6b1715e52c3")
+	)
+	(label "PRE_CHOKE"
+		(at 87.63 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "716c26b6-f521-4a0c-b80e-95740195a169")
 	)
 	(label "LED"
 		(at 82.55 93.98 180)
@@ -5535,6 +5438,16 @@
 			(justify right bottom)
 		)
 		(uuid "7cbe24f5-5c0c-479b-93c9-1288d1f27caf")
+	)
+	(label "GPIO_RF"
+		(at 128.27 25.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "862a28eb-8b30-46e3-b490-5879e2acb0b3")
 	)
 	(label "GPIO_RF"
 		(at 82.55 76.2 180)
@@ -5567,16 +5480,6 @@
 		(uuid "8d5a9c8b-d86d-4a23-98d0-41ee22a28d4a")
 	)
 	(label "GND"
-		(at 219.71 124.46 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "94b43316-82c4-5741-8c37-b574db360906")
-	)
-	(label "GND"
 		(at 44.45 92.71 0)
 		(effects
 			(font
@@ -5585,6 +5488,16 @@
 			(justify left bottom)
 		)
 		(uuid "955a5394-90da-5d23-894d-ebaf706e53d7")
+	)
+	(label "PA_DRAIN"
+		(at 236.22 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "98c82ad9-5c2a-45a7-98eb-a6df4961300a")
 	)
 	(label "SW_5V"
 		(at 130.81 62.23 0)
@@ -5595,16 +5508,6 @@
 			(justify left bottom)
 		)
 		(uuid "a4c5c8ba-ad84-4c3e-b736-3faee18767b3")
-	)
-	(label "RF_DIFF_N"
-		(at 176.53 39.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a63dfbac-d3eb-5eef-b4a1-4fc2c168ef38")
 	)
 	(label "PI_3V3"
 		(at 49.53 26.67 0)
@@ -5625,56 +5528,6 @@
 			(justify left bottom)
 		)
 		(uuid "afc761cb-38eb-5b02-8b2a-ac114621b6e9")
-	)
-	(label "AMP_OUT_P"
-		(at 217.17 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ba1b1577-2ab3-5b19-8a55-01ca70d47eb8")
-	)
-	(label "GND"
-		(at 245.11 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bb71da75-7fe1-587d-9149-9ae88387fbf2")
-	)
-	(label "GPIO_RF"
-		(at 91.44 27.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c0599068-ac77-597b-8b19-3669934d7c0e")
-	)
-	(label "AMP_OUT_N"
-		(at 217.17 102.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c6937e23-e6dc-5f9b-9451-54682233ba11")
-	)
-	(label "RF_DIFF_P"
-		(at 149.86 33.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c763b90b-8e96-5129-bd1a-bcad5076bc64")
 	)
 	(label "GPIO20"
 		(at 16.51 57.15 0)
@@ -5716,6 +5569,16 @@
 		)
 		(uuid "d716486f-bdd3-42bc-83e1-a11d39032925")
 	)
+	(label "GATE"
+		(at 127 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d76c2347-f868-49f9-b35c-12bb5cf86b85")
+	)
 	(label "GND"
 		(at 95.25 66.04 180)
 		(effects
@@ -5736,35 +5599,25 @@
 		)
 		(uuid "da4df9cc-464d-41b6-872b-9e6d29491784")
 	)
-	(label "RF_DIFF_N"
-		(at 149.86 27.94 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e2503163-0791-524a-9c69-5ff34637c5ad")
-	)
-	(label "FINAL_OUT"
-		(at 219.71 119.38 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e5249868-e800-5dca-88cb-df38a6aca552")
-	)
-	(label "GND"
-		(at 245.11 97.79 0)
+	(label "SW_5V"
+		(at 176.53 21.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "e9fcb3c8-a5ea-52fe-93a7-f470b4857267")
+		(uuid "de07bd5b-f9b2-49e8-bb25-e3a42d59fd3d")
+	)
+	(label "FINAL_OUT"
+		(at 187.96 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5249868-e800-5dca-88cb-df38a6aca552")
 	)
 	(label "GND"
 		(at 92.71 78.74 180)
@@ -5775,16 +5628,6 @@
 			(justify right bottom)
 		)
 		(uuid "eca2b25b-46bf-59bf-9aa7-b961b6997e0f")
-	)
-	(label "SW_5V"
-		(at 228.6 22.86 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f0eeb236-c734-4d7f-8e71-d8b38b125975")
 	)
 	(label "GND"
 		(at 152.4 66.04 0)
@@ -5806,19 +5649,9 @@
 		)
 		(uuid "f9bef7be-3201-58fd-831e-82a897c07491")
 	)
-	(label "AMP_OUT_P"
-		(at 248.92 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fbaedb1e-1f06-59dd-86d7-062aefdb3380")
-	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:C_0805")
-		(at 190.5 46.99 0)
+		(lib_id "wsprrypi-zero-gpio-bs170:GND")
+		(at 113.03 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5826,29 +5659,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "0f77ba4f-c0fd-4b59-bbca-951d5bc282c2")
-		(property "Reference" "C32"
-			(at 190.5 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1µF"
-			(at 190.5 44.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_1206_3216Metric"
-			(at 190.5 46.99 0)
+		(uuid "06103e84-8a33-46ff-9588-09497bdcb522")
+		(property "Reference" "#PWR045"
+			(at 113.03 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5858,8 +5671,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C342628.pdf"
-			(at 190.5 46.99 0)
+		(property "Value" "GND"
+			(at 113.03 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5869,8 +5692,8 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 1uF X8R 1206"
-			(at 190.5 46.99 0)
+		(property "Datasheet" ""
+			(at 113.03 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5880,8 +5703,84 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C342628"
-			(at 190.5 46.99 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.03 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e3163073-b75d-442b-b453-82152f88ba1c")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO BS170"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
+		(at 196.85 29.21 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "096d9e16-96bb-44fc-8d5c-1766db6617b0")
+		(property "Reference" "C31"
+			(at 199.39 27.432 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 200.66 30.734 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0603_1608Metric"
+			(at 196.85 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic unpolarized capacitor using the local KiCad 0603 metric footprint"
+			(at 196.85 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5892,7 +5791,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 190.5 46.99 0)
+			(at 196.85 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5903,7 +5802,18 @@
 			)
 		)
 		(property "MPN" ""
-			(at 190.5 46.99 0)
+			(at 196.85 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" ""
+			(at 196.85 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5914,23 +5824,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "bade1a6e-ed7a-4cdd-b559-0b0977bf01bc")
+			(uuid "15d2201d-db7c-439b-a005-1aeb0c5d1fde")
 		)
 		(pin "2"
-			(uuid "6307a651-e50e-4193-8564-a2e54eef5976")
+			(uuid "cfa4c8c4-f99c-471e-9be2-3519d2a59817")
 		)
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C32")
+					(reference "C31")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:LTC6432-15")
-		(at 227.33 49.53 0)
+		(lib_id "wsprrypi-zero-gpio-bs170:GND")
+		(at 204.47 24.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5938,29 +5848,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "216a5e0a-a372-5323-be3b-491557e7ec17")
-		(property "Reference" "U31"
-			(at 227.33 51.054 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LTC6432AIUF-15#PBF"
-			(at 227.33 48.768 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:Analog_UF24_QFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm_ThermalVias"
-			(at 226.19 50.71 0)
+		(uuid "0aa9f58a-73ff-465c-be16-5a7caf978b86")
+		(property "Reference" "#PWR041"
+			(at 204.47 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5970,8 +5860,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/643215f.pdf"
-			(at 226.19 50.71 0)
+		(property "Value" "GND"
+			(at 204.47 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5981,8 +5881,8 @@
 				)
 			)
 		)
-		(property "Description" "100 kHz to 1.4 GHz differential ADC driver and IF amplifier, 15.2 dB gain, 5 V, UF24 QFN"
-			(at 226.19 50.71 0)
+		(property "Datasheet" ""
+			(at 204.47 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5992,30 +5892,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Analog Devices"
-			(at 227.33 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "LTC6432AIUF-15#PBF"
-			(at 227.33 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C689344"
-			(at 227.33 49.53 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 204.47 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6026,84 +5904,348 @@
 			)
 		)
 		(pin "1"
-			(uuid "93119b15-8624-5d25-b0f7-a692b9151a20")
-		)
-		(pin "2"
-			(uuid "888a8f9a-5678-53e7-aa72-e35bcbece344")
-		)
-		(pin "3"
-			(uuid "09d64e84-ca72-5913-88a5-fb7706cc5a03")
-		)
-		(pin "4"
-			(uuid "745b7327-33d1-5af7-b97d-dd731f3dd412")
-		)
-		(pin "5"
-			(uuid "75d2fc24-ce8a-5457-bfce-e94da55eade6")
-		)
-		(pin "6"
-			(uuid "35f56024-c652-5c41-8aae-a0e4827d7a22")
-		)
-		(pin "7"
-			(uuid "cbf6f4da-bf52-51f8-ae19-28e7cd773cb7")
-		)
-		(pin "8"
-			(uuid "97c815f1-528c-58e6-867d-4d8cc1750137")
-		)
-		(pin "9"
-			(uuid "af0b2f22-a280-5cd6-a96d-9f8496884522")
-		)
-		(pin "10"
-			(uuid "93440a16-38fb-55eb-8019-f3ecb5b2e46d")
-		)
-		(pin "11"
-			(uuid "df6cdc75-1d73-552c-814e-240f3497a7a2")
-		)
-		(pin "12"
-			(uuid "2e39e6b9-b35e-59a0-a474-084def49135f")
-		)
-		(pin "13"
-			(uuid "7c8d2201-aa92-5b68-b60a-41f59ba7dc29")
-		)
-		(pin "14"
-			(uuid "0b91b093-e55b-5bd3-b06b-d491402dd94a")
-		)
-		(pin "15"
-			(uuid "5b175798-c71d-5c01-b49f-9e6c06cd7206")
-		)
-		(pin "16"
-			(uuid "a19ba7e3-f46a-5b17-8aa3-0623f5671a34")
-		)
-		(pin "17"
-			(uuid "5e1c8d43-091b-5b67-8043-d298621d554c")
-		)
-		(pin "18"
-			(uuid "c4b98b79-5c05-5566-abf2-a1583fec9156")
-		)
-		(pin "19"
-			(uuid "3cca1869-7648-5b97-bfee-9c06a2ae53d5")
-		)
-		(pin "20"
-			(uuid "4ac92c99-ed1b-5bea-b5c4-a880357b11c3")
-		)
-		(pin "21"
-			(uuid "3e41968c-ad77-5936-99b9-824a2795f899")
-		)
-		(pin "22"
-			(uuid "0ef86c75-29fb-506f-b694-49ad95d9861b")
-		)
-		(pin "23"
-			(uuid "6575fb3d-717f-5f9d-8609-8873f8b777ac")
-		)
-		(pin "24"
-			(uuid "003b9030-d7b3-5a4d-bf0a-fd7f51b0ba65")
-		)
-		(pin "25"
-			(uuid "2706f26c-2fff-501e-9727-d08c1583bc12")
+			(uuid "ffabdbfe-c449-4bbc-a191-ef9b905ef867")
 		)
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "U31")
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "wsprrypi-zero-gpio-bs170:R_0603")
+		(at 148.59 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "11241393-4946-453b-8c54-aefc0843d935")
+		(property "Reference" "R21"
+			(at 148.59 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22Ω"
+			(at 148.59 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0603_1608Metric"
+			(at 148.59 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic resistor using a compact US zigzag symbol and the local KiCad 0603 metric footprint"
+			(at 148.59 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 148.59 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 148.59 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" ""
+			(at 148.59 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "80a69d93-9e40-4ce0-a66f-0cb3b333cd74")
+		)
+		(pin "2"
+			(uuid "f4c5e073-1da1-4d49-809f-acb68b7daf19")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO BS170"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
+		(at 113.03 38.1 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2290c6fd-a34b-4d27-aaa4-feb5a231ae03")
+		(property "Reference" "C22"
+			(at 117.475 36.83 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 117.475 39.37 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0603_1608Metric"
+			(at 113.03 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic unpolarized capacitor using the local KiCad 0603 metric footprint"
+			(at 113.03 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 113.03 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 113.03 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" ""
+			(at 113.03 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "131a8989-98eb-499b-b38f-e39861794abd")
+		)
+		(pin "2"
+			(uuid "53545ad0-65fb-437b-8765-3c62ed5f8b0c")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO BS170"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
+		(at 139.7 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "27e90ab8-27c1-461a-9f25-f53f429ac963")
+		(property "Reference" "C21"
+			(at 139.7 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 139.7 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0603_1608Metric"
+			(at 139.7 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic unpolarized capacitor using the local KiCad 0603 metric footprint"
+			(at 139.7 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 139.7 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 139.7 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" ""
+			(at 139.7 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "acfd2ce2-0a96-473e-9e3c-dfc3c08a8ef3")
+		)
+		(pin "2"
+			(uuid "7f595289-927b-4278-a1f1-1de2545572d2")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO BS170"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -6111,7 +6253,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:SMA_Adafruit_1865")
-		(at 207.01 120.65 180)
+		(at 182.88 86.36 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6121,7 +6263,7 @@
 		(dnp no)
 		(uuid "36036484-cb90-48e2-9d44-85077a8fde80")
 		(property "Reference" "J41"
-			(at 207.01 117.856 0)
+			(at 182.88 83.566 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6131,7 +6273,7 @@
 			)
 		)
 		(property "Value" "SMA_Adafruit_1865"
-			(at 207.5295 116.84 0)
+			(at 183.3995 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6142,7 +6284,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:SMA_Adafruit_1865_EdgeMount"
-			(at 207.01 120.65 0)
+			(at 182.88 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6153,7 +6295,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1865/C2387-001_datasheet.pdf"
-			(at 207.01 120.65 0)
+			(at 182.88 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6164,7 +6306,7 @@
 			)
 		)
 		(property "Description" "Adafruit 1865 SMA female edge-launch connector, 1.6 mm PCB; hand solder; pin 1 signal, pin 2 ground"
-			(at 207.01 125.984 0)
+			(at 182.88 91.694 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6175,7 +6317,7 @@
 			)
 		)
 		(property "Manufacturer" "Adafruit"
-			(at 207.01 120.65 0)
+			(at 182.88 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6186,7 +6328,7 @@
 			)
 		)
 		(property "MPN" "1865"
-			(at 207.01 120.65 0)
+			(at 182.88 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6206,130 +6348,6 @@
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "J41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:WBC2-1TLC")
-		(at 130.81 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "47e3e98c-a77e-43bc-bd9a-b48440585921")
-		(property "Reference" "T21"
-			(at 130.81 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WBC2-1TLC"
-			(at 130.81 22.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:Coilcraft_WBC2-1TLC"
-			(at 130.81 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.coilcraft.com/getmedia/f685d903-2563-4c96-8ba6-f82a58883aeb/wbc.pdf"
-			(at 130.81 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1:2 impedance-ratio SMT wideband transformer, 0.2 MHz to 500 MHz, center-tapped secondary"
-			(at 130.81 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Coilcraft"
-			(at 130.81 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "WBC2-1TLC"
-			(at 130.81 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C19191658"
-			(at 130.81 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "61a84738-1a79-45b5-bff7-89425fa1f62c")
-		)
-		(pin "2"
-			(uuid "4b40e18d-fbc4-490a-a94f-ef3563c1c68a")
-		)
-		(pin "3"
-			(uuid "55b71e16-bc86-4bfb-808e-6d3ecac1f190")
-		)
-		(pin "1"
-			(uuid "bd2f408f-4568-4799-ba6d-5fdf735ef4fb")
-		)
-		(pin "6"
-			(uuid "b8276873-b2eb-48d2-a35e-15c71b69bd06")
-		)
-		(pin "4"
-			(uuid "543aabba-9d41-4b2f-8774-295b657eed80")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO BS170"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "T21")
 					(unit 1)
 				)
 			)
@@ -6529,8 +6547,122 @@
 		)
 	)
 	(symbol
+		(lib_id "wsprrypi-zero-gpio-bs170:L")
+		(at 191.77 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "4d9ca7bb-d843-4d27-90ab-38b87174f80c")
+		(property "Reference" "L31"
+			(at 193.294 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "25T FT37-43"
+			(at 193.04 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:L_Toroid_FT37-43_Vertical_P5.08mm"
+			(at 191.77 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.amidoncorp.com/ft-37-43/"
+			(at 191.77 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Hand-wound drain RF choke: 25 turns on FT37-43, approx. 220 uH nominal; upright mounting; 5.08 mm lead pitch; hand assembly; RF performance unqualified"
+			(at 191.77 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Amidon"
+			(at 191.77 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "FT-37-43 (core; wind 25 turns)"
+			(at 191.77 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" ""
+			(at 191.77 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5f1a6b93-e4c8-4dbc-8cae-bedd4e2ca722")
+		)
+		(pin "2"
+			(uuid "873abe3a-cd6a-4b08-8f7b-4023ea224263")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO BS170"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "L31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 203.2 121.92 0)
+		(at 179.07 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6540,7 +6672,7 @@
 		(dnp no)
 		(uuid "4dc9fe19-ddd9-452c-81fc-26b11437f160")
 		(property "Reference" "#PWR018"
-			(at 203.2 128.27 0)
+			(at 179.07 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6551,7 +6683,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.2 125.73 0)
+			(at 179.07 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6561,7 +6693,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 121.92 0)
+			(at 179.07 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6572,7 +6704,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 121.92 0)
+			(at 179.07 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6583,7 +6715,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.2 121.92 0)
+			(at 179.07 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6606,8 +6738,8 @@
 		)
 	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 210.82 27.94 0)
+		(lib_id "wsprrypi-zero-gpio-bs170:R_0603")
+		(at 153.67 30.48 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6615,9 +6747,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "5283b562-ff57-4f47-a601-83aade74b8f5")
-		(property "Reference" "#PWR04"
-			(at 210.82 34.29 0)
+		(uuid "4fb3fc82-7cfa-4f23-bee0-df85e6416a09")
+		(property "Reference" "R23"
+			(at 158.115 29.21 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100kΩ"
+			(at 158.115 31.75 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0603_1608Metric"
+			(at 153.67 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6627,18 +6779,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 210.82 32.004 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.82 27.94 0)
+		(property "Datasheet" "~"
+			(at 153.67 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6648,8 +6790,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 210.82 27.94 0)
+		(property "Description" "Generic resistor using a compact US zigzag symbol and the local KiCad 0603 metric footprint"
+			(at 153.67 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6659,8 +6801,30 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 210.82 27.94 0)
+		(property "Manufacturer" ""
+			(at 153.67 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 153.67 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" ""
+			(at 153.67 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6671,12 +6835,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "7c49e21a-1cf5-4f76-a111-481f1ba1dbd2")
+			(uuid "bd7ac672-f7ba-4bf9-a661-27b6f483ec7c")
+		)
+		(pin "2"
+			(uuid "0fe058ac-ef78-4656-8464-03d935fd3a70")
 		)
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "#PWR04")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -6786,7 +6953,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 218.44 125.73 0)
+		(at 204.47 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6794,9 +6961,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "642340b6-3b9c-45f7-8b70-148e881c2cac")
-		(property "Reference" "#PWR09"
-			(at 218.44 132.08 0)
+		(uuid "63a92c44-7b4f-4611-8feb-189ca967b74a")
+		(property "Reference" "#PWR042"
+			(at 204.47 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6807,7 +6974,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 218.44 129.54 0)
+			(at 204.47 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6817,7 +6984,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 125.73 0)
+			(at 204.47 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6828,7 +6995,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 125.73 0)
+			(at 204.47 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6839,7 +7006,84 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 218.44 125.73 0)
+			(at 204.47 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ba8d4d9c-bf40-498e-bcad-18c228472a47")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO BS170"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "wsprrypi-zero-gpio-bs170:GND")
+		(at 198.12 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "642340b6-3b9c-45f7-8b70-148e881c2cac")
+		(property "Reference" "#PWR09"
+			(at 198.12 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.12 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 198.12 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6856,118 +7100,6 @@
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:C_0805")
-		(at 111.76 27.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6513d04a-b985-45e7-bb08-2beb138b424a")
-		(property "Reference" "C21"
-			(at 111.76 22.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1µF"
-			(at 111.76 25.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_1206_3216Metric"
-			(at 111.76 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C342628.pdf"
-			(at 111.76 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "CAP CER 1uF X8R 1206"
-			(at 111.76 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C342628"
-			(at 111.76 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 111.76 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 111.76 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "122f3691-0fae-47c9-9143-3b18fe147c81")
-		)
-		(pin "2"
-			(uuid "5dd9dd94-635c-48fc-808f-12b050d16383")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO BS170"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -7086,8 +7218,8 @@
 		)
 	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:R_0603")
-		(at 102.87 27.94 0)
+		(lib_id "wsprrypi-zero-gpio-bs170:C_0805")
+		(at 196.85 22.86 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7095,9 +7227,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "6d88ef84-61f8-589d-b14d-e25095a32183")
-		(property "Reference" "R21"
-			(at 103.378 24.742 0)
+		(uuid "776c0232-7753-4d3a-90e6-c05fa2ec1a66")
+		(property "Reference" "C32"
+			(at 199.39 21.336 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7106,8 +7238,8 @@
 				)
 			)
 		)
-		(property "Value" "22Ω"
-			(at 103.378 31.242 0)
+		(property "Value" "1µF"
+			(at 199.644 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7116,8 +7248,8 @@
 				)
 			)
 		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0603_1608Metric"
-			(at 102.92 44.36 0)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0805_2012Metric"
+			(at 196.85 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7128,7 +7260,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 102.92 44.36 0)
+			(at 196.85 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7138,19 +7270,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic resistor using a compact US zigzag symbol and the local KiCad 0603 metric footprint"
-			(at 102.92 44.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C23186"
-			(at 102.87 27.94 0)
+		(property "Description" "Generic unpolarized capacitor using the local KiCad 0805 metric footprint"
+			(at 196.85 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7161,7 +7282,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 102.87 27.94 0)
+			(at 196.85 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7172,7 +7293,18 @@
 			)
 		)
 		(property "MPN" ""
-			(at 102.87 27.94 0)
+			(at 196.85 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" ""
+			(at 196.85 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7183,204 +7315,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "183f5b77-f052-5198-bebd-a44d4b3dd6a0")
+			(uuid "aaf6c6fc-dcb6-4b66-b0d8-ed4d95d468a3")
 		)
 		(pin "2"
-			(uuid "b22d34bf-de61-5647-b304-e3c0b45fcad6")
+			(uuid "91f8e312-90a4-4b8f-9de2-6dcdf6765d71")
 		)
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 193.04 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "748b92f7-ab20-4017-958c-bf7ac40ba3df")
-		(property "Reference" "#PWR06"
-			(at 193.04 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 193.04 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.04 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 193.04 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "390fcfe3-3584-4515-a1df-5b3adc4bbc5a")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO BS170"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
-		(at 219.71 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "767c4ab0-9d71-57cc-b197-f73998ea49d4")
-		(property "Reference" "C36"
-			(at 219.71 27.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1nF"
-			(at 219.71 32.766 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0603_1608Metric"
-			(at 218.81 30.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 218.81 30.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic unpolarized capacitor using the local KiCad 0603 metric footprint"
-			(at 218.81 30.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C1588"
-			(at 219.71 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 219.71 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 219.71 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8ac456e7-2ea7-54e3-8542-58ebe927ab3d")
-		)
-		(pin "2"
-			(uuid "c872d053-4431-5986-9a7f-ccb6035e0f0a")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO BS170"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C36")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -7672,8 +7615,8 @@
 		)
 	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 257.81 99.06 0)
+		(lib_id "wsprrypi-zero-gpio-bs170:R_0603")
+		(at 118.11 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7681,9 +7624,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "898bafff-e8df-4ecb-9c2d-e2836c9c9bfc")
-		(property "Reference" "#PWR08"
-			(at 257.81 105.41 0)
+		(uuid "8350fe5e-55a7-44df-85b2-38b5cdd801f9")
+		(property "Reference" "R22"
+			(at 118.11 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7kΩ"
+			(at 118.11 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0603_1608Metric"
+			(at 118.11 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7693,18 +7656,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 257.81 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 257.81 99.06 0)
+		(property "Datasheet" "~"
+			(at 118.11 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7714,8 +7667,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 257.81 99.06 0)
+		(property "Description" "Generic resistor using a compact US zigzag symbol and the local KiCad 0603 metric footprint"
+			(at 118.11 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7725,8 +7678,30 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 257.81 99.06 0)
+		(property "Manufacturer" ""
+			(at 118.11 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 118.11 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" ""
+			(at 118.11 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7737,12 +7712,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "8d07153c-576e-43cd-bcd8-92870d6764bb")
+			(uuid "f395216f-8565-4a05-aacc-5a3e60dfa35c")
+		)
+		(pin "2"
+			(uuid "07e86b28-9254-4d43-9220-62ac106d1d9e")
 		)
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "#PWR08")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -7827,8 +7805,8 @@
 		)
 	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 120.65 34.29 0)
+		(lib_id "wsprrypi-zero-gpio-bs170:BS170")
+		(at 189.23 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7836,10 +7814,56 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c147bf9-90f5-46d7-ba1c-fecc3550bb7b")
-		(property "Reference" "#PWR03"
-			(at 120.65 40.64 0)
+		(uuid "8b5e7295-0688-4462-882b-b87d303a7d35")
+		(property "Reference" "Q31"
+			(at 194.31 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BS170"
+			(at 194.31 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:TO-92_Inline"
+			(at 189.23 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/mmbf170-d.pdf"
+			(at 189.23 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "0.5A Id, 60V Vds, N-Channel MOSFET, TO-92"
+			(at 189.23 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7849,18 +7873,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 120.65 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 120.65 34.29 0)
+		(property "Manufacturer" "onsemi"
+			(at 189.23 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7870,8 +7884,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 120.65 34.29 0)
+		(property "MPN" "BS170"
+			(at 189.23 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7881,8 +7895,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 120.65 34.29 0)
+		(property "LCSC_PART" ""
+			(at 189.23 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7893,12 +7907,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "2057019c-2bc9-4d81-bdfe-5d9088197a42")
+			(uuid "384ca116-11d1-4d49-baaf-3b7b7732f1e5")
+		)
+		(pin "2"
+			(uuid "1e096f58-c348-47bf-b20c-b4129ff41942")
+		)
+		(pin "3"
+			(uuid "39e88888-296a-4c41-9256-1fc97c4cf4c3")
 		)
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "#PWR03")
+					(reference "Q31")
 					(unit 1)
 				)
 			)
@@ -7983,18 +8003,95 @@
 		)
 	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:Dual_PinSocket_1x04_P2.54mm_J81_J82")
-		(at 232.41 120.65 0)
+		(lib_id "wsprrypi-zero-gpio-bs170:GND")
+		(at 153.67 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8dd43fe2-90cb-4417-a5b4-73502e2a65b4")
+		(property "Reference" "#PWR046"
+			(at 153.67 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 153.67 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 153.67 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5d9d208b-5301-45ec-be1f-00a0bef64812")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO BS170"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "wsprrypi-zero-gpio-bs170:Dual_PinSocket_1x04_P2.54mm_J81_J82")
+		(at 212.09 86.36 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
 		(in_pos_files no)
 		(dnp no)
 		(uuid "8dda3259-4714-5afa-8412-caa9a82a1232")
 		(property "Reference" "J42"
-			(at 231.57 116.83 0)
+			(at 212.93 90.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8004,7 +8101,7 @@
 			)
 		)
 		(property "Value" "J81/J82 LPF sockets"
-			(at 232.41 128.016 0)
+			(at 212.09 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8014,7 +8111,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:Dual_PinSocket_1x04_P2.54mm_J81_J82"
-			(at 231.57 126.83 0)
+			(at 212.93 80.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8025,7 +8122,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8555109420836753409"
-			(at 231.57 126.83 0)
+			(at 212.93 80.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8036,7 +8133,7 @@
 			)
 		)
 		(property "Description" "Grouped pair of 1x04 2.54 mm female through-hole headers matching the current Wsprry-Pi-LPF J1/J2 geometry; header centers are exactly 31.880 mm apart; F.Cu keepout permits B.Cu ground pour"
-			(at 231.57 126.83 0)
+			(at 212.93 80.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8081,7 +8178,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 246.38 125.73 0)
+		(at 228.6 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8091,7 +8188,7 @@
 		(dnp no)
 		(uuid "904af5d8-51d8-454e-928f-801a05ae1339")
 		(property "Reference" "#PWR010"
-			(at 246.38 132.08 0)
+			(at 228.6 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8102,7 +8199,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 246.38 129.54 0)
+			(at 228.6 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8112,7 +8209,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 125.73 0)
+			(at 228.6 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8123,7 +8220,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 125.73 0)
+			(at 228.6 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8134,7 +8231,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 246.38 125.73 0)
+			(at 228.6 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8157,8 +8254,8 @@
 		)
 	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:C_0805")
-		(at 193.04 71.12 90)
+		(lib_id "wsprrypi-zero-gpio-bs170:R_0805")
+		(at 186.69 21.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8166,9 +8263,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "9174a5c7-f9a8-4146-ae01-252a7e1a44d1")
-		(property "Reference" "C33"
-			(at 195.072 69.342 90)
+		(uuid "94ec8f69-a9fa-4895-987c-3107f5661824")
+		(property "Reference" "R31"
+			(at 186.69 19.558 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8177,8 +8274,8 @@
 				)
 			)
 		)
-		(property "Value" "1µF"
-			(at 195.072 73.152 90)
+		(property "Value" "0Ω"
+			(at 186.69 23.622 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8187,8 +8284,8 @@
 				)
 			)
 		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0805_2012Metric"
-			(at 193.04 71.12 0)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0805_2012Metric"
+			(at 186.69 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8198,8 +8295,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C28323.pdf"
-			(at 193.04 71.12 0)
+		(property "Datasheet" "~"
+			(at 186.69 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8209,19 +8306,8 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 1uF 50V X7R 0805"
-			(at 193.04 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C28323"
-			(at 193.04 71.12 0)
+		(property "Description" "0 ohm 0805 jumper using a compact US zigzag symbol and the local KiCad 0805 metric footprint"
+			(at 186.69 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8232,7 +8318,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 193.04 71.12 0)
+			(at 186.69 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8243,7 +8329,18 @@
 			)
 		)
 		(property "MPN" ""
-			(at 193.04 71.12 0)
+			(at 186.69 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" ""
+			(at 186.69 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8254,15 +8351,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "34df60fd-fd4e-4b5f-9f2e-80482f1a113a")
+			(uuid "7a278048-d10a-4f07-b521-5c24f11ce572")
 		)
 		(pin "2"
-			(uuid "15faa828-12ac-499e-b6a6-bd98ebf6f872")
+			(uuid "c2b608ad-fd60-4ff3-8737-a10326704e14")
 		)
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C33")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -8375,354 +8472,6 @@
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C52")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:WBC2-1TLC")
-		(at 236.22 100.33 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "985bf4de-d96d-4f9c-bee5-34661df9e40a")
-		(property "Reference" "T41"
-			(at 236.22 100.584 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WBC2-1TLC"
-			(at 236.22 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:Coilcraft_WBC2-1TLC"
-			(at 236.22 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.coilcraft.com/getmedia/f685d903-2563-4c96-8ba6-f82a58883aeb/wbc.pdf"
-			(at 236.22 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1:2 impedance-ratio SMT wideband transformer, 0.2 MHz to 500 MHz, center-tapped secondary"
-			(at 236.22 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Coilcraft"
-			(at 236.22 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "WBC2-1TLC"
-			(at 236.22 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C19191658"
-			(at 236.22 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "9c9e7ccf-8373-4ff2-8c9d-9758afb269c4")
-		)
-		(pin "4"
-			(uuid "62e050c4-73a6-4fd4-b511-446e6c9aa4cc")
-		)
-		(pin "1"
-			(uuid "d9289af8-da7f-4d56-b20c-3b75f6bee25a")
-		)
-		(pin "3"
-			(uuid "9af7e7b1-1166-4cc8-b41b-aa1e2cf7e56a")
-		)
-		(pin "6"
-			(uuid "4645af9a-a6bc-485f-a517-35e52c51af57")
-		)
-		(pin "2"
-			(uuid "fa215c29-51c9-4d68-a3b9-ff478d549dde")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO BS170"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "T41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:C_0805")
-		(at 190.5 39.37 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9ebe0eea-f8ff-4449-af54-bf84ee920aa8")
-		(property "Reference" "C31"
-			(at 190.5 34.29 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1µF"
-			(at 190.5 36.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_1206_3216Metric"
-			(at 190.5 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C342628.pdf"
-			(at 190.5 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "CAP CER 1uF X8R 1206"
-			(at 190.5 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C342628"
-			(at 190.5 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 190.5 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 190.5 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "73e11da6-2646-4d75-a9e5-8fab34fdb642")
-		)
-		(pin "2"
-			(uuid "88f0041e-df70-46df-93d3-1f07b1293401")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO BS170"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:R_0603")
-		(at 116.84 39.37 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a16971e8-3daa-58fb-9086-8144d9c99517")
-		(property "Reference" "R22"
-			(at 114.046 37.084 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100kΩ"
-			(at 121.92 42.164 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0603_1608Metric"
-			(at 117.08 39.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 117.08 39.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic resistor using a compact US zigzag symbol and the local KiCad 0603 metric footprint"
-			(at 117.08 39.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C14675"
-			(at 116.84 39.37 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 116.84 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 116.84 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "857e85b3-7b5a-5616-8b60-0df33317acfd")
-		)
-		(pin "2"
-			(uuid "756bd011-c0f9-5090-970d-509273bb5885")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO BS170"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -8943,6 +8692,156 @@
 		)
 	)
 	(symbol
+		(lib_id "wsprrypi-zero-gpio-bs170:R_Potentiometer_US")
+		(at 102.87 38.1 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ae4b4f90-8457-4776-9bf3-a698d39a54c3")
+		(property "Reference" "RV21"
+			(at 100.838 40.386 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "5kΩ"
+			(at 100.838 42.164 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:Potentiometer_Bourns_TC33X_Vertical"
+			(at 102.87 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/TC33.pdf"
+			(at 102.87 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "5 kohm top-adjust SMD gate-bias trimmer; Bourns TC33X-2-502E; pin 2 wiper"
+			(at 102.87 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 102.87 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 102.87 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+			(at 102.87 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 102.87 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TC33X-2-502E"
+			(at 102.87 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" "C719177"
+			(at 102.87 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3fa978fa-90e5-4d14-b2ce-cb9f9550efe6")
+		)
+		(pin "2"
+			(uuid "f83587ef-3f09-42c5-887f-10e907eb678e")
+		)
+		(pin "3"
+			(uuid "77008723-54ae-49ec-9cbd-0c7e84dd4c8a")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO BS170"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "RV21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
 		(at 44.45 93.98 0)
 		(unit 1)
@@ -9099,83 +8998,6 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 116.84 44.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c3de2c87-e544-4847-8a93-9a09b3bc7992")
-		(property "Reference" "#PWR02"
-			(at 116.84 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 116.84 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "223287e1-700a-4858-ab2a-9cc6469c85cd")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO BS170"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:GND")
 		(at 134.62 74.93 0)
 		(unit 1)
 		(body_style 1)
@@ -9247,83 +9069,6 @@
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 241.3 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c9b1dda2-dc08-40d8-9ba6-be4cb6d2e30a")
-		(property "Reference" "#PWR011"
-			(at 241.3 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 244.856 71.374 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 241.3 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0ba5ec42-5f38-4fa0-94d2-5274326def13")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO BS170"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -9520,8 +9265,8 @@
 		)
 	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:C_0805")
-		(at 224.79 74.93 0)
+		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
+		(at 236.22 77.47 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9529,9 +9274,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "d1fa382f-c01f-48a1-b2a9-ae2755cc338b")
-		(property "Reference" "C37"
-			(at 224.79 69.85 0)
+		(uuid "d61d90f6-4c7d-43ae-ad58-aeed28402433")
+		(property "Reference" "C41"
+			(at 231.14 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9540,8 +9285,8 @@
 				)
 			)
 		)
-		(property "Value" "1µF"
-			(at 224.79 72.39 0)
+		(property "Value" "100nF"
+			(at 233.68 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9550,8 +9295,8 @@
 				)
 			)
 		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_1206_3216Metric"
-			(at 224.79 74.93 0)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0603_1608Metric"
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9561,8 +9306,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C342628.pdf"
-			(at 224.79 74.93 0)
+		(property "Datasheet" "~"
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9572,19 +9317,8 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 1uF X8R 1206"
-			(at 224.79 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C342628"
-			(at 224.79 74.93 0)
+		(property "Description" "Generic unpolarized capacitor using the local KiCad 0603 metric footprint"
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9595,7 +9329,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 224.79 74.93 0)
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9606,7 +9340,18 @@
 			)
 		)
 		(property "MPN" ""
-			(at 224.79 74.93 0)
+			(at 236.22 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC_PART" ""
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9617,92 +9362,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c854f5c2-5e1a-4697-8c28-b60d1c411c8d")
+			(uuid "9457a731-f077-4421-9647-f7a24200020e")
 		)
 		(pin "2"
-			(uuid "18dd645f-4f06-4b5b-969b-b0350168463e")
+			(uuid "b23ee000-dac3-4a38-91d5-8b58c43ef6af")
 		)
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 196.85 62.23 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d2136de3-ff2b-4018-95a9-fde2bb535f9e")
-		(property "Reference" "#PWR07"
-			(at 196.85 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 196.85 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 196.85 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 196.85 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 196.85 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c837df31-fbc4-42a0-9041-66d8bb6bb717")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO BS170"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "#PWR07")
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -9906,8 +9574,8 @@
 		)
 	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:C_0805")
-		(at 196.85 57.15 90)
+		(lib_id "wsprrypi-zero-gpio-bs170:GND")
+		(at 107.95 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9915,29 +9583,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f6d02625-3cb4-4c0f-9806-66305c787a7b")
-		(property "Reference" "C34"
-			(at 198.882 55.372 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1µF"
-			(at 198.882 59.182 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0805_2012Metric"
-			(at 196.85 57.15 0)
+		(uuid "ee5ecd48-fd26-4929-9443-30bc52066010")
+		(property "Reference" "#PWR044"
+			(at 107.95 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9947,8 +9595,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C28323.pdf"
-			(at 196.85 57.15 0)
+		(property "Value" "GND"
+			(at 107.95 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9958,8 +9616,8 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 1uF 50V X7R 0805"
-			(at 196.85 57.15 0)
+		(property "Datasheet" ""
+			(at 107.95 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9969,30 +9627,8 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C28323"
-			(at 196.85 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 196.85 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 196.85 57.15 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 107.95 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10003,15 +9639,89 @@
 			)
 		)
 		(pin "1"
-			(uuid "03b57890-08e3-49c7-9b6b-d50dcc64e45d")
-		)
-		(pin "2"
-			(uuid "115aa0d3-adf1-4a24-8f55-be252b5dae78")
+			(uuid "c23d9a5e-78af-4a92-81f7-a1ce45c38929")
 		)
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C34")
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "wsprrypi-zero-gpio-bs170:GND")
+		(at 191.77 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f866ab32-fa53-4100-a34a-10e0aaf9df71")
+		(property "Reference" "#PWR043"
+			(at 191.77 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 191.77 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 191.77 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "59ad6874-aeaf-4322-ad0a-7b8360b8d327")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO BS170"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -10125,230 +9835,6 @@
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "SW11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:C_0805")
-		(at 237.49 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fda7d165-f493-43bd-a711-6c41ca94e4ee")
-		(property "Reference" "C38"
-			(at 237.49 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1µF"
-			(at 237.49 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_1206_3216Metric"
-			(at 237.49 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C342628.pdf"
-			(at 237.49 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "CAP CER 1uF X8R 1206"
-			(at 237.49 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C342628"
-			(at 237.49 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 237.49 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 237.49 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4b6f0f32-c983-4c1b-9f61-51357aea7e51")
-		)
-		(pin "2"
-			(uuid "a55e6ca3-3b2f-49c5-889e-2e0ff8bd2140")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO BS170"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
-		(at 219.71 22.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fee9b63a-8473-51a7-9ac0-31d42221e758")
-		(property "Reference" "C35"
-			(at 219.456 20.574 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 219.71 25.146 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0603_1608Metric"
-			(at 219.52 22.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 219.52 22.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic unpolarized capacitor using the local KiCad 0603 metric footprint"
-			(at 219.52 22.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C14663"
-			(at 219.71 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 219.71 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 219.71 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "54b28a4d-f770-54fa-82cb-11dd9d352f7c")
-		)
-		(pin "2"
-			(uuid "45436d05-5644-5a8f-9e57-6d6f4d1def6c")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO BS170"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C35")
 					(unit 1)
 				)
 			)

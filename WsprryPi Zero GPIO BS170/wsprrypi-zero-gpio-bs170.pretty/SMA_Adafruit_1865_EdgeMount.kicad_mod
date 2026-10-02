@@ -207,5 +207,10 @@
 		(layers "B.Cu" "B.Mask")
 		(uuid "37a0d60b-a0a4-4ee5-a86b-2d9bd7f468f3")
 	)
+	(model "${KIPRJMOD}/wsprrypi-zero-gpio-bs170.3dshapes/SMA_Adafruit_1865_Preview.wrl"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
 	(embedded_fonts no)
 )

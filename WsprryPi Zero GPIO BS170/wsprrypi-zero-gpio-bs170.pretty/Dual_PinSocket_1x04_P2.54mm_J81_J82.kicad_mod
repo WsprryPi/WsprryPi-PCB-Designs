@@ -443,4 +443,14 @@
 		)
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/wsprrypi-zero-gpio-bs170.3dshapes/PinSocket_1x04_P2.54mm_Vertical.step"
+		(offset (xyz -15.94 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
+	(model "${KIPRJMOD}/wsprrypi-zero-gpio-bs170.3dshapes/PinSocket_1x04_P2.54mm_Vertical.step"
+		(offset (xyz 15.94 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
 )

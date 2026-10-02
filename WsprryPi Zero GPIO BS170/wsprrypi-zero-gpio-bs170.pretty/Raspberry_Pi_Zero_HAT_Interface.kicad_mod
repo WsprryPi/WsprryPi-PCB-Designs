@@ -478,4 +478,9 @@
 		(uuid "0fadb984-4398-4b6b-966d-6fd9b3a29f7d")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/wsprrypi-zero-gpio-bs170.3dshapes/PinSocket_2x20_P2.54mm_Vertical.step"
+		(offset (xyz 8.37 -7.31 -1.6))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 180 0 90))
+	)
 )

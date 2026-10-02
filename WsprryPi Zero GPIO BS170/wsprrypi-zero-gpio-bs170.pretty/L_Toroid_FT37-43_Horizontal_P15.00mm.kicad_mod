@@ -1,0 +1,242 @@
+(footprint "L_Toroid_FT37-43_Horizontal_P15.00mm"
+	(version 20260206)
+	(generator "kicad-footprint-generator")
+	(layer "F.Cu")
+	(descr "Hand-wound FT37-43 drain choke, 25 turns; flat mounting; 15 mm lead pitch; 2.4 mm pads, 1.2 mm drills; 11 mm winding envelope; adapted from KiCad Amidon-T37 footprint")
+	(tags "RF choke toroid hand wound FT37-43 25 turns horizontal")
+	(property "Reference" "REF**"
+		(at 7.5 -6.75 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Toroid_FT37-43_Horizontal_P15.00mm"
+		(at 7.5 6.75 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "KiLib_Generator" "choke_THT"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_arc
+		(start 2.840901 -1.46)
+		(mid 7.5 -4.8825)
+		(end 12.159099 -1.46)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_arc
+		(start 12.159099 1.46)
+		(mid 7.5 4.8825)
+		(end 2.840901 1.46)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_circle
+		(center 7.5 0)
+		(end 9.755 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+	)
+	(fp_rect
+		(start -1.45 -5.75)
+		(end 16.45 5.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 2.71515 0)
+		(end 5.053146 -0.655633)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 3.356198 -2.392425)
+		(end 5.708778 -1.791222)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 3.356198 2.392425)
+		(end 5.053146 0.655633)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 5.107575 -4.143802)
+		(end 6.844367 -2.446854)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 5.107575 4.143802)
+		(end 5.708778 1.791222)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 7.5 -4.78485)
+		(end 8.155633 -2.446854)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 7.5 4.78485)
+		(end 6.844367 2.446854)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 9.892425 -4.143802)
+		(end 9.291222 -1.791222)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 9.892425 4.143802)
+		(end 8.155633 2.446854)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 11.643802 -2.392425)
+		(end 9.946854 -0.655633)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 11.643802 2.392425)
+		(end 9.291222 1.791222)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 12.28485 0)
+		(end 9.946854 0.655633)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_circle
+		(center 7.5 0)
+		(end 9.875 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+	)
+	(fp_circle
+		(center 7.5 0)
+		(end 12.2625 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 7.5 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2.4 2.4)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(pad "2" thru_hole circle
+		(at 15 0)
+		(size 2.4 2.4)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(embedded_fonts no)
+	
+
+	(fp_circle
+		(center 7.5 0)
+		(end 13 0)
+		(stroke (width 0.05) (type solid))
+		(fill no)
+		(layer "Dwgs.User")
+	)
+)

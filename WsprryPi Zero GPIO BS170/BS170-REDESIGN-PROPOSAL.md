@@ -1,6 +1,6 @@
 # Lower-cost BS170 amplifier proposal
 
-Status: **proposed for design review; not implemented**. This independent KiCad project begins as a copy of `WsprryPi Zero GPIO`. Its saved schematic and PCB still contain the LTC6432-15 and two WBC2-1TLC transformers. This proposal does not qualify the copied board or authorize its fabrication.
+**Status: hand-wound choke selected; footprints assigned; RF stage partially wired and awaiting validation.** This independent KiCad project began as a copy of `WsprryPi Zero GPIO`. The schematic's LTC6432-15 and two WBC2-1TLC transformers have been removed, and eleven BS170-stage parts have been placed. The 30- and 40-series sections are wired; the 20-series parts still await wiring. The PCB still contains the copied amplifier and transformers. This proposal does not qualify the copied board or authorize its fabrication.
 
 ## Decision and scope
 
@@ -15,7 +15,15 @@ BS170 drain -> DC blocking -> J81/J82 selected LPF -> SMA
 BS170 source -> RF ground
 ```
 
-The gate-bias network must have a defined off state, draw no DC from the GPIO, and be disabled when the switched amplifier supply is off. The drain feed needs adequate impedance at the low-frequency end without unacceptable loss or parasitic behavior at the high-frequency end. Choke, bias, coupling, and damping values are **not selected** here. The LPF remains mandatory for the square-wave drive and nonlinear output stage; the correct filter must be installed for each band.
+The gate-bias network must have a defined off state, draw no DC from the GPIO, and be disabled when the switched amplifier supply is off. The drain feed needs adequate impedance at the low-frequency end without unacceptable loss or parasitic behavior at the high-frequency end. The [placed-parts table](README.md#placed-rf-parts-awaiting-wiring) records starting bias, coupling, damping, and bypass values; they remain subject to circuit review and RF measurement. L31 now selects the hand-wound FT37-43 choke described below. The LPF remains mandatory for the square-wave drive and nonlinear output stage; the correct filter must be installed for each band.
+
+## Selected hand-wound choke and trimmer
+
+On 2026-10-01, the user selected **25 turns on a hand-wound FT37-43 core** for L31. Each pass through the core center counts as one turn. The schematic value is `25T FT37-43`. The [Amidon core specification](https://www.amidoncorp.com/ft-37-43/) gives nominal A_L = 350 nH/turn², so 25 turns estimates 218.75 µH at low frequency. RF impedance under drain current and performance at 137 kHz and 144 MHz remain measurement requirements. The winding follows the [QRP Labs Ultimate3S assembly manual](https://www.qrp-labs.com/images/ultimate3s/assembly.pdf); its [LF modifications](https://www.qrp-labs.com/ultimate3/u3mods.html) also document a different R10/N30 core for improved LF output.
+
+L31 uses the local `L_Toroid_FT37-43_Vertical_P5.08mm` footprint, adapted from KiCad's generic 10 × 5 mm vertical toroid pattern. On 2026-10-01, the user selected upright mounting. The hand-formed leads use 5.08 mm pad-center spacing, with 2.4 mm pads and 1.2 mm drills; pad 1 connects to `SW_5V` and pad 2 to `PA_DRAIN`. The fabrication outline depicts the bare core's 9.525 × 3.175 mm board projection; `Dwgs.User` marks an 11 × 5 mm maximum wound-body projection. The courtyard reserves 11.5 × 7.98 mm including the lead pads. Reserve up to 11 mm wound-body height plus the mounting gap. Start with approximately 0.32 mm (AWG 28) enamelled wire, form the leads to the footprint pitch, and strip/tin them before hand soldering. Wound fit, stability, height clearance, and RF behavior require physical verification.
+
+RV21 retains 5 kΩ and selects Bourns `TC33X-2-502E`, `LCSC_PART` C719177, with the local `Potentiometer_Bourns_TC33X_Vertical` footprint. Pin/pad 2 is the wiper; pins 1/3 are the CCW/CW resistance ends. Neither new footprint has an attached 3D model; see [library sources and model gaps](LIBRARY-SOURCES.md#selected-choke-and-trimmer-footprints).
 
 ## Evidence and limits
 
@@ -27,13 +35,13 @@ The gate-bias network must have a defined off state, draw no DC from the GPIO, a
 
 ## Cost case
 
-The saved schematic's two WBC2-1TLC transformers and LTC6432-15 alone represented roughly **$39.79 for a one-board purchase** in the LCSC product-page snapshots reviewed on 2026-09-30 ($10.3228 per transformer and $19.1431 for the amplifier), before passives, assembly, LPF, headers, or fabrication. Supplier prices and stock must be refreshed when ordering. The current QFN layout also calls for selective exposed-pad hole filling and capping; a redesigned BS170 board could avoid that process, pending a new PCB layout and fabrication review.
+The copied baseline's two WBC2-1TLC transformers and LTC6432-15 alone represented roughly **$39.79 for a one-board purchase** in the LCSC product-page snapshots reviewed on 2026-09-30 ($10.3228 per transformer and $19.1431 for the amplifier), before passives, assembly, LPF, headers, or fabrication. Supplier prices and stock must be refreshed when ordering. The current QFN layout also calls for selective exposed-pad hole filling and capping; a redesigned BS170 board could avoid that process, pending a new PCB layout and fabrication review.
 
 A BS170 is a low-cost discrete part, but the complete cost comparison must include its RF feed, bias trimmer or production bias components, coupling parts, any driver found necessary, hand winding or other assembly labor, and the LPF. The onsemi TO-92 BS170 LCSC listing reviewed on 2026-09-30 showed a reference price of $0.1689 at five pieces but was out of stock in that page snapshot; select an available exact part and assembly path before freezing the BOM. Do not substitute an SMD MMBF170 without reassessing its lower package dissipation and layout.
 
 ## Prototype and acceptance path
 
-1. Draw a revised schematic with the single BS170 stage and its switched-supply, GPIO isolation, gate bias, drain feed, and LPF connections. Remove the differential amplifier and both RF transformers from that revision's BOM. Keep source assets and attribution in the project-local libraries.
+1. Complete the wiring of the placed single-BS170 stage and its switched-supply, GPIO isolation, gate bias, drain feed, and LPF connections. Review the starting values and verify the selected choke and trimmer assemblies. The differential amplifier and both RF transformers are already removed from the schematic; keep their source assets and attribution in the project-local libraries.
 2. Prototype the RF path from an actual supported Pi GPIO through a representative LPF into a 50 ohm dummy load. Record GPIO waveform/loading, bias, off-state drain current, keyed current, output power, harmonics and spurs, and device temperature.
 3. Repeat at 135/137 kHz, representative MF/HF bands, 6 m, and 144 MHz. Check every supported GPIO source and Pi model intended for release. If the 2 m result is low, record the lower band-specific power target rather than assuming additional parallel BS170 devices solve it.
 4. Only after the circuit and parts are selected, update and route the PCB, verify LPF header fit and Pi clearances, run KiCad ERC/DRC, and remeasure an exact assembled board revision. The current PCB's passing checks do not transfer to the redesign.
