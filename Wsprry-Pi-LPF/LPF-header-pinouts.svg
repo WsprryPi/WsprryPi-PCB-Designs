@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc">
+<title id="title">Wsprry and QRP Labs LPF header pinouts</title>
+<desc id="desc">Component-side comparison with two headers per module. Physical positions run from 1 at the top to 4 at the bottom. Wsprry is ground, RF, RF, ground. QRP Labs in this orientation is RF, RF, ground, ground. Remove positions 1 and 3 on both headers of the module being adapted; retain position 2 for RF and position 4 for ground.</desc>
+<rect width="1000" height="540" fill="#f8fafc"/>
+<style>text{font-family:Arial,sans-serif;fill:#172b42}.heading{font-size:24px;font-weight:700}.label{font-size:17px}.small{font-size:15px}.number{font-size:18px;font-weight:700}.body{fill:#fff;stroke:#a9bacb;stroke-width:2}</style>
+<text x="30" y="36" class="heading" text-anchor="start">LPF header comparison — adaptation orientation</text>
+<text x="30" y="65" class="small" text-anchor="start">Component-side view • positions are physical locations, not KiCad pad numbers</text>
+<rect x="30" y="88" width="450" height="300" rx="14" class="body"/>
+<text x="255" y="120" class="heading" text-anchor="middle">Wsprry LPF</text>
+<text x="120" y="149" class="label" text-anchor="middle">Input</text>
+<circle cx="120" cy="183" r="15" fill="#b54708"/>
+<text x="92" y="189" class="number" text-anchor="end">1</text>
+<text x="146" y="189" class="label" text-anchor="start">GND</text>
+<path d="M112,175 l16,16 m0,-16 l-16,16" stroke="white" stroke-width="2.5"/>
+<circle cx="120" cy="236" r="15" fill="#16756c"/>
+<text x="92" y="242" class="number" text-anchor="end">2</text>
+<text x="146" y="242" class="label" text-anchor="start">RF</text>
+<circle cx="120" cy="289" r="15" fill="#b54708"/>
+<text x="92" y="295" class="number" text-anchor="end">3</text>
+<text x="146" y="295" class="label" text-anchor="start">RF</text>
+<path d="M112,281 l16,16 m0,-16 l-16,16" stroke="white" stroke-width="2.5"/>
+<circle cx="120" cy="342" r="15" fill="#16756c"/>
+<text x="92" y="348" class="number" text-anchor="end">4</text>
+<text x="146" y="348" class="label" text-anchor="start">GND</text>
+<text x="350" y="149" class="label" text-anchor="middle">Output</text>
+<circle cx="350" cy="183" r="15" fill="#b54708"/>
+<text x="322" y="189" class="number" text-anchor="end">1</text>
+<text x="376" y="189" class="label" text-anchor="start">GND</text>
+<path d="M342,175 l16,16 m0,-16 l-16,16" stroke="white" stroke-width="2.5"/>
+<circle cx="350" cy="236" r="15" fill="#16756c"/>
+<text x="322" y="242" class="number" text-anchor="end">2</text>
+<text x="376" y="242" class="label" text-anchor="start">RF</text>
+<circle cx="350" cy="289" r="15" fill="#b54708"/>
+<text x="322" y="295" class="number" text-anchor="end">3</text>
+<text x="376" y="295" class="label" text-anchor="start">RF</text>
+<path d="M342,281 l16,16 m0,-16 l-16,16" stroke="white" stroke-width="2.5"/>
+<circle cx="350" cy="342" r="15" fill="#16756c"/>
+<text x="322" y="348" class="number" text-anchor="end">4</text>
+<text x="376" y="348" class="label" text-anchor="start">GND</text>
+<rect x="520" y="88" width="450" height="300" rx="14" class="body"/>
+<text x="745" y="120" class="heading" text-anchor="middle">QRP Labs LPF</text>
+<text x="610" y="149" class="label" text-anchor="middle">Input</text>
+<circle cx="610" cy="183" r="15" fill="#b54708"/>
+<text x="582" y="189" class="number" text-anchor="end">1</text>
+<text x="636" y="189" class="label" text-anchor="start">RF</text>
+<path d="M602,175 l16,16 m0,-16 l-16,16" stroke="white" stroke-width="2.5"/>
+<circle cx="610" cy="236" r="15" fill="#16756c"/>
+<text x="582" y="242" class="number" text-anchor="end">2</text>
+<text x="636" y="242" class="label" text-anchor="start">RF</text>
+<circle cx="610" cy="289" r="15" fill="#b54708"/>
+<text x="582" y="295" class="number" text-anchor="end">3</text>
+<text x="636" y="295" class="label" text-anchor="start">GND</text>
+<path d="M602,281 l16,16 m0,-16 l-16,16" stroke="white" stroke-width="2.5"/>
+<circle cx="610" cy="342" r="15" fill="#16756c"/>
+<text x="582" y="348" class="number" text-anchor="end">4</text>
+<text x="636" y="348" class="label" text-anchor="start">GND</text>
+<text x="840" y="149" class="label" text-anchor="middle">Output</text>
+<circle cx="840" cy="183" r="15" fill="#b54708"/>
+<text x="812" y="189" class="number" text-anchor="end">1</text>
+<text x="866" y="189" class="label" text-anchor="start">RF</text>
+<path d="M832,175 l16,16 m0,-16 l-16,16" stroke="white" stroke-width="2.5"/>
+<circle cx="840" cy="236" r="15" fill="#16756c"/>
+<text x="812" y="242" class="number" text-anchor="end">2</text>
+<text x="866" y="242" class="label" text-anchor="start">RF</text>
+<circle cx="840" cy="289" r="15" fill="#b54708"/>
+<text x="812" y="295" class="number" text-anchor="end">3</text>
+<text x="866" y="295" class="label" text-anchor="start">GND</text>
+<path d="M832,281 l16,16 m0,-16 l-16,16" stroke="white" stroke-width="2.5"/>
+<circle cx="840" cy="342" r="15" fill="#16756c"/>
+<text x="812" y="348" class="number" text-anchor="end">4</text>
+<text x="866" y="348" class="label" text-anchor="start">GND</text>
+<text x="30" y="422" class="label" text-anchor="start">× Remove physical positions 1 and 3 on BOTH headers of the module being adapted.</text>
+<text x="30" y="452" class="label" text-anchor="start">Keep position 2 (RF) and position 4 (GND): four contacts remain across the module.</text>
+<text x="30" y="484" class="label" text-anchor="start">Turning the module end-for-end reverses the rows and changes the conflicting positions.</text>
+<text x="30" y="514" class="small" text-anchor="start">In the adapted socket, use the shown orientation; reversible insertion no longer applies.</text>
+</svg>
