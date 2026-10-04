@@ -1,6 +1,6 @@
-# RPi Zero HAT
+# RPi Zero HAT Template
 
-A KiCad 10 project template for Raspberry Pi Zero-size HAT+ designs. It is electrically and functionally identical to the `RPi Full-Size Hat` template: the schematic exposes the complete 40-pin GPIO interface, the project includes a selectable underside socket model and a socket purchasing item, and the local libraries carry the same reusable symbols and footprints. The mechanical envelope is the official through-hole-connector Raspberry Pi uHAT size.
+A KiCad 10 project template for Raspberry Pi Zero-size HAT+ designs. It is electrically and functionally identical to the `RPi Full-Size Hat Template`: the schematic exposes the complete 40-pin GPIO interface, the project includes a selectable underside socket model and a socket purchasing item, and the local libraries carry the same reusable symbols and footprints. The mechanical envelope is the official through-hole-connector Raspberry Pi uHAT size.
 
 The schematic is intentionally unwired, and the board has no tracks, vias, or copper pours. A derived design must add its HAT+ identification EEPROM and application circuit.
 
@@ -8,7 +8,7 @@ The schematic is intentionally unwired, and the board has no tracks, vias, or co
 
 1. In KiCad's project manager, open **Preferences → Configure Paths…**.
 2. Set `KICAD_USER_TEMPLATE_DIR` to the parent directory containing this template folder: the `Wsprry Pi PCB Designs` repository root. Alternatively, copy this entire folder into an existing user-template directory.
-3. Choose **File → New Project…**, select **RPi Zero HAT**, and give the project its own name and directory. Reopen the project manager if its template list has not refreshed.
+3. Choose **File → New Project…**, select **RPi Zero HAT Template**, and give the project its own name and directory. Reopen the project manager if its template list has not refreshed.
 4. Add the required identification EEPROM and application circuit. Connect only the GPIOs the design uses; mark genuinely unused pins with no-connect flags.
 5. Run **Tools → Update PCB from Schematic…**, place the added components, route the board, add and fill copper zones, and run ERC and DRC.
 
@@ -52,20 +52,20 @@ The schematic's **HAT socket purchasing BOM** preset exports J1 as one row. Manu
 
 ## Local libraries and files
 
-Both library tables use the `zero-hat` nickname and `${KIPRJMOD}` paths. All required template libraries are inside this directory.
+Both library tables use the `zero-hat-template` nickname and `${KIPRJMOD}` paths. All required template libraries are inside this directory.
 
-H1 is a separate, selectable footprint that shows the female 2×20 HAT socket on the underside of the board. Delete H1 when the 3D socket is not wanted, or place `zero-hat:Raspberry_Pi_HAT_2x20_Socket_3D` to add it back. H1 has no electrical pads and is exempt from the courtyard requirement because it overlays the same physical socket already represented by U1's authoritative underside courtyard. U1 remains the authoritative electrical and mechanical interface, and J1 remains the purchasing item.
+H1 is a separate, selectable footprint that shows the female 2×20 HAT socket on the underside of the board. Delete H1 when the 3D socket is not wanted, or place `zero-hat-template:Raspberry_Pi_HAT_2x20_Socket_3D` to add it back. H1 has no electrical pads and is exempt from the courtyard requirement because it overlays the same physical socket already represented by U1's authoritative underside courtyard. U1 remains the authoritative electrical and mechanical interface, and J1 remains the purchasing item.
 
 The local library also copies the grouped 2×4 connector from the full-size template as `Dual_PinSocket_1x04_P2.54mm_J81_J82`. It represents two 1×4 sockets whose centers are exactly 32.020 mm apart. Symbol/footprint pins 1–4 correspond to J81 pins 1–4; pins 5–8 correspond to J82 pins 1–4. Its 29.36 × 11.20 mm inter-header rule area prohibits tracks, vias, pads, copper pours, and footprints on both copper layers while leaving the two connector strips routable.
 
-- [Project settings](RPi%20Zero%20HAT.kicad_pro): rules, defaults, and BOM preset.
-- [Schematic](RPi%20Zero%20HAT.kicad_sch): U1 GPIO interface and J1 procurement symbol.
-- [PCB](RPi%20Zero%20HAT.kicad_pcb): locked Zero-size outline, interface footprint, mounting-hole lands, and PoE keepout.
-- [Symbol library](zero-hat.kicad_sym): GPIO interface, socket purchasing symbol, and grouped J81/J82 connector symbol.
-- [Interface footprint](zero-hat.pretty/Raspberry_Pi_Zero_HAT_Interface.kicad_mod).
-- [Selectable 2×20 socket footprint](zero-hat.pretty/Raspberry_Pi_HAT_2x20_Socket_3D.kicad_mod): board-only 3D representation used by H1.
-- [Grouped 2×4 J81/J82 footprint](zero-hat.pretty/Dual_PinSocket_1x04_P2.54mm_J81_J82.kicad_mod): exact source spacing plus inter-header copper and placement keepout.
-- [2×20 socket STEP model](zero-hat.3dshapes/PinSocket_2x20_P2.54mm_Vertical.step) and [model notice](zero-hat.3dshapes/README.md).
+- [Project settings](RPi%20Zero%20HAT%20Template.kicad_pro): rules, defaults, and BOM preset.
+- [Schematic](RPi%20Zero%20HAT%20Template.kicad_sch): U1 GPIO interface and J1 procurement symbol.
+- [PCB](RPi%20Zero%20HAT%20Template.kicad_pcb): locked Zero-size outline, interface footprint, mounting-hole lands, and PoE keepout.
+- [Symbol library](zero-hat-template.kicad_sym): GPIO interface, socket purchasing symbol, and grouped J81/J82 connector symbol.
+- [Interface footprint](zero-hat-template.pretty/Raspberry_Pi_Zero_HAT_Interface.kicad_mod).
+- [Selectable 2×20 socket footprint](zero-hat-template.pretty/Raspberry_Pi_HAT_2x20_Socket_3D.kicad_mod): board-only 3D representation used by H1.
+- [Grouped 2×4 J81/J82 footprint](zero-hat-template.pretty/Dual_PinSocket_1x04_P2.54mm_J81_J82.kicad_mod): exact source spacing plus inter-header copper and placement keepout.
+- [2×20 socket STEP model](zero-hat-template.3dshapes/PinSocket_2x20_P2.54mm_Vertical.step) and [model notice](zero-hat-template.3dshapes/README.md).
 - [Template description](meta/info.html) and [preview](meta/board.png): template selector assets.
 - [License](LICENSE.md): included with new projects.
 
@@ -74,6 +74,8 @@ KiCad renames the three project design files for the chosen project name and omi
 ## Validation and limits
 
 The template was checked with KiCad 10.0.6. ERC reports the expected 34 errors for this intentionally unwired template: 31 unconnected interface pins plus 3 undriven power-input pins, with no warnings. Native PCB Editor DRC reports no rule violations and 9 expected unrouted items for the shared 3V3, 5V, and GND header pads. The selectable model-only H1 footprint is explicitly exempt from the missing-courtyard check because the authoritative physical socket courtyard is part of U1.
+
+The rename was rechecked with KiCad 10.0.6. Native PCB Editor DRC reports zero schematic-parity findings with the schematic loaded. The CLI reports 40 "No corresponding pin found in schematic" parity warnings before and after the rename; those CLI warnings are not corroborated by the native check. The expected ERC and unrouted findings above are unchanged.
 
 Run ERC and DRC after adding the ID EEPROM, application circuit, routing, and copper. This template has no verified physical assembly, connector fit, HAT+ identity data, Raspberry Pi model compatibility, electrical performance, or RF performance.
 

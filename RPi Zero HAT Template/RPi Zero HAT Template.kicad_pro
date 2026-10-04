@@ -506,14 +506,14 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "zero-hat"
+      "zero-hat-template"
     ],
     "pinned_symbol_libs": [
-      "zero-hat"
+      "zero-hat-template"
     ]
   },
   "meta": {
-    "filename": "RPi Zero HAT.kicad_pro",
+    "filename": "RPi Zero HAT Template.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -753,8 +753,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "RPi Zero HAT.kicad_sch",
-        "name": "RPi Zero HAT",
+        "filename": "RPi Zero HAT Template.kicad_sch",
+        "name": "RPi Zero HAT Template",
         "uuid": "42fb2efa-c288-4686-a90a-043ad23a327d"
       }
     ],
@@ -764,7 +764,7 @@
   "sheets": [
     [
       "42fb2efa-c288-4686-a90a-043ad23a327d",
-      "RPi Zero HAT"
+      "RPi Zero HAT Template"
     ]
   ],
   "text_variables": {},

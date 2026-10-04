@@ -1,6 +1,6 @@
 # Pico 2 W KiCad library assets
 
-Standalone symbol, footprint, and STEP files for Pico-family designs. These files are reference assets, not a validated drop-in library. The supplied KiCad files use version 8 formats. The Wattmeter Shield and Shield Template have their own project-local libraries and do not depend on this directory. The Wattmeter Shield includes an independent [copy of these assets](../Pico%202W%20Wattmeter%20Shield/pico-2w-libs/README.md) for its optional SMD footprint's STEP model; the Shield Template has no reference to these assets.
+Standalone symbol, footprint, and STEP files for Pico-family designs. These files are reference assets, not a validated drop-in library. The supplied KiCad files use version 8 formats. This is a project-local copy of the repository's root `pico-2w-libs` assets. Only its STEP file is referenced by the Wattmeter Shield's optional, unplaced SMD footprint. The project's placed Pico header footprint has no attached model; the supplied symbol and footprints are retained as reference assets and are not substituted for the project's existing libraries.
 
 ## Files
 
@@ -24,14 +24,14 @@ Standalone symbol, footprint, and STEP files for Pico-family designs. These file
 - The THT pad identifiers are signal names such as `GP0`, `GND`, and `3V3`; the symbol's interface pins are numbered 1–40. KiCad connects by pin/pad identifier, so these definitions do not match. Verify and correct the mapping in the destination library before using this pair.
 - The symbol's GND, SWCLK, and SWDIO debug pins have empty pin numbers. Neither footprint includes three additional debug pads. Define the intended debug connection and numbering before using those pins.
 - The SMD footprint's `connect` pads require review for the intended mounting and paste process. Its 1–40 numbering alone does not establish correct physical pin mapping or assembly compatibility.
-- The SMD model reference is `${KICAD_LIB_TEMPLATE}/Raspberrypi PICO 2W/Raspberrypi pico2 W.step`. It does not resolve relative to this directory automatically. Its saved transform is offset `(1, −7, 0)` mm, scale `(1, 1, 1)`, and rotation `(90, 180, −180)` degrees; alignment is unverified. The THT footprint has no attached model.
+- The copied SMD model reference is `${KIPRJMOD}/pico-2w-libs/Raspberrypi pico2 W.step`, resolving to the STEP file in this project-local directory. Its saved transform is offset `(1, −7, 0)` mm, scale `(1, 1, 1)`, and rotation `(90, 180, −180)` degrees; alignment is unverified. The THT footprint has no attached model.
 - The STEP file's internal filename is `Raspberry Pi Pico 2 3D CAD Model 24 07 24.STEP`, despite the external filename containing `W`. Compatibility with the Pico 2 W, including antenna geometry, is unverified.
 
 There is no complete schematic or PCB in this directory on which to run ERC or DRC. Physical fit, assembly, pin mapping, and RF suitability remain unverified.
 
 ## Source and license
 
-The supplied README identifies the assets as MIT-licensed, but the files include no accompanying author attribution, upstream URL, or full license notice. Their provenance and applicable copyright notice remain unverified. The repository's [MIT license](../LICENSE.md) covers repository-owned work; it does not establish ownership or licensing of these supplied assets. Preserve any original attribution and license notice obtained from their source.
+The supplied README identifies the assets as MIT-licensed, but the files include no accompanying author attribution, upstream URL, or full license notice. Their provenance and applicable copyright notice remain unverified. The repository's [MIT license](../../LICENSE.md) covers repository-owned work; it does not establish ownership or licensing of these supplied assets. Preserve any original attribution and license notice obtained from their source.
 
 ## Repository contents
 

@@ -30,7 +30,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "zero-hat:Raspberry_Pi_Zero_HAT_Interface"
+		(property "Footprint" "zero-hat-template:Raspberry_Pi_Zero_HAT_Interface"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -916,7 +916,7 @@
 			(do_not_autoplace no)
 			(effects (font (size 1.27 1.27)))
 		)
-		(property "Footprint" "zero-hat:Dual_PinSocket_1x04_P2.54mm_J81_J82"
+		(property "Footprint" "zero-hat-template:Dual_PinSocket_1x04_P2.54mm_J81_J82"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

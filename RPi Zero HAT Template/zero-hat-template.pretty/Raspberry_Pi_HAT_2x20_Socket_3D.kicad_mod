@@ -35,7 +35,7 @@
 	)
 	(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/zero-hat.3dshapes/PinSocket_2x20_P2.54mm_Vertical.step"
+	(model "${KIPRJMOD}/zero-hat-template.3dshapes/PinSocket_2x20_P2.54mm_Vertical.step"
 		(offset (xyz 0 0 0))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

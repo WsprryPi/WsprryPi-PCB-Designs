@@ -87,7 +87,7 @@
 			(outputdirectory "")
 		)
 	)
-	(footprint "full-size-hat:Raspberry_Pi_HAT_Interface"
+	(footprint "full-size-hat-template:Raspberry_Pi_HAT_Interface"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "fee22fe9-065f-4dae-90f5-398417a3d92f")
@@ -144,7 +144,7 @@
 		)
 		(path "/4956bacf-ccac-441b-a2fa-51ce082195af")
 		(sheetname "/")
-		(sheetfile "RPi Full-Size Hat.kicad_sch")
+		(sheetfile "RPi Full-Size Hat Template.kicad_sch")
 		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -747,7 +747,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "full-size-hat:Raspberry_Pi_HAT_2x20_Socket_3D"
+	(footprint "full-size-hat-template:Raspberry_Pi_HAT_2x20_Socket_3D"
 		(layer "B.Cu")
 		(uuid "a7c4d8e2-65a1-4f90-8b31-020000000001")
 		(at 156.63 74.77 90)
@@ -808,7 +808,7 @@
 		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(duplicate_pad_numbers_are_jumpers no)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/full-size-hat.3dshapes/PinSocket_2x20_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/full-size-hat-template.3dshapes/PinSocket_2x20_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)

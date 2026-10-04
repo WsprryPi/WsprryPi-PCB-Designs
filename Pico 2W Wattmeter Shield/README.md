@@ -36,10 +36,12 @@ Source libraries are in `pico-wattmeter.pretty/`, `pico-wattmeter.kicad_sym`, `p
 
 Select **View > 3D Viewer** in the PCB Editor to inspect the assembly. U1 uses the included CP-16-22 STEP model. Passive and U2 models use the installed KiCad model libraries. J1 and the Pico/header assembly have no attached models.
 
+The optional, unplaced `Raspberry_Pi_Pico_2W_SMD` footprint uses the STEP file in this project's [local Pico asset copy](pico-2w-libs/README.md), through `${KIPRJMOD}/pico-2w-libs/Raspberrypi pico2 W.step`. Its placement transform is unchanged. The supplied model's Pico 2 W geometry and alignment remain unverified; this does not add a model to the placed header footprint. The copied symbol and footprints retain their documented pin/pad and assembly compatibility limits.
+
 Each silkscreen logo is a single unlocked footprint containing both polygons. The front and back logos move independently of their adjacent text.
 
 ## Project files
 
 `fabrication-toolkit-options.json` contains export preferences. KiCad sources contain the part identifiers and assembly exclusions. The local JLCPCB plugin database, generated exports, fabrication packages, backups, and editor state are ignored by Git.
 
-KiCad 10.0.1 ERC reports zero errors and warnings; DRC reports zero violations, unconnected pads, or footprint errors. DRC has no ignored checks. ERC ignores single-use global labels, four-way junctions, SPICE model issues, and footprint-filter mismatches. Run the checks after design edits; passing CAD checks does not establish physical or RF performance.
+The earlier KiCad 10.0.1 validation recorded zero ERC errors or warnings and zero DRC violations, unconnected pads, or footprint errors. Rechecking the unchanged schematic with KiCad 10.0.6 CLI during the local-model-path update reports nine existing `lib_symbol_mismatch` warnings for C1–C9 against the installed `Device:C_Small` symbol; DRC still reports zero rule violations, unconnected items, or schematic-parity findings. DRC has no ignored checks. ERC ignores single-use global labels, four-way junctions, SPICE model issues, and footprint-filter mismatches. Run the checks after design edits; passing CAD checks does not establish physical or RF performance.

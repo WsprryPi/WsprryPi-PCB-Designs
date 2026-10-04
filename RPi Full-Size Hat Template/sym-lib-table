@@ -1,4 +1,4 @@
 (sym_lib_table
 	(version 7)
-	(lib (name "full-size-hat") (type "KiCad") (uri "${KIPRJMOD}/full-size-hat.kicad_sym") (options "") (descr "Raspberry Pi full-size HAT interface and purchasing symbols"))
+	(lib (name "full-size-hat-template") (type "KiCad") (uri "${KIPRJMOD}/full-size-hat-template.kicad_sym") (options "") (descr "Raspberry Pi full-size HAT interface and purchasing symbols"))
 )

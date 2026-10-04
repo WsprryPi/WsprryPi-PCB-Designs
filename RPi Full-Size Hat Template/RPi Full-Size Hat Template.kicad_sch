@@ -5,7 +5,7 @@
 	(uuid "019e854d-ef81-4c18-ad68-1e7228f2cc4b")
 	(paper "A4")
 	(lib_symbols
-		(symbol "full-size-hat:Raspberry_Pi_40_Pin_HAT_Interface"
+		(symbol "full-size-hat-template:Raspberry_Pi_40_Pin_HAT_Interface"
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
@@ -33,7 +33,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "full-size-hat:Raspberry_Pi_HAT_Interface"
+			(property "Footprint" "full-size-hat-template:Raspberry_Pi_HAT_Interface"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -834,7 +834,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "full-size-hat:Socket_2x20_P2.54mm_BOM"
+		(symbol "full-size-hat-template:Socket_2x20_P2.54mm_BOM"
 			(exclude_from_sim yes)
 			(in_bom yes)
 			(on_board no)
@@ -950,7 +950,7 @@
 		(uuid "a8bda952-ab8a-44ce-8141-540a8a1fb64f")
 	)
 	(symbol
-		(lib_id "full-size-hat:Socket_2x20_P2.54mm_BOM")
+		(lib_id "full-size-hat-template:Socket_2x20_P2.54mm_BOM")
 		(at 55.88 127 0)
 		(unit 1)
 		(body_style 1)
@@ -1036,7 +1036,7 @@
 			)
 		)
 		(instances
-			(project "RPi Full-Size Hat"
+			(project "RPi Full-Size Hat Template"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "J1")
 					(unit 1)
@@ -1045,7 +1045,7 @@
 		)
 	)
 	(symbol
-		(lib_id "full-size-hat:Raspberry_Pi_40_Pin_HAT_Interface")
+		(lib_id "full-size-hat-template:Raspberry_Pi_40_Pin_HAT_Interface")
 		(at 76.2 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -1076,7 +1076,7 @@
 				)
 			)
 		)
-		(property "Footprint" "full-size-hat:Raspberry_Pi_HAT_Interface"
+		(property "Footprint" "full-size-hat-template:Raspberry_Pi_HAT_Interface"
 			(at 76.2 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -1230,7 +1230,7 @@
 			(uuid "dcd9f2e6-6724-400f-afcc-e292bc4a4b7b")
 		)
 		(instances
-			(project "RPi Full-Size Hat"
+			(project "RPi Full-Size Hat Template"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "U1")
 					(unit 1)

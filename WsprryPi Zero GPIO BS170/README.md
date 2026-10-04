@@ -2,7 +2,7 @@
 
 This is a separate KiCad project in the same Git repository. It was copied from `WsprryPi Zero GPIO` as a starting point, with its own project files, project-local symbol and footprint libraries, and `${KIPRJMOD}` model paths. The schematic contains the single-BS170 RF stage, with the 30- and 40-series wired and the 20-series input/bias parts awaiting wiring. The PCB still contains the copied two-transformer LTC6432-15 circuit and has not been updated for this redesign.
 
-A KiCad 10 project initialized from the `RPi Zero HAT` template for WsprryPi GPIO development. It provides the Raspberry Pi Zero-size uHAT geometry, a complete 40-pin GPIO interface, a selectable underside socket model, a socket purchasing item, and independent local libraries.
+A KiCad 10 project initialized from the `RPi Zero HAT Template` for WsprryPi GPIO development. It provides the Raspberry Pi Zero-size uHAT geometry, a complete 40-pin GPIO interface, a selectable underside socket model, a socket purchasing item, and independent local libraries.
 
 The schematic retains the load-switch circuit, GPIO selection header, LPF interface, and edge-launch SMA output. The new RF parts are arranged in the 20-, 30-, and 40-series sections for manual wiring. The design intentionally omits an identification EEPROM and leaves ID_SD and ID_SC unused. The copied two-layer board has not been fabricated or physically qualified.
 
@@ -18,7 +18,7 @@ The copied 5 V LTC6432-15 circuit, its original RF estimate, and first-pass BOM 
 2. Wire the placed parts using the [BS170 redesign proposal](BS170-REDESIGN-PROPOSAL.md) as the circuit direction. Resolve its circuit, power, sourcing, and compliance decisions before preparing an order package.
 3. After any design change, update the PCB from the schematic as needed, refill copper zones, and rerun ERC and DRC before reviewing the resulting diff.
 
-This project has independent copies of the design files, symbol library, footprint library, and STEP model. Changes here do not update `RPi Zero HAT`, and later template changes do not update this project.
+This project has independent copies of the design files, symbol library, footprint library, and STEP model. Changes here do not update `RPi Zero HAT Template`, and later template changes do not update this project.
 
 ## Schematic block numbering
 
