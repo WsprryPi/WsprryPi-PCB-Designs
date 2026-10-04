@@ -458,7 +458,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "WsprryPi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm"
+		(symbol "WsprryPi LPF:LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm"
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
@@ -474,7 +474,7 @@
 					)
 				)
 			)
-			(property "Value" "LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm"
+			(property "Value" "LPF male headers"
 				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -484,7 +484,7 @@
 					)
 				)
 			)
-			(property "Footprint" "WsprryPi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm"
+			(property "Footprint" "WsprryPi LPF:LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -517,7 +517,7 @@
 					)
 				)
 			)
-			(symbol "LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm_0_1"
+			(symbol "LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm_0_1"
 				(rectangle
 					(start -10.16 7.62)
 					(end 10.16 -5.08)
@@ -530,7 +530,7 @@
 					)
 				)
 			)
-			(symbol "LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm_1_1"
+			(symbol "LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm_1_1"
 				(pin passive line
 					(at -13.97 5.08 0)
 					(length 3.81)
@@ -1605,7 +1605,7 @@
 		(uuid "f1163a40-6a14-46f1-a69c-4f4b30b7977c")
 	)
 	(symbol
-		(lib_id "WsprryPi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm")
+		(lib_id "WsprryPi LPF:LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm")
 		(at 137.16 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -1626,7 +1626,7 @@
 				)
 			)
 		)
-		(property "Value" "Jumper Pair"
+		(property "Value" "LPF male headers"
 			(at 137.16 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1636,7 +1636,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WsprryPi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm"
+		(property "Footprint" "WsprryPi LPF:LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm"
 			(at 137.16 124.46 0)
 			(hide yes)
 			(show_name no)

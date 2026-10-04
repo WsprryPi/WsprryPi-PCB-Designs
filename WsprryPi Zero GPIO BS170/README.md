@@ -126,7 +126,7 @@ These are independent copies from the installed KiCad 10.0.6 libraries; see [sou
 
 U11 directly carries the female 2×20 socket model on the underside. J52 carries two 1×4 socket models on top. Both remain excluded from BOM and position output, with electrical pads intact. The optional H1 model-only footprint remains in the library for compatibility; do not place it over U11, which would duplicate the socket. J11 remains the purchasing item.
 
-The local library includes the grouped 2×4 connector `Dual_PinSocket_1x04_P2.54mm_J81_J82`. Its two 1×4 socket centers are exactly 33.020 mm apart, matching paired J1 on the `WsprryPi LPF` board. Symbol/footprint pins 1–4 correspond to J81 pins 1–4; pins 5–8 correspond to J82 pins 1–4. Its 30.36 × 11.20 mm inter-header rule area prohibits tracks, pads, and footprints on `F.Cu`, while allowing stitching vias and copper pours while intentionally allowing the bottom-layer ground pour beneath the LPF. This project-local footprint was adjusted from the Zero HAT template's older 32.020 mm, two-copper-layer definition.
+The local library includes the grouped 2×4 connector `LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm`. Its two 1×4 socket centers are exactly 33.020 mm apart, matching paired J1 on the `WsprryPi LPF` board. J52 is one eight-pin symbol with a single rectangular body, styled like the matching LPF-board symbol. Pins 1–4 are the amplifier-side row; pins 5–8 are the filtered-output row. Pins 1, 4, 5, and 8 are `GND`; pins 2 and 3 are `RF_IN` (the amplifier’s `TX_OUT` net); pins 6 and 7 are `RF_OUT` (the `FINAL_OUT` net). Its inter-header rule area prohibits tracks, pads, and footprints on `F.Cu`, while allowing stitching vias and copper pours. The bottom-layer ground pour remains allowed beneath the LPF. This project-local footprint was adjusted from the Zero HAT template's older 32.020 mm, two-copper-layer definition.
 
 J12 uses the local `Conn_01x03` symbol and `PinHeader_1x03_P2.54mm_Vertical` male through-hole footprint. It is placed and routed with pin 1 on GPIO4, pin 2 on `GPIO_RF`, and pin 3 on GPIO20. The symbol and footprint are excluded from BOM and position output, and the footprint references a project-local STEP model for 3D visualization.
 
@@ -151,10 +151,10 @@ Manufacturer, MPN, `LCSC_PART`, data-sheet, description, and local-footprint fie
 - [Schematic](WsprryPi%20Zero%20GPIO%20BS170.kicad_sch): partially wired BS170-stage parts with assigned footprints, retained power-control circuit, GPIO interface, and LPF interface.
 - [PCB](WsprryPi%20Zero%20GPIO%20BS170.kicad_pcb): copied placed and routed two-layer baseline with the locked Zero-size outline, interface footprint, mounting-hole lands, PoE keepout, and LPF keepout.
 - [Fabrication notes](FABRICATION-NOTES.md): process notes for the copied U31 baseline only; reassess after the BS170 layout replaces it.
-- [Symbol library](wsprrypi-zero-gpio-bs170.kicad_sym): GPIO interface, socket purchasing symbol, and grouped J81/J82 connector symbol.
+- [Symbol library](wsprrypi-zero-gpio-bs170.kicad_sym): GPIO interface, socket purchasing symbol, and paired LPF female-header connector symbol.
 - [Interface footprint](wsprrypi-zero-gpio-bs170.pretty/Raspberry_Pi_Zero_HAT_Interface.kicad_mod).
 - [Selectable 2×20 socket footprint](wsprrypi-zero-gpio-bs170.pretty/Raspberry_Pi_HAT_2x20_Socket_3D.kicad_mod): board-only 3D representation used by H1.
-- [Grouped 2×4 J81/J82 footprint](wsprrypi-zero-gpio-bs170.pretty/Dual_PinSocket_1x04_P2.54mm_J81_J82.kicad_mod): exact current LPF-board spacing plus an F.Cu inter-header copper and placement keepout.
+- [Paired LPF female-header footprint](wsprrypi-zero-gpio-bs170.pretty/LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm.kicad_mod): exact current LPF-board spacing plus an F.Cu inter-header copper and placement keepout.
 - [Local library sources and licensing](LIBRARY-SOURCES.md): imported-footprint provenance, custom-part data sources, license, and validation limits.
 - [Local STEP models](wsprrypi-zero-gpio-bs170.3dshapes/README.md) for the BS170 TO-92 package, 2×20 socket, 1×3 male header, 0603 LED, and SKRPANE010 tactile switch.
 - [License](LICENSE.md): repository-owned project terms.

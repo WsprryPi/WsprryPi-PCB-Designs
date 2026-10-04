@@ -10,13 +10,13 @@ Open [WsprryPi LPF.kicad_pro](WsprryPi%20LPF.kicad_pro) in KiCad 10.0.1 or newer
 
 The [project libraries](libraries/README.md) contain every symbol and footprint used by the design, plus available 3D models. Keep the `libraries/` folder and library tables with the project; their `${KIPRJMOD}` paths resolve within this directory. Library documentation covers connector options, model limitations, sources, and licenses.
 
-The [filter workbook](../LPF-Values.xlsx) lists standard E96/E24 values for a seven-element, 1 dB Chebyshev C-L-C ladder and its ideal, lossless 50-ohm response. Parallel E24 capacitor pairs are used where their sum better approaches the target value. The 3 dB cutoff and fundamental-loss columns are calculated from the listed installed values, not the unrounded prototype values. The board does not implement a DC-blocking capacitor.
+The [filter workbook](./LPF-Values.xlsx) lists standard E96/E24 values for a seven-element, 1 dB Chebyshev C-L-C ladder and its ideal, lossless 50-ohm response. Parallel E24 capacitor pairs are used where their sum better approaches the target value. The 3 dB cutoff and fundamental-loss columns are calculated from the listed installed values, not the unrounded prototype values. The board does not implement a DC-blocking capacitor.
 
 The 2 m filter is fully specified as `47.5 pF – 60.4 nH – 68.1 pF – 63.4 nH – 68.1 pF – 60.4 nH – 47.5 pF`. Its modeled 3 dB cutoff is 148.279504 MHz and its modeled loss at the 144.4901 MHz upper WSPR edge is 0.376 dB. The row uses the 144.4899–144.4901 MHz transmit band in the [WSPR frequency list](https://www.wsprnet.org/drupal/sites/wsprnet.org/files/wspr-qrg.pdf). Only the 2 m QRSS frequency cell is blank; no 2 m QRSS operating frequency is asserted by this project.
 
 ## Assembly
 
-The input and output connectors are hand-fitted male 1×4 headers with 2.54 mm pin pitch. The current schematic and PCB represent both headers as one component, **J1**, using the project-local paired-header footprint on the underside (B.Cu), with **33.02 mm centerline spacing**. No manufacturer or purchasing part number is specified. The connector and filter components are excluded from the BOM; a default BOM export is not a complete hand-assembly purchasing list.
+The input and output connectors are hand-fitted male 1×4 headers with 2.54 mm pin pitch. The current schematic and PCB represent both headers as one component, **J1**, using the project-local paired-header footprint on the underside (B.Cu), with **33.02 mm centerline spacing**. The local symbol and footprint are named `LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm`; the matching BS170-board sockets use `LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm`. No manufacturer or purchasing part number is specified. The connector and filter components are excluded from the BOM; a default BOM export is not a complete hand-assembly purchasing list.
 
 ### Connector pinouts and QRP Labs compatibility
 

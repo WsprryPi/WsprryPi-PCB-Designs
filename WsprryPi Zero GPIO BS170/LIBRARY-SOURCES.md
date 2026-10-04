@@ -32,7 +32,7 @@ The [Amidon FT37-43 specification](https://www.amidoncorp.com/ft-37-43/) gives 0
 
 ## Template assets
 
-The Raspberry Pi interface, 2×20 socket purchasing symbol, selectable socket footprint, and grouped `Dual_PinSocket_1x04_P2.54mm_J81_J82` symbol and footprint came from the repository's `RPi Zero HAT Template`. The grouped LPF header was subsequently adjusted to the current `WsprryPi LPF` board's exact 33.020 mm J1/J2 center spacing. Its hard keepout is intentionally limited to `F.Cu`, allowing the bottom-layer ground pour beneath the LPF; it is therefore no longer byte-identical to the template's older 32.020 mm, two-copper-layer version.
+The Raspberry Pi interface, 2×20 socket purchasing symbol, selectable socket footprint, and paired `LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm` symbol and footprint came from the repository's `RPi Zero HAT Template`. The grouped LPF header was subsequently adjusted to the current `WsprryPi LPF` board's exact 33.020 mm paired-J1 center spacing. The female symbol now uses one rectangular body and functional pin names like the matching male LPF symbol. The symbol and footprint share the `LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm` name; the LPF project uses `LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm`. Its hard keepout is intentionally limited to `F.Cu`, allowing the bottom-layer ground pour beneath the LPF; it is therefore no longer byte-identical to the template's older 32.020 mm, two-copper-layer version.
 
 ## Edge-launch SMA connector
 

@@ -2241,7 +2241,7 @@
 			)
 		)
 	)
-	(footprint "WsprryPi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm"
+	(footprint "WsprryPi LPF:LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm"
 		(layer "B.Cu")
 		(uuid "e7dff073-842f-49e3-8704-cbfa97eaa508")
 		(at 120.47 102.93)
@@ -2260,7 +2260,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Jumper Pair"
+		(property "Value" "LPF male headers"
 			(at 16.51 -11 180)
 			(layer "B.Fab")
 			(hide yes)

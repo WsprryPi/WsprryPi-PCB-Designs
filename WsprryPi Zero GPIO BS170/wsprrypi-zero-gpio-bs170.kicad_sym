@@ -797,14 +797,14 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Dual_PinSocket_1x04_P2.54mm_J81_J82"
+	(symbol "LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "J"
-			(at 0 7.62 0)
+			(at 0 8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -813,8 +813,8 @@
 				)
 			)
 		)
-		(property "Value" "Dual_PinSocket_1x04_P2.54mm_J81_J82"
-			(at 0 -7.62 0)
+		(property "Value" "LPF female headers"
+			(at 0 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -823,7 +823,7 @@
 				)
 			)
 		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:Dual_PinSocket_1x04_P2.54mm_J81_J82"
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -856,7 +856,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "connector socket header 1x04 2.54 grouped J81 J82"
+		(property "ki_keywords" "LPF paired female socket header 1x04 2.54 33.02mm"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -867,7 +867,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "Dual_PinSocket_1x04_P2.54mm_J81_J82"
+		(property "ki_fp_filters" "LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -878,51 +878,24 @@
 				)
 			)
 		)
-		(symbol "Dual_PinSocket_1x04_P2.54mm_J81_J82_0_1"
+		(symbol "LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm_0_1"
 			(rectangle
-				(start -10.16 5.08)
-				(end -2.54 -5.08)
+				(start -10.16 6.35)
+				(end 10.16 -6.35)
 				(stroke
 					(width 0.254)
 					(type default)
 				)
 				(fill
 					(type background)
-				)
-			)
-			(rectangle
-				(start 2.54 5.08)
-				(end 10.16 -5.08)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(text "J81"
-				(at -6.35 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(text "J82"
-				(at 6.35 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
 				)
 			)
 		)
-		(symbol "Dual_PinSocket_1x04_P2.54mm_J81_J82_1_1"
+		(symbol "LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm_1_1"
 			(pin passive line
 				(at -12.7 3.81 0)
 				(length 2.54)
-				(name "J81.1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -940,7 +913,7 @@
 			(pin passive line
 				(at -12.7 1.27 0)
 				(length 2.54)
-				(name "J81.2"
+				(name "RF_IN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -958,7 +931,7 @@
 			(pin passive line
 				(at -12.7 -1.27 0)
 				(length 2.54)
-				(name "J81.3"
+				(name "RF_IN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -976,7 +949,7 @@
 			(pin passive line
 				(at -12.7 -3.81 0)
 				(length 2.54)
-				(name "J81.4"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -994,7 +967,7 @@
 			(pin passive line
 				(at 12.7 3.81 180)
 				(length 2.54)
-				(name "J82.1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1012,7 +985,7 @@
 			(pin passive line
 				(at 12.7 1.27 180)
 				(length 2.54)
-				(name "J82.2"
+				(name "RF_OUT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1030,7 +1003,7 @@
 			(pin passive line
 				(at 12.7 -1.27 180)
 				(length 2.54)
-				(name "J82.3"
+				(name "RF_OUT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1048,7 +1021,7 @@
 			(pin passive line
 				(at 12.7 -3.81 180)
 				(length 2.54)
-				(name "J82.4"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)

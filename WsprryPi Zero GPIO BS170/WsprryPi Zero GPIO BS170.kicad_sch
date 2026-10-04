@@ -889,275 +889,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "wsprrypi-zero-gpio-bs170:Dual_PinSocket_1x04_P2.54mm_J81_J82"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Dual_PinSocket_1x04_P2.54mm_J81_J82"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "wsprrypi-zero-gpio-bs170:Dual_PinSocket_1x04_P2.54mm_J81_J82"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8555109420836753409"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Grouped pair of 1x04 2.54 mm female through-hole headers matching the WsprryPi LPF paired J1 geometry; header centers are exactly 33.020 mm apart; F.Cu keepout permits B.Cu ground pour"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector socket header 1x04 2.54 grouped J81 J82"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Dual_PinSocket_1x04_P2.54mm_J81_J82"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Dual_PinSocket_1x04_P2.54mm_J81_J82_0_1"
-				(rectangle
-					(start -10.16 5.08)
-					(end -2.54 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start 2.54 5.08)
-					(end 10.16 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(text "J81"
-					(at -6.35 6.35 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(text "J82"
-					(at 6.35 6.35 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(symbol "Dual_PinSocket_1x04_P2.54mm_J81_J82_1_1"
-				(pin passive line
-					(at -12.7 3.81 0)
-					(length 2.54)
-					(name "J81.1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 1.27 0)
-					(length 2.54)
-					(name "J81.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -1.27 0)
-					(length 2.54)
-					(name "J81.3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -3.81 0)
-					(length 2.54)
-					(name "J81.4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 3.81 180)
-					(length 2.54)
-					(name "J82.1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 1.27 180)
-					(length 2.54)
-					(name "J82.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -1.27 180)
-					(length 2.54)
-					(name "J82.3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -3.81 180)
-					(length 2.54)
-					(name "J82.4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "wsprrypi-zero-gpio-bs170:GND"
 			(power global)
 			(pin_numbers
@@ -1675,6 +1406,248 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "wsprrypi-zero-gpio-bs170:LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LPF female headers"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "wsprrypi-zero-gpio-bs170:LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8555109420836753409"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Grouped pair of 1x04 2.54 mm female through-hole headers matching the WsprryPi LPF paired J1 geometry; header centers are exactly 33.020 mm apart; F.Cu keepout permits B.Cu ground pour"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LPF paired female socket header 1x04 2.54 33.02mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm_0_1"
+				(rectangle
+					(start -10.16 6.35)
+					(end 10.16 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm_1_1"
+				(pin passive line
+					(at -12.7 3.81 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 1.27 0)
+					(length 2.54)
+					(name "RF_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -1.27 0)
+					(length 2.54)
+					(name "RF_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -3.81 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 3.81 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 1.27 180)
+					(length 2.54)
+					(name "RF_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -1.27 180)
+					(length 2.54)
+					(name "RF_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -3.81 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4103,17 +4076,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "J81: amplifier side   J82: filtered-output side"
-		(exclude_from_sim no)
-		(at 191.262 99.822 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "68d7e9ae-e609-5ccf-874c-9257882ab716")
-	)
 	(text "PROPOSED / UNVALIDATED: values and net topology require ERC review, layout review, and conducted RF qualification."
 		(exclude_from_sim no)
 		(at 25.4 202.184 0)
@@ -4127,7 +4089,7 @@
 	)
 	(text "BOM-only socket"
 		(exclude_from_sim no)
-		(at 66.802 19.558 0)
+		(at 68.072 22.098 0)
 		(effects
 			(font
 				(size 1 1)
@@ -4136,21 +4098,10 @@
 		)
 		(uuid "c1c4d9f6-9fee-55e5-95b0-453ef746f319")
 	)
-	(text "R22 connects VOUT to QOD; C22 sets the output rise time."
-		(exclude_from_sim no)
-		(at 97.282 87.122 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "eaa3b46d-d722-584f-860a-581d2f6c1408")
-	)
 	(text_box "Output Coupling and LPF Interface (50-Series)"
 		(exclude_from_sim no)
-		(at 173.355 64.53 0)
-		(size 67.945 37.705)
+		(at 165.1 66.04 0)
+		(size 77.724 25.908)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -4169,8 +4120,8 @@
 	)
 	(text_box "GPIO Input and Gate Bias (30-Series)"
 		(exclude_from_sim no)
-		(at 86.86 14.605 0)
-		(size 81.915 35.815)
+		(at 91.44 14.732 0)
+		(size 48.26 48.768)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -4189,8 +4140,8 @@
 	)
 	(text_box "Raspberry Pi HAT Interface (10-Series)"
 		(exclude_from_sim no)
-		(at 15 14.605 0)
-		(size 70 88.265)
+		(at 14.986 14.732 0)
+		(size 72.39 91.948)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -4209,8 +4160,8 @@
 	)
 	(text_box "Switched 5 V Amplifier Supply (20-Series)"
 		(exclude_from_sim no)
-		(at 86.86 53.67 0)
-		(size 71.255 36.5)
+		(at 91.44 66.04 0)
+		(size 69.215 40.386)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -4229,7 +4180,7 @@
 	)
 	(text_box "BS170 Amplifier and Drain Feed (40-Series)"
 		(exclude_from_sim no)
-		(at 173.355 14.605 0)
+		(at 142.875 14.605 0)
 		(size 49.53 46.355)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4248,170 +4199,194 @@
 		(uuid "d2c842af-caed-4532-8f87-d04411c8d36c")
 	)
 	(junction
-		(at 191.77 29.21)
+		(at 161.29 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0a93cf89-33a2-4248-90a5-6ff92eef0648")
 	)
 	(junction
-		(at 226.06 85.09)
+		(at 107.95 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "25664d15-2f92-413c-92f7-a46f17a4b760")
+		(uuid "1301ff0a-95e7-46fd-8743-5fa7374904c0")
 	)
 	(junction
-		(at 143.51 66.04)
+		(at 196.85 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b16ecaf-dbda-4a65-9104-2385d1d6f9aa")
+	)
+	(junction
+		(at 226.06 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62d59bd9-2edb-4679-80a7-1f306c790b37")
+	)
+	(junction
+		(at 143.51 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "676cccee-8a56-4a06-9877-6c3f672f7acb")
 	)
 	(junction
-		(at 130.81 66.04)
+		(at 130.81 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7faa6670-298a-48e7-8c86-cb8bf752a270")
 	)
 	(junction
-		(at 228.6 90.17)
+		(at 195.58 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "94fe8338-3fa8-4c0b-ad5c-d0965cf52de9")
+		(uuid "824bbd90-e0cf-4a6a-8992-3d115937d902")
 	)
 	(junction
-		(at 198.12 90.17)
+		(at 107.95 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c445714e-e654-474f-b646-8c39419298cd")
+		(uuid "8a3df3da-fdf0-453b-a00d-3ba8a6ae9812")
 	)
 	(junction
-		(at 113.03 33.02)
+		(at 161.29 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8deb8ecb-1e98-433b-85cf-1416a16cd1ec")
+	)
+	(junction
+		(at 130.81 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf4ae9bd-9a16-4203-ba75-75ed9326793d")
+	)
+	(junction
+		(at 120.65 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ce43753f-1a19-456d-8f32-7f8ac3e10b8b")
 	)
 	(junction
-		(at 191.77 41.91)
+		(at 161.29 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cefa42c0-34bf-4b0f-8495-74fd8d62e722")
 	)
 	(junction
-		(at 153.67 25.4)
+		(at 120.65 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d37ddf86-16ae-4955-bd50-e187fa02f58a")
 	)
 	(junction
-		(at 191.77 22.86)
+		(at 224.79 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9841ac8-49bb-40fb-9aec-0366c6152a08")
+	)
+	(junction
+		(at 161.29 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f188131e-e19d-432c-bf24-407b7d8c7d24")
 	)
-	(junction
-		(at 187.96 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f8f4d4aa-12ec-4999-88db-78071ae01027")
-	)
 	(no_connect
-		(at 64.77 67.31)
+		(at 66.04 69.85)
 		(uuid "034ad410-6ef3-5f32-a521-f11eb51ce20e")
 	)
 	(no_connect
-		(at 24.13 59.69)
+		(at 25.4 62.23)
 		(uuid "12347dae-930e-5d1f-8662-ed3c98687371")
 	)
 	(no_connect
-		(at 64.77 80.01)
+		(at 66.04 82.55)
 		(uuid "128b64b1-cdc8-560a-ab4a-01bdb4ec4953")
 	)
 	(no_connect
-		(at 24.13 54.61)
+		(at 25.4 57.15)
 		(uuid "132df8aa-0080-5403-8686-27db92e18bef")
 	)
 	(no_connect
-		(at 64.77 36.83)
+		(at 66.04 39.37)
 		(uuid "14aca16d-a7df-4a58-b58f-035db9c30b4d")
 	)
 	(no_connect
-		(at 64.77 62.23)
+		(at 66.04 64.77)
 		(uuid "1e4b7fc2-5be0-55a3-81bb-7897b6e51e14")
 	)
 	(no_connect
-		(at 64.77 69.85)
+		(at 66.04 72.39)
 		(uuid "1fdbefb5-b916-5127-a6fd-2eead70e4c8b")
 	)
 	(no_connect
-		(at 24.13 64.77)
+		(at 25.4 67.31)
 		(uuid "23a467cd-6d00-57c5-9cea-623961fdb019")
 	)
 	(no_connect
-		(at 24.13 44.45)
+		(at 25.4 46.99)
 		(uuid "4b7f915b-2028-5184-8b8d-cbd904121bc8")
 	)
 	(no_connect
-		(at 24.13 46.99)
+		(at 25.4 49.53)
 		(uuid "5894df0a-f36a-5ef9-be0e-e1f770f61ae2")
 	)
 	(no_connect
-		(at 49.53 26.67)
+		(at 50.8 29.21)
 		(uuid "58eedced-8ce8-4fb0-9679-b35b9fe52a29")
 	)
 	(no_connect
-		(at 64.77 39.37)
+		(at 66.04 41.91)
 		(uuid "5a0c7c8b-10e9-4800-b6be-90592f6b2c95")
 	)
 	(no_connect
-		(at 24.13 39.37)
+		(at 25.4 41.91)
 		(uuid "89579dac-eb29-5831-bc27-4bb77acdc974")
 	)
 	(no_connect
-		(at 64.77 44.45)
+		(at 66.04 46.99)
 		(uuid "94ffb3e6-5195-506e-b08a-e1d8430048fc")
 	)
 	(no_connect
-		(at 64.77 54.61)
+		(at 66.04 57.15)
 		(uuid "97304779-5a6c-551f-b6fd-3c2db20ecba0")
 	)
 	(no_connect
-		(at 64.77 64.77)
+		(at 66.04 67.31)
 		(uuid "9acf4790-597e-5645-a85e-ae06cda4d49d")
 	)
 	(no_connect
-		(at 24.13 77.47)
+		(at 25.4 80.01)
 		(uuid "9c253d1e-4dba-5653-8af1-ca5f8562b672")
 	)
 	(no_connect
-		(at 64.77 77.47)
+		(at 66.04 80.01)
 		(uuid "bdd5bf03-4ecb-5c74-949f-03443f545db6")
 	)
 	(no_connect
-		(at 24.13 69.85)
+		(at 25.4 72.39)
 		(uuid "be1a0022-1306-55b2-9ae4-0a4b56cb7871")
 	)
 	(no_connect
-		(at 64.77 72.39)
+		(at 66.04 74.93)
 		(uuid "c97e5b6b-be10-54bb-b371-b22f82b2d256")
 	)
 	(no_connect
-		(at 64.77 57.15)
+		(at 66.04 59.69)
 		(uuid "d44d89b5-9b51-5cb5-843a-7a3e4bee30ec")
 	)
 	(no_connect
-		(at 64.77 46.99)
+		(at 66.04 49.53)
 		(uuid "e0ee5359-1781-58cc-bff9-5c9a60b4e981")
 	)
 	(no_connect
-		(at 24.13 36.83)
+		(at 25.4 39.37)
 		(uuid "e6e8b90d-1ec0-59d2-a375-e0501cb1e0d6")
 	)
 	(no_connect
-		(at 24.13 72.39)
+		(at 25.4 74.93)
 		(uuid "f9876b3d-5ea6-52bc-a9a8-2181aecdbdb9")
 	)
 	(wire
 		(pts
-			(xy 113.03 34.29) (xy 113.03 33.02)
+			(xy 120.65 46.99) (xy 120.65 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4421,7 +4396,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 33.02) (xy 127 33.02)
+			(xy 129.54 45.72) (xy 130.81 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4431,17 +4406,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 78.74) (xy 101.6 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "058628fe-ef9a-425c-a690-f3553b6b2b59")
-	)
-	(wire
-		(pts
-			(xy 72.39 73.66) (xy 82.55 73.66)
+			(xy 73.66 76.2) (xy 85.09 76.2)
 		)
 		(stroke
 			(width 0)
@@ -4451,7 +4416,17 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 78.74) (xy 101.6 78.74)
+			(xy 161.29 31.75) (xy 161.29 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c6a4d70-5c2f-4cf2-9843-28a18a55c874")
+	)
+	(wire
+		(pts
+			(xy 106.68 92.71) (xy 107.95 92.71)
 		)
 		(stroke
 			(width 0)
@@ -4461,7 +4436,37 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 41.91) (xy 201.93 41.91)
+			(xy 130.81 45.72) (xy 130.81 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dab74ea-100d-4ec8-b616-0a354fdbf683")
+	)
+	(wire
+		(pts
+			(xy 226.06 81.28) (xy 223.52 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1239c62e-b986-470e-bb5d-70e013a60aad")
+	)
+	(wire
+		(pts
+			(xy 177.8 80.01) (xy 168.91 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "135443f8-e31a-4b27-99c3-4d955869f2bb")
+	)
+	(wire
+		(pts
+			(xy 161.29 41.91) (xy 171.45 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4471,7 +4476,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 38.1) (xy 99.06 38.1)
+			(xy 95.25 50.8) (xy 106.68 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4481,7 +4486,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 22.86) (xy 191.77 22.86)
+			(xy 162.56 22.86) (xy 161.29 22.86)
 		)
 		(stroke
 			(width 0)
@@ -4491,7 +4496,17 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 29.21) (xy 191.77 29.21)
+			(xy 106.68 82.55) (xy 107.95 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1731c920-7e2a-4ca8-80f9-b274161be71c")
+	)
+	(wire
+		(pts
+			(xy 162.56 29.21) (xy 161.29 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4501,17 +4516,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 66.04) (xy 109.22 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ad52a7d-d4c8-4f4c-8eaa-670f6984544b")
-	)
-	(wire
-		(pts
-			(xy 72.39 67.31) (xy 72.39 73.66)
+			(xy 73.66 69.85) (xy 73.66 76.2)
 		)
 		(stroke
 			(width 0)
@@ -4521,7 +4526,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 67.31) (xy 77.47 69.85)
+			(xy 78.74 69.85) (xy 78.74 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4531,7 +4536,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 69.85) (xy 69.85 78.74)
+			(xy 71.12 72.39) (xy 71.12 81.28)
 		)
 		(stroke
 			(width 0)
@@ -4541,7 +4546,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 93.98) (xy 60.96 93.98)
+			(xy 63.5 96.52) (xy 62.23 96.52)
 		)
 		(stroke
 			(width 0)
@@ -4551,7 +4556,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 29.21) (xy 204.47 30.48)
+			(xy 173.99 29.21) (xy 173.99 30.48)
 		)
 		(stroke
 			(width 0)
@@ -4561,27 +4566,17 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 86.36) (xy 187.96 86.36)
+			(xy 198.12 78.74) (xy 195.58 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2acd33a1-9ca2-4957-b40c-d4f049cb6a34")
+		(uuid "25017910-61ae-4837-b8bf-9fd2639ac23b")
 	)
 	(wire
 		(pts
-			(xy 187.96 85.09) (xy 187.96 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b2011fb-c827-5100-8a30-e583e74be283")
-	)
-	(wire
-		(pts
-			(xy 191.77 21.59) (xy 191.77 22.86)
+			(xy 161.29 21.59) (xy 161.29 22.86)
 		)
 		(stroke
 			(width 0)
@@ -4591,27 +4586,17 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 87.63) (xy 226.06 85.09)
+			(xy 130.81 76.2) (xy 153.67 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "35b5c4b1-9eb2-4ac3-810f-16580882972a")
+		(uuid "36ba648f-fcea-4656-b2c7-c2d7427ef9b0")
 	)
 	(wire
 		(pts
-			(xy 101.6 69.85) (xy 109.22 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37b7bd37-06da-40e2-9fd9-42eaf0c85cd2")
-	)
-	(wire
-		(pts
-			(xy 144.78 66.04) (xy 143.51 66.04)
+			(xy 144.78 82.55) (xy 143.51 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4621,7 +4606,17 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 96.52) (xy 27.94 99.06)
+			(xy 130.81 26.67) (xy 135.89 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ae8cdc4-eaef-4d05-a9dd-7e81d39dbb2d")
+	)
+	(wire
+		(pts
+			(xy 29.21 99.06) (xy 29.21 101.6)
 		)
 		(stroke
 			(width 0)
@@ -4631,17 +4626,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 82.55) (xy 228.6 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c45d337-d427-4133-bc7c-e1e236bdf006")
-	)
-	(wire
-		(pts
-			(xy 107.95 38.1) (xy 107.95 39.37)
+			(xy 115.57 50.8) (xy 115.57 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4651,17 +4636,37 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 62.23) (xy 130.81 66.04)
+			(xy 97.79 76.2) (xy 107.95 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "439496f6-88c7-4951-9c8e-9b7bd7c4e778")
+		(uuid "3d0069d4-22f4-43c2-8192-3f5bf6019cd8")
 	)
 	(wire
 		(pts
-			(xy 204.47 22.86) (xy 204.47 24.13)
+			(xy 195.58 80.01) (xy 195.58 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4233e6a5-34d6-4e0a-bf32-0fcd653a0a4e")
+	)
+	(wire
+		(pts
+			(xy 130.81 76.2) (xy 130.81 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b797747-296d-40b6-b1e5-c98b0ea84985")
+	)
+	(wire
+		(pts
+			(xy 173.99 22.86) (xy 173.99 24.13)
 		)
 		(stroke
 			(width 0)
@@ -4671,17 +4676,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 90.17) (xy 228.6 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5049ba49-3b73-4cca-a459-6cad2dbdc366")
-	)
-	(wire
-		(pts
-			(xy 190.5 21.59) (xy 191.77 21.59)
+			(xy 160.02 21.59) (xy 161.29 21.59)
 		)
 		(stroke
 			(width 0)
@@ -4691,7 +4686,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 66.04) (xy 93.98 67.31)
+			(xy 97.79 82.55) (xy 97.79 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4701,7 +4696,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 69.85) (xy 143.51 66.04)
+			(xy 143.51 86.36) (xy 143.51 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4711,7 +4706,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 67.31) (xy 74.93 76.2)
+			(xy 76.2 69.85) (xy 76.2 78.74)
 		)
 		(stroke
 			(width 0)
@@ -4721,7 +4716,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 41.91) (xy 113.03 43.18)
+			(xy 120.65 54.61) (xy 120.65 55.88)
 		)
 		(stroke
 			(width 0)
@@ -4731,7 +4726,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 29.21) (xy 191.77 33.02)
+			(xy 161.29 29.21) (xy 161.29 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4741,7 +4736,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 34.29) (xy 102.87 33.02)
+			(xy 110.49 46.99) (xy 110.49 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4751,7 +4746,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 78.74) (xy 82.55 78.74)
+			(xy 71.12 81.28) (xy 85.09 81.28)
 		)
 		(stroke
 			(width 0)
@@ -4761,7 +4756,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 69.85) (xy 134.62 69.85)
+			(xy 124.46 86.36) (xy 134.62 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4771,7 +4766,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 33.02) (xy 114.3 33.02)
+			(xy 120.65 45.72) (xy 121.92 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4781,7 +4776,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 93.98) (xy 60.96 95.25)
+			(xy 62.23 96.52) (xy 62.23 97.79)
 		)
 		(stroke
 			(width 0)
@@ -4791,7 +4786,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 93.98) (xy 71.12 93.98)
+			(xy 71.12 96.52) (xy 72.39 96.52)
 		)
 		(stroke
 			(width 0)
@@ -4801,7 +4796,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 66.04) (xy 153.67 67.31)
+			(xy 153.67 82.55) (xy 153.67 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4811,7 +4806,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 49.53) (xy 24.13 49.53)
+			(xy 20.32 52.07) (xy 25.4 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4821,7 +4816,17 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 25.4) (xy 153.67 25.4)
+			(xy 224.79 83.82) (xy 224.79 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a4f14bb-e6c6-4125-902b-d5285b59c71f")
+	)
+	(wire
+		(pts
+			(xy 120.65 26.67) (xy 130.81 26.67)
 		)
 		(stroke
 			(width 0)
@@ -4831,7 +4836,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 57.15) (xy 16.51 57.15)
+			(xy 25.4 59.69) (xy 17.78 59.69)
 		)
 		(stroke
 			(width 0)
@@ -4841,7 +4846,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 73.66) (xy 134.62 73.66)
+			(xy 133.35 90.17) (xy 134.62 90.17)
 		)
 		(stroke
 			(width 0)
@@ -4851,7 +4856,17 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 69.85) (xy 69.85 69.85)
+			(xy 107.95 86.36) (xy 107.95 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76543df0-5fdd-49c4-b9f3-0cd64d24db1a")
+	)
+	(wire
+		(pts
+			(xy 78.74 72.39) (xy 71.12 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4861,17 +4876,37 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 85.09) (xy 236.22 85.09)
+			(xy 107.95 82.55) (xy 109.22 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "83789c3e-7ae4-420e-aa95-146e3fab6036")
+		(uuid "78f76ed3-9e6c-41c6-948e-885fdb415bec")
 	)
 	(wire
 		(pts
-			(xy 26.67 93.98) (xy 34.29 93.98)
+			(xy 195.58 78.74) (xy 195.58 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a08c79c-9cfd-414a-b6d6-9a05cee074e1")
+	)
+	(wire
+		(pts
+			(xy 238.76 80.01) (xy 240.03 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81ea07fd-b5f8-4977-a790-bbfbaf7a9d5c")
+	)
+	(wire
+		(pts
+			(xy 27.94 96.52) (xy 35.56 96.52)
 		)
 		(stroke
 			(width 0)
@@ -4881,7 +4916,17 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 25.4) (xy 144.78 25.4)
+			(xy 195.58 81.28) (xy 198.12 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86998c76-9788-4fe7-95e7-f13baaac9015")
+	)
+	(wire
+		(pts
+			(xy 110.49 26.67) (xy 111.76 26.67)
 		)
 		(stroke
 			(width 0)
@@ -4891,7 +4936,7 @@
 	)
 	(wire
 		(pts
-			(xy 16.51 67.31) (xy 24.13 67.31)
+			(xy 17.78 69.85) (xy 25.4 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4901,17 +4946,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 90.17) (xy 198.12 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f932d7a-a387-4512-8f0e-375457828ce0")
-	)
-	(wire
-		(pts
-			(xy 102.87 33.02) (xy 113.03 33.02)
+			(xy 110.49 45.72) (xy 120.65 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4921,17 +4956,27 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 85.09) (xy 187.96 85.09)
+			(xy 196.85 76.2) (xy 196.85 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "96cb8f12-8daa-4bd2-95cd-38ff99a1dc05")
+		(uuid "9267779e-36fb-42ea-af2c-ed1e67aac91c")
 	)
 	(wire
 		(pts
-			(xy 95.25 66.04) (xy 93.98 66.04)
+			(xy 240.03 80.01) (xy 240.03 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9618de0e-05df-4fa6-8bfe-b9e0ae139186")
+	)
+	(wire
+		(pts
+			(xy 99.06 82.55) (xy 97.79 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4941,17 +4986,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 85.09) (xy 236.22 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97d82f19-cab1-4e39-8198-2f646b203e97")
-	)
-	(wire
-		(pts
-			(xy 191.77 22.86) (xy 191.77 29.21)
+			(xy 161.29 22.86) (xy 161.29 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4961,17 +4996,27 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 87.63) (xy 187.96 87.63)
+			(xy 149.86 31.75) (xy 161.29 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9f0a31f1-8123-4052-9a45-30dd1e69c3ec")
+		(uuid "9b395a08-1a59-4f18-b000-f5dd1cd1607a")
 	)
 	(wire
 		(pts
-			(xy 91.44 78.74) (xy 91.44 80.01)
+			(xy 226.06 80.01) (xy 233.68 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f702a2d-0694-4ab9-90c4-1548f4c740ac")
+	)
+	(wire
+		(pts
+			(xy 97.79 92.71) (xy 97.79 93.98)
 		)
 		(stroke
 			(width 0)
@@ -4981,7 +5026,27 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 52.07) (xy 71.12 52.07)
+			(xy 223.52 83.82) (xy 224.79 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a99669bc-3d1a-486d-8c44-8b64cf9e7452")
+	)
+	(wire
+		(pts
+			(xy 198.12 76.2) (xy 196.85 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9c298cc-44f0-4d86-a3ce-ffc1ef0e0de3")
+	)
+	(wire
+		(pts
+			(xy 66.04 54.61) (xy 72.39 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4991,7 +5056,27 @@
 	)
 	(wire
 		(pts
-			(xy 16.51 74.93) (xy 24.13 74.93)
+			(xy 224.79 85.09) (xy 224.79 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae2866fc-0dbc-4bdc-b058-ff1cd3ed05b5")
+	)
+	(wire
+		(pts
+			(xy 185.42 80.01) (xy 195.58 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b19a5b74-57ed-4857-a9ef-e21a2de57d77")
+	)
+	(wire
+		(pts
+			(xy 17.78 77.47) (xy 25.4 77.47)
 		)
 		(stroke
 			(width 0)
@@ -5001,7 +5086,17 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 41.91) (xy 191.77 43.18)
+			(xy 99.06 102.87) (xy 107.95 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b608efac-96d7-4391-9d8c-d3566d616f12")
+	)
+	(wire
+		(pts
+			(xy 161.29 41.91) (xy 161.29 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5011,7 +5106,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 76.2) (xy 82.55 76.2)
+			(xy 76.2 78.74) (xy 85.09 78.74)
 		)
 		(stroke
 			(width 0)
@@ -5021,17 +5116,17 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 82.55) (xy 198.12 90.17)
+			(xy 224.79 76.2) (xy 223.52 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bcc75e5e-5c02-4b60-a176-fc187f147cd1")
+		(uuid "bb366883-ccd1-4fcc-9ec3-dfca1702e0d6")
 	)
 	(wire
 		(pts
-			(xy 26.67 96.52) (xy 27.94 96.52)
+			(xy 27.94 99.06) (xy 29.21 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5041,7 +5136,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 93.98) (xy 44.45 92.71)
+			(xy 45.72 96.52) (xy 45.72 95.25)
 		)
 		(stroke
 			(width 0)
@@ -5051,27 +5146,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 90.17) (xy 198.12 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c295a7d2-6a20-4505-9823-fdf3038b8962")
-	)
-	(wire
-		(pts
-			(xy 224.79 90.17) (xy 228.6 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5673a55-57cb-442e-b226-73f7834422cf")
-	)
-	(wire
-		(pts
-			(xy 125.73 73.66) (xy 124.46 73.66)
+			(xy 125.73 90.17) (xy 124.46 90.17)
 		)
 		(stroke
 			(width 0)
@@ -5081,7 +5156,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 66.04) (xy 130.81 66.04)
+			(xy 124.46 82.55) (xy 130.81 82.55)
 		)
 		(stroke
 			(width 0)
@@ -5091,27 +5166,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 86.36) (xy 187.96 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9583a7a-3241-4418-b7cd-969d1e9d6da8")
-	)
-	(wire
-		(pts
-			(xy 199.39 82.55) (xy 198.12 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdc1973f-4e7e-45a3-87b0-c90d709b312e")
-	)
-	(wire
-		(pts
-			(xy 191.77 40.64) (xy 191.77 41.91)
+			(xy 161.29 40.64) (xy 161.29 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5121,7 +5176,17 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 34.29) (xy 153.67 35.56)
+			(xy 109.22 86.36) (xy 107.95 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d037ffca-9459-4e77-93f9-69598f042a10")
+	)
+	(wire
+		(pts
+			(xy 120.65 35.56) (xy 120.65 36.83)
 		)
 		(stroke
 			(width 0)
@@ -5131,17 +5196,27 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 86.36) (xy 179.07 86.36)
+			(xy 223.52 78.74) (xy 226.06 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "db9005c0-2166-4210-a33e-8f757fef0950")
+		(uuid "da4c1fe7-f206-45da-8140-eee6549c272b")
 	)
 	(wire
 		(pts
-			(xy 182.88 21.59) (xy 176.53 21.59)
+			(xy 198.12 83.82) (xy 196.85 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc704aeb-1ec5-419b-bf9e-e5a08337ddab")
+	)
+	(wire
+		(pts
+			(xy 152.4 21.59) (xy 146.05 21.59)
 		)
 		(stroke
 			(width 0)
@@ -5151,7 +5226,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 25.4) (xy 128.27 25.4)
+			(xy 102.87 26.67) (xy 95.25 26.67)
 		)
 		(stroke
 			(width 0)
@@ -5161,7 +5236,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 48.26) (xy 179.07 48.26)
+			(xy 153.67 48.26) (xy 148.59 48.26)
 		)
 		(stroke
 			(width 0)
@@ -5171,7 +5246,17 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 66.04) (xy 143.51 66.04)
+			(xy 226.06 80.01) (xy 226.06 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1f1f268-ef8d-4a2c-93c3-b1f1810a444f")
+	)
+	(wire
+		(pts
+			(xy 130.81 82.55) (xy 143.51 82.55)
 		)
 		(stroke
 			(width 0)
@@ -5181,17 +5266,17 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 71.12) (xy 236.22 73.66)
+			(xy 196.85 83.82) (xy 196.85 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e2b26301-42e8-4889-8f13-b06f7027e66e")
+		(uuid "e3084d13-251c-4795-8437-e65e543b2f0a")
 	)
 	(wire
 		(pts
-			(xy 152.4 66.04) (xy 153.67 66.04)
+			(xy 152.4 82.55) (xy 153.67 82.55)
 		)
 		(stroke
 			(width 0)
@@ -5201,7 +5286,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 25.4) (xy 152.4 25.4)
+			(xy 120.65 26.67) (xy 119.38 26.67)
 		)
 		(stroke
 			(width 0)
@@ -5211,7 +5296,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 22.86) (xy 204.47 22.86)
+			(xy 170.18 22.86) (xy 173.99 22.86)
 		)
 		(stroke
 			(width 0)
@@ -5221,7 +5306,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 26.67) (xy 153.67 25.4)
+			(xy 120.65 27.94) (xy 120.65 26.67)
 		)
 		(stroke
 			(width 0)
@@ -5231,7 +5316,17 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 53.34) (xy 191.77 54.61)
+			(xy 226.06 78.74) (xy 226.06 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edb9665a-0d18-4c86-8ff0-5e29e15ec1fe")
+	)
+	(wire
+		(pts
+			(xy 161.29 53.34) (xy 161.29 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5241,17 +5336,17 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 82.55) (xy 228.6 82.55)
+			(xy 107.95 92.71) (xy 107.95 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f28df180-0cf0-47d4-89fd-0eb45c33f08f")
+		(uuid "f0a9d77a-f72f-4952-b430-eec7e3a32a8b")
 	)
 	(wire
 		(pts
-			(xy 82.55 93.98) (xy 78.74 93.98)
+			(xy 83.82 96.52) (xy 80.01 96.52)
 		)
 		(stroke
 			(width 0)
@@ -5261,7 +5356,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 78.74) (xy 91.44 78.74)
+			(xy 99.06 92.71) (xy 97.79 92.71)
 		)
 		(stroke
 			(width 0)
@@ -5271,7 +5366,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 69.85) (xy 143.51 69.85)
+			(xy 142.24 86.36) (xy 143.51 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5281,17 +5376,17 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 86.36) (xy 179.07 87.63)
+			(xy 107.95 82.55) (xy 107.95 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f85ada38-8feb-4d02-bd17-481725f30081")
+		(uuid "f8090095-2a3e-41fc-a908-81b936592c2d")
 	)
 	(wire
 		(pts
-			(xy 200.66 29.21) (xy 204.47 29.21)
+			(xy 170.18 29.21) (xy 173.99 29.21)
 		)
 		(stroke
 			(width 0)
@@ -5301,17 +5396,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 87.63) (xy 226.06 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9fb0982-18ba-4f24-b08e-6a74c97c88f4")
-	)
-	(wire
-		(pts
-			(xy 106.68 38.1) (xy 107.95 38.1)
+			(xy 114.3 50.8) (xy 115.57 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5321,17 +5406,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 85.09) (xy 226.06 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fed7eca8-0acf-484b-9666-e2f8c92e3110")
-	)
-	(wire
-		(pts
-			(xy 134.62 73.66) (xy 134.62 74.93)
+			(xy 134.62 90.17) (xy 134.62 91.44)
 		)
 		(stroke
 			(width 0)
@@ -5340,7 +5415,7 @@
 		(uuid "ff595c6d-077c-477a-a5fe-71e50ea894d1")
 	)
 	(label "PA_DRAIN"
-		(at 201.93 41.91 180)
+		(at 171.45 41.91 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5350,17 +5425,17 @@
 		(uuid "28b3cd8d-894f-4ac2-b5d2-2278592e23bc")
 	)
 	(label "TX_OUT"
-		(at 236.22 85.09 180)
+		(at 226.06 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "2a3a481e-739b-424e-be2c-5dddf65f4a69")
 	)
 	(label "SHTDWN"
-		(at 34.29 93.98 180)
+		(at 35.56 96.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5370,7 +5445,7 @@
 		(uuid "2cc31127-2007-4399-afb8-8747b5910c13")
 	)
 	(label "GATE"
-		(at 179.07 48.26 0)
+		(at 148.59 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5379,18 +5454,8 @@
 		)
 		(uuid "34459b78-59da-413a-8925-306e97efe79a")
 	)
-	(label "GATE"
-		(at 157.48 25.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "388af34b-2e4c-4fef-bc7c-10e233170f12")
-	)
 	(label "LED"
-		(at 19.05 49.53 0)
+		(at 20.32 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5400,7 +5465,7 @@
 		(uuid "5bcfa4a6-6ac9-48d0-9fb7-cd6efe2824e8")
 	)
 	(label "GPIO4"
-		(at 82.55 73.66 180)
+		(at 85.09 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5410,17 +5475,17 @@
 		(uuid "5c82288c-edfe-4c1a-bada-9e132b868d1d")
 	)
 	(label "PRE_CHOKE"
-		(at 191.77 31.75 180)
+		(at 149.86 31.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "5d136b33-5533-4151-803a-b6b1715e52c3")
 	)
 	(label "PRE_CHOKE"
-		(at 87.63 38.1 0)
+		(at 95.25 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5430,7 +5495,7 @@
 		(uuid "716c26b6-f521-4a0c-b80e-95740195a169")
 	)
 	(label "LED"
-		(at 82.55 93.98 180)
+		(at 83.82 96.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5440,7 +5505,7 @@
 		(uuid "7cbe24f5-5c0c-479b-93c9-1288d1f27caf")
 	)
 	(label "GPIO_RF"
-		(at 128.27 25.4 0)
+		(at 95.25 26.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5450,7 +5515,7 @@
 		(uuid "862a28eb-8b30-46e3-b490-5879e2acb0b3")
 	)
 	(label "GPIO_RF"
-		(at 82.55 76.2 180)
+		(at 85.09 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5460,17 +5525,17 @@
 		(uuid "8c29bece-5af4-4105-8048-a0a0dcd36570")
 	)
 	(label "PI_5V"
-		(at 109.22 66.04 180)
+		(at 97.79 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "8c57f323-9ba0-5a21-9b1b-d1030eca2908")
 	)
 	(label "SHTDWN"
-		(at 16.51 74.93 0)
+		(at 17.78 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5480,7 +5545,7 @@
 		(uuid "8d5a9c8b-d86d-4a23-98d0-41ee22a28d4a")
 	)
 	(label "GND"
-		(at 44.45 92.71 0)
+		(at 45.72 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5490,27 +5555,27 @@
 		(uuid "955a5394-90da-5d23-894d-ebaf706e53d7")
 	)
 	(label "PA_DRAIN"
-		(at 236.22 71.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "98c82ad9-5c2a-45a7-98eb-a6df4961300a")
-	)
-	(label "SW_5V"
-		(at 130.81 62.23 0)
+		(at 168.91 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
+		(uuid "98c82ad9-5c2a-45a7-98eb-a6df4961300a")
+	)
+	(label "SW_5V"
+		(at 153.67 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
 		(uuid "a4c5c8ba-ad84-4c3e-b736-3faee18767b3")
 	)
 	(label "PI_3V3"
-		(at 49.53 26.67 0)
+		(at 50.8 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5520,7 +5585,7 @@
 		(uuid "a96c05dc-54b4-5f4c-b441-cb97f7323f78")
 	)
 	(label "GND"
-		(at 116.84 78.74 0)
+		(at 116.84 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5530,7 +5595,7 @@
 		(uuid "afc761cb-38eb-5b02-8b2a-ac114621b6e9")
 	)
 	(label "GPIO20"
-		(at 16.51 57.15 0)
+		(at 17.78 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5540,7 +5605,7 @@
 		(uuid "d0689e06-4d18-4144-afdd-0e3b9263ee42")
 	)
 	(label "PI_5V"
-		(at 39.37 26.67 180)
+		(at 40.64 29.21 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5550,17 +5615,17 @@
 		(uuid "d17cc649-6040-59b5-892a-6033fb99b533")
 	)
 	(label "AMP_EN"
-		(at 109.22 69.85 180)
+		(at 99.06 102.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "d488d7d4-1221-5ef2-b751-9f0fd4e6a183")
 	)
 	(label "GPIO4"
-		(at 71.12 52.07 180)
+		(at 72.39 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5570,7 +5635,7 @@
 		(uuid "d716486f-bdd3-42bc-83e1-a11d39032925")
 	)
 	(label "GATE"
-		(at 127 33.02 180)
+		(at 135.89 26.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5579,18 +5644,8 @@
 		)
 		(uuid "d76c2347-f868-49f9-b35c-12bb5cf86b85")
 	)
-	(label "GND"
-		(at 95.25 66.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d84d9b5e-452c-577d-930a-7d96e741d31a")
-	)
 	(label "GPIO20"
-		(at 82.55 78.74 180)
+		(at 85.09 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5600,7 +5655,7 @@
 		(uuid "da4df9cc-464d-41b6-872b-9e6d29491784")
 	)
 	(label "SW_5V"
-		(at 176.53 21.59 0)
+		(at 146.05 21.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5610,17 +5665,17 @@
 		(uuid "de07bd5b-f9b2-49e8-bb25-e3a42d59fd3d")
 	)
 	(label "FINAL_OUT"
-		(at 187.96 85.09 0)
+		(at 195.58 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "e5249868-e800-5dca-88cb-df38a6aca552")
 	)
 	(label "GND"
-		(at 92.71 78.74 180)
+		(at 99.06 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5629,18 +5684,8 @@
 		)
 		(uuid "eca2b25b-46bf-59bf-9aa7-b961b6997e0f")
 	)
-	(label "GND"
-		(at 152.4 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f65a7756-ced7-5586-8b16-52e1ee3e7db6")
-	)
 	(label "AMP_EN"
-		(at 16.51 67.31 0)
+		(at 17.78 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5651,7 +5696,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 113.03 43.18 0)
+		(at 120.65 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5661,7 +5706,7 @@
 		(dnp no)
 		(uuid "06103e84-8a33-46ff-9588-09497bdcb522")
 		(property "Reference" "#PWR045"
-			(at 113.03 49.53 0)
+			(at 120.65 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5672,7 +5717,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 113.03 46.99 0)
+			(at 120.65 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5682,7 +5727,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 43.18 0)
+			(at 120.65 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5693,7 +5738,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 43.18 0)
+			(at 120.65 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5704,7 +5749,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 113.03 43.18 0)
+			(at 120.65 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5728,7 +5773,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
-		(at 196.85 29.21 180)
+		(at 166.37 29.21 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5738,7 +5783,7 @@
 		(dnp no)
 		(uuid "096d9e16-96bb-44fc-8d5c-1766db6617b0")
 		(property "Reference" "C41"
-			(at 199.39 27.432 0)
+			(at 168.91 27.432 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5748,7 +5793,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 200.66 30.734 0)
+			(at 170.18 30.734 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5758,7 +5803,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0603_1608Metric"
-			(at 196.85 29.21 0)
+			(at 166.37 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5769,7 +5814,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 196.85 29.21 0)
+			(at 166.37 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5780,7 +5825,7 @@
 			)
 		)
 		(property "Description" "Generic unpolarized capacitor using the local KiCad 0603 metric footprint"
-			(at 196.85 29.21 0)
+			(at 166.37 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5791,7 +5836,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 196.85 29.21 0)
+			(at 166.37 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5802,7 +5847,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 196.85 29.21 0)
+			(at 166.37 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5813,7 +5858,7 @@
 			)
 		)
 		(property "LCSC_PART" ""
-			(at 196.85 29.21 0)
+			(at 166.37 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5840,7 +5885,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 204.47 24.13 0)
+		(at 173.99 24.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5850,7 +5895,7 @@
 		(dnp no)
 		(uuid "0aa9f58a-73ff-465c-be16-5a7caf978b86")
 		(property "Reference" "#PWR041"
-			(at 204.47 30.48 0)
+			(at 173.99 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5861,7 +5906,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 204.47 27.94 0)
+			(at 173.99 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5871,7 +5916,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 24.13 0)
+			(at 173.99 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5882,7 +5927,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 24.13 0)
+			(at 173.99 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5893,7 +5938,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 204.47 24.13 0)
+			(at 173.99 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5917,7 +5962,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:R_0603")
-		(at 148.59 25.4 0)
+		(at 115.57 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5927,7 +5972,7 @@
 		(dnp no)
 		(uuid "11241393-4946-453b-8c54-aefc0843d935")
 		(property "Reference" "R31"
-			(at 148.59 20.32 0)
+			(at 115.57 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5937,7 +5982,7 @@
 			)
 		)
 		(property "Value" "22Ω"
-			(at 148.59 22.86 0)
+			(at 115.57 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5947,7 +5992,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0603_1608Metric"
-			(at 148.59 25.4 0)
+			(at 115.57 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5958,7 +6003,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 148.59 25.4 0)
+			(at 115.57 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5969,7 +6014,7 @@
 			)
 		)
 		(property "Description" "Generic resistor using a compact US zigzag symbol and the local KiCad 0603 metric footprint"
-			(at 148.59 25.4 0)
+			(at 115.57 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5980,7 +6025,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 148.59 25.4 0)
+			(at 115.57 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5991,7 +6036,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 148.59 25.4 0)
+			(at 115.57 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6002,7 +6047,7 @@
 			)
 		)
 		(property "LCSC_PART" ""
-			(at 148.59 25.4 0)
+			(at 115.57 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6029,7 +6074,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
-		(at 113.03 38.1 90)
+		(at 120.65 50.8 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6039,7 +6084,7 @@
 		(dnp no)
 		(uuid "2290c6fd-a34b-4d27-aaa4-feb5a231ae03")
 		(property "Reference" "C32"
-			(at 117.475 36.83 90)
+			(at 125.095 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6049,7 +6094,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 117.475 39.37 90)
+			(at 125.095 52.07 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6059,7 +6104,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0603_1608Metric"
-			(at 113.03 38.1 0)
+			(at 120.65 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6070,7 +6115,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 38.1 0)
+			(at 120.65 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6081,7 +6126,7 @@
 			)
 		)
 		(property "Description" "Generic unpolarized capacitor using the local KiCad 0603 metric footprint"
-			(at 113.03 38.1 0)
+			(at 120.65 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6092,7 +6137,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 113.03 38.1 0)
+			(at 120.65 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6103,7 +6148,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 113.03 38.1 0)
+			(at 120.65 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6114,7 +6159,7 @@
 			)
 		)
 		(property "LCSC_PART" ""
-			(at 113.03 38.1 0)
+			(at 120.65 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6141,7 +6186,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
-		(at 139.7 25.4 0)
+		(at 106.68 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6151,7 +6196,7 @@
 		(dnp no)
 		(uuid "27e90ab8-27c1-461a-9f25-f53f429ac963")
 		(property "Reference" "C31"
-			(at 139.7 20.32 0)
+			(at 106.68 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6161,7 +6206,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 139.7 22.86 0)
+			(at 106.68 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6171,7 +6216,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0603_1608Metric"
-			(at 139.7 25.4 0)
+			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6182,7 +6227,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 25.4 0)
+			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6193,7 +6238,7 @@
 			)
 		)
 		(property "Description" "Generic unpolarized capacitor using the local KiCad 0603 metric footprint"
-			(at 139.7 25.4 0)
+			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6204,7 +6249,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 139.7 25.4 0)
+			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6215,7 +6260,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 139.7 25.4 0)
+			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6226,7 +6271,7 @@
 			)
 		)
 		(property "LCSC_PART" ""
-			(at 139.7 25.4 0)
+			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6253,7 +6298,8 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:SMA_Adafruit_1865")
-		(at 182.88 86.36 180)
+		(at 236.22 80.01 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6263,7 +6309,7 @@
 		(dnp no)
 		(uuid "36036484-cb90-48e2-9d44-85077a8fde80")
 		(property "Reference" "J51"
-			(at 182.88 83.566 0)
+			(at 236.22 77.216 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6273,7 +6319,7 @@
 			)
 		)
 		(property "Value" "SMA_Adafruit_1865"
-			(at 183.3995 82.55 0)
+			(at 235.7005 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6284,7 +6330,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:SMA_Adafruit_1865_EdgeMount"
-			(at 182.88 86.36 0)
+			(at 236.22 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6295,7 +6341,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1865/C2387-001_datasheet.pdf"
-			(at 182.88 86.36 0)
+			(at 236.22 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6306,7 +6352,7 @@
 			)
 		)
 		(property "Description" "Adafruit 1865 SMA female edge-launch connector, 1.6 mm PCB; hand solder; pin 1 signal, pin 2 ground"
-			(at 182.88 91.694 0)
+			(at 236.22 85.344 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6317,7 +6363,7 @@
 			)
 		)
 		(property "Manufacturer" "Adafruit"
-			(at 182.88 86.36 0)
+			(at 236.22 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6328,7 +6374,7 @@
 			)
 		)
 		(property "MPN" "1865"
-			(at 182.88 86.36 0)
+			(at 236.22 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6355,7 +6401,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:Raspberry_Pi_40_Pin_HAT_Interface")
-		(at 44.45 59.69 0)
+		(at 45.72 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6365,7 +6411,7 @@
 		(dnp no)
 		(uuid "4956bacf-ccac-441b-a2fa-51ce082195af")
 		(property "Reference" "U11"
-			(at 25.65 24.87 0)
+			(at 26.92 27.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6375,7 +6421,7 @@
 			)
 		)
 		(property "Value" "Raspberry Pi 40-pin HAT interface"
-			(at 44.45 23.368 0)
+			(at 45.72 25.908 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6385,7 +6431,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:Raspberry_Pi_Zero_HAT_Interface"
-			(at 43.65 60.87 0)
+			(at 44.92 63.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6396,7 +6442,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.raspberrypi.com/hat/hat-plus-specification.pdf"
-			(at 43.65 60.87 0)
+			(at 44.92 63.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6407,7 +6453,7 @@
 			)
 		)
 		(property "Description" "Raspberry Pi full 40-pin HAT interface; ID_SD and ID_SC are reserved for the identification EEPROM"
-			(at 43.65 60.87 0)
+			(at 44.92 63.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6548,7 +6594,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:L")
-		(at 191.77 36.83 0)
+		(at 161.29 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6558,7 +6604,7 @@
 		(dnp no)
 		(uuid "4d9ca7bb-d843-4d27-90ab-38b87174f80c")
 		(property "Reference" "L41"
-			(at 193.294 35.56 0)
+			(at 162.814 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6569,7 +6615,7 @@
 			)
 		)
 		(property "Value" "25T FT37-43"
-			(at 193.04 38.1 0)
+			(at 162.56 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6580,7 +6626,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:L_Toroid_FT37-43_Vertical_P5.08mm"
-			(at 191.77 36.83 0)
+			(at 161.29 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6591,7 +6637,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.amidoncorp.com/ft-37-43/"
-			(at 191.77 36.83 0)
+			(at 161.29 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6602,7 +6648,7 @@
 			)
 		)
 		(property "Description" "Hand-wound drain RF choke: 25 turns on FT37-43, approx. 220 uH nominal; upright mounting; 5.08 mm lead pitch; hand assembly; RF performance unqualified"
-			(at 191.77 36.83 0)
+			(at 161.29 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6613,7 +6659,7 @@
 			)
 		)
 		(property "Manufacturer" "Amidon"
-			(at 191.77 36.83 0)
+			(at 161.29 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6624,7 +6670,7 @@
 			)
 		)
 		(property "MPN" "FT-37-43 (core; wind 25 turns)"
-			(at 191.77 36.83 0)
+			(at 161.29 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6635,7 +6681,7 @@
 			)
 		)
 		(property "LCSC_PART" ""
-			(at 191.77 36.83 0)
+			(at 161.29 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6662,7 +6708,8 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 179.07 87.63 0)
+		(at 240.03 81.28 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6672,7 +6719,7 @@
 		(dnp no)
 		(uuid "4dc9fe19-ddd9-452c-81fc-26b11437f160")
 		(property "Reference" "#PWR018"
-			(at 179.07 93.98 0)
+			(at 240.03 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6683,7 +6730,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 179.07 91.44 0)
+			(at 240.03 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6693,7 +6740,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 87.63 0)
+			(at 240.03 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6704,7 +6751,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 87.63 0)
+			(at 240.03 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6715,7 +6762,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 87.63 0)
+			(at 240.03 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6739,7 +6786,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:R_0603")
-		(at 153.67 30.48 90)
+		(at 120.65 31.75 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6749,7 +6796,7 @@
 		(dnp no)
 		(uuid "4fb3fc82-7cfa-4f23-bee0-df85e6416a09")
 		(property "Reference" "R33"
-			(at 158.115 29.21 90)
+			(at 125.095 30.48 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6759,7 +6806,7 @@
 			)
 		)
 		(property "Value" "100kΩ"
-			(at 158.115 31.75 90)
+			(at 125.095 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6769,7 +6816,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0603_1608Metric"
-			(at 153.67 30.48 0)
+			(at 120.65 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6780,7 +6827,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 153.67 30.48 0)
+			(at 120.65 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6791,7 +6838,7 @@
 			)
 		)
 		(property "Description" "Generic resistor using a compact US zigzag symbol and the local KiCad 0603 metric footprint"
-			(at 153.67 30.48 0)
+			(at 120.65 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6802,7 +6849,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 153.67 30.48 0)
+			(at 120.65 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6813,7 +6860,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 153.67 30.48 0)
+			(at 120.65 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6824,7 +6871,7 @@
 			)
 		)
 		(property "LCSC_PART" ""
-			(at 153.67 30.48 0)
+			(at 120.65 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6851,7 +6898,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:LED")
-		(at 74.93 93.98 0)
+		(at 76.2 96.52 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -6862,7 +6909,7 @@
 		(dnp no)
 		(uuid "6304a647-bca3-4c73-afa2-2e1800150144")
 		(property "Reference" "D11"
-			(at 74.93 90.678 0)
+			(at 76.2 93.218 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6872,7 +6919,7 @@
 			)
 		)
 		(property "Value" "KT-0603W"
-			(at 74.93 96.266 0)
+			(at 76.2 98.806 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6882,7 +6929,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:LED_0603_1608Metric"
-			(at 74.93 93.98 0)
+			(at 76.2 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6893,7 +6940,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8550723991833485312"
-			(at 74.93 93.98 0)
+			(at 76.2 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6904,7 +6951,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 74.93 93.98 0)
+			(at 76.2 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6915,7 +6962,7 @@
 			)
 		)
 		(property "LCSC_PART" "C2286"
-			(at 74.93 93.98 0)
+			(at 76.2 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6926,7 +6973,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 74.93 93.98 0)
+			(at 76.2 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6953,7 +7000,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 204.47 30.48 0)
+		(at 173.99 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6963,7 +7010,7 @@
 		(dnp no)
 		(uuid "63a92c44-7b4f-4611-8feb-189ca967b74a")
 		(property "Reference" "#PWR042"
-			(at 204.47 36.83 0)
+			(at 173.99 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6974,7 +7021,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 204.47 34.29 0)
+			(at 173.99 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6984,7 +7031,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 30.48 0)
+			(at 173.99 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6995,7 +7042,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 30.48 0)
+			(at 173.99 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7006,7 +7053,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 204.47 30.48 0)
+			(at 173.99 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7030,7 +7077,8 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 198.12 91.44 0)
+		(at 224.79 85.09 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7040,7 +7088,7 @@
 		(dnp no)
 		(uuid "642340b6-3b9c-45f7-8b70-148e881c2cac")
 		(property "Reference" "#PWR09"
-			(at 198.12 97.79 0)
+			(at 224.79 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7051,7 +7099,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 198.12 95.25 0)
+			(at 224.79 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7061,7 +7109,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 198.12 91.44 0)
+			(at 224.79 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7072,7 +7120,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 198.12 91.44 0)
+			(at 224.79 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7083,7 +7131,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 198.12 91.44 0)
+			(at 224.79 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7107,7 +7155,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:C_0805")
-		(at 148.59 66.04 0)
+		(at 148.59 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7117,7 +7165,7 @@
 		(dnp no)
 		(uuid "666f02d8-3cd9-48a8-9af9-fc87f4555b7c")
 		(property "Reference" "C23"
-			(at 148.59 60.96 0)
+			(at 148.59 77.978 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7127,7 +7175,7 @@
 			)
 		)
 		(property "Value" "1µF"
-			(at 148.59 63.5 0)
+			(at 148.59 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7137,7 +7185,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0805_2012Metric"
-			(at 148.59 66.04 0)
+			(at 148.59 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7148,7 +7196,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 148.59 66.04 0)
+			(at 148.59 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7159,7 +7207,7 @@
 			)
 		)
 		(property "Description" "Generic unpolarized capacitor using the local KiCad 0805 metric footprint"
-			(at 148.59 66.04 0)
+			(at 148.59 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7170,7 +7218,7 @@
 			)
 		)
 		(property "LCSC_PART" "C28323"
-			(at 148.59 66.04 0)
+			(at 148.59 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7181,7 +7229,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 148.59 66.04 0)
+			(at 148.59 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7192,7 +7240,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 148.59 66.04 0)
+			(at 148.59 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7219,7 +7267,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:C_0805")
-		(at 196.85 22.86 180)
+		(at 166.37 22.86 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7229,7 +7277,7 @@
 		(dnp no)
 		(uuid "776c0232-7753-4d3a-90e6-c05fa2ec1a66")
 		(property "Reference" "C42"
-			(at 199.39 21.336 0)
+			(at 168.91 21.336 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7239,7 +7287,7 @@
 			)
 		)
 		(property "Value" "1µF"
-			(at 199.644 24.13 0)
+			(at 169.164 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7249,7 +7297,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0805_2012Metric"
-			(at 196.85 22.86 0)
+			(at 166.37 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7260,7 +7308,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 196.85 22.86 0)
+			(at 166.37 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7271,7 +7319,7 @@
 			)
 		)
 		(property "Description" "Generic unpolarized capacitor using the local KiCad 0805 metric footprint"
-			(at 196.85 22.86 0)
+			(at 166.37 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7282,7 +7330,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 196.85 22.86 0)
+			(at 166.37 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7293,7 +7341,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 196.85 22.86 0)
+			(at 166.37 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7304,7 +7352,7 @@
 			)
 		)
 		(property "LCSC_PART" ""
-			(at 196.85 22.86 0)
+			(at 166.37 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7331,7 +7379,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:Socket_2x20_P2.54mm_BOM")
-		(at 73.66 26.67 0)
+		(at 74.93 29.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -7341,7 +7389,7 @@
 		(dnp no)
 		(uuid "79a59cbc-558d-5d17-b0c3-9080184b6578")
 		(property "Reference" "J11"
-			(at 72.86 20.89 0)
+			(at 74.13 23.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7351,7 +7399,7 @@
 			)
 		)
 		(property "Value" "Socket_2x20_P2.54mm"
-			(at 72.86 32.89 0)
+			(at 74.13 35.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7362,7 +7410,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.86 26.89 0)
+			(at 74.13 29.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7373,7 +7421,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.86 26.89 0)
+			(at 74.13 29.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7384,7 +7432,7 @@
 			)
 		)
 		(property "Description" "Female 2x20 socket header, 2.54 mm pitch; select a part and spacers that provide the Raspberry Pi HAT minimum board spacing"
-			(at 72.86 26.89 0)
+			(at 74.13 29.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7395,7 +7443,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 73.66 26.67 0)
+			(at 74.93 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7406,7 +7454,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 73.66 26.67 0)
+			(at 74.93 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7427,7 +7475,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:C_0805")
-		(at 99.06 66.04 0)
+		(at 102.87 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7437,7 +7485,7 @@
 		(dnp no)
 		(uuid "7bfe2810-0ca3-4586-b45d-c7786b4d4f8e")
 		(property "Reference" "C21"
-			(at 99.06 60.96 0)
+			(at 102.87 78.232 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7447,7 +7495,7 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 99.06 63.5 0)
+			(at 102.87 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7457,7 +7505,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0805_2012Metric"
-			(at 99.06 66.04 0)
+			(at 102.87 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7468,7 +7516,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 99.06 66.04 0)
+			(at 102.87 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7479,7 +7527,7 @@
 			)
 		)
 		(property "Description" "Generic unpolarized capacitor using the local KiCad 0805 metric footprint"
-			(at 99.06 66.04 0)
+			(at 102.87 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7490,7 +7538,7 @@
 			)
 		)
 		(property "LCSC_PART" "C15850"
-			(at 99.06 66.04 0)
+			(at 102.87 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7501,7 +7549,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 99.06 66.04 0)
+			(at 102.87 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7512,7 +7560,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 99.06 66.04 0)
+			(at 102.87 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7539,7 +7587,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 27.94 99.06 0)
+		(at 29.21 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7549,7 +7597,7 @@
 		(dnp no)
 		(uuid "7d335ce2-b837-410d-bb58-35140d8fb38f")
 		(property "Reference" "#PWR021"
-			(at 27.94 105.41 0)
+			(at 29.21 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7560,7 +7608,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 30.48 98.806 0)
+			(at 31.75 101.346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7570,7 +7618,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 27.94 99.06 0)
+			(at 29.21 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7581,7 +7629,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 99.06 0)
+			(at 29.21 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7592,7 +7640,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 27.94 99.06 0)
+			(at 29.21 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7616,7 +7664,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:R_0603")
-		(at 118.11 33.02 0)
+		(at 125.73 45.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7626,7 +7674,7 @@
 		(dnp no)
 		(uuid "8350fe5e-55a7-44df-85b2-38b5cdd801f9")
 		(property "Reference" "R32"
-			(at 118.11 27.94 0)
+			(at 125.73 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7636,7 +7684,7 @@
 			)
 		)
 		(property "Value" "4.7kΩ"
-			(at 118.11 30.48 0)
+			(at 125.73 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7646,7 +7694,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0603_1608Metric"
-			(at 118.11 33.02 0)
+			(at 125.73 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7657,7 +7705,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.11 33.02 0)
+			(at 125.73 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7668,7 +7716,7 @@
 			)
 		)
 		(property "Description" "Generic resistor using a compact US zigzag symbol and the local KiCad 0603 metric footprint"
-			(at 118.11 33.02 0)
+			(at 125.73 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7679,7 +7727,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 118.11 33.02 0)
+			(at 125.73 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7690,7 +7738,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 118.11 33.02 0)
+			(at 125.73 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7701,7 +7749,7 @@
 			)
 		)
 		(property "LCSC_PART" ""
-			(at 118.11 33.02 0)
+			(at 125.73 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7728,7 +7776,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 153.67 67.31 0)
+		(at 153.67 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7739,7 +7787,7 @@
 		(fields_autoplaced yes)
 		(uuid "8aea18a2-e5e3-4ed7-b72f-ace15a3e53ef")
 		(property "Reference" "#PWR017"
-			(at 153.67 73.66 0)
+			(at 153.67 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7750,7 +7798,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 153.67 72.39 0)
+			(at 153.67 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7760,7 +7808,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 153.67 67.31 0)
+			(at 153.67 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7771,7 +7819,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 67.31 0)
+			(at 153.67 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7782,7 +7830,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 153.67 67.31 0)
+			(at 153.67 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7806,7 +7854,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:BS170")
-		(at 189.23 48.26 0)
+		(at 158.75 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7816,7 +7864,7 @@
 		(dnp no)
 		(uuid "8b5e7295-0688-4462-882b-b87d303a7d35")
 		(property "Reference" "Q41"
-			(at 194.31 46.99 0)
+			(at 163.83 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7827,7 +7875,7 @@
 			)
 		)
 		(property "Value" "BS170"
-			(at 194.31 49.53 0)
+			(at 163.83 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7838,7 +7886,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:TO-92_Inline"
-			(at 189.23 48.26 0)
+			(at 158.75 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7851,7 +7899,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/mmbf170-d.pdf"
-			(at 189.23 48.26 0)
+			(at 158.75 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7863,7 +7911,7 @@
 			)
 		)
 		(property "Description" "0.5A Id, 60V Vds, N-Channel MOSFET, TO-92"
-			(at 189.23 48.26 0)
+			(at 158.75 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7874,7 +7922,7 @@
 			)
 		)
 		(property "Manufacturer" "onsemi"
-			(at 189.23 48.26 0)
+			(at 158.75 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7885,7 +7933,7 @@
 			)
 		)
 		(property "MPN" "BS170"
-			(at 189.23 48.26 0)
+			(at 158.75 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7896,7 +7944,7 @@
 			)
 		)
 		(property "LCSC_PART" ""
-			(at 189.23 48.26 0)
+			(at 158.75 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7926,7 +7974,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 91.44 80.01 0)
+		(at 97.79 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7934,10 +7982,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8dc66969-322d-4b0d-942f-8521bead2498")
 		(property "Reference" "#PWR015"
-			(at 91.44 86.36 0)
+			(at 97.79 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7948,7 +7995,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 91.44 85.09 0)
+			(at 97.79 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7958,7 +8005,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 80.01 0)
+			(at 97.79 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7969,7 +8016,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 80.01 0)
+			(at 97.79 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7980,7 +8027,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 91.44 80.01 0)
+			(at 97.79 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8004,7 +8051,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 153.67 35.56 0)
+		(at 120.65 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8014,7 +8061,7 @@
 		(dnp no)
 		(uuid "8dd43fe2-90cb-4417-a5b4-73502e2a65b4")
 		(property "Reference" "#PWR046"
-			(at 153.67 41.91 0)
+			(at 120.65 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8025,7 +8072,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 153.67 39.37 0)
+			(at 120.65 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8035,7 +8082,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 153.67 35.56 0)
+			(at 120.65 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8046,7 +8093,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 35.56 0)
+			(at 120.65 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8057,7 +8104,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 153.67 35.56 0)
+			(at 120.65 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8080,8 +8127,9 @@
 		)
 	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:Dual_PinSocket_1x04_P2.54mm_J81_J82")
-		(at 212.09 86.36 180)
+		(lib_id "wsprrypi-zero-gpio-bs170:LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm")
+		(at 210.82 80.01 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8091,7 +8139,7 @@
 		(dnp no)
 		(uuid "8dda3259-4714-5afa-8412-caa9a82a1232")
 		(property "Reference" "J52"
-			(at 212.93 90.18 0)
+			(at 210.82 88.265 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8100,8 +8148,8 @@
 				)
 			)
 		)
-		(property "Value" "J81/J82 LPF sockets"
-			(at 212.09 78.994 0)
+		(property "Value" "LPF female headers"
+			(at 210.82 72.644 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8110,8 +8158,8 @@
 				)
 			)
 		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:Dual_PinSocket_1x04_P2.54mm_J81_J82"
-			(at 212.93 80.18 0)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm"
+			(at 209.98 73.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8122,7 +8170,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8555109420836753409"
-			(at 212.93 80.18 0)
+			(at 209.98 73.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8133,7 +8181,7 @@
 			)
 		)
 		(property "Description" "Grouped pair of 1x04 2.54 mm female through-hole headers matching the WsprryPi LPF paired J1 geometry; header centers are exactly 33.020 mm apart; F.Cu keepout permits B.Cu ground pour"
-			(at 212.93 80.18 0)
+			(at 209.98 73.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8178,7 +8226,8 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 228.6 91.44 0)
+		(at 196.85 85.09 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8188,7 +8237,7 @@
 		(dnp no)
 		(uuid "904af5d8-51d8-454e-928f-801a05ae1339")
 		(property "Reference" "#PWR010"
-			(at 228.6 97.79 0)
+			(at 196.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8199,7 +8248,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 228.6 95.25 0)
+			(at 196.85 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8209,7 +8258,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 91.44 0)
+			(at 196.85 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8220,7 +8269,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 91.44 0)
+			(at 196.85 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8231,7 +8280,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 228.6 91.44 0)
+			(at 196.85 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8255,7 +8304,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:R_0805")
-		(at 186.69 21.59 0)
+		(at 156.21 21.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8265,7 +8314,7 @@
 		(dnp no)
 		(uuid "94ec8f69-a9fa-4895-987c-3107f5661824")
 		(property "Reference" "R41"
-			(at 186.69 19.558 0)
+			(at 156.21 19.558 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8275,7 +8324,7 @@
 			)
 		)
 		(property "Value" "0Ω"
-			(at 186.69 23.622 0)
+			(at 156.21 23.622 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8285,7 +8334,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0805_2012Metric"
-			(at 186.69 21.59 0)
+			(at 156.21 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8296,7 +8345,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 186.69 21.59 0)
+			(at 156.21 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8307,7 +8356,7 @@
 			)
 		)
 		(property "Description" "0 ohm 0805 jumper using a compact US zigzag symbol and the local KiCad 0805 metric footprint"
-			(at 186.69 21.59 0)
+			(at 156.21 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8318,7 +8367,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 186.69 21.59 0)
+			(at 156.21 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8329,7 +8378,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 186.69 21.59 0)
+			(at 156.21 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8340,7 +8389,7 @@
 			)
 		)
 		(property "LCSC_PART" ""
-			(at 186.69 21.59 0)
+			(at 156.21 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8367,7 +8416,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
-		(at 129.54 73.66 0)
+		(at 129.54 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8377,7 +8426,7 @@
 		(dnp no)
 		(uuid "9844a9e5-fdb1-48b3-a040-81c1beb8e62a")
 		(property "Reference" "C22"
-			(at 129.54 71.12 0)
+			(at 129.54 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8387,7 +8436,7 @@
 			)
 		)
 		(property "Value" "1nF"
-			(at 129.54 75.946 0)
+			(at 129.54 92.456 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8397,7 +8446,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0603_1608Metric"
-			(at 128.64 73.42 0)
+			(at 128.64 89.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8408,7 +8457,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 128.64 73.42 0)
+			(at 128.64 89.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8419,7 +8468,7 @@
 			)
 		)
 		(property "Description" "Generic unpolarized capacitor using the local KiCad 0603 metric footprint"
-			(at 128.64 73.42 0)
+			(at 128.64 89.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8430,7 +8479,7 @@
 			)
 		)
 		(property "LCSC_PART" "C1588"
-			(at 129.54 73.66 0)
+			(at 129.54 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8441,7 +8490,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 129.54 73.66 0)
+			(at 129.54 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8452,7 +8501,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 129.54 73.66 0)
+			(at 129.54 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8479,7 +8528,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:TPS22918")
-		(at 116.84 69.85 0)
+		(at 116.84 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8489,7 +8538,7 @@
 		(dnp no)
 		(uuid "aa029e73-d783-5060-9982-ffd631eb3b3e")
 		(property "Reference" "U21"
-			(at 116.586 59.69 0)
+			(at 116.586 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8499,7 +8548,7 @@
 			)
 		)
 		(property "Value" "TPS22918DBVR"
-			(at 117.094 62.23 0)
+			(at 117.094 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8509,7 +8558,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:SOT-23-6"
-			(at 115.56 68.95 0)
+			(at 115.56 85.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8520,7 +8569,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps22918.pdf"
-			(at 115.56 68.95 0)
+			(at 115.56 85.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8531,7 +8580,7 @@
 			)
 		)
 		(property "Description" "5.5 V, 2 A load switch with configurable rise time and quick output discharge, SOT-23-6"
-			(at 115.56 68.95 0)
+			(at 115.56 85.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8542,7 +8591,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 115.56 68.95 0)
+			(at 115.56 85.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8553,7 +8602,7 @@
 			)
 		)
 		(property "MPN" "TPS22918DBVR"
-			(at 115.56 68.95 0)
+			(at 115.56 85.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8564,7 +8613,7 @@
 			)
 		)
 		(property "LCSC_PART" "C131941"
-			(at 116.84 69.85 0)
+			(at 116.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8603,7 +8652,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:R_US")
-		(at 66.04 93.98 270)
+		(at 67.31 96.52 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8613,7 +8662,7 @@
 		(dnp no)
 		(uuid "aa8f7b50-2100-455f-ba03-27dbded7d581")
 		(property "Reference" "R11"
-			(at 66.04 98.552 90)
+			(at 67.31 101.092 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8623,7 +8672,7 @@
 			)
 		)
 		(property "Value" "220Ω"
-			(at 66.04 96.52 90)
+			(at 67.31 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8633,7 +8682,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0603_1608Metric"
-			(at 65.786 94.996 90)
+			(at 67.056 97.536 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8644,7 +8693,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706178210742272"
-			(at 66.04 93.98 0)
+			(at 67.31 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8655,7 +8704,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 66.04 93.98 0)
+			(at 67.31 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8666,7 +8715,7 @@
 			)
 		)
 		(property "LCSC_PART" "C22962"
-			(at 66.04 93.98 90)
+			(at 67.31 96.52 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8693,7 +8742,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:R_Potentiometer_US")
-		(at 102.87 38.1 90)
+		(at 110.49 50.8 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8703,7 +8752,7 @@
 		(dnp no)
 		(uuid "ae4b4f90-8457-4776-9bf3-a698d39a54c3")
 		(property "Reference" "RV31"
-			(at 100.838 40.386 90)
+			(at 108.458 53.086 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8714,7 +8763,7 @@
 			)
 		)
 		(property "Value" "5kΩ"
-			(at 100.838 42.164 90)
+			(at 108.458 54.864 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8725,7 +8774,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:Potentiometer_Bourns_TC33X_Vertical"
-			(at 102.87 38.1 0)
+			(at 110.49 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8736,7 +8785,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/TC33.pdf"
-			(at 102.87 38.1 0)
+			(at 110.49 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8747,7 +8796,7 @@
 			)
 		)
 		(property "Description" "5 kohm top-adjust SMD gate-bias trimmer; Bourns TC33X-2-502E; pin 2 wiper"
-			(at 102.87 38.1 0)
+			(at 110.49 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8758,7 +8807,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 102.87 38.1 0)
+			(at 110.49 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8769,7 +8818,7 @@
 			)
 		)
 		(property "Sim.Type" "POT"
-			(at 102.87 38.1 0)
+			(at 110.49 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8780,7 +8829,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
-			(at 102.87 38.1 0)
+			(at 110.49 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8791,7 +8840,7 @@
 			)
 		)
 		(property "Manufacturer" "Bourns"
-			(at 102.87 38.1 0)
+			(at 110.49 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8802,7 +8851,7 @@
 			)
 		)
 		(property "MPN" "TC33X-2-502E"
-			(at 102.87 38.1 0)
+			(at 110.49 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8813,7 +8862,7 @@
 			)
 		)
 		(property "LCSC_PART" "C719177"
-			(at 102.87 38.1 0)
+			(at 110.49 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8843,7 +8892,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 44.45 93.98 0)
+		(at 45.72 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8854,7 +8903,7 @@
 		(fields_autoplaced yes)
 		(uuid "b3ac0a93-511f-4279-ac3d-1f64f2749f31")
 		(property "Reference" "#PWR01"
-			(at 44.45 100.33 0)
+			(at 45.72 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8865,7 +8914,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 44.45 99.06 0)
+			(at 45.72 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8875,7 +8924,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 93.98 0)
+			(at 45.72 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8886,7 +8935,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 93.98 0)
+			(at 45.72 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8897,7 +8946,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 93.98 0)
+			(at 45.72 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8921,7 +8970,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 60.96 95.25 0)
+		(at 62.23 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8931,7 +8980,7 @@
 		(dnp no)
 		(uuid "bf633ab3-ac00-46d9-8636-3dc1b27f4294")
 		(property "Reference" "#PWR019"
-			(at 60.96 101.6 0)
+			(at 62.23 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8942,7 +8991,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 60.96 99.06 0)
+			(at 62.23 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8952,7 +9001,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 95.25 0)
+			(at 62.23 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8963,7 +9012,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 95.25 0)
+			(at 62.23 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8974,7 +9023,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 95.25 0)
+			(at 62.23 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8998,7 +9047,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 134.62 74.93 0)
+		(at 134.62 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9006,10 +9055,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c640ef1f-7682-47ec-9366-c88aec57039e")
 		(property "Reference" "#PWR016"
-			(at 134.62 81.28 0)
+			(at 134.62 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9020,7 +9068,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 134.62 80.01 0)
+			(at 134.62 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9030,7 +9078,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 74.93 0)
+			(at 134.62 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9041,7 +9089,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 74.93 0)
+			(at 134.62 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9052,7 +9100,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 134.62 74.93 0)
+			(at 134.62 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9076,7 +9124,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 93.98 67.31 0)
+		(at 97.79 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9084,10 +9132,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ccb000f0-f668-421e-91e6-daba5e553483")
 		(property "Reference" "#PWR014"
-			(at 93.98 73.66 0)
+			(at 97.79 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9098,7 +9145,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 93.98 72.39 0)
+			(at 97.79 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9108,7 +9155,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 67.31 0)
+			(at 97.79 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9119,7 +9166,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 67.31 0)
+			(at 97.79 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9130,7 +9177,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 93.98 67.31 0)
+			(at 97.79 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9154,7 +9201,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:R_0603")
-		(at 96.52 78.74 180)
+		(at 102.87 92.71 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9164,7 +9211,7 @@
 		(dnp no)
 		(uuid "cf82ad50-56b6-405a-8da9-b12291e2e40e")
 		(property "Reference" "R21"
-			(at 96.266 76.2 0)
+			(at 102.616 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9174,7 +9221,7 @@
 			)
 		)
 		(property "Value" "100kΩ"
-			(at 96.266 81.28 0)
+			(at 102.616 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9184,7 +9231,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0603_1608Metric"
-			(at 96.63 78.5 0)
+			(at 102.98 92.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9195,7 +9242,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.63 78.5 0)
+			(at 102.98 92.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9206,7 +9253,7 @@
 			)
 		)
 		(property "Description" "Generic resistor using a compact US zigzag symbol and the local KiCad 0603 metric footprint"
-			(at 96.63 78.5 0)
+			(at 102.98 92.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9217,7 +9264,7 @@
 			)
 		)
 		(property "LCSC_PART" "C14675"
-			(at 96.52 78.74 90)
+			(at 102.87 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9228,7 +9275,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 96.52 78.74 0)
+			(at 102.87 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9239,7 +9286,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 96.52 78.74 0)
+			(at 102.87 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9266,7 +9313,8 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
-		(at 236.22 77.47 90)
+		(at 181.61 80.01 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9276,7 +9324,7 @@
 		(dnp no)
 		(uuid "d61d90f6-4c7d-43ae-ad58-aeed28402433")
 		(property "Reference" "C51"
-			(at 231.14 77.47 0)
+			(at 181.61 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9286,7 +9334,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 233.68 77.47 0)
+			(at 181.61 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9296,7 +9344,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0603_1608Metric"
-			(at 236.22 77.47 0)
+			(at 181.61 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9307,7 +9355,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 236.22 77.47 0)
+			(at 181.61 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9318,7 +9366,7 @@
 			)
 		)
 		(property "Description" "Generic unpolarized capacitor using the local KiCad 0603 metric footprint"
-			(at 236.22 77.47 0)
+			(at 181.61 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9329,7 +9377,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 236.22 77.47 0)
+			(at 181.61 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9340,7 +9388,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 236.22 77.47 0)
+			(at 181.61 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9351,7 +9399,7 @@
 			)
 		)
 		(property "LCSC_PART" ""
-			(at 236.22 77.47 0)
+			(at 181.61 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9378,7 +9426,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:Conn_01x03")
-		(at 74.93 62.23 90)
+		(at 76.2 64.77 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9388,7 +9436,7 @@
 		(dnp no)
 		(uuid "e12775cb-bf53-46ca-b66e-5df3fd7100c1")
 		(property "Reference" "J12"
-			(at 74.676 59.69 90)
+			(at 75.946 62.23 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9399,7 +9447,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03"
-			(at 80.01 63.4999 90)
+			(at 81.28 66.0399 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9411,7 +9459,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:PinHeader_1x03_P2.54mm_Vertical"
-			(at 74.93 62.23 0)
+			(at 76.2 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9422,7 +9470,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 62.23 0)
+			(at 76.2 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9433,7 +9481,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, 2.54 mm male through-hole pin header"
-			(at 74.93 62.23 0)
+			(at 76.2 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9463,7 +9511,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:R_0603")
-		(at 138.43 69.85 0)
+		(at 138.43 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9473,7 +9521,7 @@
 		(dnp no)
 		(uuid "ecd6f774-009f-571d-8575-07b0c8b346a5")
 		(property "Reference" "R22"
-			(at 138.43 67.564 0)
+			(at 138.43 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9483,7 +9531,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 139.192 72.39 0)
+			(at 138.43 88.646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9493,7 +9541,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0603_1608Metric"
-			(at 139.13 70.14 0)
+			(at 139.13 86.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9504,7 +9552,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.13 70.14 0)
+			(at 139.13 86.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9515,7 +9563,7 @@
 			)
 		)
 		(property "Description" "Generic resistor using a compact US zigzag symbol and the local KiCad 0603 metric footprint"
-			(at 139.13 70.14 0)
+			(at 139.13 86.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9526,7 +9574,7 @@
 			)
 		)
 		(property "LCSC_PART" "C2907002"
-			(at 138.43 69.85 0)
+			(at 138.43 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9537,7 +9585,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 138.43 69.85 0)
+			(at 138.43 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9548,7 +9596,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 138.43 69.85 0)
+			(at 138.43 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9575,7 +9623,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 107.95 39.37 0)
+		(at 115.57 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9585,7 +9633,7 @@
 		(dnp no)
 		(uuid "ee5ecd48-fd26-4929-9443-30bc52066010")
 		(property "Reference" "#PWR044"
-			(at 107.95 45.72 0)
+			(at 115.57 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9596,7 +9644,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 107.95 43.18 0)
+			(at 115.57 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9606,7 +9654,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 39.37 0)
+			(at 115.57 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9617,7 +9665,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 39.37 0)
+			(at 115.57 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9628,7 +9676,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 107.95 39.37 0)
+			(at 115.57 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9652,7 +9700,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:GND")
-		(at 191.77 54.61 0)
+		(at 161.29 54.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9662,7 +9710,7 @@
 		(dnp no)
 		(uuid "f866ab32-fa53-4100-a34a-10e0aaf9df71")
 		(property "Reference" "#PWR043"
-			(at 191.77 60.96 0)
+			(at 161.29 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9673,7 +9721,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 191.77 58.42 0)
+			(at 161.29 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9683,7 +9731,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 191.77 54.61 0)
+			(at 161.29 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9694,7 +9742,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 191.77 54.61 0)
+			(at 161.29 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9705,7 +9753,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 191.77 54.61 0)
+			(at 161.29 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9729,7 +9777,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:SKRPANE010")
-		(at 21.59 95.25 0)
+		(at 22.86 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9739,7 +9787,7 @@
 		(dnp no)
 		(uuid "fb076de7-d298-49b5-b5ef-f86e8dfaf337")
 		(property "Reference" "SW11"
-			(at 21.59 91.186 0)
+			(at 22.86 93.726 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9749,7 +9797,7 @@
 			)
 		)
 		(property "Value" "SKRPANE010"
-			(at 21.59 91.44 0)
+			(at 22.86 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9760,7 +9808,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:ALPS_SKRP_4.2x3.2mm"
-			(at 21.59 95.25 0)
+			(at 22.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9771,7 +9819,7 @@
 			)
 		)
 		(property "Datasheet" "https://tech.alpsalpine.com/e/products/detail/SKRPANE010/"
-			(at 21.59 95.25 0)
+			(at 22.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9782,7 +9830,7 @@
 			)
 		)
 		(property "Description" "Alps Alpine SKRPANE010 SPST-NO momentary tactile switch; logical connection 1 maps manufacturer terminals 1 and 2, and logical connection 2 maps manufacturer terminals 3 and 4; top push, 1.57 N, 0.2 mm travel, 1,000,000 cycles, 4.2 x 3.2 x 2.5 mm"
-			(at 21.59 95.25 0)
+			(at 22.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9793,7 +9841,7 @@
 			)
 		)
 		(property "Manufacturer" "Alps Alpine"
-			(at 21.59 95.25 0)
+			(at 22.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9804,7 +9852,7 @@
 			)
 		)
 		(property "MPN" "SKRPANE010"
-			(at 21.59 95.25 0)
+			(at 22.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9815,7 +9863,7 @@
 			)
 		)
 		(property "LCSC_PART" "C470426"
-			(at 21.59 95.25 0)
+			(at 22.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

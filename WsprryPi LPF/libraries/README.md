@@ -14,7 +14,7 @@ The local `PWR_FLAG` symbol documents the externally supplied ground connection 
 
 ## Used asset inventory
 
-Only assets referenced by the current schematic or PCB are retained. The local symbols are `C`, `GND`, `L`, `PWR_FLAG`, and `LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm`. The three local footprints are `C_Disc_D3.0mm_W1.6mm_P2.50mm`, `L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm`, and `LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm`.
+Only assets referenced by the current schematic or PCB are retained. The local symbols are `C`, `GND`, `L`, `PWR_FLAG`, and `LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm`. The three local footprints are `C_Disc_D3.0mm_W1.6mm_P2.50mm`, `L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm`, and `LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm`.
 
 The three retained STEP models represent the disc capacitor, generic axial inductor, and single four-pin header (instanced twice by the paired header). Every model path is rooted at `${KIPRJMOD}/libraries/3dmodels/`. The library symbol definitions are taken from the current schematic's embedded definitions, including its updated J1 pin names.
 
@@ -22,7 +22,7 @@ The unused `Conn_01x04` and `SMA_Adafruit_1865` symbols and the standalone heade
 
 ## Paired LPF headers
 
-`WsprryPi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm` is the placed combined symbol and footprint for two hand-fitted male 1×4 headers. Header centerlines are 33.02 mm (1.300 inches) apart; each header has 2.54 mm pin pitch, 1.7 mm pads, and 1.0 mm holes. The footprint origin is input-header pin 1; output-header pin 5 is at X = 33.02 mm. Both rows run in the same direction. Separate courtyards cover the two header bodies and leave the intervening filter area available.
+`WsprryPi LPF:LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm` is the placed combined symbol and footprint for two hand-fitted male 1×4 headers. Header centerlines are 33.02 mm (1.300 inches) apart; each header has 2.54 mm pin pitch, 1.7 mm pads, and 1.0 mm holes. The footprint origin is input-header pin 1; output-header pin 5 is at X = 33.02 mm. Both rows run in the same direction. Separate courtyards cover the two header bodies and leave the intervening filter area available.
 
 | Header | Pad numbers in row order | Intended connections |
 | --- | --- | --- |

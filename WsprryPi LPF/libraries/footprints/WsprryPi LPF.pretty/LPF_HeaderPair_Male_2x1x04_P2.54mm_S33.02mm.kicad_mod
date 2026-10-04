@@ -1,4 +1,4 @@
-(footprint "LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm"
+(footprint "LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm"
 	(version 20260206)
 	(generator "pcbnew")
 	(generator_version "10.0")
@@ -6,7 +6,7 @@
 	(descr "Paired hand-fitted male 1x04 headers; 33.02 mm centerlines, 2.54 mm pitch; WsprryPi LPF pinout, not QRP Labs electrical pinout")
 	(tags "LPF paired header 33.02mm 1.300inch")
 	(property "Reference" "REF**" (at 16.51 -3 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
-	(property "Value" "LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm" (at 16.51 11 0) (layer "F.Fab") (hide yes) (effects (font (size 1 1) (thickness 0.15))))
+	(property "Value" "LPF male headers" (at 16.51 11 0) (layer "F.Fab") (hide yes) (effects (font (size 1 1) (thickness 0.15))))
 	(attr through_hole exclude_from_bom)
 	(fp_line
 		(start -1.380000 -1.38)
