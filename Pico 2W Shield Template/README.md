@@ -5,7 +5,7 @@ A KiCad 10 project template for Raspberry Pi Pico 2 W shield designs. It contain
 ## Create a new shield
 
 1. In KiCad's project manager, open **Preferences → Configure Paths…**.
-2. Set `KICAD_USER_TEMPLATE_DIR` to the parent directory containing this template folder: the `Wsprry Pi PCB Designs` repository root. Alternatively, copy the entire template folder into your existing user-template directory.
+2. Set `KICAD_USER_TEMPLATE_DIR` to the parent directory containing this template folder: the `WsprryPi PCB Designs` repository root. Alternatively, copy the entire template folder into your existing user-template directory.
 3. Choose **File → New Project…**, select **Pico 2W Shield Template**, and give the project its own name and directory. Reopen the project manager if its template list has not refreshed.
 4. Add your circuit, wire the required Pico pins, and mark unused pins with no-connect flags.
 5. Run **Tools → Update PCB from Schematic…**, place the components, route the board, add and fill copper zones, and run ERC and DRC.

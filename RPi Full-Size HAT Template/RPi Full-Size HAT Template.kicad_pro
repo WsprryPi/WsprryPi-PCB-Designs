@@ -513,7 +513,7 @@
     ]
   },
   "meta": {
-    "filename": "RPi Full-Size Hat Template.kicad_pro",
+    "filename": "RPi Full-Size HAT Template.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -753,8 +753,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "RPi Full-Size Hat Template.kicad_sch",
-        "name": "RPi Full-Size Hat Template",
+        "filename": "RPi Full-Size HAT Template.kicad_sch",
+        "name": "RPi Full-Size HAT Template",
         "uuid": "42fb2efa-c288-4686-a90a-043ad23a327d"
       }
     ],
@@ -764,7 +764,7 @@
   "sheets": [
     [
       "42fb2efa-c288-4686-a90a-043ad23a327d",
-      "RPi Full-Size Hat Template"
+      "RPi Full-Size HAT Template"
     ]
   ],
   "text_variables": {},

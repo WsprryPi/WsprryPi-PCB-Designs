@@ -144,7 +144,7 @@
 		)
 		(path "/4956bacf-ccac-441b-a2fa-51ce082195af")
 		(sheetname "/")
-		(sheetfile "RPi Full-Size Hat Template.kicad_sch")
+		(sheetfile "RPi Full-Size HAT Template.kicad_sch")
 		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect

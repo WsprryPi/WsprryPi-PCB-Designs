@@ -1036,7 +1036,7 @@
 			)
 		)
 		(instances
-			(project "RPi Full-Size Hat Template"
+			(project "RPi Full-Size HAT Template"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "J1")
 					(unit 1)
@@ -1230,7 +1230,7 @@
 			(uuid "dcd9f2e6-6724-400f-afcc-e292bc4a4b7b")
 		)
 		(instances
-			(project "RPi Full-Size Hat Template"
+			(project "RPi Full-Size HAT Template"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "U1")
 					(unit 1)

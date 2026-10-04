@@ -40,7 +40,7 @@ The Raspberry Pi interface, 2×20 socket purchasing symbol, selectable socket fo
 
 ## GPIO indicator assets
 
-The `LED` and `R_US` symbols, `LED_0603_1608Metric` footprint, and LED STEP model were copied from `WsprryPi-GPIO-Univ` for the placed D11/R11 indicator circuit. D11 retains its `KT-0603W`/`LCSC_PART` C2286 fields and uses the project-local LED footprint. R11 retains its 220 ohm/`LCSC_PART` C22962 fields and uses this project's existing `R_0603_1608Metric` footprint, whose pad geometry matches the source footprint. The copied GND instance was redirected to the existing project-local `GND` symbol. No placed symbol or footprint now depends on the `Wsprry Pi` library nickname.
+The `LED` and `R_US` symbols, `LED_0603_1608Metric` footprint, and LED STEP model were copied from `WsprryPi-GPIO-Univ` for the placed D11/R11 indicator circuit. D11 retains its `KT-0603W`/`LCSC_PART` C2286 fields and uses the project-local LED footprint. R11 retains its 220 ohm/`LCSC_PART` C22962 fields and uses this project's existing `R_0603_1608Metric` footprint, whose pad geometry matches the source footprint. The copied GND instance was redirected to the existing project-local `GND` symbol. No placed symbol or footprint now depends on a legacy external WsprryPi library.
 
 ## 1×3 male header
 

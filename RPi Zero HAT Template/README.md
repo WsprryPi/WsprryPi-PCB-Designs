@@ -1,13 +1,13 @@
 # RPi Zero HAT Template
 
-A KiCad 10 project template for Raspberry Pi Zero-size HAT+ designs. It is electrically and functionally identical to the `RPi Full-Size Hat Template`: the schematic exposes the complete 40-pin GPIO interface, the project includes a selectable underside socket model and a socket purchasing item, and the local libraries carry the same reusable symbols and footprints. The mechanical envelope is the official through-hole-connector Raspberry Pi uHAT size.
+A KiCad 10 project template for Raspberry Pi Zero-size HAT+ designs. It is electrically and functionally identical to the `RPi Full-Size HAT Template`: the schematic exposes the complete 40-pin GPIO interface, the project includes a selectable underside socket model and a socket purchasing item, and the local libraries carry the same reusable symbols and footprints. The mechanical envelope is the official through-hole-connector Raspberry Pi uHAT size.
 
 The schematic is intentionally unwired, and the board has no tracks, vias, or copper pours. A derived design must add its HAT+ identification EEPROM and application circuit.
 
 ## Create a new HAT project
 
 1. In KiCad's project manager, open **Preferences → Configure Paths…**.
-2. Set `KICAD_USER_TEMPLATE_DIR` to the parent directory containing this template folder: the `Wsprry Pi PCB Designs` repository root. Alternatively, copy this entire folder into an existing user-template directory.
+2. Set `KICAD_USER_TEMPLATE_DIR` to the parent directory containing this template folder: the `WsprryPi PCB Designs` repository root. Alternatively, copy this entire folder into an existing user-template directory.
 3. Choose **File → New Project…**, select **RPi Zero HAT Template**, and give the project its own name and directory. Reopen the project manager if its template list has not refreshed.
 4. Add the required identification EEPROM and application circuit. Connect only the GPIOs the design uses; mark genuinely unused pins with no-connect flags.
 5. Run **Tools → Update PCB from Schematic…**, place the added components, route the board, add and fill copper zones, and run ERC and DRC.

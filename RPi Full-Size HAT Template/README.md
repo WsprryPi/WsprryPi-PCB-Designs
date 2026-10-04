@@ -1,12 +1,12 @@
-# RPi Full-Size Hat Template
+# RPi Full-Size HAT Template
 
 A KiCad 10 project template for full-size Raspberry Pi HAT designs. It provides the official classic full-size HAT board geometry, the complete 40-pin GPIO interface, recommended display/camera flex openings, mounting-hole clear lands, local libraries, and a socket-header purchasing item. The schematic is intentionally unwired, and the board has no tracks, vias, or copper pours.
 
 ## Create a new HAT project
 
 1. In KiCad's project manager, open **Preferences → Configure Paths…**.
-2. Set `KICAD_USER_TEMPLATE_DIR` to the parent directory containing this template folder: the `Wsprry Pi PCB Designs` repository root. Alternatively, copy this entire folder into your existing user-template directory.
-3. Choose **File → New Project…**, select **RPi Full-Size Hat Template**, and give the project its own name and directory. Reopen the project manager if its template list has not refreshed.
+2. Set `KICAD_USER_TEMPLATE_DIR` to the parent directory containing this template folder: the `WsprryPi PCB Designs` repository root. Alternatively, copy this entire folder into your existing user-template directory.
+3. Choose **File → New Project…**, select **RPi Full-Size HAT Template**, and give the project its own name and directory. Reopen the project manager if its template list has not refreshed.
 4. Add the required identification EEPROM and application circuit. Connect only the GPIOs the design uses; mark genuinely unused pins with no-connect flags.
 5. Run **Tools → Update PCB from Schematic…**, place the added components, route the board, add and fill copper zones, and run ERC and DRC.
 
@@ -51,9 +51,9 @@ Both library tables use the `full-size-hat-template` nickname and `${KIPRJMOD}` 
 
 The local library also includes `Dual_PinSocket_1x04_P2.54mm_J81_J82`, a single eight-pin symbol and footprint derived from J81 and J82 in `Wsprry-Pi-Synth-Univ`. Its two 1×4 socket centers are exactly 32.020 mm apart. Symbol/footprint pins 1–4 correspond to J81 pins 1–4; pins 5–8 correspond to J82 pins 1–4. The footprint origin is the midpoint between the two header centers. Its 29.36 × 11.20 mm rule area spans the complete underside between the two connector bodies and prohibits tracks, vias, pads, copper pours, and footprints on both copper layers. The two connector strips remain outside that rule area so their own through-hole pads do not violate it and their nets can route outward. This grouped 1×4 footprint intentionally has no 3D model.
 
-- [Project settings](RPi%20Full-Size%20Hat%20Template.kicad_pro): rules, defaults, and BOM preset.
-- [Schematic](RPi%20Full-Size%20Hat%20Template.kicad_sch): U1 GPIO interface and J1 procurement symbol.
-- [PCB](RPi%20Full-Size%20Hat%20Template.kicad_pcb): locked interface footprint, outline, mounting holes, and flex openings.
+- [Project settings](RPi%20Full-Size%20HAT%20Template.kicad_pro): rules, defaults, and BOM preset.
+- [Schematic](RPi%20Full-Size%20HAT%20Template.kicad_sch): U1 GPIO interface and J1 procurement symbol.
+- [PCB](RPi%20Full-Size%20HAT%20Template.kicad_pcb): locked interface footprint, outline, mounting holes, and flex openings.
 - [Symbol library](full-size-hat-template.kicad_sym): GPIO interface, socket purchasing symbol, and grouped J81/J82 connector symbol.
 - [Interface footprint](full-size-hat-template.pretty/Raspberry_Pi_HAT_Interface.kicad_mod).
 - [Selectable 2×20 socket footprint](full-size-hat-template.pretty/Raspberry_Pi_HAT_2x20_Socket_3D.kicad_mod): board-only 3D representation used by H1.
@@ -68,7 +68,7 @@ KiCad renames the three project design files for the chosen project name and omi
 
 The unwired interface produces 34 expected ERC findings: 31 visible pins are unconnected and the three visible power inputs are undriven. The PCB has zero DRC rule violations and nine expected unrouted items for the shared 3V3, 5V, and GND header pads. The selectable, model-only H1 footprint is explicitly exempt from the missing-courtyard check because its physical socket courtyard remains in U1. Connect required pins, route the shared rails, and mark only genuinely unused pins with no-connect flags when developing a design.
 
-The rename was rechecked with KiCad 10.0.6. Native PCB Editor DRC reports zero schematic-parity findings with the schematic loaded. The CLI reports 40 "No corresponding pin found in schematic" parity warnings before and after the rename; those CLI warnings are not corroborated by the native check. The expected ERC and unrouted findings above are unchanged.
+On 2026-10-04, the folder, KiCad project files, project-name references, and template description were renamed to `RPi Full-Size HAT Template`. KiCad 10.0.6 ERC reported the same 34 expected errors and zero warnings before and after this capitalization change. CLI DRC with in-memory zone refill reported zero rule violations, nine expected unrouted items, and the same 40 "No corresponding pin found in schematic" parity warnings in both runs. Those warnings were not corroborated by the earlier native PCB Editor check with the schematic loaded; that native check was not repeated for this rename. Source comparison confirms that all other schematic, PCB, project settings, library, and model bytes are unchanged. The renamed schematic and board were exported and visually inspected.
 
 Run ERC and DRC after adding the ID EEPROM, application circuit, routing, and copper. This template has no verified physical assembly, connector fit, HAT identity data, Raspberry Pi model compatibility, electrical performance, or RF performance.
 
