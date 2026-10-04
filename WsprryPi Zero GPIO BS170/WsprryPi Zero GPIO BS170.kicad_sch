@@ -702,6 +702,164 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "wsprrypi-zero-gpio-bs170:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files no)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, 2.54 mm male through-hole pin header"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector male pin header 1x02 2.54mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "PinHeader*1x02*P2.54mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "wsprrypi-zero-gpio-bs170:Conn_01x03"
 			(pin_names
 				(offset 1.016)
@@ -4241,16 +4399,16 @@
 		(uuid "824bbd90-e0cf-4a6a-8992-3d115937d902")
 	)
 	(junction
+		(at 161.29 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82c4377f-019f-4ffe-abda-3bf6326914b1")
+	)
+	(junction
 		(at 107.95 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8a3df3da-fdf0-453b-a00d-3ba8a6ae9812")
-	)
-	(junction
-		(at 161.29 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8deb8ecb-1e98-433b-85cf-1416a16cd1ec")
 	)
 	(junction
 		(at 130.81 26.67)
@@ -4416,16 +4574,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 31.75) (xy 161.29 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c6a4d70-5c2f-4cf2-9843-28a18a55c874")
-	)
-	(wire
-		(pts
 			(xy 106.68 92.71) (xy 107.95 92.71)
 		)
 		(stroke
@@ -4473,16 +4621,6 @@
 			(type default)
 		)
 		(uuid "135f5c87-4ffc-4c1b-98ba-8e51da42f109")
-	)
-	(wire
-		(pts
-			(xy 95.25 50.8) (xy 106.68 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "151542ce-c0c8-48de-8ed2-f908721ae95b")
 	)
 	(wire
 		(pts
@@ -4736,6 +4874,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 31.75) (xy 161.29 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d102f8f-06b4-4bea-8678-7060ebec9688")
+	)
+	(wire
+		(pts
 			(xy 110.49 46.99) (xy 110.49 45.72)
 		)
 		(stroke
@@ -4763,6 +4911,16 @@
 			(type default)
 		)
 		(uuid "62192a60-31dc-453e-a830-9ea3e8b62444")
+	)
+	(wire
+		(pts
+			(xy 161.29 31.75) (xy 161.29 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62a5492b-30f5-4296-a06d-8da4f88cd13a")
 	)
 	(wire
 		(pts
@@ -4966,6 +5124,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 50.8) (xy 101.6 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "935405a0-6836-479b-9e3d-84b6e339807e")
+	)
+	(wire
+		(pts
 			(xy 240.03 80.01) (xy 240.03 81.28)
 		)
 		(stroke
@@ -4993,16 +5161,6 @@
 			(type default)
 		)
 		(uuid "9a8e488e-bc96-4f69-a589-7426fd131d1e")
-	)
-	(wire
-		(pts
-			(xy 149.86 31.75) (xy 161.29 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b395a08-1a59-4f18-b000-f5dd1cd1607a")
 	)
 	(wire
 		(pts
@@ -5474,8 +5632,8 @@
 		)
 		(uuid "5c82288c-edfe-4c1a-bada-9e132b868d1d")
 	)
-	(label "PRE_CHOKE"
-		(at 149.86 31.75 0)
+	(label "BIAS"
+		(at 156.21 31.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5483,16 +5641,6 @@
 			(justify left bottom)
 		)
 		(uuid "5d136b33-5533-4151-803a-b6b1715e52c3")
-	)
-	(label "PRE_CHOKE"
-		(at 95.25 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "716c26b6-f521-4a0c-b80e-95740195a169")
 	)
 	(label "LED"
 		(at 83.82 96.52 180)
@@ -5684,6 +5832,16 @@
 		)
 		(uuid "eca2b25b-46bf-59bf-9aa7-b961b6997e0f")
 	)
+	(label "BIAS"
+		(at 101.6 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f5430b99-3c11-4b57-aac6-56fff7703274")
+	)
 	(label "AMP_EN"
 		(at 17.78 69.85 0)
 		(effects
@@ -5773,7 +5931,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
-		(at 166.37 29.21 180)
+		(at 166.37 29.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5783,7 +5941,7 @@
 		(dnp no)
 		(uuid "096d9e16-96bb-44fc-8d5c-1766db6617b0")
 		(property "Reference" "C41"
-			(at 168.91 27.432 0)
+			(at 163.83 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5793,7 +5951,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 170.18 30.734 0)
+			(at 170.18 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7267,7 +7425,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:C_0805")
-		(at 166.37 22.86 180)
+		(at 166.37 22.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7277,7 +7435,7 @@
 		(dnp no)
 		(uuid "776c0232-7753-4d3a-90e6-c05fa2ec1a66")
 		(property "Reference" "C42"
-			(at 168.91 21.336 0)
+			(at 163.83 24.384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7287,7 +7445,7 @@
 			)
 		)
 		(property "Value" "1µF"
-			(at 169.164 24.13 0)
+			(at 169.164 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7475,7 +7633,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:C_0805")
-		(at 102.87 82.55 0)
+		(at 102.87 82.55 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7485,7 +7643,7 @@
 		(dnp no)
 		(uuid "7bfe2810-0ca3-4586-b45d-c7786b4d4f8e")
 		(property "Reference" "C21"
-			(at 102.87 78.232 0)
+			(at 102.87 80.264 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7495,7 +7653,7 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 102.87 80.01 0)
+			(at 102.87 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9511,7 +9669,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:R_0603")
-		(at 138.43 86.36 0)
+		(at 138.43 86.36 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9541,7 +9699,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0603_1608Metric"
-			(at 139.13 86.65 0)
+			(at 137.73 86.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9552,7 +9710,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.13 86.65 0)
+			(at 137.73 86.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9563,7 +9721,7 @@
 			)
 		)
 		(property "Description" "Generic resistor using a compact US zigzag symbol and the local KiCad 0603 metric footprint"
-			(at 139.13 86.65 0)
+			(at 137.73 86.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9894,4 +10052,135 @@
 		)
 	)
 	(embedded_fonts no)
+	(wire
+		(pts
+			(xy 138.43 96.52) (xy 146.05 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2be59c85-3241-4d18-b616-88a37ad7a5af")
+	)
+	(label "PI_5V"
+		(at 138.43 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2fe2db4c-5c39-4ff2-9711-98ad5857ca99")
+	)
+	(wire
+		(pts
+			(xy 138.43 99.06) (xy 146.05 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab2b8bb8-f2b0-49f7-a60c-0ffad9571f52")
+	)
+	(label "SW_5V"
+		(at 138.43 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "51ce1d9c-a9f3-424c-9dff-60596c08cc64")
+	)
+	(text "BIAS SET - normally open"
+		(exclude_from_sim no)
+		(at 135.89 103.505 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "90b2c731-8466-4f20-9509-73c781df174f")
+	)
+	(symbol
+		(lib_id "wsprrypi-zero-gpio-bs170:Conn_01x02")
+		(at 151.13 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "1995b0e4-147a-4a50-a6dc-ea3882fec5d0")
+		(property "Reference" "J21"
+			(at 151.13 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 151.13 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:PinHeader_1x02_P2.54mm_Vertical"
+			(at 151.13 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Normally open bias-setting supply bypass; pin 1 PI_5V, pin 2 SW_5V; same 2.54 mm male header style as J12"
+			(at 151.13 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "430e4bce-1fb3-45e7-9ab9-205122fada8c")
+		)
+		(pin "2"
+			(uuid "61b1a348-ab42-433c-9e3e-6d73bebdf639")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO BS170"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "J21")
+					(unit 1)
+				)
+			)
+		)
+	)
 )

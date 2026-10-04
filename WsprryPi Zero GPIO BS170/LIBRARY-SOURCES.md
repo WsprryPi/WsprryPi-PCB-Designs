@@ -72,12 +72,15 @@ The following symbols were drawn or copied for this project from the named manuf
 | `R_US` | KiCad US resistor symbol copied through `WsprryPi-GPIO-Univ`; R11 is 220 ohm/`LCSC_PART` C22962 | `R_0603_1608Metric` |
 | `SKRPANE010` | [Alps Alpine SKRPANE010 product data](https://tech.alpsalpine.com/e/products/detail/SKRPANE010/) and terminal diagram | `ALPS_SKRP_4.2x3.2mm` |
 | `Conn_01x03` | KiCad connector symbol copied through `WsprryPi-GPIO-Univ` | `PinHeader_1x03_P2.54mm_Vertical` |
+| `Conn_01x02` | KiCad 10.0.6 `Connector_Generic:Conn_01x02`, with local metadata and J12's BOM/position-output exclusions | `PinHeader_1x02_P2.54mm_Vertical` |
 
 `24AA32A-I/ST` and its TSSOP-8 footprint remain as unused, attributed local-library assets. They are not part of the current schematic, BOM, or selected design, which intentionally omits an identification EEPROM.
 
 The copied PCB retains 1206 capacitors from the baseline. In the new schematic RF stage, C31/C32/C41/C51 use `C_0603` and the local 0603 footprint, while C42 uses `C_0805` and the local 0805 footprint. The `C_1206_3216Metric` baseline footprint remains in the library.
 
 ## BOM footprints
+
+For the schematic-only J21 bias-setting jumper, `PinHeader_1x02_P2.54mm_Vertical.kicad_mod` was copied from KiCad 10.0.6 `Connector_PinHeader_2.54mm.pretty`. Pad geometry and numbering are unchanged: 2.54 mm centers, 1.7 mm pads, and 1.0 mm drills. Like J12, the footprint is excluded from BOM and position output; its model path uses `${KIPRJMOD}/wsprrypi-zero-gpio-bs170.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step`. The corresponding standard KiCad STEP model was copied without modification. The KiCad library license below covers the imported symbol, footprint, and model. J21 is not yet placed on the saved PCB.
 
 On 2026-10-02, `R_0805_2012Metric.kicad_mod` was copied without modification from the KiCad 10.0.6 `Resistor_SMD.pretty` library. R41 uses the new local `R_0805` symbol, value `0Ω`, and `wsprrypi-zero-gpio-bs170:R_0805_2012Metric`. Its two passive pins and schematic connections are preserved. The standard installed KiCad 0805 resistor STEP-model reference is retained; supplier fields are unselected. The KiCad library license below covers this imported footprint and the derived symbol.
 

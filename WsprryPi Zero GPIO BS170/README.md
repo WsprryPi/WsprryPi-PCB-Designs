@@ -27,12 +27,14 @@ The schematic is arranged as five boxed functional sections. Circuit parts withi
 | Series | Functional block | References |
 | --- | --- | --- |
 | 10 | Raspberry Pi HAT interface, GPIO indicator, GPIO-selection header, socket purchasing item, and shutdown button | `U11`, `D11`, `R11`, `J11`, `J12`, `SW11` |
-| 20 | TPS22918 switched 5 V amplifier supply | `U21`, `C21`, `C22`, `C23`, `R21`, `R22` |
+| 20 | TPS22918 switched 5 V amplifier supply and bias-setting bypass | `U21`, `C21`, `C22`, `C23`, `R21`, `R22`, `J21` |
 | 30 | GPIO AC coupling, damping, adjustable gate bias, pull-down, and bias bypass | `C31`, `R31`, `RV31`, `R32`, `R33`, `C32` |
 | 40 | BS170 amplifier, drain RF choke, supply bypassing, and 0 Ω link | `Q41`, `L41`, `C41`, `C42`, `R41` |
 | 50 | Output DC blocking, SMA, and paired LPF female-header interface | `C51`, `J51`, `J52` |
 
 J51 is the hand-soldered edge-launch output connector, and U11 now carries the underside socket 3D model directly; the optional H1 library footprint is retained. J12 permits GPIO4 or GPIO20 to be jumpered onto `GPIO_RF`. GPIO23 is the active-high `AMP_EN` control, and SW11 grounds GPIO26 for software to detect. GPIO drive-strength selection remains coarse and experimental rather than a calibrated power control.
+
+J21 is a normally open, two-pin 2.54 mm male header for setting the BS170 gate bias: pin 1 connects to `PI_5V` and pin 2 to `SW_5V`. Fitting a shunt bypasses U21 and powers the bias network and drain feed regardless of GPIO23. Stop RF drive and start RV31 at minimum gate voltage before adjustment; remove the shunt afterward. J21 uses the same header style and BOM/position-output exclusions as J12. Its symbol, footprint, and STEP model are project-local. This addition is schematic-only; J21 still needs to be added and routed on the PCB.
 
 ### Placed RF parts awaiting wiring
 
@@ -50,7 +52,7 @@ J51 is the hand-soldered edge-launch output connector, and U11 now carries the u
 | C42 | 1 µF | Local switched-supply decoupling |
 | C51 | 100 nF | Drain DC block before `TX_OUT` |
 
-These are starting values for circuit review and prototyping, not qualified full-range RF values. RV31 and L41 now have project-local footprints. All 24 physical schematic parts have assignments that resolve locally; J11 remains a schematic-only purchasing item, and power symbols intentionally have no footprints. The existing 10-, 20-, and LPF-interface parts do not need to be placed again.
+These are starting values for circuit review and prototyping, not qualified full-range RF values. RV31 and L41 now have project-local footprints. All 26 physical schematic parts have assignments that resolve locally; J11 remains a schematic-only purchasing item, and power symbols intentionally have no footprints. The existing 10-, 20-, and LPF-interface parts do not need to be placed again.
 
 ### Selected hand-wound choke and trimmer
 
@@ -156,12 +158,14 @@ Manufacturer, MPN, `LCSC_PART`, data-sheet, description, and local-footprint fie
 - [Selectable 2×20 socket footprint](wsprrypi-zero-gpio-bs170.pretty/Raspberry_Pi_HAT_2x20_Socket_3D.kicad_mod): board-only 3D representation used by H1.
 - [Paired LPF female-header footprint](wsprrypi-zero-gpio-bs170.pretty/LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm.kicad_mod): exact current LPF-board spacing plus an F.Cu inter-header copper and placement keepout.
 - [Local library sources and licensing](LIBRARY-SOURCES.md): imported-footprint provenance, custom-part data sources, license, and validation limits.
-- [Local STEP models](wsprrypi-zero-gpio-bs170.3dshapes/README.md) for the BS170 TO-92 package, 2×20 socket, 1×3 male header, 0603 LED, and SKRPANE010 tactile switch.
+- [Local STEP models](wsprrypi-zero-gpio-bs170.3dshapes/README.md) for the BS170 TO-92 package, 2×20 socket, 1×2 and 1×3 male headers, 0603 LED, and SKRPANE010 tactile switch.
 - [License](LICENSE.md): repository-owned project terms.
 
 The local-library filenames and nickname are unique to this project. Keep generated exports, backups, caches, and local preference files out of this directory.
 
 ## Validation and limits
+
+For the 2026-10-04 schematic-only J21 addition, KiCad **10.0.6** ERC reported **0 errors and 0 warnings** before and after the change; the four existing ignored checks were preserved. Netlist comparison confirms J21 pin 1 on `PI_5V`, pin 2 on `SW_5V`, and every existing pin connection unchanged. All pre-existing schematic and local-library objects were preserved. The new symbol, footprint, and affected schematic block were exported and visually inspected; the copied STEP model is byte-identical to its installed KiCad source. The PCB and project settings remained byte-for-byte unchanged. No PCB DRC was rerun because the board was not edited; J21 placement and routing remain pending. These checks do not establish physical or RF qualification.
 
 For the 2026-10-04 block renumbering, KiCad **10.0.6** was run outside the sandbox on the saved working-tree sources before and after the change. ERC reported **0 errors and 0 warnings** in both runs. Command-line DRC with in-memory zone refill reported **0 rule violations, 0 unconnected items, and 34 schematic-parity warnings** in both runs; the findings match after reference substitution. A separate native PCB-editor check, with the matching schematic loaded and zone refill/parity enabled, reported **0 rule violations, 0 unconnected items, and 0 parity findings**. Both reports are retained; the CLI/native parity discrepancy remains explicit. Before/after netlists have identical pin connections after reference substitution. Schematic and PCB source comparisons confirm that all other drawing objects and UUIDs are unchanged, and the affected schematic and board were visually inspected.
 

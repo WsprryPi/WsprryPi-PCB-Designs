@@ -6,6 +6,8 @@
 
 `PinHeader_1x03_P2.54mm_Vertical.step` is the standard KiCad 1×3, 2.54 mm vertical male-header model copied through `WsprryPi-GPIO-Univ`. The placed J12 `PinHeader_1x03_P2.54mm_Vertical` footprint references it through `${KIPRJMOD}/wsprrypi-zero-gpio-bs170.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step`. J12 is excluded from BOM and position output but remains visible in the 3D board view. The model is a generic visualization and has not been validated against a selected purchasable header.
 
+`PinHeader_1x02_P2.54mm_Vertical.step` is the unmodified KiCad 10.0.6 1×2, 2.54 mm vertical male-header model copied from `Connector_PinHeader_2.54mm.3dshapes` for the J21 bias-setting jumper. Its local footprint uses `${KIPRJMOD}` and the same BOM/position-output exclusions as J12. J21 is currently schematic-only, so this model will appear on the board after PCB synchronization and placement. The generic model does not qualify a selected purchasable header or shunt.
+
 `LED_0603_1608Metric.step` is the KiCad 0603 LED model copied from `WsprryPi-GPIO-Univ` for D11. The local `LED_0603_1608Metric` footprint references it through `${KIPRJMOD}/wsprrypi-zero-gpio-bs170.3dshapes/LED_0603_1608Metric.step`.
 
 `ALPS_SKRP_4.2x3.2x2.5mm.step` is the EasyEDA/JLCPCB model for Alps Alpine SKRPANE010, JLCPCB/LCSC C470426, converted with `easyeda2kicad` 1.0.1 and renamed without geometric modification. The local `ALPS_SKRP_4.2x3.2mm` footprint references it through `${KIPRJMOD}/wsprrypi-zero-gpio-bs170.3dshapes/ALPS_SKRP_4.2x3.2x2.5mm.step`. Verify the model against the physical component before using it for mechanical sign-off.
