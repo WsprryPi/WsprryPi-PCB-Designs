@@ -19,7 +19,7 @@ These designs require revision-specific validation before production. KiCad sour
 | [WsprryPi Zero GPIO](WsprryPi%20Zero%20GPIO/README.md) | Zero-size Raspberry Pi GPIO RF-amplifier project using uHAT geometry | **Not ready for order:** two-transformer circuit rejected on cost |
 | [WsprryPi Zero GPIO BS170](WsprryPi%20Zero%20GPIO%20BS170/README.md) | Independent Zero-size BS170 amplifier project, copied from Zero GPIO as a starting point | **Not ready for order:** BS170 circuit not yet implemented |
 
-[Standalone Pico 2 W library assets](pico-2w-libs/README.md) include a symbol, footprints, and STEP model with documented compatibility and provenance limits. The shield projects use their own local libraries.
+[Project-local Pico 2 W library assets](Pico%202W%20Wattmeter%20Shield/pico-2w-libs/README.md) include a symbol, footprints, and STEP model with documented compatibility and provenance limits. They are stored inside the Wattmeter Shield project; the Shield Template uses its own independent local libraries.
 
 ## Open a design
 

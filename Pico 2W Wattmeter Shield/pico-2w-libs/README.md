@@ -1,6 +1,6 @@
 # Pico 2 W KiCad library assets
 
-Standalone symbol, footprint, and STEP files for Pico-family designs. These files are reference assets, not a validated drop-in library. The supplied KiCad files use version 8 formats. This is a project-local copy of the repository's root `pico-2w-libs` assets. Only its STEP file is referenced by the Wattmeter Shield's optional, unplaced SMD footprint. The project's placed Pico header footprint has no attached model; the supplied symbol and footprints are retained as reference assets and are not substituted for the project's existing libraries.
+Project-local symbol, footprint, and STEP files for Pico-family designs. These files are reference assets, not a validated drop-in library. The supplied KiCad files use version 8 formats. These assets are retained inside the Wattmeter Shield project; the redundant repository-root directory has been removed. Only its STEP file is referenced by the Wattmeter Shield's optional, unplaced SMD footprint. The project's placed Pico header footprint has no attached model; the supplied symbol and footprints are retained as reference assets and are not substituted for the project's existing libraries.
 
 ## Files
 
