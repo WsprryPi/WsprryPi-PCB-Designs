@@ -4136,7 +4136,7 @@
 		)
 		(uuid "c1c4d9f6-9fee-55e5-95b0-453ef746f319")
 	)
-	(text "R52 connects VOUT to QOD; C52 sets the output rise time."
+	(text "R22 connects VOUT to QOD; C22 sets the output rise time."
 		(exclude_from_sim no)
 		(at 97.282 87.122 0)
 		(effects
@@ -4147,7 +4147,7 @@
 		)
 		(uuid "eaa3b46d-d722-584f-860a-581d2f6c1408")
 	)
-	(text_box "Output Coupling and LPF Interface (40-Series)"
+	(text_box "Output Coupling and LPF Interface (50-Series)"
 		(exclude_from_sim no)
 		(at 173.355 64.53 0)
 		(size 67.945 37.705)
@@ -4167,7 +4167,7 @@
 		)
 		(uuid "0f741573-0997-5ca1-8964-370a95208ae7")
 	)
-	(text_box "GPIO Input and Gate Bias (20-Series)"
+	(text_box "GPIO Input and Gate Bias (30-Series)"
 		(exclude_from_sim no)
 		(at 86.86 14.605 0)
 		(size 81.915 35.815)
@@ -4207,7 +4207,7 @@
 		)
 		(uuid "63c1b8cf-c475-512e-8626-b8f1ee379336")
 	)
-	(text_box "Switched 5 V Amplifier Supply (50-Series)"
+	(text_box "Switched 5 V Amplifier Supply (20-Series)"
 		(exclude_from_sim no)
 		(at 86.86 53.67 0)
 		(size 71.255 36.5)
@@ -4227,7 +4227,7 @@
 		)
 		(uuid "7cde20dd-20ea-59de-babf-ea14073c0a34")
 	)
-	(text_box "BS170 Amplifier and Drain Feed (30-Series)"
+	(text_box "BS170 Amplifier and Drain Feed (40-Series)"
 		(exclude_from_sim no)
 		(at 173.355 14.605 0)
 		(size 49.53 46.355)
@@ -5737,7 +5737,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "096d9e16-96bb-44fc-8d5c-1766db6617b0")
-		(property "Reference" "C31"
+		(property "Reference" "C41"
 			(at 199.39 27.432 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5832,7 +5832,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C31")
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -5926,7 +5926,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "11241393-4946-453b-8c54-aefc0843d935")
-		(property "Reference" "R21"
+		(property "Reference" "R31"
 			(at 148.59 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6021,7 +6021,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "R21")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -6038,7 +6038,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2290c6fd-a34b-4d27-aaa4-feb5a231ae03")
-		(property "Reference" "C22"
+		(property "Reference" "C32"
 			(at 117.475 36.83 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6133,7 +6133,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C22")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -6150,7 +6150,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "27e90ab8-27c1-461a-9f25-f53f429ac963")
-		(property "Reference" "C21"
+		(property "Reference" "C31"
 			(at 139.7 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6245,7 +6245,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C21")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -6262,7 +6262,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "36036484-cb90-48e2-9d44-85077a8fde80")
-		(property "Reference" "J41"
+		(property "Reference" "J51"
 			(at 182.88 83.566 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6347,7 +6347,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "J41")
+					(reference "J51")
 					(unit 1)
 				)
 			)
@@ -6557,7 +6557,7 @@
 		(in_pos_files no)
 		(dnp no)
 		(uuid "4d9ca7bb-d843-4d27-90ab-38b87174f80c")
-		(property "Reference" "L31"
+		(property "Reference" "L41"
 			(at 193.294 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6654,7 +6654,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "L31")
+					(reference "L41")
 					(unit 1)
 				)
 			)
@@ -6748,7 +6748,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4fb3fc82-7cfa-4f23-bee0-df85e6416a09")
-		(property "Reference" "R23"
+		(property "Reference" "R33"
 			(at 158.115 29.21 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6843,7 +6843,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "R23")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -7116,7 +7116,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "666f02d8-3cd9-48a8-9af9-fc87f4555b7c")
-		(property "Reference" "C53"
+		(property "Reference" "C23"
 			(at 148.59 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7211,7 +7211,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C53")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -7228,7 +7228,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "776c0232-7753-4d3a-90e6-c05fa2ec1a66")
-		(property "Reference" "C32"
+		(property "Reference" "C42"
 			(at 199.39 21.336 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7323,7 +7323,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C32")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -7436,7 +7436,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7bfe2810-0ca3-4586-b45d-c7786b4d4f8e")
-		(property "Reference" "C51"
+		(property "Reference" "C21"
 			(at 99.06 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7531,7 +7531,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C51")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -7625,7 +7625,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8350fe5e-55a7-44df-85b2-38b5cdd801f9")
-		(property "Reference" "R22"
+		(property "Reference" "R32"
 			(at 118.11 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7720,7 +7720,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "R22")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -7815,7 +7815,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8b5e7295-0688-4462-882b-b87d303a7d35")
-		(property "Reference" "Q31"
+		(property "Reference" "Q41"
 			(at 194.31 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7918,7 +7918,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "Q31")
+					(reference "Q41")
 					(unit 1)
 				)
 			)
@@ -8090,7 +8090,7 @@
 		(in_pos_files no)
 		(dnp no)
 		(uuid "8dda3259-4714-5afa-8412-caa9a82a1232")
-		(property "Reference" "J42"
+		(property "Reference" "J52"
 			(at 212.93 90.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8170,7 +8170,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "J42")
+					(reference "J52")
 					(unit 1)
 				)
 			)
@@ -8264,7 +8264,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "94ec8f69-a9fa-4895-987c-3107f5661824")
-		(property "Reference" "R31"
+		(property "Reference" "R41"
 			(at 186.69 19.558 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8359,7 +8359,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "R31")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -8376,7 +8376,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9844a9e5-fdb1-48b3-a040-81c1beb8e62a")
-		(property "Reference" "C52"
+		(property "Reference" "C22"
 			(at 129.54 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8471,7 +8471,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C52")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -8488,7 +8488,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aa029e73-d783-5060-9982-ffd631eb3b3e")
-		(property "Reference" "U51"
+		(property "Reference" "U21"
 			(at 116.586 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8595,7 +8595,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "U51")
+					(reference "U21")
 					(unit 1)
 				)
 			)
@@ -8702,7 +8702,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ae4b4f90-8457-4776-9bf3-a698d39a54c3")
-		(property "Reference" "RV21"
+		(property "Reference" "RV31"
 			(at 100.838 40.386 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8835,7 +8835,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "RV21")
+					(reference "RV31")
 					(unit 1)
 				)
 			)
@@ -9163,7 +9163,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cf82ad50-56b6-405a-8da9-b12291e2e40e")
-		(property "Reference" "R51"
+		(property "Reference" "R21"
 			(at 96.266 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9258,7 +9258,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "R51")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -9275,7 +9275,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d61d90f6-4c7d-43ae-ad58-aeed28402433")
-		(property "Reference" "C41"
+		(property "Reference" "C51"
 			(at 231.14 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9370,7 +9370,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C41")
+					(reference "C51")
 					(unit 1)
 				)
 			)
@@ -9472,7 +9472,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ecd6f774-009f-571d-8575-07b0c8b346a5")
-		(property "Reference" "R52"
+		(property "Reference" "R22"
 			(at 138.43 67.564 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9567,7 +9567,7 @@
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "R52")
+					(reference "R22")
 					(unit 1)
 				)
 			)
