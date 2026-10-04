@@ -547,14 +547,14 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "Wsprry Pi LPF"
+      "WsprryPi LPF"
     ],
     "pinned_symbol_libs": [
-      "Wsprry Pi LPF"
+      "WsprryPi LPF"
     ]
   },
   "meta": {
-    "filename": "Wsprry-Pi-LPF.kicad_pro",
+    "filename": "WsprryPi LPF.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -721,8 +721,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Wsprry-Pi-LPF.kicad_sch",
-        "name": "Wsprry-Pi-LPF",
+        "filename": "WsprryPi LPF.kicad_sch",
+        "name": "WsprryPi LPF",
         "uuid": "a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
       }
     ],
@@ -732,7 +732,7 @@
   "sheets": [
     [
       "a5c3480f-f07b-4318-b0ac-3cbcb5b2943e",
-      "Wsprry-Pi-LPF"
+      "WsprryPi LPF"
     ]
   ],
   "text_variables": {},

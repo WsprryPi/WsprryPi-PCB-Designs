@@ -937,7 +937,7 @@
 					)
 				)
 			)
-			(property "Description" "Grouped pair of 1x04 2.54 mm female through-hole headers matching the Wsprry-Pi-LPF paired J1 geometry; header centers are exactly 33.020 mm apart; F.Cu keepout permits B.Cu ground pour"
+			(property "Description" "Grouped pair of 1x04 2.54 mm female through-hole headers matching the WsprryPi LPF paired J1 geometry; header centers are exactly 33.020 mm apart; F.Cu keepout permits B.Cu ground pour"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -8132,7 +8132,7 @@
 				)
 			)
 		)
-		(property "Description" "Grouped pair of 1x04 2.54 mm female through-hole headers matching the Wsprry-Pi-LPF paired J1 geometry; header centers are exactly 33.020 mm apart; F.Cu keepout permits B.Cu ground pour"
+		(property "Description" "Grouped pair of 1x04 2.54 mm female through-hole headers matching the WsprryPi LPF paired J1 geometry; header centers are exactly 33.020 mm apart; F.Cu keepout permits B.Cu ground pour"
 			(at 212.93 80.18 0)
 			(hide yes)
 			(show_name no)

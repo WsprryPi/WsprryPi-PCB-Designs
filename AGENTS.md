@@ -6,7 +6,7 @@ This is `WsprryPi/WsprryPi-PCB-Designs`, a KiCad hardware-design repository. Rea
 
 - `Wsprry-Pi-Synth-Univ`: Si5351 transmission board.
 - `WsprryPi-GPIO-Univ`: GPIO transmission board.
-- `Wsprry-Pi-LPF`: low-pass filter board and supporting workbook.
+- `WsprryPi LPF`: low-pass filter board and supporting workbook.
 - `Pico 2W Wattmeter Shield`: ADL5904 RF wattmeter shield.
 - `Pico 2W Shield Template`: reusable unwired Pico shield template.
 - `pico-2w-libs`: standalone Pico library assets with documented compatibility limits.

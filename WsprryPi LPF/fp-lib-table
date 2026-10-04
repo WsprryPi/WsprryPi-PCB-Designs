@@ -1,4 +1,4 @@
 (fp_lib_table
  (version 7)
- (lib (name "Wsprry Pi LPF")(type "KiCad")(uri "${KIPRJMOD}/libraries/footprints/Wsprry-Pi-LPF.pretty")(options "")(descr "Project-local footprints"))
+ (lib (name "WsprryPi LPF")(type "KiCad")(uri "${KIPRJMOD}/libraries/footprints/WsprryPi LPF.pretty")(options "")(descr "Project-local footprints"))
 )

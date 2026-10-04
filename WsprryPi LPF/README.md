@@ -1,4 +1,4 @@
-# Wsprry Pi LPF Board
+# WsprryPi LPF Board
 
 A hand-assembled, seven-element low-pass filter (LPF) board with three series inductors and four shunt-capacitor positions. Each shunt position supports two parallel capacitors.
 
@@ -6,7 +6,7 @@ A hand-assembled, seven-element low-pass filter (LPF) board with three series in
 
 ## Project files
 
-Open [Wsprry-Pi-LPF.kicad_pro](Wsprry-Pi-LPF.kicad_pro) in KiCad 10.0.1 or newer. The KiCad sources are authoritative; generate any required schematic export from the current source revision.
+Open [WsprryPi LPF.kicad_pro](WsprryPi%20LPF.kicad_pro) in KiCad 10.0.1 or newer. The KiCad sources are authoritative; generate any required schematic export from the current source revision.
 
 The [project libraries](libraries/README.md) contain every symbol and footprint used by the design, plus available 3D models. Keep the `libraries/` folder and library tables with the project; their `${KIPRJMOD}` paths resolve within this directory. Library documentation covers connector options, model limitations, sources, and licenses.
 
@@ -29,17 +29,17 @@ J1 combines the input and output header rows:
 
 These are KiCad pad numbers, not the physical position numbers used for adaptation below. Looking down onto the component side of the saved board, the input row runs **4–3–2–1** and the output row runs **8–7–6–5** from the upper board edge to the lower edge because J1 is mounted underneath.
 
-This design was inspired by the QRP Labs method of interchangeable plug-in LPFs, but it uses a **different pinout and is not directly compatible with QRP Labs LPFs**. The Wsprry pinout groups the two RF contacts in the middle and brackets them with signal ground contacts. It was created to allow a denser signal path with nearby ground returns, with the intent of improving RF performance; that benefit has not yet been established by measurements on this board.
+This design was inspired by the QRP Labs method of interchangeable plug-in LPFs, but it uses a **different pinout and is not directly compatible with QRP Labs LPFs**. The WsprryPi pinout groups the two RF contacts in the middle and brackets them with signal ground contacts. It was created to allow a denser signal path with nearby ground returns, with the intent of improving RF performance; that benefit has not yet been established by measurements on this board.
 
 ![LPF header pinouts and orientation for removing conflicting contacts](LPF-header-pinouts.svg)
 
-The diagram numbers **physical positions 1–4 from top to bottom**, independently of KiCad pad numbering. Both header rows have the illustrated pattern. QRP Labs uses RF–RF–GND–GND in the illustrated orientation, while Wsprry uses GND–RF–RF–GND. See the [QRP Labs assembly drawing, page 3](https://qrp-labs.com/images/lpfkit/assembly_A4.pdf).
+The diagram numbers **physical positions 1–4 from top to bottom**, independently of KiCad pad numbering. Both header rows have the illustrated pattern. QRP Labs uses RF–RF–GND–GND in the illustrated orientation, while WsprryPi uses GND–RF–RF–GND. See the [QRP Labs assembly drawing, page 3](https://qrp-labs.com/images/lpfkit/assembly_A4.pdf).
 
-For the orientation shown, an operator may remove pins at **physical positions 1 and 3 from both headers of the module being adapted—four pins total**. The remaining positions **2 and 4 provide RF and ground**, respectively. This applies electrically to adapting a Wsprry module to a QRP Labs socket or a QRP Labs module to a Wsprry socket, provided the mechanical spacing and fit match. The Wsprry paired header uses 33.02 mm spacing.
+For the orientation shown, an operator may remove pins at **physical positions 1 and 3 from both headers of the module being adapted—four pins total**. The remaining positions **2 and 4 provide RF and ground**, respectively. This applies electrically to adapting a WsprryPi module to a QRP Labs socket or a QRP Labs module to a WsprryPi socket, provided the mechanical spacing and fit match. The WsprryPi paired header uses 33.02 mm spacing.
 
-**Orientation matters:** turning the module end-for-end reverses both rows and changes which positions conflict. The Wsprry GND–RF–RF–GND pinout and symmetric filter topology permit electrical connection in either direction in a matching Wsprry socket. The cross-compatible two-contact arrangement is orientation-specific: after modification, use only the orientation shown for the adapted target socket. This is especially important because the unmodified outline alone does not establish a safe orientation.
+**Orientation matters:** turning the module end-for-end reverses both rows and changes which positions conflict. The WsprryPi GND–RF–RF–GND pinout and symmetric filter topology permit electrical connection in either direction in a matching WsprryPi socket. The cross-compatible two-contact arrangement is orientation-specific: after modification, use only the orientation shown for the adapted target socket. This is especially important because the unmodified outline alone does not establish a safe orientation.
 
-A modified module has two empty positions in each header. It can still be electrically compatible with a socket using that module's native pinout. A Wsprry socket has the symmetric GND–RF–RF–GND pattern, so a modified Wsprry module can retain electrical compatibility in either native orientation. Removing pins reduces ground contacts and mechanical support. Confirm physical alignment and RF/ground contact mapping before applying RF. Adapter operation and the resulting RF response have not been physically verified.
+A modified module has two empty positions in each header. It can still be electrically compatible with a socket using that module's native pinout. A WsprryPi socket has the symmetric GND–RF–RF–GND pattern, so a modified WsprryPi module can retain electrical compatibility in either native orientation. Removing pins reduces ground contacts and mechanical support. Confirm physical alignment and RF/ground contact mapping before applying RF. Adapter operation and the resulting RF response have not been physically verified.
 
 ### Toroid assembly
 

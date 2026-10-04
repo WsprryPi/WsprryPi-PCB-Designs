@@ -10,7 +10,7 @@ These designs require revision-specific validation before production. KiCad sour
 | --- | --- | --- |
 | [Synth Universal](Wsprry-Pi-Synth-Univ/README.md) | Si5351-synthesized transmission board | [Schematic PDF](Wsprry-Pi-Synth-Univ/Wsprry-Pi-Synth-Univ.pdf) |
 | [GPIO Universal](WsprryPi-GPIO-Univ/README.md) | GPIO transmission board | Export from the KiCad source |
-| [LPF](Wsprry-Pi-LPF/README.md) | Low-pass filter board and design workbook | Export from the KiCad source |
+| [WsprryPi LPF](WsprryPi%20LPF/README.md) | Low-pass filter board and design workbook | Export from the KiCad source |
 | [Pico 2W Wattmeter Shield](Pico%202W%20Wattmeter%20Shield/README.md) | ADL5904 RF detector and ADS1115 ADC shield | See project assembly drawings |
 | [Pico 2W Shield Template](Pico%202W%20Shield%20Template/README.md) | Unwired shield interface, outline, and antenna notch | KiCad project template |
 | [RPi Full-Size Hat](RPi%20Full-Size%20Hat/README.md) | Official full-size HAT geometry and complete 40-pin interface | KiCad project template |
@@ -38,7 +38,7 @@ Synth, GPIO, and LPF include local copies of every symbol and footprint used by 
 
 - [Synth library contents and limits](Wsprry-Pi-Synth-Univ/libraries/README.md)
 - [GPIO library contents and limits](WsprryPi-GPIO-Univ/libraries/README.md)
-- [LPF library contents and limits](Wsprry-Pi-LPF/libraries/README.md)
+- [LPF library contents and limits](WsprryPi%20LPF/libraries/README.md)
 
 The edge-launch SMA option in each library is the wattmeter's Adafruit 1865 part. GPIO now uses it as J83; Synth still uses a different through-hole SMA connector. The switch and through-hole SMA models are included locally. GPIO C11 now uses a local generic KiCad electrolytic model. Remaining model gaps are the unplaced large through-hole capacitor footprint and Synth's Y21 oscillator; LPF's toroid uses a generic axial-inductor visualization.
 

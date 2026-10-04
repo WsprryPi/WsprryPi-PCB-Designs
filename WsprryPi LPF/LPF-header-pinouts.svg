@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc">
-<title id="title">Wsprry and QRP Labs LPF header pinouts</title>
-<desc id="desc">Component-side comparison with two headers per module. Physical positions run from 1 at the top to 4 at the bottom. Wsprry is ground, RF, RF, ground. QRP Labs in this orientation is RF, RF, ground, ground. Remove positions 1 and 3 on both headers of the module being adapted; retain position 2 for RF and position 4 for ground.</desc>
+<title id="title">WsprryPi and QRP Labs LPF header pinouts</title>
+<desc id="desc">Component-side comparison with two headers per module. Physical positions run from 1 at the top to 4 at the bottom. WsprryPi is ground, RF, RF, ground. QRP Labs in this orientation is RF, RF, ground, ground. Remove positions 1 and 3 on both headers of the module being adapted; retain position 2 for RF and position 4 for ground.</desc>
 <rect width="1000" height="540" fill="#f8fafc"/>
 <style>text{font-family:Arial,sans-serif;fill:#172b42}.heading{font-size:24px;font-weight:700}.label{font-size:17px}.small{font-size:15px}.number{font-size:18px;font-weight:700}.body{fill:#fff;stroke:#a9bacb;stroke-width:2}</style>
 <text x="30" y="36" class="heading" text-anchor="start">LPF header comparison — adaptation orientation</text>
 <text x="30" y="65" class="small" text-anchor="start">Component-side view • positions are physical locations, not KiCad pad numbers</text>
 <rect x="30" y="88" width="450" height="300" rx="14" class="body"/>
-<text x="255" y="120" class="heading" text-anchor="middle">Wsprry LPF</text>
+<text x="255" y="120" class="heading" text-anchor="middle">WsprryPi LPF</text>
 <text x="120" y="149" class="label" text-anchor="middle">Input</text>
 <circle cx="120" cy="183" r="15" fill="#b54708"/>
 <text x="92" y="189" class="number" text-anchor="end">1</text>

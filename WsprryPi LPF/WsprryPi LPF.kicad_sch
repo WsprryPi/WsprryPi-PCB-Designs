@@ -5,12 +5,12 @@
 	(uuid "a5c3480f-f07b-4318-b0ac-3cbcb5b2943e")
 	(paper "A")
 	(title_block
-		(title "Wsprry Pi LPF")
+		(title "WsprryPi LPF")
 		(date "2026-03-26")
 		(rev "1.0.2")
 	)
 	(lib_symbols
-		(symbol "Wsprry Pi LPF:C"
+		(symbol "WsprryPi LPF:C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -165,7 +165,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Wsprry Pi LPF:GND"
+		(symbol "WsprryPi LPF:GND"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -280,7 +280,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Wsprry Pi LPF:L"
+		(symbol "WsprryPi LPF:L"
 			(pin_numbers
 				(hide yes)
 			)
@@ -458,7 +458,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Wsprry Pi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm"
+		(symbol "WsprryPi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm"
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
@@ -484,7 +484,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Wsprry Pi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm"
+			(property "Footprint" "WsprryPi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -678,7 +678,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Wsprry Pi LPF:PWR_FLAG"
+		(symbol "WsprryPi LPF:PWR_FLAG"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -1605,7 +1605,7 @@
 		(uuid "f1163a40-6a14-46f1-a69c-4f4b30b7977c")
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm")
+		(lib_id "WsprryPi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm")
 		(at 137.16 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -1636,7 +1636,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Wsprry Pi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm"
+		(property "Footprint" "WsprryPi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm"
 			(at 137.16 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -1694,7 +1694,7 @@
 			(uuid "1d9ac602-9a05-4d60-9156-d2207d165ba5")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "J1")
 					(unit 1)
@@ -1703,7 +1703,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:GND")
+		(lib_id "WsprryPi LPF:GND")
 		(at 152.4 118.11 180)
 		(unit 1)
 		(body_style 1)
@@ -1771,7 +1771,7 @@
 			(uuid "43f42112-13b8-4566-b34f-0806a84faae4")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "#PWR025")
 					(unit 1)
@@ -1780,7 +1780,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:C")
+		(lib_id "WsprryPi LPF:C")
 		(at 101.6 92.71 0)
 		(unit 1)
 		(body_style 1)
@@ -1813,7 +1813,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 102.5652 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -1853,7 +1853,7 @@
 			(uuid "c37020df-64f8-40cd-bf2a-78047b949cc7")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "CA1")
 					(unit 1)
@@ -1862,7 +1862,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:C")
+		(lib_id "WsprryPi LPF:C")
 		(at 142.24 92.71 0)
 		(unit 1)
 		(body_style 1)
@@ -1895,7 +1895,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 143.2052 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -1935,7 +1935,7 @@
 			(uuid "6c489f80-7e56-4033-95b6-d7901d80bed1")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "CA5")
 					(unit 1)
@@ -1944,7 +1944,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:C")
+		(lib_id "WsprryPi LPF:C")
 		(at 172.72 92.71 0)
 		(unit 1)
 		(body_style 1)
@@ -1977,7 +1977,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 173.6852 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2017,7 +2017,7 @@
 			(uuid "b0fff4fe-d230-4933-bbd3-4612b762b117")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "CB7")
 					(unit 1)
@@ -2026,7 +2026,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:L")
+		(lib_id "WsprryPi LPF:L")
 		(at 116.84 105.41 180)
 		(unit 1)
 		(body_style 1)
@@ -2057,7 +2057,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Wsprry Pi LPF:L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm"
+		(property "Footprint" "WsprryPi LPF:L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm"
 			(at 116.84 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -2097,7 +2097,7 @@
 			(uuid "7741dbef-5bee-4ca4-a844-143ca7c8aa33")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "L2")
 					(unit 1)
@@ -2106,7 +2106,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:C")
+		(lib_id "WsprryPi LPF:C")
 		(at 121.92 92.71 0)
 		(unit 1)
 		(body_style 1)
@@ -2139,7 +2139,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 122.8852 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2179,7 +2179,7 @@
 			(uuid "b0fff4fe-d230-4933-bbd3-4612b762b118")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "CA3")
 					(unit 1)
@@ -2188,7 +2188,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:L")
+		(lib_id "WsprryPi LPF:L")
 		(at 157.48 105.41 180)
 		(unit 1)
 		(body_style 1)
@@ -2219,7 +2219,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Wsprry Pi LPF:L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm"
+		(property "Footprint" "WsprryPi LPF:L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm"
 			(at 157.48 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -2259,7 +2259,7 @@
 			(uuid "7741dbef-5bee-4ca4-a844-143ca7c8aa34")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "L6")
 					(unit 1)
@@ -2268,7 +2268,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:GND")
+		(lib_id "WsprryPi LPF:GND")
 		(at 167.64 86.36 180)
 		(unit 1)
 		(body_style 1)
@@ -2337,7 +2337,7 @@
 			(uuid "62b412d0-c3e2-4e41-8f20-c27d18a1eb6b")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "#PWR01")
 					(unit 1)
@@ -2346,7 +2346,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:C")
+		(lib_id "WsprryPi LPF:C")
 		(at 132.08 92.71 0)
 		(unit 1)
 		(body_style 1)
@@ -2379,7 +2379,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 133.0452 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2419,7 +2419,7 @@
 			(uuid "b0fff4fe-d230-4933-bbd3-4612b762b119")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "CB3")
 					(unit 1)
@@ -2428,7 +2428,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:C")
+		(lib_id "WsprryPi LPF:C")
 		(at 111.76 92.71 0)
 		(unit 1)
 		(body_style 1)
@@ -2461,7 +2461,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 112.7252 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2501,7 +2501,7 @@
 			(uuid "f9857f63-d1e5-4397-a016-333e03fd3e0d")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "CB1")
 					(unit 1)
@@ -2510,7 +2510,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:GND")
+		(lib_id "WsprryPi LPF:GND")
 		(at 106.68 86.36 180)
 		(unit 1)
 		(body_style 1)
@@ -2579,7 +2579,7 @@
 			(uuid "c3148e42-91e5-4527-b9fa-4127abdb4541")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "#PWR04")
 					(unit 1)
@@ -2588,7 +2588,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:GND")
+		(lib_id "WsprryPi LPF:GND")
 		(at 121.92 128.27 0)
 		(unit 1)
 		(body_style 1)
@@ -2656,7 +2656,7 @@
 			(uuid "37653ef5-d834-407b-b92e-eda5cebe9597")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "#PWR021")
 					(unit 1)
@@ -2665,7 +2665,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:GND")
+		(lib_id "WsprryPi LPF:GND")
 		(at 152.4 128.27 0)
 		(unit 1)
 		(body_style 1)
@@ -2733,7 +2733,7 @@
 			(uuid "9177f863-a61c-4b93-9232-8c892b56107e")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "#PWR020")
 					(unit 1)
@@ -2742,7 +2742,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:GND")
+		(lib_id "WsprryPi LPF:GND")
 		(at 121.92 118.11 180)
 		(unit 1)
 		(body_style 1)
@@ -2810,7 +2810,7 @@
 			(uuid "bf8d1c7c-8d67-46b1-a5de-0638820f55e4")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "#PWR024")
 					(unit 1)
@@ -2819,7 +2819,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:GND")
+		(lib_id "WsprryPi LPF:GND")
 		(at 147.32 86.36 180)
 		(unit 1)
 		(body_style 1)
@@ -2888,7 +2888,7 @@
 			(uuid "b7d715c8-72bb-4194-b3d9-3b794394cbc1")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "#PWR03")
 					(unit 1)
@@ -2897,7 +2897,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:C")
+		(lib_id "WsprryPi LPF:C")
 		(at 162.56 92.71 0)
 		(unit 1)
 		(body_style 1)
@@ -2930,7 +2930,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 163.5252 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2970,7 +2970,7 @@
 			(uuid "b0fff4fe-d230-4933-bbd3-4612b762b11a")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "CA7")
 					(unit 1)
@@ -2979,7 +2979,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:GND")
+		(lib_id "WsprryPi LPF:GND")
 		(at 127 86.36 180)
 		(unit 1)
 		(body_style 1)
@@ -3048,7 +3048,7 @@
 			(uuid "21a78d52-c10b-47d6-a802-744bfb7878a6")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "#PWR02")
 					(unit 1)
@@ -3057,7 +3057,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:PWR_FLAG")
+		(lib_id "WsprryPi LPF:PWR_FLAG")
 		(at 118.11 119.38 0)
 		(unit 1)
 		(body_style 1)
@@ -3126,7 +3126,7 @@
 			(uuid "9cfd2a46-d0b5-4f9b-b3d5-d8b0f3b769d2")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "#FLG01")
 					(unit 1)
@@ -3135,7 +3135,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:L")
+		(lib_id "WsprryPi LPF:L")
 		(at 137.16 105.41 180)
 		(unit 1)
 		(body_style 1)
@@ -3166,7 +3166,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Wsprry Pi LPF:L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm"
+		(property "Footprint" "WsprryPi LPF:L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm"
 			(at 137.16 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -3206,7 +3206,7 @@
 			(uuid "7741dbef-5bee-4ca4-a844-143ca7c8aa35")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "L4")
 					(unit 1)
@@ -3215,7 +3215,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Wsprry Pi LPF:C")
+		(lib_id "WsprryPi LPF:C")
 		(at 152.4 92.71 0)
 		(unit 1)
 		(body_style 1)
@@ -3248,7 +3248,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 153.3652 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -3288,7 +3288,7 @@
 			(uuid "13a00e32-9447-467c-8b11-8c7b61840a65")
 		)
 		(instances
-			(project "Wsprry-Pi-LPF"
+			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "CB5")
 					(unit 1)

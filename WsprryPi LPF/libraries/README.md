@@ -4,11 +4,11 @@ This folder contains the project's symbol library, footprint library, and availa
 
 | Asset | Location | Contents |
 | --- | --- | --- |
-| Symbols | [Symbol library](symbols/Wsprry-Pi-LPF.kicad_sym) | 5 symbols, including all definitions used by the schematic |
-| Footprints | [Footprint library](footprints/Wsprry-Pi-LPF.pretty/) | 3 footprints, including all footprints used by the board |
+| Symbols | [Symbol library](symbols/WsprryPi%20LPF.kicad_sym) | 5 symbols, including all definitions used by the schematic |
+| Footprints | [Footprint library](footprints/WsprryPi%20LPF.pretty/) | 3 footprints, including all footprints used by the board |
 | Models | [3D models](3dmodels/) | 3 local STEP files |
 
-The registered library nickname is `Wsprry Pi LPF`. Instance values and purchasing fields remain the design's responsibility; a generic library symbol does not select a component value or supplier part.
+The registered library nickname is `WsprryPi LPF`. Instance values and purchasing fields remain the design's responsibility; a generic library symbol does not select a component value or supplier part.
 
 The local `PWR_FLAG` symbol documents the externally supplied ground connection at the input header ground connection.
 
@@ -22,7 +22,7 @@ The unused `Conn_01x04` and `SMA_Adafruit_1865` symbols and the standalone heade
 
 ## Paired LPF headers
 
-`Wsprry Pi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm` is the placed combined symbol and footprint for two hand-fitted male 1×4 headers. Header centerlines are 33.02 mm (1.300 inches) apart; each header has 2.54 mm pin pitch, 1.7 mm pads, and 1.0 mm holes. The footprint origin is input-header pin 1; output-header pin 5 is at X = 33.02 mm. Both rows run in the same direction. Separate courtyards cover the two header bodies and leave the intervening filter area available.
+`WsprryPi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm` is the placed combined symbol and footprint for two hand-fitted male 1×4 headers. Header centerlines are 33.02 mm (1.300 inches) apart; each header has 2.54 mm pin pitch, 1.7 mm pads, and 1.0 mm holes. The footprint origin is input-header pin 1; output-header pin 5 is at X = 33.02 mm. Both rows run in the same direction. Separate courtyards cover the two header bodies and leave the intervening filter area available.
 
 | Header | Pad numbers in row order | Intended connections |
 | --- | --- | --- |
@@ -31,7 +31,7 @@ The unused `Conn_01x04` and `SMA_Adafruit_1865` symbols and the standalone heade
 
 The symbol exposes all eight passive pins separately; connect the paired RF pins and ground pins explicitly when placing it. It assigns the combined footprint and defaults to exclusion from the BOM. The footprint reuses the existing local header geometry and STEP model twice. These are two physical headers represented as one KiCad component, not a selected eight-pin purchasing part.
 
-The spacing targets the QRP Labs LPF mechanical interface, independently corroborated by the QRP Labs-compatible T41 filter daughter-board [Gerbers](https://github.com/DRWJSCHMIDT/T41/blob/main/T41_V011_Files/Gerbers/T41_Filter_Daughter_V011_Gerber.zip) and [assembly manual](https://www.4sqrp.com/kits/T41/T41-Builders-Manual.pdf). The Wsprry pinout is retained and is **not electrically interchangeable with the QRP Labs LPF**. Physical fit has not been checked with an assembled QRP Labs module.
+The spacing targets the QRP Labs LPF mechanical interface, independently corroborated by the QRP Labs-compatible T41 filter daughter-board [Gerbers](https://github.com/DRWJSCHMIDT/T41/blob/main/T41_V011_Files/Gerbers/T41_Filter_Daughter_V011_Gerber.zip) and [assembly manual](https://www.4sqrp.com/kits/T41/T41-Builders-Manual.pdf). The WsprryPi pinout is retained and is **not electrically interchangeable with the QRP Labs LPF**. Physical fit has not been checked with an assembled QRP Labs module.
 
 The combined header is now placed as J1 on the PCB underside (B.Cu). Flipping it about the midpoint of the pin rows preserves all eight hole locations and their nets because each row has a symmetric GND–RF–RF–GND assignment. Pad-number order reverses spatially on the underside; use the pad numbers rather than apparent top-view order. KiCad 10.0.6 DRC before and after the flip reported zero violations and zero unconnected items. These checks do not establish assembled fit or RF performance.
 

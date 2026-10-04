@@ -8,7 +8,7 @@
 	)
 	(paper "A")
 	(title_block
-		(title "Wsprry Pi LPF")
+		(title "WsprryPi LPF")
 		(date "2026-03-25")
 		(rev "1.0.2")
 	)
@@ -131,7 +131,7 @@
 			(outputdirectory "")
 		)
 	)
-	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "0ba6f5b9-0297-4a79-bb5b-897589470b47")
 		(at 150.49 95.34 -90)
@@ -187,7 +187,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/d31c2cd5-0cf5-4fa4-9473-5fc306d7fd07")
 		(sheetname "/")
-		(sheetfile "Wsprry-Pi-LPF.kicad_sch")
+		(sheetfile "WsprryPi LPF.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -304,7 +304,7 @@
 			)
 		)
 	)
-	(footprint "Wsprry Pi LPF:L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm"
+	(footprint "WsprryPi LPF:L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm"
 		(layer "F.Cu")
 		(uuid "1803e889-7214-447c-ac7b-4a73ff2ee994")
 		(at 146.125239 99.225 -90)
@@ -360,7 +360,7 @@
 		(property ki_fp_filters "Inductor_* L_*")
 		(path "/5257d610-d748-456d-b6e2-6fda0570e466")
 		(sheetname "/")
-		(sheetfile "Wsprry-Pi-LPF.kicad_sch")
+		(sheetfile "WsprryPi LPF.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -545,7 +545,7 @@
 			)
 		)
 	)
-	(footprint "Wsprry Pi LPF:L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm"
+	(footprint "WsprryPi LPF:L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm"
 		(layer "F.Cu")
 		(uuid "2a096944-01db-4d18-a043-934b90f79da1")
 		(at 127.740477 99.225 -90)
@@ -601,7 +601,7 @@
 		(property ki_fp_filters "Inductor_* L_*")
 		(path "/33b101aa-ffb1-4840-8d8c-91f6f3468e0e")
 		(sheetname "/")
-		(sheetfile "Wsprry-Pi-LPF.kicad_sch")
+		(sheetfile "WsprryPi LPF.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -786,7 +786,7 @@
 			)
 		)
 	)
-	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "2d55f8b0-92a8-446d-8fd3-3cdda249cac0")
 		(at 133.182858 94.644664)
@@ -842,7 +842,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/3bc001b0-7098-4f6f-a16a-0e17772b1d34")
 		(sheetname "/")
-		(sheetfile "Wsprry-Pi-LPF.kicad_sch")
+		(sheetfile "WsprryPi LPF.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -960,7 +960,7 @@
 			)
 		)
 	)
-	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "3e81f3e4-60e5-40f7-a4db-f7aa605363e7")
 		(at 123.29 95.34 -90)
@@ -1016,7 +1016,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/1e95d9c5-f9a1-44b3-9c3c-669aefc7c80f")
 		(sheetname "/")
-		(sheetfile "Wsprry-Pi-LPF.kicad_sch")
+		(sheetfile "WsprryPi LPF.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1133,7 +1133,7 @@
 			)
 		)
 	)
-	(footprint "Wsprry Pi LPF:L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm"
+	(footprint "WsprryPi LPF:L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm"
 		(layer "F.Cu")
 		(uuid "5626dbeb-9549-49d2-a3da-6367353b9cd7")
 		(at 136.827858 99.074327 180)
@@ -1189,7 +1189,7 @@
 		(property ki_fp_filters "Inductor_* L_*")
 		(path "/f1b1acd2-7020-4e96-8e08-e9ce79e6c381")
 		(sheetname "/")
-		(sheetfile "Wsprry-Pi-LPF.kicad_sch")
+		(sheetfile "WsprryPi LPF.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1375,7 +1375,7 @@
 			)
 		)
 	)
-	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "5c7a8100-4656-4e27-a799-4b3a0cf1b2c3")
 		(at 123.29 102.84 90)
@@ -1431,7 +1431,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/6bb13a6f-c4b0-4551-ae41-fd51520d8a53")
 		(sheetname "/")
-		(sheetfile "Wsprry-Pi-LPF.kicad_sch")
+		(sheetfile "WsprryPi LPF.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1548,7 +1548,7 @@
 			)
 		)
 	)
-	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "63ca81a6-e0ae-4ec7-87ca-08f9e86323c2")
 		(at 133.182858 103.539664)
@@ -1604,7 +1604,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/239ccbe8-2fdd-4438-acf5-ed5a188f3126")
 		(sheetname "/")
-		(sheetfile "Wsprry-Pi-LPF.kicad_sch")
+		(sheetfile "WsprryPi LPF.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1721,7 +1721,7 @@
 			)
 		)
 	)
-	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "6ee6a1ce-241f-4e00-bdc0-5878f133e878")
 		(at 140.682858 94.644664 180)
@@ -1777,7 +1777,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/6a80f84d-eb31-44c3-8e87-50900ad6f0dc")
 		(sheetname "/")
-		(sheetfile "Wsprry-Pi-LPF.kicad_sch")
+		(sheetfile "WsprryPi LPF.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1894,7 +1894,7 @@
 			)
 		)
 	)
-	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "a5381ebd-b92b-451e-b59c-fb5873b09802")
 		(at 140.682858 103.539664 180)
@@ -1951,7 +1951,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/f47beb20-93ee-4965-b2cd-3147807269ad")
 		(sheetname "/")
-		(sheetfile "Wsprry-Pi-LPF.kicad_sch")
+		(sheetfile "WsprryPi LPF.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2068,7 +2068,7 @@
 			)
 		)
 	)
-	(footprint "Wsprry Pi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+	(footprint "WsprryPi LPF:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "dccbbbb7-d1e9-446b-9b61-b952aa48be14")
 		(at 150.49 102.84 90)
@@ -2124,7 +2124,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/31debcf0-1faa-4fa9-864b-279320346d76")
 		(sheetname "/")
-		(sheetfile "Wsprry-Pi-LPF.kicad_sch")
+		(sheetfile "WsprryPi LPF.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2241,11 +2241,11 @@
 			)
 		)
 	)
-	(footprint "Wsprry Pi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm"
+	(footprint "WsprryPi LPF:LPF_HeaderPair_2x1x04_P2.54mm_S33.02mm"
 		(layer "B.Cu")
 		(uuid "e7dff073-842f-49e3-8704-cbfa97eaa508")
 		(at 120.47 102.93)
-		(descr "Paired hand-fitted male 1x04 headers; 33.02 mm centerlines, 2.54 mm pitch; Wsprry LPF pinout, not QRP Labs electrical pinout")
+		(descr "Paired hand-fitted male 1x04 headers; 33.02 mm centerlines, 2.54 mm pitch; WsprryPi LPF pinout, not QRP Labs electrical pinout")
 		(tags "LPF paired header 33.02mm 1.300inch")
 		(property "Reference" "J1"
 			(at 16.51 3 180)
@@ -2299,7 +2299,7 @@
 		)
 		(path "/0f6a26f4-d7f2-4572-a5a9-7345ddeddd22")
 		(sheetname "/")
-		(sheetfile "Wsprry-Pi-LPF.kicad_sch")
+		(sheetfile "WsprryPi LPF.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2858,7 +2858,7 @@
 		(layer "Edge.Cuts")
 		(uuid "4d5ec182-ef79-4711-a2df-8896fae144e0")
 	)
-	(gr_text "Wsprry Pi\nLPF v1.0.1"
+	(gr_text "WsprryPi\nLPF v1.0.1"
 		(at 136.98 99.01 0)
 		(layer "B.SilkS")
 		(uuid "46b8d890-5dc0-452b-9eb9-efc7d15ff07b")

@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "Grouped J81/J82 pair of through-hole 1x04 female headers, 2.54 mm pitch, with exact 33.020 mm Wsprry-Pi-LPF center spacing and an F.Cu inter-header placement/copper keepout")
+	(descr "Grouped J81/J82 pair of through-hole 1x04 female headers, 2.54 mm pitch, with exact 33.020 mm WsprryPi LPF center spacing and an F.Cu inter-header placement/copper keepout")
 	(tags "through hole socket strip THT 1x04 2.54mm grouped J81 J82 keepout")
 	(property "Reference" "REF**"
 		(at 0 -2.77 0)
@@ -41,7 +41,7 @@
 			)
 		)
 	)
-	(property "Description" "Grouped pair of 1x04 2.54 mm female through-hole headers matching the Wsprry-Pi-LPF paired J1 geometry; header centers are exactly 33.020 mm apart; F.Cu keepout permits B.Cu ground pour"
+	(property "Description" "Grouped pair of 1x04 2.54 mm female through-hole headers matching the WsprryPi LPF paired J1 geometry; header centers are exactly 33.020 mm apart; F.Cu keepout permits B.Cu ground pour"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)

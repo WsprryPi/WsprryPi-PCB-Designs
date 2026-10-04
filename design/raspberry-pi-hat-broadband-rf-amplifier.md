@@ -193,7 +193,7 @@ Retain the existing manual plug-in J81/J82 interface and place the selected LPF
 directly after the amplifier with a short RF connection. J81 pins 2 and 3 carry
 the pre-LPF PA output, J82 pins 2 and 3 carry the post-LPF signal to J83, and
 pins 1 and 4 of both headers are ground. This matches J1 and J2 on the existing
-Wsprry-Pi-LPF board.
+WsprryPi LPF board.
 
 Revision one accepts one manually selected, band-specific LPF at a time and
 contains no relay, analog switch, selection GPIO, software selection, or
