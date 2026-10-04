@@ -10,6 +10,7 @@ fp-info-cache
 _autosave-*
 ~*.kicad_sch
 ~*.kicad_pcb
+~*.*
 *.kicad_sch-bak
 *.kicad_pcb-bak
 *.sch-bak
