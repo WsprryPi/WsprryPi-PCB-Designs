@@ -63,7 +63,7 @@ This historical first-pass table includes the earlier `YA9308-AEC` selection and
 | Switched-rail bulk capacitor | 1 | 10 µF, X7R/X8R, 10 V or greater | Provisional | Final value and package depend on power-switch ramp and layout. |
 | GPIO series damping | 1 | 22 ohm initial value | Provisional | Tune in the range 0 to 33 ohms from waveform and output measurements. |
 | GPIO boot-state pull-down | 1 | 100 kohm | Provisional | Keeps the transformer input quiet while the source GPIO is high impedance. |
-| GPIO indicator LED | 1 | `KT-0603W`, red, `LCSC_PART` C2286 | Selected | D11; 0603 LED copied with the existing indicator circuit. |
+| GPIO indicator LED | 1 | `KT-0603R`, red, `LCSC_PART` C2286 | Selected | D11; 0603 LED copied with the existing indicator circuit. |
 | GPIO indicator resistor | 1 | 220 ohm, `LCSC_PART` C22962 | Selected | R11; 0603, 100 mW, 1%. |
 | Software shutdown-request pushbutton | 1 | Alps Alpine `SKRPANE010`, `LCSC_PART` C470426 | Selected | SW11 momentarily grounds GPIO26. Firmware must provide the pull-up, detect the request, and deassert GPIO23; this is not a failsafe hardware shutdown. |
 | Amplifier load switch | 1 | TI `TPS22918DBVR`, `LCSC_PART` C131941 | Provisional | U50 allows a GPIO to remove the amplifier's roughly 850 mW idle load; 5.5 V, 2 A, SOT-23-6. |

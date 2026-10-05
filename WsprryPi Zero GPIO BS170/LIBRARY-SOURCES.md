@@ -40,7 +40,7 @@ The Raspberry Pi interface, 2×20 socket purchasing symbol, selectable socket fo
 
 ## GPIO indicator assets
 
-The `LED` and `R_US` symbols, `LED_0603_1608Metric` footprint, and LED STEP model were copied from `WsprryPi-GPIO-Univ` for the placed D11/R11 indicator circuit. D11 retains its `KT-0603W`/`LCSC_PART` C2286 fields and uses the project-local LED footprint. R11 retains its 220 ohm/`LCSC_PART` C22962 fields and uses this project's existing `R_0603_1608Metric` footprint, whose pad geometry matches the source footprint. The copied GND instance was redirected to the existing project-local `GND` symbol. No placed symbol or footprint now depends on a legacy external WsprryPi library.
+The `LED` and `R_US` symbols, `LED_0603_1608Metric` footprint, and LED STEP model were copied from `WsprryPi-GPIO-Univ` for the placed D11/R11 indicator circuit. D11 uses the red `KT-0603R`/`LCSC_PART` C2286 selection and the project-local LED footprint; its value was corrected to match the [C2286 catalog entry](https://www.lcsc.com/product-detail/C2286.html). The revised worksheet selects FOJAN `FRC0603F2200TS`, 220 ohm, ±1%, 0.10 W, [C2907014](https://www.lcsc.com/product-detail/C2907014.html), for the placed R11 instances. R11 uses this project's existing `R_0603_1608Metric` footprint, whose pad geometry matches the source footprint. The copied GND instance was redirected to the existing project-local `GND` symbol. No placed symbol or footprint now depends on a legacy external WsprryPi library.
 
 ## 1×3 male header
 
@@ -68,8 +68,8 @@ The following symbols were drawn or copied for this project from the named manuf
 | `C_0603` | Generic passive | `C_0603_1608Metric` |
 | `C_0805` | Generic passive | `C_0805_2012Metric` |
 | `GND` | KiCad 10.0.6 standard GND power-symbol geometry, copied locally | None |
-| `LED` | KiCad LED symbol copied through `WsprryPi-GPIO-Univ`; D11 is `KT-0603W`/`LCSC_PART` C2286 | `LED_0603_1608Metric` |
-| `R_US` | KiCad US resistor symbol copied through `WsprryPi-GPIO-Univ`; R11 is 220 ohm/`LCSC_PART` C22962 | `R_0603_1608Metric` |
+| `LED` | KiCad LED symbol copied through `WsprryPi-GPIO-Univ`; D11 is `KT-0603R`/`LCSC_PART` C2286 | `LED_0603_1608Metric` |
+| `R_US` | KiCad US resistor symbol copied through `WsprryPi-GPIO-Univ`; placed R11 selects FOJAN 220 ohm ±1%/`LCSC_PART` C2907014 | `R_0603_1608Metric` |
 | `SKRPANE010` | [Alps Alpine SKRPANE010 product data](https://tech.alpsalpine.com/e/products/detail/SKRPANE010/) and terminal diagram | `ALPS_SKRP_4.2x3.2mm` |
 | `Conn_01x03` | KiCad connector symbol copied through `WsprryPi-GPIO-Univ` | `PinHeader_1x03_P2.54mm_Vertical` |
 | `Conn_01x02` | KiCad 10.0.6 `Connector_Generic:Conn_01x02`, with local metadata and J12's BOM/position-output exclusions | `PinHeader_1x02_P2.54mm_Vertical` |
