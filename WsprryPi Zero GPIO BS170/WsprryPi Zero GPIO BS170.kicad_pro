@@ -749,8 +749,8 @@
         },
         {
           "group_by": false,
-          "label": "LCSC_PART",
-          "name": "LCSC_PART",
+          "label": "LCSC Part #",
+          "name": "LCSC Part #",
           "show": false
         },
         {
@@ -814,7 +814,7 @@
         "uuid": "42fb2efa-c288-4686-a90a-043ad23a327d"
       }
     ],
-    "used_designators": "U1,U10-11,U21,U31-32,U50,U60,T21-22,T40-42,SW1,SW11,RV31,R11,R20-22,R24,R31-33,R41,R54,R61-62,R64,L41,Q41,D11,C1-8,C21-23,C30-38,C41-42,C51,C55-56,C63,#PWR1-22,#PWR41-46,J1-2,J11-12,J51-52",
+    "used_designators": "U1,U10-11,U21,U31-32,U50,U60,T21-22,T40-42,SW1,SW11,RV31,R11,R20-22,R24,R31-33,R41,R54,R61-62,R64,L41,Q41,D11,C1-8,C21-23,C30-38,C41-42,C51-52,C55-56,C63,#PWR1-22,#PWR41-46,J1-2,J11-12,J51-52",
     "variants": []
   },
   "sheets": [

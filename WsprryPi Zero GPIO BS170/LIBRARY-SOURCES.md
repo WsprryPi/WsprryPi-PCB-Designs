@@ -4,7 +4,7 @@ The `wsprrypi-zero-gpio-bs170` symbol and footprint libraries are project-local.
 
 ## BS170 redesign additions
 
-The following symbols, now placed as Q41, RV31, and L41, were copied from the standard symbol libraries installed with KiCad 10.0.6. They retain the KiCad library license below. Each includes the project's `Manufacturer`, `MPN`, and `LCSC_PART` fields; unselected purchasing fields remain blank.
+The following symbols, now placed as Q41, RV31, and L41, were copied from the standard symbol libraries installed with KiCad 10.0.6. They retain the KiCad library license below. Each includes the project's `Manufacturer` and `MPN` fields. RV31 uses the exporter-supported `LCSC Part #` field. The excluded Q41 and L41 instances and their library definitions retain their blank legacy `LCSC_PART` fields; unselected purchasing fields remain blank.
 
 | Local symbol | Source | Pins and footprint status |
 | --- | --- | --- |
@@ -40,7 +40,7 @@ The Raspberry Pi interface, 2×20 socket purchasing symbol, selectable socket fo
 
 ## GPIO indicator assets
 
-The `LED` and `R_US` symbols, `LED_0603_1608Metric` footprint, and LED STEP model were copied from `WsprryPi-GPIO-Univ` for the placed D11/R11 indicator circuit. D11 uses the red `KT-0603R`/`LCSC_PART` C2286 selection and the project-local LED footprint; its value was corrected to match the [C2286 catalog entry](https://www.lcsc.com/product-detail/C2286.html). The revised worksheet selects FOJAN `FRC0603F2200TS`, 220 ohm, ±1%, 0.10 W, [C2907014](https://www.lcsc.com/product-detail/C2907014.html), for the placed R11 instances. R11 uses this project's existing `R_0603_1608Metric` footprint, whose pad geometry matches the source footprint. The copied GND instance was redirected to the existing project-local `GND` symbol. No placed symbol or footprint now depends on a legacy external WsprryPi library.
+The `LED` and `R_US` symbols, `LED_0603_1608Metric` footprint, and LED STEP model were copied from `WsprryPi-GPIO-Univ` for the placed D11/R11 indicator circuit. D11 uses the red `KT-0603R`/`LCSC Part #` C2286 selection and the project-local LED footprint; its value was corrected to match the [C2286 catalog entry](https://www.lcsc.com/product-detail/C2286.html). The revised worksheet selects FOJAN `FRC0603F2200TS`, 220 ohm, ±1%, 0.10 W, [C2907014](https://www.lcsc.com/product-detail/C2907014.html), for the placed R11 instances. R11 uses this project's existing `R_0603_1608Metric` footprint, whose pad geometry matches the source footprint. The copied GND instance was redirected to the existing project-local `GND` symbol. No placed symbol or footprint now depends on a legacy external WsprryPi library.
 
 ## 1×3 male header
 
@@ -48,13 +48,13 @@ The `LED` and `R_US` symbols, `LED_0603_1608Metric` footprint, and LED STEP mode
 
 ## Tactile switch
 
-`SKRPANE010` is an Alps Alpine top-actuated SPST-NO momentary tactile switch, identified by `LCSC_PART` C470426 and placed as SW11. The two-pin local symbol and duplicate-numbered footprint encode the switch's internal terminal grouping: logical pin/pad 1 represents manufacturer terminals 1 and 2, logical pin/pad 2 represents manufacturer terminals 3 and 4, and pressing the actuator bridges the two groups. The `ALPS_SKRP_4.2x3.2mm` footprint was drawn from Alps Alpine's published SKRP-series dimensions and recommended land pattern. Its four physical 1.05 × 0.65 mm lands use 4.15 mm horizontal and 2.15 mm vertical center spacing.
+`SKRPANE010` is an Alps Alpine top-actuated SPST-NO momentary tactile switch, identified by `LCSC Part #` C470426 and placed as SW11. The two-pin local symbol and duplicate-numbered footprint encode the switch's internal terminal grouping: logical pin/pad 1 represents manufacturer terminals 1 and 2, logical pin/pad 2 represents manufacturer terminals 3 and 4, and pressing the actuator bridges the two groups. The `ALPS_SKRP_4.2x3.2mm` footprint was drawn from Alps Alpine's published SKRP-series dimensions and recommended land pattern. Its four physical 1.05 × 0.65 mm lands use 4.15 mm horizontal and 2.15 mm vertical center spacing.
 
 The local `ALPS_SKRP_4.2x3.2x2.5mm.step` model was converted from the EasyEDA/JLCPCB C470426 model with `easyeda2kicad` 1.0.1 and renamed without geometric modification. The supplier model is retained under its applicable source terms and is not relicensed by the repository's MIT license. Verify model alignment and physical fit before relying on the 3D view for enclosure or assembly decisions.
 
 ## BOM symbols
 
-The following symbols were drawn or copied for this project from the named manufacturers' pin tables, package documentation, or identified source libraries. The local LTC6432-15 library master and copied PCB U31 instance select `LTC6432AIUF-15#PBF`, `LCSC_PART` C689344. Project supplier-ordering metadata uses `LCSC_PART` exclusively; the legacy `LCSC` property is not used.
+The following symbols were drawn or copied for this project from the named manufacturers' pin tables, package documentation, or identified source libraries. The local LTC6432-15 library master and copied PCB U31 instance select `LTC6432AIUF-15#PBF`, `LCSC Part #` C689344. Eligible assembly components use `LCSC Part #` for supplier-ordering metadata; the legacy `LCSC` property is not used. Excluded components retain their existing field names and values.
 
 | Symbol | Source | Assigned local footprint |
 | --- | --- | --- |
@@ -64,12 +64,13 @@ The following symbols were drawn or copied for this project from the named manuf
 | `TPS22918` | [Texas Instruments TPS22918 data sheet](https://www.ti.com/lit/ds/symlink/tps22918.pdf) | `SOT-23-6` |
 | `24AA32A-I-ST` | [Microchip 24AA32A/24LC32A data sheet](https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/24AA32A-24LC32A-32-Kbit-I2C-Serial-EEPROM-DS20001713.pdf) | `TSSOP-8_4.4x3mm_P0.65mm` |
 | `R_0603` | Generic passive using the compact KiCad US zigzag convention | `R_0603_1608Metric` |
-| `R_0805` | Copy of the local `R_0603` symbol with the 0805 default footprint and filter; R41 is 0 Ω | `R_0805_2012Metric` |
+| `R_0805` | Copy of the local `R_0603` symbol with the 0805 default footprint and filter; retained generic resistor | `R_0805_2012Metric` |
+| `R_0805_0R_Jumper` | Copy of local `R_0805`, with explicit KiCad jumper-pin group `1,2`; R41 selects FOJAN `FRC0805P000 TS` / C2907288 | `R_0805_2012Metric` |
 | `C_0603` | Generic passive | `C_0603_1608Metric` |
 | `C_0805` | Generic passive | `C_0805_2012Metric` |
 | `GND` | KiCad 10.0.6 standard GND power-symbol geometry, copied locally | None |
-| `LED` | KiCad LED symbol copied through `WsprryPi-GPIO-Univ`; D11 is `KT-0603R`/`LCSC_PART` C2286 | `LED_0603_1608Metric` |
-| `R_US` | KiCad US resistor symbol copied through `WsprryPi-GPIO-Univ`; placed R11 selects FOJAN 220 ohm ±1%/`LCSC_PART` C2907014 | `R_0603_1608Metric` |
+| `LED` | KiCad LED symbol copied through `WsprryPi-GPIO-Univ`; D11 is `KT-0603R`/`LCSC Part #` C2286 | `LED_0603_1608Metric` |
+| `R_US` | KiCad US resistor symbol copied through `WsprryPi-GPIO-Univ`; placed R11 selects FOJAN 220 ohm ±1%/`LCSC Part #` C2907014 | `R_0603_1608Metric` |
 | `SKRPANE010` | [Alps Alpine SKRPANE010 product data](https://tech.alpsalpine.com/e/products/detail/SKRPANE010/) and terminal diagram | `ALPS_SKRP_4.2x3.2mm` |
 | `Conn_01x03` | KiCad connector symbol copied through `WsprryPi-GPIO-Univ` | `PinHeader_1x03_P2.54mm_Vertical` |
 | `Conn_01x02` | KiCad 10.0.6 `Connector_Generic:Conn_01x02`, with local metadata and J12's BOM/position-output exclusions | `PinHeader_1x02_P2.54mm_Vertical` |
@@ -84,13 +85,15 @@ For the schematic-only J21 bias-setting jumper, `PinHeader_1x02_P2.54mm_Vertical
 
 On 2026-10-02, `R_0805_2012Metric.kicad_mod` was copied without modification from the KiCad 10.0.6 `Resistor_SMD.pretty` library. R41 uses the new local `R_0805` symbol, value `0Ω`, and `wsprrypi-zero-gpio-bs170:R_0805_2012Metric`. Its two passive pins and schematic connections are preserved. The standard installed KiCad 0805 resistor STEP-model reference is retained; supplier fields are unselected. The KiCad library license below covers this imported footprint and the derived symbol.
 
+On 2026-10-05, R41 moved to the dedicated local `R_0805_0R_Jumper` symbol. It copies the existing resistor drawing and passive pins without geometry or numbering changes, retains the same footprint, and adds the explicit jumper-pin group `1,2` described in [KiCad's jumper-pin documentation](https://docs.kicad.org/10.0/en/eeschema/eeschema.html#jumper_pins). Its default fields match R41's selected 0 Ω FOJAN part. The schematic cache carries the same definition, and the PCB R41 instance carries the matching jumper-pad group. Both sides are on `SW_5V`; the original generic `R_0805` symbol and footprint master are unchanged. The existing KiCad library license and exception apply to this derived symbol.
+
 The SOT-23-6, TSSOP-8, 0603 resistor, 0603 capacitor, 0805 capacitor, and 1206 capacitor footprints are unmodified copies from the KiCad 10.0.6 standard footprint installation. Their standard `${KICAD10_3DMODEL_DIR}` references are retained. The 2.54 mm 1×3 male-header footprint is a KiCad library copy whose model reference was redirected to the project-local STEP file and whose BOM and position-output exclusions implement this project's library policy.
 
 The Analog Devices UF24 footprint began from KiCad's `WQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm_ThermalVias` geometry and was renamed and documented for the LTC6432-15. The 4 × 4 mm body, 0.5 mm pitch, and 2.45 × 2.45 mm exposed-pad land pattern agree with Analog Devices drawing 05-08-1697 Rev B. Its thermal-via pattern is an implementation candidate and must be reviewed against the selected fabricator's via, solder-mask, and paste-process capabilities.
 
 The `Coilcraft_YA9308` footprint was drawn from Coilcraft Document 1581-2. It uses 0.76 × 1.14 mm lands, 1.52 mm pad pitch within each row, and 3.05 mm row-center spacing. No YA9308 3D model has been added.
 
-The baseline `WBC2-1TLC` symbol and `Coilcraft_WBC2-1TLC` footprint were drawn from Coilcraft WBC Document 424-1/424-2. Pins 4 and 6 are the primary; pin 5 is unconnected. Pins 1 and 3 are the secondary ends; pin 2 is the center tap. The dedicated footprint uses Coilcraft's recommended 0.76 × 1.14 mm lands, 1.52 mm pad pitch within each row, and 3.05 mm row-center spacing. Its geometry matches the existing YA9308 footprint, but its separate name and part metadata keep the two devices distinct. The library symbol records `LCSC_PART` C19191658. No WBC 3D model has been added. T21 and T41 remain on the copied PCB but are removed from the schematic. RF performance and assembly suitability remain unqualified; the two-transformer implementation has since been rejected on cost grounds.
+The baseline `WBC2-1TLC` symbol and `Coilcraft_WBC2-1TLC` footprint were drawn from Coilcraft WBC Document 424-1/424-2. Pins 4 and 6 are the primary; pin 5 is unconnected. Pins 1 and 3 are the secondary ends; pin 2 is the center tap. The dedicated footprint uses Coilcraft's recommended 0.76 × 1.14 mm lands, 1.52 mm pad pitch within each row, and 3.05 mm row-center spacing. Its geometry matches the existing YA9308 footprint, but its separate name and part metadata keep the two devices distinct. The library symbol records `LCSC Part #` C19191658. No WBC 3D model has been added. T21 and T41 remain on the copied PCB but are removed from the schematic. RF performance and assembly suitability remain unqualified; the two-transformer implementation has since been rejected on cost grounds.
 
 The `ALPS_SKRP_4.2x3.2mm` footprint was drawn from the Alps Alpine SKRP-series recommended land pattern. The manufacturer drawing specifies a 5.2 mm horizontal outside span, 3.1 mm horizontal inside gap, 2.8 mm vertical outside span, and 1.5 mm vertical inside gap; these resolve to four 1.05 × 0.65 mm lands centered at X = ±2.075 mm and Y = ±1.075 mm. The courtyard includes the pads, 4.2 × 3.2 mm body, and 0.25 mm nominal clearance.
 

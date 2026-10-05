@@ -23,7 +23,7 @@ On 2026-10-01, the user selected **25 turns on a hand-wound FT37-43 core** for L
 
 L41 uses the local `L_Toroid_FT37-43_Vertical_P5.08mm` footprint, adapted from KiCad's generic 10 × 5 mm vertical toroid pattern. On 2026-10-01, the user selected upright mounting. The hand-formed leads use 5.08 mm pad-center spacing, with 2.4 mm pads and 1.2 mm drills; pad 1 connects to `SW_5V` and pad 2 to `PA_DRAIN`. The fabrication outline depicts the bare core's 9.525 × 3.175 mm board projection; `Dwgs.User` marks an 11 × 5 mm maximum wound-body projection. The courtyard reserves 11.5 × 7.98 mm including the lead pads. Reserve up to 11 mm wound-body height plus the mounting gap. Start with approximately 0.32 mm (AWG 28) enamelled wire, form the leads to the footprint pitch, and strip/tin them before hand soldering. Wound fit, stability, height clearance, and RF behavior require physical verification.
 
-RV31 retains 5 kΩ and selects Bourns `TC33X-2-502E`, `LCSC_PART` C719177, with the local `Potentiometer_Bourns_TC33X_Vertical` footprint. Pin/pad 2 is the wiper; pins 1/3 are the CCW/CW resistance ends. Neither new footprint has an attached 3D model; see [library sources and model gaps](LIBRARY-SOURCES.md#selected-choke-and-trimmer-footprints).
+RV31 retains 5 kΩ and selects Bourns `TC33X-2-502E`, `LCSC Part #` C719177, with the local `Potentiometer_Bourns_TC33X_Vertical` footprint. Pin/pad 2 is the wiper; pins 1/3 are the CCW/CW resistance ends. Neither new footprint has an attached 3D model; see [library sources and model gaps](LIBRARY-SOURCES.md#selected-choke-and-trimmer-footprints).
 
 ## Evidence and limits
 

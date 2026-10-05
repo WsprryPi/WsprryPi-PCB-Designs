@@ -9,8 +9,8 @@
 	(paper "A")
 	(title_block
 		(title "WsprryPi LPF")
-		(date "2026-03-25")
-		(rev "1.0.2")
+		(date "2026-10-05")
+		(rev "1.0.0")
 	)
 	(layers
 		(0 "F.Cu" signal)
@@ -2858,7 +2858,7 @@
 		(layer "Edge.Cuts")
 		(uuid "4d5ec182-ef79-4711-a2df-8896fae144e0")
 	)
-	(gr_text "WsprryPi\nLPF v1.0.1"
+	(gr_text "WsprryPi\nLPF v1.0.0"
 		(at 136.98 99.01 0)
 		(layer "B.SilkS")
 		(uuid "46b8d890-5dc0-452b-9eb9-efc7d15ff07b")

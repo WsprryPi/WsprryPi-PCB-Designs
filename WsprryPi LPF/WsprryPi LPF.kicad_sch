@@ -6,8 +6,8 @@
 	(paper "A")
 	(title_block
 		(title "WsprryPi LPF")
-		(date "2026-03-26")
-		(rev "1.0.2")
+		(date "2026-10-05")
+		(rev "1.0.0")
 	)
 	(lib_symbols
 		(symbol "WsprryPi LPF:C"

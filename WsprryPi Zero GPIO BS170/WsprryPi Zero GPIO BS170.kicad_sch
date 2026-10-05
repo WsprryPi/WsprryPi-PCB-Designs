@@ -453,7 +453,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "C_0603_1608Metric"
+			(property "ki_fp_filters" "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2146,6 +2146,185 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "wsprrypi-zero-gpio-bs170:R_0805_0R_Jumper"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(jumper_pin_groups
+				("1" "2")
+			)
+			(property "Reference" "R"
+				(at 0 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "0Ω"
+				(at 0 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0805_2012Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C2907288.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "0Ω jumper, 2A rated, <50mΩ, 0.125W at 70°C, 0805"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "FOJAN"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "FRC0805P000 TS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part #" "C2907288"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "resistor US zigzag 0805 0ohm jumper"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_0805_2012Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0805_0R_Jumper_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.286 0) (xy -1.905 1.016) (xy -1.524 0) (xy -1.143 -1.016) (xy -0.762 0) (xy -0.381 1.016)
+						(xy 0 0) (xy 0.381 -1.016) (xy 0.762 0) (xy 1.143 1.016) (xy 1.524 0) (xy 1.905 -1.016) (xy 2.286 0)
+						(xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_0805_0R_Jumper_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "wsprrypi-zero-gpio-bs170:R_Potentiometer_US"
 			(pin_names
 				(offset 1.016)
@@ -2264,7 +2443,7 @@
 					)
 				)
 			)
-			(property "LCSC_PART" "C719177"
+			(property "LCSC Part #" "C719177"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3544,7 +3723,7 @@
 					)
 				)
 			)
-			(property "LCSC_PART" "C470426"
+			(property "LCSC Part #" "C470426"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4075,7 +4254,7 @@
 					)
 				)
 			)
-			(property "LCSC_PART" "C131941"
+			(property "LCSC Part #" "C131941"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5683,7 +5862,7 @@
 		)
 		(uuid "5c82288c-edfe-4c1a-bada-9e132b868d1d")
 	)
-	(label "BIAS"
+	(label "SW_5V"
 		(at 156.21 31.75 0)
 		(effects
 			(font
@@ -5883,7 +6062,7 @@
 		)
 		(uuid "eca2b25b-46bf-59bf-9aa7-b961b6997e0f")
 	)
-	(label "BIAS"
+	(label "SW_5V"
 		(at 101.6 50.8 0)
 		(effects
 			(font
@@ -6066,7 +6245,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C235731"
+		(property "LCSC Part #" "C235731"
 			(at 166.37 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -6255,7 +6434,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C23345"
+		(property "LCSC Part #" "C23345"
 			(at 115.57 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -6447,7 +6626,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C235731"
+		(property "LCSC Part #" "C235731"
 			(at 120.65 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6476,6 +6655,7 @@
 	(symbol
 		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
 		(at 106.68 26.67 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6483,18 +6663,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "27e90ab8-27c1-461a-9f25-f53f429ac963")
+		(uuid "2f156755-426f-4e1d-a21d-9695caa0e102")
 		(property "Reference" "C31"
-			(at 106.68 21.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
 			(at 106.68 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6504,7 +6674,17 @@
 				)
 			)
 		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0603_1608Metric"
+		(property "Value" "100nF"
+			(at 106.68 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_1206_3216Metric"
 			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -6515,7 +6695,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C235731.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C170182.pdf?spm=wm.sxq.inf.ggs&lcsc_vid=RgUIVQJUTldWUAAER1JWUgUFQAdWUVZWEgRWUAJSRVYxVlNfRlNeXlxSRVVZVztW"
 			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -6526,7 +6706,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP CER 100nF ±10% 50V X7R 0603"
+		(property "Description" "CAP CER 100nF 50V NP0 1206"
 			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -6537,7 +6717,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "PSA"
+		(property "Manufacturer" "Walsin"
 			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -6548,7 +6728,7 @@
 				)
 			)
 		)
-		(property "MPN" "FN18X104K500PBG"
+		(property "MPN" "1206N104J500CT"
 			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -6559,7 +6739,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C235731"
+		(property "LCSC Part #" "C170182"
 			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -6571,10 +6751,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "acfd2ce2-0a96-473e-9e3c-dfc3c08a8ef3")
+			(uuid "96f8349f-384f-4cb8-9b88-ed4c10148da3")
 		)
 		(pin "2"
-			(uuid "7f595289-927b-4278-a1f1-1de2545572d2")
+			(uuid "4cc4d76a-7820-4f31-95bc-b0b6fc439179")
 		)
 		(instances
 			(project "WsprryPi Zero GPIO BS170"
@@ -6594,7 +6774,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "36036484-cb90-48e2-9d44-85077a8fde80")
 		(property "Reference" "J51"
@@ -7159,7 +7339,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C25803"
+		(property "LCSC Part #" "C25803"
 			(at 120.65 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -7250,7 +7430,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C2286"
+		(property "LCSC Part #" "C2286"
 			(at 76.2 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -7528,7 +7708,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C726584"
+		(property "LCSC Part #" "C726584"
 			(at 148.59 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -7662,7 +7842,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C726584"
+		(property "LCSC Part #" "C726584"
 			(at 166.37 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -7848,7 +8028,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C20070397"
+		(property "LCSC Part #" "C20070397"
 			(at 102.87 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -8059,7 +8239,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C23162"
+		(property "LCSC Part #" "C23162"
 			(at 125.73 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -8614,7 +8794,7 @@
 		)
 	)
 	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:R_0805")
+		(lib_id "wsprrypi-zero-gpio-bs170:R_0805_0R_Jumper")
 		(at 156.21 21.59 0)
 		(unit 1)
 		(body_style 1)
@@ -8699,7 +8879,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C2907288"
+		(property "LCSC Part #" "C2907288"
 			(at 156.21 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -8789,7 +8969,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C1588"
+		(property "LCSC Part #" "C1588"
 			(at 129.54 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -8923,7 +9103,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C131941"
+		(property "LCSC Part #" "C131941"
 			(at 116.84 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -9025,7 +9205,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C2907014"
+		(property "LCSC Part #" "C2907014"
 			(at 67.31 96.52 90)
 			(hide yes)
 			(show_name no)
@@ -9194,7 +9374,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C719177"
+		(property "LCSC Part #" "C719177"
 			(at 110.49 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -9596,7 +9776,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C25803"
+		(property "LCSC Part #" "C25803"
 			(at 102.87 92.71 90)
 			(hide yes)
 			(show_name no)
@@ -9639,119 +9819,6 @@
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
-		(at 181.61 80.01 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d61d90f6-4c7d-43ae-ad58-aeed28402433")
-		(property "Reference" "C51"
-			(at 181.61 85.09 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 181.61 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_0603_1608Metric"
-			(at 181.61 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C235731.pdf"
-			(at 181.61 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "CAP CER 100nF ±10% 50V X7R 0603"
-			(at 181.61 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "PSA"
-			(at 181.61 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "FN18X104K500PBG"
-			(at 181.61 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC_PART" "C235731"
-			(at 181.61 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9457a731-f077-4421-9647-f7a24200020e")
-		)
-		(pin "2"
-			(uuid "b23ee000-dac3-4a38-91d5-8b58c43ef6af")
-		)
-		(instances
-			(project "WsprryPi Zero GPIO BS170"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C51")
 					(unit 1)
 				)
 			)
@@ -9906,7 +9973,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C2907002"
+		(property "LCSC Part #" "C2907002"
 			(at 138.43 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -10026,6 +10093,119 @@
 			(project "WsprryPi Zero GPIO BS170"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "wsprrypi-zero-gpio-bs170:C_0603")
+		(at 181.61 80.01 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f253b363-2d08-42a3-bad7-ae1f786face7")
+		(property "Reference" "C51"
+			(at 181.61 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 181.61 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:C_1206_3216Metric"
+			(at 181.61 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C170182.pdf?spm=wm.sxq.inf.ggs&lcsc_vid=RgUIVQJUTldWUAAER1JWUgUFQAdWUVZWEgRWUAJSRVYxVlNfRlNeXlxSRVVZVztW"
+			(at 181.61 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 100nF 50V NP0 1206"
+			(at 181.61 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Walsin"
+			(at 181.61 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "1206N104J500CT"
+			(at 181.61 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C170182"
+			(at 181.61 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "68bcc851-ecb4-4380-afb2-b374987b5bbe")
+		)
+		(pin "2"
+			(uuid "301c21bb-844c-4eee-b09b-5dbde2e8b208")
+		)
+		(instances
+			(project "WsprryPi Zero GPIO BS170"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "C51")
 					(unit 1)
 				)
 			)
@@ -10195,7 +10375,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C470426"
+		(property "LCSC Part #" "C470426"
 			(at 22.86 97.79 0)
 			(hide yes)
 			(show_name no)

@@ -361,7 +361,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "C_0603_1608Metric"
+		(property "ki_fp_filters" "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1594,7 +1594,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C689344"
+		(property "LCSC Part #" "C689344"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3362,7 +3362,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C470426"
+		(property "LCSC Part #" "C470426"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3893,7 +3893,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C131941"
+		(property "LCSC Part #" "C131941"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4368,7 +4368,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C19191658"
+		(property "LCSC Part #" "C19191658"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5021,7 +5021,7 @@
 				)
 			)
 		)
-		(property "LCSC_PART" "C719177"
+		(property "LCSC Part #" "C719177"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5513,6 +5513,185 @@
 			)
 		)
 		(symbol "R_0805_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "R_0805_0R_Jumper"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(jumper_pin_groups
+			("1" "2")
+		)
+		(property "Reference" "R"
+			(at 0 2.032 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0Ω"
+			(at 0 -2.032 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypi-zero-gpio-bs170:R_0805_2012Metric"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2907288.pdf"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0Ω jumper, 2A rated, <50mΩ, 0.125W at 70°C, 0805"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "FOJAN"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "FRC0805P000 TS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C2907288"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "resistor US zigzag 0805 0ohm jumper"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_0805_2012Metric"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_0805_0R_Jumper_0_1"
+			(polyline
+				(pts
+					(xy -2.54 0) (xy -2.286 0) (xy -1.905 1.016) (xy -1.524 0) (xy -1.143 -1.016) (xy -0.762 0) (xy -0.381 1.016)
+					(xy 0 0) (xy 0.381 -1.016) (xy 0.762 0) (xy 1.143 1.016) (xy 1.524 0) (xy 1.905 -1.016) (xy 2.286 0)
+					(xy 2.54 0)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_0805_0R_Jumper_1_1"
 			(pin passive line
 				(at -3.81 0 0)
 				(length 1.27)
