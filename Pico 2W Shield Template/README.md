@@ -25,23 +25,24 @@ Each new project has independent copies of the design files and libraries. Templ
 
 U1 is the combined 40-pad header footprint. It and the nine board-level outline segments/arcs are locked. Three `Edge.Cuts` segments inside U1 form the antenna notch and join the board perimeter. Keep these endpoints joined when resizing the shield; moving U1 alone breaks the outline.
 
-## Purchasing BOM
+## Header previews and manufacturing outputs
 
-U1 represents the electrical Pico interface and is excluded from the purchasing BOM and placement output. J1 and J2 are pinless, schematic-only purchasing symbols for two female 1×20, 2.54 mm socket headers. They create no additional PCB footprints.
+U1 represents the electrical Pico interface and is excluded from the purchasing BOM and placement output. Its footprint carries two local female 1×20, 2.54 mm socket models aligned with the pad rows, so both headers appear in KiCad's 3D viewer and rendered previews. The models do not add components to manufacturing outputs.
 
-The schematic's **Shield purchasing BOM** preset exports one grouped row: `J1,J2`, quantity `2`, value `Socket_1x20_P2.54mm`. A PCB-only export omits these socket procurement items. Enable U1's BOM inclusion if the assembly order includes the Pico module.
+J1 and J2 are pinless, schematic-only socket descriptions with optional purchasing fields. They are excluded from the BOM, board, and placement output by default and create no additional PCB footprints. The schematic's **Shield purchasing BOM** preset respects these exclusions; the unwired template therefore exports no component rows.
 
-Manufacturer and MPN fields are blank. Select compatible lead dimensions, body width, and mating height, then enter the selected part on both J1 and J2. For factory assembly, set BOM and placement exclusions to match the parts the factory will fit.
+The socket models are generic visual aids, not a selected manufacturer's part or a fit qualification. Manufacturer and MPN fields are blank. Select compatible lead dimensions, body width, and mating height before assembly. If a future shield requires socket procurement, explicitly enable J1/J2 BOM inclusion and enter the selected part on both symbols. Configure manufacturing outputs to match the parts the factory will fit.
 
 ## Local libraries and files
 
-Both library tables use the `pico-wattmeter` nickname and `${KIPRJMOD}` paths. All required libraries are inside this directory. The header footprint has no attached 3D model.
+Both library tables use the `pico-wattmeter` nickname and `${KIPRJMOD}` paths. All required libraries and socket 3D models are inside this directory.
 
 - [Project settings](Pico%202W%20Shield%20Template.kicad_pro): rules, defaults, and BOM preset.
-- [Schematic](Pico%202W%20Shield%20Template.kicad_sch): U1 interface and J1/J2 procurement symbols.
+- [Schematic](Pico%202W%20Shield%20Template.kicad_sch): U1 interface and excluded J1/J2 socket descriptions.
 - [PCB](Pico%202W%20Shield%20Template.kicad_pcb): header interface, outline, and antenna keepout.
 - [Symbol library](pico-wattmeter.kicad_sym): Pico interface and socket definitions.
 - [Header footprint](pico-shield.pretty/Raspberry_Pi_Pico_2W_Header.kicad_mod).
+- [Socket model and third-party terms](pico-shield.3dshapes/README.md).
 - [Symbol table](sym-lib-table) and [footprint table](fp-lib-table): local library registration.
 - [Template description](meta/info.html) and [preview](meta/board.png): template selector assets.
 - [License](LICENSE.md): included with new projects.
@@ -53,6 +54,8 @@ Git ignores `jlcpcb/`, generated exports, fabrication packages, backups, caches,
 ## Validation and limits
 
 The unwired interface produces expected ERC findings: 40 unconnected pins, 10 undriven power inputs, and two undriven signal inputs. Connect required pins and mark only unused pins with no-connect flags when developing a circuit. ERC ignores `footprint_filter`, `four_way_junction`, `simulation_model_issue`, and `single_global_label`.
+
+The header-preview update was checked with KiCad 10.0.6: DRC reported zero violations and zero unconnected items; ERC retained the same 52 findings above. The **Shield purchasing BOM** and CSV placement exports contained no component rows. The 3D render was visually checked for both socket rows and is used as the template-selector preview. PCB and footprint geometry, connectivity, UUIDs, and exclusion attributes were unchanged by the model additions.
 
 Run ERC and DRC after developing the circuit or changing the mechanical interface. This template has no verified physical assembly, socket fit, fabrication, or RF performance.
 

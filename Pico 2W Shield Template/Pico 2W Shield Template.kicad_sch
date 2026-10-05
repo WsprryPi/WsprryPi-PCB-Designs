@@ -809,7 +809,7 @@
 		)
 		(symbol "pico-wattmeter:Socket_1x20_P2.54mm_BOM"
 			(exclude_from_sim yes)
-			(in_bom yes)
+			(in_bom no)
 			(on_board no)
 			(in_pos_files no)
 			(duplicate_pin_numbers_are_jumpers no)
@@ -855,7 +855,7 @@
 					)
 				)
 			)
-			(property "Description" "Female 1x20 socket header, 2.54 mm pitch; BOM-only component for the combined Pico interface footprint"
+			(property "Description" "Female 1x20 socket header, 2.54 mm pitch; optional purchasing fields for the combined Pico interface footprint"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -912,7 +912,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Starter interface: pins are intentionally unwired.\nWire required pins; mark only unused pins with no-connect flags.\nJ1 + J2 purchase the two female sockets represented by U1."
+	(text "Starter interface: pins are intentionally unwired.\nWire required pins; mark only unused pins with no-connect flags.\nJ1 + J2 describe the sockets; excluded from BOM and placement."
 		(exclude_from_sim no)
 		(at 76.2 144.78 0)
 		(effects
@@ -938,7 +938,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
-		(in_bom yes)
+		(in_bom no)
 		(on_board no)
 		(in_pos_files no)
 		(dnp no)
@@ -985,7 +985,7 @@
 				)
 			)
 		)
-		(property "Description" "Female 1x20 socket header, 2.54 mm pitch; BOM-only component for the combined Pico interface footprint"
+		(property "Description" "Female 1x20 socket header, 2.54 mm pitch; optional purchasing fields for the combined Pico interface footprint"
 			(at 55.88 127 0)
 			(hide yes)
 			(show_name no)
@@ -1227,7 +1227,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
-		(in_bom yes)
+		(in_bom no)
 		(on_board no)
 		(in_pos_files no)
 		(dnp no)
@@ -1274,7 +1274,7 @@
 				)
 			)
 		)
-		(property "Description" "Female 1x20 socket header, 2.54 mm pitch; BOM-only component for the combined Pico interface footprint"
+		(property "Description" "Female 1x20 socket header, 2.54 mm pitch; optional purchasing fields for the combined Pico interface footprint"
 			(at 101.6 127 0)
 			(hide yes)
 			(show_name no)

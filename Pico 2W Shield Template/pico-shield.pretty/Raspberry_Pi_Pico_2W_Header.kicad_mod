@@ -556,4 +556,26 @@
 		)
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/pico-shield.3dshapes/PinSocket_1x20_P2.54mm_Vertical.step"
+		(offset
+			(xyz -9.78 24.14 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/pico-shield.3dshapes/PinSocket_1x20_P2.54mm_Vertical.step"
+		(offset
+			(xyz 8 -24.12 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 180)
+		)
+	)
 )

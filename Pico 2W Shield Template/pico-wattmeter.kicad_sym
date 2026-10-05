@@ -806,7 +806,7 @@
 		(embedded_fonts no)
 	)
 (symbol "Socket_1x20_P2.54mm_BOM"
-  (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no)
+  (exclude_from_sim yes) (in_bom no) (on_board no) (in_pos_files no)
   (duplicate_pin_numbers_are_jumpers no)
   (property "Reference" "J"
     (at 0 5.08 0)
@@ -836,7 +836,7 @@
     (do_not_autoplace no)
     (effects (font (size 1.27 1.27)))
   )
-  (property "Description" "Female 1x20 socket header, 2.54 mm pitch; BOM-only component for the combined Pico interface footprint"
+  (property "Description" "Female 1x20 socket header, 2.54 mm pitch; optional purchasing fields for the combined Pico interface footprint"
     (at 0 0 0)
     (hide yes)
     (show_name no)
