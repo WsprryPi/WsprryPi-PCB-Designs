@@ -1,21 +1,21 @@
 # WsprryPi Zero GPIO BS170
 
-This is a separate KiCad project in the same Git repository. It was copied from `WsprryPi Zero GPIO` as a starting point, with its own project files, project-local symbol and footprint libraries, and `${KIPRJMOD}` model paths. The saved schematic and PCB contain the single-BS170 RF stage, switched 5 V supply, adjustable gate bias, and LPF interface. The block-renumbering change preserves their existing wiring and layout.
+This is an independent KiCad project with its own project files, project-local symbol and footprint libraries, and `${KIPRJMOD}` model paths. The saved schematic and PCB contain the single-BS170 RF stage, switched 5 V supply, adjustable gate bias, and LPF interface.
 
 A KiCad 10 project initialized from the `RPi Zero HAT Template` for WsprryPi GPIO development. It provides the Raspberry Pi Zero-size uHAT geometry, a complete 40-pin GPIO interface, a selectable underside socket model, a socket purchasing item, and independent local libraries.
 
-The schematic retains the load-switch circuit, GPIO selection header, LPF interface, and edge-launch SMA output. The RF path uses the 30-, 40-, and 50-Series sections, supplied by the 20-Series switched 5 V circuit. The design intentionally omits an identification EEPROM and leaves ID_SD and ID_SC unused. The copied two-layer board has not been fabricated or physically qualified.
+The schematic includes the load-switch circuit, GPIO selection header, LPF interface, and edge-launch SMA output. The RF path uses the 30-, 40-, and 50-Series sections, supplied by the 20-Series switched 5 V circuit. The design intentionally omits an identification EEPROM and leaves ID_SD and ID_SC unused. The two-layer board has not been fabricated or physically qualified.
 
-**Cost redesign in progress:** the two-transformer LTC6432-15 implementation is too expensive and is no longer the forward design choice. See the [single-BS170 redesign proposal](BS170-REDESIGN-PROPOSAL.md) for the lower-cost candidate and its band-dependent power limits. The hand-wound FT37-43 choke is selected, and all physical schematic parts now have local footprints. Completion of RF wiring, PCB implementation, sourcing, and physical/RF qualification remain open.
+The single-BS170 circuit replaces the cost-rejected two-transformer LTC6432-15 implementation. See the [BS170 design rationale and qualification plan](BS170-REDESIGN-PROPOSAL.md) for the selected circuit and its band-dependent power limits. The hand-wound FT37-43 choke is selected, and all board components have project-local footprints. Physical, electrical, thermal, and RF qualification remain open for the assembled board.
 
-The copied 5 V LTC6432-15 circuit, its original RF estimate, and first-pass BOM are recorded in [BASELINE-AMPLIFIER-DESIGN.md](BASELINE-AMPLIFIER-DESIGN.md). Those details document the copied baseline and do not define the proposed BS170 circuit.
+The historical 5 V LTC6432-15 circuit, its original RF estimate, and first-pass BOM are recorded in [BASELINE-AMPLIFIER-DESIGN.md](BASELINE-AMPLIFIER-DESIGN.md). Those archived details do not define the current BS170 circuit or ordering BOM.
 
-> **Order status: Not ready for order.** The BS170 schematic is partially wired, and the saved PCB remains the cost-rejected baseline. The new circuit, physical parts, layout, and electrical/RF performance have not been qualified. Do not submit the saved board for fabrication or assembly as the lower-cost design.
+> **Order status: Ready for order, confirmed by the project owner on 2026-10-05.** The headers and Q41 BS170 will be fitted by hand after manufacture. L41's hand-wound choke and J51's hand-soldered SMA connector also remain separate from supplier assembly. See [fabrication and assembly notes](FABRICATION-NOTES.md) for the manufacturing BOM and hand-fitting list. Order readiness does not establish measured electrical, thermal, or RF performance.
 
-## Develop this HAT project
+## Order and maintain this HAT project
 
 1. Open `WsprryPi Zero GPIO BS170.kicad_pro` in KiCad 10 and review the saved schematic and routed board together.
-2. Wire the placed parts using the [BS170 redesign proposal](BS170-REDESIGN-PROPOSAL.md) as the circuit direction. Resolve its circuit, power, sourcing, and compliance decisions before preparing an order package.
+2. Generate the order package from the saved BS170 sources and follow the [fabrication and assembly notes](FABRICATION-NOTES.md). Keep the manually fitted parts out of supplier assembly exports and purchase them separately.
 3. After any design change, update the PCB from the schematic as needed, refill copper zones, and rerun ERC and DRC before reviewing the resulting diff.
 
 This project has independent copies of the design files, symbol library, footprint library, and STEP model. Changes here do not update `RPi Zero HAT Template`, and later template changes do not update this project.
@@ -34,13 +34,13 @@ The schematic is arranged as five boxed functional sections. Circuit parts withi
 
 J51 is the hand-soldered edge-launch output connector, and U11 now carries the underside socket 3D model directly; the optional H1 library footprint is retained. J12 permits GPIO4 or GPIO20 to be jumpered onto `GPIO_RF`. GPIO23 is the active-high `AMP_EN` control, and SW11 grounds GPIO26 for software to detect. GPIO drive-strength selection remains coarse and experimental rather than a calibrated power control.
 
-J21 is a normally open, two-pin 2.54 mm male header for setting the BS170 gate bias: pin 1 connects to `PI_5V` and pin 2 to `SW_5V`. Fitting a shunt bypasses U21 and powers the bias network and drain feed regardless of GPIO23. Stop RF drive and start RV31 at minimum gate voltage before adjustment; remove the shunt afterward. J21 uses the same header style and BOM/position-output exclusions as J12. Its symbol, footprint, and STEP model are project-local. This addition is schematic-only; J21 still needs to be added and routed on the PCB.
+J21 is a normally open, two-pin 2.54 mm male header for setting the BS170 gate bias: pin 1 connects to `PI_5V` and pin 2 to `SW_5V`. Fitting a shunt bypasses U21 and powers the bias network and drain feed regardless of GPIO23. Stop RF drive and start RV31 at minimum gate voltage before adjustment; remove the shunt afterward. J21 uses the same header style and BOM/position-output exclusions as J12. Its symbol, footprint, and STEP model are project-local, and it is placed on the saved PCB for hand fitting after manufacture.
 
 R41 uses the dedicated local `R_0805_0R_Jumper` symbol with an explicit KiCad jumper-pin group `1,2`. Both ends, RV31 pin 1, C41/C42 supply pads and L41 pin 1 now belong to `SW_5V`; the former `BIAS` supply-net labels were renamed. The corresponding PCB jumper-pad group represents the fitted 0 Ω part's internal connection. R41 retains its 0805 footprint and FOJAN `FRC0805P000 TS` / C2907288 selection. The generic resistor symbols remain unchanged. A shared net allows copper to bypass the jumper, so it does not enforce R41 as a removable isolation boundary.
 
-### Placed RF parts awaiting wiring
+### Implemented RF parts
 
-| Reference | Starting value | Intended function |
+| Reference | Selected value | Function |
 | --- | --- | --- |
 | C31 | 100 nF | GPIO DC block |
 | R31 | 22 Ω | Gate-drive damping |
@@ -54,7 +54,7 @@ R41 uses the dedicated local `R_0805_0R_Jumper` symbol with an explicit KiCad ju
 | C42 | 1 µF | Local switched-supply decoupling |
 | C51 | 100 nF | Drain DC block before `TX_OUT` |
 
-These are starting values for circuit review and prototyping, not qualified full-range RF values. RV31 and L41 now have project-local footprints. All 26 physical schematic parts have assignments that resolve locally; J11 remains a schematic-only purchasing item, and power symbols intentionally have no footprints. The existing 10-, 20-, and LPF-interface parts do not need to be placed again.
+These are the saved circuit values; full-range RF performance remains unqualified. RV31 and L41 have project-local footprints. All 26 board components have assignments that resolve locally; J11 remains a schematic-only purchasing item, and power symbols intentionally have no footprints.
 
 ### Selected hand-wound choke and trimmer
 
@@ -120,9 +120,13 @@ All footprint suffixes above use the project-local `wsprrypi-zero-gpio-bs170:` n
 
 The [Bourns TC33 drawing](https://www.bourns.com/docs/Product-Datasheets/TC33.pdf), [Alps SKRPANE010 data](https://tech.alpsalpine.com/e/products/detail/SKRPANE010/), and [TI TPS22918 datasheet](https://www.ti.com/lit/ds/symlink/tps22918.pdf) support the retained package and pin assignments. C31/C51 coupling loss and frequency response, bypass capacitors' effective capacitance under voltage and temperature, R31 dissipation, trimmer adjustment, drain current, and RF performance still require measurements on the assembled prototype. These selections do not establish full-band RF or production qualification. Stock and assembly availability require checking when an order is prepared.
 
-### Q41 hand assembly
+### Hand assembly after manufacture
 
-Q41 will be fitted by hand after manufacturing. Its existing **Exclude from BOM** and **Exclude from position files** settings are retained in both the schematic and PCB. **Exclude from board** and **DNP** remain unchecked, so the TO-92 footprint, drain/gate/source pins, and electrical connections remain present. The hand-assembly decision preserves its onsemi `BS170` metadata and empty `LCSC_PART`; procure the straight-lead part separately and verify 1 = drain, 2 = gate, 3 = source before fitting it. All other previously excluded parts are untouched.
+The project owner confirmed on 2026-10-05 that **all headers and the BS170 are hand work after manufacture**. Purchase the 2×20 Raspberry Pi socket (J11 purchasing item / U11 board interface), J12 GPIO-selection header, J21 bias-setting header, and the two J52 LPF sockets separately. Q41, L41, and J51 are also separate hand-fitting items. The [fabrication notes](FABRICATION-NOTES.md#hand-fitting-list) list quantities and roles; none of these items belongs in the supplier assembly BOM or placement file.
+
+### Q41 BS170
+
+Q41 will be fitted by hand after manufacturing. Its existing **Exclude from BOM** and **Exclude from position files** settings are retained in both the schematic and PCB. **Exclude from board** and **DNP** remain unchecked, so the TO-92 footprint, drain/gate/source pins, and electrical connections remain present. Procure the straight-lead onsemi `BS170` separately and verify 1 = drain, 2 = gate, 3 = source before fitting it. Its `LCSC_PART` field remains empty.
 
 ### L41 hand assembly
 
@@ -136,11 +140,11 @@ L41 stays **included on the board and in the netlist**, while its schematic inst
 
 U11 represents the electrical and mechanical interface and is excluded from the purchasing BOM and placement output. J11 is a pinless, schematic-only purchasing symbol for one female 2×20, 2.54 mm socket header; it is excluded from the PCB so schematic-parity DRC does not require a footprint.
 
-The schematic's **Amplifier purchasing BOM** preset is separate from the Fabrication Toolkit assembly export and still omits the supplier-number column. Explicitly include `LCSC Part #` when using that preset for a supplier-ordering CSV. U11 remains excluded as a non-purchasing interface representation. The schematic BOM can include purchasing-only J11 with unselected sourcing metadata because mating height and supported Raspberry Pi models must be chosen for the finished design; the PCB-based Fabrication Toolkit BOM omits it. J51 is a required hand-soldered SMA connector excluded from the BOM; its saved PCB position-output flag is addressed below. J12 is excluded from BOM and placement output by design, while remaining placed for routing and 3D visualization.
+The schematic's **Amplifier purchasing BOM** preset is separate from the Fabrication Toolkit assembly export and still omits the supplier-number column. Explicitly include `LCSC Part #` when using that preset for a supplier-ordering CSV. U11 remains excluded as a non-purchasing interface representation. The schematic BOM can include purchasing-only J11 with unselected sourcing metadata because mating height and supported Raspberry Pi models must be chosen for the finished design; the PCB-based Fabrication Toolkit BOM omits it. Keep J11 on the separate hand-purchasing list. J51 is a required hand-soldered SMA connector excluded from both BOM and position output on the saved PCB. J12 and J21 are also excluded from BOM and placement output while remaining placed for routing and 3D visualization.
 
 For JLCPCB, use the unmodified [Fabrication Toolkit](https://github.com/bennymeg/Fabrication-Toolkit#attributes), which recognizes the exact field name `LCSC Part #`. Store the selected LCSC C-number in that field; retain the manufacturer part number in `MPN`. After changing schematic sourcing fields, update the PCB from the schematic and save it before running the toolkit from the PCB editor. Check that `production/bom.csv` contains C-numbers in its `LCSC Part #` column. This follows [JLCPCB's KiCad export guide](https://jlcpcb.com/help/article/how-to-generate-the-bom-and-centroid-file-from-kicad). The 19 assembly components now use this field in both saved design files. Q41, L41, and all other excluded components remain untouched, including their legacy blank `LCSC_PART` fields where present.
 
-The sourcing-review exports confirm Q41 is absent from both BOM and positions. Two pre-existing export details remain visible: the BOM still includes purchasing-only J11 with its intentionally blank sourcing fields, and the PCB position export still includes J51 because its saved footprint excludes it from BOM but does not exclude it from position files. J51 was left untouched under the instruction to preserve excluded parts. Omit the hand-soldered connector from the assembly placement file when preparing the eventual order package; the current temporary exports are verification artifacts.
+The saved PCB excludes U11, J12, J21, J51, J52, Q41, and L41 from both BOM and position output. Supplier assembly exports should contain the 19 reviewed SMD components only. Regenerate both files from the board being ordered and verify that their reference sets match. Earlier sourcing-review exports and their J51 discrepancy are historical; the saved J51 footprint now excludes position output.
 
 ## Local libraries and files
 
@@ -159,7 +163,7 @@ The following project-local symbols are placed in the schematic:
 
 The transistor, trimmer and inductor symbols are independent copies from the installed KiCad 10.0.6 libraries; see [sources and pin mapping](LIBRARY-SOURCES.md#bs170-redesign-additions). R41's jumper symbol is adapted from the local `R_0805` symbol. The existing resistor and capacitor symbols provide the remaining RF passives.
 
-### Copied baseline assets
+### Interface and retained library assets
 
 U11 directly carries the female 2×20 socket model on the underside. J52 carries two 1×4 socket models on top. Both remain excluded from BOM and position output, with electrical pads intact. The optional H1 model-only footprint remains in the library for compatibility; do not place it over U11, which would duplicate the socket. J11 remains the purchasing item.
 
@@ -167,13 +171,13 @@ The local library includes the grouped 2×4 connector `LPF_HeaderPair_Female_2x1
 
 J12 uses the local `Conn_01x03` symbol and `PinHeader_1x03_P2.54mm_Vertical` male through-hole footprint. It is placed and routed with pin 1 on GPIO4, pin 2 on `GPIO_RF`, and pin 3 on GPIO20. The symbol and footprint are excluded from BOM and position output, and the footprint references a project-local STEP model for 3D visualization.
 
-J51 uses the `SMA_Adafruit_1865` symbol and `SMA_Adafruit_1865_EdgeMount` footprint copied from `WsprryPi-GPIO-Univ`. This is the Adafruit 1865 standard-polarity female edge-launch SMA for a 1.6 mm board: pin 1 is signal, pin 2 is ground, the origin is the board seating edge on the signal centerline, and copper extends 0.500–4.064 mm into the board. It is placed and routed, hand-soldered, excluded from BOM and position output, and has no attached 3D model.
+J51 uses the local `SMA_Adafruit_1865` symbol and `SMA_Adafruit_1865_EdgeMount` footprint derived from the Adafruit Eagle Library and KiCad coaxial symbol. This is the Adafruit 1865 standard-polarity female edge-launch SMA for a 1.6 mm board: pin 1 is signal, pin 2 is ground, the origin is the board seating edge on the signal centerline, and copper extends 0.500–4.064 mm into the board. It is placed and routed, hand-soldered, excluded from BOM and position output, and has a project-local illustrative 3D model.
 
 The same project-local library retains the following baseline and interface assets:
 
-- `LTC6432-15`, whose local master and copied PCB U31 metadata select `LTC6432AIUF-15#PBF` and `LCSC Part #` C689344, with the Analog Devices UF24 4 × 4 mm QFN exposed-pad footprint and thermal vias; it is removed from the schematic;
+- unplaced `LTC6432-15`, whose local master selects `LTC6432AIUF-15#PBF` and `LCSC Part #` C689344, with the Analog Devices UF24 4 × 4 mm QFN exposed-pad footprint and thermal vias; it is absent from the current schematic and PCB;
 - unplaced `YA9308-AEC` with a custom footprint built from Coilcraft's recommended land pattern;
-- `WBC2-1TLC`, retained on T21 and T41 in the copied PCB but removed from the schematic, with `LCSC Part #` C19191658 and a separate custom footprint built from Coilcraft's WBC recommended land pattern;
+- unplaced `WBC2-1TLC`, with `LCSC Part #` C19191658 and a separate custom footprint built from Coilcraft's WBC recommended land pattern; both transformers are absent from the current schematic and PCB;
 - `TPS22918` with the KiCad SOT-23-6 footprint;
 - local `R_0603`, `C_0603`, and `C_0805` symbols with local 0603 and 0805 KiCad footprints, plus `C_1206_3216Metric`; the RF resistors, C32 and C41 use 0603, C31/C51 use 1206, and C42 uses 0805; `C_0603` retains its 0603 default and accepts 0603, 0805 and 1206 capacitor assignments; `R_0603` uses the compact US zigzag graphic;
 - local `R_US` and `LED` symbols supporting the placed R11 and D11 indicator circuit, with local 0603 footprints and an LED STEP model;
@@ -185,9 +189,9 @@ The same project-local library retains the following baseline and interface asse
 Manufacturer, MPN, `LCSC Part #`, data-sheet, description, and local-footprint fields are embedded in the device symbols where applicable. See [local library sources and licensing](LIBRARY-SOURCES.md) before modifying or redistributing the imported assets.
 
 - [Project settings](WsprryPi%20Zero%20GPIO%20BS170.kicad_pro): copied rules, defaults, and BOM preset.
-- [Schematic](WsprryPi%20Zero%20GPIO%20BS170.kicad_sch): partially wired BS170-stage parts with assigned footprints, retained power-control circuit, GPIO interface, and LPF interface.
-- [PCB](WsprryPi%20Zero%20GPIO%20BS170.kicad_pcb): copied placed and routed two-layer baseline with the locked Zero-size outline, interface footprint, mounting-hole lands, PoE keepout, and LPF keepout.
-- [Fabrication notes](FABRICATION-NOTES.md): process notes for the copied U31 baseline only; reassess after the BS170 layout replaces it.
+- [Schematic](WsprryPi%20Zero%20GPIO%20BS170.kicad_sch): implemented BS170 stage, power-control circuit, GPIO interface, and LPF interface.
+- [PCB](WsprryPi%20Zero%20GPIO%20BS170.kicad_pcb): placed and routed two-layer BS170 board with the locked Zero-size outline, interface footprint, mounting-hole lands, PoE keepout, and LPF keepout.
+- [Fabrication notes](FABRICATION-NOTES.md): current order requirements, supplier assembly references, and separate hand-fitting list.
 - [Symbol library](wsprrypi-zero-gpio-bs170.kicad_sym): GPIO interface, socket purchasing symbol, and paired LPF female-header connector symbol.
 - [Interface footprint](wsprrypi-zero-gpio-bs170.pretty/Raspberry_Pi_Zero_HAT_Interface.kicad_mod).
 - [Selectable 2×20 socket footprint](wsprrypi-zero-gpio-bs170.pretty/Raspberry_Pi_HAT_2x20_Socket_3D.kicad_mod): board-only 3D representation used by H1.
@@ -200,6 +204,12 @@ The local-library filenames and nickname are unique to this project. Keep genera
 
 ## Validation and limits
 
+The project owner's 2026-10-05 decision establishes the current **ready-for-order** status and hand-assembly plan. A read-only source inventory confirms 26 PCB components: 19 supplier-assembly SMD components and seven excluded interface/manual-component representations. J21 is present, J51 is excluded from position output, and the former LTC6432-15 and transformer footprints are absent. This documentation update does not rerun KiCad ERC/DRC or establish physical or RF qualification.
+
+The dated records below describe their respective source checkpoints. Retain their failures, ignored checks, and CLI/native parity discrepancy as recorded; they are not fresh validation of the ordering package.
+
+### Recent validation records
+
 For the 2026-10-05 R41 same-net update, `R_0805_0R_Jumper` was added to the local library and schematic cache, and only R41 was assigned to it. Its explicit pin/pad jumper group is `1,2`. The two `BIAS` labels and 18 PCB net assignments (five pads, eight segments and five zones) became `SW_5V`. The exported netlist confirms that the two original rails merged, including both R41 pins, with every other pin connection unchanged. KiCad **10.0.6** ERC before and after reported **0 violations**, retaining the same four ignored checks. DRC with schematic parity and in-memory zone refill before and after reported **0 physical-rule violations**, **one unconnected item involving RV31 pin 1**, and **34 other CLI parity findings**. Those parity findings match after the rail-name substitution; the documented CLI/native parity discrepancy remains open. Native PCB read/temporary-save verification retained R41's jumper group and confirmed both pads on `/SW_5V`; no native GUI parity rerun was performed. The library symbol, schematic and front PCB were exported and visually inspected. Placement, pad geometry, routing geometry, UUIDs, sourcing fields, original library definitions, project settings and exclusion flags are preserved; excluded L41 changes only its pad 1 net assignment. Saved zone-fill geometry was preserved and DRC refills were not saved. This update does not establish RF or production qualification.
 
 For the 2026-10-05 user-selected 1206 capacitor update, the output coupling capacitor was restored from C33 to **C51** in the schematic and PCB. The shared `C_0603` footprint filter was extended to `C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric` in the local library, schematic cache and five PCB instances, retaining its 0603 default. Only seven filter values and three reference tokens changed in the three design/library files; reversing those tokens reproduces the starting files exactly. Purchasing fields, footprint geometry, UUIDs, wiring, placement, routing, zones, excluded component objects and project settings are unchanged. KiCad **10.0.6** ERC before and after reported **0 violations**, with the four existing ignored checks retained. DRC with schematic parity and in-memory zone refill removed the **two footprint-filter warnings**; the same **two thermal-relief errors**, **five unconnected items** and **34 other CLI schematic-parity findings** remain, matching the starting report after C33-to-C51 reference substitution. The previously documented CLI/native parity discrepancy remains unresolved; no native editor parity rerun was performed for this correction. Netlist pin connections are unchanged after reference substitution, and the exported schematic and front PCB were visually inspected. Zone refills were not saved. Manufacturing exports must be regenerated from the updated sources before another order review; these checks do not establish RF or production qualification.
@@ -210,7 +220,7 @@ For the 2026-10-05 revised C31/C32/C41/C51, R11 and R41 worksheet review, the fo
 
 For the 2026-10-05 completed-worksheet application, KiCad **10.0.6** ERC before and after reported **0 errors and 0 warnings**, with the same four ignored checks retained. Command-line DRC with in-memory zone refill before and after reported **0 violations and 0 unconnected items**; zone refills were not saved, and this DRC run did not enable schematic parity. The schematic, sourcing field table, and PCB were visually inspected. All 19 reviewed components have the five populated sourcing fields in both saved designs, and temporary BOM exports reproduce their 14 purchasing groups. Q41 is absent from BOM and position exports. Before/after netlists have identical pin connections. Source comparison confirms that only the five purchasing-property values changed in the design files; all excluded component objects and every other design byte are preserved. Project settings, local libraries, models, and the submitted worksheet are unchanged from the start of this update. The J11/J51 export details above remain unresolved for an ordering package. These checks do not establish RF, thermal, physical-assembly, or production qualification.
 
-For the 2026-10-04 schematic-only J21 addition, KiCad **10.0.6** ERC reported **0 errors and 0 warnings** before and after the change; the four existing ignored checks were preserved. Netlist comparison confirms J21 pin 1 on `PI_5V`, pin 2 on `SW_5V`, and every existing pin connection unchanged. All pre-existing schematic and local-library objects were preserved. The new symbol, footprint, and affected schematic block were exported and visually inspected; the copied STEP model is byte-identical to its installed KiCad source. The PCB and project settings remained byte-for-byte unchanged. No PCB DRC was rerun because the board was not edited; J21 placement and routing remain pending. These checks do not establish physical or RF qualification.
+For the 2026-10-04 schematic-only J21 addition, KiCad **10.0.6** ERC reported **0 errors and 0 warnings** before and after the change; the four existing ignored checks were preserved. Netlist comparison confirms J21 pin 1 on `PI_5V`, pin 2 on `SW_5V`, and every existing pin connection unchanged. All pre-existing schematic and local-library objects were preserved. The new symbol, footprint, and affected schematic block were exported and visually inspected; the copied STEP model is byte-identical to its installed KiCad source. The PCB and project settings remained byte-for-byte unchanged. No PCB DRC was rerun because the board was not edited; J21 placement and routing were still pending at that checkpoint. These checks do not establish physical or RF qualification.
 
 For the 2026-10-04 block renumbering, KiCad **10.0.6** was run outside the sandbox on the saved working-tree sources before and after the change. ERC reported **0 errors and 0 warnings** in both runs. Command-line DRC with in-memory zone refill reported **0 rule violations, 0 unconnected items, and 34 schematic-parity warnings** in both runs; the findings match after reference substitution. A separate native PCB-editor check, with the matching schematic loaded and zone refill/parity enabled, reported **0 rule violations, 0 unconnected items, and 0 parity findings**. Both reports are retained; the CLI/native parity discrepancy remains explicit. Before/after netlists have identical pin connections after reference substitution. Schematic and PCB source comparisons confirm that all other drawing objects and UUIDs are unchanged, and the affected schematic and board were visually inspected.
 
@@ -218,7 +228,7 @@ The historical records below retain their original component references and desc
 
 ### Historical validation records
 
-The saved schematic has unwired 20-series parts, and the PCB remains the cost-rejected implementation. Both are not ready for order. Production decisions and physical/RF qualification remain open. J41, J12, and SW11 are placed; J41 and J12 retain their intentional BOM and placement-output exclusions. U11 and every other previously placed schematic symbol retain their UUIDs.
+At the early BS170 placement checkpoint, the schematic had unwired 20-series parts and the PCB still held the cost-rejected implementation. That checkpoint was not ready for order and has since been superseded by the implemented BS170 board. J41, J12, and SW11 were placed; J41 and J12 retained their intentional BOM and placement-output exclusions. U11 and every other previously placed schematic symbol retained their UUIDs.
 
 At project creation, KiCad 10.0.6 schematic ERC reported 0 violations, and standard command-line PCB DRC reported 0 violations and 0 unconnected items. These baseline results predate removal of the amplifier stages from the schematic. A separate command-line DRC attempt with schematic parity enabled aborted, so schematic-to-PCB parity was not verified by that run. These checks do not establish physical assembly, connector fit, Raspberry Pi model compatibility, electrical performance, thermal behavior, or RF performance.
 
@@ -226,7 +236,7 @@ After the schematic cleanup and J42 exclusion correction, before adding the BS17
 
 After the BS170 library additions, KiCad 10.0.6 successfully exported all 20 project-local symbols and all 17 project-local footprints. The new BS170, trimmer, inductor, and TO-92 footprint were visually inspected from those exports. The pre-placement schematic had 0 ERC errors and the one expected `GPIO_RF` warning.
 
-On 2026-10-01, eleven RF parts were placed without wiring, net labels, or no-connect flags. The placement-stage KiCad 10.0.6 ERC reported **25 errors and 1 warning**: 24 unconnected new pins, the undriven Q31 gate, and the existing isolated `GPIO_RF` label. The saved schematic was exported to PDF and visually inspected for placement and readable labels. All existing symbols, wires, junctions, labels, and no-connect markers were preserved; the PCB, project settings, and local library files were unchanged by placement. No PCB DRC was rerun because the PCB was not edited. The current schematic and PCB do not represent the same RF circuit.
+On 2026-10-01, eleven RF parts were placed without wiring, net labels, or no-connect flags. The placement-stage KiCad 10.0.6 ERC reported **25 errors and 1 warning**: 24 unconnected new pins, the undriven Q31 gate, and the existing isolated `GPIO_RF` label. The saved schematic was exported to PDF and visually inspected for placement and readable labels. All existing symbols, wires, junctions, labels, and no-connect markers were preserved; the PCB, project settings, and local library files were unchanged by placement. No PCB DRC was rerun because the PCB was not edited. At that checkpoint, the schematic and PCB did not represent the same RF circuit.
 
 After the user wired the 30- and 40-series sections, the footprint-assignment update on 2026-10-01 imported two local footprints and assigned L31/RV21. KiCad 10.0.6 ERC before and after the update reported the same **14 errors and 2 warnings**: 13 unconnected 20-series pins, the undriven Q31 gate, and isolated `GPIO_RF`/`GATE` labels. All 24 physical schematic parts resolve locally. The new footprints and updated schematic were exported and visually inspected; the trimmer lands and numbering were compared with the Bourns drawing. Exported netlist connectivity and all symbol/pin UUIDs, wires, junctions, labels, and no-connect markers were unchanged. L31 remains in the netlist while excluded from automated BOM/position output. The PCB, project settings, library tables, and existing footprint assets were byte-for-byte unchanged. No PCB DRC was rerun because the PCB was not edited. The schematic and PCB still represent different RF circuits.
 

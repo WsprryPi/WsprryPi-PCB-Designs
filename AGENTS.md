@@ -4,8 +4,9 @@
 
 This is `WsprryPi/WsprryPi-PCB-Designs`, a KiCad hardware-design repository. Read [README.md](README.md) and [CONTRIBUTING.md](CONTRIBUTING.md) before changes, then the affected project's README. There is no application build system.
 
-- `Wsprry-Pi-Synth-Univ`: Si5351 transmission board.
-- `WsprryPi-GPIO-Univ`: GPIO transmission board.
+- `WsprryPi Zero GPIO BS170`: Zero-size BS170 GPIO amplifier, ready for order with headers and BS170 fitted by hand after manufacture.
+- `RPi Full-Size HAT Template`: reusable full-size Raspberry Pi HAT template.
+- `RPi Zero HAT Template`: reusable Zero-size Raspberry Pi HAT template.
 - `WsprryPi LPF`: low-pass filter board and supporting workbook.
 - `Pico 2W Wattmeter Shield`: ADL5904 RF wattmeter shield.
 - `Pico 2W Shield Template`: reusable unwired Pico shield template.

@@ -1,26 +1,42 @@
-# Copied LTC6432 baseline fabrication notes
+# BS170 fabrication and assembly notes
 
-Status: candidate JLCPCB process instructions for the copied two-layer, 1.6 mm LTC6432 board. The BS170 circuit has not been implemented. This copied board is not ready for order; JLCPCB has not accepted this selective process for the exact fabrication package.
+**Order status: Ready for order, confirmed by the project owner on 2026-10-05.** Order the current two-layer, 1.6 mm BS170 board. The headers and Q41 BS170 will be fitted by hand after manufacture. L41's hand-wound choke and J51's hand-soldered SMA connector also remain outside supplier assembly.
 
-## U31 exposed-pad thermal holes
+Generate Gerbers, plated and non-plated drills, the assembly BOM, and the placement file from the exact saved BS170 revision being ordered. Keep generated packages in the ignored `production/` or `fabrication/` directory and identify the source commit, board revision, KiCad version, and validation status with the package. See the [project README](README.md#validation-and-limits) for the recorded checks and their limits.
 
-The U31 footprint has nine plated 0.20 mm drill holes with 0.50 mm copper pads beneath its exposed ground pad. Their centers form a 3 × 3 grid at X = 136.479505, 137.454505, and 138.429505 mm and Y = 82.404256, 83.379256, and 84.354256 mm in board coordinates.
+## Supplier assembly
 
-The PCB's `User.1` layer is named `sk` and contains nine filled 0.50 mm diameter circles at exactly those centers. This is a **process-selection layer only**: its graphics are not copper, solder mask, silkscreen, or additional drills. Export it separately as a Gerber alongside the usual fabrication and drill files. KiCad 10 exports it as `WsprryPi Zero GPIO BS170-sk.gbr` when `User.1` is included in the plotted layers. Overlay it with the plated-drill and copper Gerbers to verify that it marks only the nine U31 holes.
+The saved PCB has **19 SMD assembly components** with reviewed sourcing metadata. The assembly BOM and placement file must contain the same references:
 
-Request **epoxy-filled and copper-capped via-in-pad treatment** for only these nine holes, leaving U31's top exposed pad solderable. The other board vias inherit front- and back-side tenting from Board Setup. Other plated component holes must remain open for assembly. Do not select holes by 0.20 mm drill diameter: many ordinary vias also have that drill size.
+| Type | References |
+| --- | --- |
+| Capacitors | C21, C22, C23, C31, C32, C41, C42, C51 |
+| Indicator | D11 |
+| Resistors | R11, R21, R22, R31, R32, R33, R41 |
+| Gate-bias trimmer | RV31 |
+| Shutdown button | SW11 |
+| Load switch | U21 |
 
-These nine holes are currently modeled as through-hole pads in the footprint, not KiCad via objects. KiCad's per-via protection properties therefore do not identify them as filled and capped. Have JLCPCB confirm that its CAM process will treat the nine `sk` marks as the requested via-in-pad holes on this **two-layer** board, while preserving the component holes and ordinary via tenting. If JLCPCB requires native via objects or a different drill/pad structure, revise the footprint and PCB before preparing the order package.
+Use the selected `LCSC Part #` values in the board-based Fabrication Toolkit BOM. Check supplier matching and orientation in the assembly preview against the current board. U11, J12, J21, J51, J52, Q41, and L41 are excluded from both BOM and position output on the saved PCB. J11 is a schematic-only purchasing item and must not be added to the supplier assembly list.
 
-## JLCPCB package and order review
+## Hand-fitting list
 
-1. Export and inspect the copper, mask, plated and non-plated drill, board-outline, and `sk` Gerbers. Include an annotated U31 image or drill drawing identifying the same nine holes.
-2. Choose JLCPCB's **Epoxy-filled & Capped** via-covering process if offered for the quoted two-layer configuration. In PCB Order Notes (200-character limit), enter:
+Purchase these items separately and fit them after manufacture:
 
-   > Epoxy-fill/copper-cap only 9 x 0.20mm holes on sk Gerber under U31. Keep top pad solderable. Tent other vias both sides; leave component holes open. Confirm selective fill for 2-layer, 1.6mm PCB.
+| Board reference / purchasing item | Quantity | Hand-fitted part |
+| --- | ---: | --- |
+| U11 interface / J11 purchasing item | 1 | Female 2×20, 2.54 mm Raspberry Pi socket, mounted underneath; choose mating height for the intended Pi and spacers |
+| J12 | 1 | Male 1×3, 2.54 mm GPIO-selection header; provide a shunt for GPIO4 or GPIO20 selection |
+| J21 | 1 | Male 1×2, 2.54 mm bias-setting header; provide a removable shunt and leave it open during normal operation |
+| J52 | 2 | Female 1×4, 2.54 mm LPF sockets; the grouped board footprint represents two physical headers at 33.02 mm row-center spacing |
+| Q41 | 1 | Straight-lead onsemi BS170, TO-92; verify pins 1/2/3 = drain/gate/source |
+| L41 | 1 | Upright FT37-43 choke, hand-wound with 25 turns and leads formed to 5.08 mm spacing |
+| J51 | 1 | Adafruit 1865 standard-polarity female edge-launch SMA connector for a 1.6 mm board |
 
-3. Select **Confirm Production Files**. Check JLCPCB's prepared `sk`, drill, copper, and mask layers against the submitted package before approving production. Obtain explicit CAM acceptance of the selective treatment and U31's stencil/paste apertures.
+U11 and J11 refer to the same physical Raspberry Pi socket, so purchase one socket. The plug-in LPF is a separate assembly; fit the filter for the operating band before RF testing. Follow the [choke assembly guidance](README.md#selected-hand-wound-choke-and-trimmer) and [J21 bias-setting instructions](README.md#schematic-block-numbering).
 
-JLCPCB's [via-covering guidance](https://jlcpcb.com/help/article/pcb-via-covering) distinguishes epoxy-filled/capped via-in-pad from ink plugging and asks customers to identify the selected holes. Its [Gerber preparation guide](https://jlcpcb.com/help/article/gerber-files-preparation) specifies an `sk` layer for holes to be filled. Its [production-file review guide](https://jlcpcb.com/help/article/how-to-confirm-the-production-file) explains how to inspect the CAM files before release.
+## Fabrication process
 
-The saved two-transformer amplifier has been rejected on cost grounds; see [README.md](README.md) and the [BS170 redesign proposal](BS170-REDESIGN-PROPOSAL.md). These process notes describe the saved PCB only and do not apply to a future redesign without review.
+The current BS170 board has no U31 exposed-pad QFN or RF transformers. The historical nine-hole U31 epoxy-fill/copper-cap process is not a requirement for this revision. Do not apply those superseded selective-via instructions to the current order merely because an old library footprint or the `sk` user-layer name remains in the project. Preserve plated component holes for hand fitting and include the correct non-plated mounting-hole drills.
+
+Order readiness records the project owner's manufacturing decision. Physical fit, GPIO loading, bias and switched-supply behavior, temperature, output power, and spectrum still require checks on the exact assembled board, Pi, LPF, and load. Historical ERC/DRC results and exclusions remain visible in the [project validation records](README.md#validation-and-limits).

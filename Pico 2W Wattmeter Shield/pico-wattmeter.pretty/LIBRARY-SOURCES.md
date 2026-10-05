@@ -12,7 +12,7 @@ Copyright KiCad Library Contributors. These footprints use [CC BY-SA 4.0 with th
 
 ## Logo
 
-[Wsprry_Pi_Synth_Logo.kicad_mod](Wsprry_Pi_Synth_Logo.kicad_mod) contains the repository's Synth board artwork: two filled polygons in a 4.405354 × 5.584516 mm outline. Both polygons belong to one unlocked footprint, so the logo moves as a unit.
+[Wsprry_Pi_Synth_Logo.kicad_mod](Wsprry_Pi_Synth_Logo.kicad_mod) contains the repository's PCB logo artwork: two filled polygons in a 4.405354 × 5.584516 mm outline. Both polygons belong to one unlocked footprint, so the logo moves as a unit.
 
 The footprint has a placement courtyard and hidden reference/value fields, with no copper pads or soldermask openings. It is excluded from the BOM and placement files. The board has independent front and back instances, with the rear artwork mirrored for viewing from that side.
 

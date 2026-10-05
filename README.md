@@ -2,23 +2,19 @@
 
 KiCad schematics, PCB layouts, local libraries, and engineering documentation for WsprryPi and Raspberry Pi Pico projects.
 
-These designs require revision-specific validation before production. KiCad source files are authoritative; included PDFs are reference exports and may not match the current sources.
+See each project's order status, assembly requirements, and validation limits before fabrication. KiCad source files are authoritative; included PDFs are reference exports and may not match the current sources.
 
 ## Projects
 
-| Project | Purpose | Reference export |
+| Project | Purpose | Status / reference export |
 | --- | --- | --- |
-| [Synth Universal](Wsprry-Pi-Synth-Univ/README.md) | Si5351-synthesized transmission board | [Schematic PDF](Wsprry-Pi-Synth-Univ/Wsprry-Pi-Synth-Univ.pdf) |
-| [GPIO Universal](WsprryPi-GPIO-Univ/README.md) | GPIO transmission board | Export from the KiCad source |
 | [WsprryPi LPF](WsprryPi%20LPF/README.md) | Low-pass filter board and design workbook | Export from the KiCad source |
 | [Pico 2W Wattmeter Shield](Pico%202W%20Wattmeter%20Shield/README.md) | ADL5904 RF detector and ADS1115 ADC shield | See project assembly drawings |
 | [Pico 2W Shield Template](Pico%202W%20Shield%20Template/README.md) | Unwired shield interface, outline, and antenna notch | KiCad project template |
 | [WsprryPico Shield](WsprryPico%20Shield/README.md) | Independent Pico 2 W shield starter with local libraries and header 3D models | In development |
 | [RPi Full-Size HAT Template](RPi%20Full-Size%20HAT%20Template/README.md) | Official full-size HAT geometry and complete 40-pin interface | KiCad project template |
 | [RPi Zero HAT Template](RPi%20Zero%20HAT%20Template/README.md) | Zero-size uHAT geometry and complete HAT+ capable 40-pin interface | KiCad project template |
-| [WsprryPi Amplified GPIO](WsprryPi%20Amplified%20GPIO/README.md) | Full-size Raspberry Pi HAT project for amplified GPIO development | In development |
-| [WsprryPi Zero GPIO](WsprryPi%20Zero%20GPIO/README.md) | Zero-size Raspberry Pi GPIO RF-amplifier project using uHAT geometry | **Not ready for order:** two-transformer circuit rejected on cost |
-| [WsprryPi Zero GPIO BS170](WsprryPi%20Zero%20GPIO%20BS170/README.md) | Independent Zero-size BS170 amplifier project, copied from Zero GPIO as a starting point | **Not ready for order:** BS170 circuit not yet implemented |
+| [WsprryPi Zero GPIO BS170](WsprryPi%20Zero%20GPIO%20BS170/README.md) | Zero-size Raspberry Pi GPIO RF amplifier with a single BS170 | **Ready for order:** headers and BS170 fitted by hand after manufacture; see [fabrication and assembly notes](WsprryPi%20Zero%20GPIO%20BS170/FABRICATION-NOTES.md) |
 
 [Project-local Pico 2 W library assets](Pico%202W%20Wattmeter%20Shield/pico-2w-libs/README.md) include a symbol, footprints, and STEP model with documented compatibility and provenance limits. They are stored inside the Wattmeter Shield project; the Shield Template uses its own independent local libraries.
 
@@ -28,22 +24,18 @@ Clone [WsprryPi/WsprryPi-PCB-Designs](https://github.com/WsprryPi/WsprryPi-PCB-D
 
 | Project | Saved schematic and PCB generator version |
 | --- | --- |
-| Synth Universal, LPF, Pico 2W Wattmeter Shield, Pico 2W Shield Template, WsprryPico Shield, RPi Full-Size HAT Template, RPi Zero HAT Template, WsprryPi Amplified GPIO, WsprryPi Zero GPIO, WsprryPi Zero GPIO BS170 | KiCad 10.0 |
-| GPIO Universal | KiCad 10.0 |
+| WsprryPi LPF, Pico 2W Wattmeter Shield, Pico 2W Shield Template, WsprryPico Shield, RPi Full-Size HAT Template, RPi Zero HAT Template, WsprryPi Zero GPIO BS170 | KiCad 10.0 |
 
 Project library tables use `${KIPRJMOD}` paths. Keep each project's local libraries together when copying it. The Pico and HAT projects use their own local libraries and installed KiCad models where their project documentation specifies them.
 
 ### Project-local libraries
 
-Synth, GPIO, and LPF include local copies of every symbol and footprint used by their designs, plus available STEP models. Each folder resolves its libraries independently through `${KIPRJMOD}`. Their local library assets require KiCad 10.0.1 or newer; the board and schematic generator versions above describe their saved formats.
+The LPF includes local copies of its symbols and footprints, plus available STEP models, resolved through `${KIPRJMOD}`. Its local library assets require KiCad 10.0.1 or newer; the generator version above describes its saved format. The other projects maintain their own independent local libraries as described in their READMEs.
 
-- [Synth library contents and limits](Wsprry-Pi-Synth-Univ/libraries/README.md)
-- [GPIO library contents and limits](WsprryPi-GPIO-Univ/libraries/README.md)
 - [LPF library contents and limits](WsprryPi%20LPF/libraries/README.md)
+- [BS170 amplifier library sources and limits](WsprryPi%20Zero%20GPIO%20BS170/LIBRARY-SOURCES.md)
 
-The edge-launch SMA option in each library is the wattmeter's Adafruit 1865 part. GPIO now uses it as J83; Synth still uses a different through-hole SMA connector. The switch and through-hole SMA models are included locally. GPIO C11 now uses a local generic KiCad electrolytic model. Remaining model gaps are the unplaced large through-hole capacitor footprint and Synth's Y21 oscillator; LPF's toroid uses a generic axial-inductor visualization.
-
-GPIO C11 is consistently specified as the 47 µF Panasonic part. Synth C11 still carries a 100 µF value with a 47 µF LCSC part number; resolve that purchasing conflict before assembly. Library documentation also records the remaining ERC/DRC findings.
+Project documentation records model gaps, assembly exclusions, and historical ERC/DRC findings. Order readiness does not establish measured electrical, thermal, or RF performance.
 
 ## Design proposals
 

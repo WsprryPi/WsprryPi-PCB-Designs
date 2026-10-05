@@ -1,14 +1,14 @@
 # Copied two-transformer amplifier baseline
 
-Status: **historical two-transformer implementation; not ready for order**. The saved schematic/PCB use two Coilcraft `WBC2-1TLC` transformers and an LTC6432-15. This implementation has been rejected on cost grounds. The [single-BS170 redesign proposal](BS170-REDESIGN-PROPOSAL.md) is the candidate for the next revision; it has not been implemented or physically validated. Some purchasing details below still describe the earlier `YA9308-AEC` selection and must not be used as a current-order BOM.
+Status: **historical two-transformer implementation, superseded by the implemented BS170 board**. This document archives the cost-rejected circuit using two Coilcraft `WBC2-1TLC` transformers and an LTC6432-15. Those components are absent from the current schematic and PCB. The [BS170 design rationale](BS170-REDESIGN-PROPOSAL.md) describes the selected circuit; its [current order and assembly notes](FABRICATION-NOTES.md) record ready-for-order status and the hand-fitting plan.
 
-This is a new Zero-size HAT amplifier effort. Requirements and component choices from the earlier 1 W `WsprryPi-GPIO-Univ` design are reference material only and are not inherited by this board.
+All architecture, references, purchasing counts, validation limits, and open decisions below describe the historical circuit checkpoint. Some purchasing details describe an even earlier `YA9308-AEC` selection. Do not use this document as a current-order BOM or fabrication specification.
 
 ## Saved historical architecture
 
 The design uses one LTC6432-15 differential gain block from a single 5 V rail. It does not require a bipolar converter or another amplifier supply. A 1:2 impedance transformer converts the single-ended GPIO source to the amplifier's 100 ohm differential input, and a second 1:2 transformer converts the 100 ohm differential output back to 50 ohms for the plug-in LPF interface.
 
-The following decisions defined this saved implementation; the [BS170 proposal](BS170-REDESIGN-PROPOSAL.md) states which constraints carry forward:
+The following decisions defined this historical implementation; the [BS170 design rationale](BS170-REDESIGN-PROPOSAL.md) states which constraints carry forward:
 
 - The amplifier is an LTC6432-15. The local library master, schematic instance, and PCB footprint all select `LTC6432AIUF-15#PBF`, identified by `LCSC_PART` C689344; its order-time availability must still be confirmed.
 - The RF amplifier and its power-control circuit operate entirely from the Raspberry Pi 5 V rail.
@@ -48,7 +48,7 @@ The GPIO drive-strength menu changes pad drive behavior, not a calibrated RF att
 
 ## First-pass purchasing BOM
 
-This historical first-pass table includes the earlier `YA9308-AEC` selection and is not a current-order BOM. The saved schematic instead uses two `WBC2-1TLC` transformers. Neither this table nor the saved implementation is the BOM for the proposed BS170 redesign.
+This historical first-pass table includes the earlier `YA9308-AEC` selection and is not a current-order BOM. The later historical schematic used two `WBC2-1TLC` transformers. Neither this table nor that implementation is the BOM for the current BS170 board.
 
 | Function | Qty | Likely part or value | State | Notes |
 | --- | ---: | --- | --- | --- |
@@ -78,11 +78,11 @@ This historical first-pass table includes the earlier `YA9308-AEC` selection and
 
 The saved **Amplifier purchasing BOM** export contains 25 BOM units; its single J41 row represents two physical LPF socket pieces, so the export represents 26 physical pieces. J1 and J12 are intentionally excluded from that export. A complete hand-assembly purchasing list must add the required J1 SMA and any J12 hardware the build will use. Repeated passives reduce the automated export to 15 grouped rows. The preset exports supplier ordering codes from the single canonical `LCSC_PART` field; the legacy `LCSC` field is not used.
 
-The center tap is the key BOM simplification. The YA9308-AEC secondary has a center tap, so the output transformer can connect that tap to switched 5 V and directly provide DC bias to both LTC6432-15 output pins. This removes the reference wideband choke-bias network: four inductors and four parallel damping resistors. That dependency also makes the current design not ready for order: the transformer pinout and current rating still require schematic review and physical qualification, and the exact part requires an accepted procurement path before release.
+The center tap was the key BOM simplification. The YA9308-AEC secondary has a center tap, so the output transformer could connect that tap to switched 5 V and directly provide DC bias to both LTC6432-15 output pins. This removed the reference wideband choke-bias network: four inductors and four parallel damping resistors. That dependency prevented an order of the historical transformer implementation: the transformer pinout and current rating required schematic review and physical qualification, and the exact part lacked an accepted procurement path.
 
 ## DNP and omitted parts
 
-The current layout does not reserve footprints for the vendor's optional low-frequency input stability networks. If a later revision adds them, they should be DNP initially because the input is already preceded by a low-frequency transformer; DNP footprints do not belong in the purchasing count.
+The historical layout did not reserve footprints for the vendor's optional low-frequency input stability networks. The historical recommendation was to leave any later-added networks DNP initially because the input was already preceded by a low-frequency transformer; DNP footprints did not belong in the purchasing count.
 
 The first-pass BOM intentionally omits:
 
@@ -100,7 +100,7 @@ The following choices are not locked by selecting the LTC6432-15:
 - final transformer acceptance after endpoint gain, return-loss, phase-balance, and distortion measurements;
 - exact passive manufacturers, packages, tolerances, and voltage ratings;
 - exact connector MPNs;
-- JLCPCB CAM acceptance of the nine U31 exposed-pad holes marked for epoxy fill and copper capping in [FABRICATION-NOTES.md](FABRICATION-NOTES.md), and assembler acceptance of the stencil apertures;
+- JLCPCB CAM acceptance of the historical nine U31 exposed-pad holes marked for epoxy fill and copper capping, and assembler acceptance of the stencil apertures; this process does not apply to the current BS170 board;
 - startup rail droop, rise time, and power-loss behavior with the implemented `C51 = 10 µF`, `C53 = 1 nF`, and `C55 = 1 µF` network;
 - shutdown-request firmware behavior for SW11 and GPIO26;
 - output-power acceptance limits per band and per GPIO drive setting; and
