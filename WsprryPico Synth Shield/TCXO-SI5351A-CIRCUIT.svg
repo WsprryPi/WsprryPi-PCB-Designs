@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+ <title id="title">Proposed KDS 25 MHz TCXO to Si5351A reference circuit</title>
+ <desc id="desc">KDS pins one and two are grounded, pin four takes 3.3 volts with local bypassing, and output pin three couples through one nanofarad to Si5351A XA pin two. XB pin three floats. Synthesizer supply pins one and seven each have 100 nanofarad bypasses. Values are a proposal, not a verified QRP Labs BOM.</desc>
+ <rect width="1280" height="760" fill="#fff"/>
+ <g font-family="Arial, sans-serif" fill="#172535">
+  <text x="50" y="54" font-size="28" font-weight="bold">WsprryPico Synth Shield</text>
+  <text x="50" y="87" font-size="18">Proposed reference circuit · QRP Labs architecture · discrete capacitor values pending confirmation</text>
+ </g>
+ <g stroke="#244967" stroke-width="3" fill="none" stroke-linejoin="round">
+  <path d="M75 150 H1070 M445 150 V210 M895 150 V210 M1010 150 V210"/>
+  <path d="M145 150 V260 M145 278 V560 M245 150 V260 M245 278 V560"/>
+  <path d="M125 260 H165 M125 278 H165 M225 260 H265 M225 278 H265"/>
+  <rect x="350" y="210" width="230" height="250" rx="8" fill="#f3f7fa"/>
+  <rect x="850" y="210" width="230" height="320" rx="8" fill="#f3f7fa"/>
+  <path d="M580 320 H688 M688 300 V340 M704 300 V340 M704 320 H850"/>
+  <path d="M405 460 V560 M525 460 V560 M965 530 V560 M95 560 H995"/>
+  <path d="M825 390 H850 M818 383 L832 397 M818 397 L832 383"/>
+  <path d="M850 440 H755 M850 485 H755 M1080 295 H1140 M1080 355 H1140 M1080 415 H1140"/>
+  <path d="M145 560 V577 M128 577 H162 M134 585 H156 M140 593 H150"/>
+ </g>
+ <g fill="#244967">
+  <circle cx="145" cy="150" r="4"/><circle cx="245" cy="150" r="4"/>
+  <circle cx="445" cy="150" r="4"/><circle cx="895" cy="150" r="4"/><circle cx="1010" cy="150" r="4"/>
+  <circle cx="405" cy="560" r="4"/><circle cx="525" cy="560" r="4"/>
+ </g>
+ <g font-family="Arial, sans-serif" font-size="19" fill="#172535">
+  <text x="75" y="134" font-weight="bold">SYNTH_3V3</text>
+  <text x="78" y="228">C21</text><text x="70" y="305">10 nF</text>
+  <text x="214" y="228">C23</text><text x="200" y="305">100 nF</text>
+  <text x="382" y="253" font-weight="bold">Y21 · 25 MHz</text>
+  <text x="380" y="281" font-size="16">1XTW25000MAA</text>
+  <text x="377" y="334">3 OUT</text><text x="407" y="198">4 VCC</text>
+  <text x="377" y="443">1 GND</text><text x="487" y="443">2 GND</text>
+  <text x="655" y="279">C22</text><text x="647" y="370">1 nF C0G</text>
+  <text x="876" y="258" font-weight="bold">U31 · Si5351A</text>
+  <text x="883" y="286" font-size="16">10-pin MSOP</text>
+  <text x="870" y="328">2 XA</text><text x="870" y="398">3 XB</text>
+  <text x="690" y="418" font-size="16">FLOAT</text>
+  <text x="870" y="448">4 SCL</text><text x="870" y="493">5 SDA</text>
+  <text x="628" y="447" font-size="17">Pico SCL</text><text x="628" y="492" font-size="17">Pico SDA</text>
+  <text x="860" y="196" font-size="17">1 VDD</text><text x="974" y="196" font-size="17">7 VDDO</text>
+  <text x="930" y="517" font-size="17">8 GND</text>
+  <text x="1148" y="302" font-size="17">CLK0 (10)</text>
+  <text x="1148" y="362" font-size="17">CLK1 (9)</text>
+  <text x="1148" y="422" font-size="17">CLK2 (6)</text>
+  <text x="181" y="591">GND</text>
+ </g>
+ <rect x="350" y="605" width="880" height="110" rx="8" fill="#eef3f6"/>
+ <g font-family="Arial, sans-serif" font-size="17" fill="#172535">
+  <text x="372" y="635">Local supply bypasses: C31 = 100 nF from U31.1 to GND; C32 = 100 nF from U31.7 to GND.</text>
+  <text x="372" y="666">C21/C22 follow the KDS measurement fixture. Skyworks' XA example uses 100 nF series coupling.</text>
+  <text x="372" y="696">No crystal, no XB ground connection, no 50 Ω reference load. See the design notes for limits.</text>
+ </g>
+</svg>

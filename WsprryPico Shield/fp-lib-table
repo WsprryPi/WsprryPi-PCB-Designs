@@ -1,4 +1,0 @@
-(fp_lib_table
-	(version 7)
-	(lib (name "wsprrypico-shield") (type "KiCad") (uri "${KIPRJMOD}/wsprrypico-shield.pretty") (options "") (descr "Pico 2 W shield header interface"))
-)

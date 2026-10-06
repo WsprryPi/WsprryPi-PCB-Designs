@@ -1,0 +1,4331 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "890bb335-f614-4bad-8f78-a3ef46bcecda")
+	(paper "A4")
+	(title_block
+		(title "QRP Labs synthesizer - photographed Rev6 population")
+		(date "2026-10-06")
+		(rev "Model 1")
+		(company "QRP Labs circuit; independent documentation model")
+		(comment 1 "Electrical model only; uncertainty and sources in README.md")
+	)
+	(lib_symbols
+		(symbol "qrp-labs-models:78M33_Functional"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "78M33_Functional"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ua78m.pdf"
+				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "78M33 fixed 3.3 V regulator; maker unknown. Functional map 1 IN, 2 GND/tab, 3 OUT. No procurement identity."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Voltage Regulator 500mA Positive"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO?252*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "78M33_Functional_0_1"
+				(rectangle
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "78M33_Functional_1_1"
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "qrp-labs-models:BSS123"
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BSS123"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BSS123.pdf"
+				(at 5.08 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "0.17A Id, 100V Vds, N-Channel MOSFET, SOT-23"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "N-Channel MOSFET"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(embedded_fonts no)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(symbol "BSS123_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905)
+						(xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0)
+						(xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286)
+						(xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508)
+						(xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27)
+						(xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778)
+						(xy 3.302 -1.778)
+						(xy 3.302 1.778)
+						(xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0)
+						(xy 2.032 0.381)
+						(xy 2.032 -0.381)
+						(xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54)
+						(xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54)
+						(xy 2.54 0)
+						(xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.921 0.381)
+						(xy 3.683 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381)
+						(xy 2.921 -0.254)
+						(xy 3.683 -0.254)
+						(xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BSS123_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "qrp-labs-models:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "qrp-labs-models:Clock_Pads"
+			(pin_names
+				(offset 0.5)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "J"
+				(at 0 10.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Bare SMA pads"
+				(at 0 7.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bare edge SIG/GND/GND pad groups; no SMA connector fitted. Model reference assigned."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Clock_Pads_0_1"
+				(rectangle
+					(start -2.54 5.08)
+					(end 2.54 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Clock_Pads_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 5.08)
+					(name "SIG"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "qrp-labs-models:MS5351M"
+			(pin_names
+				(offset 0.5)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "IC"
+				(at 0 25.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MS5351M"
+				(at 0 22.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ruimeng MS5351M datasheet V1.0 2021-03-08 p3, linked by QRP Labs. No footprint selected."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MS5351M_0_1"
+				(rectangle
+					(start -15.24 20.32)
+					(end 15.24 -22.86)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MS5351M_1_1"
+				(pin power_in line
+					(at -5.08 25.4 270)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 5.08 25.4 270)
+					(length 5.08)
+					(name "VDDO"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -27.94 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 10.16 0)
+					(length 5.08)
+					(name "XA"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 0 0)
+					(length 5.08)
+					(name "XB"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 -10.16 0)
+					(length 5.08)
+					(name "SCL"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -20.32 0)
+					(length 5.08)
+					(name "SDA"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 10.16 180)
+					(length 5.08)
+					(name "CLK0"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "CLK1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -10.16 180)
+					(length 5.08)
+					(name "CLK2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "qrp-labs-models:Module_Header_Pads"
+			(pin_names
+				(offset 0.5)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "J"
+				(at 0 30.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Two 10-pad rows"
+				(at 0 27.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "QRP Labs module pins 1-20, two 1x10 rows, 2.54 mm pitch. No header hardware fitted in photo."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Module_Header_Pads_0_1"
+				(rectangle
+					(start -12.7 25.4)
+					(end 12.7 -25.4)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Module_Header_Pads_1_1"
+				(pin passive line
+					(at -17.78 22.86 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 22.86 180)
+					(length 5.08)
+					(name "CLK1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 17.78 0)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 17.78 180)
+					(length 5.08)
+					(name "CLK2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 12.7 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 12.7 180)
+					(length 5.08)
+					(name "3V3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 7.62 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 7.62 180)
+					(length 5.08)
+					(name "CLK0"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 2.54 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 2.54 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 -2.54 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -2.54 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 -7.62 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -7.62 180)
+					(length 5.08)
+					(name "SDA_H"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 -12.7 0)
+					(length 5.08)
+					(name "+5V"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -12.7 180)
+					(length 5.08)
+					(name "SCL_H"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 -17.78 0)
+					(length 5.08)
+					(name "+5V"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -17.78 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 -22.86 0)
+					(length 5.08)
+					(name "+5V"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -22.86 180)
+					(length 5.08)
+					(name "VIO"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "qrp-labs-models:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "qrp-labs-models:Repair_Wire"
+			(pin_names
+				(offset 0.5)
+			)
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "W"
+				(at 0 7.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fitted jumper"
+				(at 0 4.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Assigned model reference for photographed Q1-to-Q2 gate jumper, not a silkscreen designator."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Repair_Wire_0_1"
+				(rectangle
+					(start -1.27 2.54)
+					(end 1.27 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Repair_Wire_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "SYNTHESIZER MODULE  |  2023 Rev6  |  33 x 25 mm"
+		(at 20.32 16.51 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "c668c310-28fd-4f1a-857f-c7ec7c52c800")
+	)
+	(text "MS5351M + 78M33 + BSS123. Crystal, direct TCXO, C3, headers and SMA connectors unfitted."
+		(at 20.32 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "3164569d-d74a-4314-a6ea-64598ed30b82")
+	)
+	(symbol
+		(lib_id "qrp-labs-models:78M33_Functional")
+		(at 74.93 48.26 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "336bb707-ab31-48d9-8cce-e4ef769d6066")
+		(property "Reference" "IC2"
+			(at 74.93 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "78M33 / 3.3 V"
+			(at 74.93 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ua78m.pdf"
+			(at 74.93 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "78M33 marking confirmed in IMG_1703. 1 IN, 2 GND/tab, 3 OUT per 78Mxx TO-252 datasheet. Maker unknown."
+			(at 74.93 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cfef143f-35be-4b26-a473-a7da79169b2e")
+		)
+		(pin "2"
+			(uuid "f382a1c9-2268-4d35-a743-c53652f83bba")
+		)
+		(pin "3"
+			(uuid "5ab3f8e1-2136-4b9f-a97b-6fce7cf1dc97")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "IC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "qrp-labs-models:C")
+		(at 45.72 62.23 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d17904b8-2344-4698-aa1a-433b5cfb7b98")
+		(property "Reference" "C1"
+			(at 50.8 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 nF (doc)"
+			(at 50.8 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Manual p2 0.1uF input bypass; fitted in photo, unmeasured."
+			(at 45.72 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b6ca0f58-6ea7-46b4-954b-e30ff45182a7")
+		)
+		(pin "2"
+			(uuid "e09e7d66-3eb5-4845-a60f-ffd96c8b4576")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "qrp-labs-models:C")
+		(at 104.14 62.23 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce2843b8-de26-429c-a2f6-bc8fdf1b7316")
+		(property "Reference" "C2"
+			(at 109.22 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 nF (doc)"
+			(at 109.22 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Manual p2 0.1uF output bypass; fitted in photo, unmeasured."
+			(at 104.14 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2adf7d2d-00f2-44f1-9c90-208952a48387")
+		)
+		(pin "2"
+			(uuid "b08c9351-2b17-41fb-9061-ae059fae815f")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "qrp-labs-models:C")
+		(at 137.16 62.23 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "70a96bab-02ca-43c2-85c4-e273940bea10")
+		(property "Reference" "C4"
+			(at 142.24 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Unknown"
+			(at 142.24 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Fitted photo C4; manual p4 track diagram VDD/GND; value unspecified."
+			(at 137.16 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f6f393e-6352-4c5f-8388-0933c57b9dcd")
+		)
+		(pin "2"
+			(uuid "b4e47ff9-853d-49b2-8ddc-dcdb429e368a")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(hierarchical_label "V5_IN"
+		(shape input)
+		(at 25.4 48.26 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "763fefc7-59a8-4c8d-9937-8ba77607a317")
+	)
+	(wire
+		(pts
+			(xy 25.4 48.26)
+			(xy 45.72 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ae3c1b3-9df3-4679-9f5d-7774f7fdc4a0")
+	)
+	(wire
+		(pts
+			(xy 45.72 48.26)
+			(xy 67.31 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ccf5493-c6fa-4add-a7da-f7ff590b4991")
+	)
+	(label "V5_IN"
+		(at 33.02 48.26 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "5b9b16e5-60d4-4dbe-ac9a-c202e9cba917")
+	)
+	(wire
+		(pts
+			(xy 45.72 48.26)
+			(xy 45.72 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b70f81a6-c544-490c-aba0-0203845c1240")
+	)
+	(junction
+		(at 45.72 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a474b4d0-004a-43ae-b0bd-87a225bcc716")
+	)
+	(wire
+		(pts
+			(xy 82.55 48.26)
+			(xy 104.14 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd199ce1-338a-42ac-a5ec-132ada3fccda")
+	)
+	(wire
+		(pts
+			(xy 104.14 48.26)
+			(xy 137.16 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85edac74-44aa-41f1-bbcf-997cdbdf6d88")
+	)
+	(wire
+		(pts
+			(xy 137.16 48.26)
+			(xy 154.94 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "075964ba-fb3a-4453-8d61-5780de1dfa76")
+	)
+	(hierarchical_label "VDD_3V3"
+		(shape output)
+		(at 154.94 48.26 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "84765034-c781-4d64-8091-7c65d6cdcb23")
+	)
+	(label "VDD_3V3"
+		(at 88.9 48.26 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "a462b87d-7ab4-4aa1-a713-613d82ab59c4")
+	)
+	(wire
+		(pts
+			(xy 104.14 48.26)
+			(xy 104.14 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c462aa3d-9515-40f7-837f-f58c98f46aa0")
+	)
+	(junction
+		(at 104.14 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83b53020-905f-4d6c-a033-85a59af85f17")
+	)
+	(wire
+		(pts
+			(xy 137.16 48.26)
+			(xy 137.16 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52826a8d-2e1b-4ee5-be2c-3c28aed2f696")
+	)
+	(junction
+		(at 137.16 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3fdffe6d-c78b-4735-ae54-7307587da59f")
+	)
+	(wire
+		(pts
+			(xy 25.4 78.74)
+			(xy 45.72 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "291dea14-40d8-45c6-a805-4ad99b03adae")
+	)
+	(wire
+		(pts
+			(xy 45.72 78.74)
+			(xy 74.93 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e87f2e1-ff65-4435-9a6b-1001e0b46c08")
+	)
+	(wire
+		(pts
+			(xy 74.93 78.74)
+			(xy 104.14 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "118d0321-bcb6-472e-83fc-8c91cef52200")
+	)
+	(wire
+		(pts
+			(xy 104.14 78.74)
+			(xy 137.16 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9faa5c58-6aa5-4652-8989-81f05036421d")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 25.4 78.74 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "6f1506ba-434e-4976-b55d-ed54c880854f")
+	)
+	(label "GND"
+		(at 33.02 78.74 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "44380baa-2441-49ba-9ed7-64990032864e")
+	)
+	(wire
+		(pts
+			(xy 45.72 66.04)
+			(xy 45.72 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a86a0b-910d-4a8c-aeef-1ba65783d114")
+	)
+	(junction
+		(at 45.72 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "166677b4-a9ab-43b8-b23c-c4b26d6775b7")
+	)
+	(wire
+		(pts
+			(xy 74.93 55.88)
+			(xy 74.93 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de19ce0d-231d-48b4-b570-3be553df3fb5")
+	)
+	(junction
+		(at 74.93 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a7a4132-b59e-478d-93fd-5448d14a01d4")
+	)
+	(wire
+		(pts
+			(xy 104.14 66.04)
+			(xy 104.14 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ae5ba92-e47e-46df-9578-50bda205e81c")
+	)
+	(junction
+		(at 104.14 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "25e136fd-1fd2-4844-844c-2b557ff67e48")
+	)
+	(wire
+		(pts
+			(xy 137.16 66.04)
+			(xy 137.16 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c65ed6b-ef9c-4e55-a2f0-bac9b3cfc250")
+	)
+	(junction
+		(at 137.16 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c9a510f-6164-4ead-b2df-12376b799ef0")
+	)
+	(symbol
+		(lib_id "qrp-labs-models:BSS123")
+		(at 63.5 115.57 270)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a55ec991-c98e-4482-b358-b83f7edad13a")
+		(property "Reference" "Q1"
+			(at 63.5 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BSS123"
+			(at 63.5 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BSS123.pdf"
+			(at 63.5 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Rev6 manual BSS123; photo wire joins Q1/Q2 gates."
+			(at 63.5 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2031d990-8640-4664-8b28-523c33a9a461")
+		)
+		(pin "2"
+			(uuid "b14f594a-48cf-4e5c-928d-3c4abd6648a6")
+		)
+		(pin "3"
+			(uuid "d079a1aa-e862-4810-b623-349dcfeafe7a")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "qrp-labs-models:BSS123")
+		(at 63.5 152.4 270)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f2b1b77-2de6-4870-ad0e-6750832bd9df")
+		(property "Reference" "Q2"
+			(at 63.5 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BSS123"
+			(at 63.5 161.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BSS123.pdf"
+			(at 63.5 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Rev6 manual BSS123; gate on regulated VDD."
+			(at 63.5 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6ea1bd4-72cb-4e6a-aa49-32f717591b95")
+		)
+		(pin "2"
+			(uuid "f3ada309-2fa8-4181-87a9-431a2364d40e")
+		)
+		(pin "3"
+			(uuid "52df6fe9-b1f3-44aa-9020-c2ac065446f2")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "qrp-labs-models:Repair_Wire")
+		(at 63.5 95.25 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "bfc3bcfc-99ce-405e-b87b-a7c2adf16e21")
+		(property "Reference" "W1"
+			(at 74.93 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fitted jumper"
+			(at 78.74 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Assigned model ref for photographed Q1-to-Q2 gate wire, consistent with official Rev6 fix."
+			(at 63.5 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a06fa6cb-d1c4-4225-9d4b-34a107380213")
+		)
+		(pin "2"
+			(uuid "5ed152dc-d0d0-48c2-82ff-3fdcd0d80efb")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "W1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 63.5 90.17)
+			(xy 63.5 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef5a687e-716c-42b6-8b70-c470369a08a9")
+	)
+	(label "VDD_3V3"
+		(at 63.5 85.09 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1aaf192-54e8-4738-bca4-777dab4c5e81")
+	)
+	(wire
+		(pts
+			(xy 63.5 100.33)
+			(xy 63.5 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c70da973-e6f8-4e88-b62d-3e5a82e90b1f")
+	)
+	(label "Q1_GATE_REPAIRED"
+		(at 63.5 100.33 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "068f9f65-3477-4687-ac08-937e310b1687")
+	)
+	(wire
+		(pts
+			(xy 63.5 147.32)
+			(xy 63.5 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40d63020-5810-460f-bef2-698edb3f78fb")
+	)
+	(label "VDD_3V3"
+		(at 63.5 142.24 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6e03b91-5f92-4637-b07b-a2a33fddf133")
+	)
+	(symbol
+		(lib_id "qrp-labs-models:R")
+		(at 38.1 107.95 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cb6b265b-c4f7-48c4-823f-31208c646577")
+		(property "Reference" "R3"
+			(at 43.18 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k (doc)"
+			(at 43.18 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "1k per QRP circuit; unmeasured."
+			(at 38.1 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9ab988e-f810-4439-b82e-9436d2c1ac68")
+		)
+		(pin "2"
+			(uuid "8c7789d4-7d21-455c-a32d-27e7f3eb05e9")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "qrp-labs-models:R")
+		(at 86.36 107.95 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de8457af-ff87-4b3b-b2cd-1a197edd511c")
+		(property "Reference" "R1"
+			(at 91.44 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k (doc)"
+			(at 91.44 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "1k per QRP circuit; unmeasured."
+			(at 86.36 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ef92d57-8e5c-422e-85b8-5f485cda720a")
+		)
+		(pin "2"
+			(uuid "8b56a298-4bf3-43d7-9397-fc5000e966f0")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 38.1 104.14)
+			(xy 38.1 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "981711cb-c35f-488f-ae8f-84c5833adf55")
+	)
+	(label "VDD_3V3"
+		(at 38.1 99.06 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "3b9fe648-0e4a-438f-947a-687f9fa4f3b2")
+	)
+	(wire
+		(pts
+			(xy 86.36 104.14)
+			(xy 86.36 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4f16c9f-e136-4b05-823f-20500b04b7df")
+	)
+	(label "I2C_VIO"
+		(at 86.36 99.06 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "28bdf725-50b3-4bc5-a451-e1d32f702712")
+	)
+	(wire
+		(pts
+			(xy 38.1 111.76)
+			(xy 38.1 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb46a519-482b-469d-974f-e7d0325c6682")
+	)
+	(wire
+		(pts
+			(xy 25.4 118.11)
+			(xy 38.1 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd69aa71-b60d-41a6-b7d8-7e7cb31a0e06")
+	)
+	(wire
+		(pts
+			(xy 38.1 118.11)
+			(xy 58.42 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "398dbdfd-27cb-4013-ad01-e5c969405f07")
+	)
+	(junction
+		(at 38.1 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c82445b-b0b5-4cbf-b67e-70e8ce2c89f8")
+	)
+	(label "SDA_L"
+		(at 25.4 118.11 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "5022e8d0-8656-4a1c-9d65-6a7e55b2f387")
+	)
+	(wire
+		(pts
+			(xy 68.58 118.11)
+			(xy 86.36 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa1302cd-0e16-4300-bf02-9679b088d5f6")
+	)
+	(wire
+		(pts
+			(xy 86.36 111.76)
+			(xy 86.36 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fa20276-1bce-49ad-a11a-525a336bd2e0")
+	)
+	(junction
+		(at 86.36 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e565411-c8a9-474b-a412-99ffb98c4631")
+	)
+	(label "SDA_H"
+		(at 86.36 118.11 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "08b32094-682b-4e62-8270-db1df7b8e5eb")
+	)
+	(symbol
+		(lib_id "qrp-labs-models:R")
+		(at 38.1 144.78 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "267ee56f-7b88-4a31-94b5-1aae3ef87dac")
+		(property "Reference" "R4"
+			(at 43.18 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k (doc)"
+			(at 43.18 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "1k per QRP circuit; unmeasured."
+			(at 38.1 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3092b8e-145d-41d1-b41a-61933219ef6f")
+		)
+		(pin "2"
+			(uuid "d284e6d1-ba74-498e-a382-82f22ad74137")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "qrp-labs-models:R")
+		(at 86.36 144.78 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "020702a6-3ad9-4838-b5c5-1377022b7d19")
+		(property "Reference" "R2"
+			(at 91.44 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k (doc)"
+			(at 91.44 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "1k per QRP circuit; unmeasured."
+			(at 86.36 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cca6dc52-a735-4931-8a34-203705c44fd6")
+		)
+		(pin "2"
+			(uuid "415ce8bd-9e45-4436-a2d1-b2573c543df8")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 38.1 140.97)
+			(xy 38.1 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbcddfc8-bf28-4c4b-be90-20d9f69db6ab")
+	)
+	(label "VDD_3V3"
+		(at 38.1 135.89 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "8bba8869-1245-4d25-a6df-4ab0075aa41b")
+	)
+	(wire
+		(pts
+			(xy 86.36 140.97)
+			(xy 86.36 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e693e71-35a9-4822-8d73-e827fd9580e3")
+	)
+	(label "I2C_VIO"
+		(at 86.36 135.89 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "78a21f59-cd0c-4de1-9335-cb413a8268f2")
+	)
+	(wire
+		(pts
+			(xy 38.1 148.59)
+			(xy 38.1 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ff1b4e9-ee43-42cf-b022-57ea00aa3cf8")
+	)
+	(wire
+		(pts
+			(xy 25.4 154.94)
+			(xy 38.1 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd1538f7-c8cc-49f8-9896-74830bb66919")
+	)
+	(wire
+		(pts
+			(xy 38.1 154.94)
+			(xy 58.42 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48e8062c-b079-4cd3-a96d-f5e6619016b9")
+	)
+	(junction
+		(at 38.1 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59dc344d-3791-442e-8e01-b4f8ffce7e30")
+	)
+	(label "SCL_L"
+		(at 25.4 154.94 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "f87380a1-466f-4fa2-a725-7c3e050d2026")
+	)
+	(wire
+		(pts
+			(xy 68.58 154.94)
+			(xy 86.36 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "678dfaa4-e8c8-4194-a070-5ca095be0a6d")
+	)
+	(wire
+		(pts
+			(xy 86.36 148.59)
+			(xy 86.36 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c3915fe-4dd6-4871-8106-19a3b8f04fcf")
+	)
+	(junction
+		(at 86.36 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "498b5695-514e-4c3b-84a7-ef60f2793152")
+	)
+	(label "SCL_H"
+		(at 86.36 154.94 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "66877d54-b114-412b-9026-3bd86ae0a6e8")
+	)
+	(symbol
+		(lib_id "qrp-labs-models:MS5351M")
+		(at 129.54 118.11 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae5009a7-b286-4167-9f94-27f1911b19a9")
+		(property "Reference" "IC1"
+			(at 129.54 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MS5351M"
+			(at 129.54 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Photo identity, Ruimeng datasheet p3 pinout."
+			(at 129.54 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a27c09e-b364-4d4d-9c0a-36d807db2a4d")
+		)
+		(pin "7"
+			(uuid "857f4657-3d11-475d-be31-c33e8afb8892")
+		)
+		(pin "8"
+			(uuid "b15013c9-5fda-4c1f-b1ce-f0fa18d4f314")
+		)
+		(pin "2"
+			(uuid "2480b8dc-14fa-4184-b769-b82a55fb8687")
+		)
+		(pin "3"
+			(uuid "4825f430-69e2-4b26-9885-8fda71400a79")
+		)
+		(pin "4"
+			(uuid "3b6daaf6-4e3e-47bc-8946-74d620c2e44c")
+		)
+		(pin "5"
+			(uuid "057a48e5-c9b7-4d26-85fa-fba4b9353737")
+		)
+		(pin "10"
+			(uuid "a5bc2cf4-a673-4db2-92a1-8202e8d2f5a8")
+		)
+		(pin "9"
+			(uuid "589da20b-4205-4492-8261-02ddc072ef26")
+		)
+		(pin "6"
+			(uuid "82d6e535-b913-4805-bef9-c496f835b145")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "IC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 92.71)
+			(xy 124.46 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dde7a95-0f9b-49ed-9ed6-159ebf7bc961")
+	)
+	(label "VDD_3V3"
+		(at 124.46 87.63 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "cfd47ebb-b293-40e7-a68a-df193383452a")
+	)
+	(wire
+		(pts
+			(xy 134.62 92.71)
+			(xy 134.62 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef0961fa-f5d1-4ef5-83e2-c1ac2b36e003")
+	)
+	(label "VDD_3V3"
+		(at 134.62 87.63 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc1466af-7e16-4882-ab9b-510c44608c86")
+	)
+	(wire
+		(pts
+			(xy 129.54 146.05)
+			(xy 129.54 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b8969c3-69c6-4450-961d-e393be22e2b4")
+	)
+	(label "GND"
+		(at 129.54 151.13 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "fd3f5bac-8757-4c3e-a87d-4cdbb8d4b9f5")
+	)
+	(hierarchical_label "REF_25MHZ"
+		(shape input)
+		(at 104.14 90.17 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "1df51605-78d6-4a07-bd7d-be43d54e2243")
+	)
+	(wire
+		(pts
+			(xy 104.14 90.17)
+			(xy 104.14 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba00246a-975d-4a4d-82ba-8242313a98b8")
+	)
+	(wire
+		(pts
+			(xy 104.14 107.95)
+			(xy 109.22 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4eae1856-af88-4890-8fc5-81f8272f7f2a")
+	)
+	(no_connect
+		(at 109.22 118.11)
+		(uuid "f341b65e-e9d1-4f02-8a4d-80abb4f9393f")
+	)
+	(wire
+		(pts
+			(xy 109.22 128.27)
+			(xy 104.14 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c02d0eb6-da5d-4f00-ad70-7df348456662")
+	)
+	(label "SCL_L"
+		(at 104.14 128.27 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6f1e4ee-b6b7-4704-b0bf-86157e25d038")
+	)
+	(wire
+		(pts
+			(xy 109.22 138.43)
+			(xy 104.14 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0521586f-c9dd-4895-b734-bb4b617b1f4f")
+	)
+	(label "SDA_L"
+		(at 104.14 138.43 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "5cfe5298-48f1-4881-a638-721ff1d87bae")
+	)
+	(wire
+		(pts
+			(xy 149.86 107.95)
+			(xy 154.94 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed1e41a6-d4b4-4de6-8de2-4b781214e66b")
+	)
+	(label "CLK0"
+		(at 154.94 107.95 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "31def5fa-fabb-4832-a207-4a2374539ea7")
+	)
+	(wire
+		(pts
+			(xy 149.86 118.11)
+			(xy 154.94 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "162e458d-15f7-4f34-9938-012dfab7d447")
+	)
+	(label "CLK1"
+		(at 154.94 118.11 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "793ee18e-7ea2-47ed-bf90-a6b704fc7145")
+	)
+	(wire
+		(pts
+			(xy 149.86 128.27)
+			(xy 154.94 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "184546d2-9811-42fc-9b3a-7f3f953a2965")
+	)
+	(label "CLK2"
+		(at 154.94 128.27 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "449b9e64-f3fe-47fc-b41e-4635559bdaef")
+	)
+	(symbol
+		(lib_id "qrp-labs-models:Clock_Pads")
+		(at 185.42 107.95 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "6512fceb-d125-4c45-b09c-dbbeb915155c")
+		(property "Reference" "J3"
+			(at 185.42 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Bare SMA pads"
+			(at 185.42 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Assigned model refs for bare clock edge SIG/GND/GND pad groups; no connector fitted."
+			(at 185.42 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74b7e04e-99d4-438b-9dd2-ba96512d0fba")
+		)
+		(pin "2"
+			(uuid "52f3a8f1-377f-41d1-88e1-bc32a0d0c4e6")
+		)
+		(pin "3"
+			(uuid "4da381f8-458b-4315-952a-b69ac0655b1c")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 177.8 107.95)
+			(xy 172.72 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd9e668a-a5af-4f15-9739-921d7ee56b10")
+	)
+	(label "CLK0"
+		(at 172.72 107.95 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "aeda8334-9e01-45cd-b24f-4e330a43ef72")
+	)
+	(wire
+		(pts
+			(xy 193.04 105.41)
+			(xy 198.12 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a41d85c-9b8b-4b03-aa4a-ce83ecbb4883")
+	)
+	(label "GND"
+		(at 198.12 105.41 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "6f10105f-d52b-4b5a-961d-5a5c191d9aaa")
+	)
+	(wire
+		(pts
+			(xy 193.04 110.49)
+			(xy 198.12 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53675674-70ee-4fbd-a274-2398de435b83")
+	)
+	(label "GND"
+		(at 198.12 110.49 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d383ebf3-66d1-4f96-81df-7b30f28857b9")
+	)
+	(symbol
+		(lib_id "qrp-labs-models:Clock_Pads")
+		(at 185.42 134.62 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "4464ff7d-fb8f-4066-919b-e272bd21a711")
+		(property "Reference" "J4"
+			(at 185.42 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Bare SMA pads"
+			(at 185.42 127.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Assigned model refs for bare clock edge SIG/GND/GND pad groups; no connector fitted."
+			(at 185.42 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e3776433-dc5a-405f-b0ff-d4ef2c30e82c")
+		)
+		(pin "2"
+			(uuid "bd5fe8a9-ec33-47fc-ba66-e7a7d20ca871")
+		)
+		(pin "3"
+			(uuid "5a2ec795-6313-4ec2-a8d2-8d527a8dcd16")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 177.8 134.62)
+			(xy 172.72 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1110b5fb-361c-43d4-85a9-6d7edfe60342")
+	)
+	(label "CLK1"
+		(at 172.72 134.62 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9eb4015-bc29-4225-ad24-b71d28fca551")
+	)
+	(wire
+		(pts
+			(xy 193.04 132.08)
+			(xy 198.12 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "878597e6-5a98-4c71-9e6e-9b5bb9d73cf6")
+	)
+	(label "GND"
+		(at 198.12 132.08 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d4ee456a-3d85-400d-89f4-6c61fc200ceb")
+	)
+	(wire
+		(pts
+			(xy 193.04 137.16)
+			(xy 198.12 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51a09d74-4054-4589-bb9b-4e91236ae8cc")
+	)
+	(label "GND"
+		(at 198.12 137.16 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "a2a90c2d-0515-4273-8649-1e83e03f605f")
+	)
+	(symbol
+		(lib_id "qrp-labs-models:Clock_Pads")
+		(at 185.42 161.29 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "76806ea2-5195-4b5f-94df-e64089bac2f3")
+		(property "Reference" "J5"
+			(at 185.42 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Bare SMA pads"
+			(at 185.42 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Assigned model refs for bare clock edge SIG/GND/GND pad groups; no connector fitted."
+			(at 185.42 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "770c7191-8f7c-4c43-94a4-a590895fbd62")
+		)
+		(pin "2"
+			(uuid "efae11b8-c078-4d8b-a53a-d912bcd6ec41")
+		)
+		(pin "3"
+			(uuid "c5a2b737-ea1a-4e6e-96df-3fe958fe9173")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 177.8 161.29)
+			(xy 172.72 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27084609-e416-4bf1-b3f0-c27952de668a")
+	)
+	(label "CLK2"
+		(at 172.72 161.29 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "99d85f37-5438-4ad0-bd0e-e32875d2ec50")
+	)
+	(wire
+		(pts
+			(xy 193.04 158.75)
+			(xy 198.12 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fda3e82-1079-4bf3-b8ce-58ca5fb21069")
+	)
+	(label "GND"
+		(at 198.12 158.75 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "63623b34-a407-4da4-9ef3-c7342034cecd")
+	)
+	(wire
+		(pts
+			(xy 193.04 163.83)
+			(xy 198.12 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92dff94c-2476-4349-a9a4-9dd721e2629f")
+	)
+	(label "GND"
+		(at 198.12 163.83 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "43604112-0eea-4ad4-a954-4fb09d18c78d")
+	)
+	(symbol
+		(lib_id "qrp-labs-models:Module_Header_Pads")
+		(at 241.3 106.68 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "a1b489c6-d8ad-46b3-8ee1-6002e116dccd")
+		(property "Reference" "J1"
+			(at 241.3 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Module pins 1-20"
+			(at 241.3 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Manual p1 pinout and p3 physical orientation; hardware absent in photo."
+			(at 241.3 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4bb72b1a-4252-42e7-898e-ce46eb3ee245")
+		)
+		(pin "20"
+			(uuid "59747a1e-933a-4a3f-9078-20ff1e402064")
+		)
+		(pin "2"
+			(uuid "6a8be272-8c98-40b0-aa97-acca0dc47c47")
+		)
+		(pin "19"
+			(uuid "71819c3e-88dd-4987-96d1-e25e947dfd22")
+		)
+		(pin "3"
+			(uuid "d41f56f7-a8d7-4282-895d-8a3bd1c60df2")
+		)
+		(pin "18"
+			(uuid "baffbe8a-3f99-4842-8b18-e773b2ebf888")
+		)
+		(pin "4"
+			(uuid "e8253713-26e3-4d34-9440-8a7816840a6f")
+		)
+		(pin "17"
+			(uuid "64ecf310-67e3-46ba-807e-0f70748beb51")
+		)
+		(pin "5"
+			(uuid "1d4600ce-d83e-4332-824f-6325c893c559")
+		)
+		(pin "16"
+			(uuid "b2beeac4-9d15-4e22-b852-113b092e6744")
+		)
+		(pin "6"
+			(uuid "1c7c2bbe-454e-49c6-8a66-7c14b9ab9d26")
+		)
+		(pin "15"
+			(uuid "b22c4dc4-daf9-428d-ae67-e7675c02f3ce")
+		)
+		(pin "7"
+			(uuid "95263cea-f84c-42d2-a8de-ced32b58a715")
+		)
+		(pin "14"
+			(uuid "19687095-3637-490b-878f-c58000906add")
+		)
+		(pin "8"
+			(uuid "d77b5d7e-aae0-4b4d-bfae-d0f3760a7e9b")
+		)
+		(pin "13"
+			(uuid "4254e3cb-18ac-4e0b-8dd2-4d9a38835335")
+		)
+		(pin "9"
+			(uuid "779a3e0a-8406-40a0-b783-e85ff2e797fc")
+		)
+		(pin "12"
+			(uuid "bb277081-2c58-4f1b-ad94-eb4f107a7f8b")
+		)
+		(pin "10"
+			(uuid "b323f537-5983-42c9-a0dc-b4bf9195f732")
+		)
+		(pin "11"
+			(uuid "c2daeea6-c7f1-41f7-bef8-f0b19903f47d")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/e2779087-cdbc-4b99-bca9-7f7fef96fa3f"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 223.52 83.82)
+			(xy 218.44 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8149df8f-5385-4888-8c11-014451b2cf19")
+	)
+	(label "GND"
+		(at 218.44 83.82 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1f279e5-2632-4f40-b3dc-9051a5808a5c")
+	)
+	(no_connect
+		(at 223.52 88.9)
+		(uuid "f11399dd-2811-483d-b4e9-d17f3f1439e1")
+	)
+	(wire
+		(pts
+			(xy 223.52 93.98)
+			(xy 218.44 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d27690cb-da8a-434c-9f64-6658f826c62e")
+	)
+	(label "GND"
+		(at 218.44 93.98 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "cbc79f1e-8472-4adb-b77b-2432a6e22703")
+	)
+	(wire
+		(pts
+			(xy 223.52 99.06)
+			(xy 218.44 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37d3839e-0288-4007-8cab-2f198ab561f2")
+	)
+	(label "GND"
+		(at 218.44 99.06 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "0116ff17-b59e-458e-9807-8a2ead1dd8d7")
+	)
+	(wire
+		(pts
+			(xy 223.52 104.14)
+			(xy 218.44 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b038b225-5982-46e3-9420-b9a75a264eb5")
+	)
+	(label "GND"
+		(at 218.44 104.14 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "f7fa3358-c5bf-4a2e-b28c-f2694dcd48c3")
+	)
+	(wire
+		(pts
+			(xy 223.52 109.22)
+			(xy 218.44 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f57f1b53-fb53-4c75-8fae-9f9ee93156c4")
+	)
+	(label "GND"
+		(at 218.44 109.22 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9db9afc-0457-4774-b5b5-fad94c5ab6a3")
+	)
+	(wire
+		(pts
+			(xy 223.52 114.3)
+			(xy 218.44 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "211a49f3-d09c-40b6-8911-edbaf552e516")
+	)
+	(label "GND"
+		(at 218.44 114.3 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa574216-1cd9-420e-a5bf-cb9b4ce3f080")
+	)
+	(wire
+		(pts
+			(xy 223.52 119.38)
+			(xy 218.44 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20b9215a-21a3-4176-ba28-2f3169a7149c")
+	)
+	(label "V5_IN"
+		(at 218.44 119.38 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d67c7423-5a39-4b58-a6af-194e230b3026")
+	)
+	(wire
+		(pts
+			(xy 223.52 124.46)
+			(xy 218.44 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7d7d14d-d740-4293-9845-f3e8ca082ec4")
+	)
+	(label "V5_IN"
+		(at 218.44 124.46 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "59461d0c-6e5b-4a65-a40c-353f09baeb16")
+	)
+	(wire
+		(pts
+			(xy 223.52 129.54)
+			(xy 218.44 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac29bc41-e776-4d0c-a698-2ffb610e2b05")
+	)
+	(label "V5_IN"
+		(at 218.44 129.54 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "5778b6e1-5ba4-4211-b461-c2e88ef6ff71")
+	)
+	(wire
+		(pts
+			(xy 259.08 129.54)
+			(xy 264.16 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aee28aee-1062-4a60-a280-a7493d255a26")
+	)
+	(hierarchical_label "I2C_VIO"
+		(shape input)
+		(at 264.16 129.54 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "63c71fc6-c48a-4743-9bef-19044ce11d06")
+	)
+	(wire
+		(pts
+			(xy 259.08 124.46)
+			(xy 264.16 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cbfe233-66b6-4cfe-a78a-1dddfb57a15b")
+	)
+	(label "GND"
+		(at 264.16 124.46 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "26b2020b-f153-40ab-8011-cb43c2b80d0b")
+	)
+	(wire
+		(pts
+			(xy 259.08 119.38)
+			(xy 264.16 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee8e3e32-e0ed-47a8-958b-25a2e6cbc4f1")
+	)
+	(hierarchical_label "SCL_H"
+		(shape bidirectional)
+		(at 264.16 119.38 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "2c45f1bf-710d-4c81-a95c-bdb3af6eec55")
+	)
+	(wire
+		(pts
+			(xy 259.08 114.3)
+			(xy 264.16 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae22a190-3d08-482a-b533-d0d01c2f40a9")
+	)
+	(hierarchical_label "SDA_H"
+		(shape bidirectional)
+		(at 264.16 114.3 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "ae90e695-7278-40e2-9fa3-50df65c5f429")
+	)
+	(wire
+		(pts
+			(xy 259.08 109.22)
+			(xy 264.16 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5621fe9b-db80-4516-9bb1-743473514557")
+	)
+	(label "GND"
+		(at 264.16 109.22 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ee61f6de-9360-49f9-a5ec-e1424a0e8d30")
+	)
+	(wire
+		(pts
+			(xy 259.08 104.14)
+			(xy 264.16 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb587cf4-40b1-42a7-b727-2da556a0eea0")
+	)
+	(label "GND"
+		(at 264.16 104.14 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "8586945e-0a01-4261-b007-85b30afbae07")
+	)
+	(wire
+		(pts
+			(xy 259.08 99.06)
+			(xy 264.16 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "423dca48-5cf9-45e1-8c34-bf94225081cb")
+	)
+	(hierarchical_label "CLK0"
+		(shape output)
+		(at 264.16 99.06 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "dffa14fa-8eec-4cb6-8eee-26accf42dc8f")
+	)
+	(wire
+		(pts
+			(xy 259.08 93.98)
+			(xy 264.16 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d52d35a0-b441-4867-b210-811e46deb643")
+	)
+	(label "VDD_3V3"
+		(at 264.16 93.98 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8a5ea91-a129-4745-85cb-759f02e8e262")
+	)
+	(wire
+		(pts
+			(xy 259.08 88.9)
+			(xy 264.16 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a1f6ffb-95b7-4e76-9d8b-eee069c6afd0")
+	)
+	(hierarchical_label "CLK2"
+		(shape output)
+		(at 264.16 88.9 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "777cfced-d1cc-4ebc-8edd-9e80243ba190")
+	)
+	(wire
+		(pts
+			(xy 259.08 83.82)
+			(xy 264.16 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b4b4843-5d5b-4b6c-b5fb-b1787456c673")
+	)
+	(hierarchical_label "CLK1"
+		(shape output)
+		(at 264.16 83.82 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b40de496-910d-4b59-a8a5-0511531a93d1")
+	)
+	(text "W1 restores the photographed Q1 gate trace.\nR5/R6 removed in Rev6; no LM317 circuit.\nC3 = bare VDD/GND pads, no fitted capacitor.\nHeader pin 2 is NC. Pin 11 is separate from 5 V."
+		(at 102.87 157.48 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "18df7e06-e57a-4e12-af1b-2e71aee4b046")
+	)
+	(text "Sources: QRP Labs Synth Rev6 manual pp.1-5; Rev6 repair note; Ruimeng MS5351M p3.\nC4 value and exact regulator maker unresolved. (doc) = documented value, not a measurement."
+		(at 20.32 177.8 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "8a359478-096e-4475-97f1-ae8f1c50a1ff")
+	)
+	(embedded_fonts no)
+)

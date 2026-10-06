@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "qrp-labs-models") (type "KiCad") (uri "${KIPRJMOD}/qrp-labs-models.kicad_sym") (options "") (descr "Electrical models; see README for evidence and uncertainty"))
+)

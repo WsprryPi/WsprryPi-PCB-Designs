@@ -1,0 +1,724 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "31e25edb-ff56-471b-85de-393c9dc095d6")
+	(paper "A4")
+	(title_block
+		(title "QRP Labs 25 MHz TCXO daughterboard")
+		(date "2026-10-06")
+		(rev "Model 1")
+		(company "QRP Labs circuit; independent documentation model")
+		(comment 1 "Electrical model only; uncertainty and sources in README.md")
+	)
+	(lib_symbols
+		(symbol "qrp-labs-models:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "qrp-labs-models:TCXO_Functional"
+			(pin_names
+				(offset 0.5)
+			)
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "Y"
+				(at 0 15.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "25 MHz TCXO"
+				(at 0 12.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Functional abstraction, not package pin numbers. Marking 25.00BN / D441. Maker and fourth pad function unknown."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TCXO_Functional_0_1"
+				(rectangle
+					(start -15.24 10.16)
+					(end 15.24 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TCXO_Functional_1_1"
+				(pin power_in line
+					(at -20.32 0 0)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "RAW_OUT"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "OUT"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -15.24 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "GND"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "25 MHz TCXO MODULE  |  14.8 x 10.5 mm"
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "4dd28cf9-49f7-4780-a42a-40ad300adda5")
+	)
+	(text "Three documented module pads; capacitor wiring is photo-inferred."
+		(at 20.32 26.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "2a4df1fb-29f6-4ce6-b01b-befecb49e2c4")
+	)
+	(symbol
+		(lib_id "qrp-labs-models:TCXO_Functional")
+		(at 100.33 74.93 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "46cdec29-3891-460c-ba3b-5e4b6561a607")
+		(property "Reference" "Y101"
+			(at 100.33 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "25 MHz / maker unknown"
+			(at 100.33 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Photo marking 25.00BN / D441. Functional pins only; fourth-pad function and physical pin numbers unknown."
+			(at 100.33 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "VDD"
+			(uuid "87dbfda7-5bce-42a4-b8a6-190b708f8177")
+		)
+		(pin "OUT"
+			(uuid "33875623-6244-4418-b649-539f1264d771")
+		)
+		(pin "GND"
+			(uuid "9c2f4339-87e5-43fc-a16e-5e863aa4a5a7")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/24b83f72-c811-4519-9b36-536bfb19ac33"
+					(reference "Y101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "qrp-labs-models:C")
+		(at 60.96 95.25 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5645699a-c88a-476e-92b3-f8d11bc3d4f3")
+		(property "Reference" "C101"
+			(at 66.04 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Unknown"
+			(at 66.04 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Fitted in photo; VDD/GND bypass inferred from visible traces. Value unknown."
+			(at 60.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6ca5efc-c38f-42fc-9449-35a2c5f1c7c7")
+		)
+		(pin "2"
+			(uuid "497151a8-4744-46c8-aead-ed101192df4c")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/24b83f72-c811-4519-9b36-536bfb19ac33"
+					(reference "C101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "qrp-labs-models:C")
+		(at 149.86 74.93 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae9be0b1-54d3-4d50-9ed4-d10bd7adf550")
+		(property "Reference" "C102"
+			(at 149.86 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Unknown"
+			(at 149.86 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Fitted in photo; series raw oscillator-to-OUT coupling inferred from visible traces. Value unknown."
+			(at 149.86 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "645e7180-7d9f-472e-948b-29dbbdc3c4ba")
+		)
+		(pin "2"
+			(uuid "59bbf33d-4382-43f5-a36e-e1252acc568e")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717/24b83f72-c811-4519-9b36-536bfb19ac33"
+					(reference "C102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(hierarchical_label "VDD_3V3"
+		(shape input)
+		(at 35.56 74.93 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "835dd335-a1dc-44b4-833a-986ef66febae")
+	)
+	(wire
+		(pts
+			(xy 35.56 74.93)
+			(xy 60.96 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8e23677-82cf-4ba2-a589-753df67bd1fe")
+	)
+	(wire
+		(pts
+			(xy 60.96 74.93)
+			(xy 80.01 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edbf8669-f1b7-4c3a-b757-44ba74496cd2")
+	)
+	(junction
+		(at 60.96 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7cc3aee-9c60-497e-b075-08f718cc4cc6")
+	)
+	(wire
+		(pts
+			(xy 60.96 74.93)
+			(xy 60.96 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a00b3d69-0e04-4c2b-b46d-1cb4f8fec5ab")
+	)
+	(wire
+		(pts
+			(xy 120.65 74.93)
+			(xy 146.05 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d37cdec-8e52-4c7b-8dff-99a7abe3398f")
+	)
+	(label "OSC_RAW"
+		(at 125.73 74.93 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "f9665dc4-3a18-4337-812b-c362c78f37fb")
+	)
+	(wire
+		(pts
+			(xy 153.67 74.93)
+			(xy 215.9 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dde36494-e85f-407d-a76e-7179febce7c4")
+	)
+	(hierarchical_label "REF_25MHZ"
+		(shape output)
+		(at 215.9 74.93 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "76fce82f-e4cb-4194-a945-fab0e14a0085")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 35.56 115.57 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "0ccaf51d-bd6a-4daa-87e1-7131db72c889")
+	)
+	(wire
+		(pts
+			(xy 35.56 115.57)
+			(xy 60.96 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30c0826b-0dfb-435d-bb92-9578a136c09c")
+	)
+	(wire
+		(pts
+			(xy 60.96 115.57)
+			(xy 100.33 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66231100-790b-41f6-a384-72c06410bb9c")
+	)
+	(wire
+		(pts
+			(xy 60.96 99.06)
+			(xy 60.96 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2461c85a-a1e6-43c4-82fd-76a1cc3a482e")
+	)
+	(wire
+		(pts
+			(xy 100.33 90.17)
+			(xy 100.33 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c591f8d-d6c7-44eb-9170-9b95afcbbd89")
+	)
+	(junction
+		(at 60.96 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0fabaf9e-93d3-4a2c-a4da-67424eb51ab7")
+	)
+	(junction
+		(at 100.33 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b656f0b-47a3-47c6-a3f7-aefcc5ffc2d1")
+	)
+	(text "PHOTO-INFERRED INTERNAL DETAIL - verify continuity before reuse"
+		(at 20.32 133.35 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left top)
+		)
+		(uuid "b90c6fbb-268e-4c1c-b118-719563ed4701")
+	)
+	(text "C101: supply bypass. C102: series output coupling. Neither value is published in the checked sources.\nY101 uses functional VDD / GND / OUT identifiers, not assumed package pin numbers.\nThe fourth oscillator pad, maker, output waveform and amplitude remain unidentified."
+		(at 20.32 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1552ee8f-d471-4a26-bfbf-f778d5e9a5ac")
+	)
+	(text "DOCUMENTED INTERFACE"
+		(at 20.32 162.56 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left top)
+		)
+		(uuid "404c0a4e-635a-416a-b3d8-967789a05eb1")
+	)
+	(text "VDD = regulated 3.3 V. OUT = 25 MHz reference. GND = common return.\nSources: QRP Labs TCXO page and Synth Rev6 manual pp.5-6; photos IMG_1702 / IMG_1705."
+		(at 20.32 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "e709370e-7124-4d6f-ae58-971b9ace1d53")
+	)
+	(embedded_fonts no)
+)

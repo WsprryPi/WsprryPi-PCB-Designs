@@ -1,0 +1,920 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "5235c52c-df79-4c0a-9361-9d6fd7937717")
+	(paper "A4")
+	(title_block
+		(title "QRP Labs 25 MHz TCXO + Synth Rev6 electrical models")
+		(date "2026-10-06")
+		(rev "Model 1")
+		(company "QRP Labs circuit; independent documentation model")
+		(comment 1 "Electrical model only; uncertainty and sources in README.md")
+	)
+	(lib_symbols
+		(symbol "qrp-labs-models:External_Outputs"
+			(pin_names
+				(offset 0.5)
+			)
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "A"
+				(at 0 20.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Clock outputs"
+				(at 0 17.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "External output boundary, not a photographed component. Expresses accessible clock output connections."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "External_Outputs_0_1"
+				(rectangle
+					(start -12.7 15.24)
+					(end 12.7 -15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "External_Outputs_1_1"
+				(pin input line
+					(at -17.78 10.16 0)
+					(length 5.08)
+					(name "CLK0"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "CLK0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 0 0)
+					(length 5.08)
+					(name "CLK1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "CLK1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -10.16 0)
+					(length 5.08)
+					(name "CLK2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "CLK2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "qrp-labs-models:Host_Boundary"
+			(pin_names
+				(offset 0.5)
+			)
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "A"
+				(at 0 35.48 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "External host"
+				(at 0 32.48 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "External power/I2C drive boundary, not an added PCB component. Pin types express intended external drive assumptions."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Host_Boundary_0_1"
+				(rectangle
+					(start -12.7 30.48)
+					(end 12.7 -35.56)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Host_Boundary_1_1"
+				(pin power_out line
+					(at 17.78 25.4 180)
+					(length 5.08)
+					(name "5V_IN"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "5V"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 17.78 15.24 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "GND"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 17.78 0 180)
+					(length 5.08)
+					(name "I2C_VIO"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "VIO"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 17.78 -15.24 180)
+					(length 5.08)
+					(name "SCL"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "SCL"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 -30.48 180)
+					(length 5.08)
+					(name "SDA"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "SDA"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "QRP LABS MODULES  |  25 MHz TCXO + SYNTH Rev6"
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "d502e5cc-7780-4c73-ab78-bb2c053c1cfd")
+	)
+	(text "Intended assembly interconnection of two separately photographed boards"
+		(at 20.32 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "7c5109c5-6152-4acc-922c-926d5e316cb7")
+	)
+	(symbol
+		(lib_id "qrp-labs-models:Host_Boundary")
+		(at 40.64 93.98 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "b48c425b-17e0-4daf-a41a-c4d9331c8448")
+		(property "Reference" "A1"
+			(at 40.64 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "External host / supplies"
+			(at 40.64 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "External drive abstraction, not photographed component. Assumes external 5 V and separately supplied I2C bus."
+			(at 40.64 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5V"
+			(uuid "c72f0469-1c08-4d49-b2a2-6a659d2baa7e")
+		)
+		(pin "GND"
+			(uuid "fdb8dec0-70a1-4137-a19c-92db13ddf5c4")
+		)
+		(pin "VIO"
+			(uuid "0e01ef39-6b08-4bd7-9005-ffcb4b539f3d")
+		)
+		(pin "SCL"
+			(uuid "7f3f9bac-e59f-4783-a3a1-85d5293c8188")
+		)
+		(pin "SDA"
+			(uuid "ed618f83-9f66-4ca9-a04c-702d5475f691")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717"
+					(reference "A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 96.52 60.96)
+		(size 76.2 91.44)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e2779087-cdbc-4b99-bca9-7f7fef96fa3f")
+		(property "Sheetname" "Synthesizer Rev6"
+			(at 96.52 58.42 0)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "Synth Rev6.kicad_sch"
+			(at 96.52 154.94 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "V5_IN" input
+			(at 96.52 68.58 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+			(uuid "16782abc-00d3-4557-842b-f4e0a32650f8")
+		)
+		(pin "I2C_VIO" input
+			(at 96.52 93.98 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+			(uuid "f557d1a8-8f99-4df5-acfa-139289276968")
+		)
+		(pin "SCL_H" bidirectional
+			(at 96.52 109.22 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+			(uuid "3d303686-e6c1-4a3f-a983-bdb8f8e4ee9a")
+		)
+		(pin "SDA_H" bidirectional
+			(at 96.52 124.46 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+			(uuid "32cd4854-b6c1-4780-b48b-77ecc78ba84f")
+		)
+		(pin "REF_25MHZ" input
+			(at 172.72 73.66 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+			(uuid "d7fa040e-83ff-44b0-8759-80c62e5688af")
+		)
+		(pin "VDD_3V3" output
+			(at 172.72 93.98 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+			(uuid "fd0fb686-0ea1-4b3e-bc9b-39db33ed5e82")
+		)
+		(pin "GND" input
+			(at 172.72 109.22 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+			(uuid "6861045a-f9db-453b-b9ea-6a27ecfb244d")
+		)
+		(pin "CLK0" output
+			(at 172.72 124.46 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+			(uuid "442fd7b9-d3ec-4ddd-837e-7eb256198182")
+		)
+		(pin "CLK1" output
+			(at 172.72 134.62 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+			(uuid "603a3e79-da35-4e10-8bbe-bc0870605cd6")
+		)
+		(pin "CLK2" output
+			(at 172.72 144.78 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+			(uuid "540dc335-7647-46c4-b7f7-289ee5916828")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 213.36 66.04)
+		(size 55.88 48.26)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "24b83f72-c811-4519-9b36-536bfb19ac33")
+		(property "Sheetname" "25 MHz TCXO"
+			(at 213.36 63.5 0)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "TCXO 25MHz.kicad_sch"
+			(at 213.36 116.84 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "REF_25MHZ" output
+			(at 213.36 73.66 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+			(uuid "3b471149-a035-4a44-844f-f137fdb1d10c")
+		)
+		(pin "VDD_3V3" input
+			(at 213.36 93.98 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+			(uuid "7e71dadb-827b-4038-8095-8a266f284f69")
+		)
+		(pin "GND" input
+			(at 213.36 109.22 180)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+			(uuid "21b86863-1280-4d86-b1e2-474cb63c19ae")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717"
+					(page "3")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 58.42 68.58)
+			(xy 96.52 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b0d3aee-f48a-4b82-b26a-c1420b226bf4")
+	)
+	(label "V5_IN"
+		(at 73.66 68.58 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "f5ece666-2a56-44dc-9f45-b4d665a355a2")
+	)
+	(wire
+		(pts
+			(xy 58.42 93.98)
+			(xy 96.52 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "929a9bec-def8-4f71-a6c3-1b14fe0c9114")
+	)
+	(label "I2C_VIO"
+		(at 73.66 93.98 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "595a0dc3-210f-4ce7-a1b0-6702cb117c3a")
+	)
+	(wire
+		(pts
+			(xy 58.42 109.22)
+			(xy 96.52 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4452897c-075a-4917-9e7e-991fa1b15c63")
+	)
+	(label "SCL_H"
+		(at 73.66 109.22 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "12962510-66eb-4a23-8ae0-9371a4502a65")
+	)
+	(wire
+		(pts
+			(xy 58.42 124.46)
+			(xy 96.52 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87ad6da6-738d-411f-88bd-cb6c18fa0f46")
+	)
+	(label "SDA_H"
+		(at 73.66 124.46 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "da1a7d72-095e-4e68-aa0b-bd17c87ab57c")
+	)
+	(wire
+		(pts
+			(xy 172.72 73.66)
+			(xy 198.12 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e69a53c1-ea4d-4a2c-ae94-5524600d5e43")
+	)
+	(wire
+		(pts
+			(xy 198.12 73.66)
+			(xy 213.36 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2324d78-2775-4cb1-bde6-e111886531dd")
+	)
+	(wire
+		(pts
+			(xy 172.72 93.98)
+			(xy 198.12 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28843b9f-dec6-4744-9ea9-e1235c677538")
+	)
+	(wire
+		(pts
+			(xy 198.12 93.98)
+			(xy 213.36 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b599fa3-93b8-4029-bd91-b362c538a2e4")
+	)
+	(wire
+		(pts
+			(xy 172.72 109.22)
+			(xy 198.12 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1ed7f03-92da-4874-9883-60f94648686c")
+	)
+	(wire
+		(pts
+			(xy 198.12 109.22)
+			(xy 213.36 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f977f9fd-3d42-459f-8c1e-d21c5ea66827")
+	)
+	(label "GND"
+		(at 198.12 109.22 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ed3a179-0731-40e2-a1d0-cfa76ace43d9")
+	)
+	(symbol
+		(lib_id "qrp-labs-models:External_Outputs")
+		(at 222.25 134.62 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "7a7c15ed-c248-4eb9-a3e2-e7e6cd6ccdf8")
+		(property "Reference" "A2"
+			(at 245.11 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "External clock outputs"
+			(at 246.38 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Evidence" "Functional endpoint boundary, not a board component or fitted connector."
+			(at 222.25 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "CLK0"
+			(uuid "65738c8c-6b7e-47de-8fa0-6c70d0f667ff")
+		)
+		(pin "CLK1"
+			(uuid "25dab3db-ffcc-4b4c-8078-18f47ed39f89")
+		)
+		(pin "CLK2"
+			(uuid "d05d4252-b62a-47bf-88e4-b70f1ef27caa")
+		)
+		(instances
+			(project "QRP Labs Modules"
+				(path "/5235c52c-df79-4c0a-9361-9d6fd7937717"
+					(reference "A2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 124.46)
+			(xy 204.47 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f730dd4-c97e-4e64-94f3-dcad4d63e677")
+	)
+	(wire
+		(pts
+			(xy 172.72 134.62)
+			(xy 204.47 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f4f1924-f2a8-4c96-8d00-34e63de685c6")
+	)
+	(wire
+		(pts
+			(xy 172.72 144.78)
+			(xy 204.47 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd6f1e61-dec3-484a-89e8-a4e10ea59248")
+	)
+	(wire
+		(pts
+			(xy 58.42 78.74)
+			(xy 76.2 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2d2d8a3-de76-4543-9a72-a87773176a7f")
+	)
+	(label "GND"
+		(at 76.2 78.74 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "041290cc-62eb-4584-8714-333d39512e0d")
+	)
+	(text "OUT -> XA pin 2\nVDD = 3.3 V\nGND = common"
+		(at 223.52 81.28 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left top)
+		)
+		(uuid "ff540dac-e47b-43cc-a6f0-fcb2b58177e7")
+	)
+	(text "POPULATION AND EVIDENCE"
+		(at 20.32 161.29 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left top)
+		)
+		(uuid "da203702-058a-4dc7-a1e5-e277e82720f0")
+	)
+	(text "Photos show separate boards; TCXO mounting wires are an intended assembly, not observed solder joints.\nSynth pin 11 (I2C_VIO) stays separate from pins 8-10 (5 V input). Supply it for the chosen host bus.\nConfigure the synthesizer reference as 25,000,000 Hz; omit the 27 MHz crystal.\nTCXO capacitor topology is photo-inferred; unknown values and identities remain explicitly unresolved."
+		(at 20.32 168.91 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left top)
+		)
+		(uuid "62f78442-668d-4744-aefd-4c1abf8557d1")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
