@@ -10,7 +10,7 @@ This is `WsprryPi/WsprryPi-PCB-Designs`, a KiCad hardware-design repository. Rea
 - `WsprryPi LPF`: low-pass filter board and supporting workbook.
 - `Pico 2W Wattmeter Shield`: ADL5904 RF wattmeter shield.
 - `Pico 2W Shield Template`: reusable unwired Pico shield template.
-- `WsprryPico Shield`: independent Pico 2 W shield starter with project-local libraries and header 3D models.
+- `WsprryPico Shield`: independent Pico 2 W BS170 shield schematic with project-local libraries; Pico bus connections and circuit PCB layout remain open.
 - `Pico 2W Wattmeter Shield/pico-2w-libs`: project-local Pico reference assets with documented compatibility limits.
 - `design`: proposed circuits and engineering requirements.
 

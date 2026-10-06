@@ -11,7 +11,7 @@ See each project's order status, assembly requirements, and validation limits be
 | [WsprryPi LPF](WsprryPi%20LPF/README.md) | Low-pass filter board and design workbook | Export from the KiCad source |
 | [Pico 2W Wattmeter Shield](Pico%202W%20Wattmeter%20Shield/README.md) | ADL5904 RF detector and ADS1115 ADC shield | See project assembly drawings |
 | [Pico 2W Shield Template](Pico%202W%20Shield%20Template/README.md) | Unwired shield interface, outline, and antenna notch | KiCad project template |
-| [WsprryPico Shield](WsprryPico%20Shield/README.md) | Independent Pico 2 W shield starter with local libraries and header 3D models | In development |
+| [WsprryPico Shield](WsprryPico%20Shield/README.md) | Pico 2 W shield with the grouped BS170 amplifier circuit and independent local libraries | Pico bus connections and PCB layout pending |
 | [RPi Full-Size HAT Template](RPi%20Full-Size%20HAT%20Template/README.md) | Official full-size HAT geometry and complete 40-pin interface | KiCad project template |
 | [RPi Zero HAT Template](RPi%20Zero%20HAT%20Template/README.md) | Zero-size uHAT geometry and complete HAT+ capable 40-pin interface | KiCad project template |
 | [WsprryPi Zero GPIO BS170](WsprryPi%20Zero%20GPIO%20BS170/README.md) | Zero-size Raspberry Pi GPIO RF amplifier with a single BS170 | **Ready for order:** headers and BS170 fitted by hand after manufacture; see [fabrication and assembly notes](WsprryPi%20Zero%20GPIO%20BS170/FABRICATION-NOTES.md) |
