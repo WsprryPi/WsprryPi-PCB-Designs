@@ -55,3 +55,9 @@ Copying this asset preserves the approved amplifier plan; it does not approve a 
 ## Validation scope
 
 The isolated library fixture uses unchanged project rules and is kept under ignored `generated/parts-validation/`. At the parts-selection checkpoint it included every new footprint and left the active starter board/schematic untouched. The subsequent symbol placement changed the schematic/local symbol library only; the PCB and footprint assets remain unchanged. Footprint pad dimensions/numbers and the critical manufacturer drawings were inspected; physical component fit, soldering process, RF impedance and complete-board placement remain separate acceptance work. Current ERC/DRC results are in [VALIDATION.md](VALIDATION.md).
+
+## QLG3 receiver part, 2026-10-07
+
+J71 is **QLG3 GPS Receiver**, using a plain unkeyed 1×5 **0.1-inch (2.54 mm)** female socket on the shield and male header underneath the receiver board. Its selected local footprint is `QLG3_GPS_UndersideHeader`; placing it displays the complete receiver, SMA, socket/header and mounting hardware in 3D. The receiver and SMA face up. Pins 1–5 are **3V3, VBAT tied to 3V3, PPS, receiver TX, GND**; receiver RX requires a separate hand wire. This supersedes the earlier JST PH/keyed interface and its pin order.
+
+BOM and placement exclusions remain enabled. The footprint reserves only the socket and two mounting-hardware areas; remaining space accepts components with sufficient vertical clearance. Hans's exact XY dimensions, standard header geometry, estimated body dimensions, provenance and fit limits are documented in [the QLG3 part notes](qlg3-model/README.md). This focused part commit does not include the separate in-progress schematic wiring or PCB placement.

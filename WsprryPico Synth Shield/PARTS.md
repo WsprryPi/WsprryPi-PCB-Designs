@@ -61,7 +61,7 @@ The button uses a 10 kΩ external pull-up, 1 kΩ GPIO series resistor and 10 nF 
 | J11 | PM2.54-1*20 / [C5224030](https://www.lcsc.com/product-detail/C5224030.html) | Raspberry_Pi_Pico_2W_Header | Manual |
 | J12 | PM2.54-1*20 / [C5224030](https://www.lcsc.com/product-detail/C5224030.html) | Raspberry_Pi_Pico_2W_Header | Manual |
 | J61 | BWSMA-KWE-Z001 / [C496551](https://www.lcsc.com/product-detail/C496551.html) | SMA_BAT_Wireless_BWSMA-KWE-Z001 | Manual |
-| J71 | B5B-PH-K-S(LF)(SN) / [C157993](https://www.lcsc.com/product-detail/C157993.html) | JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical | Manual |
+| J71 | QLG3 GPS Receiver; unkeyed 0.1-inch socket/header; final mating MPN pending | QLG3_GPS_UndersideHeader | Manual; no BOM/positions |
 | Q61 | BS170 / [C111691](https://www.lcsc.com/product-detail/C111691.html) | TO-92_Inline | Manual |
 | RV61 | TC33X-2-502E / [C719177](https://www.lcsc.com/product-detail/C719177.html) | Potentiometer_Bourns_TC33X_Vertical | SMT |
 | SW81 | TS-1088R-02026 / [C455280](https://www.lcsc.com/product-detail/C455280.html) | SW_SPST_XUNPU_TS1088R_4x3mm | SMT |
@@ -144,3 +144,9 @@ Cable purchasing items are also stocked-page selections: [JST PHR-5](https://www
 ## Footprint and circuit validation
 
 All selected board footprints exist in the independent `${KIPRJMOD}` library; [LIBRARY-SOURCES.md](LIBRARY-SOURCES.md) records origins, dimensions, custom changes and model gaps. A separate footprint fixture checks library geometry with the project's existing rules. These checks do not wire the circuit or establish physical/RF performance. See [VALIDATION.md](VALIDATION.md) for current results and remaining acceptance work.
+
+## QLG3 receiver part, 2026-10-07
+
+J71 is **QLG3 GPS Receiver**, using a plain unkeyed 1×5 **0.1-inch (2.54 mm)** female socket on the shield and male header underneath the receiver board. Its selected local footprint is `QLG3_GPS_UndersideHeader`; placing it displays the complete receiver, SMA, socket/header and mounting hardware in 3D. The receiver and SMA face up. Pins 1–5 are **3V3, VBAT tied to 3V3, PPS, receiver TX, GND**; receiver RX requires a separate hand wire. This supersedes the earlier JST PH/keyed interface and its pin order.
+
+BOM and placement exclusions remain enabled. The footprint reserves only the socket and two mounting-hardware areas; remaining space accepts components with sufficient vertical clearance. Hans's exact XY dimensions, standard header geometry, estimated body dimensions, provenance and fit limits are documented in [the QLG3 part notes](qlg3-model/README.md). This focused part commit does not include the separate in-progress schematic wiring or PCB placement.

@@ -70,3 +70,9 @@ U11 and the nine board-level outline segments/arcs remain locked. Three Edge.Cut
 ## Validation status
 
 All 53 component symbols are placed on an A3 schematic, but their circuit connections remain unwired and the PCB still contains only U11. KiCad 10.0.6 ERC reports **217 open-circuit errors / 0 warnings**. Physical board DRC is clear; parity reports **50 missing footprints**, reflecting the pending PCB synchronization. See [VALIDATION.md](VALIDATION.md) for current checks. Software checks do not establish socket fit, fabrication or RF performance.
+
+## QLG3 receiver part, 2026-10-07
+
+J71 is **QLG3 GPS Receiver**, using a plain unkeyed 1×5 **0.1-inch (2.54 mm)** female socket on the shield and male header underneath the receiver board. Its selected local footprint is `QLG3_GPS_UndersideHeader`; placing it displays the complete receiver, SMA, socket/header and mounting hardware in 3D. The receiver and SMA face up. Pins 1–5 are **3V3, VBAT tied to 3V3, PPS, receiver TX, GND**; receiver RX requires a separate hand wire. This supersedes the earlier JST PH/keyed interface and its pin order.
+
+BOM and placement exclusions remain enabled. The footprint reserves only the socket and two mounting-hardware areas; remaining space accepts components with sufficient vertical clearance. Hans's exact XY dimensions, standard header geometry, estimated body dimensions, provenance and fit limits are documented in [the QLG3 part notes](qlg3-model/README.md). This focused part commit does not include the separate in-progress schematic wiring or PCB placement.

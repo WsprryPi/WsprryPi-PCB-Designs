@@ -1,0 +1,77 @@
+{
+  "source": "Hans Summers, QLG3 GPS Receiver Kit Dimensions.png, supplied 2026-10-07",
+  "source_view": "Top; origin at daughterboard bottom-left; X right, Y up",
+  "dimensioned_inches": {
+    "board_width": 0.725,
+    "board_height": 0.7125,
+    "mounting_centers": [
+      [
+        0.125,
+        0.10625
+      ],
+      [
+        0.125,
+        0.60625
+      ]
+    ],
+    "header_pin3": [
+      0.48125,
+      0.60625
+    ],
+    "header_pitch": 0.1,
+    "sma_signal_center": [
+      0.16549409,
+      0.35625
+    ]
+  },
+  "host_design_mm": {
+    "socket_pad_diameter": 1.7,
+    "socket_drill": 1.0,
+    "mounting_clearance_drill": 3.2,
+    "courtyard_margin": 0.5,
+    "mount_hardware_keepout_square": 7.4
+  },
+  "provisional_model_mm": {
+    "board_thickness": 1.6,
+    "board_underside_above_host_top": 11.04,
+    "module_hole_diameter": 3.2,
+    "spacer_across_flats": 5.5,
+    "sma_body_length": 6.35,
+    "sma_body_width": 6.35,
+    "sma_body_depth": 8.5,
+    "sma_barrel_length": 8.0,
+    "sma_barrel_diameter": 6.35,
+    "gnss_body_width": 10.0,
+    "gnss_body_length": 10.0,
+    "gnss_body_depth": 2.5,
+    "gnss_body_center": [
+      12.7,
+      5.8
+    ],
+    "spacer_length": 11.0
+  },
+  "notes": [
+    "Header X positions derived from dimensioned pin3 and 0.1-inch pitch; pin order checked against QRP Labs schematic.",
+    "Female socket and clearance drills are host-design choices, not manufacturer-specified QLG3 hole diameters.",
+    "11 mm spacers follow the QRP kit. Nominal fully seated standard connector stack is 8.5 + 2.54 = 11.04 mm; the 0.04 mm difference is shown, not resolved by changing standard connector geometry.",
+    "Turn QLG3 over about its X axis from Hans's drawing: E108 and SMA face up; fit the male header on the opposite face so its mating pins point down. All XY geometry is transformed consistently.",
+    "No fit or interference qualification is claimed from the provisional 3D depiction.",
+    "Connector solids copied from KiCad 10.0.6; remaining body dimensions estimated from QMX+ assembly manual rev 3.07a p61 photographs. Board thickness, module holes and screw geometry are assumptions.",
+    "Component keepouts cover the socket body plus 0.5 mm and two 7.4 mm square mounting-hardware envelopes. Tracks, vias, pads and pours remain allowed subject to normal clearances."
+  ],
+  "standard_connector_mm": {
+    "pitch": 2.54,
+    "male_body_height": 2.54,
+    "male_mating_length": 6.0,
+    "male_solder_tail": 3.0,
+    "female_body_height": 8.5,
+    "female_solder_tail": 3.1,
+    "pin_width": 0.64
+  },
+  "assembly_orientation": {
+    "receiver": "top",
+    "sma": "top, facing left",
+    "male_header": "bottom, opposite E108 face",
+    "source_to_assembly_xy": "x_assembly=x_source; y_assembly=board_height-y_source"
+  }
+}

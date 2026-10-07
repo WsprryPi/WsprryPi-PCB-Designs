@@ -36,3 +36,9 @@ KDS_DSB321SDN_25MHz, LS7366R_S and PowerSelector are original MIT-licensed symbo
 | 80 | Button, LED and support parts |
 
 All headers, SMA and hand-wound inductors are excluded from BOM and positions; the manual BS170 and copper features retain their exclusions. The 44 SMT instances agree with the inventory's assembly filter. Existing symbol/pin UUIDs, the Pico symbol definition, PCB, project settings, footprint library and models are preserved. The L61 source and control GPIO/behavior choices remain open. [VALIDATION.md](VALIDATION.md) records current ERC, physical DRC, expected schematic/PCB differences and visual inspection. Placement and pin/pad checks do not establish a wired circuit, assembly fit or RF performance.
+
+## QLG3 receiver part, 2026-10-07
+
+J71 is **QLG3 GPS Receiver**, using a plain unkeyed 1×5 **0.1-inch (2.54 mm)** female socket on the shield and male header underneath the receiver board. Its selected local footprint is `QLG3_GPS_UndersideHeader`; placing it displays the complete receiver, SMA, socket/header and mounting hardware in 3D. The receiver and SMA face up. Pins 1–5 are **3V3, VBAT tied to 3V3, PPS, receiver TX, GND**; receiver RX requires a separate hand wire. This supersedes the earlier JST PH/keyed interface and its pin order.
+
+BOM and placement exclusions remain enabled. The footprint reserves only the socket and two mounting-hardware areas; remaining space accepts components with sufficient vertical clearance. Hans's exact XY dimensions, standard header geometry, estimated body dimensions, provenance and fit limits are documented in [the QLG3 part notes](qlg3-model/README.md). This focused part commit does not include the separate in-progress schematic wiring or PCB placement.
