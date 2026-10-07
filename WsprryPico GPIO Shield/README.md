@@ -4,6 +4,8 @@ A standalone Pico 2 W GPIO amplifier project, renamed from WsprryPico Shield on 
 
 Open [WsprryPico GPIO Shield.kicad_pro](WsprryPico%20GPIO%20Shield.kicad_pro). See [the current rename and validation record](RENAME-VALIDATION.md) for the changed-file inventory and checks. The earlier import descriptions below record the 2026-10-05 development stage and do not describe the current wired/routed source.
 
+For the hand-fitted J51 SMA connector, **Superbat ASIN B09V5811S7, “0.062 inch Straight Connector”**, is a probable Amazon alternative to Adafruit 1865, pending sample fit and RF verification. The [connector candidate record](../Pico%202W%20Wattmeter%20Shield/J1-CONNECTOR-NOTES.md#probable-amazon-alternative-superbat-b09v5811s7) gives the purchasing link, supplier drawing, nominal land-pattern comparison, and acceptance checks. Its longer bulkhead barrel and nut require a separate clearance check; the current footprint, model, and manual-assembly exclusions are unchanged.
+
 ## Historical import record
 
 A standalone KiCad 10 project based on the [Pico 2W Shield Template](../Pico%202W%20Shield%20Template/README.md), with the single-BS170 circuit copied from [WsprryPi Zero GPIO BS170](../WsprryPi%20Zero%20GPIO%20BS170/README.md). The schematic contains the same five functional groups and internal circuit connections. All 40 Pico bus pins remain electrically isolated, including power and ground, until the pin and supply plan is decided.

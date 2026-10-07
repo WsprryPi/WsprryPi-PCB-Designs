@@ -35,6 +35,8 @@ Purchase these items separately and fit them after manufacture:
 
 U11 and J11 refer to the same physical Raspberry Pi socket, so purchase one socket. The plug-in LPF is a separate assembly; fit the filter for the operating band before RF testing. Follow the [choke assembly guidance](README.md#selected-hand-wound-choke-and-trimmer) and [J21 bias-setting instructions](README.md#schematic-block-numbering).
 
+For J51, **Superbat ASIN B09V5811S7, “0.062 inch Straight Connector”**, is recorded as a probable Amazon alternative to Adafruit 1865, pending sample fit and RF verification. See the [candidate, supplier drawing, nominal dimensions, and acceptance checks](../Pico%202W%20Wattmeter%20Shield/J1-CONNECTOR-NOTES.md#probable-amazon-alternative-superbat-b09v5811s7). Its longer bulkhead barrel and nut require a separate clearance check; the current footprint, model, and manual-assembly exclusions are unchanged.
+
 ## Fabrication process
 
 The current BS170 board has no U31 exposed-pad QFN or RF transformers. The historical nine-hole U31 epoxy-fill/copper-cap process is not a requirement for this revision. Do not apply those superseded selective-via instructions to the current order merely because an old library footprint or the `sk` user-layer name remains in the project. Preserve plated component holes for hand fitting and include the correct non-plated mounting-hole drills.
