@@ -91,6 +91,80 @@ The sandboxed parity DRC aborted with exit 134. Its rerun with approved native m
 
 This completes symbol placement and annotation. Circuit wiring, PCB synchronization, component placement/routing and electrical/physical/RF acceptance remain pending. The earlier 52-error ERC and clear parity describe the historical three-symbol starter, not this placed-symbol checkpoint.
 
+## JP41 solder-pad drawing, 2026-10-07
+
+Replaced the PowerSelector rectangle with a three-pad solder-jumper graphic in the local library and schematic cache. USB/pin 40 is shown normally closed to the center pad through the marked cuttable link; VSYS/pin 39 is shown open. The assigned local footprint already contains the exposed 0.35 mm wide, 0.50 mm long copper neck between pads 1–2 and the alternate open 2–3 solder gap, so no footprint geometry change was necessary.
+
+The working schematic already contained user edits at the start of this change. A saved pre-edit snapshot and exact replacement audit confirm that only the PowerSelector graphic and pin-name display changed; all existing wiring, pin definitions, component instances and UUIDs are preserved. The PCB, footprints, project settings and unrelated files remain byte-for-byte unchanged.
+
+KiCad **10.0.6** checks:
+
+- ERC before and after: **167 errors / 16 warnings**, exit 5; finding lists are identical. These comprise 136 unconnected pins, 16 undriven power inputs, 15 undriven signal inputs, 15 isolated pin labels and one dangling no-connect flag. They remain unresolved; no rules or exclusions were changed.
+- Physical PCB DRC: **0 violations / 0 unconnected items**. Schematic parity: **73 findings**, combined exit 5, reflecting the current unsynchronized schematic and interface-only PCB.
+- Native SVG export succeeded; the rendered JP41 detail was visually inspected for its default bridge, alternate gap, labels and clearance.
+- Local Markdown links, whitespace, source ignore/attribute behavior and file-preservation checks pass. Reports, original snapshots and the visual preview are in ignored `generated/jp41-solder-selector/`.
+
+KiCad's existing Fontconfig cache warning remains in the logs. These checks verify the drawing change and saved-source state, not current capacity, fabrication readiness or RF performance. PCB synchronization and circuit completion remain pending.
+
+## Standard JP41 symbol replacement, 2026-10-07
+
+Superseding the custom drawing above, JP41 now uses **wsprrypico-synth-shield:SolderJumper_3_Bridged12**, imported from KiCad 10.0.6's installed `Jumper.kicad_sym`. The stock graphical units and all pin definitions match exactly. The local copy assigns the existing cuttable footprint/filter and excludes position output; its KiCad license attribution is recorded in [SYMBOL-SOURCES.md](SYMBOL-SOURCES.md). The obsolete PowerSelector symbol was removed from the library and schematic cache. JP41 retains its instance/pin UUIDs, location, assigned footprint and assembly exclusions. Its pins were unconnected before replacement, so the shorter standard pin geometry requires no wire changes. All other component instances and existing wires/labels are preserved.
+
+KiCad **10.0.6** ERC remains **167 errors / 16 warnings**, exit 5, with the same finding categories and counts before and after replacement. Physical DRC reports **0 violations / 0 unconnected items**; parity remains **50 missing footprints and 23 net conflicts**, combined exit 5. These unsynchronized-design findings remain unresolved. The native SVG export and rendered JP41 detail were visually inspected. The PCB, footprint geometry and rules are unchanged; no exclusions were added. The existing Fontconfig warning remains in the logs.
+
+Stock-symbol comparison, instance/wiring preservation, local documentation links, whitespace and source ignore/attribute checks pass. Reports, the pre-edit snapshot and preview are in ignored `generated/jp41-standard-jumper/`. Changes are uncommitted; circuit completion, PCB synchronization and physical qualification remain pending.
+
+## Footprint audit and control GPIO decisions, 2026-10-07
+
+All **51 physical schematic instances** have project-local footprint assignments resolving to **19 distinct footprint files**, all present in `wsprrypico-synth-shield.pretty`. The footprint table retains `${KIPRJMOD}`. J11/J12 intentionally have no separate footprint and are off-board purchasing descriptions; U11 supplies the combined socket pad rows. This verifies footprint availability, not PCB population, 3D-model completeness or physical qualification.
+
+The user approved **GP6 / physical 9 AMP_EN**, **GP14 / physical 19 BUTTON_N**, and **GP15 / physical 20 LED_DRIVE**. The local U11 symbol pin mapping and exclusive role allocation were checked. Current decision documents now mark these pins approved; historical checkpoints above retain their original approval status. Button action and LED behavior remain open.
+
+Only decision/provenance documentation changed in this step. Before/after hashes preserve every KiCad design asset and all unrelated tracked files, including the user's existing schematic and project-setting edits. Local Markdown links/anchors, whitespace and ignore/attribute checks pass. ERC/DRC were not rerun for this documentation-only decision update; earlier results remain historical saved-source checkpoints. The read-only footprint audit is retained in ignored `generated/control-pin-decisions/`.
+
+
+## 2026-10-07 QLG3 socket and 70-series net labels
+
+Replaced J71's selected JST PH footprint with a project-local **1x5 female 2.54 mm socket on the shield top**, accepting **QLG3 male pins fitted on the underside**. Pins are 1 PICO_3V3, 2 backup supply tied to PICO_3V3, 3 GPS_PPS_RAW, 4 GPS_TX, 5 GND. Added TP71, a local 2 mm copper pad for GPS_RX command hand wiring. Socket/pad are excluded from assembly BOM and positions; the generic socket STEP model is copied locally. Exact mating parts/heights, QLG3 mounting geometry, connector orientation relative to the board edge and SMA clearances are not physically qualified.
+
+Labeled every 70-series pin; intentionally unused U71 fCKO/DFLAG and U72 NC receive no-connect markers. GPS_PPS_RAW passes through R75 to GPS_PPS (Pico GP16 and inverter input); COUNTER_INDEX_N reaches U71 INDEX. SYNTH_CLK2 passes through R74 to COUNTER_CLK. Original symbol/pin UUIDs and all original symbol positions are preserved. Existing user wiring is preserved. PCB/project files are byte-for-byte unchanged. The user explicitly retained the 70-series block below the A3 printable area. Visual inspection used a temporary taller-page copy; the saved project's paper size/placement are unchanged. Ordinary A3 exports omit the block.
+
+Checks with **KiCad 10.0.6**:
+
+| Check | Result |
+| --- | --- |
+| ERC before | 57 errors / 9 warnings |
+| ERC after | **3 errors / 0 warnings**: undriven power declarations for VSYS, GND and AMP_5V_IN; no exclusions or severities changed |
+| Actual exported netlist | Every 70-series pin checked against the specified pin/net map; Pico UART/PPS associations and socket order agree |
+| Physical DRC, unchanged board | **0 violations / 0 unconnected items**; does not validate the pending circuitry |
+| Schematic/PCB parity | **Blocked: kicad-cli aborts with exit 134 on two attempts**, without a completed report; not a pass. PCB still contains only the Pico interface |
+| Library and assembly metadata | J71/TP71 local assets resolve; both exclude BOM/positions. 53 unique inventory entries; 44 SMT entries unchanged |
+| Visual review | Labeled 70-series reviewed using a temporary taller sheet; original block location retained |
+
+Reports and review image are in ignored `generated/qlg3-interface/`. Counter INDEX pulse/capture behavior, receiver power sequencing, socket mating and RF coupling remain hardware/firmware acceptance work. A clear physical DRC on the unsynchronized board is not fabrication or RF qualification.
+
+## QLG3 reusable part — 2026-10-07
+
+KiCad **10.0.6** exported the new module symbol and host footprint to SVG; both were visually inspected, along with a native colored 3D render. The isolated mechanical fixture passed DRC: **0 violations, 0 unconnected pads, 0 footprint errors**, no ignored checks, with unchanged project rules. The sandboxed DRC process initially aborted in macOS application registration; the approved native run succeeded. The first completed run found reference text on the temporary fixture edge; enlarging that temporary board resolved it. No design rules were relaxed.
+
+The active schematic ERC remains **3 errors / 0 warnings**, all existing undriven power inputs: U11 pin 39, #PWR01 pin 1, U41 pin 1. This library-only addition preserves the active schematic and PCB byte-for-byte. It does not resolve earlier whole-design parity limitations or qualify assembly fit. Hans's XY, five-pin mapping and standard connector geometry are distinguished from photo-based mechanical estimates in [the module documentation](qlg3-model/README.md). Preview and native reports are in ignored `generated/qlg3-part/`.
+
+### Corrected assembly orientation
+
+The QLG3 part now places E108 and SMA above the daughterboard, with the male mating header underneath on the opposite face. The host footprint is reflected consistently from Hans's source view: X′=X, Y′=18.0975−Y. Pads 1–5 retain their signals and X positions, with KiCad Y=−2.69875 mm. Regenerated STEP/VRML solids and inspected the corrected native 3D render. KiCad 10.0.6 isolated fixture DRC again reports **0 violations / 0 unconnected items**. Active schematic and PCB hashes remain unchanged; electrical symbol pin mapping is unchanged, so no new ERC run was required for this mechanical correction.
+
+### QLG3 hardware-only keepouts
+
+KiCad 10.0.6: corrected footprint fixture **0 DRC violations**; an 0603 component at module X=12, Y=9 mm under the open area also **0 violations**. Three deliberately misplaced components at the socket and both mounting centers each trigger the matching named `items_not_allowed` rule. That negative fixture reports **27 expected collision findings total**, including the three keepout errors, copper/hole clearances and courtyard/silkscreen collisions. No checks were ignored and no rules were weakened. Updated native footprint SVG inspected. The footprint uses three F.Cu component-only keepouts and two valid, closed hardware courtyard contours; all five pad numbers/positions and the two hole centers are unchanged. The active schematic and PCB remain unchanged. This verifies placement restrictions, not component height or final post/socket fit.
+
+## J71 plain header and complete QLG3 model assignment
+
+J71 now displays `QLG3 GPS Receiver` and selects `wsprrypico-synth-shield:QLG3_GPS_UndersideHeader`. Removed stale keyed/JST/2.0 mm and C157993 supplier fields; specified plain unkeyed 1×5 0.1-inch (2.54 mm) socket/header hardware. Updated the local and cached connector footprint filters together. All instance/pin UUIDs, positions, BOM/position exclusions and electrical connectivity are preserved. Before/after exported netlists have identical net-to-pin membership throughout the schematic.
+
+KiCad **10.0.6** ERC remains **3 errors, 0 warnings** (U11 VSYS, GND power input, U41 IN undriven). Native schematic detail and 3D render inspected. An isolated preview loads its footprint from J71's actual exported assignment and displays the complete receiver/SMA/header/post assembly; its DRC reports **0 violations / 0 unconnected items**. The active PCB remains byte-for-byte unchanged; J71 receives this assembly when transferred/placed from the schematic. Reports and previews are under ignored `generated/j71-qlg3/`. Existing physical-fit limitations remain.
+
+Native export exclusion check: KiCad 10.0.6 BOM export from the active schematic and CSV position export from the isolated J71 preview both omit **J71**. The check used its explicit BOM/position exclusion flags, without a blanket through-hole filter. J71 remains on-board, with its complete QLG3 model. Both native exports ran outside the sandbox at the user's request.
+
 ## QLG3/J71 focused part commit — 2026-10-07
 
 This commit includes the QLG3 symbol/footprint, local STEP/VRML models, standard connector model inputs, generator, Hans's dimension drawing, J71 properties and related part documentation. It deliberately preserves the previously committed unwired schematic baseline; separate in-progress wiring, control changes, TP71 placement, capacitor renumbering and PCB/project edits remain outside the commit.
@@ -98,3 +172,12 @@ This commit includes the QLG3 symbol/footprint, local STEP/VRML models, standard
 **KiCad 10.0.6, exact staged snapshot:** ERC reports **217 errors / 0 warnings**, exactly matching every finding in the pre-commit HEAD baseline. These are retained baseline findings, not a passing ERC result. The separately wired working checkout's 3-error result does not apply to this snapshot. The staged native BOM omits J71. The J71 assembly preview passed DRC with **0 violations / 0 unconnected items**, and native placement export omitted J71 without filtering all through-hole parts. Named keepout probes reject all three hardware areas while an 0603 probe beneath the free module area passes. Native symbol, footprint, schematic detail and 3D visuals were inspected; the staged schematic was also exported successfully.
 
 J71's five pins, exclusions and baseline placement are preserved; only part properties, footprint filters and the corrected header pin-order annotation change in the staged schematic. The active PCB is untouched. Generic post/socket fit, underside component height, approximate body geometry and RF qualification remain open. Documentation links and staged whitespace checks pass. Native tools run outside the sandbox as requested.
+
+
+## Synth shield primary-side flip — 2026-10-07
+
+At the user's request, flipped the complete starter board about its horizontal centerline (Y = 89.775 mm). U11's Pico sockets and associated silkscreen/courtyard/models are now on **B.Cu**, leaving **F.Cu** as the primary synth-component side. Flipped the nine board-level outline items together with U11's embedded antenna-notch edges and both-layer antenna keepout. Board dimensions, pad numbers, net associations, UUIDs, locks, assembly exclusions and project-relative model references are preserved. The library footprint is unchanged; back-side orientation belongs to the placed U11 instance.
+
+**KiCad 10.0.6:** native physical DRC **0 violations / 0 unconnected items**. Schematic parity completes with **75 existing starter-board differences** (51 missing footprints and 24 net conflicts), matching the pre-flip audit. The latest user-saved schematic now reports **0 ERC errors / 0 warnings**; this operation did not edit the schematic. The former three undriven-power errors are absent from that saved source. No rule severities or exclusions were changed by this operation. The existing native Fontconfig cache warning did not prevent completion.
+
+Inspected native front and back 3D renders: both socket bodies are beneath the primary face, and the open antenna notch remains aligned. Verified all 40 pad identities/net assignments, outline UUIDs, and the locked U11 instance after saving/reloading. Source format version remains 20260206 / generator 10.0. Only the active synth PCB, README and this validation note were edited for this change; independent pre-existing user changes remain intact. A before-copy, transform checks, native reports and renders are in ignored `generated/primary-side-flip/`. No commit or push was requested.

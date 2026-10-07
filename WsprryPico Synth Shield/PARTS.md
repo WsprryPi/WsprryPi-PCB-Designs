@@ -2,7 +2,7 @@
 
 Selected on 2026-10-06 for the first prototype. Values, dielectrics, ratings, ordering codes and project-local footprints are specified for the clock, amplifier, counter, GPS interface and controls. The **drain choke has an unresolved sourcing conflict**: the approved FT37-43 winding has no verified LCSC stock source. Its replacement or a sourcing exception awaits the user's choice. Measurements remain required for acceptance of the RF path, power supplies and PPS capture.
 
-[PARTS.csv](PARTS.csv) is the complete 52-position engineering inventory, including manual purchases and PCB copper features. [ASSEMBLY-BOM-PREVIEW.csv](ASSEMBLY-BOM-PREVIEW.csv) contains the 44 selected SMT positions only. The references are now assigned to the placed schematic symbols. The assembly preview remains inventory-derived; neither file is a manufacturing release, and circuit wiring/PCB placement remain pending. The counter circuit is selected for fitting on the shield; the external receiver remains optional.
+[PARTS.csv](PARTS.csv) is the complete 53-position engineering inventory, including manual purchases and PCB copper features. [ASSEMBLY-BOM-PREVIEW.csv](ASSEMBLY-BOM-PREVIEW.csv) contains the 44 selected SMT positions only. The references are now assigned to the placed schematic symbols. The assembly preview remains inventory-derived; neither file is a manufacturing release, and circuit wiring/PCB placement remain pending. The counter circuit is selected for fitting on the shield; the external receiver remains optional.
 
 ## Assembly exclusions
 
@@ -23,7 +23,7 @@ Use **C0G/NP0 for the reference coupling, RF input/output coupling and slew capa
 | C51 | Amplifier switch input reservoir | 10 uF X7R | 10% / 25 V | 1206 | [C77093](https://www.lcsc.com/product-detail/C77093.html) |
 | C52 | TPS22918 CT slew capacitor | 1 nF C0G / NP0 | 5% / 50 V | 0603 | [C77026](https://www.lcsc.com/product-detail/C77026.html) |
 | C53 | Amplifier switched rail local bulk | 1 uF X7R | 10% / 50 V | 0805 | [C726584](https://www.lcsc.com/product-detail/C726584.html) |
-| C54 | Gate bias wiper bypass | 100 nF X7R | 10% / 50 V | 0603 | [C14663](https://www.lcsc.com/product-detail/C14663.html) |
+| C65 | Gate bias wiper bypass | 100 nF X7R | 10% / 50 V | 0603 | [C14663](https://www.lcsc.com/product-detail/C14663.html) |
 | C61, C64 | RF input coupling; drain to SMA DC blocking | 100 nF C0G / NP0 | 5% / 50 V | 1206 | [C170182](https://www.lcsc.com/product-detail/C170182.html) |
 | C62 | Amplifier drain-feed HF bypass | 100 nF X7R | 10% / 50 V | 0603 | [C14663](https://www.lcsc.com/product-detail/C14663.html) |
 | C63 | Amplifier drain-feed local bulk | 1 uF X7R | 10% / 50 V | 0805 | [C726584](https://www.lcsc.com/product-detail/C726584.html) |
@@ -51,7 +51,7 @@ R31/R32 are the approved 4.7 kΩ pull-ups to `SYNTH_3V3`. The source amplifier r
 
 RV61 is **Bourns TC33X-2-502E / C719177**, 5 kΩ, ±25%, 150 mW, ±250 ppm/°C. Use the manufacturer's exact **TC33X-2-502E** ordering code. Pins 1 and 3 are the resistive ends; pin 2 is the wiper. Use the [Bourns TC33 drawing](https://www.bourns.com/docs/product-datasheets/tc33.pdf), and begin bias adjustment with the wiper at the grounded end and RF disabled. The manual JP51 bypass powers the amplifier regardless of `AMP_EN`; leave it open for normal operation. The TPS22918 is not a separate reverse-current isolator.
 
-The button uses a 10 kΩ external pull-up, 1 kΩ GPIO series resistor and 10 nF deglitch capacitor; the nominal RC is 100 µs, with software debounce still required. D81 is a red KT-0603R LED with a **1 kΩ** series resistor, reducing current from the source design's 220 Ω choice to roughly 1.3 mA at an assumed 2.0 V forward drop and 3.3 V drive. LED pin 2 is anode and pin 1 cathode. Electrical part selections are complete; **GP6 / GP14 / GP15 and the amplifier/button/indicator behavior remain unapproved candidates**.
+The button uses a 10 kΩ external pull-up, 1 kΩ GPIO series resistor and 10 nF deglitch capacitor; the nominal RC is 100 µs, with software debounce still required. D81 is a red KT-0603R LED with a **1 kΩ** series resistor, reducing current from the source design's 220 Ω choice to roughly 1.3 mA at an assumed 2.0 V forward drop and 3.3 V drive. LED pin 2 is anode and pin 1 cathode. Electrical part selections are complete. **Control GPIOs approved 2026-10-07: GP6 / physical 9 = AMP_EN; GP14 / physical 19 = BUTTON_N; GP15 / physical 20 = LED_DRIVE.** See the [locked control pin plan](TCXO-SI5351A-DESIGN.md#control-gpio-decisions). Button action and LED behavior remain open; startup/keying behavior still requires implementation and verification.
 
 ## Integrated circuits and interface parts
 
@@ -62,6 +62,7 @@ The button uses a 10 kΩ external pull-up, 1 kΩ GPIO series resistor and 10 nF 
 | J12 | PM2.54-1*20 / [C5224030](https://www.lcsc.com/product-detail/C5224030.html) | Raspberry_Pi_Pico_2W_Header | Manual |
 | J61 | BWSMA-KWE-Z001 / [C496551](https://www.lcsc.com/product-detail/C496551.html) | SMA_BAT_Wireless_BWSMA-KWE-Z001 | Manual |
 | J71 | QLG3 GPS Receiver; unkeyed 0.1-inch socket/header; final mating MPN pending | QLG3_GPS_UndersideHeader | Manual; no BOM/positions |
+| TP71 | GPS_RX hand-wire pad | TestPoint_Pad_D2.0mm | PCB copper; no BOM/positions |
 | Q61 | BS170 / [C111691](https://www.lcsc.com/product-detail/C111691.html) | TO-92_Inline | Manual |
 | RV61 | TC33X-2-502E / [C719177](https://www.lcsc.com/product-detail/C719177.html) | Potentiometer_Bourns_TC33X_Vertical | SMT |
 | SW81 | TS-1088R-02026 / [C455280](https://www.lcsc.com/product-detail/C455280.html) | SW_SPST_XUNPU_TS1088R_4x3mm | SMT |
@@ -76,7 +77,7 @@ Use the exact package pin maps in [the circuit notes](TCXO-SI5351A-DESIGN.md). U
 
 J61 uses the stocked **BAT WIRELESS BWSMA-KWE-Z001**, a 50 Ω right-angle through-hole SMA jack. The [manufacturer drawing](https://datasheet.lcsc.com/datasheet/pdf/b4f7aaba83295165fa8bc5302c54d3d3.pdf?productCode=C496551), mechanical page 6, specifies a 5.10 × 5.10 mm ground-leg grid and five 1.40 mm holes, matching the copied footprint. Pin 1 is the RF center; all four shell legs are pad 2/GND. Check barrel, cable and shield clearances at placement. This is the synth's purchasing/footprint selection; the GPIO shield's SMA is unchanged.
 
-J71 uses **JST B5B-PH-K-S(LF)(SN) / C157993**, a keyed 2.0 mm five-pin top-entry header. Its mating cable uses **PHR-5 / C157953** and five **SPH-002T-P0.5S / C111515** contacts with suitable 24–30 AWG wire, following the [JST PH drawing](https://www.jst-mfg.com/product/pdf/eng/ePH.pdf). The shield-defined order is **1 3V3, 2 GND, 3 GPS_TX, 4 GPS_RX, 5 PPS**; keying does not make other GPS accessories pin-compatible. The external receiver/antenna is an accessory outside this shield inventory. It must satisfy the already-approved 3.3 V power/UART/PPS contract and measured Pico supply budget; an exact plug-in receiver assembly has not been selected or qualified.
+J71 is now a **1x5 female socket at 2.54 mm pitch on the top of the shield**, accepting male pins soldered on the **underside of QLG3**. Its order matches QLG3: **1 3V3, 2 VBAT tied to PICO_3V3, 3 GPS_PPS_RAW, 4 GPS_TX (receiver output), 5 GND**. TP71 separately exposes **GPS_RX**, the Pico GP0 command output. This replaces the previous JST PH selection. J71 assigns the complete local QLG3 footprint and colored 3D assembly, including the plain socket/header, receiver, SMA and mounting hardware. Hans's dimensions supply the transformed mounting coordinates; exact mating MPNs, post fit and vertical clearance remain physical checks. QLG3 remains an optional manually installed accessory, outside the shield assembly BOM. [QLG3 pinout](https://qrp-labs.com/images/qlg3/photos/2/Pinout.png), [command-input hand wire](https://qrp-labs.com/qmxp/e108fix.html).
 
 J11/J12 use **ZHOURI PM2.54-1*20 / C5224030**, 20 positions, 2.54 mm pitch, 8.5 mm body height, purchased and fitted by hand. The [supplier drawing](https://datasheet.lcsc.com/datasheet/pdf/d644f3ae7335586a805c6e9751c61823.pdf?productCode=C5224030) gives nominal 0.65 × 0.40 mm leads and a 1.02 mm recommended hole; the retained header footprint has 1.00 mm holes. The nominal lead diagonal is 0.763 mm, so the retained holes provide nominal clearance, but finished-hole and lead tolerances and socket engagement must be checked physically before fabrication approval. The generic STEP preview is not a supplier solid.
 
@@ -94,7 +95,7 @@ The placed schematic uses the following unique references. This mapping preserve
 | --- | --- | --- |
 | U21 | U51 | TPS22918 |
 | C21 / C22 / C23 | C51 / C52 / C53 | Input bulk / CT / switched bulk |
-| C32 | C54 | Bias bypass |
+| C32 | C65 | Bias bypass |
 | C31 | C61 | RF input coupling |
 | C41 / C42 | C62 / C63 | Drain-feed bypass |
 | C51 | C64 | RF output coupling |
@@ -121,7 +122,6 @@ The following are the inventory numbers shown by the inspected LCSC pages on 202
 | [C111691](https://www.lcsc.com/product-detail/C111691.html) | onsemi | BS170 | 13960 |
 | [C719177](https://www.lcsc.com/product-detail/C719177.html) | Bourns | TC33X-2-502E | 12785 |
 | [C496551](https://www.lcsc.com/product-detail/C496551.html) | BAT WIRELESS | BWSMA-KWE-Z001 | 141173 |
-| [C157993](https://www.lcsc.com/product-detail/C157993.html) | JST | B5B-PH-K-S(LF)(SN) | 157930 |
 | [C5224030](https://www.lcsc.com/product-detail/C5224030.html) | ZHOURI | PM2.54-1*20 | 2055 |
 | [C455280](https://www.lcsc.com/product-detail/C455280.html) | XUNPU | TS-1088R-02026 | 159150 |
 | [C2286](https://www.lcsc.com/product-detail/C2286.html) | Hubei KENTO Elec | KT-0603R | 2607700 |
@@ -139,14 +139,8 @@ The following are the inventory numbers shown by the inspected LCSC pages on 202
 | [C2906982](https://www.lcsc.com/product-detail/C2906982.html) | FOJAN | FRC0603F1002TS | 3080500 |
 | [C23140](https://www.lcsc.com/product-detail/C23140.html) | UNI-ROYAL | 0603WAF330JT5E | 3573200 |
 
-Cable purchasing items are also stocked-page selections: [JST PHR-5](https://www.lcsc.com/product-detail/C157953.html), 15,720 shown, and [JST SPH-002T-P0.5S](https://www.lcsc.com/product-detail/C111515.html), 1,324,400 shown. They have no board footprints or placement rows.
+The previous JST PHR-5 housing and SPH contacts are superseded by the QLG3 mating socket/header selection and are no longer purchasing requirements.
 
 ## Footprint and circuit validation
 
 All selected board footprints exist in the independent `${KIPRJMOD}` library; [LIBRARY-SOURCES.md](LIBRARY-SOURCES.md) records origins, dimensions, custom changes and model gaps. A separate footprint fixture checks library geometry with the project's existing rules. These checks do not wire the circuit or establish physical/RF performance. See [VALIDATION.md](VALIDATION.md) for current results and remaining acceptance work.
-
-## QLG3 receiver part, 2026-10-07
-
-J71 is **QLG3 GPS Receiver**, using a plain unkeyed 1×5 **0.1-inch (2.54 mm)** female socket on the shield and male header underneath the receiver board. Its selected local footprint is `QLG3_GPS_UndersideHeader`; placing it displays the complete receiver, SMA, socket/header and mounting hardware in 3D. The receiver and SMA face up. Pins 1–5 are **3V3, VBAT tied to 3V3, PPS, receiver TX, GND**; receiver RX requires a separate hand wire. This supersedes the earlier JST PH/keyed interface and its pin order.
-
-BOM and placement exclusions remain enabled. The footprint reserves only the socket and two mounting-hardware areas; remaining space accepts components with sufficient vertical clearance. Hans's exact XY dimensions, standard header geometry, estimated body dimensions, provenance and fit limits are documented in [the QLG3 part notes](qlg3-model/README.md). This focused part commit does not include the separate in-progress schematic wiring or PCB placement.

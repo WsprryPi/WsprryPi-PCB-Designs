@@ -14,7 +14,9 @@ The following files were copied from the installed **KiCad 10.0.6** library. Ups
 | SOT-23-5, SOT-23-6 | Package_TO_SOT_SMD | Reference text moved outward to clear the pin-1 silkscreen under existing project rules |
 | SOIC-14_3.9x8.7mm_P1.27mm | Package_SO | None; LS7366R-S uses narrow SOIC, not wide-body |
 | Potentiometer_Bourns_TC33X_Vertical | Potentiometer_SMD | None; pin 2 wiper |
-| JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical | Connector_JST | Exclude from assembly BOM and positions; retain through-hole board footprint |
+| JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical | Connector_JST | Retained historical asset; no longer assigned to J71 |
+| PinSocket_1x05_P2.54mm_Vertical | Connector_PinSocket_2.54mm | Exclude from BOM/positions; STEP copied locally via `${KIPRJMOD}` |
+| TestPoint_Pad_D2.0mm | TestPoint | Exclude from BOM/positions; copper hand-wire pad TP71 |
 | SMA_BAT_Wireless_BWSMA-KWE-Z001 | Connector_Coaxial | Exclude from assembly BOM and positions; retain through-hole board footprint |
 | TO-92_Inline | Package_TO_SOT_THT | None; future BS170 instance retains manual fitting/exclusions |
 | SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm | Jumper | None; future JP51 instance is a copper feature excluded from assembly BOM and positions |
@@ -56,8 +58,18 @@ Copying this asset preserves the approved amplifier plan; it does not approve a 
 
 The isolated library fixture uses unchanged project rules and is kept under ignored `generated/parts-validation/`. At the parts-selection checkpoint it included every new footprint and left the active starter board/schematic untouched. The subsequent symbol placement changed the schematic/local symbol library only; the PCB and footprint assets remain unchanged. Footprint pad dimensions/numbers and the critical manufacturer drawings were inspected; physical component fit, soldering process, RF impedance and complete-board placement remain separate acceptance work. Current ERC/DRC results are in [VALIDATION.md](VALIDATION.md).
 
-## QLG3 receiver part, 2026-10-07
+## QLG3 socket update, 2026-10-07
 
-J71 is **QLG3 GPS Receiver**, using a plain unkeyed 1×5 **0.1-inch (2.54 mm)** female socket on the shield and male header underneath the receiver board. Its selected local footprint is `QLG3_GPS_UndersideHeader`; placing it displays the complete receiver, SMA, socket/header and mounting hardware in 3D. The receiver and SMA face up. Pins 1–5 are **3V3, VBAT tied to 3V3, PPS, receiver TX, GND**; receiver RX requires a separate hand wire. This supersedes the earlier JST PH/keyed interface and its pin order.
+J71 now uses the copied KiCad 10.0.6 1x5 female socket footprint: 2.54 mm pitch, 10.16 mm first-to-last center spacing, 1.0 mm drills and 1.7 mm pads. It mounts on the shield top and accepts the QLG3 underside male pins. The copied STEP file uses the same KiCad library license and is generic geometry, not proof of mating height or SMA clearance. TP71 uses a copied 2 mm exposed copper test pad. Both footprints and instances exclude BOM/positions. Hans's board/header/mounting coordinates are now captured in the reusable module asset below. Actual socket/header engagement remains an assembly check. The historical JST footprint remains available but is no longer selected.
 
-BOM and placement exclusions remain enabled. The footprint reserves only the socket and two mounting-hardware areas; remaining space accepts components with sufficient vertical clearance. Hans's exact XY dimensions, standard header geometry, estimated body dimensions, provenance and fit limits are documented in [the QLG3 part notes](qlg3-model/README.md). This focused part commit does not include the separate in-progress schematic wiring or PCB placement.
+## QLG3 daughterboard part, 2026-10-07
+
+Added original `QLG3_GPS_UndersideHeader` host footprint, dimension inputs and generator, plus local colored VRML and STEP assembly. The dimensions, exact pin mapping, standard connector geometry and photo-based approximations are recorded in [the module documentation](qlg3-model/README.md). The new male-header STEP and existing female-socket STEP are copied from KiCad 10.0.6 under the KiCad library terms; the combined 3D assets retain those terms. J71 now assigns this full module footprint; its electrical pins remain 1–5.
+
+Orientation corrected to the user's requested E108/SMA-up, header-down arrangement. Hans's drawing is transformed using X′=X and Y′=18.0975−Y; header pads move to KiCad Y=−2.69875 mm without changing their numbers. The male header is installed opposite the E108 face, unlike the QMX+ photo assembly.
+
+The QLG3 courtyard and front-side component keepouts now reserve only the socket plus 0.5 mm and two 7.4 mm-square mounting-hardware envelopes. The full board/SMA outlines remain fabrication references. The open space beneath the daughterboard accepts height-compatible components; normal routing clearances still apply. See the module documentation for limits and the DRC placement probes.
+
+## J71 assembly assignment
+
+J71 selects `QLG3_GPS_UndersideHeader`, whose local VRML model depicts the complete GPS receiver assembly. The generic socket-only footprint remains an available library asset. The hardware is a plain unkeyed 1×5 0.1-inch (2.54 mm) socket/header pair. Stale JST PH, 2.0 mm, keyed-connector and C157993 instance metadata were removed; BOM/position exclusions and all wiring are preserved.
