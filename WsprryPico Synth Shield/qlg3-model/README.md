@@ -2,6 +2,19 @@
 
 Created and orientation corrected 2026-10-07 for the Synth Shield with **KiCad 10.0.6**. Select **`wsprrypico-synth-shield:QLG3_GPS_UndersideHeader`** in the symbol or footprint chooser. J71 now assigns this assembly footprint while retaining its existing five-pin schematic drawing, UUIDs, position and wiring. The active PCB has not been changed.
 
+## QLG3 GPS Receiver kit contents and assembly
+
+Kit information supplied by the user on 2026-10-07: the SMD components are pre-soldered to the PCB during manufacture. Only the SMA connector and pin header connectors need to be soldered to the QLG3 PCB.
+
+The kit includes:
+
+- PCB with module soldered.
+- 90° SMA connector.
+- Magnetic-mount patch antenna with 2 m coax and SMA connector.
+- Two 11 mm nylon hex spacers.
+- Four 6 mm nylon screws.
+- One 1×5-pin male header and one 1×5-pin female header.
+
 ## Assets and use
 
 - [Symbol library](../wsprrypico-synth-shield.kicad_sym): named five-pin module symbol, default reference prefix `A`.
