@@ -197,7 +197,7 @@ The receiver class, QLG3 five-position socket and separate command pad, counter/
 | 4 | Serial output | `GPS_TX` -> Pico GP1 / UART0 RX, physical pin 2 |
 | 5 | Ground | `GND` |
 
-**TP71**, a separate 2 mm copper solder pad, exposes `GPS_RX` from Pico **GP0 / UART0 TX, physical pin 1**. It is optional for hand wiring to QLG3 E108-GN02 RX pin 3 or another compatible receiver's command input. It is not a sixth QLG3 header contact. J71 and TP71 are excluded from assembly BOM and positions. The socket footprint, generic STEP model and test-pad footprint/symbol are project-local. Exact socket/header ordering codes and mating height remain open.
+**TP71**, a separate 1 × 1 mm through-hole test pad with a 0.5 mm plated drill, exposes `GPS_RX` from Pico **GP0 / UART0 TX, physical pin 1**. It is optional for hand wiring to QLG3 E108-GN02 RX pin 3 or another compatible receiver's command input. It is not a sixth QLG3 header contact. J71 and TP71 are excluded from assembly BOM and positions. The socket footprint, generic STEP model and test-pad footprint/symbol are project-local. Exact socket/header ordering codes and mating height remain open.
 
 QLG3 uses a regulated 3.3 V supply and nominal 2.8 V unbuffered UART/PPS outputs, documented by QRP Labs as suitable for 3.3 V hosts. Verify receiver-input limits, power sequencing and PPS behavior on the assembly. Sources: [QLG3 pinout](https://qrp-labs.com/images/qlg3/photos/2/Pinout.png), [QLG3 schematic](https://qrp-labs.com/images/qlg3/photos/2/Schematic.png), [product data](https://qrp-labs.com/qlg3.html), [optional RX hand wire](https://qrp-labs.com/qmxp/e108fix.html).
 

@@ -62,7 +62,7 @@ The button uses a 10 kΩ external pull-up, 1 kΩ GPIO series resistor and 10 nF 
 | J12 | PM2.54-1*20 / [C5224030](https://www.lcsc.com/product-detail/C5224030.html) | Raspberry_Pi_Pico_2W_Header | Manual |
 | J61 | Adafruit 1865; existing project board-edge SMA | SMA_Adafruit_1865_EdgeMount | Manual; no BOM/positions |
 | J71 | QLG3 GPS Receiver; unkeyed 0.1-inch socket/header; final mating MPN pending | QLG3_GPS_UndersideHeader_SinglePost | Manual; no BOM/positions |
-| TP71 | GPS_RX hand-wire pad | TestPoint_Pad_D2.0mm | PCB copper; no BOM/positions |
+| TP71 | GPS_RX hand-wire pad; 1 × 1 mm, 0.5 mm plated hole | TestPoint_THTPad_1.0x1.0mm_Drill0.5mm | PCB copper; no BOM/positions |
 | Q61 | BS170 / [C111691](https://www.lcsc.com/product-detail/C111691.html) | TO-92_Inline | Manual |
 | RV61 | TC33X-2-502E / [C719177](https://www.lcsc.com/product-detail/C719177.html) | Potentiometer_Bourns_TC33X_Vertical | SMT |
 | SW81 | TS-1088R-02026 / [C455280](https://www.lcsc.com/product-detail/C455280.html) | SW_SPST_XUNPU_TS1088R_4x3mm | SMT |

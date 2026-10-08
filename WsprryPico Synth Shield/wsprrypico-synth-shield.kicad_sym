@@ -3573,7 +3573,7 @@
 				)
 			)
 		)
-		(property "Footprint" "wsprrypico-synth-shield:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "wsprrypico-synth-shield:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
 			(at 5.08 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3617,7 +3617,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "TestPoint_Pad_D2.0mm"
+		(property "ki_fp_filters" "TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
