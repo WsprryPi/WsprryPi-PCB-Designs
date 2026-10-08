@@ -60,8 +60,8 @@ The button uses a 10 kΩ external pull-up, 1 kΩ GPIO series resistor and 10 nF 
 | D81 | KT-0603R / [C2286](https://www.lcsc.com/product-detail/C2286.html) | LED_0603_1608Metric | SMT |
 | J11 | PM2.54-1*20 / [C5224030](https://www.lcsc.com/product-detail/C5224030.html) | Raspberry_Pi_Pico_2W_Header | Manual |
 | J12 | PM2.54-1*20 / [C5224030](https://www.lcsc.com/product-detail/C5224030.html) | Raspberry_Pi_Pico_2W_Header | Manual |
-| J61 | BWSMA-KWE-Z001 / [C496551](https://www.lcsc.com/product-detail/C496551.html) | SMA_BAT_Wireless_BWSMA-KWE-Z001 | Manual |
-| J71 | QLG3 GPS Receiver; unkeyed 0.1-inch socket/header; final mating MPN pending | QLG3_GPS_UndersideHeader | Manual; no BOM/positions |
+| J61 | Adafruit 1865; existing project board-edge SMA | SMA_Adafruit_1865_EdgeMount | Manual; no BOM/positions |
+| J71 | QLG3 GPS Receiver; unkeyed 0.1-inch socket/header; final mating MPN pending | QLG3_GPS_UndersideHeader_SinglePost | Manual; no BOM/positions |
 | TP71 | GPS_RX hand-wire pad | TestPoint_Pad_D2.0mm | PCB copper; no BOM/positions |
 | Q61 | BS170 / [C111691](https://www.lcsc.com/product-detail/C111691.html) | TO-92_Inline | Manual |
 | RV61 | TC33X-2-502E / [C719177](https://www.lcsc.com/product-detail/C719177.html) | Potentiometer_Bourns_TC33X_Vertical | SMT |
@@ -75,7 +75,7 @@ The button uses a 10 kΩ external pull-up, 1 kΩ GPIO series resistor and 10 nF 
 
 Use the exact package pin maps in [the circuit notes](TCXO-SI5351A-DESIGN.md). U31 is blank SI5351A-B-GTR in MSOP-10, not a factory-programmed variant or the photographed MS5351M. U41 is DBV SOT-23-5, with EN tied to IN. U51 is DBV SOT-23-6, with 1 VIN, 2 GND, 3 ON, 4 CT, 5 QOD and 6 VOUT. U72 is TI SN74LVC1G14DBVR, with 1 NC, 2 A, 3 GND, 4 Y and 5 VCC. Q61 BS170 is 1 drain, 2 gate, 3 source; keep this mapping separate from 2N7000 variants.
 
-J61 uses the stocked **BAT WIRELESS BWSMA-KWE-Z001**, a 50 Ω right-angle through-hole SMA jack. The [manufacturer drawing](https://datasheet.lcsc.com/datasheet/pdf/b4f7aaba83295165fa8bc5302c54d3d3.pdf?productCode=C496551), mechanical page 6, specifies a 5.10 × 5.10 mm ground-leg grid and five 1.40 mm holes, matching the copied footprint. Pin 1 is the RF center; all four shell legs are pad 2/GND. Check barrel, cable and shield clearances at placement. This is the synth's purchasing/footprint selection; the GPIO shield's SMA is unchanged.
+J61 uses the existing **Adafruit 1865 board-edge SMA** footprint for a 1.6 mm PCB, restored at the user's request on 2026-10-07. Pin 1 is TX_OUT; all four pad-2 lands are GND, with two ground lands on each board face. It is hand-soldered, with no paste, BOM or position output. The footprint and provisional local 3D model are copied from the GPIO shield into independent Synth libraries. The old BAT WIRELESS through-hole selection and C496551 ordering fields are superseded. The previously saved **Superbat B09V5811S7, “0.062 inch Straight Connector”** remains a probable substitute pending sample fit and RF checks; see the [existing connector record](../Pico%202W%20Wattmeter%20Shield/J1-CONNECTOR-NOTES.md#probable-amazon-alternative-superbat-b09v5811s7). The footprint origin is its board-edge seating point and the barrel faces local +Y. J61 remains at its existing unplaced staging origin; final edge placement and GPS/SMA clearance are still required.
 
 J71 is now a **1x5 female socket at 2.54 mm pitch on the top of the shield**, accepting male pins soldered on the **underside of QLG3**. Its order matches QLG3: **1 3V3, 2 VBAT tied to PICO_3V3, 3 GPS_PPS_RAW, 4 GPS_TX (receiver output), 5 GND**. TP71 separately exposes **GPS_RX**, the Pico GP0 command output. This replaces the previous JST PH selection. J71 assigns the complete local QLG3 footprint and colored 3D assembly, including the plain socket/header, receiver, SMA and mounting hardware. Hans's dimensions supply the transformed mounting coordinates; exact mating MPNs, post fit and vertical clearance remain physical checks. QLG3 remains an optional manually installed accessory, outside the shield assembly BOM. See [QLG3 kit contents and assembly](qlg3-model/README.md#qlg3-gps-receiver-kit-contents-and-assembly) for the included connectors, antenna and mounting hardware. [QLG3 pinout](https://qrp-labs.com/images/qlg3/photos/2/Pinout.png), [command-input hand wire](https://qrp-labs.com/qmxp/e108fix.html).
 
@@ -121,7 +121,7 @@ The following are the inventory numbers shown by the inspected LCSC pages on 202
 | [C7835](https://www.lcsc.com/product-detail/C7835.html) | Texas Instruments | SN74LVC1G14DBVR | 310340 |
 | [C111691](https://www.lcsc.com/product-detail/C111691.html) | onsemi | BS170 | 13960 |
 | [C719177](https://www.lcsc.com/product-detail/C719177.html) | Bourns | TC33X-2-502E | 12785 |
-| [C496551](https://www.lcsc.com/product-detail/C496551.html) | BAT WIRELESS | BWSMA-KWE-Z001 | 141173 |
+| [C496551](https://www.lcsc.com/product-detail/C496551.html) | BAT WIRELESS | BWSMA-KWE-Z001 — superseded J61 selection | 141173 |
 | [C5224030](https://www.lcsc.com/product-detail/C5224030.html) | ZHOURI | PM2.54-1*20 | 2055 |
 | [C455280](https://www.lcsc.com/product-detail/C455280.html) | XUNPU | TS-1088R-02026 | 159150 |
 | [C2286](https://www.lcsc.com/product-detail/C2286.html) | Hubei KENTO Elec | KT-0603R | 2607700 |

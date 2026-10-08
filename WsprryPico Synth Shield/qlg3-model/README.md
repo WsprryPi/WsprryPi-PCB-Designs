@@ -15,6 +15,18 @@ The kit includes:
 - Four 6 mm nylon screws.
 - One 1×5-pin male header and one 1×5-pin female header.
 
+## Single-post variant — selected 2026-10-07
+
+J71 now uses **`QLG3_GPS_UndersideHeader_SinglePost`** in the schematic and placed PCB. The original `QLG3_GPS_UndersideHeader` two-post symbol, footprint and models remain available unchanged. Both use the same five-pin electrical interface and retain BOM/position exclusions.
+
+The single-post variant removes the upper post and screw (the mounting point away from the header), its host-board drill, fabrication hardware circle, courtyard and component keepout. In footprint-local coordinates, the removed host hole was at **X=3.175, Y=−15.39875 mm**. The lower post beside the header and its keepout remain, as does the socket keepout. The real QLG3 daughterboard still has both mounting holes: its unused upper hole and copper ring remain visible in the model, without a post or screw. The complete receiver, SMA and header/socket remain in 3D.
+
+This variant uses one of the kit's two spacers; the kit contents above are unchanged. Mechanical support with one spacer and the header requires an assembly check. J71's position, orientation, reference, electrical pad UUIDs and nets are preserved, as are all other saved board objects.
+
+Rebuild this variant with `python generate_qlg3.py --single-post`; invoking the generator without the option rebuilds the original two-post assets. The single-post symbol, footprint and STEP/VRML use the `_SinglePost` suffix in the same project-local libraries.
+
+KiCad **10.0.6** validation: schematic ERC **0 findings**; schematic/PCB parity **0 findings**. The saved placement's DRC findings fall from **17 to 1**, retaining an existing J71 silkscreen/board-edge clearance warning. The **124 unrouted connections** are unchanged. No rules or exclusions were relaxed. The isolated single-post footprint fixture has **0 DRC findings / 0 unconnected items**. Footprint and 3D views were inspected; this does not establish physical fit or RF qualification.
+
 ## Assets and use
 
 - [Symbol library](../wsprrypico-synth-shield.kicad_sym): named five-pin module symbol, default reference prefix `A`.

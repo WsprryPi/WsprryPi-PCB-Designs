@@ -3,7 +3,7 @@
 Requires cadquery==2.8.0 for the colored STEP and VRML mesh export.
 The JSON distinguishes dimensioned geometry from provisional height/envelope data.
 """
-import json, math, re
+import argparse, json, math, re
 from pathlib import Path
 import cadquery as cq
 
@@ -11,7 +11,10 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 D = json.loads((HERE / 'dimensions.json').read_text())
 I, H, V = D['dimensioned_inches'], D['host_design_mm'], D['provisional_model_mm']
-NAME = 'QLG3_GPS_UndersideHeader'
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--single-post', action='store_true', help='Omit upper host mounting hardware; retain both holes in the QLG3 PCB')
+args = parser.parse_args()
+NAME = 'QLG3_GPS_UndersideHeader' + ('_SinglePost' if args.single_post else '')
 LIB = 'wsprrypico-synth-shield'
 mm = lambda x: x * 25.4
 W, L = mm(I['board_width']), mm(I['board_height'])
@@ -22,6 +25,8 @@ sx, sy = map(mm, I['sma_signal_center'])
 # Turn Hans's board over about X: E108 side faces up, SMA still faces left.
 # The male header is fitted on the opposite face from E108.
 mounts = [(x, L-y) for x,y in mounts]
+# Index 1 is the upper post in the assembled top view, away from the socket.
+host_mounts = [(i, xy) for i, xy in enumerate(mounts, 1) if not (args.single_post and i == 1)]
 hy = L-hy
 headers = [(x, L-y) for x,y in headers]
 sy = L-sy
@@ -51,6 +56,8 @@ add('QLG3_PCB_XY_verified_Z_provisional', board, green)
 for i,(x,y) in enumerate(mounts,1):
     ring = cq.Workplane('XY').workplane(offset=z+t).center(x,y).circle(2.5).circle(V['module_hole_diameter']/2).extrude(.035)
     add(f'mount_ring_{i}', ring, gold)
+    if args.single_post and i == 1:
+        continue
     spacer = cq.Workplane('XY').center(x,y).polygon(6,V['spacer_across_flats']/math.cos(math.pi/6)).extrude(V['spacer_length']).cut(cq.Workplane('XY').center(x,y).circle(1.5).extrude(V['spacer_length']))
     add(f'provisional_M3_spacer_{i}', spacer, white)
     head=cq.Workplane('XY').workplane(offset=z+t+.05).center(x,y).circle(2.5).extrude(1.8)
@@ -99,7 +106,7 @@ for name,shape,rgb in solids:
     indices=',\n'.join(' '.join(map(str,tri))+' -1' for tri in tris)
     lines.append(f'# {name}\nShape {{ appearance Appearance {{ material Material {{ diffuseColor {rgb[0]} {rgb[1]} {rgb[2]} }} }} geometry IndexedFaceSet {{ coord Coordinate {{ point [ {points} ] }} coordIndex [ {indices} ] solid TRUE creaseAngle 0.5 }} }}')
 (models/f'{NAME}.wrl').write_text('\n'.join(lines)+'\n')
-# Host footprint contains socket lands and two matching host clearance holes.
+# Host footprint contains socket lands and the selected host clearance holes.
 F=[f'(footprint "{NAME}" (version 20241229) (generator "qlg3_model_generator") (layer "F.Cu")',
 '(descr "QLG3 E108 and SMA on top; male header underneath mates host socket. Hans XY reflected about X; standard socket; body envelopes approximate.")',
 '(tags "QRP Labs QLG3 GNSS GPS 2.54mm daughterboard")','(attr through_hole exclude_from_bom exclude_from_pos_files)',
@@ -132,7 +139,7 @@ def component_keepout(name,points):
 component_keepout('QLG3 socket component keepout',points_for_rect(socket))
 # Adjacent post and socket clearance envelopes overlap: merge their courtyard
 # outlines, rather than making an invalid self-overlapping courtyard.
-for index,(x,y) in enumerate(mounts,1):
+for index,(x,y) in host_mounts:
     post=(x-radius,y-radius,x+radius,y+radius)
     component_keepout(f'QLG3 mounting hardware {index} component keepout',points_for_rect(post))
     if abs(y-hy)<1e-6:
@@ -143,7 +150,7 @@ for index,(x,y) in enumerate(mounts,1):
         courtyard(points_for_rect(post))
 for i,(x,y) in enumerate(headers,1):
     F.append(f'(pad "{i}" thru_hole {"rect" if i==1 else "circle"} (at {x:.6f} {-y:.6f}) (size {H["socket_pad_diameter"]} {H["socket_pad_diameter"]}) (drill {H["socket_drill"]}) (layers "*.Cu" "*.Mask"))')
-for x,y in mounts:
+for _,(x,y) in host_mounts:
     F.append(f'(pad "" np_thru_hole circle (at {x:.6f} {-y:.6f}) (size {H["mounting_clearance_drill"]} {H["mounting_clearance_drill"]}) (drill {H["mounting_clearance_drill"]}) (layers "*.Cu" "*.Mask"))')
     F.append(f'(fp_circle (center {x:.6f} {-y:.6f}) (end {x+V["spacer_across_flats"]/(2*math.cos(math.pi/6)):.6f} {-y:.6f}) (stroke (width .1) (type default)) (fill none) (layer "F.Fab"))')
 F.append(f'(model "${{KIPRJMOD}}/{LIB}.3dshapes/{NAME}.wrl" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))\n)')

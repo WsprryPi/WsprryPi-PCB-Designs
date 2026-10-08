@@ -17,7 +17,7 @@ The following files were copied from the installed **KiCad 10.0.6** library. Ups
 | JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical | Connector_JST | Retained historical asset; no longer assigned to J71 |
 | PinSocket_1x05_P2.54mm_Vertical | Connector_PinSocket_2.54mm | Exclude from BOM/positions; STEP copied locally via `${KIPRJMOD}` |
 | TestPoint_Pad_D2.0mm | TestPoint | Exclude from BOM/positions; copper hand-wire pad TP71 |
-| SMA_BAT_Wireless_BWSMA-KWE-Z001 | Connector_Coaxial | Exclude from assembly BOM and positions; retain through-hole board footprint |
+| SMA_BAT_Wireless_BWSMA-KWE-Z001 | Connector_Coaxial | Historical asset; superseded for J61 by SMA_Adafruit_1865_EdgeMount |
 | TO-92_Inline | Package_TO_SOT_THT | None; future BS170 instance retains manual fitting/exclusions |
 | SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm | Jumper | None; future JP51 instance is a copper feature excluded from assembly BOM and positions |
 | MSOP-10_Si5351A_3x3mm_P0.5mm | Package_SO: MSOP-10_3x3mm_P0.5mm | Adapted to Skyworks' Si5351 recommended land pattern as described below |
@@ -73,3 +73,13 @@ The QLG3 courtyard and front-side component keepouts now reserve only the socket
 ## J71 assembly assignment
 
 J71 selects `QLG3_GPS_UndersideHeader`, whose local VRML model depicts the complete GPS receiver assembly. The generic socket-only footprint remains an available library asset. The hardware is a plain unkeyed 1×5 0.1-inch (2.54 mm) socket/header pair. Stale JST PH, 2.0 mm, keyed-connector and C157993 instance metadata were removed; BOM/position exclusions and all wiring are preserved.
+
+## QLG3 single-post variant, 2026-10-07
+
+Added `QLG3_GPS_UndersideHeader_SinglePost` symbol, footprint and local STEP/VRML models, generated with `qlg3-model/generate_qlg3.py --single-post`. It preserves the original two-post assets and their provenance/license terms. J71 now assigns this variant in the schematic and saved board; the upper host mounting hardware and its keepout/courtyard are omitted. Both holes remain in the depicted QLG3 PCB. See [variant scope and checks](qlg3-model/README.md#single-post-variant--selected-2026-10-07).
+
+## J61 board-edge SMA restored, 2026-10-07
+
+Copied `SMA_Adafruit_1865_EdgeMount` and `SMA_Adafruit_1865_Preview.wrl` from the GPIO shield into independent Synth libraries; only the footprint model path changes to the Synth `${KIPRJMOD}` folder. Adafruit's public-domain land-pattern attribution and the repository-MIT illustrative model are retained. [Source provenance and model limits](../WsprryPi%20Zero%20GPIO%20BS170/LIBRARY-SOURCES.md). The old BAT Wireless footprint remains an unused historical asset, including its unresolved stock model reference; J61 now has a resolving local preview model.
+
+J61's schematic/PCB assignments and purchasing metadata now identify the edge-launch part. Pin 1 remains TX_OUT and all four pad-2 lands remain GND. The signal land is on F.Cu; ground lands straddle both faces of a 1.6 mm board. BOM/position exclusions remain set. This is a hand-soldered connector with no paste apertures. The original footprint origin is retained in the unplaced staging area; final board-edge placement remains work.

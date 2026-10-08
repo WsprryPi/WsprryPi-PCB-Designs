@@ -774,7 +774,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "PinSocket_1x05_P2.54mm_Vertical QLG3_GPS_UndersideHeader"
+			(property "ki_fp_filters" "PinSocket_1x05_P2.54mm_Vertical QLG3_GPS_UndersideHeader*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -17420,7 +17420,7 @@
 				)
 			)
 		)
-		(property "Footprint" "wsprrypico-synth-shield:SMA_BAT_Wireless_BWSMA-KWE-Z001"
+		(property "Footprint" "wsprrypico-synth-shield:SMA_Adafruit_1865_EdgeMount"
 			(at 270.51 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -17431,7 +17431,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C496551.html"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1865/C2387-001_datasheet.pdf"
 			(at 270.51 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -17442,7 +17442,7 @@
 				)
 			)
 		)
-		(property "Description" "RF output after DC blocking; external LPF required; 50 ohm SMA female; right angle; Coaxial connector"
+		(property "Description" "RF output after DC blocking; external LPF required; Adafruit 1865 SMA female board-edge connector for 1.6 mm PCB"
 			(at 270.51 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -17453,7 +17453,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "BAT WIRELESS"
+		(property "Manufacturer" "Adafruit"
 			(at 270.51 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -17464,7 +17464,7 @@
 				)
 			)
 		)
-		(property "MPN" "BWSMA-KWE-Z001"
+		(property "MPN" "1865"
 			(at 270.51 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -17475,7 +17475,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C496551"
+		(property "LCSC Part #" ""
 			(at 270.51 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -17486,7 +17486,7 @@
 				)
 			)
 		)
-		(property "Supplier URL" "https://www.lcsc.com/product-detail/C496551.html"
+		(property "Supplier URL" "https://www.adafruit.com/product/1865"
 			(at 270.51 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -17497,7 +17497,7 @@
 				)
 			)
 		)
-		(property "Specified Value" "50 ohm SMA female; right angle"
+		(property "Specified Value" "50 ohm SMA female; board-edge mount; 1.6 mm PCB"
 			(at 270.51 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -17508,7 +17508,7 @@
 				)
 			)
 		)
-		(property "Technology" "Coaxial connector"
+		(property "Technology" "Edge-launch coaxial connector"
 			(at 270.51 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -17563,7 +17563,7 @@
 				)
 			)
 		)
-		(property "Selection status" "Selected prototype"
+		(property "Selection status" "Existing project edge-mount footprint selected; manual fit"
 			(at 270.51 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -20904,7 +20904,7 @@
 				)
 			)
 		)
-		(property "Footprint" "wsprrypico-synth-shield:QLG3_GPS_UndersideHeader"
+		(property "Footprint" "wsprrypico-synth-shield:QLG3_GPS_UndersideHeader_SinglePost"
 			(at 148.59 182.88 0)
 			(hide yes)
 			(show_name no)

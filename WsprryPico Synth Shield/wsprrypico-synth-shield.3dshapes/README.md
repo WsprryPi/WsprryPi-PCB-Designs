@@ -15,3 +15,7 @@ Selected standard footprints reference installed `${KICAD10_3DMODEL_DIR}` assets
 ## QLG3 GPS assembly
 
 `QLG3_GPS_UndersideHeader.step` and `.wrl` depict the QLG3 above its host socket, with header underneath, E108 module and SMA on top, and two mounting spacers. The board is turned over relative to Hans's drawing and the XY coordinates are transformed consistently. Exact XY comes from Hans Summers; standard 1×5 header/socket STEP inputs are copied locally from KiCad 10.0.6. Other dimensions are photo-based approximations. The combined models retain the KiCad library terms for their incorporated connector geometry. See [dimensions, assumptions, generator and validation](../qlg3-model/README.md).
+
+## J61 edge-launch SMA preview
+
+`SMA_Adafruit_1865_Preview.wrl` is copied unchanged from the GPIO shield and is original repository-MIT illustrative geometry. J61 now uses this local model with `SMA_Adafruit_1865_EdgeMount`. Its 6.5 mm flange, 6.1 mm barrel diameter, 9.5 mm forward reach and 3.9 mm rear fingers depict the existing footprint; simplified heights, threads and details are not supplier CAD or physical fit qualification. The barrel points along footprint +Y. The unused BAT Wireless library asset still has its historical missing stock model.
