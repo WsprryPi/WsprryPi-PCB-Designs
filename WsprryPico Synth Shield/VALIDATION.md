@@ -199,3 +199,32 @@ KiCad 10.0.6: schematic ERC 0 findings; PCB/schematic parity 0 findings; 124 unr
 Imported the user-selected KiCad 10.0.6 `TestPoint_THTPad_1.0x1.0mm_Drill0.5mm` unchanged into the project-local footprint library. Updated schematic/PCB library references and the local/cached TestPoint symbol's default footprint and filter. The physical 1 mm square pad with 0.5 mm plated drill, GPS_RX net, UUIDs, position (122.67, 82.75 mm), teardrops and BOM/position exclusions are unchanged from the user's saved board. Only assignment/filter strings change in the schematic and PCB; project settings are byte-for-byte preserved.
 
 Native KiCad 10.0.6: schematic parity 1 → 0; ERC 0 findings. Physical DRC retains the same 4 findings; the unrouted-item count remains 104. No rules, geometry or exclusions were changed to suppress findings. The local footprint SVG was visually inspected. Reports and saved baselines are in repository-root ignored `generated/tp71-local-import/`. Documentation links and whitespace checks pass.
+
+## Onboard GPS receiver and 90-series — 2026-10-08
+
+Replaced the QLG3 carrier in the schematic with U91 ATGM336H-5N31, after live LCSC stock verification required by the user. The PPS conditioner/counter stays in the 70-series. Added the 90-series box, module support/bias network, antenna SMA and local symbol/footprint/model assets. C74 becomes C91 (10 uF X7R 1206); TP71 becomes TP91. J71 is removed. The old QLG3 library assets remain available.
+
+**KiCad 10.0.6**, native tools outside the sandbox:
+
+| Check | Result |
+| --- | --- |
+| Saved schematic ERC | **0 findings**, before and after |
+| Saved PCB physical DRC | **0 violations**, before and after |
+| Saved PCB unconnected items | **107**, unchanged |
+| Saved PCB schematic parity | **2 → 11 findings**: baseline missing J71 removed; eight new/renumbered footprints missing; two old footprints remain; existing JP41 standard-footprint/custom-filter mismatch remains |
+| New module and inductor isolated footprint fixture | **0 DRC violations / 0 unconnected items** with the existing project rules |
+| Netlist preservation | All retained original pin/net assignments agree, allowing C74→C91 and TP71→TP91; only removed J71 pins excluded |
+| Unrelated symbols | Parsed symbol objects, UUIDs, positions, properties and pin records unchanged |
+| PCB and project settings | Byte-for-byte identical to the saved pre-task copies, including existing user changes |
+| Inventory | 59 non-power symbols; 58 inventory rows plus U11; 49 SMT assembly-preview rows |
+| Visual inspection | Native SVG exports of the 70/90-series schematic and new footprint fixture inspected; module/inductor native 3D render inspected |
+
+The board is intentionally not synchronized. Updating from schematic must retain the C91/TP91 identities and user placement, replace C91's 0805 footprint with the selected 1206, and place/route the newly added components. J91 remains excluded from BOM/positions; factory SMT L91 is included. No rules, severities or exclusions were weakened. The native Fontconfig warning did not prevent successful checks. Reports, before-copies and review images are under ignored `generated/gps-90-series/`.
+
+These checks do not qualify the supply budget/noise, antenna matching/bias, RF coexistence, physical module assembly, PPS timing or CASIC firmware configuration. The receiver body model is an approximate envelope. The full board remains unrouted and is not fabrication-ready.
+
+### Commit checkpoint — latest saved PCB, 2026-10-08
+
+The user saved a revised PCB after the GPS implementation checks above. This commit preserves that latest board and project state: only U11, the board outline and clearance features remain; other component footprints and routing are absent. No automated synchronization or placement was performed during the commit task. The prior 107-unconnected/11-parity result describes the earlier saved board, not this commit.
+
+Fresh native **KiCad 10.0.6** checks on the committed source: **ERC 0 findings; physical DRC 0 violations / 0 unconnected items; schematic parity 56 missing footprints**. The native board SVG was visually inspected. The unchanged non-GPS schematic symbols retain their properties, positions, UUIDs and pin records. Local Markdown file targets and whitespace checks pass. Reports: ignored `generated/gps-90-series/commit-erc.json` and `commit-drc.json`. The sparse board's DRC result does not qualify the unplaced circuit; PCB synchronization, placement, routing and hardware/RF validation remain required.

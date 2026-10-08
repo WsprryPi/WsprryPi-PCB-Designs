@@ -1,8 +1,8 @@
 # TCXO and Si5351A reference circuit
 
-Recorded 2026-10-06. Status: design intent and proposed circuit; 54 component symbols are placed in the KiCad schematic's eight decade-series boxes. Schematic wiring has progressed; PCB implementation remains pending.
+Recorded 2026-10-06. Status: design intent and proposed circuit; 59 component symbols are placed in the KiCad schematic's nine decade-series boxes. The wired schematic passes ERC; PCB synchronization, placement and routing remain pending.
 
-[PARTS.md](PARTS.md) and [PARTS.csv](PARTS.csv) now specify the prototype values, dielectrics, ratings, ordering codes and local footprints for 53 inventory positions. J71 socket/header ordering codes and mating height remain open. L61 retains an unresolved FT37-43 sourcing conflict; neither a non-LCSC exception nor a substitute has been approved. These selections are assigned to the placed schematic instances; the PCB is unchanged. [SYMBOL-SOURCES.md](SYMBOL-SOURCES.md) records symbol provenance and placement. All headers, the SMA and hand-wound inductors are excluded from assembly BOM and position output, as required by the user.
+[PARTS.md](PARTS.md) and [PARTS.csv](PARTS.csv) now specify the prototype values, dielectrics, ratings, ordering codes and local footprints for 58 inventory positions. The former J71 daughterboard is retired; see the current 90-series receiver decision below. L61 retains an unresolved FT37-43 sourcing conflict; neither a non-LCSC exception nor a substitute has been approved. These selections are assigned to the placed schematic instances; the PCB is unchanged. [SYMBOL-SOURCES.md](SYMBOL-SOURCES.md) records symbol provenance and placement. All headers, the SMA and hand-wound inductors are excluded from assembly BOM and position output, as required by the user.
 
 Use Hans Summers' QRP Labs TCXO and synthesizer designs as the preferred circuit precedent. The selected reference is **KDS/Daishinku DSB321SDN, 1XTW25000MAA, 25 MHz, LCSC C253672**. Retain Si5351A as this design's synthesizer authority. Prefer documented QRP Labs circuitry over substitutions based only on frequency or ppm ratings.
 
@@ -183,27 +183,42 @@ Follow the shared plan's 32-bit, free-running, non-quadrature counting and condi
 
 Use validated receiver timing information as well as PPS presence, reject ambiguous/missed captures, and invalidate measurement state after reset, power loss or a relevant clock change. Apply accepted corrections between transmissions and hold each correction fixed throughout a complete WSPR frame or other defined transmission unit. Without GPS, operate from the nominal TCXO or a valid saved calibration estimate, with its age and reference identity retained. This corrects the firmware's frequency calculation; it does not physically tune the TCXO or establish UTC timing by itself.
 
-The receiver class, QLG3 five-position socket and separate command pad, counter/receiver/conditioner supply source, SN74LVC1G14 conditioning stage and UART/SPI/PPS/notification GPIOs are now locked below. Shield connector and support parts are specified in [PARTS.md](PARTS.md). Exact mating hardware, counter power sequencing and PPS pulse-width/capture behavior remain implementation work. Extend firmware resource ownership to cover those roles and `AMP_EN`; the currently implemented pin-allocation subset does not provide these adapters. Board fit, capture atomicity, convergence, holdover, power-off behavior and RF coupling require validation tied to the assembled shield and firmware. [Current pin-allocation implementation boundary](https://github.com/WsprryPi/WsprryPico/blob/devel/docs/development/pin-allocation.md)
+The onboard 90-series receiver, 70-series counter/conditioner and Pico UART/SPI/PPS assignments are specified below. Hardware and firmware validation remain required.
 
 ### GPS configuration locked
 
-**GPS interface revised 2026-10-07:** use an optional **QRP Labs QLG3 daughterboard**, with its male pins soldered on the **underside**, plugging downward into **J71, a top-mounted 1x5 female socket on the shield at 2.54 mm pitch**. This supersedes the earlier keyed JST PH interface. Preserve electrical pin numbers when orienting the mating boards; looking at the opposite face reverses the apparent left/right order, not the net assignments. The selected QLG3 assembly turns the receiver/SMA face upward and installs the plain unkeyed 0.1-inch header underneath, opposite that face. J71 assigns the complete `QLG3_GPS_UndersideHeader` footprint and 3D model. Hans's dimensions are transformed consistently for this flipped board orientation, preserving pin numbers. Actual mating height and connector/post clearances still require a physical fit check. The supplied 11 mm spacers are not qualified for the proposed vertically stacked TX/GPS SMA arrangement.
+**2026-10-08 decision:** the PPS conditioner and frequency counter stay in the **70-series**; the onboard receiver and its support parts occupy the **90-series**. The QLG3 carrier is retired because its posts/header restrict placement. Receiver selection requires verified current LCSC stock before selection.
 
-| J71 pin | QLG3 function | Shield net / connection |
+**Selected prototype:** U91 **ATGM336H-5N31**, LCSC **C90770**. Live LCSC page inspection on 2026-10-08 showed **9,872 in stock**, USD **3.2683** at quantity one. The exact Hans/QRP Labs E108-GN02 / C5221085 could not meet this requirement: its live product page returns not found and live exact search returns no match. Cached catalog stock is not accepted as current evidence. The E108-GN03 listing also returned not found. The selected receiver is a different AT6558/CASIC design; retain Hans's UART-plus-PPS architecture, not his chipset commands or module pin assumptions.
+
+| U91 pin | Function | Connection |
 | --- | --- | --- |
-| 1 | Main supply | `PICO_3V3`, Pico physical pin 36 |
-| 2 | Backup supply | `PICO_3V3`; no battery fitted |
-| 3 | PPS output | `GPS_PPS_RAW` -> R75 pin 1 |
-| 4 | Serial output | `GPS_TX` -> Pico GP1 / UART0 RX, physical pin 2 |
-| 5 | Ground | `GND` |
+| 1, 10, 12 | GND | GND |
+| 2 | TXD | GPS_TX to Pico GP1, physical 2 |
+| 3 | RXD | GPS_RX_MODULE through R91 1 kohm to GPS_RX, Pico GP0, physical 1 |
+| 4 | 1PPS | GPS_PPS_RAW to R75, then GPS_PPS / GP16 / U72 |
+| 5 | ON/OFF | Leave open as in the manufacturer's active-antenna reference |
+| 6 | VBAT | PICO_3V3, bypassed locally by C93; no battery |
+| 7, 13, 15, 18 | NC/reserved | Unconnected |
+| 8 | VCC | PICO_3V3; C91 10 uF and C92 100 nF bypass |
+| 9 | nRESET | Unconnected; manufacturer permits floating when unused |
+| 11 | RF_IN | GPS_ANT, J91 center and L91 antenna end |
+| 14 | VCC_RF | GPS_ANT_BIAS to L91 supply end |
+| 16, 17 | Optional SDA/SCL | Unconnected; module uses UART |
 
-**TP71**, a separate 1 × 1 mm through-hole test pad with a 0.5 mm plated drill, exposes `GPS_RX` from Pico **GP0 / UART0 TX, physical pin 1**. It is optional for hand wiring to QLG3 E108-GN02 RX pin 3 or another compatible receiver's command input. It is not a sixth QLG3 header contact. J71 and TP71 are excluded from assembly BOM and positions. The socket footprint, generic STEP model and test-pad footprint/symbol are project-local. Exact socket/header ordering codes and mating height remain open.
+L91 is **47 nH muRata LQW18AN47NG00D / C98076**, 0603, ±2%, following the receiver's active-antenna reference. Live stock: **12,690** on 2026-10-08. It is factory assembled SMT and remains in BOM/positions. J91 uses the existing local board-edge SMA and is manually fitted, excluded from BOM/positions. Its center carries active-antenna DC bias; do not put a series DC-blocking capacitor between L91 and the antenna. The module provides antenna detection and short-circuit limiting. TP91 exposes the Pico-side command net with the same local 1 mm pad / 0.5 mm drill previously used at TP71.
 
-QLG3 uses a regulated 3.3 V supply and nominal 2.8 V unbuffered UART/PPS outputs, documented by QRP Labs as suitable for 3.3 V hosts. Verify receiver-input limits, power sequencing and PPS behavior on the assembly. Sources: [QLG3 pinout](https://qrp-labs.com/images/qlg3/photos/2/Pinout.png), [QLG3 schematic](https://qrp-labs.com/images/qlg3/photos/2/Schematic.png), [product data](https://qrp-labs.com/qlg3.html), [optional RX hand wire](https://qrp-labs.com/qmxp/e108fix.html).
+C74's identity becomes C91, increasing to the manufacturer's 10 uF bulk value and the existing local 1206 X7R selection. Its board footprint must change from 0805 to 1206 at synchronization. TP71 becomes TP91 with UUID, net and footprint retained. C92/C93 are 100 nF X7R 0603. All old counter/conditioner references, UUIDs and connectivity are retained. The PCB was not edited for this redesign.
+
+The receiver uses 3.3 V I/O and defaults to 9600 baud, 8N1. Its PPS rising edge is aligned to UTC, but pulse settings, lock validity, missed captures and the complete calibration path still require firmware and hardware qualification. Configuration uses **CASIC**, not GK9501/GKC commands; no GPS firmware changes were made here. Only GPS+BDS are selected by the specific 5N31 variant; do not infer all constellation support from the generic family heading.
+
+Power/layout acceptance: allow up to 100 mA receiver peak current before antenna load; verify the total Pico 3V3 budget and receiver-pin ripple below the manufacturer's 50 mVpp guidance. If the actual Pico rail misses that requirement, add a dedicated low-noise supply before fabrication. Place the antenna SMA near RF_IN, route at 50 ohms over ground, and keep receiver/antenna traces away from Si5351, SPI and the PA. Verify RF coexistence during transmission, antenna bias current, acquisition, date/time and PPS behavior. ERC is not RF or timing qualification.
+
+Sources: [receiver datasheet](https://www.lcsc.com/datasheet/C90770.pdf), [live receiver listing](https://www.lcsc.com/product-detail/C90770.html), [choke listing](https://www.lcsc.com/product-detail/C98076.html), [Hans's original QLG3](https://qrp-labs.com/qlg3.html). QLG3 parts/models remain historical local assets.
 
 **70-series net labels placed 2026-10-07:** R75 connects `GPS_PPS_RAW` to `GPS_PPS`; `GPS_PPS` reaches GP16, R73 and U72 input. U72 produces `COUNTER_INDEX_N` for U71 INDEX. R74 connects `SYNTH_CLK2` to `COUNTER_CLK`. U71 uses 32-bit non-quadrature counting: B and CNT_EN high, fCKi grounded, fCKO and DFLAG unconnected. Counter SPI/IRQ GPIOs remain as listed below. The complete pin/net table is recorded by the schematic; capture behavior still requires hardware and firmware validation.
 
-Supply the **LS7366R-S and PPS conditioner from the Pico's 3.3 V logic rail**, with local bypassing, keeping GPS/counter loads off the TCXO/Si5351 regulator's `SYNTH_3V3` output. Define and verify power-on/off sequencing, source budget and the CLK2/SPI/PPS interfaces when either rail is unavailable. A GPS module with 5 V serial/PPS outputs requires an adapter; it is not a direct match for this selected 3.3 V header. For example, QRP Labs documents 5 V level conversion on QLG2. [Pico power and I/O limits](https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf), [QLG2 electrical interface](https://www.qrp-labs.com/qlg2.html)
+Supply the **LS7366R-S and PPS conditioner from the Pico's 3.3 V logic rail**, with local bypassing, keeping GPS/counter loads off the TCXO/Si5351 regulator's `SYNTH_3V3` output. Define and verify power-on/off sequencing, source budget and the CLK2/SPI/PPS interfaces when either rail is unavailable. A GPS module with 5 V serial/PPS outputs requires an adapter; it is not a direct match for these 3.3 V inputs. For example, QRP Labs documents 5 V level conversion on QLG2. [Pico power and I/O limits](https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf), [QLG2 electrical interface](https://www.qrp-labs.com/qlg2.html)
 
 Use the following selected, non-overlapping counter connections alongside the receiver interface:
 

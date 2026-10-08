@@ -19,3 +19,9 @@ Selected standard footprints reference installed `${KICAD10_3DMODEL_DIR}` assets
 ## J61 edge-launch SMA preview
 
 `SMA_Adafruit_1865_Preview.wrl` is copied unchanged from the GPIO shield and is original repository-MIT illustrative geometry. J61 now uses this local model with `SMA_Adafruit_1865_EdgeMount`. Its 6.5 mm flange, 6.1 mm barrel diameter, 9.5 mm forward reach and 3.9 mm rear fingers depict the existing footprint; simplified heights, threads and details are not supplier CAD or physical fit qualification. The barrel points along footprint +Y. The unused BAT Wireless library asset still has its historical missing stock model.
+
+## Onboard 90-series GPS — 2026-10-08
+
+`Zhongke_ATGM336H-5N31.wrl` is original repository-MIT geometry: a simple 9.7 × 10.1 × 2.4 mm body envelope based on the manufacturer's module drawing. It does not depict internal circuitry or certify component height/assembly fit. The source drawing is linked in [LIBRARY-SOURCES.md](../LIBRARY-SOURCES.md).
+
+`L_0603_1608Metric.step` was copied unchanged from the installed KiCad 10.0.6 `Inductor_SMD.3dshapes` library, retaining its embedded copyright/license notice and the [KiCad library terms](../KICAD-LIBRARY-LICENSE.md). L91 references this local generic envelope through `${KIPRJMOD}`; it is not an exact muRata supplier solid.

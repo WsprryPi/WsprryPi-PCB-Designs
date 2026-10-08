@@ -1,5 +1,7 @@
 # Synth shield symbol sources and placement
 
+**Current 2026-10-08:** 59 non-power symbols in nine series groups; 58 inventory positions plus the excluded U11 Pico interface. The current onboard GPS receiver occupies the 90-series; the PPS conditioner/counter stay in the 70-series. Dated sections below retain the earlier placement history.
+
 The 2026-10-06 schematic placement contains **53 component symbols** in eight decade-series boxes, following the GPIO Pico shield's titled-box style. It includes the existing U11 electrical Pico interface, J11/J12 purchasing descriptions and 50 newly placed parts from [PARTS.csv](PARTS.csv). A3 provides room for subsequent wiring. No wires, labels, junctions or no-connect flags were added, and the PCB was not synchronized.
 
 The two existing library definitions are preserved. Seventeen standalone definitions were added to `wsprrypico-synth-shield.kicad_sym` and the schematic cache; no new symbol depends on another project's library or a global library nickname. Instances carry selected values, technologies/dielectrics, ratings, tolerances, manufacturer, MPN, `LCSC Part #`, supplier link, assembly method and selection status. Physical instances use the selected local footprints. J11/J12 remain pinless, off-board descriptions; U11 owns their combined pad rows.
@@ -50,3 +52,9 @@ Added original MIT-licensed `QLG3_GPS_UndersideHeader`: pins 1 VCC_3V3, 2 VBAT, 
 ## J71 complete receiver footprint assignment
 
 J71 retains its Conn_01x05 drawing and all pin/instance UUIDs and connections, but now selects `QLG3_GPS_UndersideHeader` and displays value `QLG3 GPS Receiver`. Its properties specify an unkeyed 0.1-inch (2.54 mm) socket/header pair; obsolete JST and LCSC metadata were cleared. The generic connector's local and cached footprint filters now accept the module footprint as well as the standalone socket. The separately available QLG3 electrical symbol is not additionally placed.
+
+## 2026-10-08 onboard GNSS, 90-series
+
+Added original `ATGM336H_5N31` symbol and `Zhongke_ATGM336H-5N31_9.7x10.1mm_P1.1mm` footprint, using the manufacturer's [ATGM336H-5N manual](https://www.lcsc.com/datasheet/C90770.pdf), pages 9-14. Pin meanings are specific to ATGM336H, including NC pin13 and optional SDA/SCL16/17. The footprint rotates the manual's top view by 180 degrees to put pin1 at upper left: pad rows x=±4.85 mm, pitch1.1 mm, end centers y=±4.4 mm, lands1.8×0.8 mm. Body9.7×10.1 mm. The original local VRML is an approximate 2.4 mm-high body envelope, not a supplier solid. These independently drawn project assets use the repository MIT license; manufacturer reference documents are not redistributed.
+
+Imported installed KiCad `Inductor_SMD:L_0603_1608Metric` for factory SMT L91. Existing KiCad library attribution/license applies. Its generic 3D model, if present, describes an envelope rather than the exact muRata part. J91 reuses the local edge SMA, excluded from BOM/positions. QLG3 assets remain available but are no longer assigned in the current schematic. Current receiver and choke stock checks are recorded in PARTS.csv. PCB synchronization and physical/RF qualification remain pending.

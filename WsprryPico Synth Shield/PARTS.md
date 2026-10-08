@@ -2,13 +2,13 @@
 
 Selected on 2026-10-06 for the first prototype. Values, dielectrics, ratings, ordering codes and project-local footprints are specified for the clock, amplifier, counter, GPS interface and controls. The **drain choke has an unresolved sourcing conflict**: the approved FT37-43 winding has no verified LCSC stock source. Its replacement or a sourcing exception awaits the user's choice. Measurements remain required for acceptance of the RF path, power supplies and PPS capture.
 
-[PARTS.csv](PARTS.csv) is the complete 53-position engineering inventory, including manual purchases and PCB copper features. [ASSEMBLY-BOM-PREVIEW.csv](ASSEMBLY-BOM-PREVIEW.csv) contains the 44 selected SMT positions only. The references are now assigned to the placed schematic symbols. The assembly preview remains inventory-derived; neither file is a manufacturing release, and circuit wiring/PCB placement remain pending. The counter circuit is selected for fitting on the shield; the external receiver remains optional.
+[PARTS.csv](PARTS.csv) is the complete 58-position engineering inventory, including manual purchases and PCB copper features. [ASSEMBLY-BOM-PREVIEW.csv](ASSEMBLY-BOM-PREVIEW.csv) contains the 49 selected SMT positions only. The references are now assigned to the placed schematic symbols. The assembly preview remains inventory-derived; neither file is a manufacturing release, and PCB synchronization/placement remain pending. The counter and onboard GPS receiver are selected for fitting on the shield; GPS remains optional for operation.
 
 ## Assembly exclusions
 
-**All headers, the SMA and hand-wound inductors are excluded from the assembly BOM and position output**, as directed by the user on 2026-10-06. Keep their electrical connectivity and PCB footprints. J11/J12 purchasing descriptions remain schematic-only; U11 contains their two pad rows, so do not add duplicate footprints for the sockets. J61 SMA and J71 GPS header footprints explicitly carry both exclusions. Their placed schematic symbols use `in_bom no` and `on_board yes`; their future PCB instances must retain both exclusions, and all assembly exporters must respect those flags.
+**All headers, the SMA and hand-wound inductors are excluded from the assembly BOM and position output**, as directed by the user on 2026-10-06. Keep their electrical connectivity and PCB footprints. J11/J12 purchasing descriptions remain schematic-only; U11 contains their two pad rows, so do not add duplicate footprints for the sockets. J61 TX SMA and J91 GPS SMA footprints explicitly carry both exclusions. Their placed schematic symbols use `in_bom no` and `on_board yes`; their future PCB instances must retain both exclusions, and all assembly exporters must respect those flags.
 
-Preserve manual fitting of the source design's BS170 and hand-wound choke. L61 has `in_bom no` and `in_pos_files no` in the placed schematic; any other hand-wound inductor must retain those exclusions and both `exclude_from_bom` and `exclude_from_pos_files` on the PCB footprint. Retain their electrical connections and winding/purchasing specifications in this engineering inventory. This assembly exclusion does not settle L61's separate sourcing choice. JP41 and JP51 are copper features, not purchasable components. J11, J12, J61 and J71 remain listed here for manual purchasing; their presence in this engineering inventory does not put them into the assembly BOM. No position file is produced until actual placement.
+Preserve manual fitting of the source design's BS170 and hand-wound choke. L61 has `in_bom no` and `in_pos_files no` in the placed schematic; any other hand-wound inductor must retain those exclusions and both `exclude_from_bom` and `exclude_from_pos_files` on the PCB footprint. Retain their electrical connections and winding/purchasing specifications in this engineering inventory. This assembly exclusion does not settle L61's separate sourcing choice. JP41 and JP51 are copper features, not purchasable components. J11, J12, J61 and J91 remain listed here for manual purchasing; their presence in this engineering inventory does not put them into the assembly BOM. No position file is produced until actual placement.
 
 ## Capacitors
 
@@ -29,7 +29,8 @@ Use **C0G/NP0 for the reference coupling, RF input/output coupling and slew capa
 | C63 | Amplifier drain-feed local bulk | 1 uF X7R | 10% / 50 V | 0805 | [C726584](https://www.lcsc.com/product-detail/C726584.html) |
 | C71, C73 | LS7366 supply bypass; PPS inverter supply bypass | 100 nF X7R | 10% / 50 V | 0603 | [C14663](https://www.lcsc.com/product-detail/C14663.html) |
 | C72 | Counter local bulk | 1 uF X7R | 10% / 50 V | 0805 | [C726584](https://www.lcsc.com/product-detail/C726584.html) |
-| C74 | GPS header local supply bypass | 2.2 uF X7R | 10% / 25 V | 0805 | [C364318](https://www.lcsc.com/product-detail/C364318.html) |
+| C91 | GNSS supply bulk (formerly C74) | 10 uF X7R | 10% / 25 V | 1206 | [C77093](https://www.lcsc.com/product-detail/C77093.html) |
+| C92, C93 | GNSS VCC / VBAT local bypass | 100 nF X7R | 10% / 50 V | 0603 | [C14663](https://www.lcsc.com/product-detail/C14663.html) |
 | C81 | Button deglitch capacitor | 10 nF X7R | 10% / 50 V | 0603 | [C1589](https://www.lcsc.com/product-detail/C1589.html) |
 
 The 2.2 µF LDO parts are 0805, 25 V, X7R, ±10%. After nominal tolerance and the X7R temperature envelope, the calculated capacitance is `2.2 × 0.90 × 0.85 = 1.683 µF` before DC-bias loss. Keeping at least 0.47 µF requires a remaining bias factor of at least `0.47 / 1.683 = 0.279`; this is a margin calculation, not a guarantee from a generic X7R label. Verify the exact capacitor's bias behavior at the maximum selected input and 3.3 V output, output ESR and startup/transients against the [TPS7A20 requirements](https://www.ti.com/lit/gpn/tps7a20). Supplier ordering details are resolved; effective capacitance remains an electrical acceptance check.
@@ -42,7 +43,7 @@ For C61/C64, ideal capacitive reactance at the 2200 m lower band edge of 135.7 k
 | --- | --- | --- | --- |
 | R31, R32, R62 | 4.7 kohm | 0603, thick film, ±1%, 100 mW, 75 V, ±100 ppm/°C | 0603WAF4701T5E / [C23162](https://www.lcsc.com/product-detail/C23162.html) |
 | R51, R63, R73 | 100 kohm | 0603, thick film, ±1%, 100 mW, 75 V, ±100 ppm/°C | 0603WAF1003T5E / [C25803](https://www.lcsc.com/product-detail/C25803.html) |
-| R52, R75, R82, R83 | 1 kohm | 0603, thick film, ±1%, 100 mW, 75 V, ±100 ppm/°C | FRC0603F1001TS / [C2907002](https://www.lcsc.com/product-detail/C2907002.html) |
+| R52, R75, R82, R83, R91 | 1 kohm | 0603, thick film, ±1%, 100 mW, 75 V, ±100 ppm/°C | FRC0603F1001TS / [C2907002](https://www.lcsc.com/product-detail/C2907002.html) |
 | R61 | 22 ohm | 0603, thick film, ±1%, 100 mW, 75 V, ±100 ppm/°C | 0603WAF220JT5E / [C23345](https://www.lcsc.com/product-detail/C23345.html) |
 | R71, R72, R81 | 10 kohm | 0603, thick film, ±1%, 100 mW, 75 V, ±100 ppm/°C | FRC0603F1002TS / [C2906982](https://www.lcsc.com/product-detail/C2906982.html) |
 | R74 | 33 ohm | 0603, thick film, ±1%, 100 mW, 75 V, ±100 ppm/°C | 0603WAF330JT5E / [C23140](https://www.lcsc.com/product-detail/C23140.html) |
@@ -61,8 +62,10 @@ The button uses a 10 kΩ external pull-up, 1 kΩ GPIO series resistor and 10 nF 
 | J11 | PM2.54-1*20 / [C5224030](https://www.lcsc.com/product-detail/C5224030.html) | Raspberry_Pi_Pico_2W_Header | Manual |
 | J12 | PM2.54-1*20 / [C5224030](https://www.lcsc.com/product-detail/C5224030.html) | Raspberry_Pi_Pico_2W_Header | Manual |
 | J61 | Adafruit 1865; existing project board-edge SMA | SMA_Adafruit_1865_EdgeMount | Manual; no BOM/positions |
-| J71 | QLG3 GPS Receiver; unkeyed 0.1-inch socket/header; final mating MPN pending | QLG3_GPS_UndersideHeader_SinglePost | Manual; no BOM/positions |
-| TP71 | GPS_RX hand-wire pad; 1 × 1 mm, 0.5 mm plated hole | TestPoint_THTPad_1.0x1.0mm_Drill0.5mm | PCB copper; no BOM/positions |
+| J91 | GPS antenna SMA; existing project board-edge SMA | SMA_Adafruit_1865_EdgeMount | Manual; no BOM/positions |
+| L91 | 47 nH muRata LQW18AN47NG00D / [C98076](https://www.lcsc.com/product-detail/C98076.html) | L_0603_1608Metric | Factory SMT; included in BOM/positions |
+| U91 | ATGM336H-5N31 / [C90770](https://www.lcsc.com/product-detail/C90770.html) | Zhongke_ATGM336H-5N31_9.7x10.1mm_P1.1mm | SMT |
+| TP91 | GPS_RX hand-wire pad; 1 × 1 mm, 0.5 mm plated hole | TestPoint_THTPad_1.0x1.0mm_Drill0.5mm | PCB copper; no BOM/positions |
 | Q61 | BS170 / [C111691](https://www.lcsc.com/product-detail/C111691.html) | TO-92_Inline | Manual |
 | RV61 | TC33X-2-502E / [C719177](https://www.lcsc.com/product-detail/C719177.html) | Potentiometer_Bourns_TC33X_Vertical | SMT |
 | SW81 | TS-1088R-02026 / [C455280](https://www.lcsc.com/product-detail/C455280.html) | SW_SPST_XUNPU_TS1088R_4x3mm | SMT |
@@ -77,7 +80,7 @@ Use the exact package pin maps in [the circuit notes](TCXO-SI5351A-DESIGN.md). U
 
 J61 uses the existing **Adafruit 1865 board-edge SMA** footprint for a 1.6 mm PCB, restored at the user's request on 2026-10-07. Pin 1 is TX_OUT; all four pad-2 lands are GND, with two ground lands on each board face. It is hand-soldered, with no paste, BOM or position output. The footprint and provisional local 3D model are copied from the GPIO shield into independent Synth libraries. The old BAT WIRELESS through-hole selection and C496551 ordering fields are superseded. The previously saved **Superbat B09V5811S7, “0.062 inch Straight Connector”** remains a probable substitute pending sample fit and RF checks; see the [existing connector record](../Pico%202W%20Wattmeter%20Shield/J1-CONNECTOR-NOTES.md#probable-amazon-alternative-superbat-b09v5811s7). The footprint origin is its board-edge seating point and the barrel faces local +Y. J61 remains at its existing unplaced staging origin; final edge placement and GPS/SMA clearance are still required.
 
-J71 is now a **1x5 female socket at 2.54 mm pitch on the top of the shield**, accepting male pins soldered on the **underside of QLG3**. Its order matches QLG3: **1 3V3, 2 VBAT tied to PICO_3V3, 3 GPS_PPS_RAW, 4 GPS_TX (receiver output), 5 GND**. TP71 separately exposes **GPS_RX**, the Pico GP0 command output. This replaces the previous JST PH selection. J71 assigns the complete local QLG3 footprint and colored 3D assembly, including the plain socket/header, receiver, SMA and mounting hardware. Hans's dimensions supply the transformed mounting coordinates; exact mating MPNs, post fit and vertical clearance remain physical checks. QLG3 remains an optional manually installed accessory, outside the shield assembly BOM. See [QLG3 kit contents and assembly](qlg3-model/README.md#qlg3-gps-receiver-kit-contents-and-assembly) for the included connectors, antenna and mounting hardware. [QLG3 pinout](https://qrp-labs.com/images/qlg3/photos/2/Pinout.png), [command-input hand wire](https://qrp-labs.com/qmxp/e108fix.html).
+The QLG3 carrier/J71 is retired. U91 is the onboard **ATGM336H-5N31 / C90770** in the new 90-series, with J91 antenna SMA, 47 nH L91 **LQW18AN47NG00D / C98076**, R91 and C91-C93. TP91 replaces TP71. See the [current pin plan, verified stock and implementation limits](TCXO-SI5351A-DESIGN.md#gps-configuration-locked). The 70-series retains the counter and PPS conditioner. New SMT parts are included in assembly inventory; J91 and TP91 are excluded. The current PCB still needs synchronization.
 
 J11/J12 use **ZHOURI PM2.54-1*20 / C5224030**, 20 positions, 2.54 mm pitch, 8.5 mm body height, purchased and fitted by hand. The [supplier drawing](https://datasheet.lcsc.com/datasheet/pdf/d644f3ae7335586a805c6e9751c61823.pdf?productCode=C5224030) gives nominal 0.65 × 0.40 mm leads and a 1.02 mm recommended hole; the retained header footprint has 1.00 mm holes. The nominal lead diagonal is 0.763 mm, so the retained holes provide nominal clearance, but finished-hole and lead tolerances and socket engagement must be checked physically before fabrication approval. The generic STEP preview is not a supplier solid.
 
@@ -105,7 +108,7 @@ The placed schematic uses the following unique references. This mapping preserve
 | J51 / JP1 | J61 / JP51 | SMA / manual bias bypass |
 | D11 / R11 | D81 / R82 | LED / 1 kΩ current limiter |
 
-TCXO, Si5351, regulator, amplifier, counter and control symbols are now placed with these references. Circuit wiring and PCB implementation remain pending. [SYMBOL-SOURCES.md](SYMBOL-SOURCES.md) records the definitions and decade-series placement.
+TCXO, Si5351, regulator, amplifier, counter and control symbols are now placed with these references. The wired schematic passes ERC; PCB synchronization, placement and routing remain pending. [SYMBOL-SOURCES.md](SYMBOL-SOURCES.md) records the definitions and decade-series placement.
 
 ## Supplier availability
 
@@ -139,7 +142,7 @@ The following are the inventory numbers shown by the inspected LCSC pages on 202
 | [C2906982](https://www.lcsc.com/product-detail/C2906982.html) | FOJAN | FRC0603F1002TS | 3080500 |
 | [C23140](https://www.lcsc.com/product-detail/C23140.html) | UNI-ROYAL | 0603WAF330JT5E | 3573200 |
 
-The previous JST PHR-5 housing and SPH contacts are superseded by the QLG3 mating socket/header selection and are no longer purchasing requirements.
+Live LCSC pages checked on **2026-10-08** showed **9,872 ATGM336H-5N31 / C90770** receivers and **12,690 LQW18AN47NG00D / C98076** 47 nH chokes. These are availability snapshots, not reserved inventory. The prior JST connector and QLG3 socket/header are no longer purchasing requirements.
 
 ## Footprint and circuit validation
 

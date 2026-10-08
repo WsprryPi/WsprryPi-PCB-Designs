@@ -240,6 +240,420 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "wsprrypico-synth-shield:ATGM336H_5N31"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 27.94 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ATGM336H-5N31"
+				(at 0 25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "wsprrypico-synth-shield:Zhongke_ATGM336H-5N31_9.7x10.1mm_P1.1mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C90770.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Zhongke ATGM336H-5N31 GNSS receiver; 3.3 V UART and PPS; active antenna bias output"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Zhongke_ATGM336H-5N31_9.7x10.1mm_P1.1mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ATGM336H_5N31_0_1"
+				(rectangle
+					(start -17.78 24.13)
+					(end 17.78 -34.29)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ATGM336H_5N31_1_1"
+				(pin power_in line
+					(at 22.86 -19.05 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 11.43 0)
+					(length 5.08)
+					(name "TXD"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 3.81 0)
+					(length 5.08)
+					(name "RXD"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 -3.81 0)
+					(length 5.08)
+					(name "1PPS"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 -13.97 0)
+					(length 5.08)
+					(name "ON/OFF"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 5.08 29.21 270)
+					(length 5.08)
+					(name "VBAT"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -10.16 -39.37 90)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 29.21 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 -19.05 0)
+					(length 5.08)
+					(name "nRESET"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 -24.13 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 22.86 11.43 180)
+					(length 5.08)
+					(name "RF_IN"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 -29.21 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 22.86 -11.43 180)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 22.86 -1.27 180)
+					(length 5.08)
+					(name "VCC_RF"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -5.08 -39.37 90)
+					(length 5.08)
+					(name "Reserved"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -39.37 90)
+					(length 5.08)
+					(name "SDA"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 5.08 -39.37 90)
+					(length 5.08)
+					(name "SCL"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 10.16 -39.37 90)
+					(length 5.08)
+					(name "Reserved"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "wsprrypico-synth-shield:BS170"
 			(pin_names
 				(hide yes)
@@ -4879,6 +5293,28 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "3.3 V UART/PPS. VBAT tied to PICO_3V3; no battery.\nActive antenna: 47 nH bias feed; 50-ohm RF route. CASIC commands, not GK9501."
+		(exclude_from_sim no)
+		(at 231.14 243.84 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left top)
+		)
+		(uuid "46e13b4b-dd2d-4a7e-9d09-90ebcf496e2e")
+	)
+	(text "PPS from 90-series GPS receiver.\nCounter and PPS conditioner retain 70-series references."
+		(exclude_from_sim no)
+		(at 16.51 190.5 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left top)
+		)
+		(uuid "58b9ae6e-d7cc-4212-81c1-6fd50f430738")
+	)
 	(text "L61 hand-wound: no BOM / positions; source pending.\nOutput DC block -> SMA -> external LPF."
 		(exclude_from_sim no)
 		(at 180.594 135.128 0)
@@ -4900,17 +5336,6 @@
 			(justify left)
 		)
 		(uuid "7f30990c-b030-46cf-92e6-a774624c5f86")
-	)
-	(text "QLG3 underside male pins -> shield TOP female socket. 1=3V3  2=VBAT(3V3)  3=PPS  4=GPS_TX  5=GND"
-		(exclude_from_sim no)
-		(at 14.986 196.342 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b92750da-1bc2-4cd0-a57e-6db6efffb6d2")
 	)
 	(text "Manual sockets: no BOM / positions"
 		(exclude_from_sim no)
@@ -4982,6 +5407,26 @@
 		)
 		(uuid "4b141008-55f4-4d05-aaf6-298184d2e890")
 	)
+	(text_box "Onboard GNSS Receiver (90-Series)"
+		(exclude_from_sim no)
+		(at 179.07 144.78 0)
+		(size 205.74 105.41)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "619129bb-b96d-4c8e-a9c7-dd7f76286fcb")
+	)
 	(text_box "25 MHz TCXO Reference (20-Series)"
 		(exclude_from_sim no)
 		(at 101.6 12.7 0)
@@ -5042,7 +5487,7 @@
 		)
 		(uuid "d31ba83b-2a2a-4604-8d45-4aa3d4b8da24")
 	)
-	(text_box "GPS/PPS Interface + Frequency Counter (70-Series)"
+	(text_box "PPS Conditioning + Frequency Counter (70-Series)"
 		(exclude_from_sim no)
 		(at 12.7 124.46 0)
 		(size 152.4 74.93)
@@ -5239,12 +5684,6 @@
 		(uuid "bf3080f6-00a0-445a-bff8-a6c77d5cff9d")
 	)
 	(junction
-		(at 142.24 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d3134f3a-8424-4a9e-b202-e4748ee240e7")
-	)
-	(junction
 		(at 125.73 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5267,6 +5706,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f6e3527d-2f6f-4d64-94e8-691fd3aa0025")
+	)
+	(no_connect
+		(at 261.62 233.68)
+		(uuid "00ba0ad3-e38b-43ec-aae7-b11453fe4fcd")
 	)
 	(no_connect
 		(at 189.23 41.91)
@@ -5305,12 +5748,28 @@
 		(uuid "7fd7cc95-0f00-4da2-ad76-1e59fbb4edc8")
 	)
 	(no_connect
+		(at 228.6 213.36)
+		(uuid "8b71a2af-f30e-4a1e-860b-a91f56a60cc6")
+	)
+	(no_connect
+		(at 274.32 205.74)
+		(uuid "8f202bd4-6ec0-488c-8c1e-85f03e75f554")
+	)
+	(no_connect
 		(at 31.75 38.1)
 		(uuid "98f9c6b3-78af-4843-a6b8-a3e84e5a0296")
 	)
 	(no_connect
+		(at 241.3 233.68)
+		(uuid "b8236a0f-68da-4161-9cc9-199909505920")
+	)
+	(no_connect
 		(at 91.44 166.37)
 		(uuid "bb5ebb4a-a0a5-4775-b93b-b1b2df863115")
+	)
+	(no_connect
+		(at 256.54 233.68)
+		(uuid "c7a25942-23ff-44ab-b334-b5666964ac9d")
 	)
 	(no_connect
 		(at 31.75 50.8)
@@ -5319,6 +5778,14 @@
 	(no_connect
 		(at 214.63 44.45)
 		(uuid "c9b2e518-012a-478f-ae9b-d6a60e4e337c")
+	)
+	(no_connect
+		(at 246.38 233.68)
+		(uuid "cca22264-2ba8-4fe6-b4d5-2bde82224d33")
+	)
+	(no_connect
+		(at 228.6 208.28)
+		(uuid "d03f7c42-85de-40c5-94c7-68be6d9e3419")
 	)
 	(no_connect
 		(at 80.01 48.26)
@@ -5343,6 +5810,10 @@
 	(no_connect
 		(at 31.75 55.88)
 		(uuid "ea12e022-c686-466c-af66-415275da01f1")
+	)
+	(no_connect
+		(at 251.46 233.68)
+		(uuid "ee1d4b6f-185b-4864-97b2-2c739b416f74")
 	)
 	(no_connect
 		(at 80.01 55.88)
@@ -5477,16 +5948,6 @@
 			(type default)
 		)
 		(uuid "16220b6c-eaa4-4731-9746-f5122702a760")
-	)
-	(wire
-		(pts
-			(xy 143.51 187.96) (xy 142.24 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "165d4bd8-4e54-4e12-a446-77673a497d88")
 	)
 	(wire
 		(pts
@@ -5690,16 +6151,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 172.72) (xy 125.73 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3735cea1-17b1-434f-9845-28980cd4a15b")
-	)
-	(wire
-		(pts
 			(xy 247.65 25.4) (xy 242.57 25.4)
 		)
 		(stroke
@@ -5860,16 +6311,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 180.34) (xy 142.24 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f61db72-7599-4607-ac89-cde40efd2830")
-	)
-	(wire
-		(pts
 			(xy 228.6 104.14) (xy 229.87 104.14)
 		)
 		(stroke
@@ -5950,16 +6391,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 182.88) (xy 132.08 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59b2e9f2-a257-4de5-b215-1ce4071e521d")
-	)
-	(wire
-		(pts
 			(xy 176.53 24.13) (xy 201.93 24.13)
 		)
 		(stroke
@@ -5997,16 +6428,6 @@
 			(type default)
 		)
 		(uuid "5c23ad77-ac74-4a3c-936f-0da2d42d5c84")
-	)
-	(wire
-		(pts
-			(xy 142.24 177.8) (xy 135.89 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c83e6db-6af9-49d6-a165-72789a70db5f")
 	)
 	(wire
 		(pts
@@ -6160,16 +6581,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 172.72) (xy 125.73 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f600cf2-14b5-424d-906f-0adfef276d5b")
-	)
-	(wire
-		(pts
 			(xy 165.1 92.71) (xy 154.94 92.71)
 		)
 		(stroke
@@ -6200,16 +6611,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 185.42) (xy 143.51 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83438a87-b936-47dd-a9a1-742c4a46d072")
-	)
-	(wire
-		(pts
 			(xy 111.76 104.14) (xy 111.76 96.52)
 		)
 		(stroke
@@ -6227,16 +6628,6 @@
 			(type default)
 		)
 		(uuid "850d51e3-747c-443a-8ee6-d0ef7b91c5c8")
-	)
-	(wire
-		(pts
-			(xy 142.24 187.96) (xy 142.24 189.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8650fdba-12e4-41e2-8663-a0204d03794d")
 	)
 	(wire
 		(pts
@@ -6307,16 +6698,6 @@
 			(type default)
 		)
 		(uuid "8cba3cc1-2f19-4422-a497-d10f4848a9fc")
-	)
-	(wire
-		(pts
-			(xy 134.62 172.72) (xy 135.89 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ecf47ea-1946-46b4-afa9-f9b7b3a1212c")
 	)
 	(wire
 		(pts
@@ -6457,16 +6838,6 @@
 			(type default)
 		)
 		(uuid "a293c485-edc8-410e-bae1-214d23ead3f4")
-	)
-	(wire
-		(pts
-			(xy 142.24 180.34) (xy 142.24 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a50a3d89-a6d3-48a5-b856-e48ba1a85d5b")
 	)
 	(wire
 		(pts
@@ -6697,16 +7068,6 @@
 			(type default)
 		)
 		(uuid "c1a0762d-4864-45b9-a996-c4cb10681c5e")
-	)
-	(wire
-		(pts
-			(xy 135.89 177.8) (xy 135.89 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c23309c4-1778-4b51-b767-3c10a9efc51c")
 	)
 	(wire
 		(pts
@@ -6970,16 +7331,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 177.8) (xy 142.24 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee5a94f7-ac61-46c2-a411-92e212b05b25")
-	)
-	(wire
-		(pts
 			(xy 365.76 95.25) (xy 365.76 93.98)
 		)
 		(stroke
@@ -7138,6 +7489,16 @@
 		)
 		(uuid "1e28fbfa-113e-4c83-9fa4-28aba81acc96")
 	)
+	(label "PICO_3V3"
+		(at 256.54 165.1 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e643895-90c8-4cda-bf50-ffb224c4cb9d")
+	)
 	(label "GND"
 		(at 223.52 123.19 0)
 		(effects
@@ -7147,6 +7508,16 @@
 			(justify left bottom)
 		)
 		(uuid "1ec6aef8-fe0a-4dba-9bb0-b6164fec6130")
+	)
+	(label "GND"
+		(at 195.58 160.02 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "210f9050-cbbe-444a-a6d1-fc38e5828e25")
 	)
 	(label "GND"
 		(at 128.27 55.88 180)
@@ -7198,6 +7569,16 @@
 		)
 		(uuid "23b7adbd-d30a-4e07-9ca5-96e9ed228f3a")
 	)
+	(label "GND"
+		(at 195.58 171.45 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "255a52c3-822f-4aeb-a6f6-32d21ce2abc9")
+	)
 	(label "XA"
 		(at 184.15 36.83 0)
 		(effects
@@ -7207,6 +7588,16 @@
 			(justify left bottom)
 		)
 		(uuid "25d87173-dacb-4aa6-bffb-1233b0f22ae1")
+	)
+	(label "PICO_3V3"
+		(at 203.2 171.45 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "28163802-b125-4780-a643-4a7a144b458a")
 	)
 	(label "COUNTER_CS_N"
 		(at 66.04 153.67 180)
@@ -7318,6 +7709,16 @@
 		)
 		(uuid "436df0c5-9c54-4a7f-98bf-985e27e02f82")
 	)
+	(label "GPS_ANT_BIAS"
+		(at 274.32 195.58 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "44a0e751-e060-4920-b125-60c8f4ab3076")
+	)
 	(label "GND"
 		(at 326.39 82.55 0)
 		(effects
@@ -7357,6 +7758,16 @@
 			(justify right bottom)
 		)
 		(uuid "4d96357d-dcb4-4ed6-8f72-af45c47707a8")
+	)
+	(label "GND"
+		(at 274.32 223.52 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "55aa8ad9-169a-45b2-b6bc-e6798571d299")
 	)
 	(label "COUNTER_SCK"
 		(at 66.04 156.21 180)
@@ -7418,6 +7829,46 @@
 		)
 		(uuid "63838fb0-d111-4f94-a9cc-209e33ef5745")
 	)
+	(label "GPS_ANT_BIAS"
+		(at 320.04 179.07 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "673e07bf-d344-4598-85cf-55c6f21b111e")
+	)
+	(label "GPS_RX"
+		(at 199.39 237.49 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "688076b1-1319-4405-86ec-2cb4d9bbdba6")
+	)
+	(label "GND"
+		(at 195.58 182.88 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "6dd04160-5303-44b6-b036-a760d7c69fa3")
+	)
+	(label "GPS_ANT"
+		(at 320.04 186.69 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "709ecf7a-9230-492e-93a9-61bccc1e08d0")
+	)
 	(label "PICO_3V3"
 		(at 34.29 142.24 180)
 		(effects
@@ -7428,15 +7879,15 @@
 		)
 		(uuid "731fd8d8-1d07-4ac7-997f-826630a7e501")
 	)
-	(label "GPS_TX"
-		(at 138.43 185.42 0)
+	(label "GND"
+		(at 360.68 182.88 0)
 		(effects
 			(font
 				(size 1 1)
 			)
 			(justify left bottom)
 		)
-		(uuid "74b82edb-c5a2-479b-8811-f9f14b70902a")
+		(uuid "742b9e12-3880-4278-84e2-205d2c99f571")
 	)
 	(label "VSYS"
 		(at 262.89 25.4 180)
@@ -7538,15 +7989,15 @@
 		)
 		(uuid "8716ace0-8f9a-4e0a-a6e9-956091e4b1f1")
 	)
-	(label "GND"
-		(at 143.51 187.96 180)
+	(label "GPS_TX"
+		(at 228.6 182.88 180)
 		(effects
 			(font
 				(size 1 1)
 			)
 			(justify right bottom)
 		)
-		(uuid "8dda139a-4f59-4b73-990c-45d364f44ee3")
+		(uuid "8be22fb5-b7df-44be-b249-20a8c34bdd3a")
 	)
 	(label "SYNTH_3V3"
 		(at 125.73 22.86 0)
@@ -7597,6 +8048,16 @@
 			(justify right bottom)
 		)
 		(uuid "927696f6-bb71-4b4d-aa48-87bfa0e243a1")
+	)
+	(label "GPS_RX_MODULE"
+		(at 228.6 190.5 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "93b0625c-0130-4290-a368-a5525358ba19")
 	)
 	(label "AMP_5V_SW"
 		(at 166.37 92.71 180)
@@ -7658,15 +8119,15 @@
 		)
 		(uuid "9ab7dc35-9b02-478c-ba1a-1b1c713885e9")
 	)
-	(label "GND"
-		(at 127 172.72 180)
+	(label "GPS_RX_MODULE"
+		(at 203.2 210.82 0)
 		(effects
 			(font
 				(size 1 1)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "a094a84e-e7d3-4d3e-9085-762d03f1307d")
+		(uuid "a2c18a30-2760-4ff2-ba39-f0ec05e786d7")
 	)
 	(label "PICO_3V3"
 		(at 78.74 138.43 0)
@@ -7688,6 +8149,16 @@
 		)
 		(uuid "a5dfc31f-df1f-4f88-a9a6-055175e88976")
 	)
+	(label "PICO_3V3"
+		(at 203.2 160.02 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ab0f035c-3755-4d06-84bc-e1cf9a320c17")
+	)
 	(label "AMP_5V_SW"
 		(at 240.03 81.28 0)
 		(effects
@@ -7697,6 +8168,16 @@
 			(justify left bottom)
 		)
 		(uuid "ab869d62-78a8-43ee-95eb-45afc7a47076")
+	)
+	(label "GPS_ANT"
+		(at 355.6 182.88 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "ad1f15cc-9fab-4f0e-a8c0-5b93ffd6ae67")
 	)
 	(label "AMP_QOD"
 		(at 146.05 96.52 0)
@@ -7718,6 +8199,26 @@
 		)
 		(uuid "ada039a9-5d3d-415b-83b6-222af626de45")
 	)
+	(label "GPS_ANT"
+		(at 274.32 182.88 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "af0d0473-a466-41d4-993a-dd4d31eba96e")
+	)
+	(label "GPS_PPS_RAW"
+		(at 228.6 198.12 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "af95ae8a-632d-4218-a4cf-360fc2134d3e")
+	)
 	(label "AMP_DRAIN"
 		(at 250.19 107.95 180)
 		(effects
@@ -7737,6 +8238,16 @@
 			(justify left bottom)
 		)
 		(uuid "b2187807-2a8b-4214-99e8-7b6685bfccde")
+	)
+	(label "GND"
+		(at 274.32 213.36 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3ffc249-be0c-443f-8e25-2eddca43b043")
 	)
 	(label "COUNTER_MOSI"
 		(at 31.75 63.5 180)
@@ -7848,6 +8359,16 @@
 		)
 		(uuid "c73c8fe7-c70e-4bdd-9342-871f544c8a3a")
 	)
+	(label "GND"
+		(at 274.32 218.44 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "c87fc114-a5bf-442f-ae89-0dc3035dc2e4")
+	)
 	(label "BUTTON_N"
 		(at 31.75 73.66 180)
 		(effects
@@ -7867,6 +8388,16 @@
 			(justify left bottom)
 		)
 		(uuid "cc716062-5af7-469c-8451-571b89252318")
+	)
+	(label "PICO_3V3"
+		(at 203.2 182.88 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "cea56758-eed8-473e-875c-188c1d17d6ca")
 	)
 	(label "AMP_5V_IN"
 		(at 254 41.91 0)
@@ -7888,6 +8419,16 @@
 		)
 		(uuid "d503d142-3b6f-43d2-887a-fd08cce1e211")
 	)
+	(label "PICO_3V3"
+		(at 246.38 165.1 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d70f70f3-bbae-4905-ba9f-4e5ff7c2be60")
+	)
 	(label "COUNTER_IRQ_N"
 		(at 91.44 161.29 0)
 		(effects
@@ -7907,16 +8448,6 @@
 			(justify right bottom)
 		)
 		(uuid "dcf4d088-4ac5-4e2a-a927-330edc1e3649")
-	)
-	(label "PICO_3V3"
-		(at 135.89 177.8 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "dd829dd5-f7a7-455e-8517-10203f203385")
 	)
 	(label "GND"
 		(at 377.19 93.98 0)
@@ -7947,16 +8478,6 @@
 			(justify left bottom)
 		)
 		(uuid "e221f831-7faa-47c2-882f-45c336993a9a")
-	)
-	(label "GPS_RX"
-		(at 135.89 146.05 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "e4c06c48-0c19-427a-8e01-25fa303ccaac")
 	)
 	(label "GND"
 		(at 201.93 57.15 0)
@@ -8017,6 +8538,16 @@
 			(justify right bottom)
 		)
 		(uuid "efb9b4c2-fb5f-4ae4-b6a5-e154ad86a5aa")
+	)
+	(label "GPS_RX"
+		(at 195.58 210.82 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "f2934701-16f1-4cd5-9bb4-1f14575b35c7")
 	)
 	(label "GND"
 		(at 123.19 55.88 180)
@@ -9854,7 +10385,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypico-synth-shield:TestPoint")
-		(at 135.89 146.05 0)
+		(at 199.39 237.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9863,8 +10394,8 @@
 		(in_pos_files no)
 		(dnp no)
 		(uuid "2077b68f-f4fc-4691-aa14-ed9b05b44086")
-		(property "Reference" "TP71"
-			(at 140.208 141.986 0)
+		(property "Reference" "TP91"
+			(at 199.39 230 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9874,7 +10405,8 @@
 			)
 		)
 		(property "Value" "GPS_RX"
-			(at 140.716 143.764 0)
+			(at 199.39 240.79 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9884,7 +10416,7 @@
 			)
 		)
 		(property "Footprint" "wsprrypico-synth-shield:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
-			(at 135.89 146.05 0)
+			(at 199.39 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9895,7 +10427,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 146.05 0)
+			(at 199.39 237.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9905,7 +10437,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 135.89 146.05 0)
+			(at 199.39 237.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9920,7 +10452,7 @@
 		(instances
 			(project "WsprryPico Synth Shield"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "TP71")
+					(reference "TP91")
 					(unit 1)
 				)
 			)
@@ -10123,6 +10655,376 @@
 			(project "WsprryPico Synth Shield"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C81")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "wsprrypico-synth-shield:C")
+		(at 199.39 182.88 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2663b45f-9255-4abf-bc55-a3efc7e4ac6a")
+		(property "Reference" "C93"
+			(at 199.39 179.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 199.39 186.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypico-synth-shield:C_0603_1608Metric"
+			(at 199.39 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 199.39 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GNSS VBKP local bypass; 100 nF X7R"
+			(at 199.39 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 199.39 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 199.39 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 199.39 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier URL" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 199.39 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specified Value" "100 nF"
+			(at 199.39 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Technology" "X7R"
+			(at 199.39 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 199.39 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "50 V"
+			(at 199.39 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 199.39 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "GNSS VBKP local bypass"
+			(at 199.39 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Selection status" "Selected prototype"
+			(at 199.39 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b705fa1c-6777-48d0-94de-4d98d6122599")
+		)
+		(pin "2"
+			(uuid "818cf2d5-4b35-40be-bee6-e76710cf7bd7")
+		)
+		(instances
+			(project "WsprryPico Synth Shield"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "C93")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "wsprrypico-synth-shield:ATGM336H_5N31")
+		(at 251.46 194.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "29dd992d-6599-4336-b0ad-463878c0240f")
+		(property "Reference" "U91"
+			(at 251.46 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ATGM336H-5N31"
+			(at 251.46 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypico-synth-shield:Zhongke_ATGM336H-5N31_9.7x10.1mm_P1.1mm"
+			(at 251.46 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C90770.pdf"
+			(at 251.46 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 251.46 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Zhongke"
+			(at 251.46 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ATGM336H-5N31"
+			(at 251.46 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C90770"
+			(at 251.46 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Selection status" "Selected prototype; LCSC live stock 9872 on 2026-10-08"
+			(at 251.46 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "8"
+			(uuid "27d758a9-9d25-4440-8bdb-2aba434c0828")
+		)
+		(pin "6"
+			(uuid "04da314d-cc74-478f-941c-a690d99961ef")
+		)
+		(pin "2"
+			(uuid "a07981a6-20a9-458a-8c99-e1fe8fbf025f")
+		)
+		(pin "3"
+			(uuid "428f2969-857d-403b-90a6-e740f9a85916")
+		)
+		(pin "4"
+			(uuid "a36e2f55-9806-4b27-b95d-2e5d2a041a3b")
+		)
+		(pin "5"
+			(uuid "bb0dd78d-45c3-4b80-8fbe-f912c868f040")
+		)
+		(pin "9"
+			(uuid "ec66f6d0-1594-4f15-8c18-899935afd581")
+		)
+		(pin "11"
+			(uuid "f039117e-367a-4051-aafd-0d5500b230ef")
+		)
+		(pin "14"
+			(uuid "f25b8352-6ad8-44c5-924e-0fb4d6f57670")
+		)
+		(pin "13"
+			(uuid "ee655ad7-ea88-4422-a8e9-f009520143a2")
+		)
+		(pin "1"
+			(uuid "13a5263a-4652-4661-8032-27d3d9410430")
+		)
+		(pin "10"
+			(uuid "40f2fbe4-ef2e-480d-b6ca-4fa7981d29a5")
+		)
+		(pin "12"
+			(uuid "d7d4c74d-e701-4130-8dc2-d5916a904448")
+		)
+		(pin "7"
+			(uuid "bda9da8c-5d71-4b21-9626-85a4446336e3")
+		)
+		(pin "15"
+			(uuid "c30be696-219d-42e6-8d50-d88cf1907120")
+		)
+		(pin "16"
+			(uuid "0b18fef1-5e9c-4d66-b8af-47518bbfc110")
+		)
+		(pin "17"
+			(uuid "3104cd4b-6cc2-4a35-a496-578a5ba9acbd")
+		)
+		(pin "18"
+			(uuid "8f79eec0-94e9-4684-b72c-dad5a3f9ff71")
+		)
+		(instances
+			(project "WsprryPico Synth Shield"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "U91")
 					(unit 1)
 				)
 			)
@@ -12376,6 +13278,207 @@
 		)
 	)
 	(symbol
+		(lib_id "wsprrypico-synth-shield:SMA")
+		(at 358.14 182.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "4fc022d3-9a62-48fe-beb5-bd83d1bbb544")
+		(property "Reference" "J91"
+			(at 358.14 179.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMA 50ohm"
+			(at 358.14 186.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypico-synth-shield:SMA_Adafruit_1865_EdgeMount"
+			(at 358.14 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1865/C2387-001_datasheet.pdf"
+			(at 358.14 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GNSS active antenna SMA input with DC bias; manual assembly"
+			(at 358.14 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Adafruit"
+			(at 358.14 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "1865"
+			(at 358.14 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 358.14 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier URL" "https://www.adafruit.com/product/1865"
+			(at 358.14 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specified Value" "50 ohm SMA female; board-edge mount; 1.6 mm PCB"
+			(at 358.14 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Technology" "Edge-launch coaxial connector"
+			(at 358.14 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "Drawing dimensions"
+			(at 358.14 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "50 ohm"
+			(at 358.14 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "Manual"
+			(at 358.14 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "GNSS active antenna SMA input"
+			(at 358.14 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Selection status" "Existing project edge-mount footprint selected; manual fit"
+			(at 358.14 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "78c22cb1-5e79-4690-ada6-46ddde8d72cc")
+		)
+		(pin "2"
+			(uuid "f31759c7-f334-496d-be83-02de9fb378b5")
+		)
+		(instances
+			(project "WsprryPico Synth Shield"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "J91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "wsprrypico-synth-shield:SolderJumper_3_Bridged12")
 		(at 252.73 25.4 0)
 		(unit 1)
@@ -12407,7 +13510,7 @@
 				)
 			)
 		)
-		(property "Footprint" "wsprrypico-synth-shield:PowerSelector_VBUS_IN_VSYS_Cuttable"
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
 			(at 252.73 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -13823,6 +14926,129 @@
 			(project "WsprryPico Synth Shield"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "wsprrypico-synth-shield:L")
+		(at 320.04 182.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "78b6604e-ce40-40c3-8592-5d74895c6622")
+		(property "Reference" "L91"
+			(at 324.485 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47nH"
+			(at 324.485 184.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypico-synth-shield:L_0603_1608Metric"
+			(at 251.46 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C98076.pdf"
+			(at 320.04 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Active antenna RF choke; 47 nH; LQW18AN47NG00D; 0603; 2 percent; 380 mA"
+			(at 251.46 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Selection status" "Selected prototype; LCSC live stock 12690 on 2026-10-08"
+			(at 251.46 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "muRata"
+			(at 320.04 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "LQW18AN47NG00D"
+			(at 320.04 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC Part #" "C98076"
+			(at 320.04 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "704520cb-2999-4b98-88ec-e5b840bffbd0")
+		)
+		(pin "2"
+			(uuid "4142ac82-ec52-4306-b412-949a5c51e51c")
+		)
+		(instances
+			(project "WsprryPico Synth Shield"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "L91")
 					(unit 1)
 				)
 			)
@@ -17028,6 +18254,206 @@
 		)
 	)
 	(symbol
+		(lib_id "wsprrypico-synth-shield:R")
+		(at 199.39 210.82 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b477fc32-529f-4d20-9f23-4577735abfec")
+		(property "Reference" "R91"
+			(at 199.39 207.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 199.39 214.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypico-synth-shield:R_0603_1608Metric"
+			(at 199.39 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C2907002.html"
+			(at 199.39 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Pico UART command input series resistor; 1 kohm"
+			(at 199.39 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "FOJAN"
+			(at 199.39 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "FRC0603F1001TS"
+			(at 199.39 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C2907002"
+			(at 199.39 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier URL" "https://www.lcsc.com/product-detail/C2907002.html"
+			(at 199.39 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specified Value" "1 kohm"
+			(at 199.39 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Technology" "Thick film"
+			(at 199.39 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 199.39 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100 mW; 75 V"
+			(at 199.39 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 199.39 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "GPS command UART series damping"
+			(at 199.39 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Selection status" "Selected prototype"
+			(at 199.39 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cc3b2609-6c8a-4428-a6ee-a669aefc6298")
+		)
+		(pin "2"
+			(uuid "953a58ba-5920-4c9e-a7ff-7cc3a35f3f2b")
+		)
+		(instances
+			(project "WsprryPico Synth Shield"
+				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
+					(reference "R91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 135.89 36.83 0)
 		(unit 1)
@@ -20157,7 +21583,7 @@
 	)
 	(symbol
 		(lib_id "wsprrypico-synth-shield:C")
-		(at 130.81 172.72 180)
+		(at 199.39 160.02 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20166,30 +21592,28 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e63ab10a-331b-4eb4-8a16-46ed5edab412")
-		(property "Reference" "C74"
-			(at 132.588 175.514 0)
+		(property "Reference" "C91"
+			(at 199.39 156.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "2.2μF"
-			(at 133.604 169.926 0)
+		(property "Value" "10uF"
+			(at 199.39 163.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "wsprrypico-synth-shield:C_0805_2012Metric"
-			(at 130.81 172.72 0)
+		(property "Footprint" "wsprrypico-synth-shield:C_1206_3216Metric"
+			(at 199.39 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20199,8 +21623,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C364318.html"
-			(at 130.81 172.72 0)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C77093.html"
+			(at 199.39 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20210,8 +21634,8 @@
 				)
 			)
 		)
-		(property "Description" "GPS header local supply bypass; 2.2 uF; X7R"
-			(at 130.81 172.72 0)
+		(property "Description" "GNSS supply bulk; 10 uF X7R; manufacturer reference value"
+			(at 199.39 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20221,8 +21645,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 130.81 172.72 0)
+		(property "Manufacturer" "muRata"
+			(at 199.39 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20232,8 +21656,8 @@
 				)
 			)
 		)
-		(property "MPN" "CL21B225KAFNFNE"
-			(at 130.81 172.72 0)
+		(property "MPN" "GRM31CR71E106KA12L"
+			(at 199.39 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20243,8 +21667,8 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C364318"
-			(at 130.81 172.72 0)
+		(property "LCSC Part #" "C77093"
+			(at 199.39 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20254,8 +21678,8 @@
 				)
 			)
 		)
-		(property "Supplier URL" "https://www.lcsc.com/product-detail/C364318.html"
-			(at 130.81 172.72 0)
+		(property "Supplier URL" "https://www.lcsc.com/product-detail/C77093.html"
+			(at 199.39 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20265,8 +21689,8 @@
 				)
 			)
 		)
-		(property "Specified Value" "2.2 uF"
-			(at 130.81 172.72 0)
+		(property "Specified Value" "10 uF"
+			(at 199.39 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20277,7 +21701,7 @@
 			)
 		)
 		(property "Technology" "X7R"
-			(at 130.81 172.72 0)
+			(at 199.39 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20288,7 +21712,7 @@
 			)
 		)
 		(property "Tolerance" "10%"
-			(at 130.81 172.72 0)
+			(at 199.39 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20299,7 +21723,7 @@
 			)
 		)
 		(property "Rating" "25 V"
-			(at 130.81 172.72 0)
+			(at 199.39 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20310,7 +21734,7 @@
 			)
 		)
 		(property "Assembly" "SMT"
-			(at 130.81 172.72 0)
+			(at 199.39 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20320,8 +21744,8 @@
 				)
 			)
 		)
-		(property "Function" "GPS header local supply bypass"
-			(at 130.81 172.72 0)
+		(property "Function" "GNSS supply bulk"
+			(at 199.39 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20332,7 +21756,7 @@
 			)
 		)
 		(property "Selection status" "Selected prototype"
-			(at 130.81 172.72 0)
+			(at 199.39 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20351,7 +21775,7 @@
 		(instances
 			(project "WsprryPico Synth Shield"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "C74")
+					(reference "C91")
 					(unit 1)
 				)
 			)
@@ -20666,84 +22090,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 142.24 189.23 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f5574a6b-c594-43e4-9a75-089305a3047f")
-		(property "Reference" "#PWR030"
-			(at 142.24 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 142.24 193.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d79a3636-20ea-4165-a615-90278ca2342a")
-		)
-		(instances
-			(project "WsprryPico Synth Shield"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "wsprrypico-synth-shield:R")
 		(at 354.33 88.9 90)
 		(unit 1)
@@ -20946,218 +22292,8 @@
 		)
 	)
 	(symbol
-		(lib_id "wsprrypico-synth-shield:Conn_01x05")
-		(at 148.59 182.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "f8360cb6-bf09-4b65-b709-bb61c5d6044e")
-		(property "Reference" "J71"
-			(at 148.336 191.516 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "QLG3 GPS Receiver"
-			(at 149.098 173.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "wsprrypico-synth-shield:QLG3_GPS_UndersideHeader_SinglePost"
-			(at 148.59 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://qrp-labs.com/qlg3.html"
-			(at 148.59 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "QRP Labs QLG3 GPS Receiver; plain 1x5 0.1-inch (2.54 mm) socket/header; full receiver assembly model"
-			(at 148.59 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "QRP Labs module; generic unkeyed mating headers"
-			(at 148.59 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "QLG3; standard 1x05 2.54 mm socket/header"
-			(at 148.59 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 148.59 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier URL" "https://qrp-labs.com/qlg3.html"
-			(at 148.59 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specified Value" "1x05 female socket and male header; 0.1 inch (2.54 mm); unkeyed"
-			(at 148.59 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Technology" "Unkeyed through-hole pin socket/header"
-			(at 148.59 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "Drawing dimensions"
-			(at 148.59 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rating" "3.3 V power; QLG3 2.8 V UART/PPS outputs"
-			(at 148.59 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Assembly" "Manual"
-			(at 148.59 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Function" "QLG3 GPS Receiver with shield-top socket and downward mating pins"
-			(at 148.59 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Selection status" "Standard pitch and QLG3 footprint selected; final mating hardware fit pending"
-			(at 148.59 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5088c8cd-4441-4849-93e6-e975e503d874")
-		)
-		(pin "2"
-			(uuid "1b206791-250c-41a1-8a28-ff29d3f0ecce")
-		)
-		(pin "3"
-			(uuid "299cdc6b-701a-4ce6-8675-cb2bd5fc20ac")
-		)
-		(pin "4"
-			(uuid "b15b6368-eef3-4973-9270-1ec9632ec56a")
-		)
-		(pin "5"
-			(uuid "254914c2-42a7-4a81-82e3-645b09e88c40")
-		)
-		(instances
-			(project "WsprryPico Synth Shield"
-				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "J71")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 125.73 173.99 0)
-		(mirror y)
+		(lib_id "wsprrypico-synth-shield:C")
+		(at 199.39 171.45 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21165,9 +22301,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "fa4fb477-9c64-46a0-a1e8-6b0d188052f6")
-		(property "Reference" "#PWR028"
-			(at 125.73 180.34 0)
+		(uuid "f726b756-35bb-432b-9520-bfaaaeef1823")
+		(property "Reference" "C92"
+			(at 199.39 168.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 199.39 174.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "wsprrypico-synth-shield:C_0603_1608Metric"
+			(at 199.39 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21177,18 +22333,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 125.73 177.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 173.99 0)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 199.39 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21198,8 +22344,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 125.73 173.99 0)
+		(property "Description" "GNSS VCC local bypass; 100 nF X7R"
+			(at 199.39 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21209,8 +22355,118 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 173.99 0)
+		(property "Manufacturer" "YAGEO"
+			(at 199.39 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 199.39 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 199.39 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier URL" "https://www.lcsc.com/product-detail/C14663.html"
+			(at 199.39 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specified Value" "100 nF"
+			(at 199.39 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Technology" "X7R"
+			(at 199.39 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 199.39 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "50 V"
+			(at 199.39 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 199.39 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "GNSS VCC local bypass"
+			(at 199.39 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Selection status" "Selected prototype"
+			(at 199.39 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21221,12 +22477,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "d2e7fa05-12c1-433c-89c8-d7501d8d55fb")
+			(uuid "9fe04826-61bb-4dd7-96e5-3db5b7fd18da")
+		)
+		(pin "2"
+			(uuid "eba8c2ab-bcbd-41dd-9056-3ab5c70f9637")
 		)
 		(instances
 			(project "WsprryPico Synth Shield"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
-					(reference "#PWR028")
+					(reference "C92")
 					(unit 1)
 				)
 			)
