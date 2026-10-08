@@ -8,7 +8,7 @@ The [local footprint](pico-wattmeter.pretty/SMA_Adafruit_1865_EdgeMount.kicad_mo
 
 | Feature | Geometry |
 | --- | --- |
-| Signal | Pad 1, front copper/mask, 1.27 mm wide |
+| Signal | Pad 1, back copper/mask in the flipped board (front in the reusable library), 1.27 mm wide |
 | Ground | Four pads numbered 2, two per board face, 1.524 mm wide |
 | Ground pad centers | ±2.54 mm from the signal centerline |
 | Land extent from seating edge | 0.500–4.064 mm; length 3.564 mm |

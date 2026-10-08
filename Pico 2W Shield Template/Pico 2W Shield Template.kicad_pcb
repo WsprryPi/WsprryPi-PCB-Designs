@@ -89,13 +89,13 @@
 	)
 	(footprint "pico-wattmeter:Raspberry_Pi_Pico_2W_Header"
 		(locked yes)
-		(layer "F.Cu")
+		(layer "B.Cu")
 		(uuid "fee22fe9-065f-4dae-90f5-398417a3d92f")
-		(at 146.81 88.8 90)
+		(at 146.81 90.75 -90)
 		(property "Reference" "U1"
-			(at 0 28.36 90)
+			(at 0 -28.36 90)
 			(unlocked yes)
-			(layer "F.SilkS")
+			(layer "B.SilkS")
 			(hide yes)
 			(uuid "4aba623d-18dd-435a-8699-fbdd54252e3f")
 			(effects
@@ -103,12 +103,13 @@
 					(size 1 1)
 					(thickness 0.1)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Value" "~"
-			(at 0 -28.31 90)
+			(at 0 28.31 90)
 			(unlocked yes)
-			(layer "F.Fab")
+			(layer "B.Fab")
 			(hide yes)
 			(uuid "61636ca5-80de-4e40-ad0d-27aa855d5369")
 			(effects
@@ -116,12 +117,13 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
-			(layer "F.Fab")
+			(layer "B.Fab")
 			(hide yes)
 			(uuid "7eaa3d7c-ca15-49d5-9cec-9bfd45fbd2ac")
 			(effects
@@ -129,12 +131,13 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Description" ""
 			(at 0 0 90)
 			(unlocked yes)
-			(layer "F.Fab")
+			(layer "B.Fab")
 			(hide yes)
 			(uuid "68899a47-00a3-4996-a239-125d67b628de")
 			(effects
@@ -142,6 +145,7 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(path "/4956bacf-ccac-441b-a2fa-51ce082195af")
@@ -150,41 +154,41 @@
 		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -10.87 -25.22)
-			(end -8.71 -23.17)
+			(start -10.87 25.22)
+			(end -8.71 23.17)
 			(stroke
 				(width 0.1)
 				(type default)
 			)
 			(fill no)
-			(layer "F.SilkS")
+			(layer "B.SilkS")
 			(uuid "49507008-943f-4776-96dd-2a44ad575f8b")
 		)
 		(fp_rect
-			(start 7.09 -25.05)
-			(end 8.92 25.03)
+			(start -10.7 25.05)
+			(end -8.87 -25.03)
 			(stroke
 				(width 0.1)
 				(type default)
 			)
 			(fill no)
-			(layer "F.SilkS")
-			(uuid "f3d05203-3eca-4ac8-9335-ab68feca436a")
-		)
-		(fp_rect
-			(start -10.7 -25.05)
-			(end -8.87 25.03)
-			(stroke
-				(width 0.1)
-				(type default)
-			)
-			(fill no)
-			(layer "F.SilkS")
+			(layer "B.SilkS")
 			(uuid "a87701b4-259d-434d-8391-f8679ef231bf")
 		)
 		(fp_rect
-			(start -4.78 -26.675)
-			(end 2.92 -24.14)
+			(start 7.09 25.05)
+			(end 8.92 -25.03)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "B.SilkS")
+			(uuid "f3d05203-3eca-4ac8-9335-ab68feca436a")
+		)
+		(fp_rect
+			(start -4.78 26.675)
+			(end 2.92 24.14)
 			(stroke
 				(width 0.1)
 				(type default)
@@ -194,18 +198,8 @@
 			(uuid "c4be7ca0-5489-44f3-8811-09a2540b95fb")
 		)
 		(fp_line
-			(start 6.11 17.65)
-			(end 6.11 26.65)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "dbd87897-7cc7-4fa2-b93c-37fdee47cb86")
-		)
-		(fp_line
-			(start -7.89 17.65)
-			(end 6.11 17.65)
+			(start -7.89 -17.65)
+			(end 6.11 -17.65)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -214,8 +208,18 @@
 			(uuid "b8259517-542e-464e-b123-c32a1e7a7031")
 		)
 		(fp_line
-			(start -7.89 26.65)
-			(end -7.89 17.65)
+			(start 6.11 -17.65)
+			(end 6.11 -26.65)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "dbd87897-7cc7-4fa2-b93c-37fdee47cb86")
+		)
+		(fp_line
+			(start -7.89 -26.65)
+			(end -7.89 -17.65)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -224,29 +228,29 @@
 			(uuid "645df57b-41b1-4207-b26d-f159b594772d")
 		)
 		(fp_rect
-			(start 7.09 -25.05)
-			(end 8.92 25.03)
+			(start -10.7 25.05)
+			(end -8.87 -25.03)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
-			(layer "F.CrtYd")
-			(uuid "37164e4c-1cae-4446-a78b-bc25a422e5f8")
-		)
-		(fp_rect
-			(start -10.7 -25.05)
-			(end -8.87 25.03)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(fill no)
-			(layer "F.CrtYd")
+			(layer "B.CrtYd")
 			(uuid "ce7c1fd4-c0a9-499c-8ec0-80dbb1d0616c")
 		)
+		(fp_rect
+			(start 7.09 25.05)
+			(end 8.92 -25.03)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "37164e4c-1cae-4446-a78b-bc25a422e5f8")
+		)
 		(fp_text user "USB"
-			(at -2.55 -24.86 90)
+			(at -0.93 25.4075 90)
 			(unlocked yes)
 			(layer "Dwgs.User")
 			(uuid "74b05913-f9c6-4091-b686-3e8547e1df31")
@@ -255,16 +259,14 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
-				(justify left bottom)
 			)
 		)
 		(pad "1" thru_hole rect
-			(at -9.78 -24.14 90)
+			(at -9.78 24.14 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP0-Pad1)")
 			(pinfunction "GP0_1")
 			(pintype "bidirectional")
@@ -283,12 +285,11 @@
 			(uuid "7de9c250-4bde-45c6-8827-a5d6c89cf14c")
 		)
 		(pad "2" thru_hole rect
-			(at -9.78 -21.6 90)
+			(at -9.78 21.6 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP1-Pad2)")
 			(pinfunction "GP1_2")
 			(pintype "bidirectional")
@@ -307,12 +308,11 @@
 			(uuid "1fe9fdd6-07ce-416b-87ce-bd4399eedbda")
 		)
 		(pad "3" thru_hole rect
-			(at -9.78 -19.06 90)
+			(at -9.78 19.06 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GND-Pad3)")
 			(pinfunction "GND_3")
 			(pintype "power_in")
@@ -331,12 +331,11 @@
 			(uuid "96b70757-6045-4c96-a305-3be5e0013b46")
 		)
 		(pad "4" thru_hole rect
-			(at -9.78 -16.52 90)
+			(at -9.78 16.52 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP2-Pad4)")
 			(pinfunction "GP2_4")
 			(pintype "bidirectional")
@@ -355,12 +354,11 @@
 			(uuid "22156c03-dd79-4c72-ba59-eb0775471207")
 		)
 		(pad "5" thru_hole rect
-			(at -9.78 -13.98 90)
+			(at -9.78 13.98 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP3-Pad5)")
 			(pinfunction "GP3_5")
 			(pintype "bidirectional")
@@ -379,12 +377,11 @@
 			(uuid "2c2f1006-f4c4-4973-80ab-9141064bc904")
 		)
 		(pad "6" thru_hole rect
-			(at -9.78 -11.44 90)
+			(at -9.78 11.44 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP4-Pad6)")
 			(pinfunction "GP4_6")
 			(pintype "bidirectional")
@@ -403,12 +400,11 @@
 			(uuid "4950c019-ba51-4d08-aebf-2fc4e82678c0")
 		)
 		(pad "7" thru_hole rect
-			(at -9.78 -8.9 90)
+			(at -9.78 8.9 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP5-Pad7)")
 			(pinfunction "GP5_7")
 			(pintype "bidirectional")
@@ -427,12 +423,11 @@
 			(uuid "f368d104-ed6e-4d1e-8cb7-c5391db81ce9")
 		)
 		(pad "8" thru_hole rect
-			(at -9.78 -6.36 90)
+			(at -9.78 6.36 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GND-Pad8)")
 			(pinfunction "GND_8")
 			(pintype "power_in")
@@ -451,12 +446,11 @@
 			(uuid "93c5a9e7-715c-474a-ada7-fbd1ffd54b30")
 		)
 		(pad "9" thru_hole rect
-			(at -9.78 -3.82 90)
+			(at -9.78 3.82 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP6-Pad9)")
 			(pinfunction "GP6_9")
 			(pintype "bidirectional")
@@ -475,12 +469,11 @@
 			(uuid "fa7ceb8e-1bd2-4e40-870d-811965511d8b")
 		)
 		(pad "10" thru_hole rect
-			(at -9.78 -1.28 90)
+			(at -9.78 1.28 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP7-Pad10)")
 			(pinfunction "GP7_10")
 			(pintype "bidirectional")
@@ -499,12 +492,11 @@
 			(uuid "d4d7bff4-0e4d-4936-a741-65ad4539e4d7")
 		)
 		(pad "11" thru_hole rect
-			(at -9.78 1.26 90)
+			(at -9.78 -1.26 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP8-Pad11)")
 			(pinfunction "GP8_11")
 			(pintype "bidirectional")
@@ -523,12 +515,11 @@
 			(uuid "ce924d6f-48bb-4719-ba66-31345ed54c3c")
 		)
 		(pad "12" thru_hole rect
-			(at -9.78 3.8 90)
+			(at -9.78 -3.8 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP9-Pad12)")
 			(pinfunction "GP9_12")
 			(pintype "bidirectional")
@@ -547,12 +538,11 @@
 			(uuid "ebeb46f8-9938-41ec-ae79-801fb28956ff")
 		)
 		(pad "13" thru_hole rect
-			(at -9.78 6.34 90)
+			(at -9.78 -6.34 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GND-Pad13)")
 			(pinfunction "GND_13")
 			(pintype "power_in")
@@ -571,12 +561,11 @@
 			(uuid "f54bed54-8f4c-4641-9280-1a6f60d03460")
 		)
 		(pad "14" thru_hole rect
-			(at -9.78 8.88 90)
+			(at -9.78 -8.88 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP10-Pad14)")
 			(pinfunction "GP10_14")
 			(pintype "bidirectional")
@@ -595,12 +584,11 @@
 			(uuid "ab01a9d4-2f47-42bc-a3dc-8808de01b963")
 		)
 		(pad "15" thru_hole rect
-			(at -9.78 11.42 90)
+			(at -9.78 -11.42 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP11-Pad15)")
 			(pinfunction "GP11_15")
 			(pintype "bidirectional")
@@ -619,12 +607,11 @@
 			(uuid "65a60937-e88e-4b34-a346-bf269deeedc3")
 		)
 		(pad "16" thru_hole rect
-			(at -9.78 13.96 90)
+			(at -9.78 -13.96 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP12-Pad16)")
 			(pinfunction "GP12_16")
 			(pintype "bidirectional")
@@ -643,12 +630,11 @@
 			(uuid "55dccd05-a256-4eed-b2fa-3a33ccedac5f")
 		)
 		(pad "17" thru_hole rect
-			(at -9.78 16.5 90)
+			(at -9.78 -16.5 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP13-Pad17)")
 			(pinfunction "GP13_17")
 			(pintype "bidirectional")
@@ -667,12 +653,11 @@
 			(uuid "4b032979-5bfc-4aff-8bf3-4af276f1843e")
 		)
 		(pad "18" thru_hole rect
-			(at -9.78 19.04 90)
+			(at -9.78 -19.04 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GND-Pad18)")
 			(pinfunction "GND_18")
 			(pintype "power_in")
@@ -691,12 +676,11 @@
 			(uuid "1012096a-caba-4177-ad81-e2e9dcd4c7c9")
 		)
 		(pad "19" thru_hole rect
-			(at -9.78 21.58 90)
+			(at -9.78 -21.58 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP14-Pad19)")
 			(pinfunction "GP14_19")
 			(pintype "bidirectional")
@@ -715,12 +699,11 @@
 			(uuid "b0b8a4ba-e518-4796-bb8f-74dcb0af5cf5")
 		)
 		(pad "20" thru_hole rect
-			(at -9.78 24.12 90)
+			(at -9.78 -24.12 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP15-Pad20)")
 			(pinfunction "GP15_20")
 			(pintype "bidirectional")
@@ -739,12 +722,11 @@
 			(uuid "62e0eba4-5dc2-4990-91d4-16867fc2679f")
 		)
 		(pad "21" thru_hole rect
-			(at 8 24.12 90)
+			(at 8 -24.12 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP16-Pad21)")
 			(pinfunction "GP16_21")
 			(pintype "bidirectional")
@@ -763,12 +745,11 @@
 			(uuid "dd70dc01-7076-47b9-96be-59d21e626ae4")
 		)
 		(pad "22" thru_hole rect
-			(at 8 21.58 90)
+			(at 8 -21.58 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP17-Pad22)")
 			(pinfunction "GP17_22")
 			(pintype "bidirectional")
@@ -787,12 +768,11 @@
 			(uuid "5d8702e4-2a35-453f-b75b-a14e997f3ea8")
 		)
 		(pad "23" thru_hole rect
-			(at 8 19.04 90)
+			(at 8 -19.04 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GND-Pad23)")
 			(pinfunction "GND_23")
 			(pintype "power_in")
@@ -811,12 +791,11 @@
 			(uuid "baaa71fc-a14f-4c57-94f1-8e1afc1d37a7")
 		)
 		(pad "24" thru_hole rect
-			(at 8 16.5 90)
+			(at 8 -16.5 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP18-Pad24)")
 			(pinfunction "GP18_24")
 			(pintype "bidirectional")
@@ -835,12 +814,11 @@
 			(uuid "3489dfee-3986-44c7-bb61-9bc9867ffcdd")
 		)
 		(pad "25" thru_hole rect
-			(at 8 13.96 90)
+			(at 8 -13.96 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP19-Pad25)")
 			(pinfunction "GP19_25")
 			(pintype "bidirectional")
@@ -859,12 +837,11 @@
 			(uuid "cf9f3e2f-b800-429e-8eb7-fecdead20f62")
 		)
 		(pad "26" thru_hole rect
-			(at 8 11.42 90)
+			(at 8 -11.42 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP20-Pad26)")
 			(pinfunction "GP20_26")
 			(pintype "bidirectional")
@@ -883,12 +860,11 @@
 			(uuid "bcfd3376-8348-459a-bd06-ad0cf80fda0f")
 		)
 		(pad "27" thru_hole rect
-			(at 8 8.88 90)
+			(at 8 -8.88 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP21-Pad27)")
 			(pinfunction "GP21_27")
 			(pintype "bidirectional")
@@ -907,12 +883,11 @@
 			(uuid "336a570b-3b0c-485d-9df8-ae10580aa192")
 		)
 		(pad "28" thru_hole rect
-			(at 8 6.34 90)
+			(at 8 -6.34 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GND-Pad28)")
 			(pinfunction "GND_28")
 			(pintype "power_in")
@@ -931,12 +906,11 @@
 			(uuid "ae59f51e-f1e0-4ac6-9bad-26278a3b999f")
 		)
 		(pad "29" thru_hole rect
-			(at 8 3.8 90)
+			(at 8 -3.8 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP22-Pad29)")
 			(pinfunction "GP22_29")
 			(pintype "bidirectional")
@@ -955,12 +929,11 @@
 			(uuid "7fef0b87-ffb9-449d-a6c1-5255bd80e2ef")
 		)
 		(pad "30" thru_hole rect
-			(at 8 1.26 90)
+			(at 8 -1.26 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-RUN-Pad30)")
 			(pinfunction "RUN_30")
 			(pintype "input")
@@ -979,12 +952,11 @@
 			(uuid "c9720862-a009-44fb-a5ef-00874958757e")
 		)
 		(pad "31" thru_hole rect
-			(at 8 -1.28 90)
+			(at 8 1.28 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP26{slash}ADC0-Pad31)")
 			(pinfunction "GP26/ADC0_31")
 			(pintype "bidirectional")
@@ -1003,12 +975,11 @@
 			(uuid "0c7a4498-ef5a-40b5-9731-dbcc797daf35")
 		)
 		(pad "32" thru_hole rect
-			(at 8 -3.82 90)
+			(at 8 3.82 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP27{slash}ADC1-Pad32)")
 			(pinfunction "GP27/ADC1_32")
 			(pintype "bidirectional")
@@ -1027,12 +998,11 @@
 			(uuid "3b115f76-9472-4692-bf2b-4831040e387d")
 		)
 		(pad "33" thru_hole rect
-			(at 8 -6.36 90)
+			(at 8 6.36 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-AGND-Pad33)")
 			(pinfunction "AGND_33")
 			(pintype "power_in")
@@ -1051,12 +1021,11 @@
 			(uuid "728a7ed4-d8de-4fbc-98b7-4a7a9bc62f65")
 		)
 		(pad "34" thru_hole rect
-			(at 8 -8.9 90)
+			(at 8 8.9 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GP28{slash}ADC2-Pad34)")
 			(pinfunction "GP28/ADC2_34")
 			(pintype "bidirectional")
@@ -1075,12 +1044,11 @@
 			(uuid "c4c94b16-7224-410e-adee-12283e0f4995")
 		)
 		(pad "35" thru_hole rect
-			(at 8 -11.44 90)
+			(at 8 11.44 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-ADC_VREF-Pad35)")
 			(pinfunction "ADC_VREF_35")
 			(pintype "power_in")
@@ -1099,12 +1067,11 @@
 			(uuid "03ee63e8-5eca-45f9-8786-2bd99c30a0f2")
 		)
 		(pad "36" thru_hole rect
-			(at 8 -13.98 90)
+			(at 8 13.98 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-3V3_OUT-Pad36)")
 			(pinfunction "3V3_OUT_36")
 			(pintype "power_out")
@@ -1123,12 +1090,11 @@
 			(uuid "8dd9e6b2-8667-48df-9e59-00ae09776fcc")
 		)
 		(pad "37" thru_hole rect
-			(at 8 -16.52 90)
+			(at 8 16.52 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-3V3_EN-Pad37)")
 			(pinfunction "3V3_EN_37")
 			(pintype "input")
@@ -1147,12 +1113,11 @@
 			(uuid "48bf912d-6c37-4a07-a17d-f8e638031323")
 		)
 		(pad "38" thru_hole rect
-			(at 8 -19.06 90)
+			(at 8 19.06 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-GND-Pad38)")
 			(pinfunction "GND_38")
 			(pintype "power_in")
@@ -1171,12 +1136,11 @@
 			(uuid "e20262ac-a4cc-4256-9e5d-5d9b9755fafd")
 		)
 		(pad "39" thru_hole rect
-			(at 8 -21.6 90)
+			(at 8 21.6 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-VSYS-Pad39)")
 			(pinfunction "VSYS_39")
 			(pintype "power_in")
@@ -1195,12 +1159,11 @@
 			(uuid "1897656e-d8b7-41d4-8351-135b8d8ee35b")
 		)
 		(pad "40" thru_hole rect
-			(at 8 -24.14 90)
+			(at 8 24.14 270)
 			(size 1.508 1.508)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-
 			(net "unconnected-(U1-VBUS-Pad40)")
 			(pinfunction "VBUS_40")
 			(pintype "passive")
@@ -1245,7 +1208,7 @@
 			)
 			(polygon
 				(pts
-					(xy 164.46 96.69) (xy 164.46 82.69) (xy 173.46 82.69) (xy 173.46 96.69)
+					(xy 164.46 82.86) (xy 164.46 96.86) (xy 173.46 96.86) (xy 173.46 82.86)
 				)
 			)
 		)
@@ -1273,17 +1236,6 @@
 			)
 		)
 	)
-	(gr_line
-		(start 120.13 79.35)
-		(end 120.13 100.2)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(locked yes)
-		(layer "Edge.Cuts")
-		(uuid "30928bbf-ae6d-4420-bf29-aff41849bd9d")
-	)
 	(gr_arc
 		(start 120.13 79.35)
 		(mid 120.422893 78.642893)
@@ -1294,18 +1246,18 @@
 		)
 		(locked yes)
 		(layer "Edge.Cuts")
-		(uuid "e76cf0f4-61dd-47c1-b463-7b99ef085d01")
+		(uuid "863145db-aa0d-4c2c-88fa-597c8e147cf3")
 	)
 	(gr_line
-		(start 121.13 78.35)
-		(end 172.46 78.35)
+		(start 120.13 100.2)
+		(end 120.13 79.35)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(locked yes)
 		(layer "Edge.Cuts")
-		(uuid "e563e07a-fcea-4fcc-a639-1d1be03b71a8")
+		(uuid "30928bbf-ae6d-4420-bf29-aff41849bd9d")
 	)
 	(gr_arc
 		(start 121.13 101.2)
@@ -1317,7 +1269,29 @@
 		)
 		(locked yes)
 		(layer "Edge.Cuts")
-		(uuid "863145db-aa0d-4c2c-88fa-597c8e147cf3")
+		(uuid "e76cf0f4-61dd-47c1-b463-7b99ef085d01")
+	)
+	(gr_line
+		(start 121.13 101.2)
+		(end 172.46 101.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(locked yes)
+		(layer "Edge.Cuts")
+		(uuid "e563e07a-fcea-4fcc-a639-1d1be03b71a8")
+	)
+	(gr_line
+		(start 172.46 78.35)
+		(end 121.13 78.35)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(locked yes)
+		(layer "Edge.Cuts")
+		(uuid "d78dc176-34c7-413c-9b79-7f65f6d6e615")
 	)
 	(gr_arc
 		(start 172.46 78.35)
@@ -1329,33 +1303,11 @@
 		)
 		(locked yes)
 		(layer "Edge.Cuts")
-		(uuid "1d0d579d-4ecf-44e2-9f83-106b18c9beee")
+		(uuid "574af096-7ca1-4584-bd33-e2cc03d5a04e")
 	)
 	(gr_line
-		(start 172.46 101.2)
-		(end 121.13 101.2)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(locked yes)
-		(layer "Edge.Cuts")
-		(uuid "d78dc176-34c7-413c-9b79-7f65f6d6e615")
-	)
-	(gr_line
-		(start 173.46 79.35)
-		(end 173.46 82.69)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(locked yes)
-		(layer "Edge.Cuts")
-		(uuid "d1f6682e-6078-4f24-8152-e82058c43195")
-	)
-	(gr_line
-		(start 173.46 96.69)
-		(end 173.46 100.2)
+		(start 173.46 82.86)
+		(end 173.46 79.35)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -1374,7 +1326,18 @@
 		)
 		(locked yes)
 		(layer "Edge.Cuts")
-		(uuid "574af096-7ca1-4584-bd33-e2cc03d5a04e")
+		(uuid "1d0d579d-4ecf-44e2-9f83-106b18c9beee")
+	)
+	(gr_line
+		(start 173.46 100.2)
+		(end 173.46 96.86)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(locked yes)
+		(layer "Edge.Cuts")
+		(uuid "d1f6682e-6078-4f24-8152-e82058c43195")
 	)
 	(embedded_fonts no)
 )

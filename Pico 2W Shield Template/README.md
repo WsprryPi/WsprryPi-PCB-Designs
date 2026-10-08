@@ -2,6 +2,12 @@
 
 A KiCad 10 project template for Raspberry Pi Pico 2 W shield designs. It contains the header interface, board outline, antenna notch, and local libraries. The schematic is unwired; the board has no tracks, vias, or copper pours.
 
+## Board-side and USB reference update — 2026-10-07
+
+The Pico sockets are now on B.Cu; use F.Cu as the primary component side in derived shields. The entire board was reflected about its horizontal centerline, including components, tracks, vias, zones, outline, markings and antenna clearance. Relative placement, pad numbers/net assignments, routed lengths and widths, UUIDs, locks and assembly exclusions were preserved. The USB label is centered in its Dwgs.User reference box in both the placed interface and the independent local header library. The library footprint remains front-sided; the board instance determines the mounting side.
+
+KiCad **10.0.6**: after refilling copper, **0 DRC violations, 0 unconnected items and 0 schematic-parity findings**. ERC remains **52 expected unwired-interface errors / 0 warnings**; the schematic and project settings are byte-for-byte unchanged. Preservation checks cover 1 footprints, 40 pads, 0 tracks/vias and 0 board zones. A complete inverse-flip comparison reproduced the original board properties apart from KiCad's invalidated fill-cache flag; final saved routing and pin/net geometry were checked again after refill. Native 3D views were inspected. Existing ERC ignored-check categories remain unchanged; no new suppressions or weakened rules were introduced.
+
 ## Create a new shield
 
 1. In KiCad's project manager, open **Preferences → Configure Paths…**.

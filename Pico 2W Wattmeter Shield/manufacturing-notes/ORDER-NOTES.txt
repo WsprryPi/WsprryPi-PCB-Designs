@@ -4,25 +4,25 @@ Two copper layers; nominal board thickness 1.6 mm.
 U1 VIA-IN-PAD - REQUIRED SELECTIVE PROCESS
 Fill with nonconductive epoxy, planarize, and copper-cap ONLY the five
 0.30 mm drilled vias inside U1 exposed GND pad 17 (IPC-4761 Type VII).
-Provide a flat solderable top surface. Cover the rear pads of these five vias
-with soldermask; keep the front paddle solderable. Retain epoxy filling and
+Provide a flat solderable B-side surface. Cover the F-side pads of these five vias
+with soldermask; keep the B-side paddle solderable. Retain epoxy filling and
 copper capping on all five. All other vias retain their specified treatment. Do NOT fill all holes of the same diameter.
 See U1-VIA-TREATMENT.svg for locations; coordinates are in board mm.
 Confirm that the selected two-layer process supports this treatment.
 Request production-file confirmation before manufacture.
 
 STENCIL
-Preserve the four 0.65 x 0.65 mm U1 exposed-pad paste windows in F.Paste.
+Preserve the four 0.65 x 0.65 mm U1 exposed-pad paste windows in B.Paste.
 Do not substitute a solid/full-pad aperture. Confirm stencil thickness,
 paste release and reflow process with the assembler.
 
 ASSEMBLY
-Machine populate C1-C9, R1-R8, U1 and U2 only: 19 front-side components.
+Machine populate C1-C9, R1-R8, U1 and U2 only: 19 back-side (B.Cu) components.
 J1 SMA and J2/J3 female sockets are fitted by hand; U3 represents their
 combined Pico interface footprint. Omit J1/J2/J3/U3 from supplier assembly BOM
 and omit J1/U3 from machine placement. Retain all PCB pads and holes.
 Use the LCSC Part # column to identify parts. Verify U1/U2 pin-1 orientation in
-the supplier placement preview against ASSEMBLY-TOP.svg.
+the supplier placement preview against ASSEMBLY-BOTTOM.svg.
 
 MECHANICAL
 Keep the antenna notch and copper keepout. Keep panel tabs/tooling away

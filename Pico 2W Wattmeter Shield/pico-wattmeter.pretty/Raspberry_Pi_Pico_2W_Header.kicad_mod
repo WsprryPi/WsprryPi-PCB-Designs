@@ -152,7 +152,7 @@
 		(uuid "e6ef8d4e-632b-4522-8d84-00906ec18126")
 	)
 	(fp_text user "USB"
-		(at -2.55 -24.86 0)
+		(at -0.93 -25.4075 0)
 		(unlocked yes)
 		(layer "Dwgs.User")
 		(uuid "18fbecc1-84f5-49e5-8c62-0d1b095883fc")
@@ -161,7 +161,6 @@
 				(size 1 1)
 				(thickness 0.15)
 			)
-			(justify left bottom)
 		)
 	)
 	(pad "1" thru_hole rect

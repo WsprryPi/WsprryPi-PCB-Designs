@@ -18,9 +18,9 @@ J2 and J3 are pinless, schematic-only procurement symbols for two female 1×20 s
 
 ## Antenna notch
 
-The header footprint contains three `Edge.Cuts` segments defining a **14 mm-wide × 9 mm-deep open notch**. On this board, the opening spans x = 164.46–173.46 mm and y = 82.69–96.69 mm. A matching `Pico antenna keepout` on both copper layers prohibits tracks, vias, pads, copper fills, and footprints.
+The header footprint contains three `Edge.Cuts` segments defining a **14 mm-wide × 9 mm-deep open notch**. On this board, the opening spans x = 164.46–173.46 mm and y = 82.86–96.86 mm. A matching `Pico antenna keepout` on both copper layers prohibits tracks, vias, pads, copper fills, and footprints.
 
-The footprint's local notch endpoints are (−7.89, 26.65) and (6.11, 26.65) mm, with the inner edge at y = 17.65 mm. When reusing the footprint, join both endpoints to the receiving board's outer outline. Do not close the mouth with a fourth edge. Moving the footprint requires updating the adjoining outline segments.
+U3 is now placed on B.Cu after the complete board flip. The following coordinates describe the reusable front-side library definition, before the placement transform. The footprint's local notch endpoints are (−7.89, 26.65) and (6.11, 26.65) mm, with the inner edge at y = 17.65 mm. When reusing the footprint, join both endpoints to the receiving board's outer outline. Do not close the mouth with a fourth edge. Moving the footprint requires updating the adjoining outline segments.
 
 Confirm the fabricator's internal corner radius and the assembled Pico clearance. The antenna clearance reference is the [Pico 2 W datasheet](https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf).
 

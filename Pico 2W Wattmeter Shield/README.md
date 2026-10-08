@@ -2,6 +2,14 @@
 
 A Raspberry Pi Pico 2 W shield with an ADL5904 RF power detector, an ADS1115 ADC, and a nominal 10 dB input attenuator. Open [Pico 2W Wattmeter Shield.kicad_pro](Pico%202W%20Wattmeter%20Shield.kicad_pro) in KiCad 10. The project uses local symbol, footprint, design-block, and 3D-model libraries with `${KIPRJMOD}` paths.
 
+## Board-side and USB reference update — 2026-10-07
+
+The complete assembly was flipped as requested: factory components, J1 and the Pico interface are now on B.Cu. The two decorative logos also exchanged sides. The entire board was reflected about its horizontal centerline, including components, tracks, vias, zones, outline, markings and antenna clearance. Relative placement, pad numbers/net assignments, routed lengths and widths, UUIDs, locks and assembly exclusions were preserved. The USB label is centered in its Dwgs.User reference box in both the placed interface and the independent local header library. The library footprint remains front-sided; the board instance determines the mounting side.
+
+KiCad **10.0.6**: after refilling copper, **0 DRC violations, 0 unconnected items and 0 schematic-parity findings**. ERC remains **0 errors / 9 existing C1–C9 library-symbol mismatch warnings**; the schematic and project settings are byte-for-byte unchanged. Preservation checks cover 23 footprints, 110 pads, 149 tracks/vias and 57 board zones. A complete inverse-flip comparison reproduced the original board properties apart from KiCad's invalidated fill-cache flag; final saved routing and pin/net geometry were checked again after refill. Native 3D views were inspected. Existing ERC ignored-check categories remain unchanged; no new suppressions or weakened rules were introduced.
+
+The five U1 filled/capped vias explicitly exchanged their asymmetric tenting flags: F side covered, B side solderable. The four exposed-pad stencil apertures are now on B.Paste. Updated manufacturing notes and B-side drawings must accompany regenerated fabrication outputs; earlier output packages predate this flip. Physical/RF qualification remains unchanged.
+
 ## Measurement range
 
 | Parameter | Design target |
@@ -15,14 +23,14 @@ The board is an unqualified prototype. Input limits and accuracy require resisto
 
 ## Assembly
 
-The factory fits **C1–C9, R1–R8, U1, and U2: 19 components**, all on the front. The SMA connector, Pico sockets, and Pico module are fitted by hand. J1, J2, J3, U3, and the decorative logos are excluded from the factory BOM; J1, U3, and the logos are excluded from machine placement.
+The factory fits **C1–C9, R1–R8, U1, and U2: 19 components**, all on the back (B.Cu), following the whole-board flip on 2026-10-07. The SMA connector, Pico sockets, and Pico module are fitted by hand. J1, J2, J3, U3, and the decorative logos are excluded from the factory BOM; J1, U3, and the logos are excluded from machine placement.
 
 The **Shield purchasing BOM** preset exports the `LCSC Part #` field. The BOM and placement file must contain the same 19 component references. Use the supplier's required column headers and verify matched parts and IC orientation in its assembly preview. Plugin-generated exports must honor the manual-part exclusions.
 
-U1 requires **selective epoxy-filled, planarized, copper-capped vias**: exactly the five vias inside its exposed ground pad. Their front surfaces are solderable; their rear pads are covered with soldermask. The stencil has four separate paste windows. These requirements must be included in the fabrication order.
+U1 requires **selective epoxy-filled, planarized, copper-capped vias**: exactly the five vias inside its exposed ground pad. Their B-side surfaces are solderable; their F-side pads are covered with soldermask. The stencil has four separate paste windows. These requirements must be included in the fabrication order.
 
 - [Fabrication and assembly order notes](manufacturing-notes/ORDER-NOTES.txt)
-- [Top assembly map](manufacturing-notes/ASSEMBLY-TOP.svg)
+- [Bottom assembly map](manufacturing-notes/ASSEMBLY-BOTTOM.svg)
 - [Selective via-treatment drawing](manufacturing-notes/U1-VIA-TREATMENT.svg)
 - [U1 exposed-pad and stencil geometry](U1-PASTE-WINDOWS.md)
 - [SMA connector and board-edge fit](J1-CONNECTOR-NOTES.md)
