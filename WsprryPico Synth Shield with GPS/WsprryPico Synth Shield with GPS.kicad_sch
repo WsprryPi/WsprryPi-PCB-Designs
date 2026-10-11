@@ -5,7 +5,7 @@
 	(uuid "42fb2efa-c288-4686-a90a-043ad23a327d")
 	(paper "A3")
 	(title_block
-		(title "WsprryPico Synth Shield")
+		(title "WsprryPico Synth Shield with GPS")
 		(date "2026-10-06")
 		(comment 1 "Symbol placement only; wiring and PCB synchronization pending")
 	)
@@ -7495,7 +7495,7 @@
 			(uuid "f668b0e7-d1d7-4e0c-b335-5cf14d1c8b0d")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C52")
 					(unit 1)
@@ -7697,7 +7697,7 @@
 			(uuid "b148852b-57d3-47e0-ab3d-cc2537ead4a0")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C42")
 					(unit 1)
@@ -7899,7 +7899,7 @@
 			(uuid "5d541d85-cda5-4041-8082-cdb95f0416af")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "R72")
 					(unit 1)
@@ -8101,7 +8101,7 @@
 			(uuid "31acb8c1-c069-4956-99ab-3c2000e9dfab")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C41")
 					(unit 1)
@@ -8303,7 +8303,7 @@
 			(uuid "daa09cca-e3c2-43f7-8db4-64095af8e503")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C65")
 					(unit 1)
@@ -8505,7 +8505,7 @@
 			(uuid "46426b43-66ae-499a-b1d2-4916bbf99b2d")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C51")
 					(unit 1)
@@ -8582,7 +8582,7 @@
 			(uuid "ced449c3-fd00-4e34-a3f6-b319a3d31123")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR018")
 					(unit 1)
@@ -8782,7 +8782,7 @@
 			(uuid "818cf2d5-4b35-40be-bee6-e76710cf7bd7")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C73")
 					(unit 1)
@@ -8963,7 +8963,7 @@
 			(uuid "8f79eec0-94e9-4684-b72c-dad5a3f9ff71")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "U71")
 					(unit 1)
@@ -9163,7 +9163,7 @@
 			(uuid "85fad9e3-140a-4c63-a85a-90bb9d773976")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "D11")
 					(unit 1)
@@ -9241,7 +9241,7 @@
 			(uuid "fbb8daa4-40dc-4a45-aabb-bb062f9b3954")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR029")
 					(unit 1)
@@ -9443,7 +9443,7 @@
 			(uuid "1f6f5a86-60d4-4728-89f9-dbc77dd50ea1")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C63")
 					(unit 1)
@@ -9648,7 +9648,7 @@
 			)
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "J11")
 					(unit 1)
@@ -9850,7 +9850,7 @@
 			(uuid "d5f9afcb-f973-4f68-bcb3-afbcc1ea56ac")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C22")
 					(unit 1)
@@ -9927,7 +9927,7 @@
 			(uuid "27880a39-cdf6-430e-a806-e11a1949fa52")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR02")
 					(unit 1)
@@ -10129,7 +10129,7 @@
 			(uuid "d504ee53-f0e8-4f53-868d-8ad6ae986149")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "R53")
 					(unit 1)
@@ -10331,7 +10331,7 @@
 			(uuid "bbaea2bf-aa82-41a9-a90d-338f1e78e351")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "R11")
 					(unit 1)
@@ -10533,7 +10533,7 @@
 			(uuid "02d986f8-c045-4f95-8dc7-9c786b086307")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "R51")
 					(unit 1)
@@ -10727,7 +10727,7 @@
 			(uuid "dcd9f2e6-6724-400f-afcc-e292bc4a4b7b")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "U11")
 					(unit 1)
@@ -10929,7 +10929,7 @@
 			(uuid "a8c509c8-7f19-4736-80c7-cf9c84dac102")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "R31")
 					(unit 1)
@@ -11130,7 +11130,7 @@
 			(uuid "f31759c7-f334-496d-be83-02de9fb378b5")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "J71")
 					(unit 1)
@@ -11207,7 +11207,7 @@
 			(uuid "c9baccc8-50e3-41d4-b063-fbe0af6a2629")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR028")
 					(unit 1)
@@ -11285,7 +11285,7 @@
 			(uuid "d37709cf-61f1-4bbc-935e-c97f661a08d6")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR031")
 					(unit 1)
@@ -11488,7 +11488,7 @@
 			(uuid "3b861afd-7410-4a83-a4d2-2215f25c063c")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "RV61")
 					(unit 1)
@@ -11690,7 +11690,7 @@
 			(uuid "c392587d-530c-4765-9ca9-08d0e797ec74")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C62")
 					(unit 1)
@@ -11767,7 +11767,7 @@
 			(uuid "08a98553-a7f3-4125-857f-d9343e783b8f")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR011")
 					(unit 1)
@@ -11969,7 +11969,7 @@
 			(uuid "6ab2493f-386c-4cae-bcbb-e7f085864d83")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C61")
 					(unit 1)
@@ -12046,7 +12046,7 @@
 			(uuid "c4f1abe4-f346-4bfd-bab8-52366deddddc")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR08")
 					(unit 1)
@@ -12248,7 +12248,7 @@
 			(uuid "5041af1e-2d7b-4840-82ff-05c5c8f4dca3")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C64")
 					(unit 1)
@@ -12371,7 +12371,7 @@
 			(uuid "4142ac82-ec52-4306-b412-949a5c51e51c")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "L71")
 					(unit 1)
@@ -12573,7 +12573,7 @@
 			(uuid "7c7dfa08-726d-4169-a9c6-63c2991dc39a")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "R61")
 					(unit 1)
@@ -12650,7 +12650,7 @@
 			(uuid "fc89dc08-f861-4b14-98f4-9ebf851cd886")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR023")
 					(unit 1)
@@ -12727,7 +12727,7 @@
 			(uuid "db8e919a-01ec-47d4-b5cf-59ef6620bd1c")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR07")
 					(unit 1)
@@ -12805,7 +12805,7 @@
 			(uuid "d06d9d35-ce61-4753-823d-9c92e10b6259")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "TP61")
 					(unit 1)
@@ -13029,7 +13029,7 @@
 			(uuid "f5da233a-ea4f-47aa-be72-8c9efe2e0f8a")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "U51")
 					(unit 1)
@@ -13106,7 +13106,7 @@
 			(uuid "11beb9bf-f32c-4d2c-9e57-8aa4a4d7d6f0")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR012")
 					(unit 1)
@@ -13311,7 +13311,7 @@
 			)
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "J12")
 					(unit 1)
@@ -13513,7 +13513,7 @@
 			(uuid "ec4b2860-2c3d-411b-a855-7eea3f2811a9")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "R73")
 					(unit 1)
@@ -13714,7 +13714,7 @@
 			(uuid "4de19002-94ce-49ea-9ab4-fd07569d8529")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "SW11")
 					(unit 1)
@@ -13791,7 +13791,7 @@
 			(uuid "49a2b569-1a4b-4d4f-b36b-baf9acb82af2")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR022")
 					(unit 1)
@@ -13868,7 +13868,7 @@
 			(uuid "8d4687b1-e3d8-4280-bdd7-5d1523b4b2ad")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR025")
 					(unit 1)
@@ -13945,7 +13945,7 @@
 			(uuid "3abf820c-6c44-46fc-b57d-2f2a34cc8016")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR04")
 					(unit 1)
@@ -14157,7 +14157,7 @@
 			(uuid "b304333e-2a52-4d55-8046-320a2cb5230f")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "U31")
 					(unit 1)
@@ -14359,7 +14359,7 @@
 			(uuid "a50bf718-7ec2-451e-b226-3cf11d4e5ff4")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C31")
 					(unit 1)
@@ -14561,7 +14561,7 @@
 			(uuid "91262b52-d31d-47d4-b417-5bce420701bc")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "R62")
 					(unit 1)
@@ -14638,7 +14638,7 @@
 			(uuid "9bfaeb74-2de5-4aca-acf5-af5daf8f4985")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR013")
 					(unit 1)
@@ -14840,7 +14840,7 @@
 			(uuid "5513412f-dc8f-4055-9d51-195a39040231")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "R32")
 					(unit 1)
@@ -15042,7 +15042,7 @@
 			(uuid "e402e452-280d-4f68-a633-0c34e9c401ca")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C21")
 					(unit 1)
@@ -15119,7 +15119,7 @@
 			(uuid "a05f8887-75c0-4d9a-9382-952056897ad0")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR030")
 					(unit 1)
@@ -15319,7 +15319,7 @@
 			(uuid "953a58ba-5920-4c9e-a7ff-7cc3a35f3f2b")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "R71")
 					(unit 1)
@@ -15396,7 +15396,7 @@
 			(uuid "bc66d481-a2a4-453c-8ec4-3175fb350c78")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR01")
 					(unit 1)
@@ -15473,7 +15473,7 @@
 			(uuid "b288fb13-23e5-489e-bd33-62b83a797b55")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR019")
 					(unit 1)
@@ -15675,7 +15675,7 @@
 			(uuid "8278827a-6ccc-406c-8cf2-e2524f20ca5b")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C33")
 					(unit 1)
@@ -15752,7 +15752,7 @@
 			(uuid "d795b9c5-4009-4c3c-9d85-fdeaa94a2ba9")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR05")
 					(unit 1)
@@ -15953,7 +15953,7 @@
 			(uuid "c3bdf894-6914-43e9-ab1d-3b03df39da27")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "J61")
 					(unit 1)
@@ -16156,7 +16156,7 @@
 			(uuid "efb716f3-c07f-42b1-8aaa-7909d94795e5")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "Q61")
 					(unit 1)
@@ -16233,7 +16233,7 @@
 			(uuid "156acaa7-c5ca-485b-bb23-1135d3cbf204")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR014")
 					(unit 1)
@@ -16310,7 +16310,7 @@
 			(uuid "0621a70b-8625-44dc-a347-4e5c1f1f7642")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR09")
 					(unit 1)
@@ -16512,7 +16512,7 @@
 			(uuid "77427334-6c09-474d-92bd-f159fdb93836")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "R63")
 					(unit 1)
@@ -16718,7 +16718,7 @@
 			(uuid "0c2497af-4b19-4e13-87ee-727f6df0ec79")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "Y41")
 					(unit 1)
@@ -16918,7 +16918,7 @@
 			(uuid "efcff46e-1408-43c4-96e8-1d644fb20e8e")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "L61")
 					(unit 1)
@@ -16996,7 +16996,7 @@
 			(uuid "450b018a-2813-4f8c-b205-49f61d81d346")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "TP62")
 					(unit 1)
@@ -17198,7 +17198,7 @@
 			(uuid "0f40383e-06c5-4f2b-bdfc-2e05bea57ba9")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C32")
 					(unit 1)
@@ -17275,7 +17275,7 @@
 			(uuid "6f7fd02a-9e6d-4563-bb15-9a3c89decebb")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR06")
 					(unit 1)
@@ -17354,7 +17354,7 @@
 			(uuid "efcf96d2-11fc-418a-a09e-f004ae5ca1ed")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#FLG02")
 					(unit 1)
@@ -17433,7 +17433,7 @@
 			(uuid "4057bfba-dc4f-4443-aefe-b02ebb131c47")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#FLG04")
 					(unit 1)
@@ -17635,7 +17635,7 @@
 			(uuid "43e05eb0-3628-4a01-be8b-ef7ff1f3726f")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "R52")
 					(unit 1)
@@ -17844,7 +17844,7 @@
 			(uuid "e8251bc9-d267-4607-bc6a-9118e45892aa")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "U21")
 					(unit 1)
@@ -18046,7 +18046,7 @@
 			(uuid "e1584fea-8133-45d1-997b-95627657b7c9")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C43")
 					(unit 1)
@@ -18123,7 +18123,7 @@
 			(uuid "bfc0e2ee-1410-47d4-a224-e3aa4655d641")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR021")
 					(unit 1)
@@ -18323,7 +18323,7 @@
 			(uuid "61a9c94c-d5c0-4c45-8c0b-d19abdd74aec")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C71")
 					(unit 1)
@@ -18400,7 +18400,7 @@
 			(uuid "3358a1d9-b99b-44e8-a636-013a4a7230c3")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR020")
 					(unit 1)
@@ -18477,7 +18477,7 @@
 			(uuid "00e6691a-1978-4b56-b664-7a7b7bcbe35d")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR016")
 					(unit 1)
@@ -18554,7 +18554,7 @@
 			(uuid "6d837665-d795-4c9c-80ed-bd96032d8ce5")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR015")
 					(unit 1)
@@ -18631,7 +18631,7 @@
 			(uuid "28813cb3-914c-4821-9ddc-822cc10991fb")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR010")
 					(unit 1)
@@ -18831,7 +18831,7 @@
 			(uuid "eba8c2ab-bcbd-41dd-9056-3ab5c70f9637")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "C72")
 					(unit 1)
@@ -18908,7 +18908,7 @@
 			(uuid "d54bff55-1313-406b-9e62-c74a8622c790")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR03")
 					(unit 1)
@@ -18985,7 +18985,7 @@
 			(uuid "899080f2-35f6-419e-978a-e48439bcf658")
 		)
 		(instances
-			(project "WsprryPico Synth Shield"
+			(project "WsprryPico Synth Shield with GPS"
 				(path "/42fb2efa-c288-4686-a90a-043ad23a327d"
 					(reference "#PWR017")
 					(unit 1)

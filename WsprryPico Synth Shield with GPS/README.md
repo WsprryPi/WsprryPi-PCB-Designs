@@ -1,4 +1,4 @@
-# WsprryPico Synth Shield
+# WsprryPico Synth Shield with GPS
 
 A two-layer Pico 2 W shield with a **25 MHz TCXO, Si5351A synthesizer, switched BS170 RF amplifier, onboard GNSS receiver, pushbutton and LED**. The schematic and PCB are implemented in KiCad 10 with independent project-local libraries. The intended transmitter range is **2200 m through 10 m**, with a band-appropriate external low-pass filter after the SMA output.
 
@@ -58,7 +58,7 @@ With RF disabled, Q61's drain current creates a DC voltage drop across L61's win
 | Red | L61 pad 1 | `AMP_5V_SW` |
 | Black | L61 pad 2, or Q61 pin 1 | `AMP_DRAIN` |
 
-TP61 (+) and TP62 (−) are assigned to these same two nets for measuring the drop. Use L61's pads directly until TP61's connection is complete; see [validation status](VALIDATION.md#outstanding-findings). For gate voltage, measure Q61 pin 2 relative to Q61 pin 3/GND. RV61's wiper voltage is available at C65 pad 1 relative to C65 pad 2/GND.
+TP61 (+) and TP62 (−) connect to these same two nets for measuring the drop. For gate voltage, measure Q61 pin 2 relative to Q61 pin 3/GND. RV61's wiper voltage is available at C65 pad 1 relative to C65 pad 2/GND.
 
 1. With power off, turn RV61 gently **clockwise to its grounded end** and attach the meter across L61.
 2. Connect a band-appropriate external LPF and 50 Ω dummy load. Disable the Si5351 RF output and hold **AMP_EN high** to power the amplifier during adjustment.
@@ -87,13 +87,13 @@ The front-layer `AMP_DRAIN` ground-pour rule uses **0.15 mm clearance**, with **
 
 ## Files and libraries
 
-Open [WsprryPico Synth Shield.kicad_pro](WsprryPico%20Synth%20Shield.kicad_pro) in KiCad 10. The [schematic](WsprryPico%20Synth%20Shield.kicad_sch) and [PCB](WsprryPico%20Synth%20Shield.kicad_pcb) are the design authority.
+Open [WsprryPico Synth Shield with GPS.kicad_pro](WsprryPico%20Synth%20Shield%20with%20GPS.kicad_pro) in KiCad 10. The [schematic](WsprryPico%20Synth%20Shield%20with%20GPS.kicad_sch) and [PCB](WsprryPico%20Synth%20Shield%20with%20GPS.kicad_pcb) are the design authority.
 
 - [Parts specifications](PARTS.md) and [engineering inventory](PARTS.csv).
 - [LCSC parts collection workbook](LCSC-parts-collection.xlsx): all 48 references, with the saved selections and editable supplier fields. U11 and TP61/TP62 are PCB features; J11/J12 are the two purchased socket rows. Blank datasheet cells need the actual PDF collected.
 - [Circuit details](TCXO-SI5351A-DESIGN.md) and [current validation](VALIDATION.md).
 - [Symbol provenance](SYMBOL-SOURCES.md), [footprint provenance](LIBRARY-SOURCES.md) and [3D-model inventory](wsprrypico-synth-shield.3dshapes/README.md).
-- [Symbol table](sym-lib-table), [footprint table](fp-lib-table) and [custom clearance rules](WsprryPico%20Synth%20Shield.kicad_dru).
+- [Symbol table](sym-lib-table), [footprint table](fp-lib-table) and [custom clearance rules](WsprryPico%20Synth%20Shield%20with%20GPS.kicad_dru).
 - [Repository license](LICENSE.md) and [KiCad library terms](KICAD-LIBRARY-LICENSE.md).
 
 The local library contains the **20 used symbol definitions and all 19 assigned footprint types**, plus nine assigned local 3D models. Symbols, footprints and local models use `wsprrypico-synth-shield` and `${KIPRJMOD}` paths. Standard 3D models also require the installed KiCad model library. SW11, RV61, Y41 and L61 have local illustrative previews; physical-fit decisions use manufacturer drawings and actual parts. The circuit follows the QRP Labs TCXO/Si5351A and single-BS170 architecture, with sources and attribution in the circuit and library documents.

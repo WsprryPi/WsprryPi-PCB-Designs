@@ -1,13 +1,13 @@
-# Synth shield validation status
+# WsprryPico Synth Shield with GPS validation status
 
-Current source verification uses **KiCad 10.0.6** on **2026-10-10**, with all configured severities and schematic parity enabled. DRC uses a temporary project copy with native zone refill; the working design remains unchanged.
+Current source verification uses **KiCad 10.0.6** on **2026-10-11**, with all configured severities and schematic parity enabled. DRC refills zones in memory without saving the board. Checks before and after the project rename give identical results; schematic and PCB content differ only in project-name references, and the rendered board geometry is unchanged.
 
 | Check | Result |
 | --- | --- |
 | Schematic ERC | **0 findings** |
 | Physical PCB DRC | **0 violations** |
-| Unconnected items | **1**, TP61 supply-side connection |
-| Schematic/PCB parity | **2**, TP61/TP62 value-field mismatches |
+| Unconnected items | **0** |
+| Schematic/PCB parity | **0** |
 | Component inventory | 48 non-power schematic symbols; 46 PCB footprints; 47 engineering inventory entries excluding U11 |
 | SMT assembly | 40 included positions |
 | Local libraries | 20 used symbol definitions; all 19 assigned footprint types present; 9 assigned local models and installed standard model paths resolve |
@@ -25,16 +25,15 @@ The results above apply to these saved source files, using this project's local 
 
 | File | SHA-256 |
 | --- | --- |
-| WsprryPico Synth Shield.kicad_sch | `555ec47357380028308ea219d8a67f42571c2b697a2c788828c2b610786cada3` |
-| WsprryPico Synth Shield.kicad_pcb | `88858a5a35c705521aeed9ad13c3022ba4dadfeddc62e6668c829f010e4cefb4` |
-| WsprryPico Synth Shield.kicad_pro | `23135651cc820b88ab58ae600a170e8122e585d3e585530b77240299c196e77a` |
-| WsprryPico Synth Shield.kicad_dru | `31cf30504736a1dab394ca73ff13c8c4575e2c55b485f6fd1219cab8a9ad4818` |
+| WsprryPico Synth Shield with GPS.kicad_sch | `5917c2492fbcfe52df0ac9f9739ee5cfe22362249a89e3c1f5129c65bf2dd984` |
+| WsprryPico Synth Shield with GPS.kicad_pcb | `8c4d92db480f536d5b2b2779f8191b80889fa146fcda88dfe00260043905aa4f` |
+| WsprryPico Synth Shield with GPS.kicad_pro | `78e6ea8b6987e816781a35499fc6e43c1efa8a0afdba9267eec084e783fe0d4a` |
+| WsprryPico Synth Shield with GPS.kicad_dru | `31cf30504736a1dab394ca73ff13c8c4575e2c55b485f6fd1219cab8a9ad4818` |
 | wsprrypico-synth-shield.kicad_sym | `051ee3cf3ac254be9cc9e7e42f7fc70ada7fd9b2816a6c9415e33a6a9f070eea` |
 
 ## Outstanding findings
 
-- **TP61 connectivity:** the `AMP_5V_SW` test pad at (136.00, 92.68) mm is unconnected to the routed supply. Connect it to L61 pad 1's supply net before using it for the bias-current measurement. Until then, measure directly across L61.
-- **Test-point values:** native parity reports value-field mismatches for TP61 and TP62. Synchronize their displayed values with the schematic and rerun parity checking.
+Native ERC, physical DRC, connectivity and schematic parity report no findings under the configured rules.
 
 TP61 is assigned to `AMP_5V_SW`; TP62 to `AMP_DRAIN`. These are the two sides of L61. The [RV61 setup procedure](README.md#adjusting-rv61) uses a 5 mV initial RF-off drop rather than a universal gate-voltage target.
 

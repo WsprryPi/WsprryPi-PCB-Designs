@@ -324,7 +324,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/de71885b-187a-421e-9d53-26d348907f4f")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -636,7 +636,7 @@
 		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
 		(path "/bafe2408-d15c-4f1e-9fe5-5ec03aae0b99")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1032,7 +1032,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/1b04f904-bb2c-4983-8042-d4f3ac200ba1")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1345,7 +1345,7 @@
 		(property ki_fp_filters "L_TDK_VLS6045EX_VLS6045AF")
 		(path "/c6d77ccb-8845-4c67-b296-f1b312549191")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1701,7 +1701,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/69772544-bffb-4b9e-bf6d-3ecfbf033aef")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2003,7 +2003,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/37161d49-6854-4bf9-8e50-c45b44f3bb9e")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2305,7 +2305,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/14c1fd8c-1cab-47e7-a7e6-2820a42d9254")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2618,7 +2618,7 @@
 		(property ki_fp_filters "R_0603_1608Metric")
 		(path "/a2edf6b8-3ea6-433f-8a97-c4969092edf0")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2931,7 +2931,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/124fc6a0-d334-4ad9-8b80-64404512b2e1")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3244,7 +3244,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/a12d43cf-a95f-4495-a518-a653557e9ed7")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3557,7 +3557,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/e63ab10a-331b-4eb4-8a16-46ed5edab412")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3870,7 +3870,7 @@
 		(property ki_fp_filters "R_0603_1608Metric")
 		(path "/b477fc32-529f-4d20-9f23-4577735abfec")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4043,7 +4043,7 @@
 		(property ki_fp_filters "TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
 		(path "/8271042f-55bf-4573-87f2-a8ef881c96d1")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4343,7 +4343,7 @@
 		(property ki_fp_filters "*SOT?23*")
 		(path "/dd602fe7-90e0-44d9-957f-1ec8413631b0")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4922,7 +4922,7 @@
 		(property ki_fp_filters "R_0603_1608Metric")
 		(path "/48f18b4b-cf3f-4645-abcf-37fbffc6cbf8")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5235,7 +5235,7 @@
 		(property ki_fp_filters "R_0603_1608Metric")
 		(path "/89ff9a2b-7c37-4959-b3f6-e9f3771e95ef")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5457,7 +5457,7 @@
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/78b6604e-ce40-40c3-8592-5d74895c6622")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5772,7 +5772,7 @@
 		(property ki_fp_filters "R_0603_1608Metric")
 		(path "/0fafdd6c-5307-45dd-9972-2f13ec3a487f")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6085,7 +6085,7 @@
 		(property ki_fp_filters "R_0603_1608Metric")
 		(path "/c66f87c7-6cab-4862-80d5-e01f25dd95b6")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6398,7 +6398,7 @@
 		(property ki_fp_filters "R_0603_1608Metric")
 		(path "/3dd75a90-aac8-48cb-be7a-159c7ac1de2f")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6711,7 +6711,7 @@
 		(property ki_fp_filters "R_0603_1608Metric")
 		(path "/46857579-9a0e-4494-9d37-f4268838d28e")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7024,7 +7024,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/76b0f6fe-8222-461f-8698-fc8c399c3da7")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7259,7 +7259,7 @@
 		(property ki_fp_filters "Zhongke_ATGM336H-5N31_9.7x10.1mm_P1.1mm")
 		(path "/29dd992d-6599-4336-b0ad-463878c0240f")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7804,7 +7804,7 @@
 		(property ki_fp_filters "KDS_DSB321SDN_3.2x2.5mm")
 		(path "/c6b5b6b0-b6a9-4750-a3a7-2755c0c7b44c")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8155,7 +8155,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/0b101f0e-6b7c-462b-a285-7181fd6fdc48")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8457,7 +8457,7 @@
 		(property ki_fp_filters "MSOP*3x3mm*P0.5mm*")
 		(path "/84582162-6b93-4915-b800-5d64e3df9aeb")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8897,7 +8897,7 @@
 		(property ki_fp_filters "TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
 		(path "/c77fc035-291c-423a-998f-de35483de44e")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -9208,7 +9208,7 @@
 		(property ki_fp_filters "R_0603_1608Metric")
 		(path "/4d6c82b4-385e-4e59-a3a1-d16de65c11d3")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -9521,7 +9521,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/2663b45f-9255-4abf-bc55-a3efc7e4ac6a")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -9835,7 +9835,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/37e5b280-8ab0-485f-9193-252a971dc2d5")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -10148,7 +10148,7 @@
 		(property ki_fp_filters "R_0603_1608Metric")
 		(path "/db01e1b6-5365-467f-b84b-c9395bd58da4")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -10461,7 +10461,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/abe10865-5227-4396-bd1f-2cc914fe5000")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -10763,7 +10763,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/2c7d5c01-6468-416f-8981-d9a30a266961")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -11127,7 +11127,7 @@
 		(property ki_fp_filters "*U.FL*")
 		(path "/4fc022d3-9a62-48fe-beb5-bd83d1bbb544")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -11691,7 +11691,7 @@
 		(property ki_fp_filters "TO-92_Inline")
 		(path "/bd020a48-d257-424c-971d-7db4f0295e6a")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -12060,7 +12060,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/c88f8693-bac1-4625-9adf-557672dbc1b8")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -12377,7 +12377,7 @@
 		(property ki_fp_filters "Potentiometer*")
 		(path "/66f50cf2-d7d8-4e5c-8b6c-c9448e6c2bca")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -12861,7 +12861,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/b9e8f630-57f8-4e13-9aab-fb4ca2b74ddf")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -13174,7 +13174,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/f726b756-35bb-432b-9520-bfaaaeef1823")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -13487,7 +13487,7 @@
 		(property ki_fp_filters "R_0603_1608Metric")
 		(path "/a9bbcc60-f62f-4f74-a170-b3dd04537d93")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -13800,7 +13800,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/77a07729-59d6-4def-b09d-beccbb42e794")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -14113,7 +14113,7 @@
 		(property ki_fp_filters "C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric")
 		(path "/0f70d594-7980-4805-b5e2-c2229bf8c85c")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -14426,7 +14426,7 @@
 		(property ki_fp_filters "SOT-23-6")
 		(path "/987f5222-3b03-4f40-b0ce-427f970b26a7")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -14987,7 +14987,7 @@
 		(property ki_fp_filters "R_0603_1608Metric")
 		(path "/7b03424c-dd3c-41b4-8e09-ecf1f75cd964")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15299,7 +15299,7 @@
 		(property ki_fp_filters "SW_SPST_XUNPU_TS1088R_4x3mm")
 		(path "/8a0c3d74-d1de-4360-be8d-4fd43bdb7bac")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15466,7 +15466,7 @@
 		)
 		(path "/4956bacf-ccac-441b-a2fa-51ce082195af")
 		(sheetname "/")
-		(sheetfile "WsprryPico Synth Shield.kicad_sch")
+		(sheetfile "WsprryPico Synth Shield with GPS.kicad_sch")
 		(units
 			(unit
 				(name "A")

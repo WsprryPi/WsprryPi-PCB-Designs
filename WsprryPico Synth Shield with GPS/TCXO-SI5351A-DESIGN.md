@@ -1,6 +1,6 @@
 # Synth shield circuit details
 
-The shield combines a 25 MHz TCXO, Si5351A, USB-powered BS170 amplifier and onboard GNSS receiver. The intended RF range is **2200 m through 10 m**, with external band-specific low-pass filtering. The [schematic](WsprryPico%20Synth%20Shield.kicad_sch), [PCB](WsprryPico%20Synth%20Shield.kicad_pcb), [parts inventory](PARTS.csv) and [Pico pin table](README.md#pico-pin-contract) define the implemented hardware.
+The shield combines a 25 MHz TCXO, Si5351A, USB-powered BS170 amplifier and onboard GNSS receiver. The intended RF range is **2200 m through 10 m**, with external band-specific low-pass filtering. The [schematic](WsprryPico%20Synth%20Shield%20with%20GPS.kicad_sch), [PCB](WsprryPico%20Synth%20Shield%20with%20GPS.kicad_pcb), [parts inventory](PARTS.csv) and [Pico pin table](README.md#pico-pin-contract) define the implemented hardware.
 
 ## Power supplies
 

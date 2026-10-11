@@ -541,7 +541,7 @@
     ]
   },
   "meta": {
-    "filename": "WsprryPico Synth Shield.kicad_pro",
+    "filename": "WsprryPico Synth Shield with GPS.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -781,8 +781,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "WsprryPico Synth Shield.kicad_sch",
-        "name": "WsprryPico Synth Shield",
+        "filename": "WsprryPico Synth Shield with GPS.kicad_sch",
+        "name": "WsprryPico Synth Shield with GPS",
         "uuid": "42fb2efa-c288-4686-a90a-043ad23a327d"
       }
     ],
@@ -792,7 +792,7 @@
   "sheets": [
     [
       "42fb2efa-c288-4686-a90a-043ad23a327d",
-      "WsprryPico Synth Shield"
+      "WsprryPico Synth Shield with GPS"
     ]
   ],
   "text_variables": {},

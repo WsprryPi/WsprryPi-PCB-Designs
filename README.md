@@ -12,7 +12,7 @@ See each project's order status, assembly requirements, and validation limits be
 | [Pico 2W Wattmeter Shield](Pico%202W%20Wattmeter%20Shield/README.md) | ADL5904 RF detector and ADS1115 ADC shield | See project assembly drawings |
 | [Pico 2W Shield Template](Pico%202W%20Shield%20Template/README.md) | Unwired shield interface, outline, and antenna notch | KiCad project template |
 | [WsprryPico GPIO Shield](WsprryPico%20GPIO%20Shield/README.md) | Pico 2 W shield with the grouped BS170 amplifier circuit and independent local libraries | Placed and routed GPIO design; see current validation |
-| [WsprryPico Synth Shield](WsprryPico%20Synth%20Shield/README.md) | Pico 2 W TCXO/Si5351A shield with a BS170 amplifier and onboard GNSS | Implemented PCB for the 2200 m–10 m target; see current validation and bias setup |
+| [WsprryPico Synth Shield with GPS](WsprryPico%20Synth%20Shield%20with%20GPS/README.md) | Pico 2 W TCXO/Si5351A shield with a BS170 amplifier and onboard GNSS | Implemented PCB for the 2200 m–10 m target; see current validation and bias setup |
 | [QRP Labs Modules](QRP%20Labs%20Modules/README.md) | Electrical models of the photographed 25 MHz TCXO and Rev6 synthesizer, with their interconnection | [Reference schematic PDF](QRP%20Labs%20Modules/QRP%20Labs%20Modules.pdf); separate from the proposed synth shield |
 | [RPi Full-Size HAT Template](RPi%20Full-Size%20HAT%20Template/README.md) | Official full-size HAT geometry and complete 40-pin interface | KiCad project template |
 | [RPi Zero HAT Template](RPi%20Zero%20HAT%20Template/README.md) | Zero-size uHAT geometry and complete HAT+ capable 40-pin interface | KiCad project template |
@@ -26,7 +26,7 @@ Clone [WsprryPi/WsprryPi-PCB-Designs](https://github.com/WsprryPi/WsprryPi-PCB-D
 
 | Project | Saved schematic and PCB generator version |
 | --- | --- |
-| WsprryPi LPF, Pico 2W Wattmeter Shield, Pico 2W Shield Template, WsprryPico GPIO Shield, WsprryPico Synth Shield, RPi Full-Size HAT Template, RPi Zero HAT Template, WsprryPi Zero GPIO BS170 | KiCad 10.0 |
+| WsprryPi LPF, Pico 2W Wattmeter Shield, Pico 2W Shield Template, WsprryPico GPIO Shield, WsprryPico Synth Shield with GPS, RPi Full-Size HAT Template, RPi Zero HAT Template, WsprryPi Zero GPIO BS170 | KiCad 10.0 |
 
 Project library tables use `${KIPRJMOD}` paths. Keep each project's local libraries together when copying it. The Pico and HAT projects use their own local libraries and installed KiCad models where their project documentation specifies them.
 

@@ -11,7 +11,7 @@ This is `WsprryPi/WsprryPi-PCB-Designs`, a KiCad hardware-design repository. Rea
 - `Pico 2W Wattmeter Shield`: ADL5904 RF wattmeter shield.
 - `Pico 2W Shield Template`: reusable unwired Pico shield template.
 - `WsprryPico GPIO Shield`: Pico 2 W BS170 GPIO shield with project-local libraries and a placed and routed PCB.
-- `WsprryPico Synth Shield`: Pico 2 W TCXO/Si5351A shield with a switched BS170 amplifier and onboard GNSS; implemented schematic/PCB for the 2200 m–10 m target, with current validation and bias setup in the project documentation.
+- `WsprryPico Synth Shield with GPS`: Pico 2 W TCXO/Si5351A shield with a switched BS170 amplifier and onboard GNSS; implemented schematic/PCB for the 2200 m–10 m target, with current validation and bias setup in the project documentation.
 - `Pico 2W Wattmeter Shield/pico-2w-libs`: project-local Pico reference assets with documented compatibility limits.
 - `design`: proposed circuits and engineering requirements.
 
