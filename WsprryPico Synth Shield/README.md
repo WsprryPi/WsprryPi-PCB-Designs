@@ -1,82 +1,99 @@
 # WsprryPico Synth Shield
 
-An independent KiCad 10 project copied from the [Pico 2W Shield Template](../Pico%202W%20Shield%20Template/README.md). It retains the Pico interface, board outline, antenna notch and local socket models. The schematic now contains **59 component symbols in nine decade-series boxes**, following the GPIO Pico board's style. The selected circuit is specified in the [TCXO and Si5351A design notes](TCXO-SI5351A-DESIGN.md); the wired schematic passes ERC and PCB synchronization, placement and routing remain pending. See [symbol sources and placement](SYMBOL-SOURCES.md).
+A two-layer Pico 2 W shield with a **25 MHz TCXO, Si5351A synthesizer, switched BS170 RF amplifier, onboard GNSS receiver, pushbutton and LED**. The schematic and PCB are implemented in KiCad 10 with independent project-local libraries. The intended transmitter range is **2200 m through 10 m**, with a band-appropriate external low-pass filter after the SMA output.
 
-The preferred circuit precedent is Hans Summers' QRP Labs design. The selected reference is **KDS/Daishinku 1XTW25000MAA, DSB321SDN, 25 MHz, LCSC C253672**, fitted directly on the shield as locked by the user on 2026-10-06. Direct 3.3 V I²C with **two 4.7 kΩ, ±1% prototype pull-ups to `SYNTH_3V3`**, and a dedicated low-noise **TI TPS7A2033PDBVR, SOT-23-5, LCSC C2862740** regulator for the TCXO and Si5351A are also locked. A three-pad selector defaults to pin 40 / VBUS; cutting its copper link and bridging the alternate gap selects pin 39 / VSYS. Only one connection may be closed. **Regulator EN pin 3 connects to its own IN pin 1**, keeping the TCXO and Si5351A powered whenever the selected supply is available. This always-on clock supply replaces the earlier `SYNTH_EN` GPIO and external 100 kΩ EN pull-down requirement; neither is retained. Keep independent `AMP_EN` amplifier control and use Si5351 I²C commands to enable/disable the RF output while preserving CLK2 calibration between transmissions. The I²C pins must be undriven with internal pull-ups disabled whenever the synth supply is unavailable. Prototype component values, dielectrics, ratings, supplier codes and local footprints are recorded in [PARTS.md](PARTS.md). Choke sourcing, bus-speed/rise-time validation and button/LED behavior remain open. The notes distinguish documented QRP Labs circuitry from proposed component values and preserve the compensation caveat.
+The hardware provides synthesizer control, GNSS UART/PPS and clock-counting connections. WsprryPico's Si5351 transmission engine remains a [deferred firmware feature](https://github.com/WsprryPi/WsprryPico/blob/devel/docs/development/si5351-transmission-backlog.md). Band-specific output power, spectral performance, calibration accuracy and thermal margins require assembled-board measurements. See [current validation status](VALIDATION.md) before fabrication.
 
-**Target bands and 2 m WSPR locked 2026-10-06:** cover the amateur bands from **2200 m through 2 m**, including **WSPR on 2 m**, as specified by the user. Retain the selected **25 MHz** reference. Hans' newer U4B documentation provides a 25 MHz TCXO/Si5351A precedent with this band coverage and WSPR; see the [source comparison and implementation requirements](TCXO-SI5351A-DESIGN.md#2-m-wspr-and-the-25-mhz-reference). The older U3S warning is specific to that product and its synthesis implementation, not a reason to reopen the required band or automatically substitute a 27 MHz reference. Validate this shield's synthesis, reference continuity, amplifier and filters across the target range before claiming measured support.
+## Hardware
 
-**Synthesizer I²C pins locked 2026-10-06:** use **I²C0**, with **GP4 / Pico physical pin 6 → Si5351A SDA pin 5** and **GP5 / Pico physical pin 7 → Si5351A SCL pin 4**, as accepted by the user. Reserve the pair together for this bus, following the [firmware pin-assignment contract](https://github.com/WsprryPi/WsprryPico/blob/devel/docs/pin-assignment-contract.md). Control GPIOs are locked below; bus speed remains open. The Si5351 engine is still a future firmware feature; this selection does not wire the starter or enable a firmware adapter.
+| Series | Circuit | Components |
+| --- | --- | --- |
+| 10 | Pico interface, button and LED | U11, J11/J12, SW11, D11, R11 |
+| 20 | Shared 3.3 V clock/GNSS regulator | U21, C21/C22 |
+| 30 | Switched amplifier supply | U31, C31–C33, R31/R32 |
+| 40 | 25 MHz TCXO reference | Y41, C41–C43 |
+| 50 | Si5351A synthesizer | U51, C51/C52, R51–R53 |
+| 60 | RF amplifier, bias measurement and SMA output | Q61, L61, RV61, R61–R63, C61–C65, TP61/TP62, J61 |
+| 70 | GNSS receiver and antenna interface | U71, J71, L71, R71–R73, C71–C73 |
 
-The completed [QRP module electrical models](../QRP%20Labs%20Modules/README.md) are a separate reference project. They model the photographed MS5351M Rev6 board and TCXO, while this shield retains Si5351A as its target. See the [chat reconciliation and remaining decisions](RECONCILIATION.md) for the distinction between observed hardware, selected parts and proposed values.
+**Reference and synthesizer:** Y41 is KDS **1XTW25000MAA / C253672**, a 25 MHz DSB321SDN TCXO. Its output couples through C42, 1 nF C0G, to U51 XA; XB is unconnected. U51 is **SI5351A-B-GTR / C504891** in MSOP-10. CLK0 drives the amplifier, and CLK2 feeds the Pico through R53, 33 Ω. SDA/SCL have 4.7 kΩ pull-ups to `SYNTH_3V3`.
 
-The first prototype uses **C22 = 1 nF C0G/NP0** for TCXO-to-XA coupling, **C21 = 10 nF X7R** and **C23 = 100 nF X7R** for local TCXO supply bypassing, **C31/C32 = 100 nF X7R each** at Si5351A VDD/VDDO, and **2.2 µF X7R each** at the regulator input and output. These values are locked by the user on 2026-10-06. The complete capacitor specifications are in [PARTS.md](PARTS.md). Production acceptance remains open: verify effective capacitor values, supply behavior, loaded XA amplitude and startup on the assembled board.
+**Power:** Pico physical pin 40, USB VBUS, supplies both U21 and U31. U21, **TPS7A2033PDBVR / C2862740**, produces `SYNTH_3V3` for the TCXO, Si5351A, I²C pull-ups and GNSS VCC/VBAT. Its EN pin is tied to IN. U31, **TPS22918DBVR / C131941**, independently switches VBUS onto `AMP_5V_SW` for the amplifier's drain and bias circuits. R31, 100 kΩ, holds `AMP_EN` low by default. The combined LDO load includes the receiver and active antenna; supply noise, startup and temperature must be checked with the selected antenna.
 
-**Onboard amplifier locked 2026-10-06:** reuse the [GPIO shield's BS170 amplifier circuit](../WsprryPico%20GPIO%20Shield/README.md), including its separately controlled active-high `AMP_EN` supply switch, on this shield. Adapt the amplifier input to the Si5351 output. The shared-selector supply choice below resolves the amplifier supply source, and the external-LPF/SMA choice below resolves the output interface. The prototype input network and supplier parts are specified in [PARTS.md](PARTS.md), except for the unresolved FT37-43 choke source. Current budget, Si5351 drive setting and band qualification remain open. The clock regulator's `SYNTH_3V3` rail is reserved for the clock section, not the amplifier's drain/bias supply. Use the reserved amplifier reference mapping in [PARTS.md](PARTS.md#source-amplifier-reference-mapping) to avoid collisions with the clock section. Amplifier symbols are placed in the 50/60-series boxes; their wiring and PCB implementation remain pending.
+**RF amplifier:** Q61 is a hand-fitted **BS170 / C111691**. C61, 100 nF C0G, AC-couples the synthesizer through R61, 22 Ω, to the gate. RV61 provides adjustable bias through R62, 4.7 kΩ; R63, 100 kΩ, returns the gate to ground. L61 is **TDK VLS6045EX-331M / C501933**, a 330 µH factory SMT drain choke. C64, 100 nF C0G, DC-blocks the output to J61's **Adafruit 1865 board-edge SMA**. Connect the appropriate external LPF before an antenna; J61 carries the unfiltered amplifier output.
 
-**Shared power selector locked 2026-10-06:** use the **same three-pad `VBUS / IN / VSYS` selector** for the clock and amplifier branches, as accepted by the user. Its center `IN` pad feeds both the clock LDO input and the amplifier's `AMP_5V_IN` boundary, before the TPS22918 amplifier switch. Default to **Pico pin 40 / VBUS**; the cut-and-solder alternative selects **pin 39 / VSYS** for both branches together. This is the previously selected solder-pad arrangement with a default copper link, not a newly selected removable header jumper. Close only one source connection. USB is the default nominal 5 V source; external VSYS operation is intended for a regulated nominal 5 V feed with the required Pico supply isolation. The clock remains powered while `AMP_EN` independently switches the amplifier. Combined current, voltage drop and supply-noise validation remain open; no separate amplifier power connector is selected.
+**GNSS:** U71 is **ATGM336H-5N31 / C90770**, with UART and PPS connections to the Pico. VCC pin 8 and VBAT pin 6 share `SYNTH_3V3`; C71, 10 µF, and C72/C73, 100 nF, provide local bypassing. J71 is **Hirose U.FL-R-SMT-1(10) / C88373**, with L71, **LQW18AN47NG00D / C98076**, providing active-antenna DC bias. Use a compatible U.FL/MHF1 pigtail and antenna. The PPS and CLK2 connections support frequency measurement in firmware; PPS alone does not measure the RF reference.
 
-**RF output interface locked 2026-10-06:** route the amplifier output through a **series DC-blocking capacitor and then the SMA connector**. The **band-appropriate LPF is external**, after the SMA. Omit the GPIO shield's paired LPF sockets from this shield; no onboard filter bank or filter-selector GPIOs are selected. C64 is specified as 100 nF C0G/NP0, 50 V, ±5%, 1206; J61 uses the project's Adafruit 1865 board-edge SMA footprint and local preview model, restored on 2026-10-07; see [connector selection](PARTS.md). RF acceptance remains engineering work across 2200 m through 2 m. The SMA carries the output before external filtering.
+**Controls:** SW11 connects GP0 to ground when pressed and requires the Pico's internal pull-up and software debounce. D11 is an active-high red LED driven by GP1 through R11, 1 kΩ. Button action and indicator behavior are firmware functions.
 
-**Shield controls locked 2026-10-06:** include **both a pushbutton and an LED on the shield**, as specified by the user. Button and LED parts and support values are specified in [PARTS.md](PARTS.md). Control GPIOs were approved on 2026-10-07: **GP6 / physical pin 9 = AMP_EN**, **GP14 / physical pin 19 = BUTTON_N**, and **GP15 / physical pin 20 = LED_DRIVE**. See the [locked control pin plan](TCXO-SI5351A-DESIGN.md#control-gpio-decisions). Button action and LED behavior remain open. Their inclusion does not reintroduce the GPIO shield's RF-selection header or onboard LPF sockets.
+## Pico pin contract
 
-**GPS frequency-calibration hardware locked 2026-10-06:** include **LSI/CSI LS7366R-S, SOIC-14, LCSC C3827808**, with a GPS PPS connection, following the [shared calibration architecture](../design/GPS-FREQUENCY-CALIBRATION.md). Assign Si5351 CLK2 to the counter, targeting a verified one-quarter-reference ratio and a nominal **6.25 MHz** clock for this shield's **25 MHz** reference. The counter captures counts against PPS and the Pico retrieves them over SPI; future firmware applies accepted corrections between transmissions. GPS remains optional for operation. The Pico UART/SPI/PPS assignments are retained with the onboard receiver described below. PPS capture, power sequencing, divider configuration and frequency correction still require firmware and hardware qualification.
+Configure firmware with GPIO numbers; the physical-pin column identifies the header pad.
 
-**GPS receiver revised 2026-10-08:** retire the QLG3 carrier and use onboard **ATGM336H-5N31 / LCSC C90770** in the new **90-series**. The 70-series retains U71 LS7366R, U72 PPS conditioner, R71-R75 and C71-C73. Live LCSC stock was verified before selection: 9,872 receivers and 12,690 LQW18AN47NG00D / C98076 antenna chokes. C74 becomes C91 (now 10 uF); TP71 becomes TP91. J71 is removed from the schematic. The PCB is deliberately unchanged and requires synchronization, placement and routing. See the [current GPS configuration](TCXO-SI5351A-DESIGN.md#gps-configuration-locked).
+| Function | Pico GPIO | Physical pin | Connection |
+| --- | --- | --- | --- |
+| Button, active low | GP0 | 1 | SW11 to GND; enable internal pull-up |
+| LED, active high | GP1 | 2 | R11 to D11 anode |
+| CLK2 feedback | GP3 | 5 | U51 pin 6 through R53 |
+| I²C0 SDA | GP4 | 6 | U51 pin 5 |
+| I²C0 SCL | GP5 | 7 | U51 pin 4 |
+| UART0 TX to receiver RX | GP12 | 16 | R71 to U71 pin 3 |
+| UART0 RX from receiver TX | GP13 | 17 | U71 pin 2 |
+| GNSS PPS | GP16 | 21 | U71 pin 4 through R73; R72 pull-down |
+| Amplifier enable, active high | GP28 | 34 | U31 ON pin 3 |
+| Shield input power | — | 40 | USB VBUS |
 
-**Component sourcing requirement, locked 2026-10-06:** select parts available from **LCSC stock**. Record the exact manufacturer ordering code and LCSC C-number for each supplier selection, and recheck inventory when completing the BOM and ordering. A catalog listing without stock does not meet this requirement. The selected 25 MHz KDS reference remains unchanged; no 27 MHz substitute has been selected.
+Reserve these roles exclusively according to the [WsprryPico pin-assignment contract](https://github.com/WsprryPi/WsprryPico/blob/devel/docs/pin-assignment-contract.md). Keep `AMP_EN` low during initialization and configure the synthesizer with its RF output disabled before transmitting. Keep I²C pins undriven, with internal pull-ups disabled, whenever `SYNTH_3V3` is unavailable.
 
-## Component selection
+## Adjusting RV61
 
-[PARTS.md](PARTS.md) and [PARTS.csv](PARTS.csv) specify 58 assigned inventory references, including values, dielectrics, ratings, ordering codes and local footprints. L61 sourcing remains open; the other positions have prototype selections; the FT37-43 choke retains an explicit unresolved LCSC sourcing conflict. [ASSEMBLY-BOM-PREVIEW.csv](ASSEMBLY-BOM-PREVIEW.csv) contains the 49 selected SMT positions only. All headers, the SMA and hand-wound inductors are **no BOM / no positions**, as required by the user; their purchasing information remains in the engineering inventory. BS170 is fitted by hand, and the selector/jumper are copper features. These files are specifications, not production exports from a populated board. [LIBRARY-SOURCES.md](LIBRARY-SOURCES.md) records the project-local footprints, dimensions, license terms and model gaps.
+**Viewed from above its adjustment screw, clockwise reduces bias toward ground; counterclockwise increases it.** RV61 pin 1 connects to `AMP_5V_SW`, pin 2 is the wiper, and pin 3 is GND. The [Bourns TC33 drawing](https://www.bourns.com/docs/product-datasheets/tc33.pdf#page=1) identifies pin 3 as the clockwise end. Turn gently to the stop without forcing it.
 
-## Open and develop the design
+Set bias by the onset of idle drain current. BS170 devices have different gate thresholds, so there is no universal gate-voltage setting. The [QRP Labs PA bias study](https://www.qrp-labs.com/ultimate3/u3info/u3pa.html) describes adjustment near the first rise in idle current.
 
-Open [WsprryPico Synth Shield.kicad_pro](WsprryPico%20Synth%20Shield.kicad_pro). The discrete KDS reference assembly, direct 3.3 V I²C interface with 4.7 kΩ, ±1% prototype pull-ups to `SYNTH_3V3`, TI regulator with always-on clock supply, shared clock/amplifier input selector, onboard BS170 amplifier, DC-blocked SMA output with external LPF, shield button/LED and LS7366R-S GPS calibration hardware with the onboard 90-series receiver and retained GPIO plan are selected. Resolve the choke sourcing conflict and decide button/LED behavior and amplifier power goals/current budget; verify GPS/counter and clock power sequencing, bus speeds and PPS/input conditioning before wiring the Pico. Verify I²C rise time at the selected speed and actual bus loading. Apply the reserved reference mapping when importing the amplifier and adding the counter, and resolve the synthesis and RF acceptance requirements for 2200 m through 2 m. Synchronize the PCB with the wired schematic, then place, route and rerun DRC.
+With RF disabled, Q61's drain current creates a DC voltage drop across L61's winding resistance. Measure this with the meter in **DC millivolts**, using its normal **V/Ω and COM sockets**:
 
-## Base interface corrections
+| Probe | Measurement point | Net |
+| --- | --- | --- |
+| Red | L61 pad 1 | `AMP_5V_SW` |
+| Black | L61 pad 2, or Q61 pin 1 | `AMP_DRAIN` |
 
-The project carries forward the base-interface conventions used in [WsprryPico GPIO Shield](../WsprryPico%20GPIO%20Shield/README.md):
+TP61 (+) and TP62 (−) are assigned to these same two nets for measuring the drop. Use L61's pads directly until TP61's connection is complete; see [validation status](VALIDATION.md#outstanding-findings). For gate voltage, measure Q61 pin 2 relative to Q61 pin 3/GND. RV61's wiper voltage is available at C65 pad 1 relative to C65 pad 2/GND.
 
-- U11 is the combined 40-pad electrical Pico interface; J11 and J12 are the two pinless socket purchasing descriptions. The annotation record and isolated PCB net names use the same references.
-- Header pads use physical pins 1–40 and match the symbol. The template already contains this correction.
-- U11 remains excluded from BOM and placement output. J11/J12 remain pinless schematic purchasing descriptions excluded from BOM, PCB and placement output. The selected sockets are fitted through U11's combined board footprint. All headers, the SMA and hand-wound inductors are excluded from assembly BOM and position files.
-- Two local socket models remain aligned to the header rows. Generic geometry does not select or qualify a supplier part.
-- The footprint, outline and antenna keepout retain the template geometry and locks.
-- Symbols, footprints and models use independent `wsprrypico-synth-shield` libraries and `${KIPRJMOD}` paths. Template metadata, editor state, backups and generated output were omitted.
+1. With power off, turn RV61 gently **clockwise to its grounded end** and attach the meter across L61.
+2. Connect a band-appropriate external LPF and 50 Ω dummy load. Disable the Si5351 RF output and hold **AMP_EN high** to power the amplifier during adjustment.
+3. Power up and record the initial millivolt reading near zero.
+4. Turn RV61 slowly **counterclockwise** toward a small, steady drop. **About 5 mV DC across L61 is the recommended conservative starting point**, above the initial meter offset.
+5. Recheck after warming. Record the drop and gate voltage; confirm RF output, harmonics and device temperature before selecting the final operating bias. Include 10 m, the highest intended band, in that verification.
+6. Return `AMP_EN` low after setup and keep RF disabled until transmission is intentionally enabled.
 
-The current GPIO shield's local Pico header geometry matches the template after normalizing model-directory names. Its amplifier circuit is selected for reuse, but its wiring and PCB layout have not been copied into the synth starter.
+TDK specifies **1.44 Ω typical / 1.872 Ω maximum DCR** for the [VLS6045EX-331M](https://product.tdk.com/en/search/inductor/inductor/smd/info?part_no=VLS6045EX-331M). Estimate idle current as `I (mA) = DC drop (mV) / winding resistance (Ω)`:
 
-## QLG3 module library part
-
-**Historical QLG3 variant, retired 2026-10-08:** J71 previously used `QLG3_GPS_UndersideHeader_SinglePost`. The upper post/screw, host hole and associated keepout/courtyard are removed; the lower post and socket remain. The original two-post assets remain available. [Variant details and current validation](qlg3-model/README.md#single-post-variant--selected-2026-10-07).
-
-A reusable [QLG3 symbol, host footprint and 3D assembly](qlg3-model/README.md) now uses Hans Summers' exact board/header/mounting coordinates, standard 2.54 mm connector solids, and photo-based body approximations. This historical assembly uses plain unkeyed 0.1-inch (2.54 mm) socket/header hardware. It remains available in the library but is no longer assigned in the schematic.
-
-## Mechanical interface
-
-**Primary side revised 2026-10-07:** the synth components belong on **F.Cu**, with the Pico and its two female socket rows on **B.Cu**. The existing starter board was flipped about its horizontal centerline as a complete assembly, including U11, board outline and antenna clearance; all 40 pad numbers and net associations are preserved. Keep U11 on B.Cu when updating the PCB from the schematic. The project-local footprint remains a standard front-side library definition; the PCB instance carries the back-side placement.
-
-| Item | Retained geometry |
+| DC drop across L61 | Current at typical 1.44 Ω DCR |
 | --- | --- |
-| Headers | Two 1×20 rows; 2.54 mm pitch; 17.78 mm row-center spacing |
-| Pads | 1.508 × 1.508 mm; 1.00 mm drill |
-| Board | 53.33 × 22.85 mm envelope; 1.6 mm thick; two copper layers |
-| Antenna opening | 14 mm wide × 9 mm deep, open to the right edge |
-| Keepout | Both copper layers; tracks, vias, pads, pours and footprints prohibited |
+| 5 mV | 3.5 mA |
+| 10 mV | 6.9 mA |
+| 14.4 mV | 10 mA |
 
-U11 and the nine board-level outline segments/arcs remain locked. Three Edge.Cuts segments in U11 form the notch. Preserve their joined endpoints when changing the outline.
+At the specified maximum DCR, 5 mV corresponds to about 2.7 mA. Actual resistance and temperature affect this estimate. **The 5 mV recommendation is an initial bench setting; the assembled shield's optimum is unmeasured.** Keep RF disabled throughout the millivolt measurement because the drain carries RF voltage during transmission.
+
+## Mechanical interface and assembly
+
+The synth components are on **F.Cu**; the Pico and two female socket rows are on **B.Cu**. The board has a **53.33 × 22.85 mm envelope**, 1.6 mm thickness and two copper layers. Its right-edge antenna opening is 14 × 9 mm, with a keepout on both copper layers. The two 1×20 header rows have 2.54 mm pitch and 17.78 mm row spacing; U11 owns their combined 40 electrical pads.
+
+The current PCB has **46 footprints, including 40 SMT assembly positions**. Fit the two Pico sockets, Q61, J61 and J71 by hand. U11, Q61, J61, J71 and the copper test points are excluded from assembly BOM/position output; J11/J12 are schematic-only purchasing descriptions. L61 and L71 are included in SMT assembly. Generate manufacturing BOM and position files from the saved design and verify supplier matching and orientation before ordering.
+
+The front-layer `AMP_DRAIN` ground-pour rule uses **0.15 mm clearance**, with **0.85 mm traces on the main RF route**, as the nominal 50 Ω CPWG starting geometry. Actual impedance depends on the manufactured stackup, mask and pad transitions. Preserve the antenna keepout, ground returns and joined outline endpoints when editing the layout.
 
 ## Files and libraries
 
-- [Project](WsprryPico%20Synth%20Shield.kicad_pro), [schematic](WsprryPico%20Synth%20Shield.kicad_sch), and [PCB](WsprryPico%20Synth%20Shield.kicad_pcb).
-- [Symbols](wsprrypico-synth-shield.kicad_sym), [symbol provenance and placement](SYMBOL-SOURCES.md), [header footprint](wsprrypico-synth-shield.pretty/Raspberry_Pi_Pico_2W_Header.kicad_mod), and [component footprint provenance](LIBRARY-SOURCES.md).
-- [Socket models and provenance](wsprrypico-synth-shield.3dshapes/README.md), [symbol table](sym-lib-table), and [footprint table](fp-lib-table).
-- [Circuit notes](TCXO-SI5351A-DESIGN.md), [proposed reference drawing](TCXO-SI5351A-CIRCUIT.svg), and [validation](VALIDATION.md).
-- [License](LICENSE.md) and [KiCad library terms](KICAD-LIBRARY-LICENSE.md).
+Open [WsprryPico Synth Shield.kicad_pro](WsprryPico%20Synth%20Shield.kicad_pro) in KiCad 10. The [schematic](WsprryPico%20Synth%20Shield.kicad_sch) and [PCB](WsprryPico%20Synth%20Shield.kicad_pcb) are the design authority.
 
-## Validation status
+- [Parts specifications](PARTS.md) and [engineering inventory](PARTS.csv).
+- [LCSC parts collection workbook](LCSC-parts-collection.xlsx): all 48 references, with the saved selections and editable supplier fields. U11 and TP61/TP62 are PCB features; J11/J12 are the two purchased socket rows. Blank datasheet cells need the actual PDF collected.
+- [Circuit details](TCXO-SI5351A-DESIGN.md) and [current validation](VALIDATION.md).
+- [Symbol provenance](SYMBOL-SOURCES.md), [footprint provenance](LIBRARY-SOURCES.md) and [3D-model inventory](wsprrypico-synth-shield.3dshapes/README.md).
+- [Symbol table](sym-lib-table), [footprint table](fp-lib-table) and [custom clearance rules](WsprryPico%20Synth%20Shield.kicad_dru).
+- [Repository license](LICENSE.md) and [KiCad library terms](KICAD-LIBRARY-LICENSE.md).
 
-The schematic has 59 non-power component symbols. At the 2026-10-08 commit checkpoint, KiCad 10.0.6 ERC reports **0 errors / 0 warnings**. The latest saved PCB contains only U11, the board outline and its clearance features: **0 physical DRC violations, 0 unconnected items and 56 missing-footprint parity findings**. The full circuit must be synchronized, placed and routed before fabrication. See [VALIDATION.md](VALIDATION.md) for current checks and historical checkpoints.
-
-Current onboard receiver: ATGM336H-5N31 in the 90-series, with local symbol, footprint and approximate body model. QLG3 library assets remain available for historical designs. PCB synchronization is pending.
+The local library contains the **20 used symbol definitions and all 19 assigned footprint types**, plus nine assigned local 3D models. Symbols, footprints and local models use `wsprrypico-synth-shield` and `${KIPRJMOD}` paths. Standard 3D models also require the installed KiCad model library. SW11, RV61, Y41 and L61 have local illustrative previews; physical-fit decisions use manufacturer drawings and actual parts. The circuit follows the QRP Labs TCXO/Si5351A and single-BS170 architecture, with sources and attribution in the circuit and library documents.

@@ -1,27 +1,23 @@
-# Pico shield socket 3D model
+# Synth shield 3D models
 
-`PinSocket_1x20_P2.54mm_Vertical.step` is the standard KiCad 1×20, 2.54 mm vertical female pin-socket model, copied unchanged from the KiCad 10.0.6 macOS installation's `Connector_PinSocket_2.54mm.3dshapes` library. Two instances in the local `Raspberry_Pi_Pico_2W_Header` footprint align with the electrical pad rows. The model is referenced through `${KIPRJMOD}` so this independent shield remain self-contained.
+Local model references use `${KIPRJMOD}/wsprrypico-synth-shield.3dshapes/`. Standard footprint models also use the installed `${KICAD10_3DMODEL_DIR}` library. Manufacturer drawings and actual parts govern physical fit; illustrative models show envelopes and placement.
 
-These are generic preview models. They do not select a purchasable part or establish socket lead fit, mating height, or clearance for an actual assembly. U11 and the schematic socket descriptions remain excluded from BOM and placement output by default.
+## Assigned local models
 
-Copyright (C) 2024, KiCAD, as recorded in the STEP file's preserved license notice. The model is provided under [CC BY-SA 4.0 with the KiCad library exception](https://www.kicad.org/libraries/license/). The repository MIT license does not replace these third-party terms. The upstream asset is [PinSocket_1x20_P2.54mm_Vertical.step](https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x20_P2.54mm_Vertical.step).
+| Component | Asset | Basis and limits |
+| --- | --- | --- |
+| U11 socket rows | [PinSocket_1x20_P2.54mm_Vertical.step](PinSocket_1x20_P2.54mm_Vertical.step) | Standard KiCad 10.0.6 socket solid; two aligned instances; generic geometry |
+| J61 SMA | [SMA_Adafruit_1865_Preview.wrl](SMA_Adafruit_1865_Preview.wrl) | Original MIT preview via the GPIO shield; simplified body, barrel and fingers |
+| J71 U.FL | [U.FL_Hirose_U.FL-R-SMT-1_Vertical.step](U.FL_Hirose_U.FL-R-SMT-1_Vertical.step) | Standard KiCad solid; embedded license retained |
+| L61 drain choke | [VLS6045EX_6x6x4.5_Preview.wrl](VLS6045EX_6x6x4.5_Preview.wrl) | Original MIT 6 × 6 mm body, 4.5 mm maximum height; detailed terminals/winding omitted |
+| L71 antenna choke | [L_0603_1608Metric.step](L_0603_1608Metric.step) | Standard KiCad generic 0603 inductor solid |
+| U71 GNSS | [Zhongke_ATGM336H-5N31.wrl](Zhongke_ATGM336H-5N31.wrl) | Original MIT 9.7 × 10.1 × 2.4 mm approximate envelope |
+| SW11 pushbutton | [XUNPU_TS1088R_3.9x3x2_Preview.wrl](XUNPU_TS1088R_3.9x3x2_Preview.wrl) | Original MIT 3.90 × 3.00 × 2.00 mm preview; cover, actuator and tabs simplified |
+| RV61 trimmer | [TC33X_Preview.wrl](TC33X_Preview.wrl) | Original MIT preview via the GPIO shield; illustrative body/height rather than exact TC33X-2 CAD |
+| Y41 TCXO | [KDS_DSB321SDN_3.2x2.5x0.9_Preview.wrl](KDS_DSB321SDN_3.2x2.5x0.9_Preview.wrl) | Original MIT 3.20 × 2.50 × 0.90 mm family envelope; simplified lid/contacts and pin-1 marker |
 
-## Component selection assets
+The [footprint/model source document](../LIBRARY-SOURCES.md) links manufacturer drawings and records detailed geometry. The socket STEP retains its KiCad copyright notice, including Copyright (C) 2024, KiCAD. Imported KiCad solids follow [CC BY-SA 4.0 with the KiCad library exception](https://www.kicad.org/libraries/license/); the repository MIT license does not replace those terms.
 
-`FT37-43_25T_Upright.wrl` is an unchanged copy of the GPIO shield's original MIT-licensed illustrative wound-choke model. The copied footprint's model path uses this project's `${KIPRJMOD}` folder. The model is provisional while the drain-choke sourcing choice remains open; it is not a measured or supplier-certified solid. Its generator is [the GPIO project's original script](../../WsprryPico%20GPIO%20Shield/wsprrypico-gpio-shield.3dshapes/generate_ft37_43.py).
+## Rebuilding previews
 
-Selected standard footprints reference installed `${KICAD10_3DMODEL_DIR}` assets where available. The Bourns TC33X potentiometer and BAT WIRELESS SMA footprints retain their stock STEP references, but those two files are missing from the installed KiCad 10.0.6 model collection. The KDS oscillator, XUNPU pushbutton and copper power selector have no assigned 3D solid. New footprint provenance and these model gaps are recorded in [LIBRARY-SOURCES.md](../LIBRARY-SOURCES.md). The selected socket ordering code is recorded in [PARTS.md](../PARTS.md); the retained socket STEP remains a generic preview.
-
-## QLG3 GPS assembly
-
-`QLG3_GPS_UndersideHeader.step` and `.wrl` depict the QLG3 above its host socket, with header underneath, E108 module and SMA on top, and two mounting spacers. The board is turned over relative to Hans's drawing and the XY coordinates are transformed consistently. Exact XY comes from Hans Summers; standard 1×5 header/socket STEP inputs are copied locally from KiCad 10.0.6. Other dimensions are photo-based approximations. The combined models retain the KiCad library terms for their incorporated connector geometry. See [dimensions, assumptions, generator and validation](../qlg3-model/README.md).
-
-## J61 edge-launch SMA preview
-
-`SMA_Adafruit_1865_Preview.wrl` is copied unchanged from the GPIO shield and is original repository-MIT illustrative geometry. J61 now uses this local model with `SMA_Adafruit_1865_EdgeMount`. Its 6.5 mm flange, 6.1 mm barrel diameter, 9.5 mm forward reach and 3.9 mm rear fingers depict the existing footprint; simplified heights, threads and details are not supplier CAD or physical fit qualification. The barrel points along footprint +Y. The unused BAT Wireless library asset still has its historical missing stock model.
-
-## Onboard 90-series GPS — 2026-10-08
-
-`Zhongke_ATGM336H-5N31.wrl` is original repository-MIT geometry: a simple 9.7 × 10.1 × 2.4 mm body envelope based on the manufacturer's module drawing. It does not depict internal circuitry or certify component height/assembly fit. The source drawing is linked in [LIBRARY-SOURCES.md](../LIBRARY-SOURCES.md).
-
-`L_0603_1608Metric.step` was copied unchanged from the installed KiCad 10.0.6 `Inductor_SMD.3dshapes` library, retaining its embedded copyright/license notice and the [KiCad library terms](../KICAD-LIBRARY-LICENSE.md). L91 references this local generic envelope through `${KIPRJMOD}`; it is not an exact muRata supplier solid.
+Run `python3 generate_switch_tcxo_previews.py` from this folder to regenerate the switch and oscillator previews. [The generator](generate_switch_tcxo_previews.py) uses KiCad's 0.1-inch VRML units, centered XY origins and mounting surface Z = 0. The reused trimmer/SMA geometry is available in the [GPIO generator](../../WsprryPico%20GPIO%20Shield/wsprrypico-gpio-shield.3dshapes/generate_rv31_j51.py).
