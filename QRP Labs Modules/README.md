@@ -6,9 +6,9 @@ This is a schematic-only documentation project. It has no PCB, footprint assignm
 
 ## Relation to the Pico synth shield
 
-The companion [WsprryPico Synth Shield](../WsprryPico%20Synth%20Shield/README.md) selects KDS/Daishinku DSB321SDN **1XTW25000MAA, 25 MHz, C253672**, and **Si5351A** for its proposed circuit. This project records the photographed Rev6 **MS5351M** hardware. Its functional TCXO symbol describes the photographed module without assigning an unverified factory package identity; the selected KDS part itself has documented pins 1/2 GND, 3 OUT and 4 VCC. Its specification is consistent with the observed marking.
+The companion [WsprryPico Synth Shield](../WsprryPico%20Synth%20Shield/README.md) uses KDS/Daishinku DSB321SDN **1XTW25000MAA, 25 MHz, C253672**, and **Si5351A** in its implemented circuit. This project records the photographed Rev6 **MS5351M** hardware. Its functional TCXO symbol describes the photographed module without assigning an unverified factory package identity; the selected KDS part itself has documented pins 1/2 GND, 3 OUT and 4 VCC. Its specification is consistent with the observed marking.
 
-See the [chat reconciliation and remaining decisions](../WsprryPico%20Synth%20Shield/RECONCILIATION.md). The shield's proposed 10 nF supply bypass and 1 nF coupling values come from the KDS measurement circuit; they do not resolve this model's unknown C101/C102 values. The circuit sources and PDFs remain unchanged.
+See the shield's [reference circuit details](../WsprryPico%20Synth%20Shield/TCXO-SI5351A-DESIGN.md#tcxo-and-reference-input). Its 10 nF supply bypass and 1 nF coupling values follow the KDS measurement circuit; they do not resolve this model's unknown C101/C102 values.
 
 ## Files
 
