@@ -1,37 +1,105 @@
-PICO 2W WATTMETER SHIELD
+PICO 2W WATTMETER SHIELD — CURRENT REQUIREMENTS, 2026-10-13
 Two copper layers; nominal board thickness 1.6 mm.
+Layout is placed and routed; ANALOG_3V3 connects the LDO, detector and ADC.
+Experimental system: assembled RF, noise, fit and solder-process performance
+are unqualified. The repository README and MIT warranty notice apply.
 
-U1 VIA-IN-PAD - REQUIRED SELECTIVE PROCESS
-Fill with nonconductive epoxy, planarize, and copper-cap ONLY the five
-0.30 mm drilled vias inside U1 exposed GND pad 17 (IPC-4761 Type VII).
-Provide a flat solderable B-side surface. Cover the F-side pads of these five vias
-with soldermask; keep the B-side paddle solderable. Retain epoxy filling and
-copper capping on all five. All other vias retain their specified treatment. Do NOT fill all holes of the same diameter.
-See U1-VIA-TREATMENT.svg for locations; coordinates are in board mm.
+SELECTIVE VIA-IN-PAD PROCESS - SEVEN THROUGH VIAS
+Fill with nonconductive epoxy, planarize, and copper-cap ONLY the seven
+selected 0.25 mm drilled through vias listed below (IPC-4761 Type VII).
+Copper diameter is 0.60 mm. All seven connect F.Cu to B.Cu; they are
+filled/capped through vias. Do not substitute blind, buried, or microvias.
+
+PCB editor coordinates, in millimetres:
+ID  Location                         Net               X         Y
+1   U40 exposed pad 17, center        GND             138.300    90.530
+2   U40 exposed pad 17, left          GND             137.700    90.530
+3   U40 exposed pad 17, right         GND             138.900    90.530
+4   U40 exposed pad 17, upper         GND             138.300    89.930
+5   U40 exposed pad 17, lower         GND             138.300    91.130
+6   R40 pad 1, centered               Net-(U40-DECL)  135.679    91.280
+7   C48 pad 1, centered               Net-(U40-DECL)  138.805    94.360
+
+Provide a flat solderable F-side surface at all seven locations. Cover their
+B-side pads with soldermask; keep the F-side component pads solderable.
+Retain epoxy filling and copper capping on all seven. All other vias retain
+their specified treatment. The 0.25 mm via-hole size is unique to these seven:
+specify epoxy filling/capping for all seven 0.25 mm vias, and cross-check the
+coordinate drawing. Leave ordinary 0.20 mm, 0.30 mm, and 0.40 mm vias unfilled.
+Reserve the 0.25 mm drill for this selected process.
+Ordinary vias default to tenting on both sides without filling/capping.
+The ordinary 0.60/0.30 mm ground vias at (135.680, 94.690) mm beside C45
+and (136.590, 94.670) mm beside C47 have 0.15 mm nominal drill-to-opening
+clearance. C61's ground via at (138.280, 87.070) mm has the same dimensions
+and nominal clearance. Drill and mask registration tolerances are separate
+from these nominal dimensions. Their treatment is unfilled and tented on
+both sides.
+Do not substitute soldermask-ink plugging for epoxy filling/capping.
+Leave component through-holes open.
+See U1-VIA-TREATMENT.svg for U40 and both DECL vias.
+The drawing applies to its identified source PCB hash. Verify that the
+manufacturing files have the same geometry and via process selections.
 Confirm that the selected two-layer process supports this treatment.
-Request production-file confirmation before manufacture.
+Fabricator-confirmed process selections and production-file review are required.
+
+VIA SETTINGS
+Available copper diameter / drill: 0.50/0.20, 0.60/0.25, 0.60/0.30, 0.80/0.40 mm.
+Selected U40/DECL vias: 0.60/0.25 mm (0.175 mm nominal annular ring).
+Default netclass remains 0.60/0.30 mm. Use through vias only.
+A size preset does not automatically select filling/capping or mask treatment.
+Micro, blind, and buried vias are disallowed on this two-layer board.
+Board minima: 0.50 mm via diameter, 0.20 mm drill, 0.10 mm annular ring,
+0.25 mm hole-to-hole clearance. U40's minimum drill-edge gap is 0.35 mm.
+Keep the selected vias aligned with U40 pad 17, R40 pad 1, and C48 pad 1
+within the detector assembly.
 
 STENCIL
-Preserve the four 0.65 x 0.65 mm U1 exposed-pad paste windows in B.Paste.
+Preserve the four 0.65 x 0.65 mm U40 exposed-pad paste windows in F.Paste.
 Do not substitute a solid/full-pad aperture. Confirm stencil thickness,
 paste release and reflow process with the assembler.
 
 ASSEMBLY
-Machine populate C1-C9, R1-R8, U1 and U2 only: 19 back-side (B.Cu) components.
-J1 SMA and J2/J3 female sockets are fitted by hand; U3 represents their
-combined Pico interface footprint. Omit J1/J2/J3/U3 from supplier assembly BOM
-and omit J1/U3 from machine placement. Retain all PCB pads and holes.
-Use the LCSC Part # column to identify parts. Verify U1/U2 pin-1 orientation in
-the supplier placement preview against ASSEMBLY-BOTTOM.svg.
+Current source marks 34 front-side (F.Cu) components for factory assembly:
+C20-C21, C30-C34, C40-C50, C60-C61; R30-R34, R40, R50, R60-R63;
+U20, U40, U60. This is 20 capacitors, 11 resistors, and 3 ICs.
+BOM and placement exports must contain exactly these 34 factory references.
+J30 SMA and J10/J11 female sockets are fitted by hand; U10 represents their
+combined Pico interface on B.Cu. Omit these manual parts and the front logo
+from factory assembly outputs. Retain all PCB pads and holes.
+Use the LCSC Part # field. Check U20/U40/U60 pin-1 orientation in the supplier
+preview against the front-side layout.
+ASSEMBLY-FRONT.svg shows all 34 factory components and IC pad-1 markers.
 
 MECHANICAL
 Keep the antenna notch and copper keepout. Keep panel tabs/tooling away
-from the SMA seating edge and antenna opening. Supplier may add panel
-fiducials/tooling; the bare-board layout has no dedicated fiducials.
-SMA: Adafruit 1865 for nominal 1.6 mm board; no unverified substitution.
+from the SMA seating edge and antenna opening. The bare-board layout has
+no dedicated fiducials; panel fiducials/tooling are supplier assembly requirements. The PCB copper-finish field is None;
+specify a compatible surface finish in the order.
+SMA: Adafruit 1865 for nominal 1.6 mm board.
 Hand-fit sockets: 2.54 mm pitch, 17.78 mm row spacing, 1.00 mm holes.
 Select mating height and lead dimensions for the actual Pico/header stack.
 
+POWER
+U20 requires VBUS from Pico pin 40 for the analog 3.3 V rail.
+Powering the Pico solely through VSYS leaves U40/U60 and the analog rail unpowered.
+
 STATUS
-Development design; physical fit, RF calibration and solder process are
-not yet qualified. No supplier order or process approval has been obtained.
+Current source has 37 footprints and 34 automatic SMT placements, all F.Cu.
+There are 24 through vias: seven filled/capped
+0.60/0.25 mm, five ordinary 0.50/0.20 mm, ten ordinary 0.60/0.30 mm,
+and two ordinary 0.80/0.40 mm vias.
+Assembled input match, RF calibration, noise rejection, mechanical fit and
+solder-process performance are unqualified. Selective filling/capping for
+this exact two-layer order has no supplier process confirmation.
+Fabrication/assembly outputs must identify and match the exact source PCB.
+PCB SHA-256: b04fe3e326e8bd415994e9a7829a48be45ed7375f030ad9729c0ead7d8057e8d
+
+INPUT TERMINATION AND PULL-UP SUPPLY FILTER
+R30-R34 specify Viking ARG02BTC4120, LCSC C2683017: 412 ohms, 0402,
+thin film, +/-0.1%, +/-25 ppm/deg C, 62.5 mW. Five in parallel give
+82.4 ohms. The complete assembled input match is unmeasured.
+R63 specifies YAGEO RC0402FR-0747RL, LCSC C137973: 47 ohms, 0402.
+C61 specifies YAGEO CC0603KRX7R8BB105, LCSC C106858: 1 uF, X7R,
+25 V, +/-10%, 0603. Both are placed and routed on F.Cu. C61 bypasses
+the common supply ends of R60/R61 after R63. U40/U60 receive ANALOG_3V3
+directly. Schematic and PCB component identifiers and connectivity match.

@@ -1,0 +1,22 @@
+(version 1)
+
+# Allow the intended CPWG gap only between the GNSS antenna net and ground
+# on the front copper layer. All other net pairs retain their existing rules.
+(rule "GPS antenna CPWG clearance"
+    (layer "F.Cu")
+    (condition "(A.NetName == '/GPS_ANT' && B.NetName == 'GND') || (A.NetName == 'GND' && B.NetName == '/GPS_ANT')")
+    (constraint clearance (min 0.10mm))
+)
+
+# Set the front ground-pour gap around the amplifier drain RF path.
+# Other ground objects and net pairs retain their existing clearances.
+(rule "AMP_DRAIN CPWG pour clearance"
+    (layer "F.Cu")
+    (condition "(A.NetName == '/AMP_DRAIN' && B.NetName == 'GND' && B.Type == 'Zone') || (A.NetName == 'GND' && A.Type == 'Zone' && B.NetName == '/AMP_DRAIN')")
+    (constraint clearance (min 0.15mm))
+)
+
+# This 1.6 mm, two-copper-layer board uses mechanically drilled through vias.
+(rule "Two-layer through vias only"
+    (constraint disallow micro_via blind_via buried_via)
+)

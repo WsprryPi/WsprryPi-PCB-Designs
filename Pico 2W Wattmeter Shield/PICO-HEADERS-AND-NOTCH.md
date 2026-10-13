@@ -14,13 +14,15 @@ The `Raspberry_Pi_Pico_2W_Header` footprint represents both rows of Pico connect
 | Ground pads | 3, 8, 13, 18, 23, 28, 33, 38 |
 | Ground thermal reliefs | 0.20 mm gap, 0.30 mm spoke width |
 
-J2 and J3 are pinless, schematic-only procurement symbols for two female 1×20 sockets. U3 represents their physical PCB interface. The sockets and Pico module are fitted by hand and excluded from factory assembly. Select socket lead dimensions, body width, and mating height for the actual Pico stack; no socket manufacturer or part number is specified.
+J10 and J11 are pinless, schematic-only procurement symbols for two female 1×20 sockets. U10 represents their physical PCB interface. The sockets and Pico module are fitted by hand and excluded from factory assembly. Select socket lead dimensions, body width, and mating height for the actual Pico stack; no socket manufacturer or part number is specified.
+
+U10 and its containing group are locked at the template position on B.Cu. In **Update PCB from Schematic**, leave **Re-link footprints to schematic symbols based on their reference designators** and **Override locks** unchecked. Matching by symbol ID preserves this placement when references are renumbered. See the [interface placement requirements](README.md#pico-interface-placement).
 
 ## Antenna notch
 
 The header footprint contains three `Edge.Cuts` segments defining a **14 mm-wide × 9 mm-deep open notch**. On this board, the opening spans x = 164.46–173.46 mm and y = 82.86–96.86 mm. A matching `Pico antenna keepout` on both copper layers prohibits tracks, vias, pads, copper fills, and footprints.
 
-U3 is now placed on B.Cu after the complete board flip. The following coordinates describe the reusable front-side library definition, before the placement transform. The footprint's local notch endpoints are (−7.89, 26.65) and (6.11, 26.65) mm, with the inner edge at y = 17.65 mm. When reusing the footprint, join both endpoints to the receiving board's outer outline. Do not close the mouth with a fourth edge. Moving the footprint requires updating the adjoining outline segments.
+U10 is placed on B.Cu to match the corrected shield template. The following coordinates describe the reusable front-side library definition, before the placement transform. The footprint's local notch endpoints are (−7.89, 26.65) and (6.11, 26.65) mm, with the inner edge at y = 17.65 mm. When reusing the footprint, join both endpoints to the receiving board's outer outline. Do not close the mouth with a fourth edge. Moving the footprint requires updating the adjoining outline segments.
 
 Confirm the fabricator's internal corner radius and the assembled Pico clearance. The antenna clearance reference is the [Pico 2 W datasheet](https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf).
 

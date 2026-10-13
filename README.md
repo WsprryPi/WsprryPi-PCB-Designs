@@ -4,6 +4,12 @@ KiCad schematics, PCB layouts, local libraries, and engineering documentation fo
 
 See each project's order status, assembly requirements, and validation limits before fabrication. KiCad source files are authoritative; included PDFs are reference exports and may not match the current sources.
 
+## Experimental use and warranty
+
+All designs are provided **as is, without warranty**, as stipulated by the [MIT license](LICENSE.md) for repository-owned work. These are experimental hardware systems. They should not be used for production work unless the operator understands the design's limitations, assembly and power requirements, calibration needs, and the validation required for the actual system and operating conditions.
+
+The operator is responsible for determining suitability and verifying the assembled hardware. A clean CAD check or a fabrication-ready layout does not establish electrical, RF, thermal, mechanical, or system performance. Third-party assets retain their documented licenses and notices.
+
 ## Projects
 
 | Project | Purpose | Status / reference export |
@@ -37,7 +43,7 @@ The LPF includes local copies of its symbols and footprints, plus available STEP
 - [LPF library contents and limits](WsprryPi%20LPF/libraries/README.md)
 - [BS170 amplifier library sources and limits](WsprryPi%20Zero%20GPIO%20BS170/LIBRARY-SOURCES.md)
 
-Project documentation records model gaps, assembly exclusions, and historical ERC/DRC findings. Order readiness does not establish measured electrical, thermal, or RF performance.
+Project documentation records model gaps, assembly exclusions, and the applicability of ERC/DRC findings to the identified source revision. Order readiness does not establish measured electrical, thermal, or RF performance.
 
 ## Design proposals
 

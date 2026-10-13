@@ -207,5 +207,16 @@
 		(layers "B.Cu" "B.Mask")
 		(uuid "093d86bc-5f2d-42e8-9b18-85092c4058b1")
 	)
+	(model "${KIPRJMOD}/pico-wattmeter.3dshapes/SMA_Adafruit_1865_Preview.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 	(embedded_fonts no)
 )
