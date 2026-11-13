@@ -24,3 +24,7 @@ The boxed body and contact graphics of project-local `LPF_IN` and `LPF_OUT` are 
 This adapted artwork retains the **CC-BY-SA-4.0 license with the KiCad libraries exception**, linked above. Source: [KiCad connector symbol library](https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Connector_Generic.kicad_sym). The repository MIT license does not replace those terms.
 
 Other symbols, footprints, nominal VRML previews, and original generator code newly drawn for Relay-Switched LPF remain original repository work under [MIT](../LICENSE.md), except for the imported STEP assets and adapted connector artwork listed above. No manufacturer-provided CAD file or model of another relay was relabeled as a TX2.
+
+## Two-pin antenna connector symbol
+
+Project-local `AntennaConnector2` (J21–J25) and `OutputConnector2` (J26) adapt the boxed body and two contact marks of KiCad 10.0.6 `Connector_Generic:Conn_01x02` from the same KiCad connector symbol library linked above. The symbol is rotated and resized to retain the existing pin endpoints and spacing of each connector, with the compact sheet's established line and text sizing. The adapted artwork retains CC-BY-SA-4.0 with the KiCad libraries exception. Pin numbers, electrical types, instance UUIDs, and PCB footprint assignments are unchanged.

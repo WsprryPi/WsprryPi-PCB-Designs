@@ -6,6 +6,14 @@ Updated after the output-area PCB repair and the earlier schematic presentation 
 
 Latest update: four **R3 mm corner fillets**, a complete local-footprint audit, and **29 local 3D model assignments** have been applied. The 80 × 37 mm outside dimensions, mounting centers, component positions, pad geometry/UUIDs, and all tracks/vias are preserved. Letter sheet settings and native shared `DOC_*` title-block variables remain in place.
 
+## J21–J26 connector appearance — 2026-11-13
+
+All six antenna/output connectors J21–J26 now use the standard KiCad `Conn_01x02` boxed connector appearance. Project-local `AntennaConnector2` serves J21–J25; `OutputConnector2` serves J26 with its existing orientation and compact pin spacing. The library, embedded definitions, and redraw helper agree. No full redraw was run.
+
+A structured comparison against commit `f58de32` confirms that exactly J21–J26 change library IDs. All instance UUIDs, properties, pin UUIDs, footprint assignments, pin endpoints/electrical types, wires, labels, and other placed symbols remain unchanged. The PCB is byte-identical to that commit.
+
+KiCad **10.0.6** ERC and DRC with all severities and schematic parity report **zero findings**, exit **0**. The independent 140-pin/33-net membership and switching-path audit passes. The updated schematic PDF was rendered and visually inspected. Local Markdown links and `git diff --check` pass. Reports: `generated/erc-j21-j26.rpt`, `generated/drc-j21-j26.json`; preview: `generated/schematic-j21-j26.png`. Hardware and RF qualification remain open.
+
 ## Output-return layer repair — 2026-11-13
 
 The two remaining `/GND_OUT` connections are repaired with two 0.60/0.30 mm through vias and three 0.20 mm traces at X2. The upper via is at board coordinate (74.98, 9) mm, connecting the existing bottom return trace to the front upper ground land. The lower via is at (75.5, 14) mm, with front/back diagonal traces to (76.5, 15) mm, joining the lower lands and existing return routing. Both vias are inland of the SMA lands. `/GND_OUT` remains separate from `/GND`.
@@ -106,9 +114,9 @@ SHA-256 hashes of the checked source revision:
 
 | File | SHA-256 |
 | --- | --- |
-| `Relay-Switched LPF.kicad_sch` | `2fb54b9f01163d8a6ddd964771f4dd89ea4b45fa70407a3c9c68533be6cf9ba7` |
+| `Relay-Switched LPF.kicad_sch` | `9238053d16b485b5ec8f47a1aa718ee4762c44e9638702adfac3567051f46a0a` |
 | `Relay-Switched LPF.kicad_pcb` | `eadd6eb0cd03db7cf88f8804246575f2b9ed8d73e41811dd4f2682f3d52aba71` |
-| `relay-switched-lpf.kicad_sym` | `170c7773d9bbfb8b465712cdbfc06cc18ae75e2f649661f13ef6c6368b780927` |
+| `relay-switched-lpf.kicad_sym` | `712572555e686feca2ee494e52b479df59edf660b51607cf1ee67bc95cd056bb` |
 
 Recheck after any source edit. Final pre-commit reports `erc-precommit.rpt`, `drc-precommit.json`, `connectivity.xml`, earlier reports, and visual exports reside in ignored `generated/`. The final KiCad 10.0.6 ERC and DRC/parity checks passed with zero findings; the independent connectivity audit also passed. The maintained schematic PDF is an intentional reference export; the native schematic is authoritative.
 

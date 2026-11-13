@@ -13,6 +13,7 @@ Independent KiCad reconstruction of the **QRP Labs Ultimate relay-switched LPF c
 - [Project-local 3D models](relay-switched-lpf.3dshapes/README.md) for the carrier components, optional SMA connectors, and default fitted wire links; the four mounting-hole footprints are also local.
 - [Reconstruction generator](design/generate.py), [routing script](design/route.py), and [connectivity audit](design/audit.py). These are reproducibility tools; the saved native CAD files remain authoritative after hand edits.
 - Ten four-pin LPF connectors use the standard KiCad boxed `Conn_01x04` appearance, adapted in the project-local `LPF_IN`/`LPF_OUT` symbols; see [attribution and license](KICAD-LIBRARY-LICENSE.md#four-pin-connector-symbols).
+- J21–J26 use the matching two-pin boxed connector appearance, adapted locally from KiCad `Conn_01x02`; see [attribution](KICAD-LIBRARY-LICENSE.md#two-pin-antenna-connector-symbol).
 - A visibly wired schematic arranged like the published diagram: relay coils and flyback diodes above the shared RF input bus, five filter columns, and a shared output bus below. Relay units A/B/C are the coil/input pole/output pole of the same physical relay. [Redraw tool](design/redraw_schematic.py) updates the schematic and its local symbol graphics without writing the PCB.
 
 The plug-in filter circuits, band-dependent inductors/capacitors, Ultimate3S transmitter, sixth relay/filter on that transmitter, GPIO drivers, enclosure, and spacers are external. No arbitrary filter bands or component values have been selected.

@@ -399,4 +399,52 @@
         (at 2.54 0.0 270)
         (length 0.0)
         (name "~" (effects (font (size 0.7 0.7))))
-        (number "3" (effects (font (size 0.7 0.7))))))))
+        (number "3" (effects (font (size 0.7 0.7)))))))
+  (symbol "AntennaConnector2"
+  (pin_names (offset 0.25) (hide yes))
+  (exclude_from_sim yes)
+  (in_bom yes)
+  (on_board yes)
+  (property "Reference" "J" (at 0.0 5.08 0) (effects (font (size 0.9 0.9))))
+  (property "Value" "AntennaConnector2" (at 0.0 6.35 0) (effects (font (size 0.9 0.9))))
+  (property "Footprint" "" (at 0.0 0.0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+  (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+  (symbol "AntennaConnector2_1_1"
+    (rectangle (start -0.635 -1.27) (end 4.445 -2.54) (stroke (width 0.127) (type default)) (fill (type background)))
+    (rectangle (start -0.0635 -1.27) (end 0.0635 -1.905) (stroke (width 0.0762) (type default)) (fill (type none)))
+    (rectangle (start 3.7465 -1.27) (end 3.8735 -1.905) (stroke (width 0.0762) (type default)) (fill (type none)))
+    (pin passive line
+      (at 0.0 0.0 270)
+      (length 1.27)
+      (name "~" (effects (font (size 0.7 0.7))))
+      (number "1" (effects (font (size 0.7 0.7)))))
+    (pin passive line
+      (at 3.81 0.0 270)
+      (length 1.27)
+      (name "~" (effects (font (size 0.7 0.7))))
+      (number "2" (effects (font (size 0.7 0.7)))))))
+
+  (symbol "OutputConnector2"
+  (pin_names (offset 0.25) (hide yes))
+  (exclude_from_sim yes)
+  (in_bom yes)
+  (on_board yes)
+  (property "Reference" "J" (at 0.0 5.08 0) (effects (font (size 0.9 0.9))))
+  (property "Value" "OutputConnector2" (at 0.0 6.35 0) (effects (font (size 0.9 0.9))))
+  (property "Footprint" "" (at 0.0 0.0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+  (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+  (symbol "OutputConnector2_1_1"
+    (rectangle (start -1.905 1.27) (end -0.635 -1.27) (stroke (width 0.127) (type default)) (fill (type background)))
+    (rectangle (start -1.905 0.6985) (end -1.27 0.5715) (stroke (width 0.0762) (type default)) (fill (type none)))
+    (rectangle (start -1.905 -0.5715) (end -1.27 -0.6985) (stroke (width 0.0762) (type default)) (fill (type none)))
+    (pin passive line
+      (at -3.81 0.635 0)
+      (length 1.905)
+      (name "~" (effects (font (size 0.7 0.7))))
+      (number "1" (effects (font (size 0.7 0.7)))))
+    (pin passive line
+      (at -3.81 -0.635 0)
+      (length 1.905)
+      (name "~" (effects (font (size 0.7 0.7))))
+      (number "2" (effects (font (size 0.7 0.7)))))))
+)

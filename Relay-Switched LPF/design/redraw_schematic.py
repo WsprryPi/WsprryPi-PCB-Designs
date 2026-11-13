@@ -68,7 +68,7 @@ for instance in kids(old,'symbol'):
     if ref not in original or child(instance,'unit')[1]=='1': original[ref]=instance
 assert len(original)==38
 library=parse((ROOT/(LIB+'.kicad_sym')).read_text())
-library[:]=[v for v in library if not (isinstance(v,list) and v[0]=='symbol' and v[1] in ['TX2_5V','LPF_IN','LPF_OUT','Selector3','Link2','Terminal2','InputSelector3','Port_2','Port_3','Port_4','Port_10','1N4148'])]
+library[:]=[v for v in library if not (isinstance(v,list) and v[0]=='symbol' and v[1] in ['TX2_5V','LPF_IN','LPF_OUT','Selector3','Link2','Terminal2','InputSelector3','Port_2','Port_3','Port_4','Port_10','1N4148','AntennaConnector2','OutputConnector2'])]
 # Canonical unscaled definitions make repeated Letter redraws idempotent.
 for n in [2,3,4,10]:
     ys=[(n-1)*1.27-i*2.54 for i in range(n)]
@@ -106,6 +106,24 @@ library.append(lpf_connector('LPF_OUT', output=True))
 library.append(symbol('Selector3','W',[(''.join(circle(0,-i*5.08) for i in range(3)),''.join(pin(i+1,0,-i*5.08,0,0) for i in range(3)))]))
 library.append(symbol('Link2','W',[(circle(-2.54,0)+circle(2.54,0),pin(1,-2.54,0,90,0)+pin(2,2.54,0,90,0))]))
 library.append(symbol('Terminal2','J',[(rectangle(-2.54,-2.54,10.16,-5.08),pin(1,0,0,270)+pin(2,7.62,0,270))]))
+# Two-pin boxed connector artwork adapted from KiCad Conn_01x02; see attribution.
+# Preserve the existing 7.62 mm pre-scaling terminal pin separation.
+def antenna_connector():
+    graphics=rectangle(-1.27,-2.54,8.89,-5.08).replace('(type none)', '(type background)')
+    for x in [0,7.62]:
+        graphics += (f'(rectangle (start {x-.127} -2.54) (end {x+.127} -3.81) '
+                     '(stroke (width .1524) (type default)) (fill (type none)))')
+    return symbol('AntennaConnector2','J',[(graphics,pin(1,0,0,270)+pin(2,7.62,0,270))])
+library.append(antenna_connector())
+def output_connector():
+    # Standard Conn_01x02 box/contact geometry, translated to existing Port_2 pins.
+    graphics=rectangle(-3.81,2.54,-1.27,-2.54).replace('(type none)', '(type background)')
+    for y in [1.27,-1.27]:
+        graphics += (f'(rectangle (start -3.81 {y+.127}) (end -2.54 {y-.127}) '
+                     '(stroke (width .1524) (type default)) (fill (type none)))')
+    return symbol('OutputConnector2','J',[(graphics,pin(1,-7.62,1.27,0,3.81)+pin(2,-7.62,-1.27,0,3.81))])
+library.append(output_connector())
+
 definitions={s[1]:s for s in kids(library,'symbol')}
 embedded=[]
 for name,definition in definitions.items():
@@ -203,7 +221,7 @@ for i in range(5,0,-1):
     place(selector,'Selector3',x,219.71,refpos=(xx(-10.16),218.44),valuepos=(xx(7.62),222.25))
     wire((x,209.55),(x,219.71));label(f'RELAY{i}_OUT',x,214.63)
     dot(x,224.79)
-    place(f'J{20+i}','Terminal2',x,242.57,refpos=(xx(-7.62),245.11),valuepos=(xx(-7.62),247.65))
+    place(f'J{20+i}','AntennaConnector2',x,242.57,refpos=(xx(-7.62),245.11),valuepos=(xx(-7.62),247.65))
     wire((x,229.87),(x,242.57));label(f'ANT{i}',x,236.22)
     wire((xx(7.62),242.57),(xx(7.62),238.76),(xx(15.24),238.76));ground(xx(15.24),238.76)
 
@@ -223,7 +241,7 @@ place('W9','Link2',339.09,204.47,refpos=(330.2,194.31),valuepos=(330.2,196.85))
 wire((322.58,201.93),(341.63,201.93),(341.63,204.47));label('FINAL_RELAY_COM',322.58,201.93)
 wire((336.55,204.47),(336.55,207.01),(353.06,207.01),(353.06,194.31),(360.68,194.31));dot(360.68,194.31)
 for ref,y in [('X1',165.1),('X2',187.96),('J26',210.82)]:
-    place(ref,'Port_2',375.92,y,refpos=(370.84,y-6.35),valuepos=(370.84,y-3.81))
+    place(ref,'OutputConnector2' if ref=='J26' else 'Port_2',375.92,y,refpos=(370.84,y-6.35),valuepos=(370.84,y-3.81))
     wire((360.68,round(y-1.27,2)),(368.3,round(y-1.27,2)));dot(360.68,round(y-1.27,2))
     wire((365.76,round(y+1.27,2)),(368.3,round(y+1.27,2)));dot(365.76,round(y+1.27,2))
 wire((360.68,163.83),(360.68,209.55));dot(360.68,184.15)
