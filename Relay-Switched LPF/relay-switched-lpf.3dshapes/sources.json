@@ -1,0 +1,17 @@
+{
+  "D_DO-35_SOD27_P7.62mm_Horizontal.step": {
+    "source": "Diode_THT.3dshapes/D_DO-35_SOD27_P7.62mm_Horizontal.step",
+    "kicad_version": "10.0.6",
+    "sha256": "9704292191fcb13b3dfc88c1e572df18313ac20023bb230486c878d8dddfdb54"
+  },
+  "PinSocket_1x04_P2.54mm_Vertical.step": {
+    "source": "Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x04_P2.54mm_Vertical.step",
+    "kicad_version": "10.0.6",
+    "sha256": "0b6cc232aa72f09f14de4bc492e3ba9a06f711bfb0bc8197cb28fb6bea9b7be3"
+  },
+  "PinSocket_2x05_P2.54mm_Vertical.step": {
+    "source": "Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x05_P2.54mm_Vertical.step",
+    "kicad_version": "10.0.6",
+    "sha256": "3cc786c1f1b7ceaa2d5f4b863bcf62db47596616d07fc30d3bc2ae7a1ee133d6"
+  }
+}

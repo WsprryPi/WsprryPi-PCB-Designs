@@ -1,0 +1,6 @@
+(footprint "MountingHole_3.2mm" (version 20260206) (generator "pcbnew") (layer "F.Cu")
+      (descr "Original project-local 3.2 mm non-plated mounting hole; no selected hardware")
+      (attr board_only exclude_from_pos_files exclude_from_bom)
+      (property "Reference" "H**" (at 0 0) (layer "F.SilkS") (hide yes) (effects (font (size 1.27 1.27))))
+      (property "Value" "Mount 3.2 mm (inferred)" (at 0 0) (layer "F.Fab") (hide yes) (effects (font (size 1.27 1.27))))
+      (pad "" np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers "*.Cu" "*.Mask")))

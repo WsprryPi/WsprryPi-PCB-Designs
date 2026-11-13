@@ -1,0 +1,218 @@
+{
+  "J1": {
+    "1": "+5V",
+    "2": "BAND5_N",
+    "3": "BAND3_N",
+    "4": "BAND4_N",
+    "5": "BAND1_N",
+    "6": "BAND2_N",
+    "7": "GND",
+    "8": "RFI",
+    "9": "GND",
+    "10": "RFO"
+  },
+  "W1": {
+    "1": "+5V",
+    "2": "RELAY_VPLUS"
+  },
+  "RL1": {
+    "1": "RELAY_VPLUS",
+    "12": "BAND1_N",
+    "8": "RFI",
+    "9": "LPF1_IN",
+    "10": "FINAL_NC",
+    "3": "GND",
+    "4": "FINAL_RELAY_COM",
+    "5": "RELAY1_OUT"
+  },
+  "D1": {
+    "1": "+5V",
+    "2": "BAND1_N"
+  },
+  "J2": {
+    "1": "GND",
+    "2": "GND",
+    "3": "LPF1_IN",
+    "4": "LPF1_IN"
+  },
+  "J3": {
+    "1": "LPF1_OUT",
+    "2": "LPF1_OUT",
+    "3": "GND_OUT",
+    "4": "GND_OUT"
+  },
+  "W2": {
+    "1": "RELAY1_OUT",
+    "2": "RFO",
+    "3": "ANT1"
+  },
+  "J21": {
+    "1": "ANT1",
+    "2": "GND"
+  },
+  "RL2": {
+    "1": "RELAY_VPLUS",
+    "12": "BAND2_N",
+    "8": "RFI",
+    "9": "LPF2_IN",
+    "10": "GND",
+    "3": "GND",
+    "4": "LPF2_OUT",
+    "5": "RELAY2_OUT"
+  },
+  "D2": {
+    "1": "+5V",
+    "2": "BAND2_N"
+  },
+  "J4": {
+    "1": "GND",
+    "2": "GND",
+    "3": "LPF2_IN",
+    "4": "LPF2_IN"
+  },
+  "J5": {
+    "1": "LPF2_OUT",
+    "2": "LPF2_OUT",
+    "3": "GND",
+    "4": "GND"
+  },
+  "W3": {
+    "1": "RELAY2_OUT",
+    "2": "RFO",
+    "3": "ANT2"
+  },
+  "J22": {
+    "1": "ANT2",
+    "2": "GND"
+  },
+  "RL3": {
+    "1": "RELAY_VPLUS",
+    "12": "BAND3_N",
+    "8": "RFI",
+    "9": "LPF3_IN",
+    "10": "GND",
+    "3": "GND",
+    "4": "LPF3_OUT",
+    "5": "RELAY3_OUT"
+  },
+  "D3": {
+    "1": "+5V",
+    "2": "BAND3_N"
+  },
+  "J6": {
+    "1": "GND",
+    "2": "GND",
+    "3": "LPF3_IN",
+    "4": "LPF3_IN"
+  },
+  "J7": {
+    "1": "LPF3_OUT",
+    "2": "LPF3_OUT",
+    "3": "GND",
+    "4": "GND"
+  },
+  "W4": {
+    "1": "RELAY3_OUT",
+    "2": "RFO",
+    "3": "ANT3"
+  },
+  "J23": {
+    "1": "ANT3",
+    "2": "GND"
+  },
+  "RL4": {
+    "1": "RELAY_VPLUS",
+    "12": "BAND4_N",
+    "8": "RFI",
+    "9": "LPF4_IN",
+    "10": "GND",
+    "3": "GND",
+    "4": "LPF4_OUT",
+    "5": "RELAY4_OUT"
+  },
+  "D4": {
+    "1": "+5V",
+    "2": "BAND4_N"
+  },
+  "J8": {
+    "1": "GND",
+    "2": "GND",
+    "3": "LPF4_IN",
+    "4": "LPF4_IN"
+  },
+  "J9": {
+    "1": "LPF4_OUT",
+    "2": "LPF4_OUT",
+    "3": "GND",
+    "4": "GND"
+  },
+  "W5": {
+    "1": "RELAY4_OUT",
+    "2": "RFO",
+    "3": "ANT4"
+  },
+  "J24": {
+    "1": "ANT4",
+    "2": "GND"
+  },
+  "RL5": {
+    "1": "RELAY_VPLUS",
+    "12": "BAND5_N",
+    "8": "RFI",
+    "9": "LPF5_IN",
+    "10": "GND",
+    "3": "GND",
+    "4": "LPF5_OUT",
+    "5": "RELAY5_OUT"
+  },
+  "D5": {
+    "1": "+5V",
+    "2": "BAND5_N"
+  },
+  "J10": {
+    "1": "GND",
+    "2": "GND",
+    "3": "LPF5_IN",
+    "4": "LPF5_IN"
+  },
+  "J11": {
+    "1": "LPF5_OUT",
+    "2": "LPF5_OUT",
+    "3": "GND",
+    "4": "GND"
+  },
+  "W6": {
+    "1": "RELAY5_OUT",
+    "2": "RFO",
+    "3": "ANT5"
+  },
+  "J25": {
+    "1": "ANT5",
+    "2": "GND"
+  },
+  "W7": {
+    "1": "RFO",
+    "2": "FINAL_NC",
+    "3": "GND"
+  },
+  "W8": {
+    "1": "GND",
+    "2": "GND_OUT"
+  },
+  "W9": {
+    "1": "LPF1_OUT",
+    "2": "FINAL_RELAY_COM"
+  },
+  "J26": {
+    "1": "LPF1_OUT",
+    "2": "GND_OUT"
+  },
+  "X1": {
+    "1": "LPF1_OUT",
+    "2": "GND_OUT"
+  },
+  "X2": {
+    "1": "LPF1_OUT",
+    "2": "GND_OUT"
+  }
+}

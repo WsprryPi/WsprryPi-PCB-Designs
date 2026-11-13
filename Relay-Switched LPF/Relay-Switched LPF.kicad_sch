@@ -1,0 +1,9462 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "93702928-ca69-50c5-8199-81d4ef325d30")
+	(paper "A")
+	(title_block
+		(title "${DOC_TITLE}")
+		(date "${DOC_DATE}")
+		(rev "${DOC_REVISION}")
+		(company "${DOC_COMPANY}")
+		(comment 1 "${DOC_COMMENT1}")
+		(comment 2 "${DOC_COMMENT2}")
+		(comment 3 "${DOC_COMMENT3}")
+		(comment 4 "${DOC_COMMENT4}")
+		(comment 5 "${DOC_COMMENT5}")
+		(comment 6 "${DOC_COMMENT6}")
+		(comment 7 "${DOC_COMMENT7}")
+		(comment 8 "${DOC_COMMENT8}")
+		(comment 9 "${DOC_COMMENT9}")
+	)
+	(lib_symbols
+		(symbol "relay-switched-lpf:1N4148"
+			(pin_names
+				(offset 0.25)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "1N4148"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "1N4148_1_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.635 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 0) (xy 0.635 1.27) (xy 0.635 -1.27) (xy -0.635 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.27) (xy -0.635 1.27)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "relay-switched-lpf:InputSelector3"
+			(pin_names
+				(offset 0.25)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "W"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "InputSelector3"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "InputSelector3_1_1"
+				(circle
+					(center -2.54 0)
+					(radius 0.3175)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.3175)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 0)
+					(radius 0.3175)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "relay-switched-lpf:LPF_IN"
+  (pin_names (offset 0.25) (hide yes))
+  (exclude_from_sim yes)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "J" (at 0 5.08 0) (show_name no) (do_not_autoplace no) (effects (font (size 0.9 0.9))))
+  (property "Value" "LPF_IN" (at 0 6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 0.9 0.9))))
+  (property "Footprint" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects (font (size 0.9 0.9))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects (font (size 0.9 0.9))))
+  (property "Description" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects (font (size 1.27 1.27))))
+  (symbol "LPF_IN_1_1"
+    (rectangle (start -2.54 1.905) (end 2.54 0.635) (stroke (width 0.127) (type default)) (fill (type background)))
+    (rectangle (start -1.9685 1.905) (end -1.8415 1.27) (stroke (width 0.0762) (type default)) (fill (type none)))
+    (rectangle (start -0.6985 1.905) (end -0.5715 1.27) (stroke (width 0.0762) (type default)) (fill (type none)))
+    (rectangle (start 0.5715 1.905) (end 0.6985 1.27) (stroke (width 0.0762) (type default)) (fill (type none)))
+    (rectangle (start 1.8415 1.905) (end 1.9685 1.27) (stroke (width 0.0762) (type default)) (fill (type none)))
+    (pin passive line
+      (at -1.905 3.81 270)
+      (length 1.905)
+      (name "~" (effects (font (size 0.7 0.7))))
+      (number "1" (effects (font (size 0.7 0.7)))))
+    (pin passive line
+      (at -0.635 3.81 270)
+      (length 1.905)
+      (name "~" (effects (font (size 0.7 0.7))))
+      (number "2" (effects (font (size 0.7 0.7)))))
+    (pin passive line
+      (at 0.635 3.81 270)
+      (length 1.905)
+      (name "~" (effects (font (size 0.7 0.7))))
+      (number "3" (effects (font (size 0.7 0.7)))))
+    (pin passive line
+      (at 1.905 3.81 270)
+      (length 1.905)
+      (name "~" (effects (font (size 0.7 0.7))))
+      (number "4" (effects (font (size 0.7 0.7))))))
+  (embedded_fonts no))
+		(symbol "relay-switched-lpf:LPF_OUT"
+  (pin_names (offset 0.25) (hide yes))
+  (exclude_from_sim yes)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "J" (at 0 5.08 0) (show_name no) (do_not_autoplace no) (effects (font (size 0.9 0.9))))
+  (property "Value" "LPF_OUT" (at 0 6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 0.9 0.9))))
+  (property "Footprint" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects (font (size 0.9 0.9))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects (font (size 0.9 0.9))))
+  (property "Description" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects (font (size 1.27 1.27))))
+  (symbol "LPF_OUT_1_1"
+    (rectangle (start 2.54 -1.905) (end -2.54 -0.635) (stroke (width 0.127) (type default)) (fill (type background)))
+    (rectangle (start 1.9685 -1.905) (end 1.8415 -1.27) (stroke (width 0.0762) (type default)) (fill (type none)))
+    (rectangle (start 0.6985 -1.905) (end 0.5715 -1.27) (stroke (width 0.0762) (type default)) (fill (type none)))
+    (rectangle (start -0.5715 -1.905) (end -0.6985 -1.27) (stroke (width 0.0762) (type default)) (fill (type none)))
+    (rectangle (start -1.8415 -1.905) (end -1.9685 -1.27) (stroke (width 0.0762) (type default)) (fill (type none)))
+    (pin passive line
+      (at 1.905 -3.81 90)
+      (length 1.905)
+      (name "~" (effects (font (size 0.7 0.7))))
+      (number "1" (effects (font (size 0.7 0.7)))))
+    (pin passive line
+      (at 0.635 -3.81 90)
+      (length 1.905)
+      (name "~" (effects (font (size 0.7 0.7))))
+      (number "2" (effects (font (size 0.7 0.7)))))
+    (pin passive line
+      (at -0.635 -3.81 90)
+      (length 1.905)
+      (name "~" (effects (font (size 0.7 0.7))))
+      (number "3" (effects (font (size 0.7 0.7)))))
+    (pin passive line
+      (at -1.905 -3.81 90)
+      (length 1.905)
+      (name "~" (effects (font (size 0.7 0.7))))
+      (number "4" (effects (font (size 0.7 0.7))))))
+  (embedded_fonts no))
+		(symbol "relay-switched-lpf:Link2"
+			(pin_names
+				(offset 0.25)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "W"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "Link2"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Link2_1_1"
+				(circle
+					(center -1.27 0)
+					(radius 0.3175)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 0.3175)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -1.27 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "relay-switched-lpf:Port_10"
+			(pin_names
+				(offset 0.25)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "Port_10"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Port_10_1_1"
+				(rectangle
+					(start -2.54 6.35)
+					(end 2.54 -6.35)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -3.81 5.715 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 4.445 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 3.175 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 1.905 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 0.635 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -0.635 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -1.905 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -3.175 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -4.445 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -5.715 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "relay-switched-lpf:Port_2"
+			(pin_names
+				(offset 0.25)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "Port_2"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Port_2_1_1"
+				(rectangle
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -3.81 0.635 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -0.635 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "relay-switched-lpf:Port_3"
+			(pin_names
+				(offset 0.25)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "Port_3"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Port_3_1_1"
+				(rectangle
+					(start -2.54 1.905)
+					(end 2.54 -1.905)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -3.81 1.27 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -1.27 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "relay-switched-lpf:Port_4"
+			(pin_names
+				(offset 0.25)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "Port_4"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Port_4_1_1"
+				(rectangle
+					(start -2.54 2.54)
+					(end 2.54 -2.54)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -3.81 1.905 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 0.635 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -0.635 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -1.905 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "relay-switched-lpf:Selector3"
+			(pin_names
+				(offset 0.25)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "W"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "Selector3"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Selector3_1_1"
+				(circle
+					(center 0 0)
+					(radius 0.3175)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.3175)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -5.08)
+					(radius 0.3175)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "relay-switched-lpf:TX2_5V"
+			(pin_names
+				(offset 0.25)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "RL"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "TX2_5V"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TX2_5V_1_1"
+				(rectangle
+					(start -1.27 1.905)
+					(end 1.27 -1.905)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.905) (xy 1.27 1.905)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 1.905)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.905) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TX2_5V_2_1"
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.905) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TX2_5V_3_1"
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 1.905) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "relay-switched-lpf:Terminal2"
+			(pin_names
+				(offset 0.25)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "Terminal2"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Terminal2_1_1"
+				(rectangle
+					(start -1.27 -1.27)
+					(end 5.08 -2.54)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.7 0.7)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "4"
+		(exclude_from_sim no)
+		(at 75.565 82.55 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "146415b8-ce6f-5d60-8303-5e0563d3cd73")
+	)
+	(text "5"
+		(exclude_from_sim no)
+		(at 36.195 82.55 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "14a4e613-2e2d-5c76-a191-a1897737fb3e")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 193.675 82.55 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "1a57064c-501d-58f7-99bd-0bc1fe294d12")
+	)
+	(text "Slot 1: highest-frequency LPF. GND_OUT remains isolated on the carrier."
+		(exclude_from_sim no)
+		(at 58.42 141.605 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "63bc22e1-37ee-57f7-8668-ea91026a6f13")
+	)
+	(text "Relay-Switched LPF - five-channel carrier"
+		(exclude_from_sim no)
+		(at 20.32 13.97 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "6adee675-5d6c-585a-b76b-97f1b0eb3c19")
+	)
+	(text "2"
+		(exclude_from_sim no)
+		(at 154.305 82.55 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "7e767063-0c93-517d-98a3-d2093d4719c0")
+	)
+	(text "Drive one BAND input low at a time; use an external coil driver for Pi/Pico."
+		(exclude_from_sim no)
+		(at 58.42 138.43 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "9770da00-9d12-5cbf-843f-d8dd58b2fdcd")
+	)
+	(text "3"
+		(exclude_from_sim no)
+		(at 114.935 82.55 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "b23c0bb6-986e-56d9-8fe3-a3cad21552ab")
+	)
+	(text "Default links: W1, W3-W6, W7 pins 1-2. Leave W2, W8, and W9 open."
+		(exclude_from_sim no)
+		(at 58.42 135.255 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "c1c7ea03-7a4f-5464-ab4b-6c91f389d8bd")
+	)
+	(text "Rev. 5 circuit arrangement: coils above, RF switching and filter sockets below."
+		(exclude_from_sim no)
+		(at 20.32 17.145 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "f2a5d563-1048-5524-b3f4-60546c232f76")
+	)
+	(junction
+		(at 114.3 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "045b776d-f282-5a72-93e6-b02483e726a6")
+	)
+	(junction
+		(at 114.3 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04d34206-1628-50d4-9f69-e807a8b9ae62")
+	)
+	(junction
+		(at 224.79 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09e2cada-f56c-548a-92df-7b33ec5e7967")
+	)
+	(junction
+		(at 78.74 97.155)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11755e1b-7ecc-589d-a1bc-3f586f701903")
+	)
+	(junction
+		(at 193.04 66.675)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1204cc87-cb3b-5d07-91db-054e01d00aa2")
+	)
+	(junction
+		(at 157.48 66.675)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15c579cb-e797-5d42-9183-8a58d5808c29")
+	)
+	(junction
+		(at 153.67 97.155)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "17cf4b38-89ff-500a-8bdc-0c75fc85a6e5")
+	)
+	(junction
+		(at 74.93 117.475)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b90bfdb-8c4e-5f1a-bdae-fb685b4f073e")
+	)
+	(junction
+		(at 114.3 117.475)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c87e735-5c2c-5503-a0fa-ae6fe66f88b3")
+	)
+	(junction
+		(at 162.56 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2dcde87b-fbb8-56d1-8b5e-9b7a74480f0b")
+	)
+	(junction
+		(at 123.19 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32e3db7b-4cf8-5e58-b7a9-520fa15787a2")
+	)
+	(junction
+		(at 74.93 66.675)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33d8b6f2-27eb-5be4-b6e4-a928b30e8f5b")
+	)
+	(junction
+		(at 118.11 66.675)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "34bc0349-e2d5-5ef2-9322-4108feaaf6c9")
+	)
+	(junction
+		(at 44.45 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d059c6c-fb01-5e3b-aa5e-aba9dac31cdb")
+	)
+	(junction
+		(at 196.85 97.155)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e482ce9-deab-538f-a717-2acf3242db2c")
+	)
+	(junction
+		(at 193.04 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4eb56823-35f3-5b4d-85e7-dcea860c0f21")
+	)
+	(junction
+		(at 222.25 102.235)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51446d6b-c929-53de-8314-9b3f8f8700ca")
+	)
+	(junction
+		(at 114.3 50.165)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6292d53c-ecdf-5cdb-816c-d079ea95eb88")
+	)
+	(junction
+		(at 224.79 111.125)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "639be13d-128d-5528-9ac4-0179cfd1e3b1")
+	)
+	(junction
+		(at 74.93 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "665678d8-e91d-59e8-9fcf-77f42cc4e692")
+	)
+	(junction
+		(at 224.79 99.695)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6783a7f0-23cf-51d2-b9f2-0b83b18ae4eb")
+	)
+	(junction
+		(at 35.56 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68ba1d82-f2fc-520d-a2f8-4fa92f1ffeb7")
+	)
+	(junction
+		(at 206.375 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69dc0e36-9eb5-5f46-a314-6e6802617fb2")
+	)
+	(junction
+		(at 153.67 66.675)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b64e913-e2ff-58ed-8a4d-c1b86a38d5a2")
+	)
+	(junction
+		(at 196.85 66.675)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6be1f523-7839-5189-9cf2-969fa45d5598")
+	)
+	(junction
+		(at 118.11 97.155)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6dec3882-9e62-5243-8950-77cf44e26da2")
+	)
+	(junction
+		(at 153.67 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75dafa09-d846-554f-9c89-8858b6767da5")
+	)
+	(junction
+		(at 39.37 66.675)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78de2d75-ca38-59f6-b012-fe36eefcbc4d")
+	)
+	(junction
+		(at 78.74 66.675)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84cc9c39-1f39-5893-b60c-a85c1e41d411")
+	)
+	(junction
+		(at 74.93 97.155)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8be51f91-6df1-50d2-8bd1-16b4f8f13ccc")
+	)
+	(junction
+		(at 74.93 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "990c3704-b634-53e4-9922-3e6961321702")
+	)
+	(junction
+		(at 222.25 97.155)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9dc837eb-fc10-5317-a107-e11e5c73fdae")
+	)
+	(junction
+		(at 35.56 66.675)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1095a4d-26dc-50ab-8f26-a32dc3e97001")
+	)
+	(junction
+		(at 35.56 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b83c227c-4879-5474-9d26-b6e4560c53f6")
+	)
+	(junction
+		(at 35.56 97.155)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba13456c-f457-5266-9974-32624f16f436")
+	)
+	(junction
+		(at 153.67 117.475)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5bc9fda-7bf3-55dd-821e-23ae46e5b5da")
+	)
+	(junction
+		(at 83.82 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c825c960-447e-564e-bf3b-4d77cd107140")
+	)
+	(junction
+		(at 114.3 97.155)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb003d22-218e-5999-8900-712da4169b49")
+	)
+	(junction
+		(at 35.56 50.165)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf73e69f-74b2-5645-be14-26e3c0b347c7")
+	)
+	(junction
+		(at 193.04 97.155)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2789737-5611-515e-8ab7-2d3acc30b80f")
+	)
+	(junction
+		(at 177.8 117.475)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3696cf9-ddb9-5239-bde1-63d93dfa6504")
+	)
+	(junction
+		(at 74.93 50.165)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de9e24ae-fcda-5a37-a969-953974030879")
+	)
+	(junction
+		(at 153.67 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dfa3f387-4507-5f8c-af57-630a6a68d776")
+	)
+	(junction
+		(at 114.3 66.675)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3141ab6-db87-5ffa-bbe3-700440d743b9")
+	)
+	(junction
+		(at 39.37 97.155)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7d4bdf6-6252-54b5-bcec-4ecd179f73f3")
+	)
+	(junction
+		(at 153.67 50.165)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebefede4-7625-5dfd-9159-627c3dab464e")
+	)
+	(junction
+		(at 222.25 98.425)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f58be451-7f15-5084-be5b-7ac669c3d688")
+	)
+	(junction
+		(at 157.48 97.155)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe10b36d-06e8-5dd9-9075-e9569734305d")
+	)
+	(junction
+		(at 35.56 117.475)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ff013947-c984-5744-81f3-be18cdc66132")
+	)
+	(wire
+		(pts
+			(xy 222.25 98.425) (xy 222.25 102.235)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00f1a156-6fc8-5324-901d-dced55e7073c")
+	)
+	(wire
+		(pts
+			(xy 200.66 124.46) (xy 200.66 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00f28021-4516-5dca-8ca2-baeeaef9b7bc")
+	)
+	(wire
+		(pts
+			(xy 194.31 66.675) (xy 194.31 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "038e2198-63d0-523d-83b9-8b318fd3fcde")
+	)
+	(wire
+		(pts
+			(xy 218.44 102.235) (xy 218.44 108.585)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0629cdaa-f592-560a-b2d5-eb435b18dff5")
+	)
+	(wire
+		(pts
+			(xy 157.48 124.46) (xy 161.29 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06e06677-93b2-505a-9ce3-f677a20a03b6")
+	)
+	(wire
+		(pts
+			(xy 25.4 20.32) (xy 25.4 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "070346d2-8cd5-5057-bbba-73abb1eb9830")
+	)
+	(wire
+		(pts
+			(xy 29.21 25.4) (xy 35.56 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b32abbf-3c94-5138-97d9-ecd3aacfa44c")
+	)
+	(wire
+		(pts
+			(xy 193.04 97.155) (xy 193.04 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b74836b-006e-5539-b8d9-8418d26ebc16")
+	)
+	(wire
+		(pts
+			(xy 38.1 66.675) (xy 38.1 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b8bc741-51f2-51bf-b175-406c9f805d2f")
+	)
+	(wire
+		(pts
+			(xy 71.12 97.155) (xy 74.93 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b97827e-81af-5214-9fd4-848446bb1517")
+	)
+	(wire
+		(pts
+			(xy 74.93 94.615) (xy 74.93 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bbb19d8-6457-5f54-ac0b-16643f088c9c")
+	)
+	(wire
+		(pts
+			(xy 149.86 97.155) (xy 149.86 99.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bbfdaf6-60dc-565e-b6de-923083daf137")
+	)
+	(wire
+		(pts
+			(xy 149.86 66.675) (xy 149.86 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bff4bd8-9f40-51c3-9670-b6d517fbf1a0")
+	)
+	(wire
+		(pts
+			(xy 206.375 106.045) (xy 206.375 107.315)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c197037-20e1-55ca-8db4-9bed30d1cf46")
+	)
+	(wire
+		(pts
+			(xy 35.56 97.155) (xy 35.56 102.235)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eea53f7-d748-5c38-8f91-00f77c8dbe1d")
+	)
+	(wire
+		(pts
+			(xy 25.4 50.165) (xy 35.56 50.165)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f4c11b8-e412-531f-89e0-15a98ccab89f")
+	)
+	(wire
+		(pts
+			(xy 35.56 66.675) (xy 35.56 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fcbbe11-813c-5b1a-ac44-6e6640b64cb1")
+	)
+	(wire
+		(pts
+			(xy 114.3 50.165) (xy 153.67 50.165)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10059da8-77f7-5749-b6dd-fc9ad4d563cb")
+	)
+	(wire
+		(pts
+			(xy 77.47 97.155) (xy 78.74 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "117230d4-b955-526b-a0cd-12ab8cb1f6fc")
+	)
+	(wire
+		(pts
+			(xy 162.56 20.32) (xy 201.93 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "130d451c-e33f-5e74-98c2-ff0420cbb399")
+	)
+	(wire
+		(pts
+			(xy 157.48 97.155) (xy 157.48 106.045)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "131f35f5-df6a-5d26-b413-8c427ba7aec1")
+	)
+	(wire
+		(pts
+			(xy 121.92 124.46) (xy 121.92 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "144e682b-9dc6-5816-b591-ce284ddf7cf5")
+	)
+	(wire
+		(pts
+			(xy 193.04 39.37) (xy 201.93 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "146bd93e-30d2-5128-819f-675e571f984b")
+	)
+	(wire
+		(pts
+			(xy 153.67 66.675) (xy 153.67 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "162ccc28-9ff8-5e93-a06d-03ca049a3b91")
+	)
+	(wire
+		(pts
+			(xy 194.31 94.615) (xy 194.31 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1740c318-265e-5722-a73f-32cbbdcbb54e")
+	)
+	(polyline
+		(pts
+			(xy 81.915 127.635) (xy 83.185 127.635)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "19d48b44-9d90-590f-bcf2-a36fbafe3405")
+	)
+	(polyline
+		(pts
+			(xy 148.59 69.215) (xy 151.13 69.215)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "1d05c537-2d64-5deb-9bd6-f312e3b1d4e7")
+	)
+	(wire
+		(pts
+			(xy 31.75 66.675) (xy 31.75 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1da715fd-395f-521a-a912-e141f8c22999")
+	)
+	(wire
+		(pts
+			(xy 114.3 97.155) (xy 115.57 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "237c0007-0c7a-5d11-af9a-8d1370953a54")
+	)
+	(wire
+		(pts
+			(xy 31.75 97.155) (xy 35.56 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "237db47f-4236-56e9-b137-4cab32cb898c")
+	)
+	(wire
+		(pts
+			(xy 116.84 94.615) (xy 116.84 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "260b45b1-16df-5c00-8bc7-41b08b40ed99")
+	)
+	(wire
+		(pts
+			(xy 157.48 94.615) (xy 157.48 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "264c3dcb-01d7-542b-b336-52c8a9479c27")
+	)
+	(wire
+		(pts
+			(xy 177.8 64.135) (xy 177.8 117.475)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26570cc4-0a21-5438-a241-0bd75e1704e3")
+	)
+	(wire
+		(pts
+			(xy 189.23 66.675) (xy 193.04 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26790ab8-4e65-5ecc-a64b-bb446e891a3e")
+	)
+	(wire
+		(pts
+			(xy 177.8 64.135) (xy 180.34 64.135)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b6d9fef-5e45-517a-bf47-9fafaa5a75dd")
+	)
+	(wire
+		(pts
+			(xy 39.37 66.675) (xy 39.37 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b791c94-e6c8-538b-a725-44f9418f32d5")
+	)
+	(wire
+		(pts
+			(xy 74.93 25.4) (xy 74.93 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eda09a3-8ca1-5487-97a9-d733640b93a6")
+	)
+	(polyline
+		(pts
+			(xy 31.115 69.85) (xy 32.385 69.85)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "30717706-a96c-5a52-ae81-0bc741c9c872")
+	)
+	(polyline
+		(pts
+			(xy 184.15 66.675) (xy 186.69 66.675)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "311fb354-70d1-528a-9988-062f2d171243")
+	)
+	(wire
+		(pts
+			(xy 35.56 117.475) (xy 74.93 117.475)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "373d9a91-943c-5d23-8b95-a5ee9fb8d1dc")
+	)
+	(wire
+		(pts
+			(xy 35.56 120.015) (xy 35.56 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37a86374-6257-5b84-99e2-d55aa6d840f1")
+	)
+	(wire
+		(pts
+			(xy 118.11 97.155) (xy 118.11 106.045)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3858c401-42ed-5b42-aefa-9757d4546edb")
+	)
+	(wire
+		(pts
+			(xy 74.93 109.855) (xy 74.93 114.935)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "388fcec7-32ae-5084-82fe-914b3fbc9295")
+	)
+	(wire
+		(pts
+			(xy 114.3 25.4) (xy 114.3 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38a511a9-1d0c-5a90-86ca-e785220351ee")
+	)
+	(wire
+		(pts
+			(xy 162.56 20.32) (xy 162.56 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39737f1c-5ef5-5ddf-877b-4f70e7c384c5")
+	)
+	(wire
+		(pts
+			(xy 161.29 124.46) (xy 161.29 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "397c0655-91c4-5502-90db-bbb07efd1f00")
+	)
+	(wire
+		(pts
+			(xy 44.45 20.32) (xy 83.82 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39bfa726-5e73-5518-8940-5f83374f8e14")
+	)
+	(wire
+		(pts
+			(xy 74.93 39.37) (xy 74.93 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a00972e-0695-5a4a-9f03-61643250ae9a")
+	)
+	(polyline
+		(pts
+			(xy 188.595 104.14) (xy 189.865 104.14)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "3a03a3fb-a201-57f4-8e39-3b4461dd0afa")
+	)
+	(wire
+		(pts
+			(xy 74.93 39.37) (xy 83.82 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ad942ee-d3d8-5d8c-8262-746fd1336ab7")
+	)
+	(wire
+		(pts
+			(xy 116.84 66.675) (xy 116.84 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3be71304-a469-5515-8f10-22b1e84f4521")
+	)
+	(wire
+		(pts
+			(xy 114.3 50.165) (xy 114.3 53.975)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d2d5e18-3bef-557a-a902-df532afac171")
+	)
+	(wire
+		(pts
+			(xy 193.04 120.015) (xy 193.04 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dbe32a9-37e4-541e-987a-ffa8c4dfd1e7")
+	)
+	(wire
+		(pts
+			(xy 201.93 20.32) (xy 201.93 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3eb1506e-b45c-5012-be8b-2d23673f633d")
+	)
+	(polyline
+		(pts
+			(xy 202.565 86.995) (xy 205.105 86.995)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "3eca4ba1-7308-5124-855c-f10198538868")
+	)
+	(wire
+		(pts
+			(xy 116.84 97.155) (xy 118.11 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f4bcb84-f934-5e43-b500-2b74b8de2470")
+	)
+	(wire
+		(pts
+			(xy 22.86 141.605) (xy 31.75 141.605)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42252419-6346-5ce2-866b-b8dfce7dc8d3")
+	)
+	(wire
+		(pts
+			(xy 149.86 66.675) (xy 153.67 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4471a044-6fc7-5399-89bf-c22454eb8998")
+	)
+	(polyline
+		(pts
+			(xy 160.655 127.635) (xy 161.925 127.635)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "458e18e9-2d53-5864-bce7-c1efa23e37f2")
+	)
+	(wire
+		(pts
+			(xy 25.4 25.4) (xy 26.67 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45daa260-b047-53c2-b579-881c666f3e62")
+	)
+	(polyline
+		(pts
+			(xy 149.225 100.33) (xy 150.495 100.33)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "46ecffd8-1f8f-51f7-b9b7-493f86075a9a")
+	)
+	(wire
+		(pts
+			(xy 156.21 94.615) (xy 156.21 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47293057-ba96-5b58-8da6-9f84be490cec")
+	)
+	(polyline
+		(pts
+			(xy 31.115 100.33) (xy 32.385 100.33)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "473217d0-6dfc-5641-9df8-ce14200fc1bf")
+	)
+	(wire
+		(pts
+			(xy 38.1 66.675) (xy 39.37 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b6add17-665f-558e-b015-90116b261cf7")
+	)
+	(wire
+		(pts
+			(xy 196.85 97.155) (xy 222.25 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cf34f22-bea2-512a-8abb-366a839a5f45")
+	)
+	(wire
+		(pts
+			(xy 39.37 94.615) (xy 39.37 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fbca7a5-78d7-5626-872b-6a8f29c22a43")
+	)
+	(wire
+		(pts
+			(xy 22.86 144.145) (xy 31.75 144.145)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5044bea3-e458-594c-82af-5a943e04ddfb")
+	)
+	(polyline
+		(pts
+			(xy 187.96 69.215) (xy 190.5 69.215)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "508b252a-c6b4-5ba9-90cf-4930b7641e8f")
+	)
+	(wire
+		(pts
+			(xy 222.25 86.995) (xy 222.25 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "513b5abb-da40-5857-aadb-b6f541154813")
+	)
+	(wire
+		(pts
+			(xy 222.25 86.995) (xy 226.06 86.995)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5322603b-cc14-51e6-aa89-7b5c7381edbe")
+	)
+	(wire
+		(pts
+			(xy 224.79 88.265) (xy 224.79 99.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "539f0a28-18e7-551d-afdc-f43b1e0b915f")
+	)
+	(wire
+		(pts
+			(xy 74.93 66.675) (xy 74.93 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54c10175-b69b-5f5f-9aa3-ce672a64b967")
+	)
+	(wire
+		(pts
+			(xy 116.84 66.675) (xy 118.11 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "562367b1-2b85-5ce0-a315-e471905e00aa")
+	)
+	(wire
+		(pts
+			(xy 83.82 20.32) (xy 83.82 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56f1c171-a622-578e-9f2f-eb091dc35fc2")
+	)
+	(wire
+		(pts
+			(xy 35.56 25.4) (xy 74.93 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57f3ff5d-ebb6-5003-88ea-632da62bda32")
+	)
+	(wire
+		(pts
+			(xy 39.37 97.155) (xy 39.37 106.045)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5838bec4-9c6a-5826-baef-047953925fc8")
+	)
+	(polyline
+		(pts
+			(xy 187.96 103.505) (xy 190.5 103.505)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "59bc620c-3159-5867-9d2b-d0128f967c86")
+	)
+	(wire
+		(pts
+			(xy 153.67 94.615) (xy 153.67 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5aa737b3-3735-50b2-9254-c04a122d07e3")
+	)
+	(wire
+		(pts
+			(xy 196.85 106.045) (xy 206.375 106.045)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cd87793-29c9-5a99-8326-8a97c0acf71e")
+	)
+	(wire
+		(pts
+			(xy 22.86 140.335) (xy 31.75 140.335)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f2818ef-122a-5af7-abe9-261378a64d51")
+	)
+	(wire
+		(pts
+			(xy 193.04 25.4) (xy 193.04 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6051cfa2-d096-50a2-ad78-33235123e528")
+	)
+	(wire
+		(pts
+			(xy 77.47 94.615) (xy 77.47 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "616e8561-d07a-5037-9742-8e850e6a6f0d")
+	)
+	(wire
+		(pts
+			(xy 114.3 39.37) (xy 123.19 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "632b156c-6245-55d4-b720-bf2e30ad969d")
+	)
+	(wire
+		(pts
+			(xy 78.74 124.46) (xy 78.74 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63a25ab6-2b91-594d-abe4-a98f4364e6a4")
+	)
+	(wire
+		(pts
+			(xy 76.2 94.615) (xy 76.2 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "646786b5-9869-5cc8-86f4-d6c15f7de300")
+	)
+	(polyline
+		(pts
+			(xy 69.85 69.215) (xy 72.39 69.215)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "64ec8597-335f-5afc-a05d-35a8eae932ba")
+	)
+	(wire
+		(pts
+			(xy 82.55 124.46) (xy 82.55 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68569b9f-8eff-5407-825a-124a324fedde")
+	)
+	(wire
+		(pts
+			(xy 224.79 88.265) (xy 226.06 88.265)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6955830a-8e44-5c63-aaed-94c97f5e3ae7")
+	)
+	(wire
+		(pts
+			(xy 189.23 100.965) (xy 189.23 103.505)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69a20422-eb0e-5e5d-a865-b56b9c08185e")
+	)
+	(wire
+		(pts
+			(xy 43.18 124.46) (xy 43.18 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b14b18a-5d56-55f3-9c2e-2dc9f03c8193")
+	)
+	(wire
+		(pts
+			(xy 31.75 97.155) (xy 31.75 99.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ba19321-02ac-5533-8b28-3315330e8ad0")
+	)
+	(wire
+		(pts
+			(xy 153.67 61.595) (xy 153.67 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c3dd0c2-6f0f-5957-8c75-43d9c2f96d6f")
+	)
+	(wire
+		(pts
+			(xy 153.67 120.015) (xy 153.67 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d363827-ebd2-585d-8d8f-41b27c46b1c7")
+	)
+	(polyline
+		(pts
+			(xy 69.85 99.695) (xy 72.39 99.695)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "6dc7b42b-ef5d-52af-b736-3126e75beb65")
+	)
+	(wire
+		(pts
+			(xy 222.25 98.425) (xy 226.06 98.425)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e0f35f9-7068-5c7d-abc1-738c8f1f0943")
+	)
+	(wire
+		(pts
+			(xy 193.04 94.615) (xy 193.04 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f264bf2-ef3c-5714-8896-4e10087ce6e6")
+	)
+	(wire
+		(pts
+			(xy 114.3 97.155) (xy 114.3 102.235)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "702c958f-3a2e-5747-a3b7-d01ee1555513")
+	)
+	(wire
+		(pts
+			(xy 110.49 97.155) (xy 110.49 99.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72a51a7d-395a-5188-91a5-c82bc44821bd")
+	)
+	(wire
+		(pts
+			(xy 177.8 117.475) (xy 193.04 117.475)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75417dd5-cf4e-5755-bdf8-b1a0ade64c85")
+	)
+	(wire
+		(pts
+			(xy 38.1 97.155) (xy 39.37 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "758eb231-720a-564d-b72b-3f2cc3f67e30")
+	)
+	(polyline
+		(pts
+			(xy 41.91 127) (xy 44.45 127)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "75909c2e-d461-5ff2-b689-a9012cffeb34")
+	)
+	(wire
+		(pts
+			(xy 114.3 94.615) (xy 114.3 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7682b7d5-4756-515d-b4ce-cbe83936e770")
+	)
+	(wire
+		(pts
+			(xy 74.93 97.155) (xy 76.2 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77053b84-f0f3-5210-8cdf-9ec3275c6459")
+	)
+	(wire
+		(pts
+			(xy 114.3 109.855) (xy 114.3 114.935)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7926c146-b06b-5513-a5af-b223234717e9")
+	)
+	(wire
+		(pts
+			(xy 224.79 99.695) (xy 226.06 99.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b65979a-9050-5d77-a231-e0d3a3dde2cf")
+	)
+	(wire
+		(pts
+			(xy 195.58 66.675) (xy 196.85 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b6ed78c-53b3-5e15-b244-da577dd1f55f")
+	)
+	(wire
+		(pts
+			(xy 114.3 66.675) (xy 115.57 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c40c5c4-3980-50ac-920e-60193249b44b")
+	)
+	(wire
+		(pts
+			(xy 77.47 66.675) (xy 78.74 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d3395a8-bfb1-5f43-877d-8acd59b6c816")
+	)
+	(wire
+		(pts
+			(xy 193.04 61.595) (xy 193.04 62.865)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d5d4b78-b000-5f1f-beff-5c347ab8dd8e")
+	)
+	(wire
+		(pts
+			(xy 36.83 66.675) (xy 36.83 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fbd5ab2-b1f7-5be7-b3a2-b87902200b43")
+	)
+	(wire
+		(pts
+			(xy 153.67 97.155) (xy 153.67 102.235)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fe12bfa-ecd6-56b1-9689-89d1440c6b50")
+	)
+	(polyline
+		(pts
+			(xy 42.545 127.635) (xy 43.815 127.635)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "81c1322d-b09e-5a20-a1b6-2a2d06be50a7")
+	)
+	(wire
+		(pts
+			(xy 35.56 109.855) (xy 35.56 114.935)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8250a21f-24ce-5822-b89e-544cadc2318b")
+	)
+	(wire
+		(pts
+			(xy 22.86 142.875) (xy 31.75 142.875)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83d56c55-a431-537d-843e-0055e5edfb97")
+	)
+	(wire
+		(pts
+			(xy 114.3 39.37) (xy 114.3 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84ab74e6-e9db-5969-bd06-eb35dd6b86a5")
+	)
+	(wire
+		(pts
+			(xy 22.86 147.955) (xy 31.75 147.955)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "893fb828-0a0b-5378-9298-ed017ade41a2")
+	)
+	(wire
+		(pts
+			(xy 71.12 97.155) (xy 71.12 99.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b2b83b9-d99d-532f-ab28-d28192568a31")
+	)
+	(wire
+		(pts
+			(xy 110.49 66.675) (xy 110.49 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b5ffbfc-419b-5c8f-a099-dfb4bfcef083")
+	)
+	(polyline
+		(pts
+			(xy 120.65 127) (xy 123.19 127)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "8c1c805d-0be5-5cf7-b8c3-43b8c1782e19")
+	)
+	(wire
+		(pts
+			(xy 115.57 94.615) (xy 115.57 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ca6fd63-554a-5f07-b2bf-bbdb99ee20d8")
+	)
+	(wire
+		(pts
+			(xy 22.86 149.225) (xy 31.75 149.225)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e8ce748-e710-5db5-b88e-71b15042545c")
+	)
+	(wire
+		(pts
+			(xy 36.83 94.615) (xy 36.83 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90b9fc1d-2562-557a-8cbb-7e7505c2c7e9")
+	)
+	(wire
+		(pts
+			(xy 154.94 94.615) (xy 154.94 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "927eeca9-8c93-5474-a85f-6da950c635e2")
+	)
+	(wire
+		(pts
+			(xy 22.86 139.065) (xy 31.75 139.065)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92e97c00-218b-5b7c-9016-65c323157ee1")
+	)
+	(wire
+		(pts
+			(xy 118.11 66.675) (xy 118.11 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "933202b3-f45c-5ae5-bef7-fdd1e14d5c91")
+	)
+	(wire
+		(pts
+			(xy 71.12 66.675) (xy 74.93 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93941265-352f-5277-86f4-fd2037575ba0")
+	)
+	(wire
+		(pts
+			(xy 218.44 102.235) (xy 222.25 102.235)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96429ed1-6965-57af-97f6-cf671bc7174c")
+	)
+	(wire
+		(pts
+			(xy 153.67 117.475) (xy 177.8 117.475)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "965ae00c-6b41-54f4-add5-9679e3f6f824")
+	)
+	(wire
+		(pts
+			(xy 83.82 20.32) (xy 123.19 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98ba080d-a132-5d1a-85e1-11ac1ac2906c")
+	)
+	(wire
+		(pts
+			(xy 74.93 97.155) (xy 74.93 102.235)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d4407d4-4ed9-5eea-a154-a9f8e147c54e")
+	)
+	(wire
+		(pts
+			(xy 153.67 39.37) (xy 162.56 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f0d6d1e-6d1b-5377-8872-a212b9a70977")
+	)
+	(polyline
+		(pts
+			(xy 121.285 127.635) (xy 122.555 127.635)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "9f8c62d4-6a80-5648-bdf9-1cb159500234")
+	)
+	(wire
+		(pts
+			(xy 149.86 97.155) (xy 153.67 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a00ad66e-411f-5c24-aa46-682328544d11")
+	)
+	(wire
+		(pts
+			(xy 74.93 61.595) (xy 74.93 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1a19eff-0b74-589b-a879-cc85e5faa2f7")
+	)
+	(polyline
+		(pts
+			(xy 30.48 69.215) (xy 33.02 69.215)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "a4541ce6-efce-5946-873c-788794904175")
+	)
+	(wire
+		(pts
+			(xy 118.11 94.615) (xy 118.11 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5921f1a-75aa-587f-a468-c440455a831c")
+	)
+	(wire
+		(pts
+			(xy 110.49 66.675) (xy 114.3 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a63c407b-7cf8-5777-a678-432900eddee3")
+	)
+	(wire
+		(pts
+			(xy 123.19 20.32) (xy 162.56 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6a89dd7-00c4-5fc6-abf4-eb112244acc5")
+	)
+	(wire
+		(pts
+			(xy 78.74 97.155) (xy 78.74 106.045)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a726feda-e408-59ef-b7a0-36f667104620")
+	)
+	(wire
+		(pts
+			(xy 157.48 57.785) (xy 157.48 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7774d24-400d-5320-8ce7-bb76f11a5474")
+	)
+	(wire
+		(pts
+			(xy 74.93 50.165) (xy 74.93 53.975)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8bb2dd1-3eb0-5c29-ac3d-e4d37aee1004")
+	)
+	(wire
+		(pts
+			(xy 193.04 66.675) (xy 194.31 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8ec8dd6-70e7-5339-8907-44d7d9f949b4")
+	)
+	(wire
+		(pts
+			(xy 224.79 111.125) (xy 224.79 114.935)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a932a920-bf1e-571e-8e72-8e25f8938ad0")
+	)
+	(wire
+		(pts
+			(xy 114.3 117.475) (xy 153.67 117.475)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa4b3fe0-5e09-5020-8fd6-e475770fc745")
+	)
+	(wire
+		(pts
+			(xy 156.21 97.155) (xy 157.48 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab0f18a9-7773-55e9-9b56-d557e462bd30")
+	)
+	(wire
+		(pts
+			(xy 206.375 100.33) (xy 224.79 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abcb3394-7fb8-5724-9c85-e71e8daf6e77")
+	)
+	(wire
+		(pts
+			(xy 74.93 50.165) (xy 114.3 50.165)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aef5f42d-883c-5d11-bebb-da305044dab0")
+	)
+	(polyline
+		(pts
+			(xy 188.595 69.85) (xy 189.865 69.85)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "af04b615-ef91-5322-b4b5-d4168989707b")
+	)
+	(wire
+		(pts
+			(xy 44.45 20.32) (xy 44.45 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af48abc2-ea66-5477-ac52-1beac57e0db9")
+	)
+	(polyline
+		(pts
+			(xy 149.225 69.85) (xy 150.495 69.85)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "b0129d2c-8d74-5400-a36f-4da3da616168")
+	)
+	(wire
+		(pts
+			(xy 25.4 117.475) (xy 35.56 117.475)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0598b18-3793-5720-9ab8-3cff3cadcc31")
+	)
+	(wire
+		(pts
+			(xy 193.04 97.155) (xy 194.31 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0815fc1-c91b-5cfd-a268-9c1baf6cc870")
+	)
+	(polyline
+		(pts
+			(xy 30.48 99.695) (xy 33.02 99.695)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "b1be0812-d0d7-5470-a9ec-b1ba195cd143")
+	)
+	(wire
+		(pts
+			(xy 77.47 66.675) (xy 77.47 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2878f64-1caa-5e7f-947b-417e8612e382")
+	)
+	(wire
+		(pts
+			(xy 196.85 66.675) (xy 196.85 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b31c77b9-3914-51f2-be66-3a424d7aa52a")
+	)
+	(wire
+		(pts
+			(xy 153.67 97.155) (xy 154.94 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b35fc35b-f595-5de4-acb7-1409095e877b")
+	)
+	(wire
+		(pts
+			(xy 224.79 111.125) (xy 226.06 111.125)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3b5ecbe-4ec7-5c9d-856a-b5c8f63064d9")
+	)
+	(wire
+		(pts
+			(xy 193.04 66.675) (xy 193.04 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4777625-1ccb-5496-85fa-510d74418c54")
+	)
+	(wire
+		(pts
+			(xy 35.56 39.37) (xy 35.56 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b493ee3d-8ff4-5c74-9bdf-c62345a4146e")
+	)
+	(wire
+		(pts
+			(xy 193.04 39.37) (xy 193.04 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4eb76e5-9078-5e9e-853f-a27a53a35e9a")
+	)
+	(polyline
+		(pts
+			(xy 109.855 100.33) (xy 111.125 100.33)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "b5222e67-2c49-59c5-91a5-8b7df031115f")
+	)
+	(wire
+		(pts
+			(xy 22.86 137.795) (xy 31.75 137.795)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b606cfa6-89e6-5720-ba04-7f906667912d")
+	)
+	(wire
+		(pts
+			(xy 39.37 57.785) (xy 39.37 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b791cc60-bd51-57ae-929d-e84b4c89beec")
+	)
+	(polyline
+		(pts
+			(xy 70.485 100.33) (xy 71.755 100.33)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "b7fc8d47-a5ea-5d65-bd97-6d2bd8a86525")
+	)
+	(wire
+		(pts
+			(xy 118.11 124.46) (xy 118.11 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8389c1e-f3a3-5fb3-acd3-2caebdd8f0b1")
+	)
+	(wire
+		(pts
+			(xy 222.25 109.855) (xy 226.06 109.855)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8b18ae2-0f9a-514a-b486-d27abbea6771")
+	)
+	(wire
+		(pts
+			(xy 196.85 57.785) (xy 196.85 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b933f295-2cd9-5a03-9f86-f7f53173a613")
+	)
+	(wire
+		(pts
+			(xy 189.23 100.965) (xy 193.04 100.965)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b998d9c8-41f4-5f92-99a7-ab45f41d538b")
+	)
+	(wire
+		(pts
+			(xy 153.67 50.165) (xy 153.67 53.975)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9c79117-2e10-5b18-9902-63bc4d53b612")
+	)
+	(wire
+		(pts
+			(xy 35.56 39.37) (xy 44.45 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba60bb66-0722-5083-a3e1-8dab496235b3")
+	)
+	(wire
+		(pts
+			(xy 196.85 94.615) (xy 196.85 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baa60ce4-e1a2-5aac-a1bc-6948b8528d02")
+	)
+	(wire
+		(pts
+			(xy 74.93 25.4) (xy 114.3 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baedb143-c021-5610-8b73-47a843d8d807")
+	)
+	(wire
+		(pts
+			(xy 110.49 97.155) (xy 114.3 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb72acff-7ba4-5bb1-9b23-3796c3b8cbf8")
+	)
+	(wire
+		(pts
+			(xy 193.04 109.855) (xy 193.04 114.935)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc6130aa-ae76-5adb-a1d0-09ffe1ac337b")
+	)
+	(wire
+		(pts
+			(xy 35.56 66.675) (xy 36.83 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd70b567-a997-5a13-b6a9-3d87420ceda3")
+	)
+	(wire
+		(pts
+			(xy 74.93 120.015) (xy 74.93 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdbb2e3f-2a55-5c3e-b9b9-3c44d12b75ad")
+	)
+	(wire
+		(pts
+			(xy 31.75 66.675) (xy 35.56 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be41c1c0-219b-5436-a653-7ae8967bef97")
+	)
+	(wire
+		(pts
+			(xy 224.79 100.33) (xy 224.79 111.125)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be46d54c-7866-5fe3-8062-36981d18890a")
+	)
+	(wire
+		(pts
+			(xy 35.56 50.165) (xy 35.56 53.975)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c16caa7a-a87a-599e-a40b-e11aa9b78eb6")
+	)
+	(polyline
+		(pts
+			(xy 200.025 127.635) (xy 201.295 127.635)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "c29da83f-f8e7-548d-b750-eebad78d8138")
+	)
+	(wire
+		(pts
+			(xy 182.88 62.865) (xy 193.04 62.865)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2da4cec-0acc-592c-b2b5-fb4113e09192")
+	)
+	(wire
+		(pts
+			(xy 157.48 66.675) (xy 157.48 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3231a7d-631e-5f91-8260-3227f6aefd78")
+	)
+	(wire
+		(pts
+			(xy 222.25 102.235) (xy 222.25 109.855)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3534c72-6a39-52aa-b3c7-bea85301b332")
+	)
+	(wire
+		(pts
+			(xy 203.835 108.585) (xy 218.44 108.585)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3688f0e-c9da-5a95-bc37-7c158805a04d")
+	)
+	(polyline
+		(pts
+			(xy 184.785 67.31) (xy 186.055 67.31)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "c66eddc1-0e97-5946-9b85-4c054420cf82")
+	)
+	(polyline
+		(pts
+			(xy 160.02 127) (xy 162.56 127)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "c826970c-a7c6-5f69-b306-f1b7a96acac3")
+	)
+	(wire
+		(pts
+			(xy 193.04 100.33) (xy 206.375 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8483bf1-829f-5c0d-b712-155e783825cc")
+	)
+	(wire
+		(pts
+			(xy 76.2 66.675) (xy 76.2 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8645295-b222-5c96-a049-7031a4c1a56e")
+	)
+	(wire
+		(pts
+			(xy 185.42 64.135) (xy 185.42 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c89cd2d4-cbbf-5dfc-a490-ea7e50d9d506")
+	)
+	(wire
+		(pts
+			(xy 78.74 66.675) (xy 78.74 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb53d188-74ce-52b9-a092-ca604333ffd3")
+	)
+	(polyline
+		(pts
+			(xy 148.59 99.695) (xy 151.13 99.695)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "cbd282d9-67fd-52f7-b512-9f86099e44a7")
+	)
+	(wire
+		(pts
+			(xy 38.1 94.615) (xy 38.1 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc6c8f31-51f4-5986-9bf5-bc1a4280ec2c")
+	)
+	(wire
+		(pts
+			(xy 224.79 99.695) (xy 224.79 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc7a7b33-5343-5f4e-975d-b0b2e4ef1370")
+	)
+	(wire
+		(pts
+			(xy 123.19 20.32) (xy 123.19 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc9096f3-da23-5f4d-8273-642f3a662954")
+	)
+	(wire
+		(pts
+			(xy 154.94 66.675) (xy 154.94 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cca63ac4-12f3-5f1e-ab7e-88b69b4c8074")
+	)
+	(wire
+		(pts
+			(xy 118.11 124.46) (xy 121.92 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccb888d6-70d3-57d8-8569-fe4bdd83c1d8")
+	)
+	(wire
+		(pts
+			(xy 114.3 61.595) (xy 114.3 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cea40b48-5211-5fe5-829c-0e96004b76d8")
+	)
+	(wire
+		(pts
+			(xy 35.56 94.615) (xy 35.56 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfff8118-dc58-5b7a-b679-6db704543e13")
+	)
+	(wire
+		(pts
+			(xy 71.12 66.675) (xy 71.12 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0c230c7-c2dd-54e9-915e-5e0f4a2b3136")
+	)
+	(wire
+		(pts
+			(xy 222.25 97.155) (xy 222.25 98.425)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d136d83e-594c-53c2-b332-f70e0036d041")
+	)
+	(wire
+		(pts
+			(xy 78.74 57.785) (xy 78.74 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2688375-62c0-546e-95aa-7dbb110b9d28")
+	)
+	(wire
+		(pts
+			(xy 153.67 25.4) (xy 153.67 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d42610a6-6384-560f-9fd7-722a98bb0f3e")
+	)
+	(wire
+		(pts
+			(xy 193.04 50.165) (xy 193.04 53.975)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4a28c30-bbc4-5fa2-835b-7a445689880a")
+	)
+	(wire
+		(pts
+			(xy 196.85 124.46) (xy 196.85 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d601fa1e-746e-5b9e-a7ba-caafeb31fbbf")
+	)
+	(wire
+		(pts
+			(xy 189.23 66.675) (xy 189.23 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d77647de-e410-5900-80e7-e308a9714411")
+	)
+	(wire
+		(pts
+			(xy 74.93 117.475) (xy 114.3 117.475)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d91d255c-ee77-5d45-8906-15b490625209")
+	)
+	(polyline
+		(pts
+			(xy 203.2 87.63) (xy 204.47 87.63)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "d9fb2047-674d-5636-bb00-7f008a3a2496")
+	)
+	(wire
+		(pts
+			(xy 153.67 109.855) (xy 153.67 114.935)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db9c784c-b8db-5864-8386-ed62e3992df3")
+	)
+	(wire
+		(pts
+			(xy 153.67 39.37) (xy 153.67 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de353651-59ee-57b4-8b21-4588f4253759")
+	)
+	(wire
+		(pts
+			(xy 157.48 124.46) (xy 157.48 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfde045d-623b-5425-b884-52f605a3ff60")
+	)
+	(wire
+		(pts
+			(xy 78.74 124.46) (xy 82.55 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e006fe2d-425d-5bd8-9fa4-79b97413626a")
+	)
+	(polyline
+		(pts
+			(xy 109.22 99.695) (xy 111.76 99.695)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "e09104af-83ed-53a5-8cc1-9f450fba0d6a")
+	)
+	(wire
+		(pts
+			(xy 35.56 97.155) (xy 36.83 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0e073ee-2af9-5ab4-a3b6-e804b9afcd59")
+	)
+	(polyline
+		(pts
+			(xy 70.485 69.85) (xy 71.755 69.85)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "e0e1adf4-2687-5509-bb2b-e1b36d33ac3a")
+	)
+	(polyline
+		(pts
+			(xy 81.28 127) (xy 83.82 127)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "e1f1be7d-0375-50b8-b211-709ae2af9a67")
+	)
+	(wire
+		(pts
+			(xy 39.37 124.46) (xy 39.37 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e229ad21-095f-50a2-8331-26d00cd58054")
+	)
+	(wire
+		(pts
+			(xy 195.58 97.155) (xy 196.85 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2491bd8-a31d-535d-b9d9-5f7a8a558a5b")
+	)
+	(wire
+		(pts
+			(xy 35.56 61.595) (xy 35.56 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e25e99df-13d4-5432-bb2b-4cf30476fbbf")
+	)
+	(wire
+		(pts
+			(xy 203.835 84.455) (xy 203.835 86.995)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4af5598-f19d-590a-bc99-297667b94191")
+	)
+	(wire
+		(pts
+			(xy 22.86 146.685) (xy 31.75 146.685)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5245c51-e54d-5266-ba98-7ecf19e99d7c")
+	)
+	(wire
+		(pts
+			(xy 114.3 25.4) (xy 153.67 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e690f133-50f8-5096-8798-b69727cb16e7")
+	)
+	(wire
+		(pts
+			(xy 25.4 20.32) (xy 44.45 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e79b857b-cde3-5852-9e29-9fb25a5d8424")
+	)
+	(wire
+		(pts
+			(xy 114.3 120.015) (xy 114.3 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e834bd36-23ec-5a23-9e6d-88393ce80e6c")
+	)
+	(wire
+		(pts
+			(xy 153.67 66.675) (xy 154.94 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e840b9e0-3f90-5c54-9f5b-ecaf1938a82d")
+	)
+	(wire
+		(pts
+			(xy 35.56 50.165) (xy 74.93 50.165)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9a2315b-908e-5ce7-8dbe-695943aff420")
+	)
+	(wire
+		(pts
+			(xy 206.375 84.455) (xy 206.375 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9bc7412-d110-5281-8471-d728627be9b5")
+	)
+	(wire
+		(pts
+			(xy 153.67 50.165) (xy 193.04 50.165)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9cf6db8-ebec-512e-b003-07f6b4bd0acb")
+	)
+	(wire
+		(pts
+			(xy 78.74 94.615) (xy 78.74 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea3715cb-54cc-50ee-a5b8-34b4826762dc")
+	)
+	(wire
+		(pts
+			(xy 182.88 62.865) (xy 182.88 64.135)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb4e9082-81d5-54c8-889c-5075a29ce442")
+	)
+	(wire
+		(pts
+			(xy 195.58 94.615) (xy 195.58 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec28d16d-854d-53cd-a77b-1b4b80a668fb")
+	)
+	(wire
+		(pts
+			(xy 153.67 25.4) (xy 193.04 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec6eb9fb-6f2c-5143-b802-3ed6a85ce08a")
+	)
+	(wire
+		(pts
+			(xy 22.86 145.415) (xy 31.75 145.415)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed6240a1-1fbd-50e5-a04d-78fb50e56e83")
+	)
+	(polyline
+		(pts
+			(xy 109.22 69.215) (xy 111.76 69.215)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "ef9acdef-9ff0-5c44-9c14-6f617ad69074")
+	)
+	(polyline
+		(pts
+			(xy 199.39 127) (xy 201.93 127)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "efa4b5f4-db52-51a9-8598-7184e59aabab")
+	)
+	(wire
+		(pts
+			(xy 156.21 66.675) (xy 156.21 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f11adb3e-24e3-5bb0-824c-8986ac0dc281")
+	)
+	(wire
+		(pts
+			(xy 156.21 66.675) (xy 157.48 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f155501a-fd9d-52ab-b94a-174ac0c4e242")
+	)
+	(wire
+		(pts
+			(xy 193.04 100.965) (xy 193.04 102.235)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1ac71d2-7d6e-5183-bddf-e81d950737e7")
+	)
+	(wire
+		(pts
+			(xy 196.85 124.46) (xy 200.66 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2f6a6de-7a16-5acb-b7e8-34f9371257a3")
+	)
+	(wire
+		(pts
+			(xy 115.57 66.675) (xy 115.57 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3eaa0c9-f349-534c-b53d-eff2a8777869")
+	)
+	(wire
+		(pts
+			(xy 118.11 57.785) (xy 118.11 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f40a39ea-acd1-58a8-acb6-bbbc71476f2b")
+	)
+	(wire
+		(pts
+			(xy 203.835 107.315) (xy 203.835 108.585)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f713480e-c650-51cf-af19-8db56b4bfaa3")
+	)
+	(wire
+		(pts
+			(xy 35.56 25.4) (xy 35.56 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f76612b0-5b36-57b9-a431-0dfdfc1f3323")
+	)
+	(polyline
+		(pts
+			(xy 109.855 69.85) (xy 111.125 69.85)
+		)
+		(stroke
+			(width 0.127)
+			(type default)
+		)
+		(uuid "f87d8158-215a-5700-8109-970aba037f7d")
+	)
+	(wire
+		(pts
+			(xy 114.3 66.675) (xy 114.3 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb138326-328a-5123-b773-5ef1ec90f850")
+	)
+	(wire
+		(pts
+			(xy 74.93 66.675) (xy 76.2 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc9068a6-bf5b-59a6-9d4f-5ee2e27e5c24")
+	)
+	(wire
+		(pts
+			(xy 195.58 66.675) (xy 195.58 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fda6d5bc-2183-5b6e-a15a-ea56029a4f90")
+	)
+	(wire
+		(pts
+			(xy 39.37 124.46) (xy 43.18 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fda98bc3-004c-5673-b34e-2c010b54665f")
+	)
+	(label "GND"
+		(at 43.18 127 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "0272f43b-9041-5273-b3ab-0278952dda1b")
+	)
+	(label "LPF1_IN"
+		(at 196.85 64.135 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "044db1b0-6be8-567a-96ae-077faacaac60")
+	)
+	(label "RELAY4_OUT"
+		(at 74.93 112.395 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "0aeab953-a5e2-5438-9f4e-f9b9345f157b")
+	)
+	(label "GND"
+		(at 189.23 69.215 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "0aef702e-4c09-516f-b942-ef81ea1bb0c8")
+	)
+	(label "RELAY1_OUT"
+		(at 193.04 112.395 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "0b6d4f48-8d38-592a-bd77-b23d781a1ae2")
+	)
+	(label "BAND1_N"
+		(at 22.86 142.875 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "0ce50508-6e4c-57b0-a07b-abfbcc035941")
+	)
+	(label "BAND2_N"
+		(at 153.67 43.18 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d620465-3f09-51ec-8457-8b86d7e6d692")
+	)
+	(label "BAND1_N"
+		(at 193.04 43.18 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a884418-f7d3-5398-9900-6e6aea178279")
+	)
+	(label "RFI"
+		(at 22.86 146.685 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "25c61763-8fd3-59bd-8d7d-25e4c7fc4187")
+	)
+	(label "GND"
+		(at 149.86 99.695 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "26dec5fe-ec9b-5f92-95b7-39a29ba15db1")
+	)
+	(label "ANT2"
+		(at 153.67 123.19 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "28c4e33d-8a40-5bbb-89ee-4e8ce3fba21b")
+	)
+	(label "GND"
+		(at 22.86 147.955 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "2f6f25bb-44dc-55d2-b057-de33c6e6969c")
+	)
+	(label "+5V"
+		(at 22.86 137.795 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "32343e9f-b27e-5d3c-a6af-9da02580b107")
+	)
+	(label "GND"
+		(at 22.86 145.415 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "35ec77ec-414b-52f1-b674-a77faafe1e3b")
+	)
+	(label "BAND2_N"
+		(at 22.86 144.145 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "3a0f623b-2ee2-5eb4-a3bb-8326457a880c")
+	)
+	(label "GND"
+		(at 185.42 66.675 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "3cfe3db5-064c-526a-bd5b-e6ec5d5d5deb")
+	)
+	(label "LPF4_OUT"
+		(at 78.74 99.695 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d591397-8f90-5c26-a9b7-17b0deba4fe9")
+	)
+	(label "GND"
+		(at 31.75 69.215 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "41aeac08-9610-503d-9a76-abd34649e828")
+	)
+	(label "GND"
+		(at 71.12 99.695 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "442c0f53-2462-540e-84a8-d292ef542641")
+	)
+	(label "GND"
+		(at 82.55 127 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "48501c15-067c-5297-8a7b-cbd3e0472f2b")
+	)
+	(label "FINAL_NC"
+		(at 182.88 62.865 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "49a1d036-d3d0-5c48-b1d6-c64a4f2cd9b7")
+	)
+	(label "RFO"
+		(at 22.86 149.225 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "49d32684-50af-5ec8-b331-c485a6f346d4")
+	)
+	(label "LPF2_IN"
+		(at 157.48 64.135 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a233f15-3880-5c0f-9ff7-3bf81c39d6e4")
+	)
+	(label "RELAY5_OUT"
+		(at 35.56 112.395 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "4cb52656-9921-536f-99b3-edbce4a6ca71")
+	)
+	(label "BAND5_N"
+		(at 22.86 139.065 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "4e6a7795-1f95-5fc3-8443-c988a067e303")
+	)
+	(label "ANT1"
+		(at 193.04 123.19 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "533850bd-1a97-5bfd-b514-6ce2880a12a4")
+	)
+	(label "GND"
+		(at 121.92 127 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "58ac8b28-d10b-57ea-9057-b0478f56f082")
+	)
+	(label "LPF3_OUT"
+		(at 118.11 99.695 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "63fca384-dcfd-5a71-94a9-51a9b861e07a")
+	)
+	(label "ANT3"
+		(at 114.3 123.19 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "6424c938-4fd3-5c82-9395-f8ef2a92d411")
+	)
+	(label "LPF2_OUT"
+		(at 157.48 99.695 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c45bae4-1a61-5d8b-bedc-a80535aa4581")
+	)
+	(label "GND"
+		(at 71.12 69.215 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "6ed68179-097c-5c60-8714-74a34cae9590")
+	)
+	(label "GND"
+		(at 110.49 69.215 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "758594c8-33d8-5293-956c-e0d3614f9b35")
+	)
+	(label "BAND4_N"
+		(at 22.86 141.605 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "76e97ecc-bd76-5517-b87c-0d262d66b43b")
+	)
+	(label "ANT5"
+		(at 35.56 123.19 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "8159505b-e7b9-543f-88c0-54dad6932861")
+	)
+	(label "GND"
+		(at 200.66 127 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "866d6ae5-244f-5c32-83a9-e216b5bcb016")
+	)
+	(label "RFO"
+		(at 25.4 117.475 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "8b448660-8954-56c0-ac62-239205b0fd42")
+	)
+	(label "BAND3_N"
+		(at 114.3 43.18 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "8d3850d3-7def-5b01-9ba0-7bdbe2ad0e07")
+	)
+	(label "GND"
+		(at 110.49 99.695 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "8ddd8e0b-2c81-5053-8649-dddf3b5a9f3b")
+	)
+	(label "BAND3_N"
+		(at 22.86 140.335 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "909a8a38-a39d-5bdb-ac07-baec871f5e52")
+	)
+	(label "LPF5_IN"
+		(at 39.37 64.135 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "917f9b6b-de45-529e-8e74-a667aefac29d")
+	)
+	(label "ANT4"
+		(at 74.93 123.19 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "92f94cc0-5af6-54d6-9b02-b0d5608d524f")
+	)
+	(label "LPF1_OUT"
+		(at 204.47 97.155 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a0a915c-af65-51fd-b7de-f208b92fea44")
+	)
+	(label "BAND4_N"
+		(at 74.93 43.18 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "a3038bc2-b05d-56d3-9866-d5efc0326d04")
+	)
+	(label "GND_OUT"
+		(at 224.79 114.935 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "a390f895-9e07-5937-b0df-e85354d6da70")
+	)
+	(label "RELAY_VPLUS"
+		(at 35.56 25.4 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "a88e0302-5266-5630-8cc6-e42f4f80d66b")
+	)
+	(label "RFI"
+		(at 25.4 50.165 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "ab4272f9-47c4-54c0-a818-072e539e4f43")
+	)
+	(label "GND"
+		(at 149.86 69.215 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "b8b16f3e-bcf4-57b9-b88f-78998db8360d")
+	)
+	(label "RELAY2_OUT"
+		(at 153.67 112.395 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "c3d434dc-58ae-50fb-94ce-03806340ec8b")
+	)
+	(label "GND"
+		(at 203.835 86.995 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "c4731d59-ee0a-55b7-b91a-99e0d9fd88e7")
+	)
+	(label "GND"
+		(at 161.29 127 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "ceedf4c9-8d40-540f-b8f3-171e97b85b8f")
+	)
+	(label "FINAL_RELAY_COM"
+		(at 196.85 106.045 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1e22cab-7f53-5184-af60-26f3626ab1a5")
+	)
+	(label "LPF4_IN"
+		(at 78.74 64.135 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "d63b093e-5d07-5fa2-aca4-8abe6c53ec33")
+	)
+	(label "LPF3_IN"
+		(at 118.11 64.135 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "d83f8523-96d6-5b90-9a39-eb121f735af9")
+	)
+	(label "LPF5_OUT"
+		(at 39.37 99.695 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "e95bd8b1-0855-561d-89dd-ee993ccb6417")
+	)
+	(label "GND"
+		(at 189.23 103.505 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "e9ca0d13-577b-5e7c-8054-29a22a4f27b1")
+	)
+	(label "+5V"
+		(at 25.4 20.32 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed888a37-9c89-55ff-8ba3-92e80e87315e")
+	)
+	(label "GND"
+		(at 31.75 99.695 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right bottom)
+		)
+		(uuid "edd64e7f-1975-589a-ba89-e35c6e71dff6")
+	)
+	(label "BAND5_N"
+		(at 35.56 43.18 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "f6a331b7-5019-577b-8014-ae6ab43a9596")
+	)
+	(label "RELAY3_OUT"
+		(at 114.3 112.395 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "fe12b517-224c-57e5-814b-a9af7bf6bb96")
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Terminal2")
+		(at 193.04 126.365 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "01ea27a4-5fea-5355-9284-09b51dddd5c9")
+		(property "Reference" "J21"
+			(at 189.23 127.635 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ANT 1"
+			(at 189.23 128.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x2"
+			(at 193.04 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 126.365 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2da62a77-0bc6-56c3-bcbe-e2eb1a4386e0")
+		)
+		(pin "2"
+			(uuid "0ced4719-3035-5d35-975c-8879ede3ad6f")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Link2")
+		(at 205.105 84.455 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0528191f-bea0-58d0-891b-76858c2556d8")
+		(property "Reference" "W8"
+			(at 201.295 80.645 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OPEN: ground bypass"
+			(at 201.295 81.915 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x2"
+			(at 205.105 84.455 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.105 84.455 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 205.105 84.455 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "feedc05b-3a7e-5f11-aabd-26813c19524e")
+		)
+		(pin "2"
+			(uuid "9bb363ed-31df-5ee7-8f04-c915d1e0b1f2")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "W8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:1N4148")
+		(at 83.82 35.56 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "084462c2-5244-5ccb-bf53-22971c38af65")
+		(property "Reference" "D4"
+			(at 85.725 34.29 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 85.725 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:D_DO35_P7.62"
+			(at 83.82 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a54966d7-0d17-5332-b889-eb7e867cfd21")
+		)
+		(pin "2"
+			(uuid "3f60d1f6-7af0-58c8-b1ee-12a6f11123dc")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 74.93 106.045 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0a575986-82ec-5fc9-8f96-42b1b6d57e39")
+		(property "Reference" "RL4"
+			(at 80.01 104.775 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 77.47 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 74.93 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 106.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "42b0b9f7-8124-5b92-a84b-bc34f6192c24")
+		)
+		(pin "5"
+			(uuid "d06ada45-44f3-578f-a4f2-e2f564f8a212")
+		)
+		(pin "4"
+			(uuid "d5efe414-81a4-5600-922c-142140b53189")
+		)
+		(pin "1"
+			(uuid "2a91287e-6431-43cf-a580-93d99250f651")
+		)
+		(pin "12"
+			(uuid "197e4c71-7d33-4a25-b2b8-23c15d6ea2d7")
+		)
+		(pin "8"
+			(uuid "2162690a-30e5-4ac7-bed4-d0af437e0a94")
+		)
+		(pin "9"
+			(uuid "207d41c8-6057-4b64-80f4-2d4e34c81895")
+		)
+		(pin "10"
+			(uuid "91c4b4e6-e4e1-491a-bbb4-b57aff47c81a")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL4")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:LPF_IN")
+		(at 76.835 73.025 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "142f7d6a-6251-5994-842d-98f028096b36")
+		(property "Reference" "J8"
+			(at 81.28 70.485 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LPF4 IN"
+			(at 81.28 71.755 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Socket_1x4"
+			(at 76.835 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.835 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 76.835 73.025 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "57ed8243-788e-56f9-bfae-aa8c2d691758")
+		)
+		(pin "2"
+			(uuid "28e37867-544a-54b7-9a4f-156e03785815")
+		)
+		(pin "3"
+			(uuid "442a3c29-8566-5c80-adfc-1e6658924a81")
+		)
+		(pin "4"
+			(uuid "2211a876-4bae-502d-8efe-a1c1d71082ed")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Selector3")
+		(at 114.3 114.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1701830d-7b0a-50eb-8655-9e1734688d20")
+		(property "Reference" "W4"
+			(at 109.22 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OUTPUT 3: link 1-2*"
+			(at 118.11 116.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x3_Link12"
+			(at 114.3 114.935 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 114.935 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 114.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c815abaa-2921-5d51-995c-add13ca5e7ce")
+		)
+		(pin "2"
+			(uuid "3f5adc82-f48a-599e-89e8-9022a37c247b")
+		)
+		(pin "3"
+			(uuid "b0e311ea-ba7e-5db0-b142-a84f43d942a7")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "W4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Terminal2")
+		(at 114.3 126.365 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "177a20ce-a4f4-535b-aff4-d9b135d42e51")
+		(property "Reference" "J23"
+			(at 110.49 127.635 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ANT 3"
+			(at 110.49 128.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x2"
+			(at 114.3 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 126.365 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9029c8af-4774-55be-8849-f108e9be61cf")
+		)
+		(pin "2"
+			(uuid "d2019fb2-1f68-5788-bad6-198aa7086248")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:LPF_OUT")
+		(at 155.575 90.805 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2c8bc37e-0c2e-59c4-977d-325bef5484e3")
+		(property "Reference" "J5"
+			(at 160.02 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LPF2 OUT"
+			(at 160.02 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Socket_1x4"
+			(at 155.575 90.805 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 155.575 90.805 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 155.575 90.805 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6dc553f5-e430-51af-b582-31fa6703cc72")
+		)
+		(pin "2"
+			(uuid "520f3155-b7d4-5411-8c46-fd13c632d8a5")
+		)
+		(pin "3"
+			(uuid "48d5cded-9a27-5e2e-a794-41c1d7e6b6cd")
+		)
+		(pin "4"
+			(uuid "ea75ef78-9b5b-5cf0-8d92-e9f8f29ca7a0")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 74.93 57.785 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "34f3260b-3615-5c19-a3b5-a02efd79daeb")
+		(property "Reference" "RL4"
+			(at 80.01 57.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 77.47 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 74.93 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 57.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "8"
+			(uuid "080c6ee5-7497-5615-b1af-0a14a485d1bc")
+		)
+		(pin "10"
+			(uuid "9310947d-b453-524e-bf2e-34f013433018")
+		)
+		(pin "9"
+			(uuid "816c5123-f2b9-5158-88cc-bbe3e237e92b")
+		)
+		(pin "3"
+			(uuid "37accdf1-c5c7-4fb7-94da-570afc77d0a9")
+		)
+		(pin "4"
+			(uuid "a3ad458d-6062-48b1-b321-f4d38c257692")
+		)
+		(pin "12"
+			(uuid "e7d1f29c-889f-4b08-9420-916e3ecd42ab")
+		)
+		(pin "1"
+			(uuid "2e19e40f-5a77-473a-b3f1-524016f71873")
+		)
+		(pin "5"
+			(uuid "62341814-abfd-4222-ae35-51f7220fb94f")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL4")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 193.04 106.045 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3ec64f3c-b6c0-5955-91c4-6806440875b9")
+		(property "Reference" "RL1"
+			(at 185.42 106.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 195.58 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 193.04 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 106.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "5902f399-3470-5e40-8448-b0fd92dcf22a")
+		)
+		(pin "5"
+			(uuid "6e0a2e1f-2b73-5cd4-b90d-2fa2098378d1")
+		)
+		(pin "4"
+			(uuid "8ae26416-62b8-573c-b4fc-c2385f020e98")
+		)
+		(pin "1"
+			(uuid "c18c598e-f3c6-4589-afb3-9b61865aaa34")
+		)
+		(pin "12"
+			(uuid "e9292ee1-e955-4912-a02d-ce5708f4da73")
+		)
+		(pin "8"
+			(uuid "269e577c-0f14-483b-aeb9-41e3fd35d810")
+		)
+		(pin "9"
+			(uuid "5dd09a1c-24d1-4686-a749-c136f017cbea")
+		)
+		(pin "10"
+			(uuid "d5569474-7685-4886-8854-a1c8f637eb17")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL1")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:LPF_IN")
+		(at 37.465 73.025 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3f2ed8e6-6018-5c5d-86c1-0de7d5ff754c")
+		(property "Reference" "J10"
+			(at 41.91 70.485 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LPF5 IN"
+			(at 41.91 71.755 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Socket_1x4"
+			(at 37.465 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 37.465 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 37.465 73.025 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "965fb072-1090-5db9-8bf5-f8e1c6e1959c")
+		)
+		(pin "2"
+			(uuid "f4daa3fc-065c-50a0-8354-235c1a5b2ddb")
+		)
+		(pin "3"
+			(uuid "9eb4310c-6df7-501f-997a-03ae78937816")
+		)
+		(pin "4"
+			(uuid "45bbacac-83db-59d2-a286-ed62995c6f3d")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:LPF_IN")
+		(at 194.945 73.025 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "458dc7f6-2af3-568b-85e9-ae070ac837c2")
+		(property "Reference" "J2"
+			(at 199.39 70.485 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LPF1 IN"
+			(at 199.39 71.755 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Socket_1x4"
+			(at 194.945 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.945 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 194.945 73.025 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5e9ce8b7-d032-5301-9804-4e399dabaf3c")
+		)
+		(pin "2"
+			(uuid "b0a9caed-6e6b-5204-9b27-10f21ade3edf")
+		)
+		(pin "3"
+			(uuid "8efbaef0-0cf3-54b8-8d20-df3424dfe3a6")
+		)
+		(pin "4"
+			(uuid "4163b520-1ec3-5d6f-859e-c7e64317823e")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 114.3 106.045 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4c4f2334-a2c4-53b7-8108-1419170d3726")
+		(property "Reference" "RL3"
+			(at 119.38 104.775 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 116.84 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 114.3 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 106.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "f3118e11-4ccc-52c7-a4a7-2083274bcb5d")
+		)
+		(pin "5"
+			(uuid "ab30d7e5-0f44-57ad-94a8-5a7257e24fec")
+		)
+		(pin "4"
+			(uuid "9e24bbcc-d182-5a5d-8766-29051e2dd91d")
+		)
+		(pin "1"
+			(uuid "195f5b3f-8872-4db0-bd8e-04e4b3b26ea6")
+		)
+		(pin "12"
+			(uuid "beb8b756-6bb0-45c7-897c-7752f4865f44")
+		)
+		(pin "8"
+			(uuid "4f9c6083-6004-479b-a80a-26853fad76cf")
+		)
+		(pin "9"
+			(uuid "9f581ae8-78d1-4b61-95c4-9b194d0db9ab")
+		)
+		(pin "10"
+			(uuid "2eefbbf3-c30f-4e8a-94ee-82368d8d3dab")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL3")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Port_2")
+		(at 229.87 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5bb9b99a-8974-536e-838c-bedc3c1bb2ce")
+		(property "Reference" "X1"
+			(at 227.33 84.455 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMA vertical option"
+			(at 227.33 85.725 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:SMA_Vertical_Generic"
+			(at 229.87 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e0b3b616-e234-5880-b010-bf98c6e188db")
+		)
+		(pin "2"
+			(uuid "034c524f-4753-5366-8f7e-8f820ba46561")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "X1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:1N4148")
+		(at 44.45 35.56 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5f634c55-72cd-55ab-bd04-11af7a1812f3")
+		(property "Reference" "D5"
+			(at 46.355 34.29 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 46.355 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:D_DO35_P7.62"
+			(at 44.45 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 44.45 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d6e705a4-4fcf-5d5a-a0d3-bc71127fe89e")
+		)
+		(pin "2"
+			(uuid "ab469dc8-71cb-5135-92e1-41d10fc642fc")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Terminal2")
+		(at 74.93 126.365 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5f72dc62-241e-575a-a06a-628c15855187")
+		(property "Reference" "J24"
+			(at 71.12 127.635 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ANT 4"
+			(at 71.12 128.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x2"
+			(at 74.93 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 126.365 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d51b8974-9c73-5931-8593-3e5fd8ed2b77")
+		)
+		(pin "2"
+			(uuid "59d108bd-b58d-5fd4-89e7-7646bd4a70fd")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 114.3 57.785 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "61559dae-7b7b-5608-8584-60cf66f397ce")
+		(property "Reference" "RL3"
+			(at 119.38 57.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 116.84 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 114.3 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 57.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "8"
+			(uuid "9062d62e-dae8-5ba0-9a31-1a25250b0ea8")
+		)
+		(pin "10"
+			(uuid "a71a21ac-d83a-5fa1-b99c-5a4b8ba30e4f")
+		)
+		(pin "9"
+			(uuid "51aca852-1e8e-525b-a4eb-be94cbf444fa")
+		)
+		(pin "3"
+			(uuid "84445c42-ea01-468a-98e5-de2f0bbcfd55")
+		)
+		(pin "4"
+			(uuid "6f011cff-122d-4cee-b80b-a6fc313d0849")
+		)
+		(pin "12"
+			(uuid "98900b32-c93f-427f-ab63-a6e5a5a459a8")
+		)
+		(pin "1"
+			(uuid "0321a1e1-afb5-4eca-9e27-8659a537261f")
+		)
+		(pin "5"
+			(uuid "9e1dc8ee-f9ab-4f16-a5f6-7c21a076f5d9")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL3")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Port_2")
+		(at 229.87 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "625d808f-f2cb-5bec-b8eb-cec61bdbd94b")
+		(property "Reference" "J26"
+			(at 227.33 107.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RF OUT / isolated return"
+			(at 227.33 108.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x2"
+			(at 229.87 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "03b71b3c-df98-583b-8efd-36b617e253d0")
+		)
+		(pin "2"
+			(uuid "9ffaf7be-ea04-5263-8b38-acacf2da7e4c")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Terminal2")
+		(at 35.56 126.365 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "679497e0-eba3-53d3-87f0-f4e97e6fd9c8")
+		(property "Reference" "J25"
+			(at 31.75 127.635 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ANT 5"
+			(at 31.75 128.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x2"
+			(at 35.56 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 126.365 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cc9626e2-4234-5cc0-b072-6b81ed355548")
+		)
+		(pin "2"
+			(uuid "971f01ab-e6f7-57f3-815d-aced7cad80ba")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 35.56 106.045 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6a5e69e9-837f-53e3-8f8a-a43181ea9f58")
+		(property "Reference" "RL5"
+			(at 40.64 104.775 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 38.1 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 35.56 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 106.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "1f756090-be8c-5f8f-8221-20de674ddc84")
+		)
+		(pin "5"
+			(uuid "63f5d3de-f705-5933-943a-0674e8be7f6d")
+		)
+		(pin "4"
+			(uuid "c9445abf-1277-56fe-bf2b-a992d3edfcfb")
+		)
+		(pin "12"
+			(uuid "70b7f7c5-9288-4849-844f-1cc96a82206f")
+		)
+		(pin "1"
+			(uuid "2bd24dda-372c-4023-b4bd-d932e62203ba")
+		)
+		(pin "10"
+			(uuid "dc653900-a3cc-4f80-88d4-8e9d96343dfd")
+		)
+		(pin "8"
+			(uuid "f16049bc-ec01-4ebc-9482-655522dd16d8")
+		)
+		(pin "9"
+			(uuid "c886976b-6bd0-42fc-8564-e1c468a512e8")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL5")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 114.3 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6b9fbb91-0fed-515e-8e32-1e1f5eb81276")
+		(property "Reference" "RL3"
+			(at 105.41 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 105.41 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 114.3 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97c1c60c-6c0d-5ed1-ae08-c4ec2f25414b")
+		)
+		(pin "12"
+			(uuid "0c029a9f-5512-55dd-9a95-874000847f32")
+		)
+		(pin "8"
+			(uuid "8e3a1d3d-4ac2-4df4-8b17-9337aa3d0dd5")
+		)
+		(pin "10"
+			(uuid "2002bbf1-2e05-44f5-b7f9-6a997cd5b949")
+		)
+		(pin "3"
+			(uuid "3243fa5f-e521-4fe9-8ad0-1015f15f48d6")
+		)
+		(pin "5"
+			(uuid "93ec105e-fd0f-4d2f-b035-ce4e94f8394e")
+		)
+		(pin "9"
+			(uuid "09f6b8f2-8fa1-4c56-b054-a0b5dd221da5")
+		)
+		(pin "4"
+			(uuid "3c4891c9-9509-4e5e-b075-e5e3942ed8b4")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Terminal2")
+		(at 153.67 126.365 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "71d520a5-7781-5957-9197-d7de61c8b009")
+		(property "Reference" "J22"
+			(at 149.86 127.635 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ANT 2"
+			(at 149.86 128.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x2"
+			(at 153.67 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 153.67 126.365 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "67b54241-eb58-55e4-9d38-32e2d7417653")
+		)
+		(pin "2"
+			(uuid "5e156b01-4b66-593c-bb45-c339c30c3e23")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Selector3")
+		(at 193.04 114.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "75c1f8e0-02e6-5918-a13f-1b612b09b2e8")
+		(property "Reference" "W2"
+			(at 187.96 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OUTPUT 1: link 1-2*"
+			(at 196.85 116.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x3"
+			(at 193.04 114.935 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 114.935 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 114.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "59e3277c-491a-5c4c-80f7-cb6b2be5b308")
+		)
+		(pin "2"
+			(uuid "1332ad9c-f13c-5cdc-8d0b-387f790dd98d")
+		)
+		(pin "3"
+			(uuid "787022c8-ebc2-5056-af22-c99401f6220c")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "W2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 193.04 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7a6e4ac2-fe53-5f8d-98c9-e18ec037b2fb")
+		(property "Reference" "RL1"
+			(at 184.15 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 184.15 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 193.04 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5605cdd4-5889-573c-b7db-3518ec1b3ff7")
+		)
+		(pin "12"
+			(uuid "9f41ec34-29d1-5633-9a6f-6ca700860dd5")
+		)
+		(pin "8"
+			(uuid "aae094e0-e6ec-469f-86b1-d6aa924791b0")
+		)
+		(pin "9"
+			(uuid "cf2aafda-d078-4a4b-bab1-f50b3ec61ce5")
+		)
+		(pin "10"
+			(uuid "30246436-3179-4b06-a88b-929984abb081")
+		)
+		(pin "3"
+			(uuid "a3369735-e2f8-4246-9d6e-7b65d18f0494")
+		)
+		(pin "4"
+			(uuid "c1b2c0d1-d198-4731-9a80-b96f87360f2e")
+		)
+		(pin "5"
+			(uuid "afe7dffb-f33b-4938-b6e4-f2475f10e8cc")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Selector3")
+		(at 74.93 114.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7e5a6964-d7c4-5857-969c-aa3cc141a48e")
+		(property "Reference" "W5"
+			(at 69.85 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OUTPUT 4: link 1-2*"
+			(at 78.74 116.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x3_Link12"
+			(at 74.93 114.935 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 114.935 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 114.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e0834fbc-9bee-55c2-a206-7d7518d06770")
+		)
+		(pin "2"
+			(uuid "f4519490-fe4d-52eb-8d64-eae5883d62b5")
+		)
+		(pin "3"
+			(uuid "7ecfb1eb-4aa7-5543-958c-733b011f78d8")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "W5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:1N4148")
+		(at 201.93 35.56 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "91392fbf-c7c1-53a0-8a5a-dd3f4b8cde1b")
+		(property "Reference" "D1"
+			(at 203.835 34.29 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 203.835 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:D_DO35_P7.62"
+			(at 201.93 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 201.93 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6425132a-43e7-5121-b6e7-f2ca70c72df7")
+		)
+		(pin "2"
+			(uuid "eeb58325-b1b0-5f51-ac1e-33962f2751b1")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Selector3")
+		(at 153.67 114.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9cdd81a5-ba6a-5914-8227-de4039451209")
+		(property "Reference" "W3"
+			(at 148.59 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OUTPUT 2: link 1-2*"
+			(at 157.48 116.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x3_Link12"
+			(at 153.67 114.935 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 114.935 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 153.67 114.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98dcc29e-450a-568a-91d2-764662695997")
+		)
+		(pin "2"
+			(uuid "ac2b2ce6-7817-5c38-92db-96530d9c2ea9")
+		)
+		(pin "3"
+			(uuid "f9bf3a4a-784a-58a6-9135-affe1b8a509e")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "W3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Link2")
+		(at 205.105 107.315 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a0ccf488-f57b-57b4-8e14-d785a6fcfe65")
+		(property "Reference" "W9"
+			(at 200.66 102.235 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OPEN: relay-1 COM"
+			(at 200.66 103.505 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x2"
+			(at 205.105 107.315 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.105 107.315 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 205.105 107.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dcc1db00-adb1-551e-af6f-0645924a8f2a")
+		)
+		(pin "2"
+			(uuid "4fd89162-463d-51cb-be68-e441d474f2e8")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "W9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:LPF_IN")
+		(at 155.575 73.025 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a228b7dd-3270-5e7e-ba21-2cb3359a35cf")
+		(property "Reference" "J4"
+			(at 160.02 70.485 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LPF2 IN"
+			(at 160.02 71.755 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Socket_1x4"
+			(at 155.575 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 155.575 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 155.575 73.025 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8763cb63-14e3-5f11-b870-441e556fade2")
+		)
+		(pin "2"
+			(uuid "a64a8af3-5154-55c2-b588-00b37a0bbc15")
+		)
+		(pin "3"
+			(uuid "8ca97a5d-0e85-5bdc-88a7-cfb0478af00c")
+		)
+		(pin "4"
+			(uuid "277ca7c3-e79d-59b9-b43a-f3bbee39935b")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:LPF_OUT")
+		(at 116.205 90.805 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a49dc29c-14cd-519a-a4dd-e0d75cf50b85")
+		(property "Reference" "J7"
+			(at 120.65 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LPF3 OUT"
+			(at 120.65 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Socket_1x4"
+			(at 116.205 90.805 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.205 90.805 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 116.205 90.805 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8d2de65b-9017-52c5-9280-857912764ef0")
+		)
+		(pin "2"
+			(uuid "fb71e3e9-ed64-5ff0-8e06-f69a2608673d")
+		)
+		(pin "3"
+			(uuid "e921e877-3863-54f2-9170-fb882f7e25a4")
+		)
+		(pin "4"
+			(uuid "d63b899c-d470-5cf1-8a76-aed5490fa26c")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Link2")
+		(at 27.94 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aa8b1d5d-b3d7-56b2-ac99-31e5d27cd0c4")
+		(property "Reference" "W1"
+			(at 26.67 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "FIT: +5V to coils"
+			(at 26.67 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x2_Link12"
+			(at 27.94 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6fbbb602-2245-5735-b21c-ea3ce152ebf1")
+		)
+		(pin "2"
+			(uuid "5d6a7ed2-4d28-556b-8838-bae81fb117f0")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "W1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 153.67 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "acbdcc27-8847-585e-baf5-47411bbc7916")
+		(property "Reference" "RL2"
+			(at 144.78 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 144.78 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 153.67 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 153.67 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c4f5dfb7-0220-5b3b-8885-c8470583e187")
+		)
+		(pin "12"
+			(uuid "83d4cf75-51ac-5fe1-9e66-ba386ac11bdb")
+		)
+		(pin "8"
+			(uuid "a69cc695-bc2a-4d3a-b166-c4f9af5bd601")
+		)
+		(pin "9"
+			(uuid "d907320a-6749-4e30-83d2-faa0f0f82bc1")
+		)
+		(pin "10"
+			(uuid "ee4d5e1a-a5f3-4b2d-80b7-447e4df4c0a1")
+		)
+		(pin "3"
+			(uuid "078ef4e2-1719-4586-961d-defd96233d95")
+		)
+		(pin "4"
+			(uuid "fb4fb3e7-151d-4df4-b88d-154eb5f98e3d")
+		)
+		(pin "5"
+			(uuid "1672b173-21c8-40a7-ac23-b2b5a725c23d")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:LPF_OUT")
+		(at 37.465 90.805 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bd20c85d-524c-51d3-a6b1-cbfc2451a3d1")
+		(property "Reference" "J11"
+			(at 41.91 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LPF5 OUT"
+			(at 41.91 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Socket_1x4"
+			(at 37.465 90.805 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 37.465 90.805 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 37.465 90.805 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4a0a7a64-1968-5820-9274-90f841a8f1f8")
+		)
+		(pin "2"
+			(uuid "6e90b186-a1eb-5078-82b3-b31635b502fb")
+		)
+		(pin "3"
+			(uuid "14bb57d7-5df8-5f0e-970a-12e7b61950db")
+		)
+		(pin "4"
+			(uuid "04e5576d-4b52-5250-b7b6-a0025373c7a4")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 193.04 57.785 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c04df419-2520-5d20-b03b-1c6c90c1a4b6")
+		(property "Reference" "RL1"
+			(at 198.12 57.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 195.58 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 193.04 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 57.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "8"
+			(uuid "762153bb-1d20-5a6e-8e9b-bc3e4d07162d")
+		)
+		(pin "10"
+			(uuid "8c2f31ac-fcc6-583a-9c58-2ff3a945dbcd")
+		)
+		(pin "9"
+			(uuid "9077253d-9ec9-5f08-84ec-26348117e7fb")
+		)
+		(pin "1"
+			(uuid "f0826229-5caa-4719-aac0-c26d60b40cc3")
+		)
+		(pin "12"
+			(uuid "3de1f5ed-6ef2-46a0-809e-46708545de9c")
+		)
+		(pin "3"
+			(uuid "16edfc8a-572e-46ca-a31d-15d2f2bddae5")
+		)
+		(pin "4"
+			(uuid "e489b771-4531-436c-b084-4ec358f00c0f")
+		)
+		(pin "5"
+			(uuid "40d124ca-a999-45a5-9b9f-4151877c9f1d")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 74.93 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c3ece004-6271-5f00-8f08-9723455a5a17")
+		(property "Reference" "RL4"
+			(at 66.04 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 66.04 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 74.93 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b056cbb7-3202-58cf-85c4-0ee924b09796")
+		)
+		(pin "12"
+			(uuid "a58c8be2-ae5a-531b-869f-31c4ce59ecfa")
+		)
+		(pin "4"
+			(uuid "1f36ed93-f355-4320-9c34-47e025db5070")
+		)
+		(pin "10"
+			(uuid "5ff1af5f-333e-45fc-ba1e-2af361d14808")
+		)
+		(pin "3"
+			(uuid "3aefe802-d339-4ea5-b6c4-e961b0ddc631")
+		)
+		(pin "5"
+			(uuid "435b2a35-3fa4-4752-b060-b1654c596e45")
+		)
+		(pin "8"
+			(uuid "5681d5b3-1843-4dd2-ae77-3d1783ea8976")
+		)
+		(pin "9"
+			(uuid "53d4d6fe-c7d6-4e0f-b72d-cb24bbad91c5")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Port_10")
+		(at 35.56 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c9a28ff4-0f07-5828-8a63-fdb29119ebf1")
+		(property "Reference" "J1"
+			(at 33.02 135.255 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HOST (underside)"
+			(at 33.02 136.525 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Host_2x05"
+			(at 35.56 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 143.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1cc6b3ca-6e91-5203-8ece-f96d51886842")
+		)
+		(pin "2"
+			(uuid "b2c5054c-d75a-5222-bb71-55c235c16e1c")
+		)
+		(pin "3"
+			(uuid "7d0cabcf-3c5b-56fe-a5d0-ce01d77d7ea4")
+		)
+		(pin "4"
+			(uuid "491c3569-602f-5332-b40b-4478729d9cfb")
+		)
+		(pin "5"
+			(uuid "8e1d267f-8417-559f-abe4-f34327788824")
+		)
+		(pin "6"
+			(uuid "e5ee6edf-3b53-5eb3-9f9b-54ecaba0d49a")
+		)
+		(pin "7"
+			(uuid "f26adb52-b90a-51d2-bd9f-afd7b74d8076")
+		)
+		(pin "8"
+			(uuid "5c69ef23-fdf5-5a5b-932e-156db71a2acc")
+		)
+		(pin "9"
+			(uuid "7cde3b88-3230-53db-a022-a88f3f5a240c")
+		)
+		(pin "10"
+			(uuid "6029d4a6-c728-5846-9712-3ce6d4848e5d")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:InputSelector3")
+		(at 182.88 64.135 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cc173bc7-295f-5792-8455-b6d2037b7987")
+		(property "Reference" "W7"
+			(at 176.53 56.515 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "FINAL INPUT: link 1-2"
+			(at 176.53 57.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x3_Link12"
+			(at 182.88 64.135 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 64.135 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 64.135 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e068328c-b6a1-5aa7-af15-68e6b3ed444c")
+		)
+		(pin "2"
+			(uuid "fe07cf6d-6c09-562d-a82e-d19ffa4a6171")
+		)
+		(pin "3"
+			(uuid "a4d84fda-7955-5a95-864c-909b1f8996c8")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "W7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 153.67 57.785 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cfe26f91-695e-5949-893d-e974ada985d4")
+		(property "Reference" "RL2"
+			(at 158.75 57.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 156.21 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 153.67 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 153.67 57.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "8"
+			(uuid "57d2d64a-8923-58b5-a5b6-10be884a4e09")
+		)
+		(pin "10"
+			(uuid "91f70aa9-2902-5509-9f42-8ac0532fc273")
+		)
+		(pin "9"
+			(uuid "4a33a918-faa2-5ec2-96dc-d12f6cb02427")
+		)
+		(pin "1"
+			(uuid "f54f820d-3064-4b5c-afbe-03c293449535")
+		)
+		(pin "12"
+			(uuid "0f388114-35e4-42d1-8bd5-b047cfb3983b")
+		)
+		(pin "3"
+			(uuid "d8082180-ca41-46c5-873f-0ecaf396d769")
+		)
+		(pin "4"
+			(uuid "337da54e-edb9-41b6-a000-cfa05fba6c43")
+		)
+		(pin "5"
+			(uuid "e536636c-e223-4c63-8d1a-a0d702891b1b")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL2")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:LPF_OUT")
+		(at 194.945 90.805 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dee99043-c4b5-5a7c-877a-caa4edea5708")
+		(property "Reference" "J3"
+			(at 199.39 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LPF1 OUT"
+			(at 199.39 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Socket_1x4"
+			(at 194.945 90.805 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.945 90.805 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 194.945 90.805 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f66491fe-fc89-5d18-bc4d-e35e6bb4ac38")
+		)
+		(pin "2"
+			(uuid "bf3f69e4-5f24-59fb-bee5-e4d212f0464e")
+		)
+		(pin "3"
+			(uuid "bd0b04cc-9094-5d09-8f8c-584d4ab5e1ba")
+		)
+		(pin "4"
+			(uuid "852580b5-9302-54cf-882d-3073bafd5878")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:1N4148")
+		(at 123.19 35.56 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e053f052-75f7-5d7b-b3ce-2de60fd649f9")
+		(property "Reference" "D3"
+			(at 125.095 34.29 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 125.095 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:D_DO35_P7.62"
+			(at 123.19 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d1c0d089-350f-54e0-b78e-d65d6d036491")
+		)
+		(pin "2"
+			(uuid "4a7750f5-c3d8-5b04-b0c8-d0553cec44d1")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 35.56 57.785 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e0f528d3-29ec-5511-9fbc-660267804768")
+		(property "Reference" "RL5"
+			(at 40.64 57.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 38.1 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 35.56 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 57.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "8"
+			(uuid "8639d7e4-d886-5e92-a871-fad2a07c4442")
+		)
+		(pin "10"
+			(uuid "652281e7-a231-501a-9c4a-2f2234f96eca")
+		)
+		(pin "9"
+			(uuid "8797e19a-36de-55e0-92d7-5f90cc1b8de3")
+		)
+		(pin "1"
+			(uuid "d2a89bc4-e8e9-4ac3-9dbb-f90a5b237735")
+		)
+		(pin "12"
+			(uuid "9f043e77-8c25-4ee2-a2ee-3140e1bc2ed9")
+		)
+		(pin "3"
+			(uuid "d161b3ef-27af-4333-b165-3c612566259f")
+		)
+		(pin "4"
+			(uuid "ef3fc453-b1d2-4740-91ea-c37606d19dae")
+		)
+		(pin "5"
+			(uuid "f20f65d9-4464-4907-952c-1d7fb42583b1")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL5")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 153.67 106.045 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e6655d88-878b-535c-8304-d11faf14762c")
+		(property "Reference" "RL2"
+			(at 158.75 104.775 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 156.21 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 153.67 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 153.67 106.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "c8e47f5e-a662-58a2-8343-bff83609efde")
+		)
+		(pin "5"
+			(uuid "556b7e68-f352-5312-94f4-99fb7481ae21")
+		)
+		(pin "4"
+			(uuid "ca12b1f0-dacf-52c6-8be0-2162cd1f1e73")
+		)
+		(pin "1"
+			(uuid "42b94811-b4da-4a40-bc04-d736964d9f2c")
+		)
+		(pin "12"
+			(uuid "ca02c8dc-56cc-46de-8d26-dce07a1f309f")
+		)
+		(pin "8"
+			(uuid "4b34ecd9-c18e-41ea-8e95-0fc145f12b8a")
+		)
+		(pin "9"
+			(uuid "519d9000-685d-4e9d-b9fa-14181a9b2a7e")
+		)
+		(pin "10"
+			(uuid "13e838b9-78bc-48d7-b144-8b43b7608822")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL2")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:TX2_5V")
+		(at 35.56 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e9d83bf0-fe97-5c62-9a32-d8d2606e8c4c")
+		(property "Reference" "RL5"
+			(at 26.67 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TX2-5V"
+			(at 26.67 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:TX2_5V"
+			(at 35.56 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "74baacf8-4df8-5497-8ad1-cee3766f230f")
+		)
+		(pin "12"
+			(uuid "8433219b-34df-5807-a0dd-f7f9f52d1468")
+		)
+		(pin "10"
+			(uuid "b6d25c24-d0a4-43ac-8608-8c346fd5ca35")
+		)
+		(pin "3"
+			(uuid "ace4d8c2-e7b2-4f0e-8fa7-dff1c612a002")
+		)
+		(pin "4"
+			(uuid "7372f978-3ce9-42a6-a063-45576b12794d")
+		)
+		(pin "5"
+			(uuid "457c0589-f2fd-427c-a38e-2f0359a6c5f7")
+		)
+		(pin "8"
+			(uuid "8e8df32e-e1ca-4c62-bead-0a0bfa940279")
+		)
+		(pin "9"
+			(uuid "b39d9e86-6fb0-45c8-929e-183d60789080")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "RL5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Selector3")
+		(at 35.56 114.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ef3192fc-dba1-56d8-a178-ed6b70f62c87")
+		(property "Reference" "W6"
+			(at 30.48 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OUTPUT 5: link 1-2*"
+			(at 39.37 116.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Wire_1x3_Link12"
+			(at 35.56 114.935 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 114.935 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 114.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e5448ad8-b55e-5bbb-becf-a5b7a11c5a63")
+		)
+		(pin "2"
+			(uuid "c25a856a-59ff-588e-a64a-7b8ba217e27b")
+		)
+		(pin "3"
+			(uuid "032995fa-6044-5ec4-9be3-69e317f10958")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "W6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:LPF_OUT")
+		(at 76.835 90.805 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f3ea7b5c-9c8c-59e5-84ef-7a58f0a72c73")
+		(property "Reference" "J9"
+			(at 81.28 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LPF4 OUT"
+			(at 81.28 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Socket_1x4"
+			(at 76.835 90.805 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.835 90.805 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 76.835 90.805 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0c22728d-afe0-5551-9336-6853e5c583af")
+		)
+		(pin "2"
+			(uuid "403fd187-f151-5322-9beb-0576eef40d54")
+		)
+		(pin "3"
+			(uuid "86305aa7-a35f-5800-9516-342f05994292")
+		)
+		(pin "4"
+			(uuid "17ae3cd0-edb7-5110-a177-efbdaf73d8d4")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:LPF_IN")
+		(at 116.205 73.025 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f48f140d-d9f9-5ded-88de-796478394fd8")
+		(property "Reference" "J6"
+			(at 120.65 70.485 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LPF3 IN"
+			(at 120.65 71.755 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:Socket_1x4"
+			(at 116.205 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.205 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 116.205 73.025 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e837594d-8269-541c-a6a8-2cb86d2a0752")
+		)
+		(pin "2"
+			(uuid "398efa87-e072-5980-82ad-92072dc1dd5c")
+		)
+		(pin "3"
+			(uuid "9fb7e010-1523-52b1-b582-b965c8567604")
+		)
+		(pin "4"
+			(uuid "e75283ef-8fbd-5c13-9990-c01c77613826")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:1N4148")
+		(at 162.56 35.56 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f7abcf40-a91c-5493-aced-88cfad0dafbc")
+		(property "Reference" "D2"
+			(at 164.465 34.29 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 164.465 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:D_DO35_P7.62"
+			(at 162.56 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eb39e4ec-b32b-5ee3-98b5-0dc3e9b0b487")
+		)
+		(pin "2"
+			(uuid "f280b698-1064-59ac-a249-83003bff1988")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "relay-switched-lpf:Port_2")
+		(at 229.87 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fb3ed215-d80a-55bc-a2e7-33b0639dbc70")
+		(property "Reference" "X2"
+			(at 227.33 95.885 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMA edge option"
+			(at 227.33 97.155 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "relay-switched-lpf:SMA_Edge_Generic"
+			(at 229.87 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "13f0e4ce-3412-5775-be7e-984501d64a4c")
+		)
+		(pin "2"
+			(uuid "f78184bf-ee09-5efd-a792-b71f1fd0f153")
+		)
+		(instances
+			(project "Relay-Switched LPF"
+				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
+					(reference "X2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

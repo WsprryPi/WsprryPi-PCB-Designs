@@ -15,6 +15,7 @@ The operator is responsible for determining suitability and verifying the assemb
 | Project | Purpose | Status / reference export |
 | --- | --- | --- |
 | [WsprryPi LPF](WsprryPi%20LPF/README.md) | Low-pass filter board and design workbook | Export from the KiCad source |
+| [Relay-Switched LPF](Relay-Switched%20LPF/README.md) | Independent reconstruction of the QRP Labs Rev. 5 five-filter relay carrier | Schematic and two-layer PCB; unqualified, see project validation |
 | [Pico 2W Wattmeter Shield](Pico%202W%20Wattmeter%20Shield/README.md) | ADL5904 RF detector and ADS1115 ADC shield | See project assembly drawings |
 | [Pico 2W Shield Template](Pico%202W%20Shield%20Template/README.md) | Unwired shield interface, outline, and antenna notch | KiCad project template |
 | [WsprryPico GPIO Shield](WsprryPico%20GPIO%20Shield/README.md) | Pico 2 W shield with the grouped BS170 amplifier circuit and independent local libraries | Placed and routed GPIO design; see current validation |

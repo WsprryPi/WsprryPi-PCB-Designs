@@ -1,0 +1,12 @@
+References,Quantity,Description,Part or specification,Population
+RL1-RL5,5,DPDT non-latching relay,Panasonic TX2-5V 5V coil,Required
+D1-D5,5,Axial flyback diode,1N4148 DO-35,Required
+J2-J11,10,LPF module female socket,1x04 2.54mm pitch through-hole,Required
+J1,1,Underside host female socket,2x05 2.54mm pitch through-hole verify mating height,Required
+W1 W3 W4 W5 W6 W7,6,Hand-fit wire link,Connect pins 1-2 per README,Default LPF configuration
+W2 W8 W9,0,Unfitted optional link,Leave open in default assembly,Open
+J21-J26,0,Bare RF wire terminals,PCB pads no purchased header required,Use as needed
+X1,0,Optional vertical SMA,Generic pattern no selected order code,Optional fit unverified
+X2,0,Optional edge SMA,Generic pattern no selected order code,Optional fit unverified
+H1-H4,4,Mounting hardware,Builder choice measure hole positions and stack height,Mechanical fit unverified
+External LPFs,5,Plug-in filter modules,Select band set separately highest frequency in slot 1,External
