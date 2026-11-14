@@ -6,6 +6,14 @@ Updated after the output-area PCB repair and the earlier schematic presentation 
 
 Latest update: four **R3 mm corner fillets**, a complete local-footprint audit, and **29 local 3D model assignments** have been applied. The 80 × 37 mm outside dimensions, mounting centers, component positions, pad geometry/UUIDs, and all tracks/vias are preserved. Letter sheet settings and native shared `DOC_*` title-block variables remain in place.
 
+## Schematic label repair — 2026-11-13
+
+Repaired the user's latest layout edits without moving wires or component symbols. Reattached `RELAY1_OUT` at (194.31,102.87) mm and `FINAL_RELAY_COM` at its connected wire endpoint (198.12,97.79) mm. Restored `FINAL_NC` at (184.15,69.85) mm using its previous UUID. Renamed the competing `RF_OUT` label to the existing PCB name `LPF1_OUT`. Label justification was adjusted for legibility. All coordinates are schematic sheet coordinates.
+
+The input had two dangling-label ERC errors, one multiple-net-name warning, and six PCB parity findings caused by generated replacement net names. KiCad **10.0.6** final ERC and DRC with all severities and schematic parity report **zero findings**, exit **0**. The independent audit passes **140 pins/33 nets**, PCB membership, all default switching paths, and local dependencies. No thresholds, severities, or exclusions were changed.
+
+A structured comparison verifies that only labels changed relative to the user's pre-repair schematic. Every wire, component symbol/property/UUID, and embedded definition is preserved; the PCB is unchanged. The maintained PDF was regenerated and rendered, including an enlarged label-area inspection. Local Markdown links and whitespace checks pass. Reports: `generated/erc-label-repair.rpt`, `generated/drc-label-repair.json`; preview: `generated/label-repair-detail.png`; pre-repair snapshot: `generated/before-label-repair/`. Hardware and RF qualification remain open.
+
 ## User-saved schematic layout refinement — 2026-11-13
 
 Recorded the remaining schematic presentation edits: relay coils and flyback diodes repositioned around the shared `RELAY_VPLUS` bus, W1 moved alongside that bus, input filters/relay poles and slot labels repositioned, and the slot-1/W7/W9/output region rearranged with equivalent wire paths. Symbol references, values, library definitions, and electrical membership are unchanged. The native schematic preserves the user's saved placement; no full redraw or generator placement synchronization was performed. The project file and PCB are unchanged in this step.
@@ -180,7 +188,7 @@ SHA-256 hashes of the checked source revision:
 
 | File | SHA-256 |
 | --- | --- |
-| `Relay-Switched LPF.kicad_sch` | `bf94521cb9e06053a8977cfdb74b47ab84b983966e5aec61b6203a2576918f48` |
+| `Relay-Switched LPF.kicad_sch` | `0b2db138645d4e89c1eb5ba4c7f059e8c33872c7ddf77e8ddac063c539fc6f7d` |
 | `Relay-Switched LPF.kicad_pcb` | `80c827c9e3a5d6f1692aad18a382a7e781d30d935223cb6ca27f263bc11ce477` |
 | `relay-switched-lpf.kicad_sym` | `60824d9e999deb88c2240adb61f15bfa4871622dbde0935b79be750b3041e995` |
 
