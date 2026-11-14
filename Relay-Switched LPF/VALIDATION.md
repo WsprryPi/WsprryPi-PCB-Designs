@@ -6,6 +6,14 @@ Updated after the output-area PCB repair and the earlier schematic presentation 
 
 Latest update: four **R3 mm corner fillets**, a complete local-footprint audit, and **29 local 3D model assignments** have been applied. The 80 × 37 mm outside dimensions, mounting centers, component positions, pad geometry/UUIDs, and all tracks/vias are preserved. Letter sheet settings and native shared `DOC_*` title-block variables remain in place.
 
+## User-saved SMA placement and project state — 2026-11-13
+
+Recorded the remaining user-saved schematic/project edits after the ground-symbol commit. X1 and X2 are repositioned with revised label placement and equivalent signal/shield wire branches. X2 was recreated in the editor and has a new schematic UUID. Pin/net membership and existing SMA footprint fields are unchanged. KiCad also normalized native schematic formatting, field ordering, and explicit body-style settings; embedded symbol definitions are unchanged. The project records `used_designators` as `X2,#PWR1`.
+
+KiCad **10.0.6** ERC and DRC with all severities and schematic parity report **zero findings**, exit **0**. The independent audit passes **140 pins/33 nets**, PCB membership, default switching paths, and local dependencies. The PCB is unchanged from commit `0772d46`; no physical board geometry was edited. The native schematic is authoritative; the redraw helper's earlier placement defaults were not run over or synchronized with these user edits.
+
+The maintained one-page Letter schematic PDF was regenerated and visually inspected against the saved source. Local Markdown links and whitespace checks pass. Reports: `generated/erc-user-save.rpt`, `generated/drc-user-save.json`; preview: `generated/schematic-user-save.png`. Hardware, physical connector fit, and RF qualification remain open.
+
 ## Project-local triangular grounds — 2026-11-13
 
 Copied the user's W8 `power:GND` symbol into the independent library as `relay-switched-lpf:GND`, preserving its standard full-size triangular artwork and global power behavior. Replaced all 16 former two-bar drawn ground markings; W8 now also references the local definition. One redundant W7 marker at an already connected input-ground junction was removed. There are **17 local GND instances**, including the ground used with the new host-ground ERC flag. J1's textual ground pin labels remain labels. `/GND_OUT` is unchanged and remains separate.
@@ -152,7 +160,7 @@ SHA-256 hashes of the checked source revision:
 
 | File | SHA-256 |
 | --- | --- |
-| `Relay-Switched LPF.kicad_sch` | `4430b89f50f5b7d41cb238644e9ad285476a9f109493c6253e29f64c5a3119b3` |
+| `Relay-Switched LPF.kicad_sch` | `761f80abf64f1ec0feda1ab0f4b06722e843cf04581e819a638957e665c3b725` |
 | `Relay-Switched LPF.kicad_pcb` | `d6c08991677738810ffa5d105afa4bcdb71bbde3d6bf660439646f6c521b7c22` |
 | `relay-switched-lpf.kicad_sym` | `60824d9e999deb88c2240adb61f15bfa4871622dbde0935b79be750b3041e995` |
 
