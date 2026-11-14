@@ -6,6 +6,14 @@ Updated after the output-area PCB repair and the earlier schematic presentation 
 
 Latest update: four **R3 mm corner fillets**, a complete local-footprint audit, and **29 local 3D model assignments** have been applied. The 80 × 37 mm outside dimensions, mounting centers, component positions, pad geometry/UUIDs, and all tracks/vias are preserved. Letter sheet settings and native shared `DOC_*` title-block variables remain in place.
 
+## User-saved schematic layout refinement — 2026-11-13
+
+Recorded the remaining schematic presentation edits: relay coils and flyback diodes repositioned around the shared `RELAY_VPLUS` bus, W1 moved alongside that bus, input filters/relay poles and slot labels repositioned, and the slot-1/W7/W9/output region rearranged with equivalent wire paths. Symbol references, values, library definitions, and electrical membership are unchanged. The native schematic preserves the user's saved placement; no full redraw or generator placement synchronization was performed. The project file and PCB are unchanged in this step.
+
+KiCad **10.0.6** ERC and DRC with all severities and schematic parity report **zero findings**, exit **0**, in the current-schematic review. The independent audit passes **140 pins/33 nets**, PCB membership, all default switching paths, and local dependencies. The diode cathodes remain on `RELAY_VPLUS`, and W7 retains `RFO` / `FINAL_NC` / `GND` pin ordering. The current schematic export was rendered and visually inspected; the maintained one-page Letter PDF is refreshed to match. Local Markdown links and whitespace checks pass.
+
+Reports: `generated/erc-current-review.rpt`, `generated/drc-current-review.json`; visual review: `generated/schematic-current-review.png`. Physical assembly, supply sequencing, and RF qualification remain open.
+
 ## Flyback cathodes on the relay supply — 2026-11-13
 
 Moved **D1–D5 pin 1 (cathode)** from host `+5V` to `RELAY_VPLUS` in the saved schematic and PCB. The cathodes and relay coil-positive pins now share W1 pin 2. The only host `+5V` members are J1 pin 1 and W1 pin 1. With W1 open, an external regulated 5 V supply can feed W1 pin 2 and main `GND`; `/GND_OUT` remains separate. Fit W1 for the existing shared-supply configuration. This intentionally adapts the original circuit; physical/sequencing qualification remains open.
@@ -172,7 +180,7 @@ SHA-256 hashes of the checked source revision:
 
 | File | SHA-256 |
 | --- | --- |
-| `Relay-Switched LPF.kicad_sch` | `8d29a67e48bcef2ccf27a937c9127061c5367abe47d48cc13f11de34d477377c` |
+| `Relay-Switched LPF.kicad_sch` | `bf94521cb9e06053a8977cfdb74b47ab84b983966e5aec61b6203a2576918f48` |
 | `Relay-Switched LPF.kicad_pcb` | `80c827c9e3a5d6f1692aad18a382a7e781d30d935223cb6ca27f263bc11ce477` |
 | `relay-switched-lpf.kicad_sym` | `60824d9e999deb88c2240adb61f15bfa4871622dbde0935b79be750b3041e995` |
 
