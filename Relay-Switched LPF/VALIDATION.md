@@ -6,6 +6,12 @@ Updated after the output-area PCB repair and the earlier schematic presentation 
 
 Latest update: four **R3 mm corner fillets**, a complete local-footprint audit, and **29 local 3D model assignments** have been applied. The 80 × 37 mm outside dimensions, mounting centers, component positions, pad geometry/UUIDs, and all tracks/vias are preserved. Letter sheet settings and native shared `DOC_*` title-block variables remain in place.
 
+## J1 boxed connector symbol — 2026-11-13
+
+J1's project-local `Port_10` now uses the matching boxed connector body and ten contact marks, adapted from KiCad `Conn_01x10`. Local/embedded definitions and the redraw helper agree. Only this symbol definition changes in the saved schematic: all placed symbols, properties, UUIDs, wiring, labels, pin endpoints/numbers/electrical types, and PCB footprint assignments remain unchanged. The PCB is byte-identical to commit `c896664`; J1 retains its underside 2 × 5 host socket footprint.
+
+KiCad **10.0.6** ERC and DRC with all severities and schematic parity report **zero findings**, exit **0**. The independent 140-pin/33-net connectivity and default switching-path audit passes. The updated one-page Letter schematic PDF was rendered and visually inspected. Helper syntax, local Markdown links, and whitespace checks pass. Reports: `generated/erc-j1.rpt`, `generated/drc-j1.json`; preview: `generated/schematic-j1.png`. Hardware and RF qualification remain open.
+
 ## W1–W9 boxed connector symbols — 2026-11-13
 
 All nine wire jumpers now use boxed connector body/contact graphics: `Link2` for W1/W8/W9, `Selector3` for W2–W6, and `InputSelector3` for W7. Pin endpoints, numbers, passive electrical types, references, values, instance/pin UUIDs, and PCB footprint assignments are preserved. The PCB is byte-identical to commit `f3a92e7`; default fitted/open links are unchanged.
@@ -122,9 +128,9 @@ SHA-256 hashes of the checked source revision:
 
 | File | SHA-256 |
 | --- | --- |
-| `Relay-Switched LPF.kicad_sch` | `28ede479da06159ed13564e8fad60590b68d480ace1723060b807e838f447e81` |
+| `Relay-Switched LPF.kicad_sch` | `2ddab02d6311eff805b3ab35532134b8c9d0051815f5ff251c3c944c9e9cc094` |
 | `Relay-Switched LPF.kicad_pcb` | `eadd6eb0cd03db7cf88f8804246575f2b9ed8d73e41811dd4f2682f3d52aba71` |
-| `relay-switched-lpf.kicad_sym` | `11f649bd4d25cd851e834e32ab0f0033b1d41e662776a2ef63a01d0569d865e8` |
+| `relay-switched-lpf.kicad_sym` | `0509f9220db1cc8ac9478c25ab15fd876d59c77d8b74301cd8870b0b21ef38d2` |
 
 Recheck after any source edit. Final pre-commit reports `erc-precommit.rpt`, `drc-precommit.json`, `connectivity.xml`, earlier reports, and visual exports reside in ignored `generated/`. The final KiCad 10.0.6 ERC and DRC/parity checks passed with zero findings; the independent connectivity audit also passed. The maintained schematic PDF is an intentional reference export; the native schematic is authoritative.
 

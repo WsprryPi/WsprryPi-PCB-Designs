@@ -70,9 +70,19 @@ assert len(original)==38
 library=parse((ROOT/(LIB+'.kicad_sym')).read_text())
 library[:]=[v for v in library if not (isinstance(v,list) and v[0]=='symbol' and v[1] in ['TX2_5V','LPF_IN','LPF_OUT','Selector3','Link2','Terminal2','InputSelector3','Port_2','Port_3','Port_4','Port_10','1N4148','AntennaConnector2','OutputConnector2'])]
 # Canonical unscaled definitions make repeated Letter redraws idempotent.
-for n in [2,3,4,10]:
+for n in [2,3,4]:
     ys=[(n-1)*1.27-i*2.54 for i in range(n)]
     library.append(symbol('Port_'+str(n),'J',[(rectangle(-5.08,max(ys)+1.27,5.08,min(ys)-1.27),''.join(pin(i+1,-7.62,y,0) for i,y in enumerate(ys)))]))
+def host_connector():
+    # KiCad Conn_01x10 boxed artwork adapted to the existing J1 pin endpoints.
+    # The actual host footprint remains the existing 2x5 socket.
+    ys=[9*1.27-i*2.54 for i in range(10)]
+    graphics=rectangle(-3.81,max(ys)+1.27,-1.27,min(ys)-1.27).replace('(type none)', '(type background)')
+    for y in ys:
+        graphics+=(f'(rectangle (start -3.81 {y+.127}) (end -2.54 {y-.127}) '
+                   '(stroke (width .1524) (type default)) (fill (type none)))')
+    return symbol('Port_10','J',[(graphics,''.join(pin(i+1,-7.62,y,0,3.81) for i,y in enumerate(ys)))])
+library.append(host_connector())
 diode=poly([(-5.08,0),(-1.27,0)])+poly([(1.27,0),(5.08,0)])
 diode+=poly([(-1.27,-2.54),(-1.27,2.54)])+poly([(-1.27,0),(1.27,2.54),(1.27,-2.54),(-1.27,0)])
 library.append(symbol('1N4148','D',[(diode,pin(1,-7.62,0,0)+pin(2,7.62,0,180))]))

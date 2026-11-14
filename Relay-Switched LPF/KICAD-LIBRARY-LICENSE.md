@@ -32,3 +32,7 @@ Project-local `AntennaConnector2` (J21–J25) and `OutputConnector2` (J26) adapt
 ## Wire-jumper connector symbols
 
 Project-local `Link2`, `Selector3`, and `InputSelector3` use boxed body/contact artwork adapted from KiCad 10.0.6 `Connector_Generic:Conn_01x02` and `Conn_01x03`, under CC-BY-SA-4.0 with the KiCad libraries exception. The library source and license links above apply. Geometry is resized and oriented to preserve W1–W9 pin endpoints, numbering, and passive electrical types. The symbol style does not change their bare-pad PCB footprints or assembly configuration.
+
+## Host connector symbol
+
+Project-local `Port_10` (J1) adapts KiCad 10.0.6 `Connector_Generic:Conn_01x10` boxed body/contact artwork under CC-BY-SA-4.0 with the KiCad libraries exception; the same source and license links above apply. Geometry is translated/scaled to preserve the existing ten pin endpoints and numbering. The physical footprint remains the original 2 × 5 host socket.
