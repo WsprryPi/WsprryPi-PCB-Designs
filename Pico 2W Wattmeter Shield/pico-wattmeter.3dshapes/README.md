@@ -28,7 +28,7 @@ Copyright (C) 2024, KiCAD, as recorded in the preserved STEP notice. The model u
 
 ## SMA connector model
 
-`SMA_Adafruit_1865_Preview.wrl` is an unchanged copy of the [GPIO Shield's original illustrative SMA asset](../../WsprryPico%20GPIO%20Shield/wsprrypico-gpio-shield.3dshapes/README.md#bs170-circuit-assets). Both J30 in the saved PCB and the local `SMA_Adafruit_1865_EdgeMount` footprint reference this independent local copy through `${KIPRJMOD}/pico-wattmeter.3dshapes/`, with zero offset, unit scale, and zero additional rotation. The connector footprint's existing position and rotation determine its board orientation.
+`SMA_Adafruit_1865_Preview.wrl` is an unchanged copy of the [GPIO Shield's original illustrative SMA asset](../../WsprryPico%20GPIO%20Shield%20with%20GPS/wsprrypico-gpio-shield-with-gps.3dshapes/README.md#assigned-local-models). Both J30 in the saved PCB and the local `SMA_Adafruit_1865_EdgeMount` footprint reference this independent local copy through `${KIPRJMOD}/pico-wattmeter.3dshapes/`, with zero offset, unit scale, and zero additional rotation. The connector footprint's existing position and rotation determine its board orientation.
 
 The mesh follows the existing Adafruit-derived fabrication outline: 6.5 mm flange, 6.1 mm barrel diameter, 9.5 mm forward reach, and 3.9 mm rear fingers straddling the 1.6 mm board. KiCad's VRML unit convention is already accounted for in the mesh coordinates. Threads, internal contacts, heights, and tolerances are simplified assumptions. It is a preview, rather than manufacturer CAD or mechanical qualification; confirm the supplied connector's fit independently.
 

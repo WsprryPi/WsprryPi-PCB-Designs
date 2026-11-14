@@ -57,3 +57,6 @@ Desktop.ini
 # Keep design sources and reference assets trackable. In particular, do not
 # blanket-ignore .kicad_sym, .kicad_mod, .step, .stp, .wrl, .csv, .xml, .pdf,
 # .zip, or legacy *-cache.lib / *-rescue.lib libraries.
+
+# Private account-export reference material (local only)
+/chatgpt-context/

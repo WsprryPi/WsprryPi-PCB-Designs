@@ -1,0 +1,652 @@
+{
+  "f_low_hz": 135700.0,
+  "f_high_hz": 29700000.0,
+  "r_drain_ohm": 12.5,
+  "ae_m2": 2.43e-05,
+  "le_m": 0.052,
+  "cores": [
+    {
+      "material": "77",
+      "part": "5977000621",
+      "turns": 15,
+      "al": 1.27e-06,
+      "tolerance": 0.3,
+      "positive_tolerance": 0.25,
+      "mu_reference": 2000,
+      "outer_m": 0.02185,
+      "inner_m": 0.0124,
+      "height_m": 0.0071,
+      "ae_m2": 2.43e-05,
+      "le_m": 0.052,
+      "role": "Selected within-outline prototype",
+      "source": "https://fair-rite.com/product/toroids-5977000621/",
+      "l_nominal_h": 0.00028575,
+      "l_al_minimum_h": 0.00020002499999999997,
+      "l_assumed_50pct_retained_h": 0.00010001249999999998,
+      "x_low_nominal_ohm": 243.63852134715512,
+      "x_low_scenario_ohm": 85.27348247150428,
+      "matched_loss_scenario_db": 0.02326764587717793,
+      "estimated_pair_length_m": 0.41474999999999995,
+      "estimated_winding_dcr_ohm": 0.06330992849999999,
+      "assumed_twist_wire_length_factor": 1.14,
+      "hf_delay_only_loss_db": 0.0017804078705177945,
+      "hdc_200ma_oe": 0.724982920059183,
+      "hdc_300ma_oe": 1.0874743800887745,
+      "ac_flux_500mw_sine_peak_t": 0.011383600819265911,
+      "ac_flux_5v_bipolar_square_peak_t": 0.025271593818770324,
+      "linear_bdc_200ma_t": 0.1567901234567901
+    },
+    {
+      "material": "43",
+      "part": "5943000621",
+      "turns": 24,
+      "al": 4.7e-07,
+      "tolerance": 0.25,
+      "positive_tolerance": 0.2,
+      "mu_reference": 800,
+      "outer_m": 0.02185,
+      "inner_m": 0.0124,
+      "height_m": 0.0071,
+      "ae_m2": 2.43e-05,
+      "le_m": 0.052,
+      "role": "Same-size HF comparison",
+      "source": "https://fair-rite.com/product/toroids-5943000621/",
+      "l_nominal_h": 0.00027072,
+      "l_al_minimum_h": 0.00020304,
+      "l_assumed_50pct_retained_h": 0.00010152,
+      "x_low_nominal_ohm": 230.82351880700554,
+      "x_low_scenario_ohm": 86.55881955262709,
+      "matched_loss_scenario_db": 0.02258354053425891,
+      "estimated_pair_length_m": 0.6456,
+      "estimated_winding_dcr_ohm": 0.09854825759999998,
+      "assumed_twist_wire_length_factor": 1.14,
+      "hf_delay_only_loss_db": 0.011279909482363477,
+      "hdc_200ma_oe": 1.159972672094693,
+      "hdc_300ma_oe": 1.739959008142039,
+      "ac_flux_500mw_sine_peak_t": 0.0071147505120411954,
+      "ac_flux_5v_bipolar_square_peak_t": 0.01579474613673145,
+      "linear_bdc_200ma_t": 0.0928395061728395
+    },
+    {
+      "material": "77",
+      "part": "5977004921",
+      "turns": 14,
+      "al": 1.4e-06,
+      "tolerance": 0.3,
+      "positive_tolerance": 0.25,
+      "mu_reference": 2000,
+      "outer_m": 0.0169,
+      "inner_m": 0.0088,
+      "height_m": 0.0071,
+      "ae_m2": 2e-05,
+      "le_m": 0.039,
+      "role": "Smaller; higher DC magnetic stress",
+      "source": "https://fair-rite.com/product/toroids-5977004921/",
+      "l_nominal_h": 0.0002744,
+      "l_al_minimum_h": 0.00019208,
+      "l_assumed_50pct_retained_h": 9.604e-05,
+      "x_low_nominal_ohm": 233.96119075296366,
+      "x_low_scenario_ohm": 81.88641676353728,
+      "matched_loss_scenario_db": 0.02522659708512503,
+      "estimated_pair_length_m": 0.3702000000000001,
+      "estimated_winding_dcr_ohm": 0.05650954920000001,
+      "assumed_twist_wire_length_factor": 1.14,
+      "hf_delay_only_loss_db": 0.0011179753358254657,
+      "hdc_200ma_oe": 0.9022009671847611,
+      "hdc_300ma_oe": 1.3533014507771417,
+      "ac_flux_500mw_sine_peak_t": 0.014819008923651516,
+      "ac_flux_5v_bipolar_square_peak_t": 0.032898199810506366,
+      "linear_bdc_200ma_t": 0.19599999999999998
+    },
+    {
+      "material": "77",
+      "part": "5977002721",
+      "turns": 11,
+      "al": 2.25e-06,
+      "tolerance": 0.3,
+      "positive_tolerance": 0.25,
+      "mu_reference": 2000,
+      "outer_m": 0.0368,
+      "inner_m": 0.02195,
+      "height_m": 0.0137,
+      "ae_m2": 7.8e-05,
+      "le_m": 0.089,
+      "role": "Superseded overhanging mount",
+      "source": "https://fair-rite.com/product/toroids-5977002721/",
+      "l_nominal_h": 0.00027225000000000003,
+      "l_al_minimum_h": 0.000190575,
+      "l_assumed_50pct_retained_h": 9.52875e-05,
+      "x_low_nominal_ohm": 232.1280400236675,
+      "x_low_scenario_ohm": 81.24481400828363,
+      "matched_loss_scenario_db": 0.02562542913001021,
+      "estimated_pair_length_m": 0.5167500000000002,
+      "estimated_winding_dcr_ohm": 0.07887982050000002,
+      "assumed_twist_wire_length_factor": 1.14,
+      "hf_delay_only_loss_db": 0.004418559153825832,
+      "hdc_200ma_oe": 0.3106293859729234,
+      "hdc_300ma_oe": 0.46594407895938506,
+      "ac_flux_500mw_sine_peak_t": 0.004836040208184645,
+      "ac_flux_5v_bipolar_square_peak_t": 0.01073600926216991,
+      "linear_bdc_200ma_t": 0.06346153846153847
+    }
+  ],
+  "material_only_sweep": [
+    {
+      "part": "5977000621",
+      "material": "77",
+      "frequency_hz": 135700,
+      "r_ohm": 6.944546530627643,
+      "x_ohm": 245.24976131575966,
+      "magnitude_ohm": 245.3480632732876,
+      "matched_shunt_loss_db": 0.00907162958647907
+    },
+    {
+      "part": "5977000621",
+      "material": "77",
+      "frequency_hz": 472000,
+      "r_ohm": 99.18968967102072,
+      "x_ohm": 902.9696490045408,
+      "magnitude_ohm": 908.4012227867248,
+      "matched_shunt_loss_db": 0.006725747588304822
+    },
+    {
+      "part": "5977000621",
+      "material": "77",
+      "frequency_hz": 1800000.0,
+      "r_ohm": 2075.454908163952,
+      "x_ohm": 1955.0904247185333,
+      "magnitude_ohm": 2851.296484872791,
+      "matched_shunt_loss_db": 0.013857447291747073
+    },
+    {
+      "part": "5977000621",
+      "material": "77",
+      "frequency_hz": 3500000.0,
+      "r_ohm": 3145.0892058753875,
+      "x_ohm": 1201.728787071398,
+      "magnitude_ohm": 3366.8588017007733,
+      "matched_shunt_loss_db": 0.015050677171630538
+    },
+    {
+      "part": "5977000621",
+      "material": "77",
+      "frequency_hz": 5300000.0,
+      "r_ohm": 3418.6481249386866,
+      "x_ohm": 457.5396700171822,
+      "magnitude_ohm": 3449.129970265868,
+      "matched_shunt_loss_db": 0.015586437441557244
+    },
+    {
+      "part": "5977000621",
+      "material": "77",
+      "frequency_hz": 7000000.0,
+      "r_ohm": 3351.801163746738,
+      "x_ohm": -1.6983633253587755,
+      "magnitude_ohm": 3351.8015940284968,
+      "matched_shunt_loss_db": 0.016181224079618188
+    },
+    {
+      "part": "5977000621",
+      "material": "77",
+      "frequency_hz": 10100000.0,
+      "r_ohm": 3074.6093267039128,
+      "x_ohm": -363.7170205654241,
+      "magnitude_ohm": 3096.0478973852582,
+      "matched_shunt_loss_db": 0.017395625100579938
+    },
+    {
+      "part": "5977000621",
+      "material": "77",
+      "frequency_hz": 14000000.0,
+      "r_ohm": 2857.5016805501177,
+      "x_ohm": -509.23057614900176,
+      "magnitude_ohm": 2902.521599236049,
+      "matched_shunt_loss_db": 0.01839435426079705
+    },
+    {
+      "part": "5977000621",
+      "material": "77",
+      "frequency_hz": 18100000.0,
+      "r_ohm": 2688.131280702114,
+      "x_ohm": -588.4435343414907,
+      "magnitude_ohm": 2751.7840713612495,
+      "matched_shunt_loss_db": 0.01925119798143791
+    },
+    {
+      "part": "5977000621",
+      "material": "77",
+      "frequency_hz": 21000000.0,
+      "r_ohm": 2594.3303571095576,
+      "x_ohm": -627.3976235552749,
+      "magnitude_ohm": 2669.1155426213777,
+      "matched_shunt_loss_db": 0.01974785369292368
+    },
+    {
+      "part": "5977000621",
+      "material": "77",
+      "frequency_hz": 24900000.0,
+      "r_ohm": 2470.0103175827194,
+      "x_ohm": -646.4726800900744,
+      "magnitude_ohm": 2553.209332402639,
+      "matched_shunt_loss_db": 0.02054667816861861
+    },
+    {
+      "part": "5977000621",
+      "material": "77",
+      "frequency_hz": 28000000.0,
+      "r_ohm": 2411.256110949531,
+      "x_ohm": -669.1258309425091,
+      "magnitude_ohm": 2502.3759530146463,
+      "matched_shunt_loss_db": 0.02088096505170635
+    },
+    {
+      "part": "5977000621",
+      "material": "77",
+      "frequency_hz": 29700000.0,
+      "r_ohm": 2377.095664807418,
+      "x_ohm": -674.259886179863,
+      "magnitude_ohm": 2470.8723548086214,
+      "matched_shunt_loss_db": 0.02111323761610002
+    },
+    {
+      "part": "5943000621",
+      "material": "43",
+      "frequency_hz": 135700,
+      "r_ohm": 2.6712956192511705,
+      "x_ohm": 233.4767414265586,
+      "magnitude_ohm": 233.49202257775218,
+      "matched_shunt_loss_db": 0.005767828433333972
+    },
+    {
+      "part": "5943000621",
+      "material": "43",
+      "frequency_hz": 472000,
+      "r_ohm": 18.281314378561845,
+      "x_ohm": 814.9467701569876,
+      "magnitude_ohm": 815.1517923949585,
+      "matched_shunt_loss_db": 0.0017485248898044042
+    },
+    {
+      "part": "5943000621",
+      "material": "43",
+      "frequency_hz": 1800000.0,
+      "r_ohm": 678.3537481718154,
+      "x_ohm": 3487.688846608576,
+      "magnitude_ohm": 3553.0461998708392,
+      "matched_shunt_loss_db": 0.0029295333550096742
+    },
+    {
+      "part": "5943000621",
+      "material": "43",
+      "frequency_hz": 3500000.0,
+      "r_ohm": 3120.721602927771,
+      "x_ohm": 5224.094425718488,
+      "magnitude_ohm": 6085.2334295245455,
+      "matched_shunt_loss_db": 0.004577208108092523
+    },
+    {
+      "part": "5943000621",
+      "material": "43",
+      "frequency_hz": 5300000.0,
+      "r_ohm": 4815.464210639451,
+      "x_ohm": 5685.103032455223,
+      "magnitude_ohm": 7450.442406567613,
+      "matched_shunt_loss_db": 0.004709931452727111
+    },
+    {
+      "part": "5943000621",
+      "material": "43",
+      "frequency_hz": 7000000.0,
+      "r_ohm": 5900.960354430441,
+      "x_ohm": 5942.773027611532,
+      "magnitude_ohm": 8374.8363782385,
+      "matched_shunt_loss_db": 0.004567366915081256
+    },
+    {
+      "part": "5943000621",
+      "material": "43",
+      "frequency_hz": 10100000.0,
+      "r_ohm": 7332.853373886802,
+      "x_ohm": 6331.595886517875,
+      "magnitude_ohm": 9688.12908012136,
+      "matched_shunt_loss_db": 0.0042409238098086634
+    },
+    {
+      "part": "5943000621",
+      "material": "43",
+      "frequency_hz": 14000000.0,
+      "r_ohm": 8723.53043903289,
+      "x_ohm": 6752.710891929659,
+      "magnitude_ohm": 11031.73094807514,
+      "matched_shunt_loss_db": 0.003890991358659112
+    },
+    {
+      "part": "5943000621",
+      "material": "43",
+      "frequency_hz": 18100000.0,
+      "r_ohm": 9971.738415113285,
+      "x_ohm": 7106.408233792222,
+      "magnitude_ohm": 12244.860350561614,
+      "matched_shunt_loss_db": 0.003610048977826317
+    },
+    {
+      "part": "5943000621",
+      "material": "43",
+      "frequency_hz": 21000000.0,
+      "r_ohm": 10773.820726577169,
+      "x_ohm": 7283.567183496887,
+      "magnitude_ohm": 13004.82848656362,
+      "matched_shunt_loss_db": 0.0034578635970092075
+    },
+    {
+      "part": "5943000621",
+      "material": "43",
+      "frequency_hz": 24900000.0,
+      "r_ohm": 11772.008678409533,
+      "x_ohm": 7429.005025823794,
+      "magnitude_ohm": 13920.140229116392,
+      "matched_shunt_loss_db": 0.003297676547516753
+    },
+    {
+      "part": "5943000621",
+      "material": "43",
+      "frequency_hz": 28000000.0,
+      "r_ohm": 12492.392899324139,
+      "x_ohm": 7474.820879122286,
+      "magnitude_ohm": 14557.91288358488,
+      "matched_shunt_loss_db": 0.0031995607833191376
+    },
+    {
+      "part": "5943000621",
+      "material": "43",
+      "frequency_hz": 29700000.0,
+      "r_ohm": 12863.190336118983,
+      "x_ohm": 7483.5560244241215,
+      "magnitude_ohm": 14881.709458053512,
+      "matched_shunt_loss_db": 0.0031527187329178914
+    },
+    {
+      "part": "5977004921",
+      "material": "77",
+      "frequency_hz": 135700,
+      "r_ohm": 6.668708899402363,
+      "x_ohm": 235.50843221362888,
+      "magnitude_ohm": 235.60282961396368,
+      "matched_shunt_loss_db": 0.00956757873019482
+    },
+    {
+      "part": "5977004921",
+      "material": "77",
+      "frequency_hz": 472000,
+      "r_ohm": 95.24987172608253,
+      "x_ohm": 867.1036629460928,
+      "magnitude_ohm": 872.3194944275672,
+      "matched_shunt_loss_db": 0.007012561320450966
+    },
+    {
+      "part": "5977004921",
+      "material": "77",
+      "frequency_hz": 1800000.0,
+      "r_ohm": 1993.017766579837,
+      "x_ohm": 1877.434164629101,
+      "magnitude_ohm": 2738.0428887107396,
+      "matched_shunt_loss_db": 0.014430577173073464
+    },
+    {
+      "part": "5977004921",
+      "material": "77",
+      "frequency_hz": 3500000.0,
+      "r_ohm": 3020.1661525536533,
+      "x_ohm": 1153.9960775936718,
+      "magnitude_ohm": 3233.1270522718896,
+      "matched_shunt_loss_db": 0.015672738303861074
+    },
+    {
+      "part": "5977004921",
+      "material": "77",
+      "frequency_hz": 5300000.0,
+      "r_ohm": 3282.8593017783924,
+      "x_ohm": 439.3661783122128,
+      "magnitude_ohm": 3312.130407142447,
+      "matched_shunt_loss_db": 0.016230547613606195
+    },
+    {
+      "part": "5977004921",
+      "material": "77",
+      "frequency_hz": 7000000.0,
+      "r_ohm": 3218.667504224339,
+      "x_ohm": -1.6309042746402382,
+      "magnitude_ohm": 3218.6679174152914,
+      "matched_shunt_loss_db": 0.016849878842423685
+    },
+    {
+      "part": "5977004921",
+      "material": "77",
+      "frequency_hz": 10100000.0,
+      "r_ohm": 2952.485736649357,
+      "x_ohm": -349.2701677800608,
+      "magnitude_ohm": 2973.072766552983,
+      "matched_shunt_loss_db": 0.018114420557966415
+    },
+    {
+      "part": "5977004921",
+      "material": "77",
+      "frequency_hz": 14000000.0,
+      "r_ohm": 2744.0016137986086,
+      "x_ohm": -489.0039198435209,
+      "magnitude_ohm": 2787.2333397388343,
+      "matched_shunt_loss_db": 0.01915438766392418
+    },
+    {
+      "part": "5977004921",
+      "material": "77",
+      "frequency_hz": 18100000.0,
+      "r_ohm": 2581.3586121597905,
+      "x_ohm": -565.0705365644972,
+      "magnitude_ohm": 2642.4831117463755,
+      "matched_shunt_loss_db": 0.020046610404490295
+    },
+    {
+      "part": "5977004921",
+      "material": "77",
+      "frequency_hz": 21000000.0,
+      "r_ohm": 2491.283464534952,
+      "x_ohm": -602.4773679914871,
+      "magnitude_ohm": 2563.0981798610883,
+      "matched_shunt_loss_db": 0.020563773754993873
+    },
+    {
+      "part": "5977004921",
+      "material": "77",
+      "frequency_hz": 24900000.0,
+      "r_ohm": 2371.901421328778,
+      "x_ohm": -620.7947626131809,
+      "magnitude_ohm": 2451.7957683684485,
+      "matched_shunt_loss_db": 0.021395575340019367
+    },
+    {
+      "part": "5977004921",
+      "material": "77",
+      "frequency_hz": 28000000.0,
+      "r_ohm": 2315.4809338391997,
+      "x_ohm": -642.5481295209958,
+      "magnitude_ohm": 2402.981492588693,
+      "matched_shunt_loss_db": 0.021743666508427
+    },
+    {
+      "part": "5977004921",
+      "material": "77",
+      "frequency_hz": 29700000.0,
+      "r_ohm": 2282.6773418133175,
+      "x_ohm": -647.4782599046524,
+      "magnitude_ohm": 2372.7292184058992,
+      "matched_shunt_loss_db": 0.02198552804307004
+    },
+    {
+      "part": "5977002721",
+      "material": "77",
+      "frequency_hz": 135700,
+      "r_ohm": 6.616457718157046,
+      "x_ohm": 233.66315841895215,
+      "magnitude_ohm": 233.75681618951026,
+      "matched_shunt_loss_db": 0.00966732349255525
+    },
+    {
+      "part": "5977002721",
+      "material": "77",
+      "frequency_hz": 472000,
+      "r_ohm": 94.50356259994888,
+      "x_ohm": 860.3096655870036,
+      "magnitude_ohm": 865.4846295842026,
+      "matched_shunt_loss_db": 0.0070696671839277775
+    },
+    {
+      "part": "5977002721",
+      "material": "77",
+      "frequency_hz": 1800000.0,
+      "r_ohm": 1977.4019203766788,
+      "x_ohm": 1862.7239479601778,
+      "magnitude_ohm": 2716.5895643276203,
+      "matched_shunt_loss_db": 0.014544526554569979
+    },
+    {
+      "part": "5977002721",
+      "material": "77",
+      "frequency_hz": 3500000.0,
+      "r_ohm": 2996.502314259228,
+      "x_ohm": 1144.9541987058205,
+      "magnitude_ohm": 3207.794606344832,
+      "matched_shunt_loss_db": 0.01579641221147026
+    },
+    {
+      "part": "5977002721",
+      "material": "77",
+      "frequency_hz": 5300000.0,
+      "r_ohm": 3257.1371899022133,
+      "x_ohm": 435.92362261479565,
+      "magnitude_ohm": 3286.178948048583,
+      "matched_shunt_loss_db": 0.016358604266800608
+    },
+    {
+      "part": "5977002721",
+      "material": "77",
+      "frequency_hz": 7000000.0,
+      "r_ohm": 3193.448352861066,
+      "x_ohm": -1.618125687940251,
+      "magnitude_ohm": 3193.4487628145525,
+      "matched_shunt_loss_db": 0.01698281491739309
+    },
+    {
+      "part": "5977002721",
+      "material": "77",
+      "frequency_hz": 10100000.0,
+      "r_ohm": 2929.3521931588457,
+      "x_ohm": -346.5335392788686,
+      "magnitude_ohm": 2949.7779179812296,
+      "matched_shunt_loss_db": 0.018257324770347964
+    },
+    {
+      "part": "5977002721",
+      "material": "77",
+      "frequency_hz": 14000000.0,
+      "r_ohm": 2722.5016011540497,
+      "x_ohm": -485.17243869314353,
+      "magnitude_ohm": 2765.394594547732,
+      "matched_shunt_loss_db": 0.019305490136380058
+    },
+    {
+      "part": "5977002721",
+      "material": "77",
+      "frequency_hz": 18100000.0,
+      "r_ohm": 2561.132952479967,
+      "x_ohm": -560.6430524040975,
+      "magnitude_ohm": 2621.7785246827652,
+      "matched_shunt_loss_db": 0.02020474635633367
+    },
+    {
+      "part": "5977002721",
+      "material": "77",
+      "frequency_hz": 21000000.0,
+      "r_ohm": 2471.7635685846967,
+      "x_ohm": -597.7567909463643,
+      "magnitude_ohm": 2543.01559572588,
+      "matched_shunt_loss_db": 0.02072598670808156
+    },
+    {
+      "part": "5977002721",
+      "material": "77",
+      "frequency_hz": 24900000.0,
+      "r_ohm": 2353.31691675204,
+      "x_ohm": -615.9306637078662,
+      "magnitude_ohm": 2432.585269454483,
+      "matched_shunt_loss_db": 0.021564344204262488
+    },
+    {
+      "part": "5977002721",
+      "material": "77",
+      "frequency_hz": 28000000.0,
+      "r_ohm": 2297.3384994086086,
+      "x_ohm": -637.5135869609734,
+      "magnitude_ohm": 2384.153467045451,
+      "matched_shunt_loss_db": 0.021915179730455224
+    },
+    {
+      "part": "5977002721",
+      "material": "77",
+      "frequency_hz": 29700000.0,
+      "r_ohm": 2264.7919326117917,
+      "x_ohm": -642.405088407586,
+      "magnitude_ohm": 2354.1382278097885,
+      "matched_shunt_loss_db": 0.022158947573015654
+    }
+  ],
+  "c64": [
+    {
+      "capacitance_f": 1e-07,
+      "x_output_low_ohm": 11.728440905813953,
+      "x_referred_low_ohm": 2.932110226453488
+    },
+    {
+      "capacitance_f": 5e-07,
+      "x_output_low_ohm": 2.3456881811627905,
+      "x_referred_low_ohm": 0.5864220452906976
+    }
+  ],
+  "selected_output_capacitor": {
+    "references": [
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "manufacturer": "Walsin",
+    "mpn": "1206N104J500CT",
+    "lcsc": "C170182",
+    "each_capacitance_f": 1e-07,
+    "capacitance_f": 5e-07,
+    "voltage_v": 50,
+    "dielectric": "C0G",
+    "package": "1206"
+  },
+  "source_hashes": {
+    "WsprryPico GPIO Shield with GPS - Torroid Edition.kicad_sch": "4760fa04bf06ee00f2fa5a5e8b79bbc4cd3d2c181798e3e7bc564a992b2a9547",
+    "WsprryPico GPIO Shield with GPS - Torroid Edition.kicad_pcb": "2f77987f8b34a6fd12559d4750a183b6da6cf8d9ea665d77bb2597fd290a566e",
+    "fair-rite-43.csv": "7b1323c15c9de2fe23b92fc066c49c417ee8b6cc18fb2f6c91250a6169507d30",
+    "fair-rite-77.csv": "38d2e8bf9ff29fc0300f65064d7253c020df39961c13aad78a4abacb0b739d2c"
+  },
+  "sources": [
+    "https://fair-rite.com/product/toroids-5977000621/",
+    "https://fair-rite.com/product/toroids-5943000621/",
+    "https://fair-rite.com/product/toroids-5977004921/",
+    "https://fair-rite.com/product/toroids-5977002721/",
+    "https://fair-rite.com/43-material-data-sheet/",
+    "https://fair-rite.com/77-material-data-sheet/",
+    "https://www.fair-rite.com/wp-content/uploads/2020/11/43-Material-publish.csv",
+    "https://www.fair-rite.com/wp-content/uploads/2015/04/77-Material-Fair-Rite.csv",
+    "https://www.fair-rite.com/wp-content/uploads/2023/05/Fair-Rite_Catalog_17th_Edition.pdf",
+    "https://qrp-labs.com/ultimate3/u3info/u3sbifilar.html",
+    "https://www.qsl.net/kp4md/ruthroff.pdf",
+    "https://www.onsemi.com/pdf/datasheet/mmbf170-d.pdf"
+  ]
+}

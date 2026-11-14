@@ -20,4 +20,4 @@ The [footprint/model source document](../LIBRARY-SOURCES.md) links manufacturer 
 
 ## Rebuilding previews
 
-Run `python3 generate_switch_tcxo_previews.py` from this folder to regenerate the switch and oscillator previews. [The generator](generate_switch_tcxo_previews.py) uses KiCad's 0.1-inch VRML units, centered XY origins and mounting surface Z = 0. The reused trimmer/SMA geometry is available in the [GPIO generator](../../WsprryPico%20GPIO%20Shield/wsprrypico-gpio-shield.3dshapes/generate_rv31_j51.py).
+Run `python3 generate_switch_tcxo_previews.py` from this folder to regenerate the switch and oscillator previews. [The generator](generate_switch_tcxo_previews.py) uses KiCad's 0.1-inch VRML units, centered XY origins and mounting surface Z = 0. The reused trimmer/SMA geometry is available in the [GPIO generator](https://github.com/WsprryPi/WsprryPi-PCB-Designs/blob/64fdd8f336c573cca9bfd5ce1ed3fad3cb0c8cb8/WsprryPico%20GPIO%20Shield/wsprrypico-gpio-shield.3dshapes/generate_rv31_j51.py).

@@ -4,7 +4,7 @@ All active symbol definitions resolve through the independent `wsprrypico-synth-
 
 ## Copied and adapted KiCad symbols
 
-These graphics originate in KiCad 10.0.6 and retain **CC BY-SA 4.0 with the KiCad library exception**, documented in [KICAD-LIBRARY-LICENSE.md](KICAD-LIBRARY-LICENSE.md). Copies from the [GPIO shield](../WsprryPico%20GPIO%20Shield/README.md) retain its existing provenance and the [Zero amplifier source notes](../WsprryPi%20Zero%20GPIO%20BS170/LIBRARY-SOURCES.md).
+These graphics originate in KiCad 10.0.6 and retain **CC BY-SA 4.0 with the KiCad library exception**, documented in [KICAD-LIBRARY-LICENSE.md](KICAD-LIBRARY-LICENSE.md). Copies from the [GPIO shield](https://github.com/WsprryPi/WsprryPi-PCB-Designs/blob/64fdd8f336c573cca9bfd5ce1ed3fad3cb0c8cb8/WsprryPico%20GPIO%20Shield/README.md) retain its existing provenance and the [Zero amplifier source notes](../WsprryPi%20Zero%20GPIO%20BS170/LIBRARY-SOURCES.md).
 
 | Local definitions | Origin and function |
 | --- | --- |

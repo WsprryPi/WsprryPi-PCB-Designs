@@ -96,6 +96,6 @@ CLK2 feedback and GNSS PPS provide inputs for Pico-side frequency measurement. F
 
 ## Sources and attribution
 
-QRP Labs provides the preferred [synthesizer precedent](https://qrp-labs.com/synth.html) and [single-BS170 amplifier/bias study](https://www.qrp-labs.com/ultimate3/u3info/u3pa.html). The [GPIO shield](../WsprryPico%20GPIO%20Shield/README.md) supplies the reusable amplifier topology. Manufacturer documents govern the selected parts; the separate [QRP module electrical models](../QRP%20Labs%20Modules/README.md) describe their own photographed hardware and unresolved component values.
+QRP Labs provides the preferred [synthesizer precedent](https://qrp-labs.com/synth.html) and [single-BS170 amplifier/bias study](https://www.qrp-labs.com/ultimate3/u3info/u3pa.html). The [GPIO shield](https://github.com/WsprryPi/WsprryPi-PCB-Designs/blob/64fdd8f336c573cca9bfd5ce1ed3fad3cb0c8cb8/WsprryPico%20GPIO%20Shield/README.md) supplies the reusable amplifier topology. Manufacturer documents govern the selected parts; the separate [QRP module electrical models](../QRP%20Labs%20Modules/README.md) describe their own photographed hardware and unresolved component values.
 
 Original repository work follows [LICENSE.md](LICENSE.md). Imported KiCad graphics retain [their library terms](KICAD-LIBRARY-LICENSE.md); manufacturer and QRP Labs documents retain their respective ownership.
