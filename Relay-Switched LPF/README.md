@@ -17,6 +17,7 @@ Independent KiCad reconstruction of the **QRP Labs Ultimate relay-switched LPF c
 - W1–W9 use matching boxed two-/three-pin connector symbols. These are drawing conventions; the PCB retains bare wire-link pads and the assembly options below.
 - J1 uses the same boxed connector style for its ten schematic pins; its physical footprint remains the underside 2 × 5 host socket.
 - X1/X2 use project-local copies of the KiCad `Conn_Coaxial` symbol, with center contact 1 on `LPF1_OUT` and shield 2 on `GND_OUT`; their vertical/edge SMA footprints remain distinct.
+- Ground markings use the project-local `GND` power symbol matching W8’s triangular ground. Main ground is global `GND`; `GND_OUT` remains separate. A local `PWR_FLAG` records the host-supplied ground for ERC.
 - A visibly wired schematic arranged like the published diagram: relay coils and flyback diodes above the shared RF input bus, five filter columns, and a shared output bus below. Relay units A/B/C are the coil/input pole/output pole of the same physical relay. [Redraw tool](design/redraw_schematic.py) updates the schematic and its local symbol graphics without writing the PCB.
 
 The plug-in filter circuits, band-dependent inductors/capacitors, Ultimate3S transmitter, sixth relay/filter on that transmitter, GPIO drivers, enclosure, and spacers are external. No arbitrary filter bands or component values have been selected.

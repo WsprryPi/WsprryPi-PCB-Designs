@@ -6,6 +6,16 @@ Updated after the output-area PCB repair and the earlier schematic presentation 
 
 Latest update: four **R3 mm corner fillets**, a complete local-footprint audit, and **29 local 3D model assignments** have been applied. The 80 × 37 mm outside dimensions, mounting centers, component positions, pad geometry/UUIDs, and all tracks/vias are preserved. Letter sheet settings and native shared `DOC_*` title-block variables remain in place.
 
+## Project-local triangular grounds — 2026-11-13
+
+Copied the user's W8 `power:GND` symbol into the independent library as `relay-switched-lpf:GND`, preserving its standard full-size triangular artwork and global power behavior. Replaced all 16 former two-bar drawn ground markings; W8 now also references the local definition. One redundant W7 marker at an already connected input-ground junction was removed. There are **17 local GND instances**, including the ground used with the new host-ground ERC flag. J1's textual ground pin labels remain labels. `/GND_OUT` is unchanged and remains separate.
+
+The user-saved schematic/project edits were preserved. The schematic's global main net is `GND`; the PCB changes only the former `/GND` net-name references to `GND`. A byte comparison verifies no other PCB change: copper fills, tracks, vias, footprints, pads, outline, UUIDs, and rule settings are unchanged. The project file is byte-identical to the pre-edit user version. Exact exported component/pin net membership is unchanged from the user-saved input schematic.
+
+Added a project-local standard `PWR_FLAG` on main ground to assert the externally supplied host return. The input schematic's single `power_pin_not_driven` ERC error is resolved. Two intermediate off-grid flag warnings were corrected by placing the flag/ground on the unchanged connection grid. No check was excluded or threshold relaxed. The redundant W7 marking and nearby RL1C property text were adjusted for legibility.
+
+KiCad **10.0.6** final ERC and DRC with all severities and schematic parity report **zero findings**, exit **0**. The independent audit passes **140 pins/33 nets**, PCB membership, default switching paths, and local library dependencies. Local/embedded ground and flag symbols and the redraw helper are synchronized; a full redraw was not run over the user-edited schematic. The refreshed one-page Letter PDF was rendered and visually inspected. Local Markdown links, Python syntax, attributes/ignore behavior, and `git diff --check` pass. Reports: `generated/erc-ground-symbols.rpt`, `generated/drc-ground-symbols.json`; preview: `generated/schematic-ground-symbols.png`; pre-edit snapshot: `generated/before-ground-symbols/`. Hardware/RF qualification remains open.
+
 ## Coaxial arc geometry correction — 2026-11-13
 
 Corrected the two shield-arc midpoints in local/embedded `Conn_Coaxial` definitions. The earlier scale helper transformed arc endpoints but omitted `mid`, distorting the shield into a flattened lens. `scale_local` now scales midpoints too. The corrected helper reproduces the saved symbol geometry exactly. A source comparison against `3a55c9c` confirms only these midpoint coordinates change in the schematic and symbol library; all connections, pin endpoints, placed-symbol identities/properties, and PCB remain unchanged.
@@ -142,9 +152,9 @@ SHA-256 hashes of the checked source revision:
 
 | File | SHA-256 |
 | --- | --- |
-| `Relay-Switched LPF.kicad_sch` | `83da9250a9652c13adfa73914628433aa52d0fa2f93938516075565c41ae0514` |
-| `Relay-Switched LPF.kicad_pcb` | `eadd6eb0cd03db7cf88f8804246575f2b9ed8d73e41811dd4f2682f3d52aba71` |
-| `relay-switched-lpf.kicad_sym` | `dbd588a39afda002f5a1b52d99612748cbd5f9389a2f9cc806ef4e745ea5f757` |
+| `Relay-Switched LPF.kicad_sch` | `4430b89f50f5b7d41cb238644e9ad285476a9f109493c6253e29f64c5a3119b3` |
+| `Relay-Switched LPF.kicad_pcb` | `d6c08991677738810ffa5d105afa4bcdb71bbde3d6bf660439646f6c521b7c22` |
+| `relay-switched-lpf.kicad_sym` | `60824d9e999deb88c2240adb61f15bfa4871622dbde0935b79be750b3041e995` |
 
 Recheck after any source edit. Final pre-commit reports `erc-precommit.rpt`, `drc-precommit.json`, `connectivity.xml`, earlier reports, and visual exports reside in ignored `generated/`. The final KiCad 10.0.6 ERC and DRC/parity checks passed with zero findings; the independent connectivity audit also passed. The maintained schematic PDF is an intentional reference export; the native schematic is authoritative.
 

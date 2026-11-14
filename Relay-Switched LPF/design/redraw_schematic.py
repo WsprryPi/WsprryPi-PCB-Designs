@@ -65,10 +65,10 @@ sheet_uuid=child(old,'uuid')[1]
 original={}
 for instance in kids(old,'symbol'):
     ref=next(v[2] for v in kids(instance,'property') if v[1]=='Reference')
-    if ref not in original or child(instance,'unit')[1]=='1': original[ref]=instance
+    if not ref.startswith('#') and (ref not in original or child(instance,'unit')[1]=='1'): original[ref]=instance
 assert len(original)==38
 library=parse((ROOT/(LIB+'.kicad_sym')).read_text())
-library[:]=[v for v in library if not (isinstance(v,list) and v[0]=='symbol' and v[1] in ['TX2_5V','LPF_IN','LPF_OUT','Selector3','Link2','Terminal2','InputSelector3','Port_2','Port_3','Port_4','Port_10','1N4148','AntennaConnector2','OutputConnector2','Conn_Coaxial'])]
+library[:]=[v for v in library if not (isinstance(v,list) and v[0]=='symbol' and v[1] in ['TX2_5V','LPF_IN','LPF_OUT','Selector3','Link2','Terminal2','InputSelector3','Port_2','Port_3','Port_4','Port_10','1N4148','AntennaConnector2','OutputConnector2','Conn_Coaxial','GND','PWR_FLAG'])]
 # Canonical unscaled definitions make repeated Letter redraws idempotent.
 for n in [2,3,4]:
     ys=[(n-1)*1.27-i*2.54 for i in range(n)]
@@ -171,6 +171,21 @@ def coax_connector():
     return definition
 library.append(coax_connector())
 
+def library_power_symbol(name):
+    # Full-size KiCad power artwork; pre-enlarge before the Letter scaling step.
+    definition=parse('(symbol "GND"\n  (power global)\n  (pin_numbers (hide yes))\n  (pin_names (offset 0) (hide yes))\n  (exclude_from_sim no)\n  (in_bom no)\n  (on_board no)\n  (in_pos_files no)\n  (duplicate_pin_numbers_are_jumpers no)\n  (property "Reference" "#PWR"\n    (at 0 -6.35 0)\n    (show_name no)\n    (do_not_autoplace no)\n    (hide yes)\n    (effects (font (size 1.27 1.27))))\n  (property "Value" "GND" (at 0 -3.81 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))\n  (property "Footprint" ""\n    (at 0 0 0)\n    (show_name no)\n    (do_not_autoplace no)\n    (hide yes)\n    (effects (font (size 1.27 1.27))))\n  (property "Datasheet" ""\n    (at 0 0 0)\n    (show_name no)\n    (do_not_autoplace no)\n    (hide yes)\n    (effects (font (size 1.27 1.27))))\n  (property "Description" "Power symbol creates a global label with name \\"GND\\" , ground"\n    (at 0 0 0)\n    (show_name no)\n    (do_not_autoplace no)\n    (hide yes)\n    (effects (font (size 1.27 1.27))))\n  (property "ki_keywords" "global power"\n    (at 0 0 0)\n    (show_name no)\n    (do_not_autoplace no)\n    (hide yes)\n    (effects (font (size 1.27 1.27))))\n  (symbol "GND_0_1"\n    (polyline\n      (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27))\n      (stroke (width 0) (type default))\n      (fill (type none))))\n  (symbol "GND_1_1"\n    (pin power_in line\n      (at 0 0 270)\n      (length 0)\n      (name "" (effects (font (size 1.27 1.27))))\n      (number "1" (effects (font (size 1.27 1.27))))))\n  (embedded_fonts no))' if name=='GND' else '(symbol "PWR_FLAG"\n  (power global)\n  (pin_numbers (hide yes))\n  (pin_names (offset 0) (hide yes))\n  (exclude_from_sim no)\n  (in_bom no)\n  (on_board no)\n  (in_pos_files no)\n  (duplicate_pin_numbers_are_jumpers no)\n  (property "Reference" "#FLG"\n    (at 0 1.905 0)\n    (show_name no)\n    (do_not_autoplace no)\n    (hide yes)\n    (effects (font (size 1.27 1.27))))\n  (property "Value" "PWR_FLAG" (at 0 3.81 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))\n  (property "Footprint" ""\n    (at 0 0 0)\n    (show_name no)\n    (do_not_autoplace no)\n    (hide yes)\n    (effects (font (size 1.27 1.27))))\n  (property "Datasheet" ""\n    (at 0 0 0)\n    (show_name no)\n    (do_not_autoplace no)\n    (hide yes)\n    (effects (font (size 1.27 1.27))))\n  (property "Description" "Special symbol for telling ERC where power comes from"\n    (at 0 0 0)\n    (show_name no)\n    (do_not_autoplace no)\n    (hide yes)\n    (effects (font (size 1.27 1.27))))\n  (property "ki_keywords" "flag power"\n    (at 0 0 0)\n    (show_name no)\n    (do_not_autoplace no)\n    (hide yes)\n    (effects (font (size 1.27 1.27))))\n  (symbol "PWR_FLAG_0_0"\n    (pin power_out line\n      (at 0 0 90)\n      (length 0)\n      (name "" (effects (font (size 1.27 1.27))))\n      (number "1" (effects (font (size 1.27 1.27))))))\n  (symbol "PWR_FLAG_0_1"\n    (polyline\n      (pts (xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27))\n      (stroke (width 0) (type default))\n      (fill (type none))))\n  (embedded_fonts no))')
+    def enlarge(obj):
+        if not isinstance(obj,list):return
+        if obj and obj[0] in ['at','xy','start','mid','end','center','size']:
+            for i in [1,2]:obj[i]=Atom(str(round(float(obj[i])*2,4)))
+        elif obj and obj[0] in ['length','radius','width','offset']:
+            obj[1]=Atom(str(round(float(obj[1])*2,4)))
+        for item in obj:enlarge(item)
+    enlarge(definition)
+    return definition
+library.append(library_power_symbol('GND'))
+library.append(library_power_symbol('PWR_FLAG'))
+
 definitions={s[1]:s for s in kids(library,'symbol')}
 embedded=[]
 for name,definition in definitions.items():
@@ -188,12 +203,27 @@ def label(net,x,y,angle=0,justify='left'):
     extras.append(f'(label {q(net)} (at {x} {y} {angle}) {eff(1.0,f"(justify {justify} bottom)")} (uuid "{uid(f"label:{net}:{x}:{y}")}"))')
 def note(text,x,y,size=1.27):
     extras.append(f'(text {q(text)} (at {x} {y} 0) {eff(size,"(justify left)")} (uuid "{uid("text:"+text)}"))')
+power_count=0
+def power_instance(name,ref,x,y):
+    definition=definitions[name]
+    props=[]
+    for field in kids(definition,'property'):
+        if str(field[1]).startswith('ki_'):continue
+        field=copy.deepcopy(field);at=child(field,'at')
+        at[1:3]=[Atom(str(x+float(at[1]))),Atom(str(y-float(at[2])))]
+        if field[1]=='Reference':field[2]=ref
+        props.append(dump(field))
+    return (f'(symbol (lib_id "{LIB}:{name}") (at {x} {y} 0) (unit 1) '
+            f'(exclude_from_sim no) (in_bom no) (on_board no) (in_pos_files no) '
+            f'(uuid "{uid(ref)}") '+''.join(props)+
+            f'(pin "1" (uuid "{uid(ref+"pin1")}")) '
+            f'(instances (project "{NAME}" (path "/{sheet_uuid}" (reference "{ref}") (unit 1)))))')
 def ground(x,y,net='GND'):
+    global power_count
+    assert net=='GND'
     wire((x,y),(x,y+5.08))
-    extras.append(poly([(x-2.54,y+5.08),(x+2.54,y+5.08)],.254)[:-1]+f' (uuid "{uid(f"groundbar:{x}:{y}")}"))')
-    # Schematic polylines use absolute points and require a UUID, like wires.
-    extras.append(poly([(x-1.27,y+6.35),(x+1.27,y+6.35)],.254)[:-1]+f' (uuid "{uid(f"groundbar2:{x}:{y}")}"))')
-    label(net,x,y+5.08,justify='right')
+    power_count+=1
+    extras.append(power_instance('GND',f'#PWR{power_count:02}',x,y+5.08))
 def place(ref,sym,x,y,unit=1,angle=0,refpos=None,valuepos=None):
     inst=copy.deepcopy(original[ref])
     child(inst,'lib_id')[1]=LIB+':'+sym
@@ -239,7 +269,7 @@ for i in range(5,0,-1):
     def xx(offset=0):return round(x+offset,2)
     place(f'RL{i}','TX2_5V',x,60.96,refpos=(xx(-17.78),58.42),valuepos=(xx(-17.78),60.96))
     place(f'RL{i}','TX2_5V',x,105.41,2,refpos=(xx(10.16),105.41))
-    place(f'RL{i}','TX2_5V',x,201.93,3,refpos=(xx(-15.24),201.93) if i==1 else (xx(10.16),199.39))
+    place(f'RL{i}','TX2_5V',x,201.93,3,refpos=(xx(-22.86),201.93) if i==1 else (xx(10.16),199.39))
     place(f'D{i}','1N4148',xx(17.78),60.96,angle=270,refpos=(xx(21.59),58.42),valuepos=(xx(21.59),60.96))
     wire((x,40.64),(x,53.34));dot(x,40.64)
     wire((xx(17.78),30.48),(xx(17.78),53.34));dot(xx(17.78),30.48)
@@ -280,7 +310,7 @@ em=copy.deepcopy(defs);em[1]=LIB+':InputSelector3';embedded.append(dump(em))
 place('W7','InputSelector3',294.64,118.11,refpos=(281.94,102.87),valuepos=(281.94,105.41))
 wire((314.96,113.03),(314.96,115.57),(294.64,115.57),(294.64,118.11));label('FINAL_NC',294.64,115.57)
 wire((289.56,118.11),(284.48,118.11),(284.48,215.90));dot(284.48,215.90)
-wire((299.72,118.11),(307.34,118.11));ground(307.34,118.11)
+wire((299.72,118.11),(307.34,118.11),(307.34,123.19));dot(307.34,123.19)
 place('W8','Link2',339.09,158.75,refpos=(331.47,148.59),valuepos=(331.47,151.13))
 ground(336.55,158.75)
 wire((341.63,158.75),(341.63,190.5));dot(341.63,190.5)
@@ -322,6 +352,8 @@ for a,b in sorted(pieces):
 for x,y in sorted(dots):
     wires.append(f'(junction (at {x} {y}) (diameter 0) (color 0 0 0 0) (uuid "{uid(f"junction:{x}:{y}")}"))')
 header=[copy.deepcopy(v) for v in old if not (isinstance(v,list) and v[0] in ['lib_symbols','symbol','wire','label','junction','text','polyline'])]
+extras.append(power_instance('PWR_FLAG','#FLG01',398.78,279.4))
+extras.append(power_instance('GND','#PWR99',398.78,279.4))
 out='(kicad_sch\n'+'\n'.join(dump(v) for v in header[1:])+'\n(lib_symbols\n'+'\n'.join(embedded)+')\n'+'\n'.join(parts+wires+extras)+')\n'
 
 # Compact the drawing for the user's selected US Letter landscape sheet.

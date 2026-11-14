@@ -40,3 +40,7 @@ Project-local `Port_10` (J1) adapts KiCad 10.0.6 `Connector_Generic:Conn_01x10` 
 ## Coaxial connector symbols
 
 Project-local `Conn_Coaxial` (X1/X2) copies the graphics and passive pins from KiCad 10.0.6 `Connector:Conn_Coaxial` in `Connector.kicad_sym`, translated and scaled for this schematic. The standard pin names In/Ext and numbers 1/2 are retained. The artwork retains CC-BY-SA-4.0 with the KiCad libraries exception; the license links above apply. Source: [KiCad Connector library](https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Connector.kicad_sym). Instance references, footprint assignments, and electrical net membership are unchanged.
+
+## Ground power symbols
+
+Project-local `GND` copies the standard KiCad 10.0.6 `power:GND` triangular artwork selected by the user at W8. Project-local `PWR_FLAG` copies `power:PWR_FLAG`. Both retain their global power behavior and power pin electrical types, with BOM/board/position inclusion disabled in the local definitions. The source is KiCad `power.kicad_sym`; CC-BY-SA-4.0 with the KiCad libraries exception applies. See the license links above and [KiCad power symbol library](https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/power.kicad_sym).
