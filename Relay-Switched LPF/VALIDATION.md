@@ -1,5 +1,17 @@
 # Relay-Switched LPF validation
 
+## Saved board routing edits — 2026-11-14
+
+Recorded the remaining user-saved PCB routing changes on `/RFI`, `/RFO`, `/BAND1_N`, and `/LPF5_IN`, with refreshed copper-zone fills. Trace-segment count changes from **648 to 571** and via count from **38 to 33**. All component footprints, placements, pad assignments, board outline, zone settings, and other board objects remain unchanged. The project-file change only reorders the existing `used_designators` metadata; no design rules or exclusions change. The retained schematic and its PDF are unchanged.
+
+KiCad **10.0.6** ERC and saved-board DRC, with all severities, all track errors, and schematic parity enabled for DRC, report **0 violations, 0 unconnected items, and 0 parity differences**, exit **0**. The independent **140-pin / 33-net** audit, default switching paths, and local-library/model checks pass. Top and bottom copper/silkscreen exports were visually reviewed. Reports and renders are retained in ignored `generated/board-save-2026-11-14/`; the audit netlist is `generated/connectivity.xml`. Physical and RF qualification remain open.
+
+Checked design SHA-256:
+
+- `Relay-Switched LPF.kicad_sch`: `bf94521cb9e06053a8977cfdb74b47ab84b983966e5aec61b6203a2576918f48`
+- `Relay-Switched LPF.kicad_pcb`: `a3dc0d952b18c3b5c6ea63f7739b8ad601f09a33caf2c94b515732a40bd17e47`
+- `Relay-Switched LPF.kicad_pro`: `359e7512b573ba6afb7b83bf1e681769b3cae00eccbd9cf9a53e3dffd16d9e62`
+
 ## Retained schematic version and PCB alignment — 2026-11-14
 
 Retained the schematic from commit `82826dd` at the user's request. Its existing net names, component references, footprints, and connections already match the current PCB, so no board changes were necessary. The user's current project settings are preserved. The maintained schematic PDF was regenerated from the retained schematic and visually inspected; this section supersedes the later output-area label/layout entries below for the current schematic presentation.
