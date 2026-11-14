@@ -6,6 +6,14 @@ Updated after the output-area PCB repair and the earlier schematic presentation 
 
 Latest update: four **R3 mm corner fillets**, a complete local-footprint audit, and **29 local 3D model assignments** have been applied. The 80 × 37 mm outside dimensions, mounting centers, component positions, pad geometry/UUIDs, and all tracks/vias are preserved. Letter sheet settings and native shared `DOC_*` title-block variables remain in place.
 
+## X1/X2 coaxial symbols — 2026-11-13
+
+X1 and X2 now use project-local `Conn_Coaxial`, adapted from KiCad 10.0.6 `Connector:Conn_Coaxial`. The standard center-contact/shield graphics and passive pin names/numbers are retained, translated and scaled for the compact sheet. Local/embedded definitions and the redraw helper agree. Their labels are positioned clear of the coaxial graphics. The two shield wire branches and their junctions are repositioned to the downward shield pins; pin 1 remains at the original signal endpoint.
+
+Both retain pin 1 on `/LPF1_OUT` and pin 2 on `/GND_OUT`. Footprint fields, values, references, instance/pin UUIDs, and all other placed symbols are preserved. The PCB is byte-identical to commit `8fc9521`, retaining the existing distinct vertical/edge SMA footprints and routing.
+
+KiCad **10.0.6** ERC and DRC with all severities and schematic parity report **zero findings**, exit **0**. The independent audit passes all **140 pins/33 nets**, PCB membership, and default switching paths. The refreshed one-page Letter PDF and enlarged connector detail were rendered and visually inspected. Helper syntax, local Markdown links, and whitespace checks pass. Reports: `generated/erc-coax.rpt`, `generated/drc-coax.json`; visual detail: `generated/coax-detail.png`. Physical connector fit and RF qualification remain open.
+
 ## J1 boxed connector symbol — 2026-11-13
 
 J1's project-local `Port_10` now uses the matching boxed connector body and ten contact marks, adapted from KiCad `Conn_01x10`. Local/embedded definitions and the redraw helper agree. Only this symbol definition changes in the saved schematic: all placed symbols, properties, UUIDs, wiring, labels, pin endpoints/numbers/electrical types, and PCB footprint assignments remain unchanged. The PCB is byte-identical to commit `c896664`; J1 retains its underside 2 × 5 host socket footprint.
@@ -128,9 +136,9 @@ SHA-256 hashes of the checked source revision:
 
 | File | SHA-256 |
 | --- | --- |
-| `Relay-Switched LPF.kicad_sch` | `2ddab02d6311eff805b3ab35532134b8c9d0051815f5ff251c3c944c9e9cc094` |
+| `Relay-Switched LPF.kicad_sch` | `665bba70d2932f50b243149cdc6dbf96a7428de89a172cafd1f29241209ae15d` |
 | `Relay-Switched LPF.kicad_pcb` | `eadd6eb0cd03db7cf88f8804246575f2b9ed8d73e41811dd4f2682f3d52aba71` |
-| `relay-switched-lpf.kicad_sym` | `0509f9220db1cc8ac9478c25ab15fd876d59c77d8b74301cd8870b0b21ef38d2` |
+| `relay-switched-lpf.kicad_sym` | `1a6264612331bdcd174cafde9b292b5cb22544940dc669ecd8f9c959368af33d` |
 
 Recheck after any source edit. Final pre-commit reports `erc-precommit.rpt`, `drc-precommit.json`, `connectivity.xml`, earlier reports, and visual exports reside in ignored `generated/`. The final KiCad 10.0.6 ERC and DRC/parity checks passed with zero findings; the independent connectivity audit also passed. The maintained schematic PDF is an intentional reference export; the native schematic is authoritative.
 

@@ -460,4 +460,40 @@
       (length 1.905)
       (name "~" (effects (font (size 0.7 0.7))))
       (number "2" (effects (font (size 0.7 0.7)))))))
+
+(symbol "Conn_Coaxial"
+  (pin_names (offset 0.25) (hide yes))
+  (exclude_from_sim yes)
+  (in_bom yes)
+  (on_board yes)
+  (property "Reference" "X" (at 0.0 5.08 0) (effects (font (size 0.9 0.9))))
+  (property "Value" "Conn_Coaxial" (at 0.0 6.35 0) (effects (font (size 0.9 0.9))))
+  (property "Footprint" "" (at 0.0 0.0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+  (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+  (symbol "Conn_Coaxial_1_1"
+    (polyline (pts (xy -2.54 0.635) (xy -1.524 0.635)) (stroke (width 0.0) (type default)) (fill (type none)))
+    (arc
+      (start -0.381 0.635)
+      (mid -2.318 -0.5379)
+      (end -2.159 0.381)
+      (stroke (width 0.127) (type default))
+      (fill (type none)))
+    (arc
+      (start -2.159 0.889)
+      (mid -2.3179 3.0784)
+      (end -0.381 0.635)
+      (stroke (width 0.127) (type default))
+      (fill (type none)))
+    (circle (center -1.27 0.635) (radius 0.254) (stroke (width 0.1016) (type default)) (fill (type none)))
+    (polyline (pts (xy -1.27 -0.635) (xy -1.27 -0.254)) (stroke (width 0.0) (type default)) (fill (type none)))
+    (pin passive line
+      (at -3.81 0.635 0)
+      (length 1.27)
+      (name "In" (effects (font (size 0.7 0.7))))
+      (number "1" (effects (font (size 0.7 0.7)))))
+    (pin passive line
+      (at -1.27 -1.905 90)
+      (length 1.27)
+      (name "Ext" (effects (font (size 0.7 0.7))))
+      (number "2" (effects (font (size 0.7 0.7)))))))
 )

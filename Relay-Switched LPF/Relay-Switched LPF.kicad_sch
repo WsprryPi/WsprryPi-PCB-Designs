@@ -1355,7 +1355,43 @@
       (length 1.905)
       (name "~" (effects (font (size 0.7 0.7))))
       (number "2" (effects (font (size 0.7 0.7)))))))
-	)
+
+(symbol "relay-switched-lpf:Conn_Coaxial"
+  (pin_names (offset 0.25) (hide yes))
+  (exclude_from_sim yes)
+  (in_bom yes)
+  (on_board yes)
+  (property "Reference" "X" (at 0.0 5.08 0) (effects (font (size 0.9 0.9))))
+  (property "Value" "Conn_Coaxial" (at 0.0 6.35 0) (effects (font (size 0.9 0.9))))
+  (property "Footprint" "" (at 0.0 0.0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+  (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+  (symbol "Conn_Coaxial_1_1"
+    (polyline (pts (xy -2.54 0.635) (xy -1.524 0.635)) (stroke (width 0.0) (type default)) (fill (type none)))
+    (arc
+      (start -0.381 0.635)
+      (mid -2.318 -0.5379)
+      (end -2.159 0.381)
+      (stroke (width 0.127) (type default))
+      (fill (type none)))
+    (arc
+      (start -2.159 0.889)
+      (mid -2.3179 3.0784)
+      (end -0.381 0.635)
+      (stroke (width 0.127) (type default))
+      (fill (type none)))
+    (circle (center -1.27 0.635) (radius 0.254) (stroke (width 0.1016) (type default)) (fill (type none)))
+    (polyline (pts (xy -1.27 -0.635) (xy -1.27 -0.254)) (stroke (width 0.0) (type default)) (fill (type none)))
+    (pin passive line
+      (at -3.81 0.635 0)
+      (length 1.27)
+      (name "In" (effects (font (size 0.7 0.7))))
+      (number "1" (effects (font (size 0.7 0.7)))))
+    (pin passive line
+      (at -1.27 -1.905 90)
+      (length 1.27)
+      (name "Ext" (effects (font (size 0.7 0.7))))
+      (number "2" (effects (font (size 0.7 0.7)))))))
+)
 	(text "4"
 		(exclude_from_sim no)
 		(at 75.565 82.55 0)
@@ -1576,12 +1612,7 @@
 		(color 0 0 0 0)
 		(uuid "665678d8-e91d-59e8-9fcf-77f42cc4e692")
 	)
-	(junction
-		(at 224.79 99.695)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6783a7f0-23cf-51d2-b9f2-0b83b18ae4eb")
-	)
+	(junction (at 224.79 100.965) (diameter 0) (color 0 0 0 0) (uuid "6783a7f0-23cf-51d2-b9f2-0b83b18ae4eb"))
 	(junction
 		(at 35.56 25.4)
 		(diameter 0)
@@ -2406,15 +2437,9 @@
 		(uuid "5322603b-cc14-51e6-aa89-7b5c7381edbe")
 	)
 	(wire
-		(pts
-			(xy 224.79 88.265) (xy 224.79 99.695)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "539f0a28-18e7-551d-afdc-f43b1e0b915f")
-	)
+  (pts (xy 224.79 89.535) (xy 224.79 100.965))
+  (stroke (width 0) (type default))
+  (uuid "539f0a28-18e7-551d-afdc-f43b1e0b915f"))
 	(wire
 		(pts
 			(xy 74.93 66.675) (xy 74.93 69.215)
@@ -2567,15 +2592,9 @@
 		(uuid "68569b9f-8eff-5407-825a-124a324fedde")
 	)
 	(wire
-		(pts
-			(xy 224.79 88.265) (xy 226.06 88.265)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6955830a-8e44-5c63-aaed-94c97f5e3ae7")
-	)
+  (pts (xy 224.79 89.535) (xy 228.6 89.535))
+  (stroke (width 0) (type default))
+  (uuid "6955830a-8e44-5c63-aaed-94c97f5e3ae7"))
 	(wire
 		(pts
 			(xy 189.23 100.965) (xy 189.23 103.505)
@@ -2728,15 +2747,9 @@
 		(uuid "7926c146-b06b-5513-a5af-b223234717e9")
 	)
 	(wire
-		(pts
-			(xy 224.79 99.695) (xy 226.06 99.695)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b65979a-9050-5d77-a231-e0d3a3dde2cf")
-	)
+  (pts (xy 224.79 100.965) (xy 228.6 100.965))
+  (stroke (width 0) (type default))
+  (uuid "7b65979a-9050-5d77-a231-e0d3a3dde2cf"))
 	(wire
 		(pts
 			(xy 195.58 66.675) (xy 196.85 66.675)
@@ -3569,15 +3582,9 @@
 		(uuid "cc6c8f31-51f4-5986-9bf5-bc1a4280ec2c")
 	)
 	(wire
-		(pts
-			(xy 224.79 99.695) (xy 224.79 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc7a7b33-5343-5f4e-975d-b0b2e4ef1370")
-	)
+  (pts (xy 224.79 100.965) (xy 224.79 100.33))
+  (stroke (width 0) (type default))
+  (uuid "cc7a7b33-5343-5f4e-975d-b0b2e4ef1370"))
 	(wire
 		(pts
 			(xy 123.19 20.32) (xy 123.19 31.75)
@@ -5757,85 +5764,47 @@
 		)
 	)
 	(symbol
-		(lib_id "relay-switched-lpf:Port_2")
-		(at 229.87 87.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5bb9b99a-8974-536e-838c-bedc3c1bb2ce")
-		(property "Reference" "X1"
-			(at 227.33 84.455 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.9 0.9)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SMA vertical option"
-			(at 227.33 85.725 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.9 0.9)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "relay-switched-lpf:SMA_Vertical_Generic"
-			(at 229.87 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.9 0.9)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.9 0.9)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 229.87 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.9 0.9)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e0b3b616-e234-5880-b010-bf98c6e188db")
-		)
-		(pin "2"
-			(uuid "034c524f-4753-5366-8f7e-8f820ba46561")
-		)
-		(instances
-			(project "Relay-Switched LPF"
-				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
-					(reference "X1")
-					(unit 1)
-				)
-			)
-		)
-	)
+  (lib_id "relay-switched-lpf:Conn_Coaxial")
+  (at 229.87 87.63 0)
+  (unit 1)
+  (body_style 1)
+  (exclude_from_sim yes)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (dnp no)
+  (uuid "5bb9b99a-8974-536e-838c-bedc3c1bb2ce")
+  (property "Reference" "X1"
+    (at 231.775 85.725 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects (font (size 0.9 0.9)) (justify left)))
+  (property "Value" "SMA vertical option"
+    (at 231.775 86.995 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects (font (size 0.9 0.9)) (justify left)))
+  (property "Footprint" "relay-switched-lpf:SMA_Vertical_Generic"
+    (at 229.87 87.63 0)
+    (hide yes)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects (font (size 0.9 0.9))))
+  (property "Datasheet" ""
+    (at 229.87 87.63 0)
+    (hide yes)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects (font (size 0.9 0.9))))
+  (property "Description" ""
+    (at 229.87 87.63 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects (font (size 0.9 0.9))))
+  (pin "1" (uuid "e0b3b616-e234-5880-b010-bf98c6e188db"))
+  (pin "2" (uuid "034c524f-4753-5366-8f7e-8f820ba46561"))
+  (instances
+    (project "Relay-Switched LPF" (path "/93702928-ca69-50c5-8199-81d4ef325d30" (reference "X1") (unit 1)))))
 	(symbol
 		(lib_id "relay-switched-lpf:1N4148")
 		(at 44.45 35.56 270)
@@ -8718,85 +8687,47 @@
 		)
 	)
 	(symbol
-		(lib_id "relay-switched-lpf:Port_2")
-		(at 229.87 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fb3ed215-d80a-55bc-a2e7-33b0639dbc70")
-		(property "Reference" "X2"
-			(at 227.33 95.885 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.9 0.9)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SMA edge option"
-			(at 227.33 97.155 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.9 0.9)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "relay-switched-lpf:SMA_Edge_Generic"
-			(at 229.87 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.9 0.9)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.9 0.9)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 229.87 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.9 0.9)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "13f0e4ce-3412-5775-be7e-984501d64a4c")
-		)
-		(pin "2"
-			(uuid "f78184bf-ee09-5efd-a792-b71f1fd0f153")
-		)
-		(instances
-			(project "Relay-Switched LPF"
-				(path "/93702928-ca69-50c5-8199-81d4ef325d30"
-					(reference "X2")
-					(unit 1)
-				)
-			)
-		)
-	)
+  (lib_id "relay-switched-lpf:Conn_Coaxial")
+  (at 229.87 99.06 0)
+  (unit 1)
+  (body_style 1)
+  (exclude_from_sim yes)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (dnp no)
+  (uuid "fb3ed215-d80a-55bc-a2e7-33b0639dbc70")
+  (property "Reference" "X2"
+    (at 231.775 97.155 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects (font (size 0.9 0.9)) (justify left)))
+  (property "Value" "SMA edge option"
+    (at 231.775 98.425 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects (font (size 0.9 0.9)) (justify left)))
+  (property "Footprint" "relay-switched-lpf:SMA_Edge_Generic"
+    (at 229.87 99.06 0)
+    (hide yes)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects (font (size 0.9 0.9))))
+  (property "Datasheet" ""
+    (at 229.87 99.06 0)
+    (hide yes)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects (font (size 0.9 0.9))))
+  (property "Description" ""
+    (at 229.87 99.06 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects (font (size 0.9 0.9))))
+  (pin "1" (uuid "13f0e4ce-3412-5775-be7e-984501d64a4c"))
+  (pin "2" (uuid "f78184bf-ee09-5efd-a792-b71f1fd0f153"))
+  (instances
+    (project "Relay-Switched LPF" (path "/93702928-ca69-50c5-8199-81d4ef325d30" (reference "X2") (unit 1)))))
 	(sheet_instances
 		(path "/"
 			(page "1")

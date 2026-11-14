@@ -36,3 +36,7 @@ Project-local `Link2`, `Selector3`, and `InputSelector3` use boxed body/contact 
 ## Host connector symbol
 
 Project-local `Port_10` (J1) adapts KiCad 10.0.6 `Connector_Generic:Conn_01x10` boxed body/contact artwork under CC-BY-SA-4.0 with the KiCad libraries exception; the same source and license links above apply. Geometry is translated/scaled to preserve the existing ten pin endpoints and numbering. The physical footprint remains the original 2 × 5 host socket.
+
+## Coaxial connector symbols
+
+Project-local `Conn_Coaxial` (X1/X2) copies the graphics and passive pins from KiCad 10.0.6 `Connector:Conn_Coaxial` in `Connector.kicad_sym`, translated and scaled for this schematic. The standard pin names In/Ext and numbers 1/2 are retained. The artwork retains CC-BY-SA-4.0 with the KiCad libraries exception; the license links above apply. Source: [KiCad Connector library](https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Connector.kicad_sym). Instance references, footprint assignments, and electrical net membership are unchanged.

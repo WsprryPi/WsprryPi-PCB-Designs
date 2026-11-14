@@ -68,7 +68,7 @@ for instance in kids(old,'symbol'):
     if ref not in original or child(instance,'unit')[1]=='1': original[ref]=instance
 assert len(original)==38
 library=parse((ROOT/(LIB+'.kicad_sym')).read_text())
-library[:]=[v for v in library if not (isinstance(v,list) and v[0]=='symbol' and v[1] in ['TX2_5V','LPF_IN','LPF_OUT','Selector3','Link2','Terminal2','InputSelector3','Port_2','Port_3','Port_4','Port_10','1N4148','AntennaConnector2','OutputConnector2'])]
+library[:]=[v for v in library if not (isinstance(v,list) and v[0]=='symbol' and v[1] in ['TX2_5V','LPF_IN','LPF_OUT','Selector3','Link2','Terminal2','InputSelector3','Port_2','Port_3','Port_4','Port_10','1N4148','AntennaConnector2','OutputConnector2','Conn_Coaxial'])]
 # Canonical unscaled definitions make repeated Letter redraws idempotent.
 for n in [2,3,4]:
     ys=[(n-1)*1.27-i*2.54 for i in range(n)]
@@ -156,6 +156,20 @@ def output_connector():
                      '(stroke (width .1524) (type default)) (fill (type none)))')
     return symbol('OutputConnector2','J',[(graphics,pin(1,-7.62,1.27,0,3.81)+pin(2,-7.62,-1.27,0,3.81))])
 library.append(output_connector())
+
+def coax_connector():
+    # KiCad 10.0.6 Connector:Conn_Coaxial artwork; see library attribution.
+    # Translate center contact onto the old pin-1 endpoint. Shield exits below.
+    definition=symbol('Conn_Coaxial','X',[('(polyline (pts (xy -2.54 0) (xy -0.508 0)) (stroke (width 0) (type default)) (fill (type none)))(arc\n  (start 1.778 0)\n  (mid 0.222 -1.8079)\n  (end -1.778 -0.508)\n  (stroke (width 0.254) (type default))\n  (fill (type none)))(arc\n  (start -1.778 0.508)\n  (mid 0.2221 1.8084)\n  (end 1.778 0)\n  (stroke (width 0.254) (type default))\n  (fill (type none)))(circle (center 0 0) (radius 0.508) (stroke (width 0.2032) (type default)) (fill (type none)))(polyline (pts (xy 0 -2.54) (xy 0 -1.778)) (stroke (width 0) (type default)) (fill (type none)))','(pin passive line\n  (at -5.08 0 0)\n  (length 2.54)\n  (name "In" (effects (font (size 1.27 1.27))))\n  (number "1" (effects (font (size 1.27 1.27)))))(pin passive line\n  (at 0 -5.08 90)\n  (length 2.54)\n  (name "Ext" (effects (font (size 1.27 1.27))))\n  (number "2" (effects (font (size 1.27 1.27)))))')])
+    def translate(obj):
+        if not isinstance(obj,list):return
+        if obj and obj[0] in ['xy','at','start','mid','end','center']:
+            obj[1]=Atom(str(round(float(obj[1])-2.54,4)))
+            obj[2]=Atom(str(round(float(obj[2])+1.27,4)))
+        for value in obj:translate(value)
+    for unit in kids(definition,'symbol'):translate(unit)
+    return definition
+library.append(coax_connector())
 
 definitions={s[1]:s for s in kids(library,'symbol')}
 embedded=[]
@@ -274,11 +288,13 @@ place('W9','Link2',339.09,204.47,refpos=(326.39,191.77),valuepos=(326.39,194.31)
 wire((322.58,201.93),(334.01,201.93),(334.01,198.12),(344.17,198.12),(344.17,204.47),(341.63,204.47));label('FINAL_RELAY_COM',334.01,198.12)
 wire((336.55,204.47),(336.55,207.01),(353.06,207.01),(353.06,194.31),(360.68,194.31));dot(360.68,194.31)
 for ref,y in [('X1',165.1),('X2',187.96),('J26',210.82)]:
-    place(ref,'OutputConnector2' if ref=='J26' else 'Port_2',375.92,y,refpos=(370.84,y-6.35),valuepos=(370.84,y-3.81))
+    place(ref,'OutputConnector2' if ref=='J26' else 'Conn_Coaxial',375.92,y,refpos=(370.84,y-6.35) if ref=='J26' else (379.73,y-3.81),valuepos=(370.84,y-3.81) if ref=='J26' else (379.73,y-1.27))
     wire((360.68,round(y-1.27,2)),(368.3,round(y-1.27,2)));dot(360.68,round(y-1.27,2))
-    wire((365.76,round(y+1.27,2)),(368.3,round(y+1.27,2)));dot(365.76,round(y+1.27,2))
+    shield_y=round(y+(1.27 if ref=='J26' else 3.81),2)
+    shield_x=368.3 if ref=='J26' else 373.38
+    wire((365.76,shield_y),(shield_x,shield_y));dot(365.76,shield_y)
 wire((360.68,163.83),(360.68,209.55));dot(360.68,184.15)
-wire((365.76,166.37),(365.76,212.09));label('GND_OUT',365.76,219.71)
+wire((365.76,168.91),(365.76,212.09));label('GND_OUT',365.76,219.71)
 wire((365.76,212.09),(365.76,219.71))
 place('J1','Port_10',50.8,276.86,refpos=(45.72,260.35),valuepos=(45.72,262.89))
 for n,net in json.loads((ROOT/'design/connections.json').read_text())['J1'].items():
