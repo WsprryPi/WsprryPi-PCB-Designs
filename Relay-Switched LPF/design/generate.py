@@ -124,7 +124,7 @@ for i in range(1,6):
     rnets={1:'RELAY_VPLUS',12:f'BAND{i}_N',8:'RFI',9:f'LPF{i}_IN',10:'GND' if i>1 else 'FINAL_NC',
            3:'GND',4:f'LPF{i}_OUT' if i>1 else 'FINAL_RELAY_COM',5:f'RELAY{i}_OUT'}
     comp(f'RL{i}','TX2_5V','TX2-5V','TX2_5V',sx,99.06,rnets,bx-(.762 if i==1 else 0),18.62)
-    comp(f'D{i}','1N4148','1N4148','D_DO35_P7.62',sx,175.26,{1:'+5V',2:f'BAND{i}_N'},bx-3.81,5.8)
+    comp(f'D{i}','1N4148','1N4148','D_DO35_P7.62',sx,175.26,{1:'RELAY_VPLUS',2:f'BAND{i}_N'},bx-3.81,5.8)
     comp(f'J{i*2}','Port_4',f'LPF{i} IN','Socket_1x4',sx,55.88,{1:'GND',2:'GND',3:f'LPF{i}_IN',4:f'LPF{i}_IN'},bx-3.81,1.99,90)
     # Two signal pads and two return pads; slot 1's entire output return floats.
     comp(f'J{i*2+1}','Port_4',f'LPF{i} OUT','Socket_1x4',sx,144.78,{1:f'LPF{i}_OUT',2:f'LPF{i}_OUT',3:'GND_OUT' if i==1 else 'GND',4:'GND_OUT' if i==1 else 'GND'},bx+3.81,35.01,-90)

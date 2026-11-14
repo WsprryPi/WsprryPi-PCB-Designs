@@ -43,6 +43,10 @@ W2–W6 each use pin 1 for the relay's output NO contact, pin 2 for `RFO`, and p
 
 The circuit retains alternate output selection pads, but this revision has only been audited against the default LPF configuration. Alternate BPF or separate-antenna assembly requires a separate connection review. The SMA groups are permanently connected to `LPF1_OUT`, not `RFO`; those nets are distinct.
 
+For a **separate regulated 5 V relay supply**, leave W1 **open**, connect supply positive to **W1 pin 2 (`RELAY_VPLUS`)**, and connect supply negative to main **`GND`**, shared with the host/low-side drivers. Do not use `GND_OUT` as the coil return. W1 pin 1 remains on host `+5V`; keep W1 open so the two positive supplies are not paralleled. The relays remain 5 V types. Use external sink drivers compatible with the coil supply and host power sequencing. The default shared-supply configuration still fits W1 pins 1–2.
+
+This cathode-to-coil-supply connection is an intentional adaptation of the reconstructed QRP Labs circuit. CAD connectivity and rule checks pass; separate-supply switching behavior has not been bench-qualified.
+
 ## Host and module pin maps
 
 J1 is on **B.Cu**, opposite the relays. In a component-side/top view, with slot 5 on the left and slot 1 on the right, J1's odd-numbered column is on the left, and its even-numbered column is on the right. Read each row from the input-socket edge toward the output-socket edge:
@@ -57,7 +61,7 @@ J1 is on **B.Cu**, opposite the relays. In a component-side/top view, with slot 
 
 This numeric convention is assigned to the published labeled pad arrangement. Confirm the mating host's numbering and orientation; do not infer compatibility from a generic 2 × 5 socket name. In top view, J1 pin 1 is at board coordinate (2.54, 8.26) mm, with 2.54 mm row/column pitch.
 
-Band controls sink the relay-coil current. The nominal 5 V, 140 mW coil corresponds to approximately 28 mA. Use a suitable external sink driver for Raspberry Pi/Pico GPIO; the carrier contains no transistor or level shifter. Energize **at most one** band input at a time and mute RF during switching. Keep the flyback cathode supply and linked coil supply on the same 5 V rail in the default assembly.
+Band controls sink the relay-coil current. The nominal 5 V, 140 mW coil corresponds to approximately 28 mA. Use a suitable external sink driver for Raspberry Pi/Pico GPIO; the carrier contains no transistor or level shifter. Energize **at most one** band input at a time and mute RF during switching. D1–D5 cathodes connect directly to `RELAY_VPLUS`, the same rail as the relay coil positives, so flyback current stays on the coil-supply rail.
 
 | Item | Pin assignments |
 | --- | --- |

@@ -6,6 +6,18 @@ Updated after the output-area PCB repair and the earlier schematic presentation 
 
 Latest update: four **R3 mm corner fillets**, a complete local-footprint audit, and **29 local 3D model assignments** have been applied. The 80 × 37 mm outside dimensions, mounting centers, component positions, pad geometry/UUIDs, and all tracks/vias are preserved. Letter sheet settings and native shared `DOC_*` title-block variables remain in place.
 
+## Flyback cathodes on the relay supply — 2026-11-13
+
+Moved **D1–D5 pin 1 (cathode)** from host `+5V` to `RELAY_VPLUS` in the saved schematic and PCB. The cathodes and relay coil-positive pins now share W1 pin 2. The only host `+5V` members are J1 pin 1 and W1 pin 1. With W1 open, an external regulated 5 V supply can feed W1 pin 2 and main `GND`; `/GND_OUT` remains separate. Fit W1 for the existing shared-supply configuration. This intentionally adapts the original circuit; physical/sequencing qualification remains open.
+
+The schematic diode branches now join the coil-supply bus. On the PCB, all 29 existing front-layer cathode-chain segments were retained geometrically and reassigned to `/RELAY_VPLUS`. Four old back-layer segments linking the cathode chain to W1 pin 1 were removed and replaced with two 0.30 mm back-layer segments from D5 pin 1 at (58.89,55.8) through (59.94,56.85) to W1 pin 2 at (59.94,58.4) mm in sheet coordinates. All footprint placements, pad geometry, and footprint/pad UUIDs are preserved; only the five diode pad net assignments change. Project settings are unchanged.
+
+Zone refill exposed one isolated, unrouted `GND` via at sheet coordinate (62.9,63.38) mm, UUID `f4eddd31-dbbf-4520-8888-0793ce630fa5`. It produced one dangling-via warning and one unconnected finding. The unused via was removed; no routed connection depended on it. No rule or exclusion was changed.
+
+KiCad **10.0.6** final ERC and DRC after refill/save, with all severities and schematic parity, report **zero findings**, exit **0**. The independent connectivity audit passes **140 pins/33 nets**, PCB membership, and all default switching paths. Explicit supply-net assertions confirm the host rail has exactly two pins, while the relay rail has W1 pin 2, all five coil-positive pins, and all five cathodes. Generator defaults, schematic redraw wiring, connection map, and independent expected-pin audit are updated; full regeneration was not run over hand edits.
+
+The schematic PDF and top/bottom copper exports were regenerated, rendered, and visually inspected. Python syntax, local Markdown links, file attributes/ignore behavior, and whitespace checks pass. Reports: `generated/erc-flyback-supply.rpt`, `generated/drc-flyback-supply.json`; visuals: `generated/flyback-schematic-detail.png`, `generated/flyback-board-top.svg`, and `generated/flyback-board-bottom.svg`; pre-edit snapshots: `generated/before-flyback-supply/`. No hardware or RF tests were performed.
+
 ## User-saved SMA placement and project state — 2026-11-13
 
 Recorded the remaining user-saved schematic/project edits after the ground-symbol commit. X1 and X2 are repositioned with revised label placement and equivalent signal/shield wire branches. X2 was recreated in the editor and has a new schematic UUID. Pin/net membership and existing SMA footprint fields are unchanged. KiCad also normalized native schematic formatting, field ordering, and explicit body-style settings; embedded symbol definitions are unchanged. The project records `used_designators` as `X2,#PWR1`.
@@ -160,8 +172,8 @@ SHA-256 hashes of the checked source revision:
 
 | File | SHA-256 |
 | --- | --- |
-| `Relay-Switched LPF.kicad_sch` | `761f80abf64f1ec0feda1ab0f4b06722e843cf04581e819a638957e665c3b725` |
-| `Relay-Switched LPF.kicad_pcb` | `d6c08991677738810ffa5d105afa4bcdb71bbde3d6bf660439646f6c521b7c22` |
+| `Relay-Switched LPF.kicad_sch` | `8d29a67e48bcef2ccf27a937c9127061c5367abe47d48cc13f11de34d477377c` |
+| `Relay-Switched LPF.kicad_pcb` | `80c827c9e3a5d6f1692aad18a382a7e781d30d935223cb6ca27f263bc11ce477` |
 | `relay-switched-lpf.kicad_sym` | `60824d9e999deb88c2240adb61f15bfa4871622dbde0935b79be750b3041e995` |
 
 Recheck after any source edit. Final pre-commit reports `erc-precommit.rpt`, `drc-precommit.json`, `connectivity.xml`, earlier reports, and visual exports reside in ignored `generated/`. The final KiCad 10.0.6 ERC and DRC/parity checks passed with zero findings; the independent connectivity audit also passed. The maintained schematic PDF is an intentional reference export; the native schematic is authoritative.

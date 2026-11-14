@@ -24,7 +24,7 @@ for ref in ['X1','X2','J26']: add(ref,'LPF1_OUT',1);add(ref,'GND_OUT',2)
 for i in range(1,6):
     r=f'RL{i}'
     for pin,net in [(1,'RELAY_VPLUS'),(12,f'BAND{i}_N'),(8,'RFI'),(9,f'LPF{i}_IN'),(10,'FINAL_NC' if i==1 else 'GND'),(3,'GND'),(4,'FINAL_RELAY_COM' if i==1 else f'LPF{i}_OUT'),(5,f'RELAY{i}_OUT')]: add(r,net,pin)
-    add(f'D{i}','+5V',1);add(f'D{i}',f'BAND{i}_N',2)
+    add(f'D{i}','RELAY_VPLUS',1);add(f'D{i}',f'BAND{i}_N',2)
     add(f'J{i*2}','GND',1,2);add(f'J{i*2}',f'LPF{i}_IN',3,4)
     add(f'J{i*2+1}',f'LPF{i}_OUT',1,2);add(f'J{i*2+1}','GND_OUT' if i==1 else 'GND',3,4)
     add(f'W{i+1}',f'RELAY{i}_OUT',1);add(f'W{i+1}','RFO',2);add(f'W{i+1}',f'ANT{i}',3)
