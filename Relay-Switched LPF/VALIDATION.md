@@ -1,5 +1,17 @@
 # Relay-Switched LPF validation
 
+## Retained schematic version and PCB alignment — 2026-11-14
+
+Retained the schematic from commit `82826dd` at the user's request. Its existing net names, component references, footprints, and connections already match the current PCB, so no board changes were necessary. The user's current project settings are preserved. The maintained schematic PDF was regenerated from the retained schematic and visually inspected; this section supersedes the later output-area label/layout entries below for the current schematic presentation.
+
+KiCad **10.0.6** ERC and DRC, with all severities, all track errors, and schematic parity enabled for DRC, report **0 violations, 0 unconnected items, and 0 schematic/PCB differences**, exit **0**. The independent audit passes **140 component pins / 33 nets**, PCB pad membership, default filter paths, and project-local dependencies. No rules, thresholds, or exclusions were changed. Reports and preview are in ignored `generated/realignment-2026-11-14/`; the audit netlist is in `generated/connectivity.xml`. Hardware and RF qualification remain open.
+
+Checked design SHA-256:
+
+- `Relay-Switched LPF.kicad_sch`: `bf94521cb9e06053a8977cfdb74b47ab84b983966e5aec61b6203a2576918f48`
+- `Relay-Switched LPF.kicad_pcb`: `b99f8a313febae49fa88e9dbb2f4f418f01b31b7155e81734a1ebf150fbff0a5`
+- `Relay-Switched LPF.kicad_pro`: `359e7512b573ba6afb7b83bf1e681769b3cae00eccbd9cf9a53e3dffd16d9e62`
+
 Recorded **2026-11-13**, repository branch `main`, using **KiCad 10.0.6** on macOS. This is an independently drawn reconstruction of the QRP Labs Rev. 5 circuit with a new layout, not a released or physically verified copy. Existing unrelated working-tree changes were preserved. The repository commit records this saved source revision.
 
 Updated after the output-area PCB repair and the earlier schematic presentation redraw. The coil, input pole, and output pole of each relay remain separate A/B/C units, with visible wires, shared supply/RF buses, paired filter pins, and junction dots. Component references, electrical pin membership, and PCB association UUIDs were preserved. The current PCB has corrected connector/relay placement, locally rerouted traces, and explicit layer connections for the RF output and isolated return.
