@@ -28,3 +28,7 @@ Other symbols, footprints, nominal VRML previews, and original generator code ne
 ## Two-pin antenna connector symbol
 
 Project-local `AntennaConnector2` (J21–J25) and `OutputConnector2` (J26) adapt the boxed body and two contact marks of KiCad 10.0.6 `Connector_Generic:Conn_01x02` from the same KiCad connector symbol library linked above. The symbol is rotated and resized to retain the existing pin endpoints and spacing of each connector, with the compact sheet's established line and text sizing. The adapted artwork retains CC-BY-SA-4.0 with the KiCad libraries exception. Pin numbers, electrical types, instance UUIDs, and PCB footprint assignments are unchanged.
+
+## Wire-jumper connector symbols
+
+Project-local `Link2`, `Selector3`, and `InputSelector3` use boxed body/contact artwork adapted from KiCad 10.0.6 `Connector_Generic:Conn_01x02` and `Conn_01x03`, under CC-BY-SA-4.0 with the KiCad libraries exception. The library source and license links above apply. Geometry is resized and oriented to preserve W1–W9 pin endpoints, numbering, and passive electrical types. The symbol style does not change their bare-pad PCB footprints or assembly configuration.

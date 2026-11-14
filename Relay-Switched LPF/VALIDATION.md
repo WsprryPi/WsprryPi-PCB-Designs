@@ -6,6 +6,14 @@ Updated after the output-area PCB repair and the earlier schematic presentation 
 
 Latest update: four **R3 mm corner fillets**, a complete local-footprint audit, and **29 local 3D model assignments** have been applied. The 80 × 37 mm outside dimensions, mounting centers, component positions, pad geometry/UUIDs, and all tracks/vias are preserved. Letter sheet settings and native shared `DOC_*` title-block variables remain in place.
 
+## W1–W9 boxed connector symbols — 2026-11-13
+
+All nine wire jumpers now use boxed connector body/contact graphics: `Link2` for W1/W8/W9, `Selector3` for W2–W6, and `InputSelector3` for W7. Pin endpoints, numbers, passive electrical types, references, values, instance/pin UUIDs, and PCB footprint assignments are preserved. The PCB is byte-identical to commit `f3a92e7`; default fitted/open links are unchanged.
+
+Small schematic-only layout changes keep wires outside the new bodies: the RFO bus and selector branches are repositioned, W7's ground marking is shifted, W9's COM wire is jogged, and nearby labels/W8/W9 property text are moved. Local and embedded symbol definitions and the redraw helper agree. No full redraw was run over the saved schematic.
+
+KiCad **10.0.6** ERC and DRC with all severities and schematic parity finish with **zero findings**, exit **0**. The independent audit passes for all **140 pins/33 nets**, PCB membership, and default switching paths. An intermediate ERC warning identified a dangling RFO bus tail; the unused tail was removed, with no exclusion or threshold changes. The refreshed one-page Letter schematic PDF was rendered and visually inspected. Python syntax, local Markdown links, and whitespace checks pass. Reports: `generated/erc-wire-symbols.rpt`, `generated/drc-wire-symbols.json`; preview: `generated/schematic-wire-symbols.png`. Hardware and RF qualification remain open.
+
 ## J21–J26 connector appearance — 2026-11-13
 
 All six antenna/output connectors J21–J26 now use the standard KiCad `Conn_01x02` boxed connector appearance. Project-local `AntennaConnector2` serves J21–J25; `OutputConnector2` serves J26 with its existing orientation and compact pin spacing. The library, embedded definitions, and redraw helper agree. No full redraw was run.
@@ -114,9 +122,9 @@ SHA-256 hashes of the checked source revision:
 
 | File | SHA-256 |
 | --- | --- |
-| `Relay-Switched LPF.kicad_sch` | `9238053d16b485b5ec8f47a1aa718ee4762c44e9638702adfac3567051f46a0a` |
+| `Relay-Switched LPF.kicad_sch` | `28ede479da06159ed13564e8fad60590b68d480ace1723060b807e838f447e81` |
 | `Relay-Switched LPF.kicad_pcb` | `eadd6eb0cd03db7cf88f8804246575f2b9ed8d73e41811dd4f2682f3d52aba71` |
-| `relay-switched-lpf.kicad_sym` | `712572555e686feca2ee494e52b479df59edf660b51607cf1ee67bc95cd056bb` |
+| `relay-switched-lpf.kicad_sym` | `11f649bd4d25cd851e834e32ab0f0033b1d41e662776a2ef63a01d0569d865e8` |
 
 Recheck after any source edit. Final pre-commit reports `erc-precommit.rpt`, `drc-precommit.json`, `connectivity.xml`, earlier reports, and visual exports reside in ignored `generated/`. The final KiCad 10.0.6 ERC and DRC/parity checks passed with zero findings; the independent connectivity audit also passed. The maintained schematic PDF is an intentional reference export; the native schematic is authoritative.
 

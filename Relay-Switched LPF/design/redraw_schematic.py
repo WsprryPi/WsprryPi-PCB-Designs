@@ -103,8 +103,31 @@ def lpf_connector(name, output=False):
     return symbol(name,'J',[(graphics,pins)])
 library.append(lpf_connector('LPF_IN'))
 library.append(lpf_connector('LPF_OUT', output=True))
-library.append(symbol('Selector3','W',[(''.join(circle(0,-i*5.08) for i in range(3)),''.join(pin(i+1,0,-i*5.08,0,0) for i in range(3)))]))
-library.append(symbol('Link2','W',[(circle(-2.54,0)+circle(2.54,0),pin(1,-2.54,0,90,0)+pin(2,2.54,0,90,0))]))
+def boxed_wire_symbol(name):
+    # KiCad Conn_01x02/Conn_01x03 boxed style, adapted to existing wire-link pins.
+    # Pin endpoints remain fixed; these graphics do not bridge adjacent pins.
+    if name=='Link2':
+        body=(-3.81,2.54,3.81,5.08)
+        contacts=[(-2.54,2.54,-2.54,3.81),(2.54,2.54,2.54,3.81)]
+        pins=pin(1,-2.54,0,90)+pin(2,2.54,0,90)
+    elif name=='Selector3':
+        body=(2.54,1.27,5.08,-11.43)
+        contacts=[(2.54,-i*5.08,3.81,-i*5.08) for i in range(3)]
+        pins=''.join(pin(i+1,0,-i*5.08,0) for i in range(3))
+    else:
+        assert name=='InputSelector3'
+        body=(-6.35,-2.54,6.35,-5.08)
+        contacts=[(x,-2.54,x,-3.81) for x in [-5.08,0,5.08]]
+        pins=''.join(pin(i+1,x,0,270) for i,x in enumerate([-5.08,0,5.08]))
+    graphics=rectangle(*body).replace('(type none)', '(type background)')
+    for x1,y1,x2,y2 in contacts:
+        if x1==x2:x1-=.127;x2+=.127
+        else:y1+=.127;y2-=.127
+        graphics+=(f'(rectangle (start {x1} {y1}) (end {x2} {y2}) '
+                   '(stroke (width .1524) (type default)) (fill (type none)))')
+    return symbol(name,'W',[(graphics,pins)])
+library.append(boxed_wire_symbol('Selector3'))
+library.append(boxed_wire_symbol('Link2'))
 library.append(symbol('Terminal2','J',[(rectangle(-2.54,-2.54,10.16,-5.08),pin(1,0,0,270)+pin(2,7.62,0,270))]))
 # Two-pin boxed connector artwork adapted from KiCad Conn_01x02; see attribution.
 # Preserve the existing 7.62 mm pre-scaling terminal pin separation.
@@ -185,7 +208,7 @@ place('W1','Link2',35.56,40.64,refpos=(33.02,45.72),valuepos=(33.02,48.26))
 wire((33.02,40.64),(30.48,40.64),(30.48,30.48));dot(30.48,30.48)
 wire((38.1,40.64),(50.8,40.64));dot(50.8,40.64)
 wire((30.48,90.17),(314.96,90.17));label('RFI',30.48,90.17)
-wire((30.48,224.79),(314.96,224.79));label('RFO',30.48,224.79)
+wire((30.48,215.90),(309.88,215.90));label('RFO',30.48,215.90)
 
 for i in range(5,0,-1):
     x=round(50.8+(5-i)*66.04,2)
@@ -219,26 +242,26 @@ for i in range(5,0,-1):
         wire((x,194.31),(x,191.77),(307.34,191.77));ground(307.34,191.77)
     selector=f'W{i+1}'
     place(selector,'Selector3',x,219.71,refpos=(xx(-10.16),218.44),valuepos=(xx(7.62),222.25))
-    wire((x,209.55),(x,219.71));label(f'RELAY{i}_OUT',x,214.63)
-    dot(x,224.79)
+    wire((x,209.55),(x,219.71));label(f'RELAY{i}_OUT',x,212.09)
+    wire((xx(-5.08),215.90),(xx(-5.08),224.79),(x,224.79));dot(xx(-5.08),215.90)
     place(f'J{20+i}','AntennaConnector2',x,242.57,refpos=(xx(-7.62),245.11),valuepos=(xx(-7.62),247.65))
     wire((x,229.87),(x,242.57));label(f'ANT{i}',x,236.22)
     wire((xx(7.62),242.57),(xx(7.62),238.76),(xx(15.24),238.76));ground(xx(15.24),238.76)
 
 # Slot 1 keeps the selected common output in series through its NC contact.
 # A horizontal three-pad option represents RFO / FINAL_NC / ground.
-defs=symbol('InputSelector3','W',[(circle(-5.08,0)+circle(0,0)+circle(5.08,0),pin(1,-5.08,0,270,0)+pin(2,0,0,270,0)+pin(3,5.08,0,270,0))])
+defs=boxed_wire_symbol('InputSelector3')
 library.append(defs);definitions['InputSelector3']=defs
 em=copy.deepcopy(defs);em[1]=LIB+':InputSelector3';embedded.append(dump(em))
 place('W7','InputSelector3',294.64,118.11,refpos=(281.94,102.87),valuepos=(281.94,105.41))
 wire((314.96,113.03),(314.96,115.57),(294.64,115.57),(294.64,118.11));label('FINAL_NC',294.64,115.57)
-wire((289.56,118.11),(284.48,118.11),(284.48,224.79));dot(284.48,224.79)
-ground(299.72,118.11)
-place('W8','Link2',339.09,158.75,refpos=(331.47,151.13),valuepos=(331.47,153.67))
+wire((289.56,118.11),(284.48,118.11),(284.48,215.90));dot(284.48,215.90)
+wire((299.72,118.11),(307.34,118.11));ground(307.34,118.11)
+place('W8','Link2',339.09,158.75,refpos=(331.47,148.59),valuepos=(331.47,151.13))
 ground(336.55,158.75)
 wire((341.63,158.75),(341.63,190.5));dot(341.63,190.5)
-place('W9','Link2',339.09,204.47,refpos=(330.2,194.31),valuepos=(330.2,196.85))
-wire((322.58,201.93),(341.63,201.93),(341.63,204.47));label('FINAL_RELAY_COM',322.58,201.93)
+place('W9','Link2',339.09,204.47,refpos=(326.39,191.77),valuepos=(326.39,194.31))
+wire((322.58,201.93),(334.01,201.93),(334.01,198.12),(344.17,198.12),(344.17,204.47),(341.63,204.47));label('FINAL_RELAY_COM',334.01,198.12)
 wire((336.55,204.47),(336.55,207.01),(353.06,207.01),(353.06,194.31),(360.68,194.31));dot(360.68,194.31)
 for ref,y in [('X1',165.1),('X2',187.96),('J26',210.82)]:
     place(ref,'OutputConnector2' if ref=='J26' else 'Port_2',375.92,y,refpos=(370.84,y-6.35),valuepos=(370.84,y-3.81))
