@@ -6,6 +6,12 @@ Updated after the output-area PCB repair and the earlier schematic presentation 
 
 Latest update: four **R3 mm corner fillets**, a complete local-footprint audit, and **29 local 3D model assignments** have been applied. The 80 × 37 mm outside dimensions, mounting centers, component positions, pad geometry/UUIDs, and all tracks/vias are preserved. Letter sheet settings and native shared `DOC_*` title-block variables remain in place.
 
+## Saved output-area label/layout edits — 2026-11-13
+
+Recorded the user's latest saved label and output-area layout edits after the net-label repair: J21, W2, W9, and the antenna-return ground marker repositioned; J26 recreated and repositioned; connecting wires/junctions and nearby labels adjusted. Component values, library selections, footprint fields, and electrical net membership are unchanged. The project records `used_designators` as `X2,J26,#PWR1`. The native saved schematic is authoritative; no generator redraw was run or placement defaults synchronized.
+
+KiCad **10.0.6** ERC and DRC with all severities and schematic parity report **zero findings**, exit **0**. The independent audit passes **140 pins/33 nets**, PCB membership, all default switching paths, and local dependencies. The PCB is unchanged. The maintained one-page Letter PDF was refreshed, rendered, and visually inspected. Local Markdown links and whitespace checks pass. Reports: `generated/erc-recheck.rpt`, `generated/drc-recheck.json`; preview: `generated/schematic-label-save.png`. Hardware/RF qualification remains open.
+
 ## Schematic label repair — 2026-11-13
 
 Repaired the user's latest layout edits without moving wires or component symbols. Reattached `RELAY1_OUT` at (194.31,102.87) mm and `FINAL_RELAY_COM` at its connected wire endpoint (198.12,97.79) mm. Restored `FINAL_NC` at (184.15,69.85) mm using its previous UUID. Renamed the competing `RF_OUT` label to the existing PCB name `LPF1_OUT`. Label justification was adjusted for legibility. All coordinates are schematic sheet coordinates.
@@ -188,7 +194,7 @@ SHA-256 hashes of the checked source revision:
 
 | File | SHA-256 |
 | --- | --- |
-| `Relay-Switched LPF.kicad_sch` | `0b2db138645d4e89c1eb5ba4c7f059e8c33872c7ddf77e8ddac063c539fc6f7d` |
+| `Relay-Switched LPF.kicad_sch` | `e8545e2bbc54c54a1392fd63fe9fb5e859af4d5f63061844b91306108c369bbd` |
 | `Relay-Switched LPF.kicad_pcb` | `80c827c9e3a5d6f1692aad18a382a7e781d30d935223cb6ca27f263bc11ce477` |
 | `relay-switched-lpf.kicad_sym` | `60824d9e999deb88c2240adb61f15bfa4871622dbde0935b79be750b3041e995` |
 
