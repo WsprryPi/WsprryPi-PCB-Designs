@@ -1,5 +1,17 @@
 # Relay-Switched LPF validation
 
+## Additional saved PCB routing cleanup — 2026-11-14
+
+Recorded the remaining user-saved routing and copper-fill edits. Trace segments decrease from **571 to 362**, and vias increase from **33 to 39**, including five added main-ground vias. The underside label changes from `J1 bottom` to `J1`. Component footprints, placements, pad net assignments, outline, and zone settings are unchanged. The schematic, project settings, and reference PDF are unchanged.
+
+The current board is byte-identical to the source checked in the immediately preceding consistency review. KiCad **10.0.6** ERC and DRC with all severities, all track errors, and schematic parity enabled for DRC report **0 violations, 0 unconnected items, and 0 parity differences**, exit **0**. The independent audit passes **140 pins / 33 nets**, default filter paths, and local dependencies. Top and bottom copper/silkscreen exports were visually reviewed. No rules, thresholds, or exclusions were changed. Reports are retained in ignored `generated/current-consistency-review/`; fresh visual exports are in `generated/remaining-pcb-save-2026-11-14/`. Hardware and RF qualification remain open.
+
+Checked design SHA-256:
+
+- `Relay-Switched LPF.kicad_sch`: `bf94521cb9e06053a8977cfdb74b47ab84b983966e5aec61b6203a2576918f48`
+- `Relay-Switched LPF.kicad_pcb`: `dd1229335cfa6ea7bec246c747355be0db28738008a8cc7e130c8032fcab1ca6`
+- `Relay-Switched LPF.kicad_pro`: `359e7512b573ba6afb7b83bf1e681769b3cae00eccbd9cf9a53e3dffd16d9e62`
+
 ## Saved board routing edits — 2026-11-14
 
 Recorded the remaining user-saved PCB routing changes on `/RFI`, `/RFO`, `/BAND1_N`, and `/LPF5_IN`, with refreshed copper-zone fills. Trace-segment count changes from **648 to 571** and via count from **38 to 33**. All component footprints, placements, pad assignments, board outline, zone settings, and other board objects remain unchanged. The project-file change only reorders the existing `used_designators` metadata; no design rules or exclusions change. The retained schematic and its PDF are unchanged.
