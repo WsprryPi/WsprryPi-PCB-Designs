@@ -330,7 +330,7 @@ out='(kicad_sch\n'+'\n'.join(dump(v) for v in header[1:])+'\n(lib_symbols\n'+'\n
 def scale_local(obj,pin_context=False):
     if not isinstance(obj,list):return
     pin_context=pin_context or bool(obj and obj[0]=='pin')
-    if obj and obj[0] in ['at','start','end','xy','center','size']:
+    if obj and obj[0] in ['at','start','mid','end','xy','center','size']:
         for i in [1,2]:
             if i<len(obj) and isinstance(obj[i],Atom):
                 factor=.5

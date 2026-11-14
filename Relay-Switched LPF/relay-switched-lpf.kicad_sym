@@ -474,13 +474,13 @@
     (polyline (pts (xy -2.54 0.635) (xy -1.524 0.635)) (stroke (width 0.0) (type default)) (fill (type none)))
     (arc
       (start -0.381 0.635)
-      (mid -2.318 -0.5379)
+      (mid -1.159 -0.269)
       (end -2.159 0.381)
       (stroke (width 0.127) (type default))
       (fill (type none)))
     (arc
       (start -2.159 0.889)
-      (mid -2.3179 3.0784)
+      (mid -1.1589 1.5392)
       (end -0.381 0.635)
       (stroke (width 0.127) (type default))
       (fill (type none)))
