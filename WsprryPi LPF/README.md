@@ -18,6 +18,14 @@ The 2 m filter is fully specified as `47.5 pF – 60.4 nH – 68.1 pF – 63.4 n
 
 The input and output connectors are hand-fitted male 1×4 headers with 2.54 mm pin pitch. The current schematic and PCB represent both headers as one component, **J1**, using the project-local paired-header footprint on the underside (B.Cu), with **33.02 mm centerline spacing**. The local symbol and footprint are named `LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm`; the matching BS170-board sockets use `LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm`. No manufacturer or purchasing part number is specified. The connector and filter components are excluded from the BOM; a default BOM export is not a complete hand-assembly purchasing list.
 
+### Optional edge-mount SMA connectors
+
+J2 (RF_IN) and J3 (RF_OUT) are hand-soldered **Samtec SMA-J-P-H-ST-EM1** 50 Ω female SMA jacks. Their center contacts connect to the same RF nets as J1; their shells connect to ground on both copper faces. The paired underside headers remain available, with their original 33.02 mm spacing and hole positions. Populate the connector arrangement needed for the assembly; the SMA jacks are included in the BOM, while the existing headers and filter components retain their previous BOM exclusions.
+
+The PCB extends **4.58 mm at each end**, from 36.80 mm to **45.96 mm overall length**; its approximately **12.87 mm height**, rounded corners, and filter component positions are retained. Both SMA axes are at Y = 99.12 mm. The SMA origins are X = 116.10 mm (J2) and X = 157.86 mm (J3); the board ends are X = 114.00 mm and X = 159.96 mm. Each end was shortened equally by 1.42 mm from the initial SMA layout. The SMA and underside-header courtyards meet without overlap; further inward movement would overlap their existing assembly envelopes. The footprint's PCB-edge datum is aligned with each end of the outline. Short 0.80 mm traces join the center lands to the existing RF header contacts, with four additional ground stitching vias at each launch. These traces have not been qualified as controlled-impedance transitions.
+
+The [Samtec drawing](https://suddendocs.samtec.com/prints/sma-j-p-x-st-em1-mkt.pdf) specifies a nominal **1.57 mm PCB thickness**. The saved board stackup remains 1.60 mm; confirm the connector slot, board fabrication tolerance, solder access on both faces, and assembled fit before ordering. Use this exact connector or independently verify the substitute's land pattern and board-thickness requirement. The SMA bodies project beyond the board ends. The larger outline and connector bodies require a fresh clearance check in any plug-in carrier or enclosure; the retained header spacing alone does not establish mechanical compatibility.
+
 ### Connector pinouts and QRP Labs compatibility
 
 J1 combines the input and output header rows:
@@ -81,6 +89,14 @@ The toroid model is a generic axial-inductor visualization. Check the wound comp
 
 ## Validation
 
+### SMA extension — 2026-11-14
+
+KiCad **10.0.6**, run outside the sandbox, reported **zero DRC violations, zero unconnected items, and zero schematic-parity issues**, including saved copper-zone refill. ERC reported zero active errors or warnings; the two previously excluded four-way-junction warnings remain visible. No rule thresholds, severities, or exclusions were changed. The schematic and front-copper/assembly exports were visually inspected. After symmetric 1.42 mm shortening at each end, DRC with saved zone refill and schematic parity again reported zero issues; the original filter footprints and header position remain unchanged. Both SMA footprints and their STEP model are project-local. The existing user removal of a redundant RF_IN label was preserved.
+
+The saved title blocks remain at revision `1.0.0`; this is a development change, not a manufacturing release. Physical connector fit, carrier/enclosure clearance, and measured RF performance remain unverified. The previous validation below records the earlier layout and does not qualify the SMA extensions.
+
+### Earlier layout checks
+
 The saved design was checked on **2026-10-03 with KiCad 10.0.6**:
 
 - **DRC:** zero violations and zero unconnected items, including a check with in-memory zone refill.
@@ -91,6 +107,6 @@ The saved design was checked on **2026-10-03 with KiCad 10.0.6**:
 - **Assembly documentation:** capacitor mounting options, courtyard gaps, and the paired-header geometry were checked against the saved sources and visual exports. The toroid's generic 3D model does not establish wound-component clearance.
 - **BOM:** the connector and filter components are excluded from the BOM; a default export is not a complete hand-assembly purchasing list.
 
-The title-block revision is `1.0.2`. The schematic identifies `RF_IN` as the electrical input; a `PWR_FLAG` documents externally supplied ground.
+The earlier validation record quoted revision `1.0.2`; the current source title blocks read `1.0.0`. The schematic identifies `RF_IN` as the electrical input; a `PWR_FLAG` documents externally supplied ground.
 
 These checks do not establish assembly fit or electrical/RF performance. Treat the design as untested until revision-specific physical validation is documented. Re-run ERC and DRC with schematic parity after design changes and before producing manufacturing files. See the [repository conventions](../README.md) and [validation requirements](../CONTRIBUTING.md).

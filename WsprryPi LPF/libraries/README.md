@@ -4,9 +4,9 @@ This folder contains the project's symbol library, footprint library, and availa
 
 | Asset | Location | Contents |
 | --- | --- | --- |
-| Symbols | [Symbol library](symbols/WsprryPi%20LPF.kicad_sym) | 5 symbols, including all definitions used by the schematic |
-| Footprints | [Footprint library](footprints/WsprryPi%20LPF.pretty/) | 3 footprints, including all footprints used by the board |
-| Models | [3D models](3dmodels/) | 3 local STEP files |
+| Symbols | [Symbol library](symbols/WsprryPi%20LPF.kicad_sym) | 6 symbols, including all definitions used by the schematic |
+| Footprints | [Footprint library](footprints/WsprryPi%20LPF.pretty/) | 4 footprints, including all footprints used by the board |
+| Models | [3D models](3dmodels/) | 4 local STEP files |
 
 The registered library nickname is `WsprryPi LPF`. Instance values and purchasing fields remain the design's responsibility; a generic library symbol does not select a component value or supplier part.
 
@@ -14,11 +14,19 @@ The local `PWR_FLAG` symbol documents the externally supplied ground connection 
 
 ## Used asset inventory
 
-Only assets referenced by the current schematic or PCB are retained. The local symbols are `C`, `GND`, `L`, `PWR_FLAG`, and `LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm`. The three local footprints are `C_Disc_D3.0mm_W1.6mm_P2.50mm`, `L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm`, and `LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm`.
+Only assets referenced by the current schematic or PCB are retained. The local symbols are `Conn_Coaxial`, `C`, `GND`, `L`, `PWR_FLAG`, and `LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm`. The four local footprints are `SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount`, `C_Disc_D3.0mm_W1.6mm_P2.50mm`, `L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm`, and `LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm`.
 
-The three retained STEP models represent the disc capacitor, generic axial inductor, and single four-pin header (instanced twice by the paired header). Every model path is rooted at `${KIPRJMOD}/libraries/3dmodels/`. The library symbol definitions are taken from the current schematic's embedded definitions, including its updated J1 pin names.
+The four retained STEP models represent the Samtec edge-mount SMA jack, the disc capacitor, generic axial inductor, and single four-pin header (instanced twice by the paired header). Every model path is rooted at `${KIPRJMOD}/libraries/3dmodels/`. The library symbol definitions are taken from the current schematic's embedded definitions, including its updated J1 pin names.
 
-The unused `Conn_01x04` and `SMA_Adafruit_1865` symbols and the standalone header, SMA, and two optional capacitor footprints were removed. The unavailable optional capacitor model reference was removed with its unused footprint. No used model is missing; the generic inductor model limitation below remains.
+During the earlier cleanup, the unused `Conn_01x04` and `SMA_Adafruit_1865` symbols and the standalone header, SMA, and two optional capacitor footprints were removed. The unavailable optional capacitor model reference was removed with its unused footprint. No used model is missing; the generic inductor model limitation below remains.
+
+## Edge-mount SMA jacks
+
+J2/J3 use the generic passive `Conn_Coaxial` symbol (pin 1 = center, pin 2 = shell) and `SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount` footprint, copied from the installed KiCad 10.0.6 Connector symbol and Connector_Coaxial footprint libraries on 2026-11-14. The matching STEP model was copied from the installed KiCad Connector_Coaxial model library. Only the model path was changed, to `${KIPRJMOD}/libraries/3dmodels/Connector_Coaxial.3dshapes/`; the footprint land geometry is unchanged. The symbol's instance value selects Samtec SMA-J-P-H-ST-EM1, rather than a mechanically interchangeable generic SMA.
+
+The [manufacturer drawing](https://suddendocs.samtec.com/prints/sma-j-p-x-st-em1-mkt.pdf) specifies 1.57 mm nominal board thickness. The PCB-edge datum is local X = +2.10 mm; the right jack is unrotated and the left jack is rotated 180°. Both use top center-contact lands and shell lands on both faces. The tightened layout places each SMA courtyard against the adjacent underside-header courtyard without overlap; the footprint geometry is unchanged. The saved 1.60 mm board requires a physical slot/tolerance and assembly-fit check. See the [assembly and current validation notes](../README.md#optional-edge-mount-sma-connectors).
+
+These additions retain the KiCad library license and exception described below. KiCad 10.0.6 DRC with refill and schematic parity reports no violations, unconnected pads, or parity issues; ERC retains only the two earlier excluded junction warnings. Physical and RF qualification remain open.
 
 ## Paired LPF headers
 

@@ -165,6 +165,192 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "WsprryPi LPF:Conn_Coaxial"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_Coaxial"
+				(at 2.921 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.8079)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.2221 1.8084)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "WsprryPi LPF:GND"
 			(power global)
 			(pin_numbers
@@ -795,12 +981,6 @@
 		)
 	)
 	(junction
-		(at 152.4 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0c946ba7-8b38-4f56-9373-0d41c22a3850")
-	)
-	(junction
 		(at 127 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -811,6 +991,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1d605232-fae2-4dde-a2f7-b4cff0abf372")
+	)
+	(junction
+		(at 121.92 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1dfd8bf0-d9bc-4847-b30a-adc3e40165a3")
 	)
 	(junction
 		(at 106.68 97.79)
@@ -843,10 +1029,22 @@
 		(uuid "490383c0-fe7c-4768-9639-7696616c637d")
 	)
 	(junction
+		(at 152.4 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52688c11-0299-462f-b1b1-335ca8ec7dcb")
+	)
+	(junction
 		(at 127 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "58df11f4-3310-4617-962e-b049cde85c30")
+	)
+	(junction
+		(at 157.48 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "881fd255-27cf-468f-b06f-4bb31e95cb1b")
 	)
 	(junction
 		(at 121.92 119.38)
@@ -873,16 +1071,16 @@
 		(uuid "ba4bae55-0aa7-4087-83a1-e2068e920ab2")
 	)
 	(junction
-		(at 121.92 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bc2b6a15-172e-428d-bccc-2153b56952f9")
-	)
-	(junction
 		(at 106.68 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd415513-ac77-4b73-b3d8-ab5e930a0c94")
+	)
+	(junction
+		(at 116.84 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fed69f5c-2f8c-4589-aaa6-37900cd01854")
 	)
 	(wire
 		(pts
@@ -926,7 +1124,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 123.19) (xy 121.92 124.46)
+			(xy 121.92 121.92) (xy 121.92 123.19)
 		)
 		(stroke
 			(width 0)
@@ -996,13 +1194,13 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 123.19) (xy 152.4 124.46)
+			(xy 163.83 128.27) (xy 163.83 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2ceb31d3-0e5f-452b-8aa0-c19bcfe8ee46")
+		(uuid "2b103084-77cb-4844-9464-69359880856c")
 	)
 	(wire
 		(pts
@@ -1023,6 +1221,16 @@
 			(type default)
 		)
 		(uuid "32b82734-9cb9-4cae-8da4-93d82e82fe96")
+	)
+	(wire
+		(pts
+			(xy 157.48 123.19) (xy 157.48 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "343d078d-755e-4aa1-80a5-1e43b15833b8")
 	)
 	(wire
 		(pts
@@ -1106,16 +1314,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 121.92) (xy 121.92 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c316bb1-31d1-4dd4-a6e5-924a2a5cd979")
-	)
-	(wire
-		(pts
 			(xy 106.68 105.41) (xy 100.33 105.41)
 		)
 		(stroke
@@ -1166,16 +1364,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 123.19) (xy 152.4 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a741987-be5f-43c1-b40b-0b629fa040b6")
-	)
-	(wire
-		(pts
 			(xy 147.32 97.79) (xy 147.32 105.41)
 		)
 		(stroke
@@ -1193,6 +1381,16 @@
 			(type default)
 		)
 		(uuid "7526e608-94e2-4be7-986e-eaa7b5472b88")
+	)
+	(wire
+		(pts
+			(xy 152.4 123.19) (xy 152.4 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7542db57-f49f-4077-9a91-aee0e3877dc9")
 	)
 	(wire
 		(pts
@@ -1243,6 +1441,16 @@
 			(type default)
 		)
 		(uuid "81391b18-a4a0-47ba-b787-d28fc8f82276")
+	)
+	(wire
+		(pts
+			(xy 116.84 123.19) (xy 116.84 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81af0891-5161-4840-8a1a-7b541c96dfe4")
 	)
 	(wire
 		(pts
@@ -1326,6 +1534,26 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 123.19) (xy 121.92 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9540a727-3a03-4626-8c09-ab2ca01d7bc4")
+	)
+	(wire
+		(pts
+			(xy 158.75 123.19) (xy 157.48 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98cee804-a66a-4da9-a80b-e2115cb69a5e")
+	)
+	(wire
+		(pts
 			(xy 127 97.79) (xy 127 105.41)
 		)
 		(stroke
@@ -1373,6 +1601,16 @@
 			(type default)
 		)
 		(uuid "b7f0f70a-5b18-4d6e-bd54-bc96f8a13991")
+	)
+	(wire
+		(pts
+			(xy 157.48 123.19) (xy 152.4 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b841908e-e08d-4ab7-bc9a-4080c520cf39")
 	)
 	(wire
 		(pts
@@ -1446,6 +1684,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 123.19) (xy 116.84 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c85a5890-1f68-43df-9588-5bd19c558379")
+	)
+	(wire
+		(pts
 			(xy 167.64 97.79) (xy 172.72 97.79)
 		)
 		(stroke
@@ -1466,6 +1714,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 123.19) (xy 121.92 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf9e2522-c1c8-41a7-8979-32a0ba8a191c")
+	)
+	(wire
+		(pts
 			(xy 121.92 96.52) (xy 121.92 97.79)
 		)
 		(stroke
@@ -1473,16 +1731,6 @@
 			(type default)
 		)
 		(uuid "d069bf55-2129-4443-b130-2b172afdba69")
-	)
-	(wire
-		(pts
-			(xy 115.57 123.19) (xy 121.92 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9a046e6-27d8-4bf2-903a-ecf5700193f1")
 	)
 	(wire
 		(pts
@@ -1536,6 +1784,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 128.27) (xy 110.49 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6b1ab06-0584-4be7-ba71-c5abe01f7fb8")
+	)
+	(wire
+		(pts
 			(xy 127 87.63) (xy 132.08 87.63)
 		)
 		(stroke
@@ -1555,16 +1813,6 @@
 		(uuid "ff60998d-695d-48f7-b7e5-ed95cf0ae999")
 	)
 	(label "RF_IN"
-		(at 107.95 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1f42fc46-7ef1-4193-9c9b-969cd61a9595")
-	)
-	(label "RF_IN"
 		(at 100.33 105.41 0)
 		(effects
 			(font
@@ -1575,14 +1823,14 @@
 		(uuid "2a774e96-681c-40e6-9217-cd68a7bf5a91")
 	)
 	(label "RF_OUT"
-		(at 160.02 123.19 180)
+		(at 157.48 137.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "b4591686-6173-4f78-964a-bc45d65d848d")
+		(uuid "56656f5c-a820-450b-9dfd-59497d651904")
 	)
 	(label "RF_OUT"
 		(at 175.26 105.41 180)
@@ -1595,7 +1843,7 @@
 		(uuid "b6551f60-2131-4ba6-a5da-d108a3f4c67b")
 	)
 	(label "RF_IN"
-		(at 115.57 123.19 0)
+		(at 116.84 137.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1938,6 +2186,162 @@
 			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "CA5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "WsprryPi LPF:GND")
+		(at 110.49 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "25927608-7f40-4821-b324-e9a625d342c3")
+		(property "Reference" "#PWR023"
+			(at 110.49 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 110.49 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "21c403d0-8512-4d6c-9fb3-6ce4d99a0ec6")
+		)
+		(instances
+			(project "WsprryPi LPF"
+				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "WsprryPi LPF:Conn_Coaxial")
+		(at 163.83 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2b6f2af4-cdfb-4096-9a7d-d9908bd4c83a")
+		(property "Reference" "J3"
+			(at 163.83 119.888 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMA-J-P-H-ST-EM1"
+			(at 163.83 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "WsprryPi LPF:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+			(at 163.83 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://suddendocs.samtec.com/prints/sma-j-p-x-st-em1-mkt.pdf"
+			(at 163.83 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 163.83 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87fe68bf-98af-45c5-b314-0071d9c692d0")
+		)
+		(pin "2"
+			(uuid "aca942cd-4cba-4aee-bfa5-f5c251c36f4e")
+		)
+		(instances
+			(project "WsprryPi LPF"
+				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -2891,6 +3295,163 @@
 			(project "WsprryPi LPF"
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "WsprryPi LPF:GND")
+		(at 163.83 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bbd324b6-8a2d-490f-b66d-35e4fc5043b8")
+		(property "Reference" "#PWR022"
+			(at 163.83 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 163.83 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73efc499-18cf-4879-aa03-b0eb3bd20c42")
+		)
+		(instances
+			(project "WsprryPi LPF"
+				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "WsprryPi LPF:Conn_Coaxial")
+		(at 110.49 123.19 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c9df357e-af94-4172-9afd-7b2e46c9a0f0")
+		(property "Reference" "J2"
+			(at 110.49 119.888 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMA-J-P-H-ST-EM1"
+			(at 110.49 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "WsprryPi LPF:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+			(at 110.49 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://suddendocs.samtec.com/prints/sma-j-p-x-st-em1-mkt.pdf"
+			(at 110.49 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 110.49 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1735da60-0281-475f-8ec2-2fb742ee73c0")
+		)
+		(pin "2"
+			(uuid "1791e57b-dd61-4e11-9f80-f89531ea1235")
+		)
+		(instances
+			(project "WsprryPi LPF"
+				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
+					(reference "J2")
 					(unit 1)
 				)
 			)
