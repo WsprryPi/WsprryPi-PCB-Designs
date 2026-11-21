@@ -54,6 +54,49 @@ Across the 78 accepted cases, DC bias changes power by at most 0.02911% from the
 
 The BS170 datasheet gives on-resistance with 10 V on the gate and gate-threshold voltage at a drain current of 1 mA. It offers no guarantee of low on-resistance or RF performance with 3.3 V gate drive, and it does not validate the Zetex model. There is no efficiency comparison because the logic surrogate lacks total supply-current modeling.
 
+## Estimated supply current
+
+For the paralleled SN74LVC2T45 stage, the nominal estimate is about **23–55 mA from 5 V** and **a few microamps to about 4 mA from 3.3 V** across 137 kHz–145 MHz. These are separate hand calculations, not supply currents extracted from the amplifier simulation or measured on the board. They exclude the Pico, Pi, or Si5351's own consumption.
+
+The calculation assumes a continuous raw 0–3.3 V clock at 50% duty cycle, fast input edges, DIR held high, both channels switching together, and C4 feeding a resistive 50-ohm load. It includes an assumed 2 pF of output-board capacitance. There is no external filter in this estimate.
+
+The approximately 83–84 mW fundamental output corresponds to an equivalent square wave of about 4.5 V peak-to-peak across 50 ohms. Its positive load current comes from the 5 V supply during roughly half the cycle, giving about 23 mA of average load-related supply current. This approximation does not equate fundamental RF power with total load power or assume perfect conversion efficiency.
+
+[TI's operating-characteristics table](https://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf#page=9) gives typical power-dissipation capacitances per transceiver. For this estimate, each of the two channels uses 4 pF on the 3.3 V side and 21 pF on the 5 V side. Applying the switching-current relation `I = N × Cpd × V × f`, plus the shared output-board capacitance, gives the formulas below. TI explains this method in [CMOS Power Consumption and Cpd Calculation](https://www.ti.com/lit/an/scaa035b/scaa035b.pdf).
+
+With `f` in MHz and currents in mA:
+
+- `I_5V ≈ 23 + 0.220 × f`.
+- `I_3V3 ≈ 0.002 + 0.0264 × f`.
+
+The 3.3 V formula includes a nominal 2-microamp quiescent allowance, not a guaranteed maximum. Microamp-scale quiescent current on the 5 V rail is below the table's rounding precision.
+
+| Frequency | From the board's 5 V supply | From the board's 3.3 V supply |
+| --- | ---: | ---: |
+| 137 kHz | ≈23 mA | ≈6 uA |
+| 475 kHz | ≈23 mA | ≈15 uA |
+| 1.8 MHz | ≈23 mA | ≈50 uA |
+| 3.5 MHz | ≈24 mA | ≈94 uA |
+| 7 MHz | ≈25 mA | ≈0.19 mA |
+| 14 MHz | ≈26 mA | ≈0.37 mA |
+| 28 MHz | ≈29 mA | ≈0.74 mA |
+| 50 MHz | ≈34 mA | ≈1.3 mA |
+| 70 MHz | ≈38 mA | ≈1.9 mA |
+| 100 MHz | ≈45 mA | ≈2.6 mA |
+| 145 MHz | ≈55 mA | ≈3.8 mA |
+
+### Additional load on the clock source
+
+The clock output also supplies current through J1. This is separate from the current entering the board's 3.3 V supply pin. Using TI's typical 6 pF per data pin, plus an assumed 2 pF of input-board capacitance, gives about 14 pF for the source to charge. R1 adds an average `3.3 V × 0.5 / 10 kohms = 0.165 mA` at 50% duty cycle. The approximate additional source-rail burden is therefore `I_clock_load ≈ 0.165 + 0.0462 × f` mA, with `f` in MHz.
+
+That is about **0.17 mA at 137 kHz** and **6.9 mA at 145 MHz**, excluding the source device's own internal switching current and any additional cable or connector capacitance. It is an average charging-current estimate, not the instantaneous GPIO pin current or a guarantee that a particular source can drive this load at 145 MHz. If the source and amplifier share a 3.3 V regulator, include both the board supply-pin draw and this additional source burden, plus the source device's own consumption. At 145 MHz, the first two terms total about 10.7 mA.
+
+### Limits of the current estimate
+
+TI characterizes these typical Cpd values at 10 MHz with 1 ns input transitions and equal supply voltages. Taking the 3.3 V and 5 V entries for a mixed-supply device, and extending them to 145 MHz, are engineering approximations. The values are not worst-case current limits or validated uncertainty bounds. Cpd accounts for internal switching and through-current under its reference conditions; actual edge rates, temperature, device variation, and loading can change that current.
+
+The calculation does not establish the extra current caused by skew or contention between directly paralleled outputs. It also omits supply and return impedance, regulator losses, startup charging, keying transients, and voltage-dependent parasitics. C1–C3 provide local transient charge but do not make these average-current estimates a model of supply ripple or peak current. An external filter changes the harmonic load and can change supply current even if its fundamental input impedance is near 50 ohms. The VHF estimates require measurements of both supply currents and input/output waveforms on the assembled board.
+
 ## Numerical checks and exclusions
 
 The accepted set has 78 cases: thirteen frequencies, three circuit/model combinations, and two C4 bias conditions. Each successful run covers sixty periods. Fourier integration uses 32,001 uniformly resampled points from the final eight periods. Capacitor nodes start near the periodic DC midpoint; inductors start at zero current. This is not a model of transmitter keying.
