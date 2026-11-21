@@ -1,0 +1,270 @@
+{
+  "symbols": [
+    "C",
+    "GND",
+    "L",
+    "LED",
+    "PWR_FLAG",
+    "R",
+    "SMA"
+  ],
+  "template": "RPi Zero HAT Template",
+  "synth_source": "WsprryPico Synth Shield with GPS",
+  "assets": [
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/C_0603_1608Metric.step",
+      "source": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/C_0603_1608Metric.kicad_mod",
+      "source": "WsprryPico Synth Shield with GPS/wsprrypico-synth-shield.pretty/C_0603_1608Metric.kicad_mod",
+      "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/C_0805_2012Metric.step",
+      "source": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/C_0805_2012Metric.kicad_mod",
+      "source": "WsprryPico Synth Shield with GPS/wsprrypico-synth-shield.pretty/C_0805_2012Metric.kicad_mod",
+      "source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/C_1206_3216Metric.step",
+      "source": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+      "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/C_1206_3216Metric.kicad_mod",
+      "source": "WsprryPico Synth Shield with GPS/wsprrypico-synth-shield.pretty/C_1206_3216Metric.kicad_mod",
+      "source_sha256": "b2e4a08e3aaf40bc587090190c0e3969e962d7ae962c172cce0581ae8327651c"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/L_0603_1608Metric.step",
+      "source": "WsprryPico Synth Shield with GPS/wsprrypico-synth-shield.3dshapes/L_0603_1608Metric.step",
+      "sha256": "b0136ad7160588d2f5dac8c85da84a35646db656b5bc54bbb873b6b548eedbb3"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/L_0603_1608Metric.kicad_mod",
+      "source": "WsprryPico Synth Shield with GPS/wsprrypico-synth-shield.pretty/L_0603_1608Metric.kicad_mod",
+      "source_sha256": "e1aacbb38143b6e8dd1f73c4e501d31821e9ed6dc551e95fddbd5e435f69c122"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/VLS6045EX_6x6x4.5_Preview.wrl",
+      "source": "WsprryPico Synth Shield with GPS/wsprrypico-synth-shield.3dshapes/VLS6045EX_6x6x4.5_Preview.wrl",
+      "sha256": "3f3a02440ac27bf2c983466517ccfe23b3f8bce42b3b965fd78c9332133cb46b"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/L_TDK_VLS6045EX_VLS6045AF.kicad_mod",
+      "source": "WsprryPico Synth Shield with GPS/wsprrypico-synth-shield.pretty/L_TDK_VLS6045EX_VLS6045AF.kicad_mod",
+      "source_sha256": "e2cd1334029ee42841fb51fb2f5e24b6f33732b9800746420092f4a06f6be00f"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/LED_0603_1608Metric.step",
+      "source": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/LED_0603_1608Metric.kicad_mod",
+      "source": "WsprryPico Synth Shield with GPS/wsprrypico-synth-shield.pretty/LED_0603_1608Metric.kicad_mod",
+      "source_sha256": "7931ed1efba34cb13c8d74a60eb1dca4b0be57d950c38e08c3e7f007db500a1c"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/R_0603_1608Metric.step",
+      "source": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/R_0603_1608Metric.kicad_mod",
+      "source": "WsprryPico Synth Shield with GPS/wsprrypico-synth-shield.pretty/R_0603_1608Metric.kicad_mod",
+      "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/SMA_Adafruit_1865_Preview.wrl",
+      "source": "WsprryPico Synth Shield with GPS/wsprrypico-synth-shield.3dshapes/SMA_Adafruit_1865_Preview.wrl",
+      "sha256": "f2548d5574882c6c8fa3d44f0e6234e6ae5a3ec83e958f028d385645aace4a81"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/SMA_Adafruit_1865_EdgeMount.kicad_mod",
+      "source": "WsprryPico Synth Shield with GPS/wsprrypico-synth-shield.pretty/SMA_Adafruit_1865_EdgeMount.kicad_mod",
+      "source_sha256": "fd636bb43a0eb0fc19b9b5a7397dbd08d6acf757e2b139fc2e13514cbd9c5133"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/TSSOP-20_4.4x6.5mm_P0.65mm.kicad_mod",
+      "source": "KiCad 10.0.6 footprints/Package_SO.pretty/TSSOP-20_4.4x6.5mm_P0.65mm.kicad_mod",
+      "source_sha256": "b7ca3a31dd45c1225609f9b94e8ba1534bd16edd193628c8d67a8ea669b26b72"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/TSSOP-20_4.4x6.5mm_P0.65mm.step",
+      "source": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-20_4.4x6.5mm_P0.65mm.step",
+      "sha256": "97339947f3a7196470ec2f1d9f9b92bb2fc2ab66ad53be0cf105192585ef3c9a"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+      "source": "WsprryPi Zero GPIO BS170/wsprrypi-zero-gpio-bs170.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+      "source_sha256": "3c9fb8df5d249220e5a499fa344f4c2756bcae7c551101b5efeb2907d97d2d65"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+      "source": "WsprryPi Zero GPIO BS170/wsprrypi-zero-gpio-bs170.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+      "sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/TestPoint_THTPad_1.0x1.0mm_Drill0.5mm.kicad_mod",
+      "source": "WsprryPico Synth Shield with GPS/wsprrypico-synth-shield.pretty/TestPoint_THTPad_1.0x1.0mm_Drill0.5mm.kicad_mod",
+      "source_sha256": "ba843def968097f2aa5b2d453b529e7b65af84e49ea3d90e3cb540b4a5fb4c75"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/D_SOD-323.kicad_mod",
+      "source": "KiCad 10.0.6 footprints/Diode_SMD.pretty/D_SOD-323.kicad_mod",
+      "source_sha256": "03669ee95335b8ad49c3458e5262e7c2fd7ace6fe481bfd00f46b6f2f32abc8a"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/D_SOD-323.step",
+      "source": "KiCad 10.0.6 3dmodels/Diode_SMD.3dshapes/D_SOD-323.step",
+      "sha256": "cd8619b2119cd95683a2c5e660ab4f2d4db674f696cd6f9e9756f221171a214d"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/R_1210_3225Metric.kicad_mod",
+      "source": "KiCad 10.0.6 footprints/Resistor_SMD.pretty/R_1210_3225Metric.kicad_mod",
+      "source_sha256": "8816a8edfa0e619a86c5a65a59048b0fa2c3472d0df5a62244290224abacf7ff"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/R_1210_3225Metric.step",
+      "source": "KiCad 10.0.6 3dmodels/Resistor_SMD.3dshapes/R_1210_3225Metric.step",
+      "sha256": "44b152a107ee844595f54f1205cd4e0e37cebb9635affbe45f530daada41d245"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/SOT-23-6.kicad_mod",
+      "source": "WsprryPico Synth Shield with GPS/wsprrypico-synth-shield.pretty/SOT-23-6.kicad_mod",
+      "source_sha256": "ef8735ff46e993844b6230b554bdf176c3cdaa2a66ceb28769b33f25cd32ffbe"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/SOT-23-6.step",
+      "source": "KiCad 10.0.6 3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/SOT-23-5.kicad_mod",
+      "source": "WsprryPico Synth Shield with GPS/wsprrypico-synth-shield.pretty/SOT-23-5.kicad_mod",
+      "source_sha256": "74d042eb963d301ed7bbf6a38379fea22864442d309576d6a9a2e8ccc64e5beb"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/SOT-23-5.step",
+      "source": "KiCad 10.0.6 3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+      "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/SOT-363_SC-70-6.kicad_mod",
+      "source": "KiCad 10.0.6 footprints/Package_TO_SOT_SMD.pretty/SOT-363_SC-70-6.kicad_mod",
+      "source_sha256": "0659d885e00b786968c3ba29152b808777240a91c1fb49ab8d814eb03530115c"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/SOT-363_SC-70-6.step",
+      "source": "KiCad 10.0.6 3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step",
+      "sha256": "045cc95e18ee7a13d1623c3ce6604fc833049bdb4f952f68c26e3c5767d122e4"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/SOT-23.kicad_mod",
+      "source": "KiCad 10.0.6 footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+      "source_sha256": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/SOT-23.step",
+      "source": "KiCad 10.0.6 3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/D_SOD-123.kicad_mod",
+      "source": "KiCad 10.0.6 footprints/Diode_SMD.pretty/D_SOD-123.kicad_mod",
+      "source_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/D_SOD-123.step",
+      "source": "KiCad 10.0.6 3dmodels/Diode_SMD.3dshapes/D_SOD-123.step",
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/SOT-353_SC-70-5.kicad_mod",
+      "source": "KiCad 10.0.6 footprints/Package_TO_SOT_SMD.pretty/SOT-353_SC-70-5.kicad_mod",
+      "source_sha256": "869e17094994ff787b769a2d69512455a2f20950d59dd5c4103026ec413bb88e"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/SOT-353_SC-70-5.step",
+      "source": "KiCad 10.0.6 3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-353_SC-70-5.step",
+      "sha256": "2860de5b7b085919ff6e952148353f928798588d9f544dc69430545aff2ba908"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+      "source": "KiCad 10.0.6 Connector_USB, adapted to HRO paired lands and shell drawing",
+      "sha256": "d93ac82f2ec16bf8783a0143fa74de6d73825d46229ec52b28d396d94e8a8f7d"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.wrl",
+      "source": "EasyEDA C165948 model via easyeda2kicad 1.0.1",
+      "sha256": "0457a14076c3c2f9d16ed2a995ac1f248173ab9ac1c200f99988a33d97d111b5"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/LED_CT-3210URGBC-P15-2B.kicad_mod",
+      "source": "CHONGTIAN Rev A1 recommended soldering pattern, PDF page 2",
+      "sha256": "358c7693c1a129fb3e5fc60e12ff3dbcc526fd922bd6d35ab076cd241a1fb2b0"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/LED_CT-3210URGBC-P15-2B.wrl",
+      "source": "Original nominal package and side lens from CHONGTIAN Rev A1 outline",
+      "sha256": "edb1712ea46a7cebc4fd2a5b76c7fbad94399db3d738a804c75b46e73edaa24c"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/Transformer_BN43-202_Flat_4Lead.kicad_mod",
+      "source": "Original four-lead flat-mount footprint, estimated 6 x 20 mm hole pattern",
+      "sha256": "96abc2cf65e0832dc94983c3eea7c24b34e1d8c08ef16770cf8d03024715164d"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/Transformer_BN43-202_Flat_4Lead.wrl",
+      "source": "Original flat BN-43-202 envelope, horizontal bores and illustrative winding leads",
+      "sha256": "6bf81fabae56d22407e8faaf70abe82a4f9a8d22e70de8d4aa15ca4bb38343f9"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/Raspberry_Pi_Zero_HAT_Interface.kicad_mod",
+      "source": "RPi Zero HAT Template/zero-hat-template.pretty/Raspberry_Pi_Zero_HAT_Interface.kicad_mod",
+      "source_sha256": "6193addacbcbeccc8b8e805064f6e5b806e836d836aa13104250325105a4f1be",
+      "sha256": "6193addacbcbeccc8b8e805064f6e5b806e836d836aa13104250325105a4f1be"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/Raspberry_Pi_HAT_2x20_Socket_3D.kicad_mod",
+      "source": "RPi Zero HAT Template/zero-hat-template.pretty/Raspberry_Pi_HAT_2x20_Socket_3D.kicad_mod",
+      "source_sha256": "c65c6affc29912cea347ced37f5e3ba56976c43c29986ee20e6297304f32906f",
+      "sha256": "45a28ec2712a6b8c5b970828d4e504a971435fdef1fd70e4eac1e5151238da32"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/PinSocket_2x20_P2.54mm_Vertical.step",
+      "source": "RPi Zero HAT Template/zero-hat-template.3dshapes/PinSocket_2x20_P2.54mm_Vertical.step",
+      "source_sha256": "964ca9c969824b42d3f7412f7b3692eaecd9c9e99f66ed085d9548475f676d5a",
+      "sha256": "964ca9c969824b42d3f7412f7b3692eaecd9c9e99f66ed085d9548475f676d5a"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.pretty/LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm.kicad_mod",
+      "source": "WsprryPi Zero GPIO BS170/wsprrypi-zero-gpio-bs170.pretty/LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm.kicad_mod",
+      "source_sha256": "15b1d12360a20bba6449619a7a734c6d8a0495adb1c25b3ca4726b31daf7971c",
+      "sha256": "1e95c3ec1f17a2fbd5594b243b277c40821f31641ac552b78c068fd7b6fb56d6"
+    },
+    {
+      "asset": "wsprrypi-logic-buffer-amp.3dshapes/PinSocket_1x04_P2.54mm_Vertical.step",
+      "source": "WsprryPi Zero GPIO BS170/wsprrypi-zero-gpio-bs170.3dshapes/PinSocket_1x04_P2.54mm_Vertical.step",
+      "source_sha256": "0b6cc232aa72f09f14de4bc492e3ba9a06f711bfb0bc8197cb28fb6bea9b7be3",
+      "sha256": "0b6cc232aa72f09f14de4bc492e3ba9a06f711bfb0bc8197cb28fb6bea9b7be3"
+    }
+  ],
+  "added_symbols": [
+    {
+      "symbol": "SN74ACT244",
+      "source": "KiCad 10.0.6 symbols/74xx.kicad_sym:74HC244",
+      "source_definition_sha256": "7515aa21388f66ae559c747b249932417df51cf9f5459439a98d97ab9684d9e5",
+      "changes": "Renamed standalone symbol; TI pin names; local TSSOP-20 footprint; ACT description and TI datasheet; electrical pin types retained.",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/sn74act244.pdf",
+      "package": "PW (TSSOP-20), SN74ACT244PWR"
+    }
+  ]
+}
