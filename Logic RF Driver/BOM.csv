@@ -1,0 +1,6 @@
+References,Quantity,Value,Local footprint,Manufacturer,MPN,LCSC,Notes
+U1,1,SN74LVC2T45DCUR,VSSOP-8_2.3x2mm_P0.5mm,Texas Instruments,SN74LVC2T45DCUR,C15741,3.3 V A side; 5 V B side
+"C1,C2",2,100 nF,C_0603_1608Metric,YAGEO,CC0603KRX7R9BB104,C14663,+/-10%; X7R; 50 V; 0603; supply bypass; JLCPCB Basic
+C3,1,1 uF,C_0603_1608Metric,Samsung Electro-Mechanics,CL10A105KB8NNNC,C15849,1 uF +/-10%; X5R; 50 V; 0603; 5 V bulk bypass
+C4,1,1 uF,C_0603_1608Metric,Samsung Electro-Mechanics,CL10A105KB8NNNC,C15849,1 uF +/-10%; X5R; 50 V; 0603; RF DC block; Samsung biased precise-model band check in C4-SELECTION.md
+R1,1,10 kohm,R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF1002T5E,C25804,1%; 0.1 W; 0603; input pulldown; JLCPCB Basic

@@ -26,6 +26,10 @@ generated/
 # Local JLCPCB plugin databases, caches, and generated output in any project.
 jlcpcb/
 
+# Python bytecode caches from project scripts
+__pycache__/
+*.py[cod]
+
 # macOS and Windows filesystem metadata
 .DS_Store
 .AppleDouble

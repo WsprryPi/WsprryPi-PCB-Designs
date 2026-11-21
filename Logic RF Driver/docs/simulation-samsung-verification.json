@@ -1,0 +1,862 @@
+{
+  "main_cases": 78,
+  "successful_diagnostic_runs": 50,
+  "planned_base_cases": 130,
+  "main_timestep_checks": [
+    {
+      "kind": "logic",
+      "f_Hz": 137000.0,
+      "model_rg": 270,
+      "c4_model": "zero_bias",
+      "p1_W": 0.08432121148629838,
+      "mean_load_V": -5.0478135301479114e-05,
+      "mean_capacitor_V": 2.514634963527611,
+      "fit_bias_V": 0.0,
+      "initialized_midpoint_V": 2.51458238133,
+      "late_window_power_change_percent": 3.865032656147349e-05,
+      "vpp": 4.758815252039154,
+      "step_factor": 1400,
+      "power_change_percent": -1.7206285063409155e-06
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 137000.0,
+      "model_rg": 270,
+      "c4_model": "dc_bias",
+      "p1_W": 0.08432120549891843,
+      "mean_load_V": -4.033789933630745e-05,
+      "mean_capacitor_V": 2.5146254477808645,
+      "fit_bias_V": 2.51458238133,
+      "initialized_midpoint_V": 2.51458238133,
+      "late_window_power_change_percent": 2.631955073884029e-05,
+      "vpp": 4.7727708456226905,
+      "step_factor": 1400,
+      "power_change_percent": -2.939086973796634e-07
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 137000.0,
+      "model_rg": 270,
+      "c4_model": "zero_bias",
+      "p1_W": 0.025298496743638852,
+      "mean_load_V": 2.7374253134404364e-05,
+      "mean_capacitor_V": 2.4891022856881135,
+      "fit_bias_V": 0.0,
+      "initialized_midpoint_V": 2.4969440782,
+      "late_window_power_change_percent": 0.0010826741455138844,
+      "vpp": 2.569152349367162,
+      "step_factor": 1400,
+      "power_change_percent": -0.0005390122630011263
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 137000.0,
+      "model_rg": 270,
+      "c4_model": "dc_bias",
+      "p1_W": 0.02529929528273692,
+      "mean_load_V": 1.1153860952456908e-05,
+      "mean_capacitor_V": 2.489143794336434,
+      "fit_bias_V": 2.4969440782,
+      "initialized_midpoint_V": 2.4969440782,
+      "late_window_power_change_percent": 0.0008319414847912654,
+      "vpp": 2.574091643756069,
+      "step_factor": 1400,
+      "power_change_percent": -0.0007367227065624427
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 137000.0,
+      "model_rg": 5,
+      "c4_model": "zero_bias",
+      "p1_W": 0.02525562314211505,
+      "mean_load_V": 0.00011181737312604776,
+      "mean_capacitor_V": 2.479688156120717,
+      "fit_bias_V": 0.0,
+      "initialized_midpoint_V": 2.4871703867,
+      "late_window_power_change_percent": 0.0010971277986104866,
+      "vpp": 2.570265814601271,
+      "step_factor": 1400,
+      "power_change_percent": 2.9276270741007693e-06
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 137000.0,
+      "model_rg": 5,
+      "c4_model": "dc_bias",
+      "p1_W": 0.025256439970644983,
+      "mean_load_V": 8.964647367843461e-05,
+      "mean_capacitor_V": 2.479732339084301,
+      "fit_bias_V": 2.4871703867,
+      "initialized_midpoint_V": 2.4871703867,
+      "late_window_power_change_percent": 0.000835625524930883,
+      "vpp": 2.574176517554337,
+      "step_factor": 1400,
+      "power_change_percent": -1.9564390940640664e-05
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 7000000.0,
+      "model_rg": 5,
+      "c4_model": "zero_bias",
+      "p1_W": 0.02551826919575582,
+      "mean_load_V": -0.0039000753297475173,
+      "mean_capacitor_V": 2.5882023739467668,
+      "fit_bias_V": 0.0,
+      "initialized_midpoint_V": 2.59002558962,
+      "late_window_power_change_percent": -0.0010739323942909884,
+      "vpp": 2.967763344314853,
+      "step_factor": 1400,
+      "power_change_percent": -0.00483328206545286
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 7000000.0,
+      "model_rg": 5,
+      "c4_model": "dc_bias",
+      "p1_W": 0.02551776912310975,
+      "mean_load_V": -0.0038198236207680775,
+      "mean_capacitor_V": 2.5880701288239245,
+      "fit_bias_V": 2.59002558962,
+      "initialized_midpoint_V": 2.59002558962,
+      "late_window_power_change_percent": -0.0009435436333693481,
+      "vpp": 2.9676395069141788,
+      "step_factor": 1400,
+      "power_change_percent": -0.004712477823087813
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 145000000.0,
+      "model_rg": 270,
+      "c4_model": "zero_bias",
+      "p1_W": 0.083027012296388,
+      "mean_load_V": 0.003323291344239191,
+      "mean_capacitor_V": 2.5144907002192856,
+      "fit_bias_V": 0.0,
+      "initialized_midpoint_V": 2.51458238133,
+      "late_window_power_change_percent": -1.1031953350837398e-06,
+      "vpp": 4.60146492072805,
+      "step_factor": 1400,
+      "power_change_percent": -0.0032024210991909996
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 145000000.0,
+      "model_rg": 270,
+      "c4_model": "zero_bias",
+      "p1_W": 7.803160051104368e-07,
+      "mean_load_V": 0.016359817259347355,
+      "mean_capacitor_V": 4.964752794678083,
+      "fit_bias_V": 0.0,
+      "initialized_midpoint_V": 4.96458018289,
+      "late_window_power_change_percent": 5.9663258356046356e-05,
+      "vpp": 0.07628968838603939,
+      "step_factor": 1400,
+      "power_change_percent": 0.006228276190567428
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 145000000.0,
+      "model_rg": 270,
+      "c4_model": "dc_bias",
+      "p1_W": 0.08302598208948937,
+      "mean_load_V": 0.003329480551736796,
+      "mean_capacitor_V": 2.5144844250964145,
+      "fit_bias_V": 2.51458238133,
+      "initialized_midpoint_V": 2.51458238133,
+      "late_window_power_change_percent": -1.1592801274495912e-06,
+      "vpp": 4.6013101377552506,
+      "step_factor": 1400,
+      "power_change_percent": -0.003968179605895461
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 145000000.0,
+      "model_rg": 270,
+      "c4_model": "dc_bias",
+      "p1_W": 7.803167025539561e-07,
+      "mean_load_V": 0.016342740432840685,
+      "mean_capacitor_V": 4.964787390841253,
+      "fit_bias_V": 4.96458018289,
+      "initialized_midpoint_V": 4.96458018289,
+      "late_window_power_change_percent": 7.482521278134868e-05,
+      "vpp": 0.07628071823166538,
+      "step_factor": 1400,
+      "power_change_percent": 0.006520999911319159
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 145000000.0,
+      "model_rg": 5,
+      "c4_model": "zero_bias",
+      "p1_W": 0.0019814751851230665,
+      "mean_load_V": 0.011131040978488538,
+      "mean_capacitor_V": 4.4281106023114845,
+      "fit_bias_V": 0.0,
+      "initialized_midpoint_V": 4.42798760637,
+      "late_window_power_change_percent": 6.4792278431369255e-06,
+      "vpp": 1.427058328798162,
+      "step_factor": 1400,
+      "power_change_percent": -0.000933547462744766
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 145000000.0,
+      "model_rg": 5,
+      "c4_model": "dc_bias",
+      "p1_W": 0.001981433913829881,
+      "mean_load_V": 0.011120676896497763,
+      "mean_capacitor_V": 4.428131733101018,
+      "fit_bias_V": 4.42798760637,
+      "initialized_midpoint_V": 4.42798760637,
+      "late_window_power_change_percent": 7.64214018733611e-06,
+      "vpp": 1.4269974408491468,
+      "step_factor": 1400,
+      "power_change_percent": -0.0005203062623970744
+    }
+  ],
+  "extra_bias_checks": [
+    {
+      "kind": "logic",
+      "f_Hz": 137000.0,
+      "model_rg": 270,
+      "c4_model": "dc_bias",
+      "p1_W": 0.08432120578741063,
+      "mean_load_V": -4.026331964152379e-05,
+      "mean_capacitor_V": 2.51462535904879,
+      "fit_bias_V": 2.514625379216304,
+      "initialized_midpoint_V": 2.51458238133,
+      "late_window_power_change_percent": 2.637821063800061e-05,
+      "vpp": 4.772771605775733,
+      "step_factor": 700,
+      "check_type": "bias_recenter",
+      "power_change_percent": 4.822611199273297e-08
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 137000.0,
+      "model_rg": 270,
+      "c4_model": "dc_bias",
+      "p1_W": 0.02529947539669161,
+      "mean_load_V": -1.526423668018848e-05,
+      "mean_capacitor_V": 2.4891726537596046,
+      "fit_bias_V": 2.4891715605511813,
+      "initialized_midpoint_V": 2.4969440782,
+      "late_window_power_change_percent": 0.0008308489631181359,
+      "vpp": 2.574131213242768,
+      "step_factor": 700,
+      "check_type": "bias_recenter",
+      "power_change_percent": -2.4795256670095966e-05
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 7000000.0,
+      "model_rg": 270,
+      "c4_model": "dc_bias",
+      "p1_W": 0.08447512610946953,
+      "mean_load_V": -0.0012669588868730432,
+      "mean_capacitor_V": 2.516198161875476,
+      "fit_bias_V": 2.5161983476610033,
+      "initialized_midpoint_V": 2.51458238133,
+      "late_window_power_change_percent": 1.2890879097504637e-05,
+      "vpp": 4.594416485182517,
+      "step_factor": 700,
+      "check_type": "bias_recenter",
+      "power_change_percent": -1.9449447974384526e-05
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 7000000.0,
+      "model_rg": 270,
+      "c4_model": "dc_bias",
+      "p1_W": 0.019504034187818278,
+      "mean_load_V": -0.002470553388474313,
+      "mean_capacitor_V": 3.1647136596449275,
+      "fit_bias_V": 3.164714115659358,
+      "initialized_midpoint_V": 3.16591555508,
+      "late_window_power_change_percent": 2.6286303000944145e-05,
+      "vpp": 2.7164415580114856,
+      "step_factor": 700,
+      "check_type": "bias_recenter",
+      "power_change_percent": 7.723083752519955e-05
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 145000000.0,
+      "model_rg": 270,
+      "c4_model": "dc_bias",
+      "p1_W": 0.08302879689251012,
+      "mean_load_V": 0.00334528866956773,
+      "mean_capacitor_V": 2.514484498663595,
+      "fit_bias_V": 2.5144844968524978,
+      "initialized_midpoint_V": 2.51458238133,
+      "late_window_power_change_percent": -1.2222122647287392e-06,
+      "vpp": 4.602020661836718,
+      "step_factor": 700,
+      "check_type": "bias_recenter",
+      "power_change_percent": -0.0005780464771065752
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 145000000.0,
+      "model_rg": 270,
+      "c4_model": "dc_bias",
+      "p1_W": 7.802614184688931e-07,
+      "mean_load_V": 0.016342717055842837,
+      "mean_capacitor_V": 4.964787393288323,
+      "fit_bias_V": 4.964787390719761,
+      "initialized_midpoint_V": 4.96458018289,
+      "late_window_power_change_percent": 7.409840865335582e-05,
+      "vpp": 0.07643290318566844,
+      "step_factor": 700,
+      "check_type": "bias_recenter",
+      "power_change_percent": -0.0005642886589884988
+    }
+  ],
+  "max_main_timestep_power_change_percent": 0.006520999911319159,
+  "max_main_bias_recenter_power_change_percent": 0.0005780464771065752,
+  "max_main_late_window_power_change_percent": 0.05453959502567107,
+  "max_main_mean_load_voltage_V": 0.016359884023201113,
+  "bias_power_changes": [
+    {
+      "kind": "logic",
+      "f_Hz": 137000.0,
+      "model_rg": 270,
+      "power_change_percent": -8.527400363611548e-06
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 137000.0,
+      "model_rg": 270,
+      "power_change_percent": 0.0033541867095809863
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 137000.0,
+      "model_rg": 5,
+      "power_change_percent": 0.003256736962864437
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 475000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.0036160621416647665
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 475000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.0036106209292730007
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 475000.0,
+      "model_rg": 5,
+      "power_change_percent": -0.002759781365402336
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 1800000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.0023635331747873245
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 1800000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.007331934072984936
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 1800000.0,
+      "model_rg": 5,
+      "power_change_percent": -0.0069929777414934335
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 3500000.0,
+      "model_rg": 270,
+      "power_change_percent": 0.0005224579078699776
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 3500000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.003719675156133029
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 3500000.0,
+      "model_rg": 5,
+      "power_change_percent": -0.0037834401108161053
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 7000000.0,
+      "model_rg": 270,
+      "power_change_percent": 0.000430276735263746
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 7000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.0005093691874180628
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 7000000.0,
+      "model_rg": 5,
+      "power_change_percent": -0.0020804727876244655
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 10000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.00023488193204856955
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 10000000.0,
+      "model_rg": 270,
+      "power_change_percent": -4.5078465971126747e-05
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 10000000.0,
+      "model_rg": 5,
+      "power_change_percent": -0.0018105181346816934
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 14000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.0009188378701896482
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 14000000.0,
+      "model_rg": 270,
+      "power_change_percent": 9.734949963924322e-05
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 14000000.0,
+      "model_rg": 5,
+      "power_change_percent": -0.0016539209046095849
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 21000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.0018211642354604152
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 21000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.0001554465151487605
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 21000000.0,
+      "model_rg": 5,
+      "power_change_percent": -0.0007621022128923016
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 28000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.0024143098072859637
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 28000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.00215905616955947
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 28000000.0,
+      "model_rg": 5,
+      "power_change_percent": -0.002016539987015342
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 50000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.003137999739932784
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 50000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.0023220340730212286
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 50000000.0,
+      "model_rg": 5,
+      "power_change_percent": -0.007524014982485117
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 70000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.002631024003074689
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 70000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.006904295656928738
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 70000000.0,
+      "model_rg": 5,
+      "power_change_percent": -0.0291021031359584
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 100000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.0019045497195668837
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 100000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.0039139028791712605
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 100000000.0,
+      "model_rg": 5,
+      "power_change_percent": -0.003995664526112996
+    },
+    {
+      "kind": "logic",
+      "f_Hz": 145000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.0004750299176903283
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 145000000.0,
+      "model_rg": 270,
+      "power_change_percent": -0.00020332527006505785
+    },
+    {
+      "kind": "resistor",
+      "f_Hz": 145000000.0,
+      "model_rg": 5,
+      "power_change_percent": -0.0024960916719996007
+    }
+  ],
+  "fit": {
+    "0": {
+      "max_magnitude_error_ohm_band": 0.004414898302619465,
+      "max_magnitude_error_percent_band": 11.68626592253623,
+      "max_ESR_error_ohm_band": 0.005405955411020673,
+      "max_magnitude_error_percent_100Hz_6GHz": 11.68626592253623,
+      "rms_magnitude_error_percent_100Hz_6GHz": 2.3548588070018033,
+      "assumed_resonance_sample_Hz": 8253231.641548526
+    },
+    "2.5": {
+      "max_magnitude_error_ohm_band": 0.0049930678875159465,
+      "max_magnitude_error_percent_band": 12.26058298421464,
+      "max_ESR_error_ohm_band": 0.006050738581066122,
+      "max_magnitude_error_percent_100Hz_6GHz": 12.26058298421464,
+      "rms_magnitude_error_percent_100Hz_6GHz": 2.6129646045352857,
+      "assumed_resonance_sample_Hz": 8253231.641548526
+    },
+    "5": {
+      "max_magnitude_error_ohm_band": 0.006804661758203739,
+      "max_magnitude_error_percent_band": 15.032663412562716,
+      "max_ESR_error_ohm_band": 0.007955061831098512,
+      "max_magnitude_error_percent_100Hz_6GHz": 15.032663412562716,
+      "rms_magnitude_error_percent_100Hz_6GHz": 2.8072338513364548,
+      "assumed_resonance_sample_Hz": 9303616.539497906
+    }
+  },
+  "base_failures": [
+    {
+      "task": [
+        "choke",
+        70000000.0,
+        270,
+        "zero_bias"
+      ],
+      "reason": "Hz': 2.6129646045352857, 'assumed_resonance_sample_Hz': 8253231.641548526}, '5': {'max_magnitude_error_ohm_band': 0.006804661758203739, 'max_magnitude_error_percent_band': 15.032663412562716, 'max_ESR_error_ohm_band': 0.007955061831098512, 'max_magnitude_error_percent_100Hz_6GHz': 15.032663412562716, 'rms_magnitude_error_percent_100Hz_6GHz': 2.8072338513364548, 'assumed_resonance_sample_Hz': 9303616.539497906}}\nCASE_ERROR ('choke_7e+07_270_zero_bias_1400', 'not stationary', -0.2457318046113599)\n"
+    },
+    {
+      "task": [
+        "choke",
+        70000000.0,
+        5,
+        "zero_bias"
+      ],
+      "reason": "Hz': 2.6129646045352857, 'assumed_resonance_sample_Hz': 8253231.641548526}, '5': {'max_magnitude_error_ohm_band': 0.006804661758203739, 'max_magnitude_error_percent_band': 15.032663412562716, 'max_ESR_error_ohm_band': 0.007955061831098512, 'max_magnitude_error_percent_100Hz_6GHz': 15.032663412562716, 'rms_magnitude_error_percent_100Hz_6GHz': 2.8072338513364548, 'assumed_resonance_sample_Hz': 9303616.539497906}}\nCASE_ERROR ('choke_7e+07_5_zero_bias_1400', 'unphysical voltage', 69.26108058495126)\n"
+    },
+    {
+      "verification": true,
+      "case": {
+        "kind": "choke",
+        "f_Hz": 137000.0,
+        "model_rg": 5,
+        "c4_model": "dc_bias",
+        "p1_W": 0.11429764220158228,
+        "mean_load_V": 0.00016400343051616321,
+        "mean_capacitor_V": 4.999864897292211,
+        "fit_bias_V": 4.99974814405,
+        "initialized_midpoint_V": 4.99974814405,
+        "late_window_power_change_percent": -0.0006182736671411782,
+        "vpp": 6.141726291013782,
+        "step_factor": 700
+      },
+      "reason": "Command '['/opt/homebrew/opt/python@3.15/bin/python3.15', '/Users/lbussy/GitHub/WsprryPi-PCB-Designs/SN74LVC2T45 Transceiver Amp/scripts/rerun_samsung_comparison.py', '--research', '/Users/lbussy/GitHub/Generic Radio Stuff/tmp/switching-comparison', '--source', '/Users/lbussy/GitHub/WsprryPi-PCB-Designs/SN74LVC2T45 Transceiver Amp/generated/samsung-c4-check', '--output', '/Users/lbussy/GitHub/WsprryPi-PCB-Designs/SN74LVC2T45 Transceiver Amp/generated/comparison-samsung', '--case', '[\"choke\", 137000.0, 5, \"dc_bias\", 1400]']' timed out after 30 seconds"
+    }
+  ],
+  "ideal_choke_extra_checks": {
+    "checks": [
+      {
+        "kind": "choke",
+        "f_Hz": 3500000.0,
+        "model_rg": 270,
+        "c4_model": "zero_bias",
+        "p1_W": 0.09999126100659668,
+        "mean_load_V": 0.01693723307415132,
+        "mean_capacitor_V": 4.983280190452278,
+        "fit_bias_V": 0.0,
+        "initialized_midpoint_V": 4.99999984035,
+        "late_window_power_change_percent": 0.00011098852235047474,
+        "vpp": 5.630158894911622,
+        "step_factor": 1400,
+        "check_type": "extra_timestep",
+        "power_change_percent": -0.010985381601169575
+      },
+      {
+        "kind": "choke",
+        "f_Hz": 3500000.0,
+        "model_rg": 270,
+        "c4_model": "dc_bias",
+        "p1_W": 0.09502030624040934,
+        "mean_load_V": 0.019127220232538603,
+        "mean_capacitor_V": 4.98088640099637,
+        "fit_bias_V": 4.99999984035,
+        "initialized_midpoint_V": 4.99999984035,
+        "late_window_power_change_percent": 0.02226733198609221,
+        "vpp": 21.1867914961722,
+        "step_factor": 1400,
+        "check_type": "extra_timestep",
+        "power_change_percent": 0.0
+      },
+      {
+        "kind": "choke",
+        "f_Hz": 7000000.0,
+        "model_rg": 270,
+        "c4_model": "zero_bias",
+        "p1_W": 0.0710418099519856,
+        "mean_load_V": 0.008156363093232597,
+        "mean_capacitor_V": 4.991896465364203,
+        "fit_bias_V": 0.0,
+        "initialized_midpoint_V": 4.99999916099,
+        "late_window_power_change_percent": -0.0001840000298125588,
+        "vpp": 5.267043417382804,
+        "step_factor": 1400,
+        "check_type": "extra_timestep",
+        "power_change_percent": -0.009480107130044324
+      },
+      {
+        "kind": "choke",
+        "f_Hz": 7000000.0,
+        "model_rg": 270,
+        "c4_model": "dc_bias",
+        "p1_W": 0.07168224621802982,
+        "mean_load_V": 0.009438829475144845,
+        "mean_capacitor_V": 4.990601596027531,
+        "fit_bias_V": 4.99999916099,
+        "initialized_midpoint_V": 4.99999916099,
+        "late_window_power_change_percent": -0.0016702082107578065,
+        "vpp": 5.625140695164317,
+        "step_factor": 1400,
+        "check_type": "extra_timestep",
+        "power_change_percent": 3.5275393370282737
+      },
+      {
+        "kind": "choke",
+        "f_Hz": 10000000.0,
+        "model_rg": 270,
+        "c4_model": "zero_bias",
+        "p1_W": 0.04887814753108476,
+        "mean_load_V": 0.004860053354496848,
+        "mean_capacitor_V": 4.995162868017403,
+        "fit_bias_V": 0.0,
+        "initialized_midpoint_V": 4.99999850295,
+        "late_window_power_change_percent": 5.629400368079018e-06,
+        "vpp": 4.866301644435779,
+        "step_factor": 1400,
+        "check_type": "extra_timestep",
+        "power_change_percent": -0.0071650804676193225
+      },
+      {
+        "kind": "choke",
+        "f_Hz": 10000000.0,
+        "model_rg": 270,
+        "c4_model": "dc_bias",
+        "p1_W": 0.048617538830213275,
+        "mean_load_V": 0.0057521120519558894,
+        "mean_capacitor_V": 4.994271335086557,
+        "fit_bias_V": 4.99999850295,
+        "initialized_midpoint_V": 4.99999850295,
+        "late_window_power_change_percent": -0.0011849877385783358,
+        "vpp": 4.986043743252978,
+        "step_factor": 1400,
+        "check_type": "extra_timestep",
+        "power_change_percent": -1.0975928002516788
+      },
+      {
+        "kind": "logic",
+        "f_Hz": 137000.0,
+        "model_rg": 270,
+        "c4_model": "dc_bias",
+        "p1_W": 0.08432120578741063,
+        "mean_load_V": -4.026331964152379e-05,
+        "mean_capacitor_V": 2.51462535904879,
+        "fit_bias_V": 2.514625379216304,
+        "initialized_midpoint_V": 2.51458238133,
+        "late_window_power_change_percent": 2.637821063800061e-05,
+        "vpp": 4.772771605775733,
+        "step_factor": 700,
+        "check_type": "bias_recenter",
+        "power_change_percent": 4.822611199273297e-08
+      },
+      {
+        "kind": "resistor",
+        "f_Hz": 137000.0,
+        "model_rg": 270,
+        "c4_model": "dc_bias",
+        "p1_W": 0.02529947539669161,
+        "mean_load_V": -1.526423668018848e-05,
+        "mean_capacitor_V": 2.4891726537596046,
+        "fit_bias_V": 2.4891715605511813,
+        "initialized_midpoint_V": 2.4969440782,
+        "late_window_power_change_percent": 0.0008308489631181359,
+        "vpp": 2.574131213242768,
+        "step_factor": 700,
+        "check_type": "bias_recenter",
+        "power_change_percent": -2.4795256670095966e-05
+      },
+      {
+        "kind": "logic",
+        "f_Hz": 7000000.0,
+        "model_rg": 270,
+        "c4_model": "dc_bias",
+        "p1_W": 0.08447512610946953,
+        "mean_load_V": -0.0012669588868730432,
+        "mean_capacitor_V": 2.516198161875476,
+        "fit_bias_V": 2.5161983476610033,
+        "initialized_midpoint_V": 2.51458238133,
+        "late_window_power_change_percent": 1.2890879097504637e-05,
+        "vpp": 4.594416485182517,
+        "step_factor": 700,
+        "check_type": "bias_recenter",
+        "power_change_percent": -1.9449447974384526e-05
+      },
+      {
+        "kind": "resistor",
+        "f_Hz": 7000000.0,
+        "model_rg": 270,
+        "c4_model": "dc_bias",
+        "p1_W": 0.019504034187818278,
+        "mean_load_V": -0.002470553388474313,
+        "mean_capacitor_V": 3.1647136596449275,
+        "fit_bias_V": 3.164714115659358,
+        "initialized_midpoint_V": 3.16591555508,
+        "late_window_power_change_percent": 2.6286303000944145e-05,
+        "vpp": 2.7164415580114856,
+        "step_factor": 700,
+        "check_type": "bias_recenter",
+        "power_change_percent": 7.723083752519955e-05
+      },
+      {
+        "kind": "choke",
+        "f_Hz": 7000000.0,
+        "model_rg": 270,
+        "c4_model": "dc_bias",
+        "p1_W": 0.07104817053127783,
+        "mean_load_V": 0.009532455782455951,
+        "mean_capacitor_V": 4.990565869419995,
+        "fit_bias_V": 4.990493983196449,
+        "initialized_midpoint_V": 4.99999916099,
+        "late_window_power_change_percent": 0.0010603537182296563,
+        "vpp": 5.267889082993085,
+        "step_factor": 700,
+        "check_type": "bias_recenter",
+        "power_change_percent": 2.611771499575122
+      },
+      {
+        "kind": "logic",
+        "f_Hz": 145000000.0,
+        "model_rg": 270,
+        "c4_model": "dc_bias",
+        "p1_W": 0.08302879689251012,
+        "mean_load_V": 0.00334528866956773,
+        "mean_capacitor_V": 2.514484498663595,
+        "fit_bias_V": 2.5144844968524978,
+        "initialized_midpoint_V": 2.51458238133,
+        "late_window_power_change_percent": -1.2222122647287392e-06,
+        "vpp": 4.602020661836718,
+        "step_factor": 700,
+        "check_type": "bias_recenter",
+        "power_change_percent": -0.0005780464771065752
+      },
+      {
+        "kind": "resistor",
+        "f_Hz": 145000000.0,
+        "model_rg": 270,
+        "c4_model": "dc_bias",
+        "p1_W": 7.802614184688931e-07,
+        "mean_load_V": 0.016342717055842837,
+        "mean_capacitor_V": 4.964787393288323,
+        "fit_bias_V": 4.964787390719761,
+        "initialized_midpoint_V": 4.96458018289,
+        "late_window_power_change_percent": 7.409840865335582e-05,
+        "vpp": 0.07643290318566844,
+        "step_factor": 700,
+        "check_type": "bias_recenter",
+        "power_change_percent": -0.0005642886589884988
+      },
+      {
+        "kind": "choke",
+        "f_Hz": 145000000.0,
+        "model_rg": 270,
+        "c4_model": "dc_bias",
+        "p1_W": 1.7108318468055134e-06,
+        "mean_load_V": 4.794029525218692e-07,
+        "mean_capacitor_V": 4.999999027837396,
+        "fit_bias_V": 4.999999245026467,
+        "initialized_midpoint_V": 5.00000000782,
+        "late_window_power_change_percent": -0.05016241054042192,
+        "vpp": 0.08729239350335269,
+        "step_factor": 700,
+        "check_type": "bias_recenter",
+        "power_change_percent": -23.98951128193667
+      }
+    ],
+    "failures": [
+      {
+        "task": [
+          "choke",
+          137000.0,
+          270,
+          "dc_bias",
+          700,
+          4.9998893790041965
+        ],
+        "check_type": "bias_recenter",
+        "reason": "tude_error_percent_100Hz_6GHz': 15.032663412562716, 'rms_magnitude_error_percent_100Hz_6GHz': 2.8072338513364548, 'assumed_resonance_sample_Hz': 9303616.539497906}}\nCASE_ERROR ('choke_137000_270_dc_bias_700', 'unphysical voltage', 203.3973680332869)\n"
+      }
+    ]
+  },
+  "scope": "All ideal-choke runs excluded from main quantitative conclusions because robustness checks failed; original/modified-gate resistor circuits and logic retained."
+}

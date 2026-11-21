@@ -1,0 +1,120 @@
+{
+  "assets": [
+    {
+      "kind": "model",
+      "source": "KiCad/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+      "file": "libraries/SN74LVC2T45_Amp.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+      "sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd"
+    },
+    {
+      "kind": "footprint",
+      "source": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "source_sha256": "dca72da69de3263affb64fd1abd218db3cf30ff727c784b3f02c8c588a2875a8",
+      "file": "libraries/SN74LVC2T45_Amp.pretty/VSSOP-8_2.3x2mm_P0.5mm.kicad_mod",
+      "sha256": "c6fc243561297c82bb28c790f8aef6c0213ee153175157aa0cf3bfe020e93dff",
+      "model_path": "${KIPRJMOD}/libraries/SN74LVC2T45_Amp.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step"
+    },
+    {
+      "kind": "model",
+      "source": "KiCad/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "file": "libraries/SN74LVC2T45_Amp.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "kind": "footprint",
+      "source": "Capacitor_SMD:C_0603_1608Metric",
+      "source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "file": "libraries/SN74LVC2T45_Amp.pretty/C_0603_1608Metric.kicad_mod",
+      "sha256": "117d2f7cb4c72cbb4d67907b2b346e1074f2bf41d01a8b74efc82b22afb105a7",
+      "model_path": "${KIPRJMOD}/libraries/SN74LVC2T45_Amp.3dshapes/C_0603_1608Metric.step"
+    },
+    {
+      "kind": "model",
+      "source": "KiCad/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "file": "libraries/SN74LVC2T45_Amp.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "kind": "footprint",
+      "source": "Resistor_SMD:R_0603_1608Metric",
+      "source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "file": "libraries/SN74LVC2T45_Amp.pretty/R_0603_1608Metric.kicad_mod",
+      "sha256": "5ce26d4c1bed58397c98d4f58e306931be2f2190c0fcff38103ebb01c689c156",
+      "model_path": "${KIPRJMOD}/libraries/SN74LVC2T45_Amp.3dshapes/R_0603_1608Metric.step"
+    },
+    {
+      "kind": "model",
+      "source": "KiCad/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+      "file": "libraries/SN74LVC2T45_Amp.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+      "sha256": "b91b4ac5acf1a0d28a676703db972d17b8f11ef26a85b58d60786a69246b921b"
+    },
+    {
+      "kind": "footprint",
+      "source": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+      "source_sha256": "e5f24b6fea852f86171042806da48490229c9c8025b6d266b8cad6485b26e79f",
+      "file": "libraries/SN74LVC2T45_Amp.pretty/PinHeader_1x03_P2.54mm_Vertical.kicad_mod",
+      "sha256": "bfe7470ee75fc4b9e0b35c3274faa9ec51a7fbffa657f0d6c1032947c318ee55",
+      "model_path": "${KIPRJMOD}/libraries/SN74LVC2T45_Amp.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
+    },
+    {
+      "kind": "model",
+      "source": "KiCad/Connector_Coaxial.3dshapes/SMA_Amphenol_132289_EdgeMount.step",
+      "file": "libraries/SN74LVC2T45_Amp.3dshapes/SMA_Amphenol_132289_EdgeMount.step",
+      "sha256": "eab4ddd93a669662d28c0d8dcbc380584abc16b56d4afc77c31e75b579c82044"
+    },
+    {
+      "kind": "footprint",
+      "source": "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount",
+      "source_sha256": "4890dc98cac7074fff096522cf9651c62208595f7007b3ce581fc4cf1df8a57c",
+      "file": "libraries/SN74LVC2T45_Amp.pretty/SMA_Amphenol_132289_EdgeMount.kicad_mod",
+      "sha256": "e9f6b59ff4f2511b0e5e00acc8f631ed1c9b83d06cd91d4bd772fed86b881fda",
+      "model_path": "${KIPRJMOD}/libraries/SN74LVC2T45_Amp.3dshapes/SMA_Amphenol_132289_EdgeMount.step"
+    },
+    {
+      "kind": "symbol",
+      "source_library": "Logic_LevelTranslator",
+      "source_symbol": "SN74LVC2T45DCUR",
+      "source_file_sha256": "dab2070708520f32767a30c95fd3436119a3980770ee27741bdbba185854a833"
+    },
+    {
+      "kind": "symbol",
+      "source_library": "Device",
+      "source_symbol": "C",
+      "source_file_sha256": "f65c9dd13ef986c482165e5c8237ccf4f691bc7321868cf05e01dafbc1326b24"
+    },
+    {
+      "kind": "symbol",
+      "source_library": "Device",
+      "source_symbol": "R",
+      "source_file_sha256": "f65c9dd13ef986c482165e5c8237ccf4f691bc7321868cf05e01dafbc1326b24"
+    },
+    {
+      "kind": "symbol",
+      "source_library": "Connector",
+      "source_symbol": "Conn_Coaxial",
+      "source_file_sha256": "50b42bf755009d3d459c310182dca1c37e1ff1a01fa6ae23846b416fafffc914"
+    },
+    {
+      "kind": "symbol",
+      "source_library": "Connector_Generic",
+      "source_symbol": "Conn_01x03",
+      "source_file_sha256": "b40057d620867e58e8c3d1be9ab822bba6955e76ccfc566fd0945eedcf527fd3"
+    },
+    {
+      "kind": "symbol",
+      "source_library": "power",
+      "source_symbol": "GND",
+      "source_file_sha256": "8113f8fe90853413603d619987cc744e33dc47ff27faac19a58d7caf8c334fd0"
+    },
+    {
+      "kind": "symbol",
+      "source_library": "power",
+      "source_symbol": "PWR_FLAG",
+      "source_file_sha256": "8113f8fe90853413603d619987cc744e33dc47ff27faac19a58d7caf8c334fd0"
+    }
+  ],
+  "project_symbol_library": {
+    "file": "libraries/SN74LVC2T45_Amp.kicad_sym",
+    "sha256": "c3560655130f96c3788c3913a557af4b1b8ee11e9ed27d915cf7b97038bb106a"
+  }
+}

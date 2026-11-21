@@ -1,0 +1,85 @@
+{
+  "part": "CL10A105KB8NNNC",
+  "electrical_family": "CL10A105KB8NNN",
+  "source": "https://weblib.samsungsem.com/mlcc/mlcc-ec.do?partNumber=CL10A105KB8NNN",
+  "method": "Samsung Component Library precise-model graph CSV export at 25 C, 0/2.5/5 V; log-log interpolation of magnitude and ESR; 10001-point full-band check plus band frequencies; no extrapolation. Capacitor-only loss into resistive load, no mounting parasitics.",
+  "sha256": {
+    "graph-0V.csv": "8faecfb5e185ee110d3c850dfcba4301052dea4985e89142b143e939058c069d",
+    "graph-2.5V.csv": "4a0c24208bc6378c36593755112fa847bde8f14049fd5e51e2b564ee27cad7cd",
+    "graph-5V.csv": "a57e3961273cf4205b73e128cbb339b8e6da18336e086d369f767dee6afc2f76"
+  },
+  "summary": {
+    "0": {
+      "max_impedance_ohm": 1.4932216690595417,
+      "max_added_loss_ideal_source_50ohm_dB": 0.011339605449825934,
+      "minimum_impedance_ohm": 0.010941200423510464,
+      "minimum_frequency_Hz": 8249414.352755567,
+      "endpoint_rows": [
+        {
+          "bias_V": 0,
+          "frequency_Hz": 137000.0,
+          "Z_magnitude_ohm": 1.4932216690595417,
+          "ESR_ohm": 0.03935183248604156,
+          "added_loss_ideal_source_50ohm_dB": 0.010696335191695154,
+          "added_loss_matched_50ohm_dB": 0.00438419424084081
+        },
+        {
+          "bias_V": 0,
+          "frequency_Hz": 145000000.0,
+          "Z_magnitude_ohm": 0.1887157941129335,
+          "ESR_ohm": 0.06500517304795697,
+          "added_loss_ideal_source_50ohm_dB": 0.011339605449825934,
+          "added_loss_matched_50ohm_dB": 0.005658057097873466
+        }
+      ]
+    },
+    "2.5": {
+      "max_impedance_ohm": 1.6016462663657545,
+      "max_added_loss_ideal_source_50ohm_dB": 0.011445158029176991,
+      "minimum_impedance_ohm": 0.011326446978135117,
+      "minimum_frequency_Hz": 8255161.665187808,
+      "endpoint_rows": [
+        {
+          "bias_V": 2.5,
+          "frequency_Hz": 137000.0,
+          "Z_magnitude_ohm": 1.6016462663657545,
+          "ESR_ohm": 0.04013861481765667,
+          "added_loss_ideal_source_50ohm_dB": 0.01141411090748094,
+          "added_loss_matched_50ohm_dB": 0.004598043799355616
+        },
+        {
+          "bias_V": 2.5,
+          "frequency_Hz": 145000000.0,
+          "Z_magnitude_ohm": 0.19043397911391524,
+          "ESR_ohm": 0.06560786401200365,
+          "added_loss_ideal_source_50ohm_dB": 0.011445158029176991,
+          "added_loss_matched_50ohm_dB": 0.0057106202475392
+        }
+      ]
+    },
+    "5": {
+      "max_impedance_ohm": 1.8036042427143817,
+      "max_added_loss_ideal_source_50ohm_dB": 0.012988347434375732,
+      "minimum_impedance_ohm": 0.011851832020743712,
+      "minimum_frequency_Hz": 9299231.380874617,
+      "endpoint_rows": [
+        {
+          "bias_V": 5,
+          "frequency_Hz": 137000.0,
+          "Z_magnitude_ohm": 1.8036042427143817,
+          "ESR_ohm": 0.04234896875728338,
+          "added_loss_ideal_source_50ohm_dB": 0.012988347434375732,
+          "added_loss_matched_50ohm_dB": 0.005088157756154544
+        },
+        {
+          "bias_V": 5,
+          "frequency_Hz": 145000000.0,
+          "Z_magnitude_ohm": 0.19157352063993405,
+          "ESR_ohm": 0.06687607054274369,
+          "added_loss_ideal_source_50ohm_dB": 0.011665636869799179,
+          "added_loss_matched_50ohm_dB": 0.005820817925148717
+        }
+      ]
+    }
+  }
+}

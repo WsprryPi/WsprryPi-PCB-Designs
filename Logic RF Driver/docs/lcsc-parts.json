@@ -1,0 +1,84 @@
+{
+  "parts": [
+    {
+      "reference": "U1",
+      "Manufacturer": "Texas Instruments",
+      "MPN": "SN74LVC2T45DCUR",
+      "LCSC": "C15741",
+      "supplier_url": "https://www.lcsc.com/product-detail/C15741.html",
+      "assembly_class": "Extended",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C15741",
+      "jlc_url": "https://jlcpcb.com/partdetail/C15741"
+    },
+    {
+      "reference": "R1",
+      "Manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "MPN": "0603WAF1002T5E",
+      "LCSC": "C25804",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf",
+      "supplier_url": "https://www.lcsc.com/product-detail/C25804.html",
+      "assembly_class": "Basic",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C25804",
+      "jlc_url": "https://jlcpcb.com/partdetail/C25804"
+    },
+    {
+      "reference": "C1",
+      "Manufacturer": "YAGEO",
+      "MPN": "CC0603KRX7R9BB104",
+      "LCSC": "C14663",
+      "Tolerance": "±10%",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "supplier_url": "https://www.lcsc.com/product-detail/C14663.html",
+      "Voltage": "50 V",
+      "assembly_class": "Basic",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C14663",
+      "jlc_url": "https://jlcpcb.com/partdetail/C14663"
+    },
+    {
+      "reference": "C2",
+      "Manufacturer": "YAGEO",
+      "MPN": "CC0603KRX7R9BB104",
+      "LCSC": "C14663",
+      "Tolerance": "±10%",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "supplier_url": "https://www.lcsc.com/product-detail/C14663.html",
+      "Voltage": "50 V",
+      "assembly_class": "Basic",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C14663",
+      "jlc_url": "https://jlcpcb.com/partdetail/C14663"
+    },
+    {
+      "reference": "C3",
+      "Manufacturer": "Samsung Electro-Mechanics",
+      "MPN": "CL10A105KB8NNNC",
+      "LCSC": "C15849",
+      "Tolerance": "±10%",
+      "Datasheet": "https://product.samsungsem.com/mlcc/CL10A105KB8NNN.do",
+      "supplier_url": "https://www.lcsc.com/product-detail/C15849.html",
+      "Voltage": "50 V",
+      "Dielectric": "X5R",
+      "assembly_class": "Basic",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C15849",
+      "jlc_url": "https://jlcpcb.com/partdetail/C15849"
+    },
+    {
+      "reference": "C4",
+      "Manufacturer": "Samsung Electro-Mechanics",
+      "MPN": "CL10A105KB8NNNC",
+      "LCSC": "C15849",
+      "Voltage": "50 V",
+      "Dielectric": "X5R",
+      "Datasheet": "https://product.samsungsem.com/mlcc/CL10A105KB8NNN.do",
+      "supplier_url": "https://www.lcsc.com/product-detail/C15849.html",
+      "assembly_class": "Basic",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C15849",
+      "jlc_url": "https://jlcpcb.com/partdetail/C15849"
+    }
+  ],
+  "connectors_excluded": [
+    "J1",
+    "J2",
+    "J3"
+  ],
+  "selection_scope": "U1 is TI SN74LVC2T45DCUR / C15741, Extended. R1 is UNI-ROYAL C25804, Basic. C1/C2 are YAGEO C14663, Basic. C3/C4 are Samsung C15849, Basic. J1/J2/J3 are excluded from the BOM. JLCPCB assembly inventory and LCSC storefront inventory are separate."
+}

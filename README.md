@@ -18,6 +18,7 @@ The operator is responsible for determining suitability and verifying the assemb
 | [Relay-Switched LPF](Relay-Switched%20LPF/README.md) | Independent reconstruction of the QRP Labs Rev. 5 five-filter relay carrier | Schematic and two-layer PCB; unqualified, see project validation |
 | [Pico 2W Wattmeter Shield](Pico%202W%20Wattmeter%20Shield/README.md) | ADL5904 RF detector and ADS1115 ADC shield | See project assembly drawings |
 | [Pico 2W Shield Template](Pico%202W%20Shield%20Template/README.md) | Unwired shield interface, outline, and antenna notch | KiCad project template |
+| [Logic RF Driver](Logic%20RF%20Driver/README.md) | Compact SN74LVC2T45 clock driver with paralleled outputs | Routed two-layer prototype for the 137 kHz–145 MHz target; RF performance unqualified |
 | [WsprryPico GPIO Shield with GPS](WsprryPico%20GPIO%20Shield%20with%20GPS/README.md) | Direct Pico GP2 BS170 RF amplifier with onboard GNSS and independent local libraries | Placed and routed GPIO/GNSS design; see current validation |
 | [WsprryPico GPIO Shield with GPS - Torroid Edition](WsprryPico%20GPIO%20Shield%20with%20GPS%20-%20Torroid%20Edition/README.md) | GPIO amplifier with a bifilar transformer | Placed and routed within the original outline; all SMT on the underside; physical/RF qualification pending |
 | [WsprryPico Synth Shield with GPS](WsprryPico%20Synth%20Shield%20with%20GPS/README.md) | Pico 2 W TCXO/Si5351A shield with a BS170 amplifier and onboard GNSS | Implemented PCB for the 2200 m–10 m target; see current validation and bias setup |
@@ -34,7 +35,7 @@ Clone [WsprryPi/WsprryPi-PCB-Designs](https://github.com/WsprryPi/WsprryPi-PCB-D
 
 | Project | Saved schematic and PCB generator version |
 | --- | --- |
-| WsprryPi LPF, Pico 2W Wattmeter Shield, Pico 2W Shield Template, WsprryPico GPIO Shield with GPS, WsprryPico GPIO Shield with GPS - Torroid Edition, WsprryPico Synth Shield with GPS, RPi Full-Size HAT Template, RPi Zero HAT Template, WsprryPi Zero GPIO BS170 | KiCad 10.0 |
+| WsprryPi LPF, Pico 2W Wattmeter Shield, Pico 2W Shield Template, Logic RF Driver, WsprryPico GPIO Shield with GPS, WsprryPico GPIO Shield with GPS - Torroid Edition, WsprryPico Synth Shield with GPS, RPi Full-Size HAT Template, RPi Zero HAT Template, WsprryPi Zero GPIO BS170 | KiCad 10.0 |
 
 Project library tables use `${KIPRJMOD}` paths. Keep each project's local libraries together when copying it. The Pico and HAT projects use their own local libraries and installed KiCad models where their project documentation specifies them.
 

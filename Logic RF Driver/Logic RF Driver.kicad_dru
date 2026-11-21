@@ -1,0 +1,23 @@
+(version 1)
+
+# Allow the intended CPWG gap only between the GNSS antenna net and ground
+# on the front copper layer. All other net pairs retain their existing rules.
+(rule "GPS antenna CPWG clearance"
+    (layer "F.Cu")
+    (condition "(A.NetName == '/GPS_ANT' && B.NetName == 'GND') || (A.NetName == 'GND' && B.NetName == '/GPS_ANT')")
+    (constraint clearance (min 0.10mm))
+)
+
+# Set the front ground-pour gap around the amplifier drain RF path.
+# Other ground objects and net pairs retain their existing clearances.
+(rule "AMP_DRAIN CPWG pour clearance"
+    (layer "F.Cu")
+    (condition "(A.NetName == '/AMP_DRAIN' && B.NetName == 'GND' && B.Type == 'Zone') || (A.NetName == 'GND' && A.Type == 'Zone' && B.NetName == '/AMP_DRAIN')")
+    (constraint clearance (min 0.15mm))
+)
+
+# U1 has 0.50 mm pitch and 0.35 mm-wide pads: 0.15 mm internal gap.
+# Only pad-to-pad clearance within U1 is overridden.
+(rule "U1 internal pad clearance"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U1') && B.memberOfFootprint('U1')")
+  (constraint clearance (min 0.15mm)))
