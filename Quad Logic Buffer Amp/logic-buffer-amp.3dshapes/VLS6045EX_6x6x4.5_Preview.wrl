@@ -1,0 +1,13 @@
+#VRML V2.0 utf8
+# Original repository model, MIT license; nominal 6 x 6 mm body, 4.5 mm max height.
+# Dimensions from TDK VLS6045EX drawing; approximate envelope, not supplier CAD.
+# KiCad VRML units are 0.1 inch. Coordinates below are converted from mm.
+Transform {
+  translation 0 0 0.8858267717
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.16 0.17 0.18 } }
+      geometry Box { size 2.3622047244 2.3622047244 1.7716535433 }
+    }
+  ]
+}

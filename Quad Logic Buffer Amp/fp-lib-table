@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "logic-buffer-amp") (type "KiCad") (uri "${KIPRJMOD}/logic-buffer-amp.pretty") (options "") (descr "Logic Buffer Amp project-local library"))
+)
