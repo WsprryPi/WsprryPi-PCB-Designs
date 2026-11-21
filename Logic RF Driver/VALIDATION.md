@@ -13,7 +13,7 @@ The schematic and PCB pass the configured electrical and design checks. There ar
 | Project text variables | Sixteen definitions in the project file |
 | Visual inspection | Schematic connections, resolved labels, PCB arrangement, and connector models inspected |
 
-Local evidence includes the [ERC report](generated/rename/erc.json), [DRC report](generated/rename/drc-refilled.json), [native BOM](generated/basic-passives/native-bom.csv), and [source audit](generated/basic-passives/audit.json). The reports include error, warning, and exclusion severities for the enabled check categories.
+Local evidence includes the [ERC report](generated/us-resistor/erc.json), [DRC report](generated/us-resistor/drc.json), [native BOM](generated/basic-passives/native-bom.csv), and [source audit](generated/basic-passives/audit.json). The reports include error, warning, and exclusion severities for the enabled check categories.
 
 ## Check configuration
 

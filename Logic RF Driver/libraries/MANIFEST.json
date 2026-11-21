@@ -85,7 +85,7 @@
     {
       "kind": "symbol",
       "source_library": "Device",
-      "source_symbol": "R",
+      "source_symbol": "R_US",
       "source_file_sha256": "f65c9dd13ef986c482165e5c8237ccf4f691bc7321868cf05e01dafbc1326b24"
     },
     {
@@ -115,6 +115,6 @@
   ],
   "project_symbol_library": {
     "file": "libraries/SN74LVC2T45_Amp.kicad_sym",
-    "sha256": "c3560655130f96c3788c3913a557af4b1b8ee11e9ed27d915cf7b97038bb106a"
+    "sha256": "9258b12faf3350529a4b35df75edce21acbd970c4555a8a8ee509be1ba492c4d"
   }
 }

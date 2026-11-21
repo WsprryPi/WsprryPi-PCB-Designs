@@ -770,7 +770,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SN74LVC2T45_Amp:R"
+		(symbol "SN74LVC2T45_Amp:R_US"
 			(pin_numbers
 				(hide yes)
 			)
@@ -783,7 +783,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 2.032 0 90)
+				(at 2.54 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -792,8 +792,8 @@
 					)
 				)
 			)
-			(property "Value" "R"
-				(at 0 0 90)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -803,7 +803,7 @@
 				)
 			)
 			(property "Footprint" "SN74LVC2T45_Amp:R_0603_1608Metric"
-				(at -1.778 0 90)
+				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -824,7 +824,7 @@
 					)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" "Resistor, US symbol"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -857,12 +857,61 @@
 					)
 				)
 			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -870,7 +919,7 @@
 					)
 				)
 			)
-			(symbol "R_1_1"
+			(symbol "R_US_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -1327,12 +1376,6 @@
 		(uuid "093c211b-f7ac-40d1-8d7d-91a666278001")
 	)
 	(junction
-		(at 148.59 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "16348744-da89-43a5-9f42-41c2445788e5")
-	)
-	(junction
 		(at 158.75 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1354,7 +1397,7 @@
 		(at 129.54 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "637e1dbd-c512-4d1b-bc60-dcb65ec04749")
+		(uuid "4b888c0e-c76a-4641-811f-c8fc0b12de71")
 	)
 	(junction
 		(at 134.62 116.84)
@@ -1373,6 +1416,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a53010a4-298d-4cf2-a6e9-2646381abbd6")
+	)
+	(junction
+		(at 148.59 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e379fb6c-4dd2-49cd-81a0-3ebaf1124cfc")
 	)
 	(wire
 		(pts
@@ -1496,16 +1545,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 88.9) (xy 129.54 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b52a1a5-855c-479c-82b3-1c652b54d540")
-	)
-	(wire
-		(pts
 			(xy 172.72 116.84) (xy 180.34 116.84)
 		)
 		(stroke
@@ -1546,16 +1585,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 91.44) (xy 148.59 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ae661fa-c315-44a1-aadf-011d31129e28")
-	)
-	(wire
-		(pts
 			(xy 149.86 101.6) (xy 148.59 101.6)
 		)
 		(stroke
@@ -1586,16 +1615,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 81.28) (xy 158.75 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "962d74bc-5b0a-453d-95d7-1bdd6b88f1a8")
-	)
-	(wire
-		(pts
 			(xy 123.19 116.84) (xy 134.62 116.84)
 		)
 		(stroke
@@ -1613,6 +1632,16 @@
 			(type default)
 		)
 		(uuid "969e548a-72d9-4797-b05b-dbb7624a3372")
+	)
+	(wire
+		(pts
+			(xy 148.59 86.36) (xy 148.59 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b3545c3-4c7e-46e9-9966-c56122d52b2c")
 	)
 	(wire
 		(pts
@@ -1726,6 +1755,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 86.36) (xy 129.54 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec5c994b-3fea-4e2e-8932-33ec91bdbf33")
+	)
+	(wire
+		(pts
 			(xy 148.59 101.6) (xy 148.59 91.44)
 		)
 		(stroke
@@ -1815,7 +1854,7 @@
 		(uuid "5880bdd7-be55-42e5-8625-52a8673bf570")
 	)
 	(label "+3V3"
-		(at 129.54 88.9 0)
+		(at 129.54 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1835,12 +1874,12 @@
 		(uuid "c15c8ce7-f927-493a-a292-0613edc0e606")
 	)
 	(label "+5V"
-		(at 158.75 81.28 180)
+		(at 148.59 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "f5ed02b3-7086-4d48-9caf-bde159f1e299")
 	)
@@ -3349,7 +3388,7 @@
 		)
 	)
 	(symbol
-		(lib_id "SN74LVC2T45_Amp:R")
+		(lib_id "SN74LVC2T45_Amp:R_US")
 		(at 123.19 121.92 0)
 		(unit 1)
 		(body_style 1)
