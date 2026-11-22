@@ -15,11 +15,15 @@ The schematic passes the configured electrical checks. The saved PCB has filled 
 | Project text variables | Sixteen definitions in the project file |
 | Visual inspection | J1/J3 edge registration, signal fanouts, front/back ground lands, schematic, and local connector envelopes |
 
-The [CAD check record](docs/cad-validation.json) contains ERC and DRC results, the five configured PCB warning severities, ignored schematic check categories, and source-file hashes. Its reports include error, warning, and exclusion severities for the enabled check categories. The [library manifest](libraries/MANIFEST.json) identifies local symbols, footprints, and models.
+The [CAD check record](docs/cad-validation.json) contains ERC and DRC results, configured PCB and schematic warning severities, and source-file hashes. Its reports include error, warning, and exclusion severities for the enabled check categories. The [library manifest](libraries/MANIFEST.json) identifies local symbols, footprints, and models.
 
 ## Check configuration
 
-All PCB DRC categories are enabled. Missing courtyards, track endpoints not centered on vias, tuning-profile geometry, footprint-filter mismatches, and footprint-type mismatches are configured as warnings. No PCB DRC categories are ignored. The schematic ERC configuration ignores single-use global labels, four-way junctions, simulation-model issues, and footprint-filter mismatches; its zero-violation result does not cover those ignored schematic categories. See the [project settings](Logic%20RF%20Driver.kicad_pro).
+All PCB DRC categories are enabled. Missing courtyards, track endpoints not centered on vias, tuning-profile geometry, footprint-filter mismatches, and footprint-type mismatches are configured as warnings. No PCB DRC categories are ignored.
+
+All schematic ERC categories are enabled. Single-use global labels, four-way junctions, simulation-model issues, and footprint-filter mismatches are configured as warnings. No ERC categories are ignored. See the [project settings](Logic%20RF%20Driver.kicad_pro).
+
+The simulation-model ERC check covers models assigned in KiCad. The external amplifier and detector studies have separate numerical and model-scope checks.
 
 Clearance checks use 0.20 mm for the default net class and 0.15 mm between pads within U1. These are CAD rules, not assembly measurements.
 

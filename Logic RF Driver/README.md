@@ -56,7 +56,7 @@ The board is 27.08 × 16.00 mm, with 1 mm corner radii and a nominal thickness o
 
 ![PCB assembly](docs/pcb-preview.png)
 
-The configured CAD checks report zero ERC violations, zero unconnected items, and zero schematic-parity issues. The saved PCB has filled ground zones and reports zero DRC violations, zero unconnected items, and zero schematic-parity issues. A local edge-contact rule covers the J1/J3 SMA lands, and all other copper retains the 0.50 mm edge setback. All connections are routed. Connector fit and RF performance remain unmeasured. All PCB DRC categories are enabled. [Validation](VALIDATION.md) describes the warning checks and schematic ERC exceptions.
+The configured CAD checks report zero ERC violations, zero unconnected items, and zero schematic-parity issues. The saved PCB has filled ground zones and reports zero DRC violations, zero unconnected items, and zero schematic-parity issues. A local edge-contact rule covers the J1/J3 SMA lands, and all other copper retains the 0.50 mm edge setback. All connections are routed. Connector fit and RF performance remain unmeasured. All PCB DRC and schematic ERC categories are enabled. [Validation](VALIDATION.md) describes the warning checks.
 
 ## Project text variables
 
