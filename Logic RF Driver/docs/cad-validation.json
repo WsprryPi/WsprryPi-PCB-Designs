@@ -72,9 +72,9 @@
     "violations": []
   },
   "source_sha256": {
-    "Logic RF Driver.kicad_sch": "c27410e693dfc7e305110fc16e908b64f30678daac4d07b74617026f1b8a0ddf",
+    "Logic RF Driver.kicad_sch": "08c365f7dcce03b6ca1b1ce6892a81ba541122c7353b31444beea0e434c7b14a",
     "Logic RF Driver.kicad_pcb": "5aebae6bc7b13529849755273a072e131125c11687cd603b4a8bbc5204e2b9de",
-    "Logic RF Driver.kicad_pro": "ac83391a3d6d165e539a35194bcb6c56d76b23e38f1a2560dfe7899862b36f70",
+    "Logic RF Driver.kicad_pro": "014c04f58000c5bf0d04bfb001fe1efab8a20cd88a0894ad5adf26ea834df901",
     "BOM.csv": "a3ebc76727661067550e497b5b436738b8a0bffb04b6d86023dc38b59bd93e88",
     "libraries/SN74LVC2T45_Amp.kicad_sym": "6b79dbb7da318996c10b70822ee66eb7b179f6d1a09a91ba9349ed98b2fc8dd4"
   }

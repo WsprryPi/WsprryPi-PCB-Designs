@@ -1451,24 +1451,6 @@
 			)
 			(symbol "LED_KT0603R_1_1"
 				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
@@ -1479,6 +1461,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2434,6 +2434,17 @@
 			(justify left top)
 		)
 		(uuid "9347a762-73ca-41da-86b9-49f93e3eaa19")
+	)
+	(text "Power and TX LED"
+		(exclude_from_sim no)
+		(at 177.546 76.2 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "e24957bf-8a7d-4eb7-9ecc-8fc13f9aaa64")
 	)
 	(text "${POWER_CONNECTION_NOTE}"
 		(exclude_from_sim no)
@@ -3463,6 +3474,17 @@
 				)
 			)
 		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 224.79 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Dielectric" "X7R"
 			(at 214.63 111.76 0)
 			(hide yes)
@@ -3531,17 +3553,6 @@
 		)
 		(property "Manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
 			(at 214.63 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 224.79 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3778,6 +3789,17 @@
 				(justify left)
 			)
 		)
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"
+			(at 217.17 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "JLCPCB Class" "Basic"
 			(at 217.17 99.06 0)
 			(hide yes)
@@ -3824,17 +3846,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"
-			(at 217.17 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "Sim.Device" "NPN"
@@ -4219,6 +4230,17 @@
 				)
 			)
 		)
+		(property "Description" "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323"
+			(at 191.77 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "JLCPCB Class" "Extended"
 			(at 188.722 99.06 0)
 			(hide yes)
@@ -4254,17 +4276,6 @@
 		)
 		(property "Manufacturer" "Nexperia"
 			(at 188.722 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323"
-			(at 191.77 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4345,6 +4356,17 @@
 				)
 			)
 		)
+		(property "Description" "Resistor, US symbol"
+			(at 251.46 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Voltage" "75 V"
 			(at 251.46 99.06 0)
 			(hide yes)
@@ -4412,17 +4434,6 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 251.46 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
 			(at 251.46 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -4661,6 +4672,17 @@
 				)
 			)
 		)
+		(property "Description" "Resistor, US symbol"
+			(at 246.38 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Voltage" "75 V"
 			(at 246.38 93.98 0)
 			(hide yes)
@@ -4728,17 +4750,6 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 246.38 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
 			(at 246.38 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -5255,6 +5266,17 @@
 				)
 			)
 		)
+		(property "Description" "Resistor, US symbol"
+			(at 215.9 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Voltage" "75 V"
 			(at 215.9 124.46 0)
 			(hide yes)
@@ -5322,17 +5344,6 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 215.9 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
 			(at 215.9 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -5488,6 +5499,17 @@
 				)
 			)
 		)
+		(property "Description" "Light emitting diode"
+			(at 251.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Color" "Red"
 			(at 251.46 107.95 0)
 			(hide yes)
@@ -5533,17 +5555,6 @@
 			)
 		)
 		(property "Manufacturer" "Hubei KENTO Elec"
-			(at 251.46 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
 			(at 251.46 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5941,6 +5952,17 @@
 				)
 			)
 		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 193.04 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Dielectric" "X7R"
 			(at 182.88 110.49 0)
 			(hide yes)
@@ -6009,17 +6031,6 @@
 		)
 		(property "Manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
 			(at 182.88 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 193.04 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6384,6 +6395,17 @@
 				)
 			)
 		)
+		(property "Description" "Light emitting diode"
+			(at 229.87 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Color" "Red"
 			(at 229.87 93.98 0)
 			(hide yes)
@@ -6429,17 +6451,6 @@
 			)
 		)
 		(property "Manufacturer" "Hubei KENTO Elec"
-			(at 229.87 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
 			(at 229.87 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -6750,6 +6761,17 @@
 				)
 			)
 		)
+		(property "Description" "Resistor, US symbol"
+			(at 170.18 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Voltage" "75 V"
 			(at 170.18 110.49 0)
 			(hide yes)
@@ -6817,17 +6839,6 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 170.18 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
 			(at 170.18 110.49 0)
 			(hide yes)
 			(show_name no)
