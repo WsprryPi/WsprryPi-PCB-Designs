@@ -6,7 +6,7 @@ comparison decks and passive C4 fits. No electromagnetic layout extraction.
 """
 from pathlib import Path
 import argparse,sys,json,re,hashlib
-ap=argparse.ArgumentParser();ap.add_argument('--research',type=Path,required=True);ap.add_argument('--decks',type=Path,required=True);ap.add_argument('--c4-models',type=Path,required=True);ap.add_argument('--models',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);ap.add_argument('--case');a=ap.parse_args()
+ap=argparse.ArgumentParser();ap.add_argument('--research',type=Path,required=True);ap.add_argument('--decks',type=Path,required=True);ap.add_argument('--c4-models',type=Path,required=True);ap.add_argument('--models',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);ap.add_argument('--case');ap.add_argument('--initial-states',type=Path);a=ap.parse_args()
 sys.path[:0]=[str(a.research/'python-packages'),str(a.research)]
 import numpy as np
 from scipy.optimize import least_squares
@@ -43,10 +43,17 @@ def case(f,loaded=True,skew=0,step=1400):
   return np.array([np.interp(60*T,t,y)-np.interp(40*T,t,y) for y in [sp.vec('detin')-sp.vec('com'),sp.vec('base'),sp.vec('out')-sp.vec('xc4.n0')]])*1e6
  if loaded:
   initial=[2.1,.7,2.51458238133]
-  opt=least_squares(run,initial,bounds=([0,0,0],[5,1,5]),diff_step=.0001,xtol=1e-10,ftol=1e-10,gtol=1e-8,max_nfev=60);drift=run(opt.x)/1e6
+  # Retained initial charges accelerate settling; every case executes ngspice anew.
+  if a.initial_states:
+   prior=a.initial_states/'runs'/(name+'.cir');fit_prior=a.initial_states/(name+'_c4.mod')
+   if prior.exists() and fit_prior.exists():
+    old=prior.read_text();initial=[float(re.search(r'C5 .* IC=(\S+)',old)[1]),float(re.search(r'C6 .* IC=(\S+)',old)[1]),float(re.search(r'Cs a n0 .* IC=(\S+)',fit_prior.read_text())[1])]
+  drift=run(initial)/1e6
   if max(abs(drift))>=5e-5:
-   from scipy.optimize import root
-   retry=root(run,opt.x,options={'eps':1e-8,'xtol':1e-8});drift=run(retry.x)/1e6
+   opt=least_squares(run,initial,bounds=([0,0,0],[5,1,5]),diff_step=.0001,xtol=1e-10,ftol=1e-10,gtol=1e-8,max_nfev=60);drift=run(opt.x)/1e6
+   if max(abs(drift))>=5e-5:
+    from scipy.optimize import root
+    retry=root(run,opt.x,options={'eps':1e-8,'xtol':1e-8});drift=run(retry.x)/1e6
   assert max(abs(drift))<5e-5,(name,drift)
  else:run([0,0,2.51458238133]);drift=np.zeros(3)
  t=sp.vec('time');u=np.r_[52*T,t[(t>52*T)&(t<60*T)],60*T];v=lambda n:np.interp(u,t,sp.vec(n));mean=lambda y:float(np.trapezoid(y,u)/(8*T))
@@ -69,6 +76,7 @@ else:
  import subprocess,concurrent.futures
  tasks=[[f,loaded,0,1400] for f in freqs for loaded in [False,True]]+[[145e6,True,skew,1400] for skew in [.1e-9,.5e-9,1e-9]]+[[f,True,0,2800] for f in [137e3,145e6]]+[[145e6,True,.1e-9,2800]]
  command=[sys.executable,str(Path(__file__).resolve()),'--research',str(a.research),'--decks',str(a.decks),'--c4-models',str(a.c4_models),'--models',str(a.models),'--output',str(out)]
+ if a.initial_states:command += ['--initial-states',str(a.initial_states)]
  def worker(task):
   job=subprocess.run(command+['--case',json.dumps(task)],capture_output=True,text=True,timeout=600)
   if job.returncode:raise RuntimeError(str(task)+' '+job.stdout[-300:]+job.stderr[-1000:])

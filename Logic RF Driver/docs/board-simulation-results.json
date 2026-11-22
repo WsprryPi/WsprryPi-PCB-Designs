@@ -74,7 +74,7 @@
         2.0412774692779578e-08,
         -2.823830547171724e-06
       ],
-      "solver_evaluations": 35,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7629642993033865,
       "R2_mean_mW": 9.117333954037818,
       "detector_peak_mA": 17.74232965373858,
@@ -133,7 +133,7 @@
         1.1316353987211869e-07,
         1.1690951060572274e-06
       ],
-      "solver_evaluations": 41,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7872032334773682,
       "R2_mean_mW": 10.732281490563942,
       "detector_peak_mA": 14.892894126576543,
@@ -192,7 +192,7 @@
         7.303612303832807e-07,
         -9.35708618143849e-07
       ],
-      "solver_evaluations": 22,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7890375780528822,
       "R2_mean_mW": 11.371022800035957,
       "detector_peak_mA": 13.793816817815625,
@@ -251,7 +251,7 @@
         1.4849842233655153e-07,
         3.113127844400765e-08
       ],
-      "solver_evaluations": 36,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7893725599258155,
       "R2_mean_mW": 11.851058149381434,
       "detector_peak_mA": 13.551732463862225,
@@ -310,7 +310,7 @@
         8.342722845888773e-08,
         -1.1599081251034704e-08
       ],
-      "solver_evaluations": 40,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7901012487327774,
       "R2_mean_mW": 12.747056357589669,
       "detector_peak_mA": 13.39523345819512,
@@ -369,7 +369,7 @@
         1.0659003428781233e-06,
         -3.4938398840722584e-09
       ],
-      "solver_evaluations": 47,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7906930952392106,
       "R2_mean_mW": 13.495051878788022,
       "detector_peak_mA": 13.340302272546037,
@@ -428,7 +428,7 @@
         -5.717122331105884e-10,
         6.403357843964841e-10
       ],
-      "solver_evaluations": 63,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.79136428513036,
       "R2_mean_mW": 14.45581641731014,
       "detector_peak_mA": 13.297061245837345,
@@ -487,7 +487,7 @@
         6.188012324770398e-10,
         5.288458559959963e-10
       ],
-      "solver_evaluations": 39,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7920568919221822,
       "R2_mean_mW": 15.934166937259086,
       "detector_peak_mA": 13.22999280681305,
@@ -546,7 +546,7 @@
         6.113254347184238e-11,
         -6.894795845369117e-11
       ],
-      "solver_evaluations": 34,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7920546817369587,
       "R2_mean_mW": 17.084520435757323,
       "detector_peak_mA": 13.163044739491871,
@@ -605,7 +605,7 @@
         -6.143974218275616e-13,
         -2.113864638886298e-13
       ],
-      "solver_evaluations": 22,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7882619530270223,
       "R2_mean_mW": 19.086245083984412,
       "detector_peak_mA": 12.965633287532688,
@@ -664,7 +664,7 @@
         -3.464895037552651e-12,
         3.4372504842394846e-13
       ],
-      "solver_evaluations": 25,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.781053719205057,
       "R2_mean_mW": 19.812954125497033,
       "detector_peak_mA": 12.796014401106074,
@@ -723,7 +723,7 @@
         -3.4131586446051188e-12,
         -2.184918912462308e-13
       ],
-      "solver_evaluations": 25,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7642065836472416,
       "R2_mean_mW": 20.161270095447076,
       "detector_peak_mA": 12.54786678069159,
@@ -782,7 +782,7 @@
         -1.1435297153639112e-13,
         2.3714363805993344e-13
       ],
-      "solver_evaluations": 25,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7183165721633515,
       "R2_mean_mW": 20.057485734238185,
       "detector_peak_mA": 12.128282265136354,
@@ -815,7 +815,7 @@
         4.75175454539567e-14,
         -9.14823772291129e-14
       ],
-      "solver_evaluations": 25,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7180646699939093,
       "R2_mean_mW": 19.955243402439088,
       "detector_peak_mA": 12.044205235202016,
@@ -848,7 +848,7 @@
         2.4369395390522186e-13,
         -5.861977570020827e-14
       ],
-      "solver_evaluations": 25,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7117828294243287,
       "R2_mean_mW": 18.17295494885669,
       "detector_peak_mA": 11.889417521802859,
@@ -881,7 +881,7 @@
         3.5840219680949303e-12,
         2.1320722964901506e-12
       ],
-      "solver_evaluations": 37,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.675478867454695,
       "R2_mean_mW": 14.97871019255444,
       "detector_peak_mA": 11.501179434407941,
@@ -914,7 +914,7 @@
         1.1986360792803907e-09,
         2.67184073976523e-07
       ],
-      "solver_evaluations": 33,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7629663935159232,
       "R2_mean_mW": 9.117352139135182,
       "detector_peak_mA": 17.737312026619563,
@@ -947,14 +947,14 @@
         -2.7533531010703882e-14,
         7.460698725481052e-14
       ],
-      "solver_evaluations": 25,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7183185329241586,
       "R2_mean_mW": 20.056810091748464,
       "detector_peak_mA": 12.128472692831561,
       "late_power_drift_percent": 2.783665298267124e-07
     },
     {
-      "f_Hz": 145000000,
+      "f_Hz": 145000000.0,
       "detector": true,
       "skew_s": 1e-10,
       "step_factor": 2800,
@@ -980,7 +980,7 @@
         -1.2279066652354231e-13,
         1.900701818158268e-13
       ],
-      "solver_evaluations": 25,
+      "solver_evaluations": 1,
       "activity_led_mA": 1.7180667010738464,
       "R2_mean_mW": 19.95469717214419,
       "detector_peak_mA": 12.043587098198204,
@@ -1003,7 +1003,7 @@
       "channel_peak_change_percent": 0.025411183650958513
     },
     {
-      "f_Hz": 145000000,
+      "f_Hz": 145000000.0,
       "skew_s": 1e-10,
       "power_change_percent": -0.0007423120700456032,
       "activity_led_change_percent": 0.00011821906198417054,
@@ -1012,8 +1012,8 @@
   ],
   "design_sha256": {
     "Logic RF Driver.kicad_sch": "8b7e1b1681365000912c7480cebf1f8a94a473e3c711aaf3470764081208fd51",
-    "Logic RF Driver.kicad_pcb": "4c1886828f27c4443ddb3f8d84575fd69d3e14e928139904c2bbde5138f454fd",
-    "Logic RF Driver.kicad_pro": "54762eb00b2e48a8ef3a50384c9a4646676ec849b9dd9a87c9a80882d41f50c7",
+    "Logic RF Driver.kicad_pcb": "4d99cefe9ab4e022bb8b4bed200dc4e776dc8e86bcc07ad848d8a3979689db8b",
+    "Logic RF Driver.kicad_pro": "c168d88064035d48fec59a086017dce9cc4d7223b6d78db7a753b6c8b95e1891",
     "Logic RF Driver.kicad_dru": "3d88d3960bf04f39ccf0242e6fb72310277eedcc77a8a4e27672e606c35314da",
     "BOM.csv": "a3ebc76727661067550e497b5b436738b8a0bffb04b6d86023dc38b59bd93e88"
   },
@@ -1048,8 +1048,8 @@
     "generated/input-loading/models/MMBT3904.txt": "49c344a0aaa461869b9a6f7a67e8afc0afbb0050a6b4f7e19e44025b076a6d2d",
     "external-research/simulate.py": "f1c87085a80924b06e7c8ddb23aaabe45039ef8932f39d8ac68f1119a0af62ab",
     "external-research/models/SN74LVC2T45.ibs": "e3edf7aca38693b91b485a0c5063769c78ec84dae00a4d44d85654807b5b6ce5",
-    "scripts/run_board_simulation.py": "17aee4a81ffb85afda42bd3eb5debb4bb04c8888e210e500df5ce9461adeeb82",
-    "scripts/report_board_simulation.py": "cd581603afae5fea877216e94028db02106d74d73824d2a71cb42b76afe8b30a"
+    "scripts/run_board_simulation.py": "4bb0f19215c6e914a5316fc6382c35bae335fa0489a8ae296bfc5a02878f83f3",
+    "scripts/report_board_simulation.py": "b273963ac569550e6990a2e1410c7dd925a8aede8d5064d0b3885be7b625f7c0"
   },
   "limitations": [
     "Nominal IBIS-derived behavioral U1 model; incomplete internal switching loss and no measured channel skew distribution.",

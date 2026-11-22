@@ -8,9 +8,9 @@ The PCB has two copper layers and short clock and RF paths. The [BOM](BOM.csv) i
 | Corner radius | 1.00 mm |
 | Nominal finished thickness | 1.57 mm |
 | Copper | F.Cu and B.Cu, nominal 35 um per layer |
-| Track segments | 87, all on F.Cu |
+| Track segments | 83, all on F.Cu |
 | Track widths | 0.20, 0.25, 0.50, 0.60, and 1.20 mm |
-| Ground vias | 43 through vias, nominal 0.60 mm diameter and 0.30 mm drill |
+| Ground vias | 41 through vias, nominal 0.60 mm diameter and 0.30 mm drill |
 | Signal vias | None |
 | Ground zones | Separate filled GND zones on F.Cu and B.Cu |
 | Mounting holes | None |
@@ -27,7 +27,7 @@ J1 and J3 use edge-referenced footprint origins at X = 50.46 and 77.54 mm, Y = 5
 
 C1 sits beside VCCA, and C2/C3 sit beside the 5 V feed. Nearby vias connect their grounds to the planes. R1 is close to the input fanout. DIR joins VCCA on the front copper layer.
 
-The 43 ground vias connect the front and back ground planes around the RF paths, perimeter, and local returns. The native PCB contains their coordinates.
+The 41 ground vias connect the front and back ground planes around the RF paths, perimeter, and local returns. The native PCB contains their coordinates.
 
 The RF tracks and SMA transitions have no controlled 50-ohm fabrication or electromagnetic qualification. Stitching alone cannot establish output impedance, channel skew, current sharing, or full-band RF performance. The output needs a filter for the selected band and a 50-ohm load.
 

@@ -52,7 +52,7 @@ The sixteen-component [BOM](BOM.csv) covers U1, Q1, R1-R5, C1-C6, and D1-D3. Eve
 
 ## Layout and checks
 
-The board is 27.08 × 16.00 mm, with 1 mm corner radii and a nominal thickness of 1.57 mm. It has two copper layers, 87 front-layer track segments and 43 ground vias. Both layers have a filled ground zone, and stitching runs along both sides of the short RF paths. The placement grid is 0.25 mm, though several component anchors sit off it. See [layout details](PCB-LAYOUT.md).
+The board is 27.08 × 16.00 mm, with 1 mm corner radii and a nominal thickness of 1.57 mm. It has two copper layers, 83 front-layer track segments and 41 ground vias. Both layers have a filled ground zone, and stitching runs along both sides of the short RF paths. The placement grid is 0.25 mm, though several component anchors sit off it. See [layout details](PCB-LAYOUT.md).
 
 ![PCB assembly](docs/pcb-preview.png)
 
@@ -66,9 +66,9 @@ Edit the project file externally with the KiCad editors and the project closed. 
 
 ## Research and limitations
 
-The [output-sharing resistor study](OUTPUT-SHARING.md) evaluates independent resistors on B1/B2. Its preferred power-preserving candidate is 10 ohms per output, with about 65–68 mW into 50 ohms and reduced opposing current. Timing and current margin remain unqualified. These resistors are absent from the schematic, PCB, and BOM.
+The [output-sharing resistor study](OUTPUT-SHARING.md) evaluates independent resistors on B1/B2. TI permits directly paralleling the two outputs, which is the design baseline. For optional resistive isolation, 10 ohms per output gives about 65–68 mW into 50 ohms in the model. Hypothetical skew tests do not demonstrate a need for these resistors. These resistors are absent from the schematic, PCB, and BOM.
 
-The [board circuit simulation](BOARD-SIMULATION.md) includes the RF_RAW detector and both LED branches. Its nominal model predicts about 82.5 mW at 137 kHz and 79.9 mW at 145 MHz into 50 ohms, excluding filter and connector loss. Channel-skew stress cases show that nearly unchanged RF power can accompany much higher output-pin currents. The study has no extracted PCB or supply-network model and does not establish thermal or full-band reliability.
+The [board circuit simulation](BOARD-SIMULATION.md) includes the RF_RAW detector and both LED branches. Its nominal model predicts about 82.5 mW at 137 kHz and 79.9 mW at 145 MHz into 50 ohms, excluding filter and connector loss. Assumed-skew stress cases explore model sensitivity; their current peaks are not validated predictions of this IC or evidence of a timing fault. The study has no extracted PCB or supply-network model and does not establish thermal or full-band reliability.
 
 The [SN74LVC2T45 versus BS170 comparison](COMPARISON.md) predicts about 84.32 mW at 137 kHz and 83.03 mW at 145 MHz for the paralleled logic stage, excluding filter loss. It uses a behavioral logic model, ideal supplies, and a bias-dependent C4 fit. These figures are simulated, not measured, and exclude the detector branch. The separate [detector study](INPUT-LOADING.md) gives about 82.48 mW at 137 kHz and 79.89 mW at 145 MHz with R2 at 220 ohms, using surrogate semiconductor and LED models. The ideal-choke BS170 results are diagnostic only because they fail numerical robustness checks. See [model scope](MODEL-SCOPE.md).
 

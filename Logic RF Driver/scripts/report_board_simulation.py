@@ -1,8 +1,8 @@
 from pathlib import Path
 import sys,json,hashlib,math,re
 import argparse
-ap=argparse.ArgumentParser(description='Report circuit-model board results; no extracted PCB model.');ap.add_argument('--research',type=Path,required=True);a=ap.parse_args()
-p=Path(__file__).resolve().parents[1];g=p/'generated/board-simulation';r=a.research.resolve();sys.path.insert(0,str(r/'python-packages'))
+ap=argparse.ArgumentParser(description='Report circuit-model board results; no extracted PCB model.');ap.add_argument('--research',type=Path,required=True);ap.add_argument('--runs-directory',type=Path);a=ap.parse_args()
+p=Path(__file__).resolve().parents[1];g=a.runs_directory.resolve() if a.runs_directory else p/'generated/board-simulation';r=a.research.resolve();sys.path.insert(0,str(r/'python-packages'))
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -23,8 +23,8 @@ for data,label in [(base,'Detector disconnected'),(nom,'220 Ω detector connecte
 ax.set(xlabel='Frequency (MHz)',ylabel='Fundamental into 50 Ω (mW)',title='Circuit model: nominal aligned channels',ylim=(75,87));ax.grid(alpha=.25);ax.legend(fontsize=8)
 ax=axes[1]
 ax.plot([x['skew_s']*1e9 for x in skews],[max(x['channel_peak_mA']) for x in skews],marker='o',color='tab:red',label='Modeled pin-current peak')
-ax.axhline(32,color='gray',linestyle='--',label='32 mA recommended operating current')
-ax.set(xlabel='Assumed channel skew (ns)',ylabel='Peak pin current (mA)',title='145 MHz: channel-skew sensitivity');ax.grid(alpha=.25);ax.legend(fontsize=7)
+ax.axhline(32,color='gray',linestyle='--',label='32 mA DC operating reference')
+ax.set(xlabel='Assumed channel skew (ns)',ylabel='Peak pin current (mA)',title='145 MHz: assumed-skew stress test');ax.grid(alpha=.25);ax.legend(fontsize=7)
 fig.savefig(p/'docs/board-simulation.png',dpi=180);plt.close(fig)
 source_hashes=json.loads((g/'board-inputs.json').read_text())
 for f,h in source_hashes.items():assert hashlib.sha256((p/f).read_bytes()).hexdigest()==h,(f,'design changed during simulation')
@@ -45,7 +45,7 @@ text=f'''# Board circuit simulation
 
 The nominal circuit model predicts {nom[0]['fundamental_mW']:.1f} mW at 137 kHz and {nom[-1]['fundamental_mW']:.1f} mW at 145 MHz into 50 ohms with the 220-ohm detector connected. The activity LED draws about {min(x['activity_led_mA'] for x in nom):.2f}–{max(x['activity_led_mA'] for x in nom):.2f} mA. These are circuit-model predictions, not measured ratings or an electromagnetic simulation of the PCB.
 
-The main concern is output-current margin. Even with aligned channels, modeled pin-current peaks reach {max(max(x['channel_peak_mA']) for x in nom):.1f} mA per channel. [TI specifies a recommended output-current magnitude of 32 mA at 4.5–5.5 V](https://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf). Brief simulated peaks cannot establish acceptable pulse operation, and RMS current below that value does not qualify the peaks. The model does not establish continuous operation across the target band.
+[TI explicitly permits connecting the two outputs for stronger drive](https://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf), subject to the device's electrical and thermal limits. That supports the direct-parallel topology with A1/A2 driven by the same clock. The assumed-skew cases do not establish an actual timing defect or a need for series resistors. The behavioral model's current peaks are not validated predictions of this IC. The 32 mA recommended operating-current magnitude is a DC reference, not a pulse-current specification; comparing it with an approximate transient peak does not establish a device-limit violation. RF loading, supply integrity, and temperature with the actual filter remain unmeasured.
 
 ![Circuit-model power and channel-skew sensitivity](docs/board-simulation.png)
 
@@ -79,7 +79,7 @@ The sensitivity cases delay one channel's output weighting waveform relative to 
 | --- | ---: | ---: |
 {stable}
 
-The directly paralleled outputs can carry opposing currents while one channel changes state ahead of the other. A nearly unchanged fundamental power does not imply low circulating current or acceptable heating. The behavioral model omits full internal crossover and cannot calculate junction temperature or complete supply current. The larger-skew cases are electrical stress diagnostics, not acceptable operating points. Their large currents are especially model-dependent. TI permits two outputs to connect together for stronger drive, subject to electrical and thermal limits; that statement does not qualify this board at 145 MHz.
+The shifted waveforms can create opposing currents in this model. The offsets are neither a measured same-chip mismatch nor a manufacturer limit, and the model does not establish their likelihood. Its large peaks cannot establish a fault in the actual directly paralleled device. Numerical convergence validates the solver's consistency, not those current predictions. TI's explicit support for paralleling is the stronger evidence for selecting the topology. The RF application still requires electrical and thermal validation with its intended load and filter.
 
 ## Numerical checks and limits
 
@@ -89,7 +89,8 @@ The diode and transistor models are from Diodes Incorporated, and the LED model 
 
 C1/C2/C3 and real supply wiring are outside the ideal-rail calculation. There is no extracted PCB trace, ground-return, connector, solder-finish, or external-filter model. The short RF paths, stitching, C6 placement, and SMA launch geometry therefore have no simulated RF-loss or ringing qualification. R1's explicit input loading and actual Pico, Pi, and Si5351 output stages are absent from the timing surrogate. This study assumes a source that supplies a valid clock at the requested frequency.
 
-The model supports the board as a candidate for roughly 80 mW of fundamental RF power with useful activity indication. Full-band reliability, thermal margin, supply integrity, filter interaction, and source compatibility remain unmeasured. See the [model scope](MODEL-SCOPE.md), [C4 analysis](C4-SELECTION.md), and [detector study](INPUT-LOADING.md).
+The direct-parallel topology has manufacturer support, and the circuit model predicts roughly 80 mW of fundamental RF power with useful activity indication. Full-band reliability, thermal margin, supply integrity, filter interaction, and source compatibility remain unmeasured. See the [model scope](MODEL-SCOPE.md), [C4 analysis](C4-SELECTION.md), and [detector study](INPUT-LOADING.md).
 '''
+text+='\nThe [output-sharing resistor study](OUTPUT-SHARING.md) compares optional isolation-resistor candidates. Its hypothetical skew cases do not demonstrate that the board requires those resistors.\n'
 (p/'BOARD-SIMULATION.md').write_text(text)
 print(json.dumps({'cases':len(rows),'nominal_endpoints_mW':[nom[0]['fundamental_mW'],nom[-1]['fundamental_mW']],'skew':skews,'checks':checks},indent=2))

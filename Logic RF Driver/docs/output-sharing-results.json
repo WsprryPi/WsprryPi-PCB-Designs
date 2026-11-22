@@ -1,7 +1,6 @@
 {
   "scope": "Candidate independent resistors between U1 B1/B2 pins and RF_RAW join; schematic and PCB retain direct parallel connection",
-  "recommendation_ohms_each": 10,
-  "choice_basis": "Largest tested value retaining roughly 80 percent of nominal fundamental power and preserving modeled activity indication; no guaranteed pulse-current or skew envelope",
+  "choice_basis": "Optional resistive isolation within a roughly 1 dB power-loss budget; hypothetical skew tests do not demonstrate a need for resistors",
   "cases": [
     {
       "f_Hz": 145000000.0,
@@ -4138,7 +4137,7 @@
     "external-research/simulate.py": "f1c87085a80924b06e7c8ddb23aaabe45039ef8932f39d8ac68f1119a0af62ab",
     "external-research/models/SN74LVC2T45.ibs": "e3edf7aca38693b91b485a0c5063769c78ec84dae00a4d44d85654807b5b6ce5",
     "scripts/run_output_sharing.py": "87750a2dbb1caa099a82bd7b65c6f2e31fa45eb9e2b6d916f85b9e608338f4ea",
-    "scripts/report_output_sharing.py": "0855de4ee1080e7ae9f4581c4f40c9a0f0e17a75fc85dc1cea758df053b24064",
+    "scripts/report_output_sharing.py": "ff42b26de06e869fbf16e21b8c1ca2655528111ca200d25906584bc7e78ac551",
     "docs/board-simulation-results.json": "78b87bf24e45825a7f0dddfbdd22f863df92051221a70821f4e71732828e4658"
   },
   "cad_review": {
@@ -4404,5 +4403,7 @@
     "No extracted PCB, supply impedance, connector, external filter, internal crossover-loss, or thermal model.",
     "C4 is a passive fit linearized near 2.515 V, with initial charge adjusted for periodic operation.",
     "Parasitic RLC values are illustrative, not a selected resistor manufacturer model."
-  ]
+  ],
+  "baseline_connection": "direct_parallel",
+  "series_resistor_candidate_ohms_each": 10
 }

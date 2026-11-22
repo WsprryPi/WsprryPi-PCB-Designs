@@ -1,8 +1,10 @@
 # Output sharing resistors
 
-**10 ohms on each U1 output is the preferred power-preserving compromise in this study.** With the detector connected and aligned channels, it gives 68.1 mW at 137 kHz and 65.0 mW at 145 MHz into 50 ohms. It retains 81.3–82.6% of the direct-parallel model's nominal power across the 13-frequency sweep, a loss of about 0.90 dB. This choice gives roughly a 1 dB RF-power-loss budget priority over stronger isolation; it is not a unique optimum or a pulse-current guarantee.
+[TI explicitly permits connecting the two outputs for stronger drive](https://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf). With A1/A2 driven by the same clock, direct paralleling is the supported baseline, subject to electrical and thermal limits. The assumed-skew tests do not establish an actual timing problem or a need for series resistors; their transient current peaks are not validated predictions of this IC.
 
-At 145 MHz with an assumed 0.1 ns skew, 10 ohms lowers the larger modeled pin-current peak from 72.7 mA to 51.0 mA. Peak opposing current falls from 41.7 mA to 24.3 mA. The peak remains above [TI's 32 mA recommended output-current magnitude at a 5 V output supply](https://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf). That DC operating recommendation is not a specified pulse-current allowance. The model does not establish acceptable pulse operation or junction temperature.
+**For optional resistive isolation, 10 ohms on each output is a candidate within a roughly 1 dB power-loss budget.** With the detector connected and aligned channels, it gives 68.1 mW at 137 kHz and 65.0 mW at 145 MHz into 50 ohms. It retains 81.3–82.6% of the direct-parallel model's nominal power across the 13-frequency sweep, a loss of about 0.90 dB. This choice gives roughly a 1 dB RF-power-loss budget priority over stronger isolation; it is not a unique optimum or a pulse-current guarantee.
+
+At 145 MHz with an assumed 0.1 ns skew, 10 ohms lowers the larger modeled pin-current peak from 72.7 mA to 51.0 mA. Peak opposing current falls from 41.7 mA to 24.3 mA. TI's 32 mA recommended output-current magnitude at a 5 V output supply is a DC reference, not a pulse-current specification. Comparing it with an approximate transient peak does not establish a device-limit violation. The model does not establish acceptable pulse operation or junction temperature.
 
 ![Power, output current, and activity indication](docs/output-sharing.png)
 
@@ -37,7 +39,7 @@ Nominal power and LED current use aligned channels. Current peaks use the skew s
 
 The 1–2.2 ohm values preserve power but provide little isolation. The 4.7-ohm option has a smaller power cost than 10 ohms and also a smaller current reduction. The 22- and 33-ohm options provide stronger isolation at a substantial RF-power cost, with much lower modeled LED current at 145 MHz. LED visibility depends on the actual selected parts and ambient light; the illustrative LED model does not rate brightness.
 
-Larger skew remains a concern with 10 ohms: the model gives 120.6 mA at 0.5 ns and 124.4 mA at 1 ns. Those cases are stress diagnostics, not qualified operating points. Much larger resistors suppress those currents further, at the expense of RF output and detector drive. The chosen resistor value therefore needs a defined timing and current-margin target to support any guaranteed operating envelope. The assumed skew values are not TI specifications or measured probabilities.
+The hypothetical larger-skew tests with 10 ohms give 120.6 mA at 0.5 ns and 124.4 mA at 1 ns. Those cases are stress diagnostics, not qualified operating points. Much larger resistors suppress those currents further, at the expense of RF output and detector drive. These tests compare sensitivity within the model; they do not justify a guaranteed operating envelope or establish that direct paralleling needs correction. The assumed skew values are not TI specifications or measured probabilities.
 
 ## Frequency sweep
 
