@@ -19,7 +19,7 @@ The [CAD check record](docs/cad-validation.json) contains ERC and DRC results, i
 
 ## Check configuration
 
-The PCB configuration ignores missing courtyards, track endpoints not centered on vias, tuning-profile geometry, footprint-filter mismatches, and footprint-type mismatches. The schematic configuration ignores single-use global labels, four-way junctions, simulation-model issues, and footprint-filter mismatches. A zero-violation result says nothing about these ignored categories. See the [project settings](Logic%20RF%20Driver.kicad_pro).
+All PCB DRC categories are enabled. Missing courtyards, track endpoints not centered on vias, tuning-profile geometry, footprint-filter mismatches, and footprint-type mismatches are configured as warnings. No PCB DRC categories are ignored. The schematic ERC configuration ignores single-use global labels, four-way junctions, simulation-model issues, and footprint-filter mismatches; its zero-violation result does not cover those ignored schematic categories. See the [project settings](Logic%20RF%20Driver.kicad_pro).
 
 Clearance checks use 0.20 mm for the default net class and 0.15 mm between pads within U1. These are CAD rules, not assembly measurements.
 
