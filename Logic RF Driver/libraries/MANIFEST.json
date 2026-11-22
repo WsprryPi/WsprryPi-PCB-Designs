@@ -111,10 +111,71 @@
       "source_library": "power",
       "source_symbol": "PWR_FLAG",
       "source_file_sha256": "8113f8fe90853413603d619987cc744e33dc47ff27faac19a58d7caf8c334fd0"
+    },
+    {
+      "kind": "symbol",
+      "source_library": "Device",
+      "source_symbol": "C_Small",
+      "source_file_sha256": "f65c9dd13ef986c482165e5c8237ccf4f691bc7321868cf05e01dafbc1326b24"
+    },
+    {
+      "kind": "symbol",
+      "source_library": "Transistor_BJT",
+      "source_symbol": "MMBT3904",
+      "source_file_sha256": "e88f0c9bd2bb124915b54783b25792db26896f913a1f5b3e7201c996bedf4390"
+    },
+    {
+      "kind": "symbol",
+      "source_library": "Diode",
+      "source_symbol": "BAT54S",
+      "source_file_sha256": "e6a8ac06651527e2700b3e1a7ca8b077a2c28ac1ebdbf57aae163f5777d4c65c"
+    },
+    {
+      "kind": "symbol",
+      "source_library": "Device",
+      "source_symbol": "LED",
+      "source_file_sha256": "f65c9dd13ef986c482165e5c8237ccf4f691bc7321868cf05e01dafbc1326b24",
+      "local_symbol": "LED_KT0603R",
+      "modification": "KENTO terminal numbering: 1=A, 2=K; graphical positions preserved"
+    },
+    {
+      "kind": "model",
+      "source": "KiCad/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "file": "libraries/SN74LVC2T45_Amp.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+    },
+    {
+      "kind": "footprint",
+      "source": "Package_TO_SOT_SMD:SOT-23",
+      "source_sha256": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+      "file": "libraries/SN74LVC2T45_Amp.pretty/SOT-23.kicad_mod",
+      "sha256": "4e40ff6fc21014ce91e2108a5e70f34958d170072037a96b14b9a3d814d48e2e",
+      "model_path": "${KIPRJMOD}/libraries/SN74LVC2T45_Amp.3dshapes/SOT-23.step"
+    },
+    {
+      "kind": "model",
+      "source": "KiCad/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "file": "libraries/SN74LVC2T45_Amp.3dshapes/LED_0603_1608Metric.step",
+      "sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "kind": "footprint",
+      "source": "LED_SMD:LED_0603_1608Metric",
+      "source_sha256": "7931ed1efba34cb13c8d74a60eb1dca4b0be57d950c38e08c3e7f007db500a1c",
+      "file": "libraries/SN74LVC2T45_Amp.pretty/LED_KT0603R.kicad_mod",
+      "sha256": "c21cb7d8c58b0b3e564b29483246c130f5e36b1f8165cf66e24c02363a55a3ce",
+      "model_path": "${KIPRJMOD}/libraries/SN74LVC2T45_Amp.3dshapes/LED_0603_1608Metric.step",
+      "modification": "KENTO terminal numbering: pad 1 anode, pad 2 cathode; copper and 3D model geometry preserved"
+    },
+    {
+      "kind": "symbol",
+      "source_library": "power",
+      "source_symbol": "+3V3",
+      "source_file_sha256": "8113f8fe90853413603d619987cc744e33dc47ff27faac19a58d7caf8c334fd0"
     }
   ],
   "project_symbol_library": {
     "file": "libraries/SN74LVC2T45_Amp.kicad_sym",
-    "sha256": "9258b12faf3350529a4b35df75edce21acbd970c4555a8a8ee509be1ba492c4d"
+    "sha256": "6b79dbb7da318996c10b70822ee66eb7b179f6d1a09a91ba9349ed98b2fc8dd4"
   }
 }

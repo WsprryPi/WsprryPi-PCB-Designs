@@ -1,6 +1,6 @@
 # SN74LVC2T45 versus BS170
 
-This comparison uses Samsung CL10A105KB8NNNC / C15849 for C4, including its DC-bias dependence. At the band endpoints, the nominal paralleled SN74LVC2T45 model gives **84.32 mW at 137 kHz** and **83.03 mW at 145 MHz**. The resistor-fed BS170 gives **25.30 mW** and **0.0007803 mW**, respectively. These are exploratory simulations, not measured output ratings.
+This comparison uses Samsung CL10A105KB8NNNC / C15849 for C4, including its DC-bias dependence. At the band endpoints, the nominal paralleled SN74LVC2T45 model gives **84.32 mW at 137 kHz** and **83.03 mW at 145 MHz**. The resistor-fed BS170 gives **25.30 mW** and **0.0007803 mW**, respectively. These are exploratory simulations, not measured output ratings. The RF_RAW indicator branch through R2 (220 ohms) is outside this comparison model; its RF loading and current consumption are excluded from both the RF results and the supply-current estimates. The separate [detector study](INPUT-LOADING.md) estimates its loading with surrogate models; it does not validate the selected Nexperia diode, CJ transistor, or KENTO LED.
 
 ## Circuits and conditions
 
@@ -14,9 +14,9 @@ All circuits run from a 5 V output supply with a raw 0–3.3 V clock, 50% duty c
 
 The logic model uses nominal IBIS output tables, transition weighting from the ramps, and simplified package effects. It is a behavioral surrogate, not a full IBIS or transistor-level simulation. It can double-count some capacitive transition effects. It does not fully represent internal crossover, supply-current transients, supply/ground bounce, process variation, thermal limits, channel skew, or current sharing. The flat logic response belongs to this model; it is not evidence of full-band board performance.
 
-The input timing surrogate omits R1's explicit 10-kilohm loading. Ideal rails also leave out C1/C2/C3 and the supply/return network. There is no extracted PCB or connector model. See [model scope](MODEL-SCOPE.md) for how this relates to the selected parts.
+The input timing surrogate omits R1's explicit 10-kilohm loading. Ideal rails also leave out C1/C2/C3 and the supply/return network. The comparison excludes extracted PCB and connector models. See [model scope](MODEL-SCOPE.md) for how this relates to the selected parts.
 
-The BS170 circuits include an illustrative 3 nH in both the gate and source leads. The Zetex model contains a 270-ohm internal gate resistor. A separate sensitivity case sets it to 5 ohms; that does not make it a verified model of another BS170. The ideal drain choke has 500 ohms reactance at each frequency, requiring about 581 uH at 137 kHz and 549 nH at 145 MHz. It has no loss, self-capacitance, or saturation, and it is not a single physical choke covering the whole band.
+The BS170 circuits include an illustrative 3 nH in both the gate and source leads. The Zetex model contains a 270-ohm internal gate resistor. A separate sensitivity case sets it to 5 ohms; that does not make it a verified BS170 model. The ideal drain choke has 500 ohms reactance at each frequency, requiring about 581 uH at 137 kHz and 549 nH at 145 MHz. It has no loss, self-capacitance, or saturation, and it is not a single physical choke covering the whole band.
 
 ## C4 model
 
@@ -32,7 +32,7 @@ The fit computes reactance magnitude as sqrt(max(0, impedance magnitude squared 
 
 These errors are at the manufacturer's sample frequencies. Relative error looks large near resonance because the impedance itself is so small; it is not a bound on output-power error. Over the full 100 Hz–6 GHz fit range, the maximum relative magnitude errors match the table. RMS errors are about 2.35%, 2.61%, and 2.81%. Anything above 6 GHz is extrapolation.
 
-Each circuit has a zero-bias control and a biased case. The biased case interpolates the common-basis coefficients at the initialized periodic output midpoint: about 2.515 V for the logic stage, 2.5–5 V for the resistor-fed BS170, and 5 V for the ideal-choke diagnostics. The interpolation stays within 0–5 V and keeps every element nonnegative. Points between the three source curves are an engineering approximation, not extra manufacturer data.
+Each circuit has a zero-bias control and a biased case. The biased case interpolates the common-basis coefficients at the initialized periodic output midpoint: about 2.515 V for the logic stage, 2.5–5 V for the resistor-fed BS170, and 5 V for the ideal-choke diagnostics. The interpolation stays within 0–5 V and keeps every element nonnegative. Points between the three source curves are engineering approximations, not additional manufacturer data.
 
 Within a transient run, C4 is linear at the chosen bias. Its capacitance does not change instantaneously with RF voltage, and the network omits hysteresis, aging, AC-amplitude dependence, and temperature/tolerance variation. In six checks on the logic and resistor-fed circuits, recentering the bias changes power by no more than 0.000579%.
 
@@ -40,7 +40,7 @@ Within a transient run, C4 is linear at the chosen bias. Its capacitance does no
 
 ![Fundamental RF power and C4 bias sensitivity](docs/comparison-samsung.png)
 
-Every row uses the biased Samsung fit. Power is the Fourier fundamental delivered to 50 ohms; harmonics and external filter losses are excluded. The chart's shading spans the zero-bias and biased results, not a confidence interval.
+Every row uses the biased Samsung fit. Power is the Fourier fundamental delivered to 50 ohms; it excludes harmonics and external filter losses. The chart's shading spans the zero-bias and biased results, not a confidence interval.
 
 | Frequency | Paralleled SN74LVC2T45 | BS170 with 51-ohm drain resistor |
 | --- | ---: | ---: |
@@ -52,15 +52,15 @@ Every row uses the biased Samsung fit. Power is the Fourier fundamental delivere
 
 Across the 78 accepted cases, DC bias changes power by at most 0.02911% from the matching zero-bias result. That includes the hypothetical 5-ohm internal-gate-resistance case, which gives about 1.981 mW at 145 MHz for the resistor-fed BS170. This is sensitivity to a model parameter, not a promise of achievable power.
 
-The BS170 datasheet gives on-resistance with 10 V on the gate and gate-threshold voltage at a drain current of 1 mA. It offers no guarantee of low on-resistance or RF performance with 3.3 V gate drive, and it does not validate the Zetex model. There is no efficiency comparison because the logic surrogate lacks total supply-current modeling.
+The BS170 datasheet gives on-resistance with 10 V on the gate and gate-threshold voltage at a drain current of 1 mA. It offers no guarantee of low on-resistance or RF performance with 3.3 V gate drive, and it does not validate the Zetex model. The logic surrogate lacks total supply-current modeling, so the comparison has no efficiency result.
 
 ## Estimated supply current
 
 For the paralleled SN74LVC2T45 stage, the nominal estimate is about **23–55 mA from 5 V** and **a few microamps to about 4 mA from 3.3 V** across 137 kHz–145 MHz. These are separate hand calculations, not supply currents extracted from the amplifier simulation or measured on the board. They exclude the Pico, Pi, or Si5351's own consumption.
 
-The calculation assumes a continuous raw 0–3.3 V clock at 50% duty cycle, fast input edges, DIR held high, both channels switching together, and C4 feeding a resistive 50-ohm load. It includes an assumed 2 pF of output-board capacitance. There is no external filter in this estimate.
+The calculation assumes a continuous raw 0–3.3 V clock at 50% duty cycle, fast input edges, DIR held high, both channels switching together, and C4 feeding a resistive 50-ohm load. It includes an assumed 2 pF of output-board capacitance. This estimate includes no external filter.
 
-The approximately 83–84 mW fundamental output corresponds to an equivalent square wave of about 4.5 V peak-to-peak across 50 ohms. Its positive load current comes from the 5 V supply during roughly half the cycle, giving about 23 mA of average load-related supply current. This approximation does not equate fundamental RF power with total load power or assume perfect conversion efficiency.
+The approximately 83–84 mW fundamental output corresponds to an equivalent square wave of about 4.5 V peak-to-peak across 50 ohms. Its positive load current comes from the 5 V supply for roughly half the cycle, giving about 23 mA of average load-related supply current. This approximation does not equate fundamental RF power with total load power or assume perfect conversion efficiency.
 
 [TI's operating-characteristics table](https://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf#page=9) gives typical power-dissipation capacitances per transceiver. For this estimate, each of the two channels uses 4 pF on the 3.3 V side and 21 pF on the 5 V side. Applying the switching-current relation `I = N × Cpd × V × f`, plus the shared output-board capacitance, gives the formulas below. TI explains this method in [CMOS Power Consumption and Cpd Calculation](https://www.ti.com/lit/an/scaa035b/scaa035b.pdf).
 
@@ -93,7 +93,7 @@ That is about **0.17 mA at 137 kHz** and **6.9 mA at 145 MHz**, excluding the so
 
 ### Limits of the current estimate
 
-TI characterizes these typical Cpd values at 10 MHz with 1 ns input transitions and equal supply voltages. Taking the 3.3 V and 5 V entries for a mixed-supply device, and extending them to 145 MHz, are engineering approximations. The values are not worst-case current limits or validated uncertainty bounds. Cpd accounts for internal switching and through-current under its reference conditions; actual edge rates, temperature, device variation, and loading can change that current.
+TI characterizes these typical Cpd values at 10 MHz with 1 ns input transitions and equal supply voltages. Using the 3.3 V and 5 V entries for a mixed-supply device and extending them to 145 MHz are engineering approximations. The values are not worst-case current limits or validated uncertainty bounds. Cpd accounts for internal switching and through-current under its reference conditions; actual edge rates, temperature, device variation, and loading can change that current.
 
 The calculation does not establish the extra current caused by skew or contention between directly paralleled outputs. It also omits supply and return impedance, regulator losses, startup charging, keying transients, and voltage-dependent parasitics. C1–C3 provide local transient charge but do not make these average-current estimates a model of supply ripple or peak current. An external filter changes the harmonic load and can change supply current even if its fundamental input impedance is near 50 ohms. The VHF estimates require measurements of both supply currents and input/output waveforms on the assembled board.
 
@@ -103,11 +103,11 @@ The accepted set has 78 cases: thirteen frequencies, three circuit/model combina
 
 A run passes base screening only if integration completes, peak load voltage stays below 30 V, mean load voltage stays below 50 mV, and power differs by less than 0.1% between the final two four-period windows. The accepted set has a maximum mean load voltage of 16.36 mV and a maximum late-window power change of 0.05454%. In fourteen representative checks, halving the maximum timestep changes power by at most 0.006521%. These tests check numerical consistency, not device accuracy.
 
-The ideal-choke set has fifty successful diagnostic runs and two failed base cases at 70 MHz. One fails the stationarity test; the other produces an unphysical voltage. The broader checks also show a 3.53% timestep-dependent power change at 7 MHz, a 1.10% change at 10 MHz, and about a 24% change after bias recentering at 145 MHz. Other failures include an unphysical load excursion of about 203 V and a finer-step verification timeout. None of the ideal-choke results contribute to the quantitative comparison, and no gaps are filled by interpolation.
+The ideal-choke set has fifty successful diagnostic runs and two failed base cases at 70 MHz. One fails the stationarity test; the other produces an unphysical voltage. The broader checks also show a 3.53% timestep-dependent power change at 7 MHz, a 1.10% change at 10 MHz, and about a 24% change with recentered bias at 145 MHz. Other failures include an unphysical load excursion of about 203 V and a finer-step verification timeout. None of the ideal-choke results contribute to the quantitative comparison, and interpolation fills no gaps.
 
 ## Data and reproduction
 
-- [Retained results: CSV](docs/simulation-samsung-results.csv) and [JSON](docs/simulation-samsung-results.json).
+- [Results: CSV](docs/simulation-samsung-results.csv) and [JSON](docs/simulation-samsung-results.json).
 - [Verification, fit errors, and failures](docs/simulation-samsung-verification.json).
 - [Successful diagnostic runs: CSV](docs/simulation-samsung-diagnostics.csv) and [JSON](docs/simulation-samsung-diagnostics.json).
 - [Source and deck hashes](docs/comparison-samsung-manifest.json).
@@ -115,4 +115,4 @@ The ideal-choke set has fifty successful diagnostic runs and two failed base cas
 
 To run the study, the scripts need the local research workspace's simulate.py, manufacturer models, and practical-bs/ amplifier decks, plus numpy/scipy. Plotting also needs matplotlib. The simulation script takes --research, --source, and --output; the verification and report scripts take --project and --research. A base attempt has a 30-second limit and one finer-step retry. Additional checks allow forty seconds. Manufacturer sources stay local under their own terms.
 
-The source material is the [Samsung product information](https://product.samsungsem.com/mlcc/CL10A105KB8NNN.do), [TI datasheet](https://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf), [TI IBIS model](https://www.ti.com/lit/ibs/SCEM409), and [onsemi BS170/MMBF170 datasheet](https://www.onsemi.com/pdf/datasheet/mmbf170-d.pdf). The local research workspace holds the Zetex model with its copyright notice. There are no assembled-board RF, thermal, or emissions measurements supporting these calculations.
+The source material is the [Samsung product information](https://product.samsungsem.com/mlcc/CL10A105KB8NNN.do), [TI datasheet](https://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf), [TI IBIS model](https://www.ti.com/lit/ibs/SCEM409), and [onsemi BS170/MMBF170 datasheet](https://www.onsemi.com/pdf/datasheet/mmbf170-d.pdf). The local research workspace holds the Zetex model with its copyright notice. No assembled-board RF, thermal, or emissions measurements support these calculations.

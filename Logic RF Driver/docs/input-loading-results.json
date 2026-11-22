@@ -1,0 +1,466 @@
+{
+  "scope": "Lumped illustrative source and detector study; not board qualification",
+  "models": {
+    "BAT54S.txt": "31bd9a1e64a71ae4cf52fa1c0d434512c86838ab557e515f1035e3d17c141e06",
+    "MMBT3904.txt": "49c344a0aaa461869b9a6f7a67e8afc0afbb0050a6b4f7e19e44025b076a6d2d"
+  },
+  "results": [
+    {
+      "name": "steady_f145M_r100_edge1.5e-09_eval28",
+      "f_Hz": 145000000.0,
+      "source_ohms": 50,
+      "r2_ohms": 100,
+      "edge_s": 1.5e-09,
+      "detector": true,
+      "ic5": 1.327408669821582,
+      "ic6": 0.6296108865885028,
+      "periods": 240.23,
+      "script_sha256": "c6de141fa0d20aad5455ceb8c967abd68a3fb48ceea01331e8450ab09bfcc633",
+      "duration_s": 1.656758620689655e-06,
+      "v_min": 0.5013310438645755,
+      "v_max": 2.7822480378554566,
+      "source_peak_mA": 26.9573245874269,
+      "source_sink_peak_mA": 26.628982387268856,
+      "source_rail_equivalent_mA": 5.680848317882123,
+      "time_above_2V_fraction": 0.42287289575094855,
+      "time_below_0p8V_fraction": 0.26971297327229427,
+      "runtime_s": 0.17080429196357727,
+      "timestep_max_s": 4.310344827586207e-11,
+      "rise_20_80_ns": 2.2445391388217284,
+      "fall_80_20_ns": 2.199181539553264,
+      "base_mean_V": 0.6280900954840577,
+      "c5_mean_V": 1.3274619750878793,
+      "led_mean_mA": 1.4083530902255088,
+      "detector_positive_charge_mA": 3.568255409257373,
+      "detector_peak_mA": 10.092339806767061,
+      "base_late_drift_mV": 2.3843355845265535e-05,
+      "c5_late_drift_mV": 3.786784863457626e-05,
+      "state_end_V": [
+        1.3264888609612524,
+        0.6276173950863136
+      ],
+      "state_drift_V": [
+        -1.8963340009392482e-08,
+        -1.2471942922864798e-08
+      ],
+      "shooting_initial_V": [
+        1.327408669821582,
+        0.6296108865885028
+      ],
+      "shooting_evaluations": 28,
+      "shooting_success": true,
+      "shooting_residual_V": [
+        -1.8963340009392482e-08,
+        -1.2471942922864798e-08
+      ]
+    },
+    {
+      "name": "steady_f145M_r150_edge1.5e-09_eval28",
+      "f_Hz": 145000000.0,
+      "source_ohms": 50,
+      "r2_ohms": 150,
+      "edge_s": 1.5e-09,
+      "detector": true,
+      "ic5": 1.4196934903541847,
+      "ic6": 0.4436566743417344,
+      "periods": 240.23,
+      "script_sha256": "c6de141fa0d20aad5455ceb8c967abd68a3fb48ceea01331e8450ab09bfcc633",
+      "duration_s": 1.656758620689655e-06,
+      "v_min": 0.4099983987004127,
+      "v_max": 2.873577821921584,
+      "source_peak_mA": 26.17870183873854,
+      "source_sink_peak_mA": 25.85050002669791,
+      "source_rail_equivalent_mA": 5.043678853196556,
+      "time_above_2V_fraction": 0.4295663813541155,
+      "time_below_0p8V_fraction": 0.30512193525394127,
+      "runtime_s": 0.17272991698700935,
+      "timestep_max_s": 4.310344827586207e-11,
+      "rise_20_80_ns": 1.7893298430426108,
+      "fall_80_20_ns": 1.7663073964209413,
+      "base_mean_V": 0.4436643384324476,
+      "c5_mean_V": 1.4197417369349083,
+      "led_mean_mA": 0.0013633022415218015,
+      "detector_positive_charge_mA": 2.727126766897062,
+      "detector_peak_mA": 7.5435399537227585,
+      "base_late_drift_mV": -0.00027082110581888585,
+      "c5_late_drift_mV": 3.87881191610262e-05,
+      "state_end_V": [
+        1.4189396881054954,
+        0.44328398277105746
+      ],
+      "state_drift_V": [
+        1.8346488328546684e-08,
+        -1.4147610742920591e-06
+      ],
+      "shooting_initial_V": [
+        1.4196934903541847,
+        0.4436566743417344
+      ],
+      "shooting_evaluations": 28,
+      "shooting_success": true,
+      "shooting_residual_V": [
+        1.8346488328546684e-08,
+        -1.4147610742920591e-06
+      ]
+    },
+    {
+      "name": "steady_f145M_r220_edge1.5e-09_eval26",
+      "f_Hz": 145000000.0,
+      "source_ohms": 50,
+      "r2_ohms": 220,
+      "edge_s": 1.5e-09,
+      "detector": true,
+      "ic5": 1.5022484151402626,
+      "ic6": 0.2783041379079043,
+      "periods": 240.23,
+      "script_sha256": "c6de141fa0d20aad5455ceb8c967abd68a3fb48ceea01331e8450ab09bfcc633",
+      "duration_s": 1.656758620689655e-06,
+      "v_min": 0.32797070343891743,
+      "v_max": 2.9556057682944497,
+      "source_peak_mA": 25.940137927587696,
+      "source_sink_peak_mA": 25.61192517695726,
+      "source_rail_equivalent_mA": 4.581178100389038,
+      "time_above_2V_fraction": 0.43398741550635583,
+      "time_below_0p8V_fraction": 0.32329665596094903,
+      "runtime_s": 0.17432283400557935,
+      "timestep_max_s": 4.310344827586207e-11,
+      "rise_20_80_ns": 1.5712211766167248,
+      "fall_80_20_ns": 1.557844331090657,
+      "base_mean_V": 0.27868971240885687,
+      "c5_mean_V": 1.5022935868636058,
+      "led_mean_mA": 0.00016852199137274034,
+      "detector_positive_charge_mA": 2.0313602467684833,
+      "detector_peak_mA": 5.586067020107153,
+      "base_late_drift_mV": -0.0005169964549245343,
+      "c5_late_drift_mV": 3.1388285748334965e-05,
+      "state_end_V": [
+        1.5016671383925153,
+        0.27839838435053665
+      ],
+      "state_drift_V": [
+        3.4851241670352806e-08,
+        -2.5603418511987996e-06
+      ],
+      "shooting_initial_V": [
+        1.5022484151402626,
+        0.2783041379079043
+      ],
+      "shooting_evaluations": 26,
+      "shooting_success": true,
+      "shooting_residual_V": [
+        3.4851241670352806e-08,
+        -2.5603418511987996e-06
+      ]
+    },
+    {
+      "name": "steady_f145M_r470_edge1.5e-09_eval41",
+      "f_Hz": 145000000.0,
+      "source_ohms": 50,
+      "r2_ohms": 470,
+      "edge_s": 1.5e-09,
+      "detector": true,
+      "ic5": 1.5992853104181066,
+      "ic6": 0.08399524871494907,
+      "periods": 240.23,
+      "script_sha256": "c6de141fa0d20aad5455ceb8c967abd68a3fb48ceea01331e8450ab09bfcc633",
+      "duration_s": 1.656758620689655e-06,
+      "v_min": 0.2074033660353533,
+      "v_max": 3.0761759185753603,
+      "source_peak_mA": 26.193010125624294,
+      "source_sink_peak_mA": 25.86468863117774,
+      "source_rail_equivalent_mA": 4.048110774515452,
+      "time_above_2V_fraction": 0.43916957525298217,
+      "time_below_0p8V_fraction": 0.3404678385697203,
+      "runtime_s": 0.1718817090149969,
+      "timestep_max_s": 4.310344827586207e-11,
+      "rise_20_80_ns": 1.3855581269145312,
+      "fall_80_20_ns": 1.377989248330354,
+      "base_mean_V": 0.08480229220102907,
+      "c5_mean_V": 1.5993210270747666,
+      "led_mean_mA": 0.000162979179117347,
+      "detector_positive_charge_mA": 1.0471976307703115,
+      "detector_peak_mA": 2.946994511025912,
+      "base_late_drift_mV": -0.0005135538247574845,
+      "c5_late_drift_mV": 2.3751228539481417e-05,
+      "state_end_V": [
+        1.598982395934055,
+        0.08464517300712004
+      ],
+      "state_drift_V": [
+        4.267526176882086e-08,
+        -2.5370954226944242e-06
+      ],
+      "shooting_initial_V": [
+        1.5992853104181066,
+        0.08399524871494907
+      ],
+      "shooting_evaluations": 41,
+      "shooting_success": true,
+      "shooting_residual_V": [
+        4.267526176882086e-08,
+        -2.5370954226944242e-06
+      ]
+    },
+    {
+      "name": "steady_f145M_r1000_edge1.5e-09_eval38",
+      "f_Hz": 145000000.0,
+      "source_ohms": 50,
+      "r2_ohms": 1000,
+      "edge_s": 1.5e-09,
+      "detector": true,
+      "ic5": 1.630916411072986,
+      "ic6": 0.02070922801676867,
+      "periods": 240.23,
+      "script_sha256": "c6de141fa0d20aad5455ceb8c967abd68a3fb48ceea01331e8450ab09bfcc633",
+      "duration_s": 1.656758620689655e-06,
+      "v_min": 0.14176611231712413,
+      "v_max": 3.1418150739983406,
+      "source_peak_mA": 26.58405800482612,
+      "source_sink_peak_mA": 26.255698634817307,
+      "source_rail_equivalent_mA": 3.819728519950853,
+      "time_above_2V_fraction": 0.44155464409578743,
+      "time_below_0p8V_fraction": 0.3473252118588812,
+      "runtime_s": 0.17363766703056172,
+      "timestep_max_s": 4.310344827586207e-11,
+      "rise_20_80_ns": 1.3166508876883074,
+      "fall_80_20_ns": 1.3099306422181711,
+      "base_mean_V": 0.021646018329656725,
+      "c5_mean_V": 1.630941398361653,
+      "led_mean_mA": 0.00016155785709482518,
+      "detector_positive_charge_mA": 0.5135307546919669,
+      "detector_peak_mA": 1.4796737564758666,
+      "base_late_drift_mV": -0.0005122482816533047,
+      "c5_late_drift_mV": 1.434816243595094e-05,
+      "state_end_V": [
+        1.6307723158421041,
+        0.021565091934315356
+      ],
+      "state_drift_V": [
+        3.2840190344884945e-08,
+        -2.519498098690204e-06
+      ],
+      "shooting_initial_V": [
+        1.630916411072986,
+        0.02070922801676867
+      ],
+      "shooting_evaluations": 38,
+      "shooting_success": true,
+      "shooting_residual_V": [
+        3.2840190344884945e-08,
+        -2.519498098690204e-06
+      ]
+    },
+    {
+      "name": "steady_r120_145_slow_eval25",
+      "f_Hz": 145000000,
+      "source_ohms": 50,
+      "r2_ohms": 120,
+      "edge_s": 1.5e-09,
+      "step_factor": 320,
+      "ic5": 1.363359362754902,
+      "ic6": 0.5567034330426648,
+      "periods": 240.23,
+      "script_sha256": "c6de141fa0d20aad5455ceb8c967abd68a3fb48ceea01331e8450ab09bfcc633",
+      "duration_s": 1.656758620689655e-06,
+      "v_min": 0.46046469613864044,
+      "v_max": 2.8231124543121324,
+      "source_peak_mA": 26.539519906988563,
+      "source_sink_peak_mA": 26.211321938771874,
+      "source_rail_equivalent_mA": 5.378758281553984,
+      "time_above_2V_fraction": 0.4261873610231794,
+      "time_below_0p8V_fraction": 0.2883492880884896,
+      "runtime_s": 0.33089041704079136,
+      "timestep_max_s": 2.1551724137931035e-11,
+      "rise_20_80_ns": 2.0055470176187216,
+      "fall_80_20_ns": 1.9710495324254858,
+      "base_mean_V": 0.5562838079369806,
+      "c5_mean_V": 1.363406776522775,
+      "led_mean_mA": 0.10284298053332916,
+      "detector_positive_charge_mA": 3.178654198276289,
+      "detector_peak_mA": 8.883554793923667,
+      "base_late_drift_mV": 4.914731177585452e-06,
+      "c5_late_drift_mV": 9.071545292727023e-06,
+      "state_end_V": [
+        1.3625073964721006,
+        0.5558506904607996
+      ],
+      "state_drift_V": [
+        -3.99189659106014e-09,
+        -2.400499576893367e-09
+      ],
+      "shooting_initial_V": [
+        1.363359362754902,
+        0.5567034330426648
+      ],
+      "shooting_evaluations": 25,
+      "shooting_success": true,
+      "shooting_residual_V": [
+        -3.99189659106014e-09,
+        -2.400499576893367e-09
+      ]
+    },
+    {
+      "name": "steady_tt0_r150_145_slow_eval28",
+      "f_Hz": 145000000,
+      "source_ohms": 50,
+      "r2_ohms": 150,
+      "edge_s": 1.5e-09,
+      "tt_scale": 0,
+      "ic5": 1.3790720486283683,
+      "ic6": 0.5251414915776474,
+      "periods": 240.23,
+      "script_sha256": "c6de141fa0d20aad5455ceb8c967abd68a3fb48ceea01331e8450ab09bfcc633",
+      "duration_s": 1.656758620689655e-06,
+      "v_min": 0.40798188557828574,
+      "v_max": 2.875596526159967,
+      "source_peak_mA": 26.38688639811771,
+      "source_sink_peak_mA": 26.05861571074513,
+      "source_rail_equivalent_mA": 5.067595563269097,
+      "time_above_2V_fraction": 0.4296159658147286,
+      "time_below_0p8V_fraction": 0.30463863792039136,
+      "runtime_s": 0.17185429099481553,
+      "timestep_max_s": 4.310344827586207e-11,
+      "rise_20_80_ns": 1.791638915774165,
+      "fall_80_20_ns": 1.7688262584212007,
+      "base_mean_V": 0.5248797942402659,
+      "c5_mean_V": 1.3791326646263136,
+      "led_mean_mA": 0.030869595826115453,
+      "detector_positive_charge_mA": 2.700638006996204,
+      "detector_peak_mA": 7.488909196681588,
+      "base_late_drift_mV": 1.3171130075484427e-05,
+      "c5_late_drift_mV": 2.9528107514664725e-05,
+      "state_end_V": [
+        1.3783513279195811,
+        0.5244979737277531
+      ],
+      "state_drift_V": [
+        -1.5303257105969692e-08,
+        -9.269049749960345e-09
+      ],
+      "shooting_initial_V": [
+        1.3790720486283683,
+        0.5251414915776474
+      ],
+      "shooting_evaluations": 28,
+      "shooting_success": true,
+      "shooting_residual_V": [
+        -1.5303257105969692e-08,
+        -9.269049749960345e-09
+      ]
+    },
+    {
+      "name": "sens_r100_tt1_f137000",
+      "f_Hz": 137000.0,
+      "source_ohms": 50,
+      "r2_ohms": 100,
+      "tt_scale": 1,
+      "edge_s": 1.5e-09,
+      "settle_s": 0.0001,
+      "periods": 40.23,
+      "script_sha256": "c6de141fa0d20aad5455ceb8c967abd68a3fb48ceea01331e8450ab09bfcc633",
+      "duration_s": 0.00029364963503649636,
+      "v_min": 0.06719600600661377,
+      "v_max": 3.2069188922043756,
+      "source_peak_mA": 33.710258455893594,
+      "source_sink_peak_mA": 33.32463786780468,
+      "source_rail_equivalent_mA": 2.49100839181496,
+      "time_above_2V_fraction": 0.49991531348816437,
+      "time_below_0p8V_fraction": 0.4996861139918384,
+      "runtime_s": 1.2074005419854075,
+      "timestep_max_s": 1e-09,
+      "rise_20_80_ns": 5.70919551310398,
+      "fall_80_20_ns": 3.5312363579564043,
+      "base_mean_V": 0.7024774993939487,
+      "c5_mean_V": 1.2621931089690308,
+      "led_mean_mA": 1.7502992046096215,
+      "detector_positive_charge_mA": 2.335275178225021,
+      "detector_peak_mA": 16.147029893851904,
+      "base_late_drift_mV": 3.623767952376511e-10,
+      "c5_late_drift_mV": -1.5896173266582991e-09,
+      "state_end_V": [
+        1.6106537782074806,
+        0.7661978892436837
+      ],
+      "state_drift_V": [
+        1.2740056343218953e-08,
+        -9.003501277859982e-10
+      ]
+    },
+    {
+      "name": "sens_r150_tt1_f137000",
+      "f_Hz": 137000.0,
+      "source_ohms": 50,
+      "r2_ohms": 150,
+      "tt_scale": 1,
+      "edge_s": 1.5e-09,
+      "settle_s": 0.0001,
+      "periods": 40.23,
+      "script_sha256": "c6de141fa0d20aad5455ceb8c967abd68a3fb48ceea01331e8450ab09bfcc633",
+      "duration_s": 0.00029364963503649636,
+      "v_min": 0.07856175093646249,
+      "v_max": 3.1988557490662446,
+      "source_peak_mA": 31.355129254674686,
+      "source_sink_peak_mA": 31.060518743783792,
+      "source_rail_equivalent_mA": 2.163029360629012,
+      "time_above_2V_fraction": 0.49993097107116813,
+      "time_below_0p8V_fraction": 0.49976664422982287,
+      "runtime_s": 1.2383518750430085,
+      "timestep_max_s": 1e-09,
+      "rise_20_80_ns": 2.6177022001308385,
+      "fall_80_20_ns": 2.5349462473784126,
+      "base_mean_V": 0.6965270994504664,
+      "c5_mean_V": 1.2688225152348203,
+      "led_mean_mA": 1.7518667557208414,
+      "detector_positive_charge_mA": 2.0056290176189693,
+      "detector_peak_mA": 12.562425280324707,
+      "base_late_drift_mV": 2.5845992013273644e-10,
+      "c5_late_drift_mV": -1.7010837183306649e-09,
+      "state_end_V": [
+        1.495563331589802,
+        0.7556815908674859
+      ],
+      "state_drift_V": [
+        1.1921378773038782e-08,
+        -4.599741698640969e-10
+      ]
+    },
+    {
+      "name": "sens_r220_tt1_f137000",
+      "f_Hz": 137000.0,
+      "source_ohms": 50,
+      "r2_ohms": 220,
+      "tt_scale": 1,
+      "edge_s": 1.5e-09,
+      "settle_s": 0.0001,
+      "periods": 40.23,
+      "script_sha256": "c6de141fa0d20aad5455ceb8c967abd68a3fb48ceea01331e8450ab09bfcc633",
+      "duration_s": 0.00029364963503649636,
+      "v_min": 0.08262164213927489,
+      "v_max": 3.197584010538693,
+      "source_peak_mA": 29.724443169448982,
+      "source_sink_peak_mA": 29.497330160312796,
+      "source_rail_equivalent_mA": 1.8063627936313393,
+      "time_above_2V_fraction": 0.4999379486442542,
+      "time_below_0p8V_fraction": 0.4998165678543166,
+      "runtime_s": 1.2065932499826886,
+      "timestep_max_s": 1e-09,
+      "rise_20_80_ns": 1.8295277164981707,
+      "fall_80_20_ns": 1.7973202754112232,
+      "base_mean_V": 0.6892891498297229,
+      "c5_mean_V": 1.276180093015135,
+      "led_mean_mA": 1.7522545838943653,
+      "detector_positive_charge_mA": 1.6472094756707545,
+      "detector_peak_mA": 9.37555208313307,
+      "base_late_drift_mV": -6.336740576706745e-06,
+      "c5_late_drift_mV": -5.538242708880148e-05,
+      "state_end_V": [
+        1.4092799250441725,
+        0.7415777088301724
+      ],
+      "state_drift_V": [
+        -5.7841778255962595e-08,
+        4.674291731454616e-09
+      ]
+    }
+  ]
+}

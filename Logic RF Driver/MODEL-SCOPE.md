@@ -1,6 +1,6 @@
 # Model scope
 
-The comparison models the SN74LVC2T45 output stage and Samsung C4. It uses ideal supply rails, so the selected bypass capacitors and the physical supply wiring are outside the calculation.
+The comparison models the SN74LVC2T45 output stage and Samsung C4. The RF_RAW indicator branch connects through 220 ohms. Its loading, LED current, and detector behavior are outside that output-stage model. The separate [input-loading study](INPUT-LOADING.md) evaluates the detector with an illustrative source and LED. It uses ideal supply rails, so the selected bypass capacitors and the physical supply wiring are outside the calculation.
 
 | Item | Selected part | Model coverage |
 | --- | --- | --- |
@@ -15,4 +15,8 @@ The [comparison](COMPARISON.md) has 78 accepted logic and resistor-fed BS170 cas
 
 Matching nominal resistance, capacitance, dielectric, and package size does not make two parts' physical impedance or bias behavior identical. Nor does a higher voltage rating, by itself, make a capacitor a better VHF bypass. The ideal rails and incomplete supply-current model leave the bypass network's effect on output power unanswered.
 
-The [manifest](docs/comparison-samsung-manifest.json) records ten source and script hashes and 65 amplifier-deck hashes; the saved files match those records. The [verification data](docs/simulation-samsung-verification.json) include numerical checks and failures. This identifies the inputs and the solver's consistency, not the devices' accuracy or the board's RF and thermal performance.
+The [manifest](docs/comparison-samsung-manifest.json) records ten source and script hashes and 65 amplifier-deck hashes; the source files match those records. The [verification data](docs/simulation-samsung-verification.json) include numerical checks and failures. This identifies the inputs and the solver's consistency, not the devices' accuracy or the board's RF and thermal performance.
+
+The [parts and procurement page](LCSC-PARTS.md) lists the selected indicator parts. The separate detector study uses Diodes Incorporated models and an illustrative LED; it does not exactly simulate the selected Nexperia BAT54S, CJ MMBT3904, and KENTO KT-0603R.
+
+C6 sits beside D1 with a short cathode connection and a local ground via. The detector model uses lumped capacitors and omits extracted routing inductance; it does not assign a measured VHF benefit to the placement.

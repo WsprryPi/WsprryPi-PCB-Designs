@@ -1,0 +1,81 @@
+{
+  "erc": {
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "ignored_checks": [
+      {
+        "description": "Global label only appears once in the schematic",
+        "key": "single_global_label"
+      },
+      {
+        "description": "Four connection points are joined together",
+        "key": "four_way_junction"
+      },
+      {
+        "description": "SPICE model issue",
+        "key": "simulation_model_issue"
+      },
+      {
+        "description": "Assigned footprint doesn't match footprint filters",
+        "key": "footprint_filter"
+      }
+    ],
+    "included_severities": [
+      "error",
+      "warning",
+      "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+      {
+        "path": "/",
+        "uuid_path": "/352defa3-d745-4ba9-87b4-4917a4a2b4c3",
+        "violations": []
+      }
+    ],
+    "source": "Logic RF Driver.kicad_sch"
+  },
+  "drc": {
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "ignored_checks": [
+      {
+        "description": "Footprint has no courtyard defined",
+        "key": "missing_courtyard"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      },
+      {
+        "description": "Footprint component type doesn't match footprint pads",
+        "key": "footprint_type_mismatch"
+      }
+    ],
+    "included_severities": [
+      "error",
+      "warning",
+      "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "Logic RF Driver.kicad_pcb",
+    "unconnected_items": [],
+    "violations": []
+  },
+  "source_sha256": {
+    "Logic RF Driver.kicad_sch": "fd7fc0bc08c70659f98ce216b8f4574ca59c09ba6a4382e06f079d4d72400bce",
+    "Logic RF Driver.kicad_pcb": "570d7f8de0f0d1f9503ab50bc54aed6d0de345fc699f8e82f0a0b3b8a8c7f5d0",
+    "Logic RF Driver.kicad_pro": "00adbd0dc3c31a9b9914b389bf21ac064877e766cbd677d1a08b9241c942ec69",
+    "BOM.csv": "181499d138288f283da9b05895c44aa9896ae7ac0d32e17c0f8ecc0842199857",
+    "libraries/SN74LVC2T45_Amp.kicad_sym": "6b79dbb7da318996c10b70822ee66eb7b179f6d1a09a91ba9349ed98b2fc8dd4"
+  }
+}

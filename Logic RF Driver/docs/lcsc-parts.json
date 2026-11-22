@@ -8,7 +8,8 @@
       "supplier_url": "https://www.lcsc.com/product-detail/C15741.html",
       "assembly_class": "Extended",
       "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C15741",
-      "jlc_url": "https://jlcpcb.com/partdetail/C15741"
+      "jlc_url": "https://jlcpcb.com/partdetail/C15741",
+      "jlc_stock_count": 53962
     },
     {
       "reference": "R1",
@@ -19,7 +20,8 @@
       "supplier_url": "https://www.lcsc.com/product-detail/C25804.html",
       "assembly_class": "Basic",
       "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C25804",
-      "jlc_url": "https://jlcpcb.com/partdetail/C25804"
+      "jlc_url": "https://jlcpcb.com/partdetail/C25804",
+      "jlc_stock_count": 42504788
     },
     {
       "reference": "C1",
@@ -32,7 +34,8 @@
       "Voltage": "50 V",
       "assembly_class": "Basic",
       "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C14663",
-      "jlc_url": "https://jlcpcb.com/partdetail/C14663"
+      "jlc_url": "https://jlcpcb.com/partdetail/C14663",
+      "jlc_stock_count": 53165414
     },
     {
       "reference": "C2",
@@ -45,7 +48,8 @@
       "Voltage": "50 V",
       "assembly_class": "Basic",
       "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C14663",
-      "jlc_url": "https://jlcpcb.com/partdetail/C14663"
+      "jlc_url": "https://jlcpcb.com/partdetail/C14663",
+      "jlc_stock_count": 53165414
     },
     {
       "reference": "C3",
@@ -59,7 +63,8 @@
       "Dielectric": "X5R",
       "assembly_class": "Basic",
       "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C15849",
-      "jlc_url": "https://jlcpcb.com/partdetail/C15849"
+      "jlc_url": "https://jlcpcb.com/partdetail/C15849",
+      "jlc_stock_count": 12229171
     },
     {
       "reference": "C4",
@@ -72,7 +77,148 @@
       "supplier_url": "https://www.lcsc.com/product-detail/C15849.html",
       "assembly_class": "Basic",
       "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C15849",
-      "jlc_url": "https://jlcpcb.com/partdetail/C15849"
+      "jlc_url": "https://jlcpcb.com/partdetail/C15849",
+      "jlc_stock_count": 12229171
+    },
+    {
+      "reference": "R2",
+      "Manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "MPN": "0603WAF2200T5E",
+      "LCSC": "C22962",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF2200T5E_C22962.pdf",
+      "Tolerance": "1%",
+      "Rating": "0.1 W",
+      "Voltage": "75 V",
+      "supplier_url": "https://www.lcsc.com/product-detail/C22962.html",
+      "assembly_class": "Basic",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C22962",
+      "jlc_url": "https://jlcpcb.com/partdetail/C22962",
+      "jlc_stock_count": 2317652
+    },
+    {
+      "reference": "R3",
+      "Manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "MPN": "0603WAF1004T5E",
+      "LCSC": "C22935",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1004T5E_C22935.pdf",
+      "Tolerance": "1%",
+      "Rating": "0.1 W",
+      "Voltage": "75 V",
+      "supplier_url": "https://www.lcsc.com/product-detail/C22935.html",
+      "assembly_class": "Basic",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C22935",
+      "jlc_url": "https://jlcpcb.com/partdetail/C22935",
+      "jlc_stock_count": 5656717
+    },
+    {
+      "reference": "R4",
+      "Manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "MPN": "0603WAF6800T5E",
+      "LCSC": "C23228",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF6800T5E_C23228.pdf",
+      "Tolerance": "1%",
+      "Rating": "0.1 W",
+      "Voltage": "75 V",
+      "supplier_url": "https://www.lcsc.com/product-detail/C23228.html",
+      "assembly_class": "Basic",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C23228",
+      "jlc_url": "https://jlcpcb.com/partdetail/C23228",
+      "jlc_stock_count": 1301911
+    },
+    {
+      "reference": "R5",
+      "Manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "MPN": "0603WAF6800T5E",
+      "LCSC": "C23228",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF6800T5E_C23228.pdf",
+      "Tolerance": "1%",
+      "Rating": "0.1 W",
+      "Voltage": "75 V",
+      "supplier_url": "https://www.lcsc.com/product-detail/C23228.html",
+      "assembly_class": "Basic",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C23228",
+      "jlc_url": "https://jlcpcb.com/partdetail/C23228",
+      "jlc_stock_count": 1301911
+    },
+    {
+      "reference": "C5",
+      "Manufacturer": "FH (Guangdong Fenghua Advanced Tech)",
+      "MPN": "0603B103K500NT",
+      "LCSC": "C57112",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0603B103K500NT_C57112.pdf",
+      "Tolerance": "10%",
+      "Voltage": "50 V",
+      "Dielectric": "X7R",
+      "supplier_url": "https://www.lcsc.com/product-detail/C57112.html",
+      "assembly_class": "Basic",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C57112",
+      "jlc_url": "https://jlcpcb.com/partdetail/C57112",
+      "jlc_stock_count": 4618632
+    },
+    {
+      "reference": "C6",
+      "Manufacturer": "FH (Guangdong Fenghua Advanced Tech)",
+      "MPN": "0603B103K500NT",
+      "LCSC": "C57112",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0603B103K500NT_C57112.pdf",
+      "Tolerance": "10%",
+      "Voltage": "50 V",
+      "Dielectric": "X7R",
+      "supplier_url": "https://www.lcsc.com/product-detail/C57112.html",
+      "assembly_class": "Basic",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C57112",
+      "jlc_url": "https://jlcpcb.com/partdetail/C57112",
+      "jlc_stock_count": 4618632
+    },
+    {
+      "reference": "D1",
+      "Manufacturer": "Nexperia",
+      "MPN": "BAT54S,215",
+      "LCSC": "C47546",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121943_Nexperia-BAT54S-215_C47546.pdf",
+      "supplier_url": "https://www.lcsc.com/product-detail/C47546.html",
+      "assembly_class": "Extended",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C47546",
+      "jlc_url": "https://jlcpcb.com/partdetail/C47546",
+      "jlc_stock_count": 429437
+    },
+    {
+      "reference": "D2",
+      "Manufacturer": "Hubei KENTO Elec",
+      "MPN": "KT-0603R",
+      "LCSC": "C2286",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf",
+      "Color": "Red",
+      "supplier_url": "https://www.lcsc.com/product-detail/C2286.html",
+      "assembly_class": "Basic",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C2286",
+      "jlc_url": "https://jlcpcb.com/partdetail/C2286",
+      "jlc_stock_count": 8402771
+    },
+    {
+      "reference": "D3",
+      "Manufacturer": "Hubei KENTO Elec",
+      "MPN": "KT-0603R",
+      "LCSC": "C2286",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf",
+      "Color": "Red",
+      "supplier_url": "https://www.lcsc.com/product-detail/C2286.html",
+      "assembly_class": "Basic",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C2286",
+      "jlc_url": "https://jlcpcb.com/partdetail/C2286",
+      "jlc_stock_count": 8402771
+    },
+    {
+      "reference": "Q1",
+      "Manufacturer": "Jiangsu Changjing Electronics Technology Co., Ltd.",
+      "MPN": "MMBT3904(RANGE:100-300)",
+      "LCSC": "C20526",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2207041900_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--MMBT3904-RANGE-100-300_C20526.pdf",
+      "supplier_url": "https://www.lcsc.com/product-detail/C20526.html",
+      "assembly_class": "Basic",
+      "jlc_detail_api": "https://jlcpcb.com/api/overseas-pcb-order/v1/smtComponentShopCart/getComponentDetail?componentCode=C20526",
+      "jlc_url": "https://jlcpcb.com/partdetail/C20526",
+      "jlc_stock_count": 4177051
     }
   ],
   "connectors_excluded": [
@@ -80,5 +226,5 @@
     "J2",
     "J3"
   ],
-  "selection_scope": "U1 is TI SN74LVC2T45DCUR / C15741, Extended. R1 is UNI-ROYAL C25804, Basic. C1/C2 are YAGEO C14663, Basic. C3/C4 are Samsung C15849, Basic. J1/J2/J3 are excluded from the BOM. JLCPCB assembly inventory and LCSC storefront inventory are separate."
+  "selection_scope": "All sixteen BOM positions have selected ordering codes. U1 and D1 are Extended; the other fourteen positions are Basic. J1/J2/J3 are excluded from the BOM. JLCPCB assembly inventory and LCSC storefront inventory are separate."
 }

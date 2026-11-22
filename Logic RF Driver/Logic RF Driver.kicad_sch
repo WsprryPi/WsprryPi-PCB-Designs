@@ -12,6 +12,483 @@
 		(comment 1 "${SCHEMATIC_STATUS}")
 	)
 	(lib_symbols
+		(symbol "SN74LVC2T45_Amp:+3V3"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SN74LVC2T45_Amp:BAT54S"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 2.54 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BAT54S"
+				(at -6.35 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "SN74LVC2T45_Amp:SOT-23"
+				(at 1.905 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds11005.pdf"
+				(at -3.048 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "schottky diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BAT54S_0_1"
+				(polyline
+					(pts
+						(xy -4.445 1.27) (xy -4.445 -1.27) (xy -2.54 0) (xy -4.445 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 -1.27) (xy -3.175 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -1.905 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -3.175 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 1.27) (xy -1.905 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0) (xy 1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 1.27) (xy 1.905 -1.27) (xy 3.81 0) (xy 1.905 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 -1.27) (xy 3.175 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.27) (xy 4.445 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.27) (xy 3.175 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.27) (xy 3.81 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.445 1.27) (xy 4.445 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BAT54S_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 5.08)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "SN74LVC2T45_Amp:C"
 			(pin_numbers
 				(hide yes)
@@ -149,6 +626,162 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SN74LVC2T45_Amp:C_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "SN74LVC2T45_Amp:C_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
 					(name ""
 						(effects
 							(font
@@ -645,6 +1278,450 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SN74LVC2T45_Amp:LED_KT0603R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "SN74LVC2T45_Amp:LED_KT0603R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "KENTO KT-0603R red LED; terminal 1 anode, terminal 2 cathode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=A 2=K"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_KT0603R_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_KT0603R_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SN74LVC2T45_Amp:MMBT3904"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MMBT3904"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "SN74LVC2T45_Amp:SOT-23"
+				(at 5.08 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "NPN"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=B 2=E 3=C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "NPN Transistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MMBT3904_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MMBT3904_1_1"
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1349,7 +2426,7 @@
 	)
 	(text "${SCHEMATIC_HEADING}"
 		(exclude_from_sim no)
-		(at 110.998 51.816 0)
+		(at 39.878 54.356 0)
 		(effects
 			(font
 				(size 2 2)
@@ -1360,7 +2437,7 @@
 	)
 	(text "${POWER_CONNECTION_NOTE}"
 		(exclude_from_sim no)
-		(at 110.998 59.436 0)
+		(at 39.878 61.976 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1370,62 +2447,86 @@
 		(uuid "f7933dbe-b86f-49d2-b439-c69b3d112c41")
 	)
 	(junction
-		(at 123.19 116.84)
+		(at 52.07 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "093c211b-f7ac-40d1-8d7d-91a666278001")
 	)
 	(junction
-		(at 158.75 101.6)
+		(at 205.74 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f69d3e5-e308-4450-9640-7565e2180490")
+	)
+	(junction
+		(at 87.63 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "309411ab-6d8c-4422-951f-adc7cb322b44")
 	)
 	(junction
-		(at 143.51 101.6)
+		(at 72.39 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3e2b950c-9157-46bf-bde3-b28312c52b8b")
 	)
 	(junction
-		(at 123.19 77.47)
+		(at 52.07 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4920795f-8b7f-480f-8265-73a2a8a03030")
 	)
 	(junction
-		(at 129.54 91.44)
+		(at 58.42 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b888c0e-c76a-4641-811f-c8fc0b12de71")
 	)
 	(junction
-		(at 134.62 116.84)
+		(at 226.06 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65b12321-7004-49d5-8185-32be642b7405")
+	)
+	(junction
+		(at 251.46 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71435b22-5bf2-4340-bdd6-0fe498eb97a2")
+	)
+	(junction
+		(at 205.74 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "72ae8b3f-6078-4937-9c3e-9a4bd77cbc5a")
+	)
+	(junction
+		(at 63.5 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "759e531e-0308-4e3e-abf1-a770c45fd0e4")
 	)
 	(junction
-		(at 157.48 116.84)
+		(at 86.36 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7cddd06c-7ccf-4b3f-ac6b-82009f7bb13a")
 	)
 	(junction
-		(at 148.59 101.6)
+		(at 77.47 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a53010a4-298d-4cf2-a6e9-2646381abbd6")
 	)
 	(junction
-		(at 148.59 91.44)
+		(at 77.47 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e379fb6c-4dd2-49cd-81a0-3ebaf1124cfc")
 	)
 	(wire
 		(pts
-			(xy 185.42 121.92) (xy 185.42 123.19)
+			(xy 114.3 124.46) (xy 114.3 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1435,7 +2536,17 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 104.14) (xy 148.59 101.6)
+			(xy 212.09 99.06) (xy 205.74 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cd83c82-ec10-4a99-aead-dc64184f5e54")
+	)
+	(wire
+		(pts
+			(xy 77.47 106.68) (xy 77.47 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1445,7 +2556,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 114.3) (xy 134.62 116.84)
+			(xy 63.5 116.84) (xy 63.5 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1455,7 +2566,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 101.6) (xy 133.35 102.87)
+			(xy 62.23 104.14) (xy 62.23 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1465,7 +2576,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 101.6) (xy 157.48 101.6)
+			(xy 87.63 104.14) (xy 86.36 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1475,7 +2586,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 91.44) (xy 158.75 101.6)
+			(xy 87.63 93.98) (xy 87.63 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1485,7 +2596,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 114.3) (xy 157.48 116.84)
+			(xy 86.36 116.84) (xy 86.36 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1495,7 +2606,17 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 124.46) (xy 129.54 124.46)
+			(xy 219.71 124.46) (xy 226.06 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2483d2cb-651d-4ba6-b9e6-c620b4d16081")
+	)
+	(wire
+		(pts
+			(xy 64.77 127) (xy 58.42 127)
 		)
 		(stroke
 			(width 0)
@@ -1505,7 +2626,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 116.84) (xy 123.19 116.84)
+			(xy 45.72 119.38) (xy 52.07 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1515,7 +2636,17 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 114.3) (xy 157.48 114.3)
+			(xy 251.46 95.25) (xy 251.46 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "352ae54a-509f-4c74-9afe-ca8fd4d8459f")
+	)
+	(wire
+		(pts
+			(xy 85.09 116.84) (xy 86.36 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1525,7 +2656,27 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 116.84) (xy 157.48 119.38)
+			(xy 251.46 93.98) (xy 259.08 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37042dd0-7ca6-4ce4-83df-0d2b722023de")
+	)
+	(wire
+		(pts
+			(xy 217.17 111.76) (xy 226.06 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39cbb517-e11d-4ccf-b12a-808dbf887aa1")
+	)
+	(wire
+		(pts
+			(xy 86.36 119.38) (xy 86.36 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1535,7 +2686,17 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 72.39) (xy 123.19 72.39)
+			(xy 251.46 111.76) (xy 251.46 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f6630b3-04c0-471a-baa3-705b42cc913b")
+	)
+	(wire
+		(pts
+			(xy 45.72 74.93) (xy 52.07 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1545,7 +2706,27 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 116.84) (xy 180.34 116.84)
+			(xy 219.71 93.98) (xy 226.06 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4535ca87-93ce-4510-9078-fc5ed4b53ae2")
+	)
+	(wire
+		(pts
+			(xy 233.68 93.98) (xy 242.57 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52b46f8c-7079-4526-8a1a-f67eec14a944")
+	)
+	(wire
+		(pts
+			(xy 101.6 119.38) (xy 109.22 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1555,7 +2736,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 104.14) (xy 143.51 101.6)
+			(xy 72.39 106.68) (xy 72.39 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1565,7 +2746,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 91.44) (xy 149.86 91.44)
+			(xy 77.47 93.98) (xy 78.74 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1575,7 +2756,17 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 74.93) (xy 123.19 74.93)
+			(xy 259.08 81.28) (xy 259.08 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68319c49-87ea-4040-abb4-a761a2d051e7")
+	)
+	(wire
+		(pts
+			(xy 45.72 77.47) (xy 52.07 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1585,7 +2776,27 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 101.6) (xy 148.59 101.6)
+			(xy 191.77 110.49) (xy 191.77 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75dbf08a-f5f3-4472-8adf-f1871440c884")
+	)
+	(wire
+		(pts
+			(xy 177.8 101.6) (xy 177.8 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ccf52e1-c462-494c-9844-5aaa3c8d62d6")
+	)
+	(wire
+		(pts
+			(xy 78.74 104.14) (xy 77.47 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1595,7 +2806,17 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 119.38) (xy 135.89 119.38)
+			(xy 191.77 110.49) (xy 185.42 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "815e625a-88bc-46ca-9f45-ae71fc34d4dd")
+	)
+	(wire
+		(pts
+			(xy 63.5 121.92) (xy 64.77 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1605,7 +2826,17 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 91.44) (xy 143.51 91.44)
+			(xy 205.74 111.76) (xy 212.09 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86edc3d8-0bfa-45e7-b888-74c487a7a50f")
+	)
+	(wire
+		(pts
+			(xy 58.42 93.98) (xy 72.39 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1615,7 +2846,17 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 116.84) (xy 134.62 116.84)
+			(xy 226.06 130.81) (xy 226.06 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93f638da-7161-4fcb-8bc8-61f3ef781fb7")
+	)
+	(wire
+		(pts
+			(xy 52.07 119.38) (xy 63.5 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1625,7 +2866,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 101.6) (xy 133.35 101.6)
+			(xy 63.5 104.14) (xy 62.23 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1635,7 +2876,17 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 86.36) (xy 148.59 91.44)
+			(xy 177.8 99.06) (xy 184.15 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9853f61e-e5d8-4ad1-9bfb-d2eaf3ead11e")
+	)
+	(wire
+		(pts
+			(xy 77.47 88.9) (xy 77.47 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1645,7 +2896,17 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 101.6) (xy 142.24 101.6)
+			(xy 205.74 124.46) (xy 212.09 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a107a11c-171f-401e-b83f-a4e6a840c378")
+	)
+	(wire
+		(pts
+			(xy 72.39 104.14) (xy 71.12 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1655,7 +2916,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 91.44) (xy 158.75 91.44)
+			(xy 86.36 93.98) (xy 87.63 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1665,7 +2926,17 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 118.11) (xy 123.19 116.84)
+			(xy 250.19 93.98) (xy 251.46 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa511daa-3bd5-4edf-b067-a2703c01e8ba")
+	)
+	(wire
+		(pts
+			(xy 52.07 120.65) (xy 52.07 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1675,7 +2946,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 116.84) (xy 134.62 119.38)
+			(xy 63.5 119.38) (xy 63.5 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1685,7 +2956,17 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 114.3) (xy 134.62 114.3)
+			(xy 205.74 111.76) (xy 205.74 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b61aa9a1-a294-415a-8e28-65e1c5457eb7")
+	)
+	(wire
+		(pts
+			(xy 64.77 116.84) (xy 63.5 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1695,7 +2976,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 101.6) (xy 158.75 102.87)
+			(xy 87.63 104.14) (xy 87.63 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1705,7 +2986,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 77.47) (xy 123.19 78.74)
+			(xy 52.07 80.01) (xy 52.07 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1715,7 +2996,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 77.47) (xy 123.19 77.47)
+			(xy 45.72 80.01) (xy 52.07 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1725,7 +3006,17 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 124.46) (xy 129.54 91.44)
+			(xy 173.99 110.49) (xy 180.34 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c908afd6-1b25-47ec-b279-da74f0fe0aa8")
+	)
+	(wire
+		(pts
+			(xy 58.42 127) (xy 58.42 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1735,7 +3026,17 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 101.6) (xy 143.51 91.44)
+			(xy 199.39 99.06) (xy 205.74 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d635f2b9-9e74-4efd-afea-c6157cba175c")
+	)
+	(wire
+		(pts
+			(xy 72.39 104.14) (xy 72.39 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1745,7 +3046,17 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 121.92) (xy 111.76 123.19)
+			(xy 205.74 99.06) (xy 205.74 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc03ce08-487d-421f-9544-fcd5ca612d56")
+	)
+	(wire
+		(pts
+			(xy 40.64 124.46) (xy 40.64 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1755,7 +3066,17 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 86.36) (xy 129.54 91.44)
+			(xy 158.75 110.49) (xy 166.37 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4b89a4a-2aad-43bc-a17e-9aaee5add532")
+	)
+	(wire
+		(pts
+			(xy 58.42 88.9) (xy 58.42 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1765,7 +3086,17 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 101.6) (xy 148.59 91.44)
+			(xy 251.46 102.87) (xy 251.46 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef56d3d3-29a1-48d0-9fed-0bb9bacaa001")
+	)
+	(wire
+		(pts
+			(xy 77.47 104.14) (xy 77.47 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1775,7 +3106,17 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 119.38) (xy 156.21 119.38)
+			(xy 226.06 111.76) (xy 226.06 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f47acebc-fcf1-459b-96d9-ad9d06ef0b87")
+	)
+	(wire
+		(pts
+			(xy 86.36 121.92) (xy 85.09 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1785,7 +3126,17 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 116.84) (xy 165.1 116.84)
+			(xy 232.41 110.49) (xy 232.41 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8d1c2d8-94ef-4fb4-835b-d0c867acc1c4")
+	)
+	(wire
+		(pts
+			(xy 86.36 119.38) (xy 93.98 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1795,7 +3146,17 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 125.73) (xy 123.19 127)
+			(xy 219.71 104.14) (xy 232.41 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb8ff2af-d971-47cd-88ba-3c93f759d532")
+	)
+	(wire
+		(pts
+			(xy 52.07 128.27) (xy 52.07 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1805,7 +3166,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 129.54) (xy 146.05 130.81)
+			(xy 74.93 132.08) (xy 74.93 133.35)
 		)
 		(stroke
 			(width 0)
@@ -1814,7 +3175,7 @@
 		(uuid "fcf531ed-63d2-4112-9339-ef22b5b23474")
 	)
 	(label "+5V"
-		(at 121.92 74.93 180)
+		(at 50.8 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1824,7 +3185,7 @@
 		(uuid "00babecf-4b82-47aa-b68b-9361371da4e9")
 	)
 	(label "RF_OUT"
-		(at 180.34 116.84 180)
+		(at 109.22 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1834,7 +3195,7 @@
 		(uuid "2f4a4030-e34d-43a5-917c-1f1304c17e0e")
 	)
 	(label "+3V3"
-		(at 121.92 72.39 180)
+		(at 50.8 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1844,7 +3205,7 @@
 		(uuid "4ee5410a-a86c-450f-930c-9e029ec9915a")
 	)
 	(label "CLK_IN"
-		(at 123.19 116.84 180)
+		(at 52.07 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1854,7 +3215,7 @@
 		(uuid "5880bdd7-be55-42e5-8625-52a8673bf570")
 	)
 	(label "+3V3"
-		(at 129.54 86.36 0)
+		(at 58.42 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1864,7 +3225,7 @@
 		(uuid "7dcfcbbc-9833-4f4f-848f-90b29abd2ae4")
 	)
 	(label "RF_RAW"
-		(at 165.1 116.84 180)
+		(at 93.98 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1873,8 +3234,18 @@
 		)
 		(uuid "c15c8ce7-f927-493a-a292-0613edc0e606")
 	)
+	(label "RF_RAW"
+		(at 158.75 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f21fa5e9-ad6d-4634-a016-985ad9993770")
+	)
 	(label "+5V"
-		(at 148.59 86.36 0)
+		(at 77.47 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1885,7 +3256,7 @@
 	)
 	(symbol
 		(lib_id "SN74LVC2T45_Amp:Conn_Coaxial")
-		(at 111.76 116.84 0)
+		(at 40.64 119.38 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -1896,7 +3267,7 @@
 		(dnp no)
 		(uuid "0b90f44e-7fdd-42e8-8236-48154f37937c")
 		(property "Reference" "J1"
-			(at 111.76 109.22 0)
+			(at 40.64 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1906,7 +3277,7 @@
 			)
 		)
 		(property "Value" "CLOCK IN"
-			(at 111.76 111.76 0)
+			(at 40.64 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1916,7 +3287,7 @@
 			)
 		)
 		(property "Footprint" "SN74LVC2T45_Amp:SMA_Amphenol_132289_EdgeMount"
-			(at 111.76 116.84 0)
+			(at 40.64 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1927,7 +3298,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 116.84 0)
+			(at 40.64 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1938,7 +3309,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 111.76 116.84 0)
+			(at 40.64 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1964,7 +3335,7 @@
 	)
 	(symbol
 		(lib_id "SN74LVC2T45_Amp:GND")
-		(at 185.42 123.19 0)
+		(at 114.3 125.73 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -1975,7 +3346,7 @@
 		(dnp no)
 		(uuid "119f755f-9389-4e2c-8015-1cf31ed148fd")
 		(property "Reference" "#PWR05"
-			(at 185.42 119.38 0)
+			(at 114.3 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1986,7 +3357,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 185.42 127 0)
+			(at 114.3 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1996,7 +3367,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 123.19 0)
+			(at 114.3 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2007,7 +3378,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 123.19 0)
+			(at 114.3 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2018,7 +3389,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 185.42 123.19 0)
+			(at 114.3 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2040,8 +3411,164 @@
 		)
 	)
 	(symbol
+		(lib_id "SN74LVC2T45_Amp:C_Small")
+		(at 214.63 111.76 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1fcfa78b-ea1d-42bf-8500-462e5cbeb918")
+		(property "Reference" "C6"
+			(at 214.63 106.426 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10 nF"
+			(at 214.63 108.966 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SN74LVC2T45_Amp:C_0603_1608Metric"
+			(at 214.63 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0603B103K500NT_C57112.pdf"
+			(at 214.63 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 214.63 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50 V"
+			(at 214.63 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 214.63 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Class" "Basic"
+			(at 214.63 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C57112"
+			(at 214.63 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603B103K500NT"
+			(at 214.63 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
+			(at 214.63 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 224.79 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c139cf28-13b8-423f-a51b-f6d7fb20725f")
+		)
+		(pin "1"
+			(uuid "1152b80d-9b23-466a-a5f6-f46cdf7a0979")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SN74LVC2T45_Amp:GND")
-		(at 158.75 102.87 0)
+		(at 87.63 105.41 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -2052,7 +3579,7 @@
 		(dnp no)
 		(uuid "23454658-71f6-43b3-9e32-0b73d47ac14a")
 		(property "Reference" "#PWR02"
-			(at 158.75 99.06 0)
+			(at 87.63 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2063,7 +3590,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 158.75 106.68 0)
+			(at 87.63 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2073,7 +3600,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 102.87 0)
+			(at 87.63 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2084,7 +3611,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 102.87 0)
+			(at 87.63 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2095,7 +3622,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 158.75 102.87 0)
+			(at 87.63 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2117,8 +3644,242 @@
 		)
 	)
 	(symbol
+		(lib_id "SN74LVC2T45_Amp:+3V3")
+		(at 259.08 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "24887f1e-7ead-46fb-bc4a-7dc82a1ea91d")
+		(property "Reference" "#PWR08"
+			(at 259.08 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 259.08 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 259.08 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3bcabf8-d6c6-44b2-8b0f-308b389acb8a")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SN74LVC2T45_Amp:MMBT3904")
+		(at 217.17 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "29843f7f-3575-4b5e-8e48-56dd01732794")
+		(property "Reference" "Q1"
+			(at 221.488 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBT3904"
+			(at 221.488 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SN74LVC2T45_Amp:SOT-23"
+			(at 222.25 100.965 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2207041900_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--MMBT3904-RANGE-100-300_C20526.pdf"
+			(at 217.17 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB Class" "Basic"
+			(at 217.17 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC" "C20526"
+			(at 217.17 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "MMBT3904(RANGE:100-300)"
+			(at 217.17 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Jiangsu Changjing Electronics Technology Co., Ltd."
+			(at 217.17 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"
+			(at 217.17 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 217.17 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 217.17 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "322d0206-513b-4b2b-b55e-d059cc4de03d")
+		)
+		(pin "2"
+			(uuid "9392f175-2170-47dd-891b-66f52e85a277")
+		)
+		(pin "1"
+			(uuid "1dd79ba1-89e2-42df-a7f5-d20cb87e26c8")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SN74LVC2T45_Amp:C")
-		(at 138.43 101.6 270)
+		(at 67.31 104.14 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2128,7 +3889,7 @@
 		(dnp no)
 		(uuid "2b1529a7-ed53-4a57-aedc-0f5f99ef56ba")
 		(property "Reference" "C1"
-			(at 138.43 98.298 90)
+			(at 67.31 100.838 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2138,7 +3899,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 138.43 104.902 90)
+			(at 67.31 107.442 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2148,7 +3909,7 @@
 			)
 		)
 		(property "Footprint" "SN74LVC2T45_Amp:C_0603_1608Metric"
-			(at 138.43 101.6 0)
+			(at 67.31 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2159,7 +3920,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
-			(at 138.43 101.6 0)
+			(at 67.31 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2170,7 +3931,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 138.43 101.6 0)
+			(at 67.31 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2180,7 +3941,7 @@
 			)
 		)
 		(property "Dielectric" "X7R"
-			(at 138.43 101.6 0)
+			(at 67.31 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2191,7 +3952,7 @@
 			)
 		)
 		(property "Voltage" "50 V"
-			(at 138.43 101.6 0)
+			(at 67.31 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2202,7 +3963,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 138.43 101.6 0)
+			(at 67.31 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2213,7 +3974,7 @@
 			)
 		)
 		(property "MPN" "CC0603KRX7R9BB104"
-			(at 138.43 101.6 0)
+			(at 67.31 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2224,7 +3985,7 @@
 			)
 		)
 		(property "LCSC" "C14663"
-			(at 138.43 101.6 0)
+			(at 67.31 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2235,7 +3996,7 @@
 			)
 		)
 		(property "Tolerance" "±10%"
-			(at 138.43 101.6 0)
+			(at 67.31 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2262,7 +4023,7 @@
 	)
 	(symbol
 		(lib_id "SN74LVC2T45_Amp:C")
-		(at 153.67 101.6 90)
+		(at 82.55 104.14 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2272,7 +4033,7 @@
 		(dnp no)
 		(uuid "3c50f5d0-292d-4eb6-a34d-5541303a696d")
 		(property "Reference" "C2"
-			(at 153.67 98.298 90)
+			(at 82.55 100.838 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2282,7 +4043,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 153.924 104.902 90)
+			(at 82.804 107.442 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2292,7 +4053,7 @@
 			)
 		)
 		(property "Footprint" "SN74LVC2T45_Amp:C_0603_1608Metric"
-			(at 153.67 101.6 0)
+			(at 82.55 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2303,7 +4064,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
-			(at 153.67 101.6 0)
+			(at 82.55 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2314,7 +4075,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 153.67 101.6 0)
+			(at 82.55 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2324,7 +4085,7 @@
 			)
 		)
 		(property "Dielectric" "X7R"
-			(at 153.67 101.6 0)
+			(at 82.55 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2335,7 +4096,7 @@
 			)
 		)
 		(property "Voltage" "50 V"
-			(at 153.67 101.6 0)
+			(at 82.55 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2346,7 +4107,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 153.67 101.6 0)
+			(at 82.55 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2357,7 +4118,7 @@
 			)
 		)
 		(property "MPN" "CC0603KRX7R9BB104"
-			(at 153.67 101.6 0)
+			(at 82.55 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2368,7 +4129,7 @@
 			)
 		)
 		(property "LCSC" "C14663"
-			(at 153.67 101.6 0)
+			(at 82.55 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2379,7 +4140,7 @@
 			)
 		)
 		(property "Tolerance" "±10%"
-			(at 153.67 101.6 0)
+			(at 82.55 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2405,8 +4166,291 @@
 		)
 	)
 	(symbol
+		(lib_id "SN74LVC2T45_Amp:BAT54S")
+		(at 191.77 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3cccf01b-f670-4efb-a164-bc0bf4da922a")
+		(property "Reference" "D1"
+			(at 191.77 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BAT54S"
+			(at 191.77 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SN74LVC2T45_Amp:SOT-23"
+			(at 193.675 95.885 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121943_Nexperia-BAT54S-215_C47546.pdf"
+			(at 188.722 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Class" "Extended"
+			(at 188.722 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C47546"
+			(at 188.722 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BAT54S,215"
+			(at 188.722 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 188.722 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323"
+			(at 191.77 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0883160c-ffe9-42da-afb5-16ebbd5ac79f")
+		)
+		(pin "3"
+			(uuid "a3644a1b-0f66-4973-8669-2486d627a429")
+		)
+		(pin "1"
+			(uuid "b0ac4b3e-e7f8-44fb-9159-b79dc954a8e8")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SN74LVC2T45_Amp:R_US")
+		(at 251.46 99.06 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3fdec5fe-2b34-4f14-bb82-8fb832102f7f")
+		(property "Reference" "R5"
+			(at 249.174 98.298 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "680 Ω"
+			(at 255.778 101.092 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SN74LVC2T45_Amp:R_0603_1608Metric"
+			(at 250.444 98.806 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF6800T5E_C23228.pdf"
+			(at 251.46 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "75 V"
+			(at 251.46 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "0.1 W"
+			(at 251.46 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 251.46 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Class" "Basic"
+			(at 251.46 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23228"
+			(at 251.46 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF6800T5E"
+			(at 251.46 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 251.46 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 251.46 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "27fb8df8-f26e-464e-afe6-1c92819a2f21")
+		)
+		(pin "1"
+			(uuid "7158c8f1-d5b9-4fdd-bd0f-fd8f0902fdab")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SN74LVC2T45_Amp:Conn_Coaxial")
-		(at 185.42 116.84 0)
+		(at 114.3 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2416,7 +4460,7 @@
 		(dnp no)
 		(uuid "476cb4d7-1b82-4489-b4a7-9523acd43d14")
 		(property "Reference" "J3"
-			(at 185.42 109.22 0)
+			(at 114.3 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2426,7 +4470,7 @@
 			)
 		)
 		(property "Value" "RF TO LPF"
-			(at 185.42 111.76 0)
+			(at 114.3 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2436,7 +4480,7 @@
 			)
 		)
 		(property "Footprint" "SN74LVC2T45_Amp:SMA_Amphenol_132289_EdgeMount"
-			(at 185.42 116.84 0)
+			(at 114.3 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2447,7 +4491,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 116.84 0)
+			(at 114.3 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2458,7 +4502,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 185.42 116.84 0)
+			(at 114.3 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2484,7 +4528,7 @@
 	)
 	(symbol
 		(lib_id "SN74LVC2T45_Amp:Conn_01x03")
-		(at 111.76 74.93 0)
+		(at 40.64 77.47 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -2495,7 +4539,7 @@
 		(dnp no)
 		(uuid "4d7cdbd0-cd9c-4eca-b482-4f0cc2ccdc48")
 		(property "Reference" "J2"
-			(at 111.76 67.31 0)
+			(at 40.64 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2505,7 +4549,7 @@
 			)
 		)
 		(property "Value" "POWER"
-			(at 111.76 69.85 0)
+			(at 40.64 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2515,7 +4559,7 @@
 			)
 		)
 		(property "Footprint" "SN74LVC2T45_Amp:PinHeader_1x03_P2.54mm_Vertical"
-			(at 111.76 74.93 0)
+			(at 40.64 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2526,7 +4570,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 74.93 0)
+			(at 40.64 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2537,7 +4581,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 111.76 74.93 0)
+			(at 40.64 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2565,8 +4609,164 @@
 		)
 	)
 	(symbol
+		(lib_id "SN74LVC2T45_Amp:R_US")
+		(at 246.38 93.98 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4d90a436-835b-418c-812d-4b4cd4b15720")
+		(property "Reference" "R4"
+			(at 246.38 88.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "680 Ω"
+			(at 246.38 91.44 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SN74LVC2T45_Amp:R_0603_1608Metric"
+			(at 246.634 92.964 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF6800T5E_C23228.pdf"
+			(at 246.38 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "75 V"
+			(at 246.38 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "0.1 W"
+			(at 246.38 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 246.38 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Class" "Basic"
+			(at 246.38 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23228"
+			(at 246.38 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF6800T5E"
+			(at 246.38 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 246.38 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 246.38 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8e5c165c-383a-42d4-a8fd-597d807c57fb")
+		)
+		(pin "1"
+			(uuid "947b73d9-24da-47ba-81ac-2a500ec82eb8")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SN74LVC2T45_Amp:SN74LVC2T45DCUR")
-		(at 146.05 116.84 0)
+		(at 74.93 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2576,7 +4776,7 @@
 		(dnp no)
 		(uuid "4f9797eb-b4cb-46f7-8a8f-4eaf02494b6e")
 		(property "Reference" "U1"
-			(at 145.288 116.586 0)
+			(at 74.168 119.126 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2586,7 +4786,7 @@
 			)
 		)
 		(property "Value" "SN74LVC2T45DCUR"
-			(at 156.464 129.032 0)
+			(at 85.344 131.572 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2596,7 +4796,7 @@
 			)
 		)
 		(property "Footprint" "SN74LVC2T45_Amp:VSSOP-8_2.3x2mm_P0.5mm"
-			(at 146.05 116.84 0)
+			(at 74.93 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2607,7 +4807,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf"
-			(at 146.05 116.84 0)
+			(at 74.93 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2618,7 +4818,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 146.05 116.84 0)
+			(at 74.93 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2628,7 +4828,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 146.05 116.84 0)
+			(at 74.93 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2639,7 +4839,7 @@
 			)
 		)
 		(property "MPN" "SN74LVC2T45DCUR"
-			(at 146.05 116.84 0)
+			(at 74.93 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2650,7 +4850,7 @@
 			)
 		)
 		(property "LCSC" "C15741"
-			(at 146.05 116.84 0)
+			(at 74.93 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2694,18 +4894,18 @@
 		)
 	)
 	(symbol
-		(lib_id "SN74LVC2T45_Amp:PWR_FLAG")
-		(at 123.19 77.47 0)
+		(lib_id "SN74LVC2T45_Amp:GND")
+		(at 226.06 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
+		(in_bom yes)
+		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "6d8e7f56-2022-48bb-a88f-78afee207624")
-		(property "Reference" "#FLG06"
-			(at 123.19 73.66 0)
+		(uuid "518ee3ee-fcd3-4abb-9d7b-d7896a37a58d")
+		(property "Reference" "#PWR011"
+			(at 226.06 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2715,9 +4915,8 @@
 				)
 			)
 		)
-		(property "Value" "PWR_FLAG"
-			(at 123.19 81.28 0)
-			(hide yes)
+		(property "Value" "GND"
+			(at 226.06 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2727,7 +4926,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 77.47 0)
+			(at 226.06 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2738,7 +4937,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 77.47 0)
+			(at 226.06 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 226.06 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0d6abd36-a384-4f09-ae96-57ffd0f468eb")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SN74LVC2T45_Amp:PWR_FLAG")
+		(at 52.07 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6d8e7f56-2022-48bb-a88f-78afee207624")
+		(property "Reference" "#FLG06"
+			(at 52.07 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 52.07 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2749,7 +5026,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 123.19 77.47 0)
+			(at 52.07 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2772,7 +5049,7 @@
 	)
 	(symbol
 		(lib_id "SN74LVC2T45_Amp:C")
-		(at 168.91 116.84 90)
+		(at 97.79 119.38 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2782,7 +5059,7 @@
 		(dnp no)
 		(uuid "82c3f84f-f7ef-4e38-9f4f-ff07077821d6")
 		(property "Reference" "C4"
-			(at 168.91 113.284 90)
+			(at 97.79 115.824 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2792,7 +5069,7 @@
 			)
 		)
 		(property "Value" "1μ"
-			(at 168.91 120.396 90)
+			(at 97.79 122.936 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2802,7 +5079,7 @@
 			)
 		)
 		(property "Footprint" "SN74LVC2T45_Amp:C_0603_1608Metric"
-			(at 168.91 116.84 0)
+			(at 97.79 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2813,7 +5090,7 @@
 			)
 		)
 		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A105KB8NNN.do"
-			(at 168.91 116.84 0)
+			(at 97.79 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2824,7 +5101,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 168.91 116.84 0)
+			(at 97.79 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2834,7 +5111,7 @@
 			)
 		)
 		(property "Dielectric" "X5R"
-			(at 168.91 116.84 0)
+			(at 97.79 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2845,7 +5122,7 @@
 			)
 		)
 		(property "Voltage" "50 V"
-			(at 168.91 116.84 0)
+			(at 97.79 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2856,7 +5133,7 @@
 			)
 		)
 		(property "Function" "RF DC block"
-			(at 168.91 116.84 0)
+			(at 97.79 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2867,7 +5144,7 @@
 			)
 		)
 		(property "LCSC" "C15849"
-			(at 168.91 116.84 0)
+			(at 97.79 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2878,7 +5155,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 168.91 116.84 0)
+			(at 97.79 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2889,7 +5166,7 @@
 			)
 		)
 		(property "MPN" "CL10A105KB8NNNC"
-			(at 168.91 116.84 0)
+			(at 97.79 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2900,7 +5177,7 @@
 			)
 		)
 		(property "Tolerance" "±10%"
-			(at 168.91 116.84 0)
+			(at 97.79 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2926,8 +5203,164 @@
 		)
 	)
 	(symbol
+		(lib_id "SN74LVC2T45_Amp:R_US")
+		(at 215.9 124.46 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8f6a80f4-5e93-408c-a130-e1335387bb13")
+		(property "Reference" "R3"
+			(at 215.9 119.38 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1 MΩ"
+			(at 215.9 121.92 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SN74LVC2T45_Amp:R_0603_1608Metric"
+			(at 216.154 123.444 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1004T5E_C22935.pdf"
+			(at 215.9 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "75 V"
+			(at 215.9 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "0.1 W"
+			(at 215.9 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 215.9 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Class" "Basic"
+			(at 215.9 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22935"
+			(at 215.9 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1004T5E"
+			(at 215.9 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 215.9 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 215.9 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a3d2ae28-c157-420a-950f-1c15c5ab0e4d")
+		)
+		(pin "1"
+			(uuid "13e9e6d7-8428-4260-86bc-bc8284dad56a")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SN74LVC2T45_Amp:PWR_FLAG")
-		(at 123.19 72.39 0)
+		(at 52.07 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2937,7 +5370,7 @@
 		(dnp no)
 		(uuid "9074d127-c30b-4a40-ad72-f11999a50e8c")
 		(property "Reference" "#FLG04"
-			(at 123.19 68.58 0)
+			(at 52.07 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2948,7 +5381,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 123.19 76.2 0)
+			(at 52.07 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2959,7 +5392,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 72.39 0)
+			(at 52.07 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2970,7 +5403,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 72.39 0)
+			(at 52.07 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2981,7 +5414,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 123.19 72.39 0)
+			(at 52.07 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3003,8 +5436,153 @@
 		)
 	)
 	(symbol
+		(lib_id "SN74LVC2T45_Amp:LED_KT0603R")
+		(at 251.46 107.95 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9c161a2c-08fb-4fb6-9d59-3320772efa38")
+		(property "Reference" "D3"
+			(at 248.412 107.95 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 254.762 107.95 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SN74LVC2T45_Amp:LED_KT0603R"
+			(at 251.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf"
+			(at 251.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Color" "Red"
+			(at 251.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Class" "Basic"
+			(at 251.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2286"
+			(at 251.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "KT-0603R"
+			(at 251.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Hubei KENTO Elec"
+			(at 251.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 251.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 251.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3c0029b1-3c23-402d-a051-1467473d6f5d")
+		)
+		(pin "1"
+			(uuid "2442c37f-9745-4414-aeeb-f769b4dbfb8f")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SN74LVC2T45_Amp:GND")
-		(at 146.05 130.81 0)
+		(at 74.93 133.35 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3015,7 +5593,7 @@
 		(dnp no)
 		(uuid "9d81577f-1268-45db-bd08-fbf3bffebba6")
 		(property "Reference" "#PWR06"
-			(at 146.05 127 0)
+			(at 74.93 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3026,7 +5604,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 146.05 134.62 0)
+			(at 74.93 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3036,7 +5614,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 130.81 0)
+			(at 74.93 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3047,7 +5625,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 130.81 0)
+			(at 74.93 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3058,7 +5636,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 146.05 130.81 0)
+			(at 74.93 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3081,7 +5659,7 @@
 	)
 	(symbol
 		(lib_id "SN74LVC2T45_Amp:GND")
-		(at 133.35 102.87 0)
+		(at 62.23 105.41 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3092,7 +5670,7 @@
 		(dnp no)
 		(uuid "a4ce783b-aa13-4eb0-9d99-9eb4dfccca51")
 		(property "Reference" "#PWR03"
-			(at 133.35 99.06 0)
+			(at 62.23 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3103,7 +5681,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 133.35 106.68 0)
+			(at 62.23 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3113,7 +5691,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 102.87 0)
+			(at 62.23 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3124,7 +5702,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 102.87 0)
+			(at 62.23 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3135,7 +5713,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 133.35 102.87 0)
+			(at 62.23 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3158,7 +5736,7 @@
 	)
 	(symbol
 		(lib_id "SN74LVC2T45_Amp:PWR_FLAG")
-		(at 123.19 74.93 0)
+		(at 52.07 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3168,7 +5746,7 @@
 		(dnp no)
 		(uuid "b6fb3208-2cef-4293-997c-40b321a9399d")
 		(property "Reference" "#FLG05"
-			(at 123.19 71.12 0)
+			(at 52.07 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3179,7 +5757,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 123.19 78.74 0)
+			(at 52.07 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3190,7 +5768,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 74.93 0)
+			(at 52.07 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3201,7 +5779,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 74.93 0)
+			(at 52.07 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3212,7 +5790,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 123.19 74.93 0)
+			(at 52.07 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3235,7 +5813,7 @@
 	)
 	(symbol
 		(lib_id "SN74LVC2T45_Amp:GND")
-		(at 111.76 123.19 0)
+		(at 40.64 125.73 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3246,7 +5824,7 @@
 		(dnp no)
 		(uuid "b7df71e5-f57b-4da3-b2f8-709adc5d15c3")
 		(property "Reference" "#PWR04"
-			(at 111.76 119.38 0)
+			(at 40.64 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3257,7 +5835,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 111.76 127 0)
+			(at 40.64 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3267,7 +5845,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 123.19 0)
+			(at 40.64 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3278,7 +5856,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 123.19 0)
+			(at 40.64 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3289,7 +5867,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 111.76 123.19 0)
+			(at 40.64 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3311,8 +5889,164 @@
 		)
 	)
 	(symbol
+		(lib_id "SN74LVC2T45_Amp:C_Small")
+		(at 182.88 110.49 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b9a4f326-f45b-441c-a6c6-f7dd3e6af868")
+		(property "Reference" "C5"
+			(at 182.88 105.156 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10 nF"
+			(at 182.88 107.696 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SN74LVC2T45_Amp:C_0603_1608Metric"
+			(at 182.88 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0603B103K500NT_C57112.pdf"
+			(at 182.88 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 182.88 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50 V"
+			(at 182.88 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 182.88 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Class" "Basic"
+			(at 182.88 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C57112"
+			(at 182.88 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603B103K500NT"
+			(at 182.88 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
+			(at 182.88 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 193.04 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6dc9d3bb-1f76-4b8c-8c46-ba6f0b698271")
+		)
+		(pin "1"
+			(uuid "7ba49f1c-04ca-4518-b53f-1bb8d57f5340")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SN74LVC2T45_Amp:GND")
-		(at 123.19 127 0)
+		(at 52.07 129.54 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3323,7 +6057,7 @@
 		(dnp no)
 		(uuid "c464fee6-7957-4a06-8015-11a9527e4b02")
 		(property "Reference" "#PWR07"
-			(at 123.19 123.19 0)
+			(at 52.07 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3334,7 +6068,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 123.19 130.81 0)
+			(at 52.07 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3344,7 +6078,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 127 0)
+			(at 52.07 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3355,7 +6089,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 127 0)
+			(at 52.07 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3366,7 +6100,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 123.19 127 0)
+			(at 52.07 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3388,8 +6122,85 @@
 		)
 	)
 	(symbol
+		(lib_id "SN74LVC2T45_Amp:GND")
+		(at 232.41 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c78a68d7-a8f3-46de-9ab9-37545886bdae")
+		(property "Reference" "#PWR010"
+			(at 232.41 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 232.41 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fff8c73d-da2f-4d3e-b3a9-84d011631b61")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SN74LVC2T45_Amp:R_US")
-		(at 123.19 121.92 0)
+		(at 52.07 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3399,7 +6210,7 @@
 		(dnp no)
 		(uuid "d010d802-db91-4c14-af77-359b39d3d7ea")
 		(property "Reference" "R1"
-			(at 127 120.65 0)
+			(at 55.88 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3409,7 +6220,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 127 123.19 0)
+			(at 55.88 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3419,7 +6230,7 @@
 			)
 		)
 		(property "Footprint" "SN74LVC2T45_Amp:R_0603_1608Metric"
-			(at 123.19 121.92 0)
+			(at 52.07 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3430,7 +6241,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
-			(at 123.19 121.92 0)
+			(at 52.07 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3441,7 +6252,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 123.19 121.92 0)
+			(at 52.07 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3451,7 +6262,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 123.19 121.92 0)
+			(at 52.07 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3462,7 +6273,7 @@
 			)
 		)
 		(property "Rating" "0.1 W"
-			(at 123.19 121.92 0)
+			(at 52.07 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3473,7 +6284,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 123.19 121.92 0)
+			(at 52.07 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3484,7 +6295,7 @@
 			)
 		)
 		(property "MPN" "0603WAF1002T5E"
-			(at 123.19 121.92 0)
+			(at 52.07 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3495,7 +6306,7 @@
 			)
 		)
 		(property "LCSC" "C25804"
-			(at 123.19 121.92 0)
+			(at 52.07 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3521,8 +6332,153 @@
 		)
 	)
 	(symbol
+		(lib_id "SN74LVC2T45_Amp:LED_KT0603R")
+		(at 229.87 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d7b4d2e1-39e3-481c-9a6e-7fbc67cf068c")
+		(property "Reference" "D2"
+			(at 228.346 88.646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 228.346 91.186 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SN74LVC2T45_Amp:LED_KT0603R"
+			(at 229.87 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf"
+			(at 229.87 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Color" "Red"
+			(at 229.87 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Class" "Basic"
+			(at 229.87 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2286"
+			(at 229.87 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "KT-0603R"
+			(at 229.87 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Hubei KENTO Elec"
+			(at 229.87 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 229.87 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 229.87 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "51992eca-a699-4538-bc44-925d941dca45")
+		)
+		(pin "1"
+			(uuid "8f7d1720-f401-4815-b5cd-d6c74be01ac0")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SN74LVC2T45_Amp:C")
-		(at 153.67 91.44 90)
+		(at 82.55 93.98 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3532,7 +6488,7 @@
 		(dnp no)
 		(uuid "d7b8e858-6797-4bd4-b123-9ec8a7965dc4")
 		(property "Reference" "C3"
-			(at 153.67 88.138 90)
+			(at 82.55 90.678 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3542,7 +6498,7 @@
 			)
 		)
 		(property "Value" "1μ"
-			(at 153.67 94.742 90)
+			(at 82.55 97.282 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3552,7 +6508,7 @@
 			)
 		)
 		(property "Footprint" "SN74LVC2T45_Amp:C_0603_1608Metric"
-			(at 153.67 91.44 0)
+			(at 82.55 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3563,7 +6519,7 @@
 			)
 		)
 		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A105KB8NNN.do"
-			(at 153.67 91.44 0)
+			(at 82.55 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3574,7 +6530,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 153.67 91.44 0)
+			(at 82.55 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3584,7 +6540,7 @@
 			)
 		)
 		(property "Dielectric" "X5R"
-			(at 153.67 91.44 0)
+			(at 82.55 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3595,7 +6551,7 @@
 			)
 		)
 		(property "Voltage" "50 V"
-			(at 153.67 91.44 0)
+			(at 82.55 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3606,7 +6562,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 153.67 91.44 0)
+			(at 82.55 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3617,7 +6573,7 @@
 			)
 		)
 		(property "MPN" "CL10A105KB8NNNC"
-			(at 153.67 91.44 0)
+			(at 82.55 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3628,7 +6584,7 @@
 			)
 		)
 		(property "LCSC" "C15849"
-			(at 153.67 91.44 0)
+			(at 82.55 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3639,7 +6595,7 @@
 			)
 		)
 		(property "Tolerance" "±10%"
-			(at 153.67 91.44 0)
+			(at 82.55 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3666,7 +6622,7 @@
 	)
 	(symbol
 		(lib_id "SN74LVC2T45_Amp:GND")
-		(at 123.19 78.74 0)
+		(at 52.07 81.28 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3677,7 +6633,7 @@
 		(dnp no)
 		(uuid "e17e5575-f25e-469e-b3bd-daeeaec01d5d")
 		(property "Reference" "#PWR01"
-			(at 123.19 74.93 0)
+			(at 52.07 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3688,7 +6644,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 123.19 82.55 0)
+			(at 52.07 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3698,7 +6654,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 78.74 0)
+			(at 52.07 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3709,7 +6665,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 78.74 0)
+			(at 52.07 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3720,7 +6676,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 123.19 78.74 0)
+			(at 52.07 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3736,6 +6692,316 @@
 			(project "Logic RF Driver"
 				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SN74LVC2T45_Amp:R_US")
+		(at 170.18 110.49 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "efa88fb3-3433-42f2-9a1a-694c7f44a3eb")
+		(property "Reference" "R2"
+			(at 170.18 105.41 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220 Ω"
+			(at 170.18 107.95 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SN74LVC2T45_Amp:R_0603_1608Metric"
+			(at 170.434 109.474 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF2200T5E_C22962.pdf"
+			(at 170.18 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "75 V"
+			(at 170.18 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "0.1 W"
+			(at 170.18 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 170.18 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Class" "Basic"
+			(at 170.18 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22962"
+			(at 170.18 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF2200T5E"
+			(at 170.18 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 170.18 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 170.18 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9b9b5b34-e76e-497b-9e87-5c470a77273c")
+		)
+		(pin "2"
+			(uuid "613b09fc-c6a9-48db-b34c-67fc3e1d2937")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SN74LVC2T45_Amp:GND")
+		(at 177.8 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f0b1914e-4f4e-4fb0-b041-32a86e1058c1")
+		(property "Reference" "#PWR09"
+			(at 177.8 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45d0a70e-d403-4d84-896f-564c2f871365")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SN74LVC2T45_Amp:GND")
+		(at 251.46 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f4197c8c-7f53-4afe-899b-6d1f84e0a26e")
+		(property "Reference" "#PWR012"
+			(at 251.46 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 251.46 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 251.46 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "21d6af18-b311-4126-8377-6cbadf1baa81")
+		)
+		(instances
+			(project "Logic RF Driver"
+				(path "/352defa3-d745-4ba9-87b4-4917a4a2b4c3"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)

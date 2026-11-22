@@ -2,7 +2,7 @@
 
 C3 and C4 are **Samsung Electro-Mechanics CL10A105KB8NNNC / C15849**: 1 uF, 10%, 50 V, X5R, in 0603. C3 is the 5 V bulk bypass capacitor; C4 is the output DC block. The [product page](https://product.samsungsem.com/mlcc/CL10A105KB8NNN.do) lists the electrical family as CL10A105KB8NNN, with C as the packaging suffix. The X5R temperature range is -55 to +85 C.
 
-Samsung's model puts C4's impedance well below 50 ohms throughout 137 kHz–145 MHz. At 2.5 V bias, the endpoints are about 1.602 ohms and 0.1904 ohms. The largest calculated capacitor-only loss is 0.01145 dB for an ideal source feeding 50 ohms. This checks the reference data; it is not a measurement of the mounted part or a guaranteed production limit.
+Samsung's model puts C4's impedance well below 50 ohms from 137 kHz to 145 MHz. At 2.5 V bias, the endpoints are about 1.602 ohms and 0.1904 ohms. The largest calculated capacitor-only loss is 0.01145 dB for an ideal source feeding 50 ohms. This checks the reference data; it is not a measurement of the mounted part or a guaranteed production limit.
 
 ## Data and calculation
 
@@ -28,7 +28,7 @@ For a resistive load, X squared is the impedance magnitude squared minus ESR squ
 | 50 MHz | 0.081091 ohms |
 | 145 MHz | 0.19043 ohms |
 
-At 2.5 V bias, the impedance reaches about 0.0113 ohms near 8.26 MHz. Above resonance, the part is inductive, yet its impedance is still small compared with 50 ohms. That is enough for the resistive-load calculation; a reactive filter can interact with C4, so the figures are not a complete amplifier/filter response.
+At 2.5 V bias, the impedance reaches about 0.0113 ohms near 8.26 MHz. Above resonance, the part is inductive, yet its impedance is small compared with 50 ohms. That is enough for the resistive-load calculation; a reactive filter can interact with C4, so the figures are not a complete amplifier/filter response.
 
 ## Bias and limits
 
@@ -42,4 +42,4 @@ For an illustrative 45 mA RMS, the calculated RF voltage across C4 is about 72 m
 
 The available evidence has no biased S-parameter cross-check, worst-case temperature/tolerance/aging sweep, extracted-board model, or assembled-board RF measurement. The [amplifier comparison](COMPARISON.md) uses passive fits to these Samsung curves, with the coverage listed in [model scope](MODEL-SCOPE.md). C1/C2 bypassing is outside that amplifier model. See the [input/output coupling rationale](README.md#why-the-input-is-dc-coupled-and-c4-is-on-the-output).
 
-C15849 is a JLCPCB Basic part; see [ordering information](LCSC-PARTS.md). The manufacturer files stay local under their own terms. Project files contain derived results and source identities.
+C15849 is a JLCPCB Basic part; see [ordering information](LCSC-PARTS.md). The manufacturer files are local and subject to their own terms. Project files contain derived results and source identities.
