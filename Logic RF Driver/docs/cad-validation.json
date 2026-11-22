@@ -64,5 +64,12 @@
     "mismatches": [],
     "positive_control_detected": true,
     "positive_control_scope": "J2 pad-size change in memory only; saved design untouched"
+  },
+  "pcb_warning_check_severities": {
+    "missing_courtyard": "warning",
+    "track_not_centered_on_via": "warning",
+    "tuning_profile_track_geometries": "warning",
+    "footprint_filters_mismatch": "warning",
+    "footprint_type_mismatch": "warning"
   }
 }

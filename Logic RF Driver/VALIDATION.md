@@ -15,7 +15,7 @@ The schematic passes the configured electrical checks. The saved PCB has filled 
 | Project text variables | Sixteen definitions in the project file |
 | Visual inspection | J1/J3 edge registration, signal fanouts, front/back ground lands, schematic, and local connector envelopes |
 
-The [CAD check record](docs/cad-validation.json) contains ERC and DRC results, ignored check categories, and source-file hashes. Its reports include error, warning, and exclusion severities for the enabled check categories. The [library manifest](libraries/MANIFEST.json) identifies local symbols, footprints, and models.
+The [CAD check record](docs/cad-validation.json) contains ERC and DRC results, the five configured PCB warning severities, ignored schematic check categories, and source-file hashes. Its reports include error, warning, and exclusion severities for the enabled check categories. The [library manifest](libraries/MANIFEST.json) identifies local symbols, footprints, and models.
 
 ## Check configuration
 
