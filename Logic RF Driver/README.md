@@ -48,7 +48,7 @@ The output capacitor has a different job: C4 removes the waveform's average volt
 | D2/D3 | KT-0603R / C2286 | Red LED; 0603 | Basic |
 | Q1 | MMBT3904(RANGE:100-300) / C20526 | NPN; 40 V; 200 mA; SOT-23 | Basic |
 
-The sixteen-component [BOM](BOM.csv) covers U1, Q1, R1-R5, C1-C6, and D1-D3. Every assembly position has a selected ordering code. D2 indicates driver-output activity, and D3 indicates the 3.3 V supply through its own R5. J1/J2/J3 are visible in the schematic, board, and rendering, but excluded from the BOM and not marked DNP. J1/J3 use the Amphenol 132289 edge-mount SMA footprint. J2 is a 1x3 header with 2.54 mm pitch. See [ordering codes and supplier information](LCSC-PARTS.md).
+The sixteen-component [BOM](BOM.csv) covers U1, Q1, R1-R5, C1-C6, and D1-D3. Every assembly position has a selected ordering code in the hidden `LCSC Part #` field. The saved **JLCPCB** BOM preset exports the assembly columns and groups matching parts; see the [BOM export instructions](LCSC-PARTS.md#jlcpcb-bom-export). D2 indicates driver-output activity, and D3 indicates the 3.3 V supply through its own R5. J1/J2/J3 are visible in the schematic, board, and rendering, but excluded from the BOM and not marked DNP. J1/J3 use the Amphenol 132289 edge-mount SMA footprint. J2 is a 1x3 header with 2.54 mm pitch. See [ordering codes and supplier information](LCSC-PARTS.md).
 
 ## Layout and checks
 

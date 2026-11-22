@@ -26,4 +26,16 @@ D1 is Nexperia BAT54S,215 / C47546, an Extended part with strong assembly stock.
 
 The [detector study](INPUT-LOADING.md) uses Diodes Incorporated transistor/diode models and an illustrative red LED. Those models are not exact models of the selected Nexperia diode, CJ transistor, or KENTO LED. Package and pin compatibility do not establish identical VHF behavior, gain, brightness, or supply current.
 
-All selected parts use the existing project-local symbols, footprints, and STEP models. The schematic and PCB hide the manufacturer, MPN, LCSC, datasheet, and assembly-class fields. [BOM.csv](BOM.csv) includes all sixteen assembly positions. The schematic, PCB, and rendering show the connectors. They are on the board, excluded from the BOM, and not marked DNP.
+All selected parts use the existing project-local symbols, footprints, and STEP models. The schematic and PCB hide the manufacturer, MPN, `LCSC Part #`, datasheet, and assembly-class fields. [BOM.csv](BOM.csv) includes all sixteen assembly positions. The schematic, PCB, and rendering show the connectors. They are on the board, excluded from the BOM, and not marked DNP.
+
+## JLCPCB BOM export
+
+The schematic and PCB store each supplier code in the hidden `LCSC Part #` field. The project’s **JLCPCB** BOM preset exports [BOM.csv](BOM.csv) with `Comment`, `Designator`, `Footprint`, and `LCSC Part #` columns, plus quantity, manufacturer, and MPN. Rows group only when the value, footprint, supplier code, manufacturer, and MPN match. J1/J2/J3 carry the Exclude from BOM flag, and the preset excludes DNP components.
+
+In the Schematic Editor, open **Tools → Edit Symbol Fields Table**, select the **JLCPCB** preset and CSV format, and export to `BOM.csv`. The command-line equivalent, run from this project directory, is:
+
+```sh
+kicad-cli sch export bom --preset JLCPCB --output BOM.csv "Logic RF Driver.kicad_sch"
+```
+
+JLCPCB uses the `C…` ordering codes to match parts in its assembly catalog. Check the matched parts and placement preview in the order interface. The BOM supplies part selection; assembly also requires a component placement (CPL) file. See [JLCPCB’s KiCad export guide](https://jlcpcb.com/help/article/how-to-generate-the-bom-and-centroid-file-from-kicad).

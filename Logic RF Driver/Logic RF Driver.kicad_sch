@@ -3507,7 +3507,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C57112"
+		(property "LCSC Part #" "C57112"
 			(at 214.63 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -3790,7 +3790,7 @@
 				(justify left)
 			)
 		)
-		(property "LCSC" "C20526"
+		(property "LCSC Part #" "C20526"
 			(at 217.17 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -3984,7 +3984,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC Part #" "C14663"
 			(at 67.31 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -4128,7 +4128,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC Part #" "C14663"
 			(at 82.55 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -4230,7 +4230,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C47546"
+		(property "LCSC Part #" "C47546"
 			(at 188.722 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -4389,7 +4389,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23228"
+		(property "LCSC Part #" "C23228"
 			(at 251.46 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -4705,7 +4705,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23228"
+		(property "LCSC Part #" "C23228"
 			(at 246.38 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -4849,7 +4849,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15741"
+		(property "LCSC Part #" "C15741"
 			(at 74.93 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -5143,7 +5143,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15849"
+		(property "LCSC Part #" "C15849"
 			(at 97.79 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -5299,7 +5299,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C22935"
+		(property "LCSC Part #" "C22935"
 			(at 215.9 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -5510,7 +5510,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2286"
+		(property "LCSC Part #" "C2286"
 			(at 251.46 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5985,7 +5985,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C57112"
+		(property "LCSC Part #" "C57112"
 			(at 182.88 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -6305,7 +6305,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25804"
+		(property "LCSC Part #" "C25804"
 			(at 52.07 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -6406,7 +6406,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2286"
+		(property "LCSC Part #" "C2286"
 			(at 229.87 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -6583,7 +6583,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15849"
+		(property "LCSC Part #" "C15849"
 			(at 82.55 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -6794,7 +6794,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C22962"
+		(property "LCSC Part #" "C22962"
 			(at 170.18 110.49 0)
 			(hide yes)
 			(show_name no)

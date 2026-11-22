@@ -1,16 +1,12 @@
-References,Quantity,Value,Local footprint,Manufacturer,MPN,LCSC,Notes
-U1,1,SN74LVC2T45DCUR,VSSOP-8_2.3x2mm_P0.5mm,Texas Instruments,SN74LVC2T45DCUR,C15741,3.3 V A side; 5 V B side
-"C1,C2",2,100 nF,C_0603_1608Metric,YAGEO,CC0603KRX7R9BB104,C14663,+/-10%; X7R; 50 V; 0603; supply bypass; JLCPCB Basic
-C3,1,1 uF,C_0603_1608Metric,Samsung Electro-Mechanics,CL10A105KB8NNNC,C15849,1 uF +/-10%; X5R; 50 V; 0603; 5 V bulk bypass
-C4,1,1 uF,C_0603_1608Metric,Samsung Electro-Mechanics,CL10A105KB8NNNC,C15849,1 uF +/-10%; X5R; 50 V; 0603; RF DC block; Samsung biased precise-model band check in C4-SELECTION.md
-R1,1,10 kohm,R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF1002T5E,C25804,1%; 0.1 W; 0603; input pulldown; JLCPCB Basic
-R2,1,220 ohm,R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF2200T5E,C22962,1%; 0.1 W; 75 V; RF_RAW detector isolation; JLCPCB Basic
-R3,1,1 Mohm,R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF1004T5E,C22935,1%; 0.1 W; 75 V; detector base discharge; JLCPCB Basic
-R4,1,680 ohm,R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF6800T5E,C23228,1%; 0.1 W; 75 V; activity LED current limit; JLCPCB Basic
-C5,1,10 nF,C_0603_1608Metric,FH (Guangdong Fenghua Advanced Tech),0603B103K500NT,C57112,+/-10%; X7R; 50 V; detector DC block; JLCPCB Basic
-C6,1,10 nF,C_0603_1608Metric,FH (Guangdong Fenghua Advanced Tech),0603B103K500NT,C57112,+/-10%; X7R; 50 V; detector reservoir; JLCPCB Basic
-D1,1,BAT54S,SOT-23,Nexperia,"BAT54S,215",C47546,Dual series Schottky; 30 V; 200 mA; SOT-23; JLCPCB Extended
-D2,1,Red LED,LED_KT0603R,Hubei KENTO Elec,KT-0603R,C2286,Red; 0603; activity LED; JLCPCB Basic
-Q1,1,MMBT3904,SOT-23,"Jiangsu Changjing Electronics Technology Co., Ltd.",MMBT3904(RANGE:100-300),C20526,NPN; 40 V; 200 mA; hFE 100-300 at datasheet test point; SOT-23; JLCPCB Basic
-R5,1,680 ohm,R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF6800T5E,C23228,1%; 0.1 W; 75 V; 3.3 V power LED current limit; JLCPCB Basic
-D3,1,Red LED,LED_KT0603R,Hubei KENTO Elec,KT-0603R,C2286,Red; 0603; 3.3 V power LED; JLCPCB Basic
+"Comment","Designator","Footprint","LCSC Part #","Quantity","Manufacturer","MPN"
+"100n","C1,C2","SN74LVC2T45_Amp:C_0603_1608Metric","C14663","2","YAGEO","CC0603KRX7R9BB104"
+"1μ","C3,C4","SN74LVC2T45_Amp:C_0603_1608Metric","C15849","2","Samsung Electro-Mechanics","CL10A105KB8NNNC"
+"10 nF","C5,C6","SN74LVC2T45_Amp:C_0603_1608Metric","C57112","2","FH (Guangdong Fenghua Advanced Tech)","0603B103K500NT"
+"BAT54S","D1","SN74LVC2T45_Amp:SOT-23","C47546","1","Nexperia","BAT54S,215"
+"LED","D2,D3","SN74LVC2T45_Amp:LED_KT0603R","C2286","2","Hubei KENTO Elec","KT-0603R"
+"MMBT3904","Q1","SN74LVC2T45_Amp:SOT-23","C20526","1","Jiangsu Changjing Electronics Technology Co., Ltd.","MMBT3904(RANGE:100-300)"
+"10k","R1","SN74LVC2T45_Amp:R_0603_1608Metric","C25804","1","UNI-ROYAL(Uniroyal Elec)","0603WAF1002T5E"
+"220 Ω","R2","SN74LVC2T45_Amp:R_0603_1608Metric","C22962","1","UNI-ROYAL(Uniroyal Elec)","0603WAF2200T5E"
+"1 MΩ","R3","SN74LVC2T45_Amp:R_0603_1608Metric","C22935","1","UNI-ROYAL(Uniroyal Elec)","0603WAF1004T5E"
+"680 Ω","R4,R5","SN74LVC2T45_Amp:R_0603_1608Metric","C23228","2","UNI-ROYAL(Uniroyal Elec)","0603WAF6800T5E"
+"SN74LVC2T45DCUR","U1","SN74LVC2T45_Amp:VSSOP-8_2.3x2mm_P0.5mm","C15741","1","Texas Instruments","SN74LVC2T45DCUR"

@@ -9,6 +9,7 @@ The schematic passes the configured electrical checks. The PCB has no configured
 | Unconnected items | Zero |
 | Schematic parity | Zero issues |
 | BOM contents | Sixteen selected assembly positions; fourteen Basic, U1/D1 Extended |
+| JLCPCB BOM export | Saved preset produces eleven grouped rows with supplier codes in `LCSC Part #`; connectors excluded |
 | Connector flags | J1/J2/J3 excluded from BOM, on board, and not DNP |
 | Project text variables | Sixteen definitions in the project file |
 | Visual inspection | Schematic connections, resolved labels, C6 reservoir placement, PCB arrangement, and connector models |
