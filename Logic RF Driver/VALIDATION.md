@@ -1,6 +1,6 @@
 # Validation
 
-The schematic passes the configured electrical checks. The PCB has no configured board-rule violations or unrouted connections. There are no RF measurements of the assembled circuit.
+The schematic passes the configured electrical checks. The saved PCB has filled ground zones and passes the configured design checks, including the local edge-contact rule for the SMA lands. It has no unrouted connections. There are no RF measurements of the assembled circuit.
 
 | Check | Result |
 | --- | --- |
@@ -8,11 +8,12 @@ The schematic passes the configured electrical checks. The PCB has no configured
 | PCB DRC | Zero violations |
 | Unconnected items | Zero |
 | Schematic parity | Zero issues |
+| Local footprint parity | Nineteen placed footprints match their local library definitions under KiCad's DRC comparison |
 | BOM contents | Sixteen selected assembly positions; fourteen Basic, U1/D1 Extended |
 | JLCPCB BOM export | Saved preset produces eleven grouped rows with supplier codes in `LCSC Part #`; connectors excluded |
 | Connector flags | J1/J2/J3 excluded from BOM, on board, and not DNP |
 | Project text variables | Sixteen definitions in the project file |
-| Visual inspection | Schematic connections, resolved labels, C6 reservoir placement, PCB arrangement, and connector models |
+| Visual inspection | J1/J3 edge registration, signal fanouts, front/back ground lands, schematic, and local connector envelopes |
 
 The [CAD check record](docs/cad-validation.json) contains ERC and DRC results, ignored check categories, and source-file hashes. Its reports include error, warning, and exclusion severities for the enabled check categories. The [library manifest](libraries/MANIFEST.json) identifies local symbols, footprints, and models.
 
@@ -39,10 +40,26 @@ All nineteen physical references are unique and have matching schematic UUID pat
 
 C6 connects directly to D1's cathode through a 1.46 mm trace and has a nearby ground via.
 
-The schematic connects its pins with wires and local net labels on a 1.27 mm connection grid. PCB pads follow the package geometry, and seventeen component anchors are off the 0.25 mm placement grid. See [layout details](PCB-LAYOUT.md).
+The schematic connects its pins with wires and local net labels on a 1.27 mm connection grid. PCB pads follow the package geometry, and nineteen component anchors are off the 0.25 mm placement grid. See [layout details](PCB-LAYOUT.md).
 
 ## Simulation evidence
+
+The [output-sharing study](OUTPUT-SHARING.md) contains 92 candidate-circuit cases, including resistor values, timing skew, full-band sweeps, drive-strength mismatch, resistor parasitics, and finer-timestep checks. The design retains direct output paralleling. The current PCB pad nets match the unchanged schematic; layout and fill geometry are outside the circuit model.
+
+The [board circuit simulation](BOARD-SIMULATION.md) contains 32 numerically checked cases with the detector, LED branches, timing-skew sensitivity, and finer-timestep checks. Its record identifies the saved design by file hashes. The calculation has no extracted PCB, connector, filter, or supply-network model.
 
 The [C4 analysis](C4-SELECTION.md) uses Samsung impedance and ESR data at 0, 2.5, and 5 V bias. The [amplifier comparison](COMPARISON.md) contains 78 logic and resistor-fed BS170 cases, fourteen timestep checks, and six bias-recentering checks. Ideal-choke results are diagnostic only. The [model scope](MODEL-SCOPE.md) explains what those calculations cover. The separate [detector study](INPUT-LOADING.md) evaluates RF_RAW loading through 220 ohms with surrogate semiconductor and LED models.
 
 RF output power, heating, current sharing, supply transients, emissions, filter interaction, mechanical fit, and fabrication performance have no assembled-board measurement evidence. CAD checks and numerical consistency are not substitutes for those measurements.
+
+## SMA edge-clearance rule
+
+J1 and J3 use the local Adafruit 1865 footprint derived from Adafruit's SMA_EDGELAUNCH package. The footprint origin is at each board edge, and its signal and ground lands extend from the edge to 4.064 mm inside the board.
+
+The custom rule `Adafruit 1865 SMA lands at board edge` applies only to pads 1 and 2 belonging to J1/J3 with library identifier `SN74LVC2T45_Amp:SMA_Adafruit_1865_EdgeLaunch`. It covers both copper faces and both object orders in the edge-clearance check. A −0.01 mm minimum permits exact edge contact, which KiCad flags with a zero minimum. The actual copper stops at the edge. The rule changes no pad-to-pad or pad-to-track clearance. Tracks, zones, vias, and all other footprints retain the 0.50 mm copper-to-edge minimum. There are no added DRC exclusions or ignored categories.
+
+The saved PCB reports zero violations, zero unconnected items, and zero schematic-parity findings under the enabled checks. Both ground zones are filled. These checks do not establish fabrication suitability of exposed edge copper, connector retention, or RF launch performance.
+
+## Power terminal
+
+J2 uses the local shared Adafruit 2136 / KF120-3P and 1×3-header footprint at X = 61.46 mm, Y = 52.25 mm, with 1.25 mm of housing overhang at the board edge. Its open-front silkscreen ends 0.25 mm inside the board; the fab outline and courtyard cover the full housing. All three pads have 1.2 mm finished holes and 2.0 mm copper pads. The terminal courtyard clears C1, C2, and C3. J1/J2/J3 remain excluded from the BOM, included on the board, and not DNP. The saved JLCPCB BOM contains sixteen assembly positions in eleven grouped rows.

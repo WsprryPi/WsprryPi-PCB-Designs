@@ -1,0 +1,4408 @@
+{
+  "scope": "Candidate independent resistors between U1 B1/B2 pins and RF_RAW join; schematic and PCB retain direct parallel connection",
+  "recommendation_ohms_each": 10,
+  "choice_basis": "Largest tested value retaining roughly 80 percent of nominal fundamental power and preserving modeled activity indication; no guaranteed pulse-current or skew envelope",
+  "cases": [
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 0,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 79.89096506355887,
+      "third_harmonic_dBc": -10.09822529842944,
+      "fifth_harmonic_dBc": -15.630553820602156,
+      "raw_min_V": 0.2698526681299457,
+      "raw_max_V": 4.7689146297097444,
+      "load_Vrms": 2.133641289433382,
+      "load_Vpp": 4.4912596597684695,
+      "channel_peak_mA": [
+        32.24870011838538,
+        32.065990505293314
+      ],
+      "channel_rms_mA": [
+        26.325898982686414,
+        26.32601022951525
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 3.542803231594166,
+      "state_drift_V": [
+        -3.7703173916270316e-13,
+        -1.1435297153639112e-13,
+        2.3714363805993344e-13
+      ],
+      "solver_evaluations": 6,
+      "activity_led_mA": 1.7183165721633515,
+      "R2_mean_mW": 20.057485734238185,
+      "detector_peak_mA": 12.128282265136354,
+      "resistor_mean_mW": [
+        0.0,
+        0.0
+      ],
+      "circulating_peak_mA": 0.1035452470615391,
+      "circulating_rms_mA": 0.002797534228141223,
+      "channel_current_difference_rms_mA": 0.1432027166168867,
+      "late_power_drift_percent": 2.896430428833696e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 0,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 79.75617650545283,
+      "third_harmonic_dBc": -10.156408819748284,
+      "fifth_harmonic_dBc": -15.801996820712638,
+      "raw_min_V": 0.2699657607523809,
+      "raw_max_V": 4.7648381362599395,
+      "load_Vrms": 2.128341254980978,
+      "load_Vpp": 4.491044845614081,
+      "channel_peak_mA": [
+        72.70660635030612,
+        42.55626206062634
+      ],
+      "channel_rms_mA": [
+        31.82399963530163,
+        27.79679135578671
+      ],
+      "power_led_mA": 1.8244866594308091,
+      "led_rail_mA": 3.5425513294270647,
+      "state_drift_V": [
+        7.394085344003543e-13,
+        2.8066438062523957e-13,
+        -1.4832579608992091e-13
+      ],
+      "solver_evaluations": 17,
+      "activity_led_mA": 1.7180646699962556,
+      "R2_mean_mW": 19.955243402266465,
+      "detector_peak_mA": 12.044205231817251,
+      "resistor_mean_mW": [
+        0.0,
+        0.0
+      ],
+      "circulating_peak_mA": 41.6730980981743,
+      "circulating_rms_mA": 9.015375126425067,
+      "channel_current_difference_rms_mA": 28.544003657631507,
+      "late_power_drift_percent": 1.535973126465251e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 0,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 5e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 76.67462518052493,
+      "third_harmonic_dBc": -11.60672746461903,
+      "fifth_harmonic_dBc": -20.723586387016688,
+      "raw_min_V": 0.270579191140006,
+      "raw_max_V": 4.764539094686105,
+      "load_Vrms": 2.0332906437046874,
+      "load_Vpp": 4.490050982677304,
+      "channel_peak_mA": [
+        212.67606023870303,
+        202.1371916681485
+      ],
+      "channel_rms_mA": [
+        69.73790446728074,
+        65.16504789870616
+      ],
+      "power_led_mA": 1.8244866594308065,
+      "led_rail_mA": 3.536269488857579,
+      "state_drift_V": [
+        -2.673417043297377e-13,
+        -3.452793606584237e-14,
+        3.339550858072471e-13
+      ],
+      "solver_evaluations": 21,
+      "activity_led_mA": 1.7117828294267727,
+      "R2_mean_mW": 18.172954948720307,
+      "detector_peak_mA": 11.889417522847133,
+      "resistor_mean_mW": [
+        0.0,
+        0.0
+      ],
+      "circulating_peak_mA": 202.1371916681485,
+      "circulating_rms_mA": 58.56425269577171,
+      "channel_current_difference_rms_mA": 125.38516084112663,
+      "late_power_drift_percent": 1.6402637470491754e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 0,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-09,
+      "step_factor": 1400,
+      "fundamental_mW": 66.30640647981593,
+      "third_harmonic_dBc": -19.820946918874583,
+      "fifth_harmonic_dBc": -20.97029862243585,
+      "raw_min_V": 0.2716669672979373,
+      "raw_max_V": 4.763798386963981,
+      "load_Vrms": 1.8482576270264954,
+      "load_Vpp": 4.488068986157368,
+      "channel_peak_mA": [
+        220.6982491432733,
+        221.72452732550502
+      ],
+      "channel_rms_mA": [
+        103.30362925184444,
+        99.95268446477412
+      ],
+      "power_led_mA": 1.8244866594308142,
+      "led_rail_mA": 3.499965527520867,
+      "state_drift_V": [
+        6.5778493762991275e-12,
+        4.386158103386606e-12,
+        6.346034808757395e-12
+      ],
+      "solver_evaluations": 33,
+      "activity_led_mA": 1.6754788680900528,
+      "R2_mean_mW": 14.978710169882957,
+      "detector_peak_mA": 11.501179426113394,
+      "resistor_mean_mW": [
+        0.0,
+        0.0
+      ],
+      "circulating_peak_mA": 220.6982491432733,
+      "circulating_rms_mA": 96.31412669497848,
+      "channel_current_difference_rms_mA": 198.13941109731027,
+      "late_power_drift_percent": 1.6828374249655553e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 1,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 78.17823131066216,
+      "third_harmonic_dBc": -10.099313005456072,
+      "fifth_harmonic_dBc": -15.632681984974992,
+      "raw_min_V": 0.2931488973984556,
+      "raw_max_V": 4.741587721420641,
+      "load_Vrms": 2.110592998566454,
+      "load_Vpp": 4.444404156803894,
+      "channel_peak_mA": [
+        31.858200255147075,
+        31.688659621699575
+      ],
+      "channel_rms_mA": [
+        26.040573330560818,
+        26.040602310437205
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 3.5403394289933394,
+      "state_drift_V": [
+        7.771561172376096e-14,
+        1.1890488593735427e-13,
+        -1.0746958878371515e-13
+      ],
+      "solver_evaluations": 18,
+      "activity_led_mA": 1.7158527695625254,
+      "R2_mean_mW": 19.624578391152223,
+      "detector_peak_mA": 11.993664491211618,
+      "resistor_mean_mW": [
+        0.6781114593843052,
+        0.678112968690342
+      ],
+      "circulating_peak_mA": 0.07472900403095462,
+      "circulating_rms_mA": 0.0021163972132301552,
+      "channel_current_difference_rms_mA": 0.13256207129260938,
+      "late_power_drift_percent": 2.871913151736294e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 1,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 78.04726870738725,
+      "third_harmonic_dBc": -10.157160458995216,
+      "fifth_harmonic_dBc": -15.803579921753633,
+      "raw_min_V": 0.29327745804495003,
+      "raw_max_V": 4.741235019367506,
+      "load_Vrms": 2.1053649752127455,
+      "load_Vpp": 4.444167555686599,
+      "channel_peak_mA": [
+        69.50925111324378,
+        40.15472402093367
+      ],
+      "channel_rms_mA": [
+        30.976055935616756,
+        27.27295173505106
+      ],
+      "power_led_mA": 1.824486659430809,
+      "led_rail_mA": 3.540072819289397,
+      "state_drift_V": [
+        -2.0872192862952943e-14,
+        1.0635936575909e-13,
+        1.865174681370263e-14
+      ],
+      "solver_evaluations": 21,
+      "activity_led_mA": 1.7155861598585884,
+      "R2_mean_mW": 19.524815495225088,
+      "detector_peak_mA": 11.915413528613888,
+      "resistor_mean_mW": [
+        0.9595160413264489,
+        0.7438138963424192
+      ],
+      "circulating_peak_mA": 38.815790594252036,
+      "circulating_rms_mA": 8.255441540991422,
+      "channel_current_difference_rms_mA": 26.644858181926978,
+      "late_power_drift_percent": 1.6083061549210242e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 1,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 5e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 75.00910925589588,
+      "third_harmonic_dBc": -11.620260064994827,
+      "fifth_harmonic_dBc": -20.78521986372135,
+      "raw_min_V": 0.29401998549003727,
+      "raw_max_V": 4.740943119683169,
+      "load_Vrms": 2.0107632979476704,
+      "load_Vpp": 4.443054170371173,
+      "channel_peak_mA": [
+        198.71395586517593,
+        188.33584628695763
+      ],
+      "channel_rms_mA": [
+        66.07651830750912,
+        61.48510224994826
+      ],
+      "power_led_mA": 1.8244866594308065,
+      "led_rail_mA": 3.533290382413857,
+      "state_drift_V": [
+        2.90878432451791e-13,
+        2.1083135237631723e-13,
+        -2.0827783941967937e-13
+      ],
+      "solver_evaluations": 21,
+      "activity_led_mA": 1.7088037229830502,
+      "R2_mean_mW": 17.770542134592098,
+      "detector_peak_mA": 11.762262008588058,
+      "resistor_mean_mW": [
+        4.366106271642579,
+        3.7804177986865874
+      ],
+      "circulating_peak_mA": 188.33584628695763,
+      "circulating_rms_mA": 54.750730866113045,
+      "channel_current_difference_rms_mA": 117.6861136591446,
+      "late_power_drift_percent": 1.682682770898225e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 1,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-09,
+      "step_factor": 1400,
+      "fundamental_mW": 64.80599324742124,
+      "third_harmonic_dBc": -19.948169885687392,
+      "fifth_harmonic_dBc": -20.81712712233624,
+      "raw_min_V": 0.2953653228496179,
+      "raw_max_V": 4.740268111167953,
+      "load_Vrms": 1.8273870491170818,
+      "load_Vpp": 4.440878285705988,
+      "channel_peak_mA": [
+        206.2370246430574,
+        206.85988227330355
+      ],
+      "channel_rms_mA": [
+        98.0327685107433,
+        94.66632933979814
+      ],
+      "power_led_mA": 1.8244866594308133,
+      "led_rail_mA": 3.4915682031832467,
+      "state_drift_V": [
+        -2.0472512574087887e-13,
+        -8.272271756482041e-13,
+        3.881339694089547e-12
+      ],
+      "solver_evaluations": 36,
+      "activity_led_mA": 1.6670815437524324,
+      "R2_mean_mW": 14.64117608151465,
+      "detector_peak_mA": 11.376806432639942,
+      "resistor_mean_mW": [
+        9.610423701880975,
+        8.96171391067112
+      ],
+      "circulating_peak_mA": 206.20781458400742,
+      "circulating_rms_mA": 91.00290159349937,
+      "channel_current_difference_rms_mA": 187.41810984132837,
+      "late_power_drift_percent": 2.7322495377291034e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 2.2,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 76.19429982773173,
+      "third_harmonic_dBc": -10.100620915241514,
+      "fifth_harmonic_dBc": -15.635298436193882,
+      "raw_min_V": 0.32046345554947275,
+      "raw_max_V": 4.7136676114559455,
+      "load_Vrms": 2.083576575903351,
+      "load_Vpp": 4.38947045054865,
+      "channel_peak_mA": [
+        31.396480679359303,
+        31.244385656571062
+      ],
+      "channel_rms_mA": [
+        25.70675815170527,
+        25.70626037571164
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 3.5372244138960025,
+      "state_drift_V": [
+        -9.325873406851315e-15,
+        6.417089082333405e-14,
+        -8.393286066166183e-14
+      ],
+      "solver_evaluations": 21,
+      "activity_led_mA": 1.7127377544651878,
+      "R2_mean_mW": 19.12321450876736,
+      "detector_peak_mA": 11.836687991237145,
+      "resistor_mean_mW": [
+        1.4538423122745865,
+        1.453786009508532
+      ],
+      "circulating_peak_mA": 0.15235182665523364,
+      "circulating_rms_mA": 0.004071728849658668,
+      "channel_current_difference_rms_mA": 0.12270369455343917,
+      "late_power_drift_percent": 2.8957831688103397e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 2.2,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 76.06702599290057,
+      "third_harmonic_dBc": -10.158376619472712,
+      "fifth_harmonic_dBc": -15.806353396762535,
+      "raw_min_V": 0.32060780261336563,
+      "raw_max_V": 4.713562910678661,
+      "load_Vrms": 2.0784095986174282,
+      "load_Vpp": 4.389208433333639,
+      "channel_peak_mA": [
+        66.11462060925919,
+        37.73222934356039
+      ],
+      "channel_rms_mA": [
+        30.081038682250536,
+        26.71147011386303
+      ],
+      "power_led_mA": 1.8244866594308091,
+      "led_rail_mA": 3.5369362983074764,
+      "state_drift_V": [
+        -1.3633538742396922e-13,
+        -1.6819878823071122e-13,
+        -1.6431300764452317e-14
+      ],
+      "solver_evaluations": 21,
+      "activity_led_mA": 1.7124496388766668,
+      "R2_mean_mW": 19.025881965507622,
+      "detector_peak_mA": 11.764807612539844,
+      "resistor_mean_mW": [
+        1.9907115540467195,
+        1.5697057984163458
+      ],
+      "circulating_peak_mA": 35.94569740425046,
+      "circulating_rms_mA": 7.479579180163779,
+      "channel_current_difference_rms_mA": 24.673787935881794,
+      "late_power_drift_percent": 1.531107018948319e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 2.2,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 5e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 73.07272378927789,
+      "third_harmonic_dBc": -11.640611439288692,
+      "fifth_harmonic_dBc": -20.875996159885425,
+      "raw_min_V": 0.32148704826920255,
+      "raw_max_V": 4.713276897671109,
+      "load_Vrms": 1.984177147555949,
+      "load_Vpp": 4.387964453936183,
+      "channel_peak_mA": [
+        183.7695791964911,
+        173.7204768631871
+      ],
+      "channel_rms_mA": [
+        62.0824684228577,
+        57.548383353662466
+      ],
+      "power_led_mA": 1.8244866594308065,
+      "led_rail_mA": 3.529443590336126,
+      "state_drift_V": [
+        1.0347278589506459e-13,
+        1.0336176359260207e-13,
+        -1.5765166949677223e-13
+      ],
+      "solver_evaluations": 21,
+      "activity_led_mA": 1.7049569309053194,
+      "R2_mean_mW": 17.301439290641458,
+      "detector_peak_mA": 11.61036201172044,
+      "resistor_mean_mW": [
+        8.479312348045273,
+        7.285996138564202
+      ],
+      "circulating_peak_mA": 173.7204768631871,
+      "circulating_rms_mA": 50.644620601532864,
+      "channel_current_difference_rms_mA": 109.33164730649486,
+      "late_power_drift_percent": 1.7924819628589717e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 2.2,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-09,
+      "step_factor": 1400,
+      "fundamental_mW": 63.06740881877023,
+      "third_harmonic_dBc": -20.101567820565094,
+      "fifth_harmonic_dBc": -20.643578270117654,
+      "raw_min_V": 0.3231327663502376,
+      "raw_max_V": 4.7126523864764485,
+      "load_Vrms": 1.802855501589476,
+      "load_Vpp": 4.385539401221341,
+      "channel_peak_mA": [
+        190.82646072682317,
+        190.8550018438904
+      ],
+      "channel_rms_mA": [
+        92.01024774246295,
+        88.66347676775683
+      ],
+      "power_led_mA": 1.8244866594308122,
+      "led_rail_mA": 3.478399398441672,
+      "state_drift_V": [
+        5.946354519892338e-13,
+        -2.1098678359976475e-12,
+        -3.913758206408602e-12
+      ],
+      "solver_evaluations": 28,
+      "activity_led_mA": 1.6539127390108586,
+      "R2_mean_mW": 14.249395333609604,
+      "detector_peak_mA": 11.231274032894085,
+      "resistor_mean_mW": [
+        18.624948517184695,
+        17.294666647602412
+      ],
+      "circulating_peak_mA": 190.44164496774368,
+      "circulating_rms_mA": 84.94293544785582,
+      "channel_current_difference_rms_mA": 175.18361586995306,
+      "late_power_drift_percent": 4.614404858216403e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 4.7,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 72.29593386658456,
+      "third_harmonic_dBc": -10.103356987443554,
+      "fifth_harmonic_dBc": -15.640989956260146,
+      "raw_min_V": 0.37521957960930946,
+      "raw_max_V": 4.658215294835872,
+      "load_Vrms": 2.0294429559225104,
+      "load_Vpp": 4.279353315797639,
+      "channel_peak_mA": [
+        30.46566171207157,
+        30.34302214125794
+      ],
+      "channel_rms_mA": [
+        25.03737384320021,
+        25.03702973592006
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 3.5300649530724373,
+      "state_drift_V": [
+        -1.2079226507921703e-13,
+        4.163336342344337e-14,
+        1.7319479184152442e-14
+      ],
+      "solver_evaluations": 21,
+      "activity_led_mA": 1.705578293641622,
+      "R2_mean_mW": 18.138341789804947,
+      "detector_peak_mA": 11.524631164840843,
+      "resistor_mean_mW": [
+        2.946289418131579,
+        2.94620843258752
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.10483319700131677,
+      "late_power_drift_percent": 2.836836321407077e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 4.7,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 72.17432119931716,
+      "third_harmonic_dBc": -10.1616225877737,
+      "fifth_harmonic_dBc": -15.814165489346303,
+      "raw_min_V": 0.3753959329436706,
+      "raw_max_V": 4.658088577066213,
+      "load_Vrms": 2.02434783654253,
+      "load_Vpp": 4.279032686541582,
+      "channel_peak_mA": [
+        60.195348562093066,
+        33.88204866592588
+      ],
+      "channel_rms_mA": [
+        28.528803307509286,
+        25.708653743524053
+      ],
+      "power_led_mA": 1.8244866594308091,
+      "led_rail_mA": 3.5297160587701244,
+      "state_drift_V": [
+        -8.37108160567368e-13,
+        -3.135269821541442e-13,
+        1.1546319456101628e-13
+      ],
+      "solver_evaluations": 21,
+      "activity_led_mA": 1.7052293993393146,
+      "R2_mean_mW": 18.044868587903483,
+      "detector_peak_mA": 11.464200836279794,
+      "resistor_mean_mW": [
+        3.8252953053451955,
+        3.1063939233307387
+      ],
+      "circulating_peak_mA": 31.166595968866933,
+      "circulating_rms_mA": 6.2164380435809425,
+      "channel_current_difference_rms_mA": 21.376011056460435,
+      "late_power_drift_percent": 1.26188837157315e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 4.7,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 5e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 69.26241934756342,
+      "third_harmonic_dBc": -11.686753013313485,
+      "fifth_harmonic_dBc": -21.079562305888736,
+      "raw_min_V": 0.37652634855585254,
+      "raw_max_V": 4.657778591698396,
+      "load_Vrms": 1.930779004270455,
+      "load_Vpp": 4.277515142002088,
+      "channel_peak_mA": [
+        158.0600575402306,
+        148.8464639029425
+      ],
+      "channel_rms_mA": [
+        55.080629712040086,
+        50.7942190570071
+      ],
+      "power_led_mA": 1.8244866594308065,
+      "led_rail_mA": 3.52026203501707,
+      "state_drift_V": [
+        1.6786572132332367e-13,
+        1.580957587066223e-13,
+        2.4868995751603507e-14
+      ],
+      "solver_evaluations": 25,
+      "activity_led_mA": 1.6957753755862635,
+      "R2_mean_mW": 16.378395949968834,
+      "detector_peak_mA": 11.304434456326447,
+      "resistor_mean_mW": [
+        14.259216116531894,
+        12.126247641172741
+      ],
+      "circulating_peak_mA": 148.8464639029425,
+      "circulating_rms_mA": 43.53648452174632,
+      "channel_current_difference_rms_mA": 94.74040806374109,
+      "late_power_drift_percent": 2.0082640217466974e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 4.7,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-09,
+      "step_factor": 1400,
+      "fundamental_mW": 59.66420091184113,
+      "third_harmonic_dBc": -20.405543547064372,
+      "fifth_harmonic_dBc": -20.32954921927967,
+      "raw_min_V": 0.37870243884921667,
+      "raw_max_V": 4.657170523153105,
+      "load_Vrms": 1.7537477026861008,
+      "load_Vpp": 4.274583442735732,
+      "channel_peak_mA": [
+        163.92058143252584,
+        163.20383827465005
+      ],
+      "channel_rms_mA": [
+        80.93038146520243,
+        77.70050613140913
+      ],
+      "power_led_mA": 1.8244866594308138,
+      "led_rail_mA": 3.411286756438604,
+      "state_drift_V": [
+        4.085620730620576e-14,
+        3.8191672047105385e-14,
+        -1.5987211554602254e-13
+      ],
+      "solver_evaluations": 37,
+      "activity_led_mA": 1.5868000970077896,
+      "R2_mean_mW": 13.481390881868201,
+      "detector_peak_mA": 10.933127987786223,
+      "resistor_mean_mW": [
+        30.783715227284922,
+        28.37563266946259
+      ],
+      "circulating_peak_mA": 163.1066619407566,
+      "circulating_rms_mA": 73.81851983592398,
+      "channel_current_difference_rms_mA": 152.692146709648,
+      "late_power_drift_percent": 5.629823274233559e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 64.95989166253389,
+      "third_harmonic_dBc": -10.109075820390409,
+      "fifth_harmonic_dBc": -15.653623544448234,
+      "raw_min_V": 0.4825471896621652,
+      "raw_max_V": 4.549527724042582,
+      "load_Vrms": 1.9234546540834299,
+      "load_Vpp": 4.063507031113973,
+      "channel_peak_mA": [
+        28.63754467855715,
+        28.566581125355604
+      ],
+      "channel_rms_mA": [
+        23.727169906402775,
+        23.727057858859578
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 3.510119337244689,
+      "state_drift_V": [
+        4.889422200449189e-13,
+        3.644862189844389e-13,
+        -1.163513729807164e-13
+      ],
+      "solver_evaluations": 25,
+      "activity_led_mA": 1.6856326778138746,
+      "R2_mean_mW": 16.286222284612123,
+      "detector_peak_mA": 10.920962049129972,
+      "resistor_mean_mW": [
+        5.6297859176730745,
+        5.62973274637671
+      ],
+      "circulating_peak_mA": 0.10946834012668497,
+      "circulating_rms_mA": 0.002925630482740768,
+      "channel_current_difference_rms_mA": 0.07882246144018988,
+      "late_power_drift_percent": 2.5153448213188767e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 64.84736733032624,
+      "third_harmonic_dBc": -10.169212319530311,
+      "fifth_harmonic_dBc": -15.833158468296451,
+      "raw_min_V": 0.48279446385878816,
+      "raw_max_V": 4.54934502518969,
+      "load_Vrms": 1.9184576192869993,
+      "load_Vpp": 4.063060348060359,
+      "channel_peak_mA": [
+        50.99812741111882,
+        29.024322883423114
+      ],
+      "channel_rms_mA": [
+        26.079764468932776,
+        24.030078222609575
+      ],
+      "power_led_mA": 1.8244866594308091,
+      "led_rail_mA": 3.5095147538545066,
+      "state_drift_V": [
+        3.9968028886505635e-14,
+        -2.275957200481571e-14,
+        2.162714451969805e-13
+      ],
+      "solver_evaluations": 25,
+      "activity_led_mA": 1.6850280944236973,
+      "R2_mean_mW": 16.199368313815167,
+      "detector_peak_mA": 10.883594036775163,
+      "resistor_mean_mW": [
+        6.801541147550103,
+        5.77444659384736
+      ],
+      "circulating_peak_mA": 24.26134043246877,
+      "circulating_rms_mA": 4.504043534250974,
+      "channel_current_difference_rms_mA": 16.6411767087696,
+      "late_power_drift_percent": 5.376683542834826e-08
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 5e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 62.11361302647529,
+      "third_harmonic_dBc": -11.773651886941721,
+      "fifth_harmonic_dBc": -21.462828355215468,
+      "raw_min_V": 0.48433996838584303,
+      "raw_max_V": 4.548871778895216,
+      "load_Vrms": 1.8268056699501352,
+      "load_Vpp": 4.0609723531362185,
+      "channel_peak_mA": [
+        120.63201503271252,
+        113.04148244607775
+      ],
+      "channel_rms_mA": [
+        44.68586848940951,
+        41.03689452811129
+      ],
+      "power_led_mA": 1.8244866594308065,
+      "led_rail_mA": 3.490832577408419,
+      "state_drift_V": [
+        8.43769498715119e-14,
+        6.117328865684613e-14,
+        -8.704148513061227e-14
+      ],
+      "solver_evaluations": 29,
+      "activity_led_mA": 1.6663459179776121,
+      "R2_mean_mW": 14.654690143947068,
+      "detector_peak_mA": 10.710591986024259,
+      "resistor_mean_mW": [
+        19.96826842652803,
+        16.84026712511331
+      ],
+      "circulating_peak_mA": 113.04148244607775,
+      "circulating_rms_mA": 33.125997429386416,
+      "channel_current_difference_rms_mA": 73.11619089479407,
+      "late_power_drift_percent": 2.422109424138341e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-09,
+      "step_factor": 1400,
+      "fundamental_mW": 53.33649542524027,
+      "third_harmonic_dBc": -20.94133492861003,
+      "fifth_harmonic_dBc": -19.85185963403972,
+      "raw_min_V": 0.48747677665453737,
+      "raw_max_V": 4.547889199455355,
+      "load_Vrms": 1.6583839719929339,
+      "load_Vpp": 4.056708190305892,
+      "channel_peak_mA": [
+        124.36713230354842,
+        123.13506038893989
+      ],
+      "channel_rms_mA": [
+        63.75946849223615,
+        60.89620741581678
+      ],
+      "power_led_mA": 1.8244866594308138,
+      "led_rail_mA": 2.4346457734195175,
+      "state_drift_V": [
+        -5.333511410299252e-13,
+        -1.496580637194711e-13,
+        -1.8385293287792592e-13
+      ],
+      "solver_evaluations": 33,
+      "activity_led_mA": 0.6101591139887035,
+      "R2_mean_mW": 12.056274524686556,
+      "detector_peak_mA": 10.334011322533533,
+      "resistor_mean_mW": [
+        40.65269822412457,
+        37.0834807763018
+      ],
+      "circulating_peak_mA": 123.13506038893989,
+      "circulating_rms_mA": 56.64321271057594,
+      "channel_current_difference_rms_mA": 117.83239351119812,
+      "late_power_drift_percent": 7.21543402804059e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 51.96681808577469,
+      "third_harmonic_dBc": -10.121415465065713,
+      "fifth_harmonic_dBc": -15.68283815428558,
+      "raw_min_V": 0.6897714628929225,
+      "raw_max_V": 4.339993653235553,
+      "load_Vrms": 1.7198394411074243,
+      "load_Vpp": 3.6470793033488746,
+      "channel_peak_mA": [
+        25.16123289386933,
+        25.13648973426016
+      ],
+      "channel_rms_mA": [
+        21.212070843585515,
+        21.212167188698615
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 2.744934390037597,
+      "state_drift_V": [
+        1.7763568394002505e-15,
+        5.917488721252084e-14,
+        5.906386491005833e-14
+      ],
+      "solver_evaluations": 33,
+      "activity_led_mA": 0.920447730606782,
+      "R2_mean_mW": 13.01389023965153,
+      "detector_peak_mA": 9.768056088041181,
+      "resistor_mean_mW": [
+        9.89894288841241,
+        9.899032810508672
+      ],
+      "circulating_peak_mA": 0.04161792509236659,
+      "circulating_rms_mA": 0.001413913961703997,
+      "channel_current_difference_rms_mA": 0.0487707150548905,
+      "late_power_drift_percent": 2.3291701900518547e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 51.871103515195,
+      "third_harmonic_dBc": -10.185469106488231,
+      "fifth_harmonic_dBc": -15.874922616670288,
+      "raw_min_V": 0.6901479645398355,
+      "raw_max_V": 4.339687341311002,
+      "load_Vrms": 1.7150908069506403,
+      "load_Vpp": 3.646384356299361,
+      "channel_peak_mA": [
+        38.60351495248494,
+        23.82270901049763
+      ],
+      "channel_rms_mA": [
+        22.439708334078368,
+        21.253287782228796
+      ],
+      "power_led_mA": 1.8244866594308091,
+      "led_rail_mA": 2.720677398141648,
+      "state_drift_V": [
+        3.019806626980426e-13,
+        1.2467804566540508e-13,
+        -1.3322676295501878e-15
+      ],
+      "solver_evaluations": 33,
+      "activity_led_mA": 0.8961907387108391,
+      "R2_mean_mW": 12.940293802369288,
+      "detector_peak_mA": 9.758687029393272,
+      "resistor_mean_mW": [
+        11.07789122260715,
+        9.937449314193211
+      ],
+      "circulating_peak_mA": 16.275104781322042,
+      "circulating_rms_mA": 2.6894743587458025,
+      "channel_current_difference_rms_mA": 11.052773037777596,
+      "late_power_drift_percent": -3.776191581650323e-08
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 5e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 49.55178828295483,
+      "third_harmonic_dBc": -11.901394376238537,
+      "fifth_harmonic_dBc": -22.029963540247202,
+      "raw_min_V": 0.6925236124820563,
+      "raw_max_V": 4.338453500735843,
+      "load_Vrms": 1.6297130438853118,
+      "load_Vpp": 3.6427014718906925,
+      "channel_peak_mA": [
+        77.42291772590944,
+        72.10187666547772
+      ],
+      "channel_rms_mA": [
+        32.35319427319677,
+        29.832783217786883
+      ],
+      "power_led_mA": 1.8244866594308065,
+      "led_rail_mA": 2.2648651270241213,
+      "state_drift_V": [
+        9.769962616701378e-14,
+        -5.284661597215745e-14,
+        6.794564910705958e-14
+      ],
+      "solver_evaluations": 33,
+      "activity_led_mA": 0.4403784675933144,
+      "R2_mean_mW": 11.660241862979117,
+      "detector_peak_mA": 9.540826770924074,
+      "resistor_mean_mW": [
+        23.028041952942694,
+        19.579888999428288
+      ],
+      "circulating_peak_mA": 72.10187666547772,
+      "circulating_rms_mA": 21.06634506543658,
+      "channel_current_difference_rms_mA": 47.6375405015533,
+      "late_power_drift_percent": 3.3227935958279886e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-09,
+      "step_factor": 1400,
+      "fundamental_mW": 42.37341241278418,
+      "third_harmonic_dBc": -21.70480162480109,
+      "fifth_harmonic_dBc": -19.30051335790202,
+      "raw_min_V": 0.696910711827658,
+      "raw_max_V": 4.33634397602454,
+      "load_Vrms": 1.4783380729017066,
+      "load_Vpp": 3.636079187285037,
+      "channel_peak_mA": [
+        79.07464075434902,
+        77.76019149257908
+      ],
+      "channel_rms_mA": [
+        43.22612748722433,
+        41.09971235063024
+      ],
+      "power_led_mA": 1.8244866594308138,
+      "led_rail_mA": 1.8525145848582005,
+      "state_drift_V": [
+        1.0391687510491465e-13,
+        -2.4424906541753444e-15,
+        -9.547918011776346e-14
+      ],
+      "solver_evaluations": 29,
+      "activity_led_mA": 0.028027925427385404,
+      "R2_mean_mW": 9.587295569121999,
+      "detector_peak_mA": 9.174637355597552,
+      "resistor_mean_mW": [
+        41.10695814591898,
+        37.16209981670007
+      ],
+      "circulating_peak_mA": 77.76019149257908,
+      "circulating_rms_mA": 36.226557384430606,
+      "channel_current_difference_rms_mA": 76.1160328921963,
+      "late_power_drift_percent": 1.0375208026047744e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 47,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 34.88128693768786,
+      "third_harmonic_dBc": -10.143788354905567,
+      "fifth_harmonic_dBc": -15.737197293233312,
+      "raw_min_V": 1.0108608933521472,
+      "raw_max_V": 4.015587410598985,
+      "load_Vrms": 1.4082428478351148,
+      "load_Vpp": 3.002111041421649,
+      "channel_peak_mA": [
+        19.97084495000582,
+        19.9754857467067
+      ],
+      "channel_rms_mA": [
+        17.369293313504638,
+        17.3695475766581
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 1.8287851121480643,
+      "state_drift_V": [
+        5.17808018685173e-13,
+        2.284838984678572e-13,
+        4.8405723873656825e-14
+      ],
+      "solver_evaluations": 26,
+      "activity_led_mA": 0.004298452717249386,
+      "R2_mean_mW": 8.734792437689242,
+      "detector_peak_mA": 7.94457415862637,
+      "resistor_mean_mW": [
+        14.179540459896161,
+        14.179955601836086
+      ],
+      "circulating_peak_mA": 0.04142671746379989,
+      "circulating_rms_mA": 0.0013754639638396085,
+      "channel_current_difference_rms_mA": 0.02499614575015068,
+      "late_power_drift_percent": 2.9726043848654626e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 47,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 34.81295691827906,
+      "third_harmonic_dBc": -10.211995312915308,
+      "fifth_harmonic_dBc": -15.942363259440747,
+      "raw_min_V": 1.011352621831342,
+      "raw_max_V": 4.015154529726576,
+      "load_Vrms": 1.404144303269357,
+      "load_Vpp": 3.0011824675817174,
+      "channel_peak_mA": [
+        26.373957865340497,
+        18.6264599762186
+      ],
+      "channel_rms_mA": [
+        17.883087479503565,
+        17.33548033977575
+      ],
+      "power_led_mA": 1.8244866594308091,
+      "led_rail_mA": 1.8286352430450399,
+      "state_drift_V": [
+        -1.5365486660812167e-13,
+        -1.9484414082171497e-14,
+        -1.318944953254686e-13
+      ],
+      "solver_evaluations": 29,
+      "activity_led_mA": 0.004148583614230553,
+      "R2_mean_mW": 8.682827465964932,
+      "detector_peak_mA": 7.926984499688823,
+      "resistor_mean_mW": [
+        15.030826436580112,
+        14.124387294705318
+      ],
+      "circulating_peak_mA": 9.903649278620389,
+      "circulating_rms_mA": 1.4179157847191688,
+      "channel_current_difference_rms_mA": 6.4739434157156115,
+      "late_power_drift_percent": -8.350637958898233e-08
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 47,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 5e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 33.17999653969261,
+      "third_harmonic_dBc": -12.024929798931236,
+      "fifth_harmonic_dBc": -22.570900604600695,
+      "raw_min_V": 1.0142090145603986,
+      "raw_max_V": 4.013197406085633,
+      "load_Vrms": 1.3321516618434612,
+      "load_Vpp": 2.9963055059919164,
+      "channel_peak_mA": [
+        43.855076878581514,
+        40.691134270873405
+      ],
+      "channel_rms_mA": [
+        22.002423326323708,
+        20.660814671911364
+      ],
+      "power_led_mA": 1.8244866594308065,
+      "led_rail_mA": 1.8265173532519863,
+      "state_drift_V": [
+        9.192646643896296e-14,
+        1.4765966227514582e-14,
+        3.774758283725532e-14
+      ],
+      "solver_evaluations": 33,
+      "activity_led_mA": 0.0020306938211790844,
+      "R2_mean_mW": 7.800503948432231,
+      "detector_peak_mA": 7.727552958194503,
+      "resistor_mean_mW": [
+        22.753011714845407,
+        20.062855356632188
+      ],
+      "circulating_peak_mA": 40.691134270873405,
+      "circulating_rms_mA": 11.72653626446625,
+      "channel_current_difference_rms_mA": 27.381995896734267,
+      "late_power_drift_percent": 4.699021838305839e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 47,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-09,
+      "step_factor": 1400,
+      "fundamental_mW": 28.279010857815084,
+      "third_harmonic_dBc": -22.398434867921036,
+      "fifth_harmonic_dBc": -18.92323225409624,
+      "raw_min_V": 1.01903850139954,
+      "raw_max_V": 4.010122786667821,
+      "load_Vrms": 1.2076572366393477,
+      "load_Vpp": 2.9882947099054404,
+      "channel_peak_mA": [
+        44.54641289650481,
+        43.78824228117243
+      ],
+      "channel_rms_mA": [
+        26.875338638512506,
+        25.62670388125666
+      ],
+      "power_led_mA": 1.8244866594308138,
+      "led_rail_mA": 1.8252770952386628,
+      "state_drift_V": [
+        -7.638334409421077e-13,
+        -5.849210005237637e-13,
+        4.04121180963557e-14
+      ],
+      "solver_evaluations": 26,
+      "activity_led_mA": 0.0007904358078480855,
+      "R2_mean_mW": 6.406618025400622,
+      "detector_peak_mA": 7.445084803615659,
+      "resistor_mean_mW": [
+        33.94733986593198,
+        30.866213735427905
+      ],
+      "circulating_peak_mA": 43.78824228117243,
+      "circulating_rms_mA": 20.353562688929834,
+      "channel_current_difference_rms_mA": 43.308600351452846,
+      "late_power_drift_percent": 1.4241377632728813e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 33,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 43.184272506411894,
+      "third_harmonic_dBc": -10.1318305666652,
+      "fifth_harmonic_dBc": -15.707853334972961,
+      "raw_min_V": 0.8463680835193816,
+      "raw_max_V": 4.1818445608703145,
+      "load_Vrms": 1.567379863561355,
+      "load_Vpp": 3.3325930024533736,
+      "channel_peak_mA": [
+        22.5885421199465,
+        22.584263408586548
+      ],
+      "channel_rms_mA": [
+        19.331470862228674,
+        19.33167594755495
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 1.918754542631365,
+      "state_drift_V": [
+        3.4150460237469815e-13,
+        1.9462209621678994e-13,
+        1.3988810110276972e-13
+      ],
+      "solver_evaluations": 29,
+      "activity_led_mA": 0.09426788320055016,
+      "R2_mean_mW": 10.81298318866646,
+      "detector_peak_mA": 8.88056614240186,
+      "resistor_mean_mW": [
+        12.332290268007489,
+        12.33255193306203
+      ],
+      "circulating_peak_mA": 0.05496980872872855,
+      "circulating_rms_mA": 0.0015117601564229568,
+      "channel_current_difference_rms_mA": 0.03492186910774325,
+      "late_power_drift_percent": 2.7222499809909095e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 33,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 43.10189261501192,
+      "third_harmonic_dBc": -10.198208504230909,
+      "fifth_harmonic_dBc": -15.90727486760041,
+      "raw_min_V": 0.8468184401231746,
+      "raw_max_V": 4.181459149540543,
+      "load_Vrms": 1.5629143565957389,
+      "load_Vpp": 3.331741461134311,
+      "channel_peak_mA": [
+        31.924514223457997,
+        21.092975055082018
+      ],
+      "channel_rms_mA": [
+        20.124872468573983,
+        19.315442529232143
+      ],
+      "power_led_mA": 1.8244866594308091,
+      "led_rail_mA": 1.9149077690634404,
+      "state_drift_V": [
+        -2.922107000813412e-13,
+        -1.871836019518014e-13,
+        -1.4832579608992091e-13
+      ],
+      "solver_evaluations": 29,
+      "activity_led_mA": 0.09042110963263063,
+      "R2_mean_mW": 10.749977225460672,
+      "detector_peak_mA": 8.865506984691612,
+      "resistor_mean_mW": [
+        13.365346231920126,
+        12.311848563302277
+      ],
+      "circulating_peak_mA": 12.653965435617156,
+      "circulating_rms_mA": 1.9375001361740272,
+      "channel_current_difference_rms_mA": 8.435511812361595,
+      "late_power_drift_percent": -5.0901838299921565e-08
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 33,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 5e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 41.120123625601146,
+      "third_harmonic_dBc": -11.969656166990596,
+      "fifth_harmonic_dBc": -22.331432234133892,
+      "raw_min_V": 0.8495566927531901,
+      "raw_max_V": 4.179774259410327,
+      "load_Vrms": 1.4837088222651353,
+      "load_Vpp": 3.3272616093685263,
+      "channel_peak_mA": [
+        57.99818077924251,
+        53.85745231935064
+      ],
+      "channel_rms_mA": [
+        26.527036647909227,
+        24.661183927264346
+      ],
+      "power_led_mA": 1.8244866594308065,
+      "led_rail_mA": 1.8581211316261912,
+      "state_drift_V": [
+        -2.544631172440859e-13,
+        -1.4577228313328305e-13,
+        1.2390088954816747e-13
+      ],
+      "solver_evaluations": 26,
+      "activity_led_mA": 0.033634472195384096,
+      "R2_mean_mW": 9.669588605275045,
+      "detector_peak_mA": 8.647353642177565,
+      "resistor_mean_mW": [
+        23.22156121954415,
+        20.0697417589139
+      ],
+      "circulating_peak_mA": 53.85745231935064,
+      "circulating_rms_mA": 15.65056199838918,
+      "channel_current_difference_rms_mA": 35.97156940932427,
+      "late_power_drift_percent": 4.0160802905475634e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 33,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-09,
+      "step_factor": 1400,
+      "fundamental_mW": 35.095054018095965,
+      "third_harmonic_dBc": -22.09746853587187,
+      "fifth_harmonic_dBc": -19.070592220553593,
+      "raw_min_V": 0.8542941729038048,
+      "raw_max_V": 4.177097592144539,
+      "load_Vrms": 1.3454095216311694,
+      "load_Vpp": 3.3197305177341407,
+      "channel_peak_mA": [
+        59.022294073499744,
+        58.022170632398485
+      ],
+      "channel_rms_mA": [
+        33.83737696942253,
+        32.18107470199951
+      ],
+      "power_led_mA": 1.8244866594308138,
+      "led_rail_mA": 1.8268757793229553,
+      "state_drift_V": [
+        9.192646643896296e-14,
+        2.1260770921571748e-14,
+        1.4654943925052066e-14
+      ],
+      "solver_evaluations": 29,
+      "activity_led_mA": 0.0023891198921404976,
+      "R2_mean_mW": 7.945943206921159,
+      "detector_peak_mA": 8.319559903374373,
+      "resistor_mean_mW": [
+        37.783946645636625,
+        34.17551177619719
+      ],
+      "circulating_peak_mA": 58.022170632398485,
+      "circulating_rms_mA": 27.02310595717652,
+      "channel_current_difference_rms_mA": 57.15090325559808,
+      "late_power_drift_percent": 1.2155319195628067e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 68,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 26.283939170073758,
+      "third_harmonic_dBc": -10.159359975724485,
+      "fifth_harmonic_dBc": -15.776809769081865,
+      "raw_min_V": 1.2046227711681436,
+      "raw_max_V": 3.8197829196775093,
+      "load_Vrms": 1.2219576993457342,
+      "load_Vpp": 2.6128669378079046,
+      "channel_peak_mA": [
+        16.98931607475805,
+        17.00220747013446
+      ],
+      "channel_rms_mA": [
+        15.072270619996011,
+        15.072553875331366
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 1.825253888958148,
+      "state_drift_V": [
+        -2.2648549702353193e-13,
+        -1.1257661469699087e-13,
+        1.4566126083082054e-13
+      ],
+      "solver_evaluations": 29,
+      "activity_led_mA": 0.0007672295273329662,
+      "R2_mean_mW": 6.582184445866394,
+      "detector_peak_mA": 6.85146270668472,
+      "resistor_mean_mW": [
+        15.447787231682836,
+        15.448367862084085
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.016965734464379337,
+      "late_power_drift_percent": 2.654570563365155e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 68,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 26.231304201138855,
+      "third_harmonic_dBc": -10.229115294987439,
+      "fifth_harmonic_dBc": -15.98681398632529,
+      "raw_min_V": 1.2051309186154213,
+      "raw_max_V": 3.819313636739329,
+      "load_Vrms": 1.2183502071926535,
+      "load_Vpp": 2.611883618671188,
+      "channel_peak_mA": [
+        21.063000823307863,
+        16.01989368745635
+      ],
+      "channel_rms_mA": [
+        15.382742901231158,
+        15.038269940973244
+      ],
+      "power_led_mA": 1.8244866594308091,
+      "led_rail_mA": 1.8252511778236948,
+      "state_drift_V": [
+        2.3714363805993344e-13,
+        1.3095080575453721e-13,
+        8.215650382226158e-14
+      ],
+      "solver_evaluations": 26,
+      "activity_led_mA": 0.0007645183928852173,
+      "R2_mean_mW": 6.5424896907583445,
+      "detector_peak_mA": 6.8362256669944035,
+      "resistor_mean_mW": [
+        16.090756983245655,
+        15.378170271595359
+      ],
+      "circulating_peak_mA": 7.524065247990801,
+      "circulating_rms_mA": 1.0037466371741952,
+      "channel_current_difference_rms_mA": 4.7927321107882,
+      "late_power_drift_percent": -1.6333010499636202e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 68,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 5e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 24.980762862530774,
+      "third_harmonic_dBc": -12.076218488484642,
+      "fifth_harmonic_dBc": -22.785581397911557,
+      "raw_min_V": 1.2080231159480408,
+      "raw_max_V": 3.8171178721630112,
+      "load_Vrms": 1.1553887046462312,
+      "load_Vpp": 2.6067456214328097,
+      "channel_peak_mA": [
+        32.03945214278081,
+        29.80022505465779
+      ],
+      "channel_rms_mA": [
+        17.847252058284344,
+        16.958371093559936
+      ],
+      "power_led_mA": 1.8244866594308065,
+      "led_rail_mA": 1.8252108282324322,
+      "state_drift_V": [
+        -1.5143442055887135e-13,
+        -2.1094237467877974e-14,
+        8.215650382226158e-14
+      ],
+      "solver_evaluations": 26,
+      "activity_led_mA": 0.0007241688016250775,
+      "R2_mean_mW": 5.872914845644774,
+      "detector_peak_mA": 6.666947793497591,
+      "resistor_mean_mW": [
+        21.659659610171545,
+        19.55587180998842
+      ],
+      "circulating_peak_mA": 29.80022505465779,
+      "circulating_rms_mA": 8.47629264513321,
+      "channel_current_difference_rms_mA": 20.137348919256084,
+      "late_power_drift_percent": 5.519148582600053e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 68,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-09,
+      "step_factor": 1400,
+      "fundamental_mW": 21.266793532047878,
+      "third_harmonic_dBc": -22.655833215000204,
+      "fifth_harmonic_dBc": -18.824712851093636,
+      "raw_min_V": 1.2127666315171006,
+      "raw_max_V": 3.81376615907982,
+      "load_Vrms": 1.047162502177669,
+      "load_Vpp": 2.5985624121531603,
+      "channel_peak_mA": [
+        32.52649911632412,
+        31.971818034158876
+      ],
+      "channel_rms_mA": [
+        20.863665279894715,
+        19.996508522555327
+      ],
+      "power_led_mA": 1.8244866594308138,
+      "led_rail_mA": 1.8251891348014457,
+      "state_drift_V": [
+        1.8118839761882555e-13,
+        9.597878047884478e-14,
+        4.440892098500626e-14
+      ],
+      "solver_evaluations": 26,
+      "activity_led_mA": 0.0007024753706311141,
+      "R2_mean_mW": 4.821181072931916,
+      "detector_peak_mA": 6.431594947354692,
+      "resistor_mean_mW": [
+        29.599891965980895,
+        27.190504010298657
+      ],
+      "circulating_peak_mA": 31.971818034158876,
+      "circulating_rms_mA": 14.818100808394208,
+      "channel_current_difference_rms_mA": 31.72887890991008,
+      "late_power_drift_percent": 1.6748573195002336e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 100,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 18.2162563595804,
+      "third_harmonic_dBc": -10.1780246983798,
+      "fifth_harmonic_dBc": -15.826204813683875,
+      "raw_min_V": 1.4195812281862648,
+      "raw_max_V": 3.602565861967488,
+      "load_Vrms": 1.0167995643802903,
+      "load_Vpp": 2.181066400434889,
+      "channel_peak_mA": [
+        13.820614010983792,
+        13.835500882801675
+      ],
+      "channel_rms_mA": [
+        12.54253114304303,
+        12.54281133795717
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 1.8251906136025324,
+      "state_drift_V": [
+        -6.181721801112872e-13,
+        -2.6950663922775675e-13,
+        1.5054624213917123e-13
+      ],
+      "solver_evaluations": 30,
+      "activity_led_mA": 0.0007039541717177948,
+      "R2_mean_mW": 4.5621247929449655,
+      "detector_peak_mA": 5.654791676331543,
+      "resistor_mean_mW": [
+        15.73150874742044,
+        15.732211625958739
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.010944152949305046,
+      "late_power_drift_percent": 2.7266422453209316e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 100,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 18.179161798501724,
+      "third_harmonic_dBc": -10.248981021677455,
+      "fifth_harmonic_dBc": -16.03995058297029,
+      "raw_min_V": 1.4200910786534682,
+      "raw_max_V": 3.6020876195756175,
+      "load_Vrms": 1.0137767198501035,
+      "load_Vpp": 2.1800718508415318,
+      "channel_peak_mA": [
+        16.21402989804198,
+        13.29833994488249
+      ],
+      "channel_rms_mA": [
+        12.717252876211981,
+        12.51656543650497
+      ],
+      "power_led_mA": 1.8244866594308091,
+      "led_rail_mA": 1.8251906665577382,
+      "state_drift_V": [
+        -4.4275694222051243e-13,
+        -1.921796055626146e-13,
+        -8.926193117986259e-14
+      ],
+      "solver_evaluations": 29,
+      "activity_led_mA": 0.0007040071269285953,
+      "R2_mean_mW": 4.534436199156859,
+      "detector_peak_mA": 5.642657259797938,
+      "resistor_mean_mW": [
+        16.1728520717522,
+        15.666441032631134
+      ],
+      "circulating_peak_mA": 5.595576788552223,
+      "circulating_rms_mA": 0.6903640073489921,
+      "channel_current_difference_rms_mA": 3.429980041491388,
+      "late_power_drift_percent": -2.2917183706283595e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 100,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 5e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 17.30212533030616,
+      "third_harmonic_dBc": -12.121702148841443,
+      "fifth_harmonic_dBc": -22.96747736553682,
+      "raw_min_V": 1.4228325233880728,
+      "raw_max_V": 3.599839755229707,
+      "load_Vrms": 0.9611797703302526,
+      "load_Vpp": 2.1750399813387933,
+      "channel_peak_mA": [
+        22.68035334258001,
+        21.222535899910365
+      ],
+      "channel_rms_mA": [
+        14.087841495700317,
+        13.547964368668941
+      ],
+      "power_led_mA": 1.8244866594308065,
+      "led_rail_mA": 1.8251919238476992,
+      "state_drift_V": [
+        -8.641976023682219e-13,
+        -2.8266278206956486e-13,
+        -1.4033219031261979e-13
+      ],
+      "solver_evaluations": 26,
+      "activity_led_mA": 0.00070526441689223,
+      "R2_mean_mW": 4.068750837766636,
+      "detector_peak_mA": 5.508056099814523,
+      "resistor_mean_mW": [
+        19.846727800797595,
+        18.354733853472375
+      ],
+      "circulating_peak_mA": 21.222535899910365,
+      "circulating_rms_mA": 5.928613344975365,
+      "channel_current_difference_rms_mA": 14.33782992732684,
+      "late_power_drift_percent": 6.426690002392377e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 100,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-09,
+      "step_factor": 1400,
+      "fundamental_mW": 14.717770046645324,
+      "third_harmonic_dBc": -22.85531254775041,
+      "fifth_harmonic_dBc": -18.776807111485535,
+      "raw_min_V": 1.4271828642503495,
+      "raw_max_V": 3.5964315038114263,
+      "load_Vrms": 0.8709765355175594,
+      "load_Vpp": 2.1672039157005516,
+      "channel_peak_mA": [
+        23.02356167123786,
+        22.647762819920572
+      ],
+      "channel_rms_mA": [
+        15.818044485842616,
+        15.268496669875395
+      ],
+      "power_led_mA": 1.8244866594308138,
+      "led_rail_mA": 1.8251948009404333,
+      "state_drift_V": [
+        -4.107825191113079e-13,
+        5.004330283497893e-14,
+        -1.5543122344752192e-13
+      ],
+      "solver_evaluations": 26,
+      "activity_led_mA": 0.0007081415096185984,
+      "R2_mean_mW": 3.3386694893765774,
+      "detector_peak_mA": 5.321924168702436,
+      "resistor_mean_mW": [
+        25.02105313560963,
+        23.312699055799648
+      ],
+      "circulating_peak_mA": 22.647762819920572,
+      "circulating_rms_mA": 10.45829455939083,
+      "channel_current_difference_rms_mA": 22.52776502169373,
+      "late_power_drift_percent": 1.9329689848746057e-06
+    },
+    {
+      "f_Hz": 137000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 68.09499031079943,
+      "third_harmonic_dBc": -9.573345794585595,
+      "fifth_harmonic_dBc": -14.014995618008456,
+      "raw_min_V": 0.42331326239095923,
+      "raw_max_V": 4.603272881709775,
+      "load_Vrms": 2.047836909489829,
+      "load_Vpp": 4.187289913595171,
+      "channel_peak_mA": [
+        31.618175284380676,
+        31.543152382394393
+      ],
+      "channel_rms_mA": [
+        23.12035499456461,
+        23.120354447683308
+      ],
+      "power_led_mA": 1.8244866594307965,
+      "led_rail_mA": 3.587567130810985,
+      "state_drift_V": [
+        -1.969719226013744e-05,
+        8.605560375407606e-09,
+        2.06857691509299e-06
+      ],
+      "solver_evaluations": 25,
+      "activity_led_mA": 1.763080471380188,
+      "R2_mean_mW": 7.001881402686993,
+      "detector_peak_mA": 15.91285545911838,
+      "resistor_mean_mW": [
+        5.345508150746884,
+        5.345507897865082
+      ],
+      "circulating_peak_mA": 0.06150327061569104,
+      "circulating_rms_mA": 4.198544404758261e-05,
+      "channel_current_difference_rms_mA": 0.002455419065455517,
+      "late_power_drift_percent": 2.2290535994784477e-05
+    },
+    {
+      "f_Hz": 475000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 67.63577772076293,
+      "third_harmonic_dBc": -9.548147469364883,
+      "fifth_harmonic_dBc": -13.986300754008665,
+      "raw_min_V": 0.45671569792446953,
+      "raw_max_V": 4.572664002006689,
+      "load_Vrms": 2.041814713117981,
+      "load_Vpp": 4.107973949314772,
+      "channel_peak_mA": [
+        29.93027407944527,
+        29.854499772285955
+      ],
+      "channel_rms_mA": [
+        23.445026762088354,
+        23.445025289874945
+      ],
+      "power_led_mA": 1.8244866594307971,
+      "led_rail_mA": 3.6127232701722014,
+      "state_drift_V": [
+        -2.2692041734329038e-05,
+        1.0960702001572287e-07,
+        3.7898009432879576e-06
+      ],
+      "solver_evaluations": 30,
+      "activity_led_mA": 1.7882366107414034,
+      "R2_mean_mW": 8.205075706053776,
+      "detector_peak_mA": 13.488003322914492,
+      "resistor_mean_mW": [
+        5.4966927987503995,
+        5.496692108428766
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.004570979269451319,
+      "late_power_drift_percent": 3.06085501611264e-05
+    },
+    {
+      "f_Hz": 1800000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 67.55700570176985,
+      "third_harmonic_dBc": -9.544906951845675,
+      "fifth_harmonic_dBc": -13.98607884498328,
+      "raw_min_V": 0.46888945923248065,
+      "raw_max_V": 4.561635342079501,
+      "load_Vrms": 2.0394003525573803,
+      "load_Vpp": 4.087907596529767,
+      "channel_peak_mA": [
+        29.32160212770655,
+        29.24608072028287
+      ],
+      "channel_rms_mA": [
+        23.52448956457624,
+        23.524484885473324
+      ],
+      "power_led_mA": 1.8244866594307938,
+      "led_rail_mA": 3.614677893414318,
+      "state_drift_V": [
+        -1.2598694573817681e-05,
+        1.5855986457147253e-07,
+        3.311764368962855e-06
+      ],
+      "solver_evaluations": 30,
+      "activity_led_mA": 1.790191233983523,
+      "R2_mean_mW": 8.719181537090831,
+      "detector_peak_mA": 12.560074934778523,
+      "resistor_mean_mW": [
+        5.534016092738538,
+        5.534013891268657
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.008908590919297762,
+      "late_power_drift_percent": 6.517802875194434e-06
+    },
+    {
+      "f_Hz": 3500000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 67.53934958053611,
+      "third_harmonic_dBc": -9.55021887699006,
+      "fifth_harmonic_dBc": -13.99975833505317,
+      "raw_min_V": 0.47118175220410835,
+      "raw_max_V": 4.559344617607525,
+      "load_Vrms": 2.0373520474268134,
+      "load_Vpp": 4.084499186454351,
+      "channel_peak_mA": [
+        29.212025380533976,
+        29.13756817306721
+      ],
+      "channel_rms_mA": [
+        23.56699312860118,
+        23.566984832015848
+      ],
+      "power_led_mA": 1.8244866594307947,
+      "led_rail_mA": 3.614947136831421,
+      "state_drift_V": [
+        -4.8362390092648866e-08,
+        2.1191326360359142e-08,
+        3.661946301747321e-10
+      ],
+      "solver_evaluations": 49,
+      "activity_led_mA": 1.7904604774006263,
+      "R2_mean_mW": 9.127666278461998,
+      "detector_peak_mA": 12.353864887771985,
+      "resistor_mean_mW": [
+        5.554031651235336,
+        5.554027740724646
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.012421972920560246,
+      "late_power_drift_percent": 2.915675811898666e-06
+    },
+    {
+      "f_Hz": 7000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 67.48543431756583,
+      "third_harmonic_dBc": -9.56723204947727,
+      "fifth_harmonic_dBc": -14.038540014008397,
+      "raw_min_V": 0.4724874521020842,
+      "raw_max_V": 4.557937143898209,
+      "load_Vrms": 2.0331949997721352,
+      "load_Vpp": 4.082512713749457,
+      "channel_peak_mA": [
+        29.134193858867302,
+        29.05648087072838
+      ],
+      "channel_rms_mA": [
+        23.64042342992718,
+        23.640403289936813
+      ],
+      "power_led_mA": 1.8244866594307971,
+      "led_rail_mA": 3.6154993449600537,
+      "state_drift_V": [
+        6.831903931470151e-10,
+        -5.066658603780638e-08,
+        6.605458402475506e-10
+      ],
+      "solver_evaluations": 34,
+      "activity_led_mA": 1.7910126855292563,
+      "R2_mean_mW": 9.901363295874981,
+      "detector_peak_mA": 12.218704917799856,
+      "resistor_mean_mW": [
+        5.588696199462484,
+        5.5886866771085595
+      ],
+      "circulating_peak_mA": 0.04657273055782769,
+      "circulating_rms_mA": 0.0005417040240332638,
+      "channel_current_difference_rms_mA": 0.01755864838960283,
+      "late_power_drift_percent": 1.3412412736002466e-06
+    },
+    {
+      "f_Hz": 10000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 67.41742518902743,
+      "third_harmonic_dBc": -9.584600481633673,
+      "fifth_harmonic_dBc": -14.07583572458181,
+      "raw_min_V": 0.4729557756966374,
+      "raw_max_V": 4.557452349606956,
+      "load_Vrms": 2.029621417648028,
+      "load_Vpp": 4.081798023426991,
+      "channel_peak_mA": [
+        29.11664985995971,
+        29.03859840087953
+      ],
+      "channel_rms_mA": [
+        23.7003646540806,
+        23.700338406798362
+      ],
+      "power_led_mA": 1.8244866594308002,
+      "led_rail_mA": 3.6159264353576313,
+      "state_drift_V": [
+        -2.3688739858584995e-10,
+        3.2401237248791404e-10,
+        1.4313883411887218e-10
+      ],
+      "solver_evaluations": 140,
+      "activity_led_mA": 1.7914397759268306,
+      "R2_mean_mW": 10.549371274989355,
+      "detector_peak_mA": 12.170745896825583,
+      "resistor_mean_mW": [
+        5.617072847363928,
+        5.617060405967616
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.020987178550840018,
+      "late_power_drift_percent": 9.498617226100237e-07
+    },
+    {
+      "f_Hz": 14000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 67.3077015926699,
+      "third_harmonic_dBc": -9.609241189341294,
+      "fifth_harmonic_dBc": -14.119962924008211,
+      "raw_min_V": 0.4733641318573742,
+      "raw_max_V": 4.557063976155938,
+      "load_Vrms": 2.0249334704736026,
+      "load_Vpp": 4.081222489674177,
+      "channel_peak_mA": [
+        29.100259032494765,
+        29.024703053216726
+      ],
+      "channel_rms_mA": [
+        23.776503512589372,
+        23.77646614584226
+      ],
+      "power_led_mA": 1.8244866594307965,
+      "led_rail_mA": 3.616363739069403,
+      "state_drift_V": [
+        1.124553783427018e-10,
+        -6.680955788596066e-11,
+        2.601208137775757e-10
+      ],
+      "solver_evaluations": 36,
+      "activity_led_mA": 1.7918770796386057,
+      "R2_mean_mW": 11.382532842943238,
+      "detector_peak_mA": 12.131282961188507,
+      "resistor_mean_mW": [
+        5.653221192841742,
+        5.6532034238438165
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.024826994809006513,
+      "late_power_drift_percent": 6.474115687993276e-07
+    },
+    {
+      "f_Hz": 21000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 67.09630577726526,
+      "third_harmonic_dBc": -9.64718095301562,
+      "fifth_harmonic_dBc": -14.158045112186347,
+      "raw_min_V": 0.4739427928411664,
+      "raw_max_V": 4.556555789869207,
+      "load_Vrms": 2.017176491212557,
+      "load_Vpp": 4.08039700350421,
+      "channel_peak_mA": [
+        29.06497509423537,
+        28.9871650947447
+      ],
+      "channel_rms_mA": [
+        23.8902438730813,
+        23.8901876054297
+      ],
+      "power_led_mA": 1.8244866594307958,
+      "led_rail_mA": 3.6166215954958836,
+      "state_drift_V": [
+        -6.495514792703716e-09,
+        8.904690651512226e-09,
+        -1.816244932228983e-10
+      ],
+      "solver_evaluations": 40,
+      "activity_led_mA": 1.7921349360650873,
+      "R2_mean_mW": 12.665679106940503,
+      "detector_peak_mA": 12.069192734445634,
+      "resistor_mean_mW": [
+        5.707437523152991,
+        5.707410638226264
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.030420674365683582,
+      "late_power_drift_percent": 1.1192411664140423e-06
+    },
+    {
+      "f_Hz": 28000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 66.8931602462535,
+      "third_harmonic_dBc": -9.671334796528448,
+      "fifth_harmonic_dBc": -14.160390274765511,
+      "raw_min_V": 0.4745067995884356,
+      "raw_max_V": 4.55608095787332,
+      "load_Vrms": 2.0101146303710253,
+      "load_Vpp": 4.07929954010293,
+      "channel_peak_mA": [
+        28.978755048182837,
+        28.8815073235283
+      ],
+      "channel_rms_mA": [
+        23.972616472199345,
+        23.972556253664568
+      ],
+      "power_led_mA": 1.824486659430795,
+      "led_rail_mA": 3.6161630216123815,
+      "state_drift_V": [
+        -4.923528251765674e-11,
+        -9.725109606506521e-11,
+        -4.901812289404006e-11
+      ],
+      "solver_evaluations": 28,
+      "activity_led_mA": 1.7916763621815865,
+      "R2_mean_mW": 13.66538891102315,
+      "detector_peak_mA": 12.003695631661921,
+      "resistor_mean_mW": [
+        5.746863405231629,
+        5.746834533351119
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.03513731407493611,
+      "late_power_drift_percent": 1.7893360126919333e-07
+    },
+    {
+      "f_Hz": 50000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 66.39780627570755,
+      "third_harmonic_dBc": -9.700600085181149,
+      "fifth_harmonic_dBc": -14.220277063581682,
+      "raw_min_V": 0.47620210085025094,
+      "raw_max_V": 4.554688398734086,
+      "load_Vrms": 1.991085957188659,
+      "load_Vpp": 4.075773326282711,
+      "channel_peak_mA": [
+        28.91444325965924,
+        28.85635428131684
+      ],
+      "channel_rms_mA": [
+        24.073189213751217,
+        24.073117172252392
+      ],
+      "power_led_mA": 1.824486659430795,
+      "led_rail_mA": 3.610730663548081,
+      "state_drift_V": [
+        -3.0464519795714295e-12,
+        8.923972671937008e-13,
+        1.4033219031261979e-13
+      ],
+      "solver_evaluations": 21,
+      "activity_led_mA": 1.7862440041172853,
+      "R2_mean_mW": 15.408592419226624,
+      "detector_peak_mA": 11.799423293940817,
+      "resistor_mean_mW": [
+        5.795184389210687,
+        5.795149703889935
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.04659360753088609,
+      "late_power_drift_percent": 2.3456885323014376e-07
+    },
+    {
+      "f_Hz": 70000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 66.06998421996965,
+      "third_harmonic_dBc": -9.735105792654679,
+      "fifth_harmonic_dBc": -14.395147201479679,
+      "raw_min_V": 0.47759413992856087,
+      "raw_max_V": 4.553563251049527,
+      "load_Vrms": 1.9759266286192236,
+      "load_Vpp": 4.072987628589132,
+      "channel_peak_mA": [
+        28.870388710149562,
+        28.801909031762126
+      ],
+      "channel_rms_mA": [
+        24.056029590216014,
+        24.0559572450821
+      ],
+      "power_led_mA": 1.8244866594307927,
+      "led_rail_mA": 3.6015580814815773,
+      "state_drift_V": [
+        1.4068746168049984e-12,
+        1.089017764854816e-12,
+        -7.238654120556021e-14
+      ],
+      "solver_evaluations": 21,
+      "activity_led_mA": 1.777071422050785,
+      "R2_mean_mW": 16.045147450676975,
+      "detector_peak_mA": 11.624148003853648,
+      "resistor_mean_mW": [
+        5.7869255964534805,
+        5.7868907897721815
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.0550064004883768,
+      "late_power_drift_percent": 6.230398197359932e-07
+    },
+    {
+      "f_Hz": 100000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 65.63983248651365,
+      "third_harmonic_dBc": -9.84017465671514,
+      "fifth_harmonic_dBc": -14.790645061245705,
+      "raw_min_V": 0.4795310118867569,
+      "raw_max_V": 4.551993794478953,
+      "load_Vrms": 1.954548797957451,
+      "load_Vpp": 4.0692393853653845,
+      "channel_peak_mA": [
+        28.77813474558396,
+        28.707913913536718
+      ],
+      "channel_rms_mA": [
+        23.953216150092423,
+        23.953061505954295
+      ],
+      "power_led_mA": 1.8244866594307974,
+      "led_rail_mA": 3.580216057692065,
+      "state_drift_V": [
+        -7.034373084024992e-13,
+        -7.316369732279782e-13,
+        2.2737367544323206e-13
+      ],
+      "solver_evaluations": 21,
+      "activity_led_mA": 1.7557293982612667,
+      "R2_mean_mW": 16.357709740630426,
+      "detector_peak_mA": 11.364597923791623,
+      "resistor_mean_mW": [
+        5.737565639330486,
+        5.73749155508032
+      ],
+      "circulating_peak_mA": 0.09259221199385326,
+      "circulating_rms_mA": 0.002967978221604088,
+      "channel_current_difference_rms_mA": 0.06556883605359662,
+      "late_power_drift_percent": 6.81760203846693e-07
+    },
+    {
+      "f_Hz": 137000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 55.37493454286568,
+      "third_harmonic_dBc": -9.586408103905233,
+      "fifth_harmonic_dBc": -14.030226113401177,
+      "raw_min_V": 0.6134411926033483,
+      "raw_max_V": 4.410689426638572,
+      "load_Vrms": 1.846079765221943,
+      "load_Vpp": 3.738947943274541,
+      "channel_peak_mA": [
+        27.585809829534018,
+        27.554240255233914
+      ],
+      "channel_rms_mA": [
+        20.744768906154256,
+        20.74476858891317
+      ],
+      "power_led_mA": 1.8244866594307967,
+      "led_rail_mA": 3.587379598579682,
+      "state_drift_V": [
+        -3.7790731090225904e-05,
+        8.065072387708483e-09,
+        1.2712523433933143e-06
+      ],
+      "solver_evaluations": 35,
+      "activity_led_mA": 1.7628929391488852,
+      "R2_mean_mW": 5.218645984947676,
+      "detector_peak_mA": 14.190469834219234,
+      "resistor_mean_mW": [
+        9.467599613334366,
+        9.46759932376629
+      ],
+      "circulating_peak_mA": 0.016355706651897874,
+      "circulating_rms_mA": 1.0480621448529563e-05,
+      "channel_current_difference_rms_mA": 0.001514550716050502,
+      "late_power_drift_percent": 3.305885962756605e-05
+    },
+    {
+      "f_Hz": 475000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 54.839733048616345,
+      "third_harmonic_dBc": -9.550687324898524,
+      "fifth_harmonic_dBc": -13.98938695587855,
+      "raw_min_V": 0.6552858012031803,
+      "raw_max_V": 4.3717814749895085,
+      "load_Vrms": 1.8383466700214115,
+      "load_Vpp": 3.6879630782139294,
+      "channel_peak_mA": [
+        26.259267085739662,
+        26.226127944919945
+      ],
+      "channel_rms_mA": [
+        20.9902342438736,
+        20.990233810308936
+      ],
+      "power_led_mA": 1.8244866594307971,
+      "led_rail_mA": 3.613552589404292,
+      "state_drift_V": [
+        -3.0011465728785325e-05,
+        2.385970077067867e-08,
+        9.833087720068079e-06
+      ],
+      "solver_evaluations": 38,
+      "activity_led_mA": 1.7890659299734943,
+      "R2_mean_mW": 6.089380506355171,
+      "detector_peak_mA": 12.164711673816148,
+      "resistor_mean_mW": [
+        9.692978539479041,
+        9.692978139051622
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.002825173470607165,
+      "late_power_drift_percent": 2.5531816971735566e-05
+    },
+    {
+      "f_Hz": 1800000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 54.746739952273806,
+      "third_harmonic_dBc": -9.546289992595767,
+      "fifth_harmonic_dBc": -13.989254186824745,
+      "raw_min_V": 0.6702595494018977,
+      "raw_max_V": 4.357759055670631,
+      "load_Vrms": 1.8354843074003435,
+      "load_Vpp": 3.677426133474156,
+      "channel_peak_mA": [
+        25.79510153299195,
+        25.7632381072233
+      ],
+      "channel_rms_mA": [
+        21.05350301358593,
+        21.053502281404366
+      ],
+      "power_led_mA": 1.8244866594307938,
+      "led_rail_mA": 3.6156284256773037,
+      "state_drift_V": [
+        -1.3388855915952291e-05,
+        3.9650945693470163e-07,
+        5.336153914736741e-06
+      ],
+      "solver_evaluations": 36,
+      "activity_led_mA": 1.7911417662465097,
+      "R2_mean_mW": 6.4979389018177995,
+      "detector_peak_mA": 11.39124001464109,
+      "resistor_mean_mW": [
+        9.751499761147617,
+        9.751499082888175
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.005497600198469099,
+      "late_power_drift_percent": 4.255540253517154e-06
+    },
+    {
+      "f_Hz": 3500000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 54.72317029919742,
+      "third_harmonic_dBc": -9.553792909702866,
+      "fifth_harmonic_dBc": -14.009253178235188,
+      "raw_min_V": 0.6730664736920248,
+      "raw_max_V": 4.354857721380698,
+      "load_Vrms": 1.8331624127577753,
+      "load_Vpp": 3.675819060616015,
+      "channel_peak_mA": [
+        25.70025823827557,
+        25.66724301583393
+      ],
+      "channel_rms_mA": [
+        21.089625472676357,
+        21.08962446596027
+      ],
+      "power_led_mA": 1.824486659430795,
+      "led_rail_mA": 3.6158272609380275,
+      "state_drift_V": [
+        -1.0036067532581683e-08,
+        -1.6120379642270422e-07,
+        -1.0535725625260284e-08
+      ],
+      "solver_evaluations": 28,
+      "activity_led_mA": 1.791340601507232,
+      "R2_mean_mW": 6.841954370873817,
+      "detector_peak_mA": 11.217856463727943,
+      "resistor_mean_mW": [
+        9.784990656710702,
+        9.784989722535071
+      ],
+      "circulating_peak_mA": 0.04167567885193197,
+      "circulating_rms_mA": 0.00038662762024817184,
+      "channel_current_difference_rms_mA": 0.007677622727895482,
+      "late_power_drift_percent": 2.3196445653184128e-06
+    },
+    {
+      "f_Hz": 7000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 54.65841184505785,
+      "third_harmonic_dBc": -9.579106047111182,
+      "fifth_harmonic_dBc": -14.067806551157933,
+      "raw_min_V": 0.6746778167848185,
+      "raw_max_V": 4.353076021200554,
+      "load_Vrms": 1.828522723957444,
+      "load_Vpp": 3.6748005721787482,
+      "channel_peak_mA": [
+        25.64876904677532,
+        25.61545055960756
+      ],
+      "channel_rms_mA": [
+        21.15340624971603,
+        21.153404216248248
+      ],
+      "power_led_mA": 1.8244866594307971,
+      "led_rail_mA": 3.6161900805126366,
+      "state_drift_V": [
+        -2.6902835514874823e-09,
+        -6.88171276630456e-08,
+        1.1269509769817887e-09
+      ],
+      "solver_evaluations": 37,
+      "activity_led_mA": 1.7917034210818392,
+      "R2_mean_mW": 7.503041975724523,
+      "detector_peak_mA": 11.106671642912355,
+      "resistor_mean_mW": [
+        9.844265111241556,
+        9.844263218591738
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.010838830877674791,
+      "late_power_drift_percent": 1.028261698010624e-06
+    },
+    {
+      "f_Hz": 10000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 54.57841355339147,
+      "third_harmonic_dBc": -9.605550728429082,
+      "fifth_harmonic_dBc": -14.123727508994977,
+      "raw_min_V": 0.6752623470418402,
+      "raw_max_V": 4.352459949898793,
+      "load_Vrms": 1.8245528431248699,
+      "load_Vpp": 3.6743593272103263,
+      "channel_peak_mA": [
+        25.635771023398235,
+        25.600721493406567
+      ],
+      "channel_rms_mA": [
+        21.205733457821523,
+        21.205731109200805
+      ],
+      "power_led_mA": 1.8244866594308,
+      "led_rail_mA": 3.6164380831557503,
+      "state_drift_V": [
+        1.0982592613117959e-10,
+        -2.653783193196091e-09,
+        -5.284572779373775e-11
+      ],
+      "solver_evaluations": 50,
+      "activity_led_mA": 1.7919514237249499,
+      "R2_mean_mW": 8.05836453152718,
+      "detector_peak_mA": 11.064721691148716,
+      "resistor_mean_mW": [
+        9.893028892651754,
+        9.893026701265988
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.012957870927971833,
+      "late_power_drift_percent": 7.616915986830008e-07
+    },
+    {
+      "f_Hz": 14000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 54.448116798742,
+      "third_harmonic_dBc": -9.642861476711538,
+      "fifth_harmonic_dBc": -14.187520166360596,
+      "raw_min_V": 0.6757796948534738,
+      "raw_max_V": 4.351955937819224,
+      "load_Vrms": 1.81935250880888,
+      "load_Vpp": 3.673884232782947,
+      "channel_peak_mA": [
+        25.62774380598867,
+        25.59591753422947
+      ],
+      "channel_rms_mA": [
+        21.272215692411617,
+        21.272212781568545
+      ],
+      "power_led_mA": 1.8244866594307965,
+      "led_rail_mA": 3.6166171220692656,
+      "state_drift_V": [
+        1.4653167568212666e-10,
+        7.087519460213798e-11,
+        9.839018488833062e-11
+      ],
+      "solver_evaluations": 35,
+      "activity_led_mA": 1.7921304626384684,
+      "R2_mean_mW": 8.77301731405265,
+      "detector_peak_mA": 11.02641982175619,
+      "resistor_mean_mW": [
+        9.955157530218612,
+        9.95515480573521
+      ],
+      "circulating_peak_mA": 0.05041114338264089,
+      "circulating_rms_mA": 0.0008390934792151985,
+      "channel_current_difference_rms_mA": 0.015337387317874908,
+      "late_power_drift_percent": 5.083509835301925e-07
+    },
+    {
+      "f_Hz": 21000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 54.19376639980535,
+      "third_harmonic_dBc": -9.698208954904315,
+      "fifth_harmonic_dBc": -14.233208439349003,
+      "raw_min_V": 0.6765478348876851,
+      "raw_max_V": 4.351263869186679,
+      "load_Vrms": 1.8108267182189755,
+      "load_Vpp": 3.6727219745800346,
+      "channel_peak_mA": [
+        25.593316055507433,
+        25.559822807340055
+      ],
+      "channel_rms_mA": [
+        21.371622897936348,
+        21.371618046412166
+      ],
+      "power_led_mA": 1.8244866594307962,
+      "led_rail_mA": 3.6163806619392345,
+      "state_drift_V": [
+        -2.1254908944001727e-10,
+        1.1931455823344095e-11,
+        -2.3768764734199976e-10
+      ],
+      "solver_evaluations": 30,
+      "activity_led_mA": 1.7918940025084378,
+      "R2_mean_mW": 9.87474766617298,
+      "detector_peak_mA": 10.96667769186683,
+      "resistor_mean_mW": [
+        10.048417836415137,
+        10.048413274278078
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.018775799227637887,
+      "late_power_drift_percent": 2.0960924107527035e-07
+    },
+    {
+      "f_Hz": 28000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 53.94820847535484,
+      "third_harmonic_dBc": -9.729598904714212,
+      "fifth_harmonic_dBc": -14.220778653643762,
+      "raw_min_V": 0.6773273563747471,
+      "raw_max_V": 4.350594419190161,
+      "load_Vrms": 1.8032129184689123,
+      "load_Vpp": 3.671219026479366,
+      "channel_peak_mA": [
+        25.470929291025634,
+        25.468045902187345
+      ],
+      "channel_rms_mA": [
+        21.443450205093868,
+        21.443450345297382
+      ],
+      "power_led_mA": 1.824486659430795,
+      "led_rail_mA": 3.615383233382416,
+      "state_drift_V": [
+        -1.557132200957767e-10,
+        -9.318545934888789e-12,
+        4.7763126787003785e-11
+      ],
+      "solver_evaluations": 24,
+      "activity_led_mA": 1.7908965739516205,
+      "R2_mean_mW": 10.73383780944266,
+      "detector_peak_mA": 10.903567466085478,
+      "resistor_mean_mW": [
+        10.116074247363468,
+        10.116074379647154
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.021664117688215957,
+      "late_power_drift_percent": 1.792435089242872e-07
+    },
+    {
+      "f_Hz": 50000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 53.36287753827073,
+      "third_harmonic_dBc": -9.74525386295423,
+      "fifth_harmonic_dBc": -14.24802772243268,
+      "raw_min_V": 0.6797392318543707,
+      "raw_max_V": 4.348540312951847,
+      "load_Vrms": 1.78363839306956,
+      "load_Vpp": 3.666356058523301,
+      "channel_peak_mA": [
+        25.47848257422719,
+        25.45733796124853
+      ],
+      "channel_rms_mA": [
+        21.529983483001818,
+        21.529994325947012
+      ],
+      "power_led_mA": 1.824486659430795,
+      "led_rail_mA": 3.6078856857447943,
+      "state_drift_V": [
+        4.908962125682592e-12,
+        9.41524636033364e-12,
+        -1.7186252421197423e-13
+      ],
+      "solver_evaluations": 22,
+      "activity_led_mA": 1.783399026313999,
+      "R2_mean_mW": 12.234072687853335,
+      "detector_peak_mA": 10.697358043870562,
+      "resistor_mean_mW": [
+        10.197884153123276,
+        10.197894424856838
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.028760651888454513,
+      "late_power_drift_percent": 3.2134725991284085e-07
+    },
+    {
+      "f_Hz": 70000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 53.00269326161229,
+      "third_harmonic_dBc": -9.762955324367953,
+      "fifth_harmonic_dBc": -14.420181502213394,
+      "raw_min_V": 0.681783649994274,
+      "raw_max_V": 4.346834443391112,
+      "load_Vrms": 1.7688328058739369,
+      "load_Vpp": 3.662363177047479,
+      "channel_peak_mA": [
+        25.412285286368377,
+        25.383648610377694
+      ],
+      "channel_rms_mA": [
+        21.51272173964615,
+        21.512745459500948
+      ],
+      "power_led_mA": 1.8244866594307927,
+      "led_rail_mA": 3.5960769523498426,
+      "state_drift_V": [
+        9.681144774731365e-14,
+        -1.024402784821632e-12,
+        1.0702549957386509e-13
+      ],
+      "solver_evaluations": 18,
+      "activity_led_mA": 1.77159029291905,
+      "R2_mean_mW": 12.784144872484905,
+      "detector_peak_mA": 10.51788202933786,
+      "resistor_mean_mW": [
+        10.181538326243786,
+        10.181560778516145
+      ],
+      "circulating_peak_mA": 0.02954734223923816,
+      "circulating_rms_mA": 0.0007896595622171208,
+      "channel_current_difference_rms_mA": 0.03396541087781479,
+      "late_power_drift_percent": 6.279810893516924e-07
+    },
+    {
+      "f_Hz": 100000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 52.575588262227946,
+      "third_harmonic_dBc": -9.855275448636965,
+      "fifth_harmonic_dBc": -14.814758012004924,
+      "raw_min_V": 0.6847249016003947,
+      "raw_max_V": 4.344347772372694,
+      "load_Vrms": 1.7486190156235648,
+      "load_Vpp": 3.656712596586558,
+      "channel_peak_mA": [
+        25.313940023989193,
+        25.287381594877846
+      ],
+      "channel_rms_mA": [
+        21.418278659559622,
+        21.418339613300528
+      ],
+      "power_led_mA": 1.8244866594307974,
+      "led_rail_mA": 3.5680338627902635,
+      "state_drift_V": [
+        -1.0169642905566434e-12,
+        -6.159517340620368e-13,
+        2.9753977059954195e-14
+      ],
+      "solver_evaluations": 18,
+      "activity_led_mA": 1.7435472033594646,
+      "R2_mean_mW": 13.059144734498025,
+      "detector_peak_mA": 10.24443275872991,
+      "resistor_mean_mW": [
+        10.092338536248047,
+        10.09239597939491
+      ],
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "channel_current_difference_rms_mA": 0.0405018630130001,
+      "late_power_drift_percent": 5.740826702904656e-07
+    },
+    {
+      "f_Hz": 137000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 68.09498894686024,
+      "third_harmonic_dBc": -9.573345842912106,
+      "fifth_harmonic_dBc": -14.014995738283178,
+      "raw_min_V": 0.42331422824178816,
+      "raw_max_V": 4.6032722441138185,
+      "load_Vrms": 2.047832780163363,
+      "load_Vpp": 4.187290093001598,
+      "channel_peak_mA": [
+        53.865617787367306,
+        29.446791810132396
+      ],
+      "channel_rms_mA": [
+        23.123095654688374,
+        23.120283661941574
+      ],
+      "power_led_mA": 1.8244866594307965,
+      "led_rail_mA": 3.5875671509343756,
+      "state_drift_V": [
+        -2.0459833860675403e-05,
+        2.5610769061046312e-09,
+        1.4461369497453802e-06
+      ],
+      "solver_evaluations": 38,
+      "activity_led_mA": 1.763080491503578,
+      "R2_mean_mW": 7.001798489110113,
+      "detector_peak_mA": 15.881768638807015,
+      "resistor_mean_mW": [
+        5.34677552655868,
+        5.345475166086412
+      ],
+      "circulating_peak_mA": 21.780953781121443,
+      "circulating_rms_mA": 0.12914355725410634,
+      "channel_current_difference_rms_mA": 0.5090318102320281,
+      "late_power_drift_percent": 2.3935346615822084e-05
+    },
+    {
+      "f_Hz": 475000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 67.63577615201046,
+      "third_harmonic_dBc": -9.54814800102907,
+      "fifth_harmonic_dBc": -13.986302349717167,
+      "raw_min_V": 0.45671712030925543,
+      "raw_max_V": 4.5726629112268276,
+      "load_Vrms": 2.041800181528022,
+      "load_Vpp": 4.107973643261843,
+      "channel_peak_mA": [
+        51.95643631738476,
+        27.794335884459844
+      ],
+      "channel_rms_mA": [
+        23.453689772357862,
+        23.445499370034003
+      ],
+      "power_led_mA": 1.824486659430797,
+      "led_rail_mA": 3.6127232785149825,
+      "state_drift_V": [
+        -2.38130079999177e-05,
+        1.1940948341226942e-08,
+        4.947705282365433e-06
+      ],
+      "solver_evaluations": 30,
+      "activity_led_mA": 1.7882366190841843,
+      "R2_mean_mW": 8.204791110463564,
+      "detector_peak_mA": 13.454770027234495,
+      "resistor_mean_mW": [
+        5.500755639380045,
+        5.496914407102658
+      ],
+      "circulating_peak_mA": 23.05063894302235,
+      "circulating_rms_mA": 0.24774060945403512,
+      "channel_current_difference_rms_mA": 0.9482349862852217,
+      "late_power_drift_percent": 3.114552253880021e-05
+    },
+    {
+      "f_Hz": 1800000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 67.55698018827671,
+      "third_harmonic_dBc": -9.544915154059687,
+      "fifth_harmonic_dBc": -13.986103301105373,
+      "raw_min_V": 0.4689051571193316,
+      "raw_max_V": 4.561637816420701,
+      "load_Vrms": 2.0393427573791882,
+      "load_Vpp": 4.087908108576151,
+      "channel_peak_mA": [
+        51.33624634112598,
+        28.338717304675686
+      ],
+      "channel_rms_mA": [
+        23.55619335856725,
+        23.527227687341142
+      ],
+      "power_led_mA": 1.8244866594307942,
+      "led_rail_mA": 3.6146779044398705,
+      "state_drift_V": [
+        -1.5434301836592113e-08,
+        -1.804059552856785e-07,
+        4.454559388022972e-09
+      ],
+      "solver_evaluations": 43,
+      "activity_led_mA": 1.7901912450090758,
+      "R2_mean_mW": 8.718074627928912,
+      "detector_peak_mA": 12.531775793155674,
+      "resistor_mean_mW": [
+        5.548942455462052,
+        5.535304426519944
+      ],
+      "circulating_peak_mA": 23.182959721144783,
+      "circulating_rms_mA": 0.48544910664591184,
+      "channel_current_difference_rms_mA": 1.8454671570537142,
+      "late_power_drift_percent": 7.152850689529089e-06
+    },
+    {
+      "f_Hz": 3500000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 67.53928643475008,
+      "third_harmonic_dBc": -9.550250122424297,
+      "fifth_harmonic_dBc": -13.99985243051982,
+      "raw_min_V": 0.4711847738459525,
+      "raw_max_V": 4.559343211868785,
+      "load_Vrms": 2.037240399372063,
+      "load_Vpp": 4.084499143525427,
+      "channel_peak_mA": [
+        51.23979450590695,
+        28.45476191869948
+      ],
+      "channel_rms_mA": [
+        23.628248517647595,
+        23.57268315636291
+      ],
+      "power_led_mA": 1.824486659430795,
+      "led_rail_mA": 3.614947119779096,
+      "state_drift_V": [
+        2.631829865151758e-09,
+        -1.1774495844996125e-07,
+        9.523217769924486e-10
+      ],
+      "solver_evaluations": 44,
+      "activity_led_mA": 1.7904604603483005,
+      "R2_mean_mW": 9.125504636745607,
+      "detector_peak_mA": 12.326021213114188,
+      "resistor_mean_mW": [
+        5.582941280117142,
+        5.556713911902752
+      ],
+      "circulating_peak_mA": 23.981080061252104,
+      "circulating_rms_mA": 0.6872173120136602,
+      "channel_current_difference_rms_mA": 2.576164457604609,
+      "late_power_drift_percent": 2.9931902290059043e-06
+    },
+    {
+      "f_Hz": 7000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 67.48518622670747,
+      "third_harmonic_dBc": -9.567357389141511,
+      "fifth_harmonic_dBc": -14.038918286535718,
+      "raw_min_V": 0.47249204373795417,
+      "raw_max_V": 4.557936780981903,
+      "load_Vrms": 2.0329737133135715,
+      "load_Vpp": 4.0825125389488495,
+      "channel_peak_mA": [
+        51.16695907091324,
+        28.497641929083667
+      ],
+      "channel_rms_mA": [
+        23.762041350408303,
+        23.652161683416157
+      ],
+      "power_led_mA": 1.8244866594307971,
+      "led_rail_mA": 3.615499384627292,
+      "state_drift_V": [
+        -1.59576920566451e-08,
+        -1.369457236499727e-08,
+        7.103713173250981e-10
+      ],
+      "solver_evaluations": 45,
+      "activity_led_mA": 1.791012725196495,
+      "R2_mean_mW": 9.897185833137204,
+      "detector_peak_mA": 12.193898059396385,
+      "resistor_mean_mW": [
+        5.646346091385126,
+        5.5942475229846025
+      ],
+      "circulating_peak_mA": 23.267922292647622,
+      "circulating_rms_mA": 0.9658119850407979,
+      "channel_current_difference_rms_mA": 3.6428509407565457,
+      "late_power_drift_percent": 1.395285975647198e-06
+    },
+    {
+      "f_Hz": 10000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 67.41693019131387,
+      "third_harmonic_dBc": -9.584854140642348,
+      "fifth_harmonic_dBc": -14.076603740510183,
+      "raw_min_V": 0.4729612221068114,
+      "raw_max_V": 4.55745360931186,
+      "load_Vrms": 2.0293059019757704,
+      "load_Vpp": 4.081797800630815,
+      "channel_peak_mA": [
+        51.14177928116493,
+        28.532983182937063
+      ],
+      "channel_rms_mA": [
+        23.873307230853687,
+        23.717285027669217
+      ],
+      "power_led_mA": 1.8244866594308,
+      "led_rail_mA": 3.615926490208438,
+      "state_drift_V": [
+        -2.791522568657001e-10,
+        1.725447118516854e-09,
+        8.899849746057953e-10
+      ],
+      "solver_evaluations": 30,
+      "activity_led_mA": 1.791439830777637,
+      "R2_mean_mW": 10.54340608491555,
+      "detector_peak_mA": 12.145281367184237,
+      "resistor_mean_mW": [
+        5.699347981387305,
+        5.625096090837024
+      ],
+      "circulating_peak_mA": 24.06690184065055,
+      "circulating_rms_mA": 1.160349587112164,
+      "channel_current_difference_rms_mA": 4.353147657051931,
+      "late_power_drift_percent": 5.101180144961859e-07
+    },
+    {
+      "f_Hz": 14000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 67.30671634402475,
+      "third_harmonic_dBc": -9.609752578534422,
+      "fifth_harmonic_dBc": -14.121513928251176,
+      "raw_min_V": 0.47336998671318403,
+      "raw_max_V": 4.557064398339073,
+      "load_Vrms": 2.0244859112805296,
+      "load_Vpp": 4.081222265680818,
+      "channel_peak_mA": [
+        51.11914836853641,
+        28.557748124521044
+      ],
+      "channel_rms_mA": [
+        24.016938741031655,
+        23.800506501030796
+      ],
+      "power_led_mA": 1.824486659430797,
+      "led_rail_mA": 3.6163637921653153,
+      "state_drift_V": [
+        4.631539596289258e-11,
+        -1.7977686006531712e-10,
+        3.5367264672458987e-12
+      ],
+      "solver_evaluations": 29,
+      "activity_led_mA": 1.7918771327345184,
+      "R2_mean_mW": 11.374116750801322,
+      "detector_peak_mA": 12.101545506661783,
+      "resistor_mean_mW": [
+        5.768133464904665,
+        5.664641097056075
+      ],
+      "circulating_peak_mA": 24.048063769201548,
+      "circulating_rms_mA": 1.3812459158713366,
+      "channel_current_difference_rms_mA": 5.150818106451553,
+      "late_power_drift_percent": 6.279536446385237e-07
+    },
+    {
+      "f_Hz": 21000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 67.09393724429546,
+      "third_harmonic_dBc": -9.648415804738592,
+      "fifth_harmonic_dBc": -14.161766841493254,
+      "raw_min_V": 0.47395197258936256,
+      "raw_max_V": 4.556555851504521,
+      "load_Vrms": 2.0164915975875597,
+      "load_Vpp": 4.080390993550472,
+      "channel_peak_mA": [
+        51.09455092502075,
+        28.58247057739947
+      ],
+      "channel_rms_mA": [
+        24.249048729460643,
+        23.92690156141449
+      ],
+      "power_led_mA": 1.8244866594307962,
+      "led_rail_mA": 3.6166215840188904,
+      "state_drift_V": [
+        2.8126034834485836e-10,
+        1.0627887458980467e-10,
+        3.969913286994142e-10
+      ],
+      "solver_evaluations": 19,
+      "activity_led_mA": 1.7921349245880935,
+      "R2_mean_mW": 12.653100744409691,
+      "detector_peak_mA": 12.039497762251134,
+      "resistor_mean_mW": [
+        5.880163642837574,
+        5.724966183296185
+      ],
+      "circulating_peak_mA": 23.800285897725374,
+      "circulating_rms_mA": 1.704629512712962,
+      "channel_current_difference_rms_mA": 6.3251930515417065,
+      "late_power_drift_percent": 3.297501383059398e-07
+    },
+    {
+      "f_Hz": 28000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 66.8887732249472,
+      "third_harmonic_dBc": -9.673630818746766,
+      "fifth_harmonic_dBc": -14.167268542089772,
+      "raw_min_V": 0.47449071347535604,
+      "raw_max_V": 4.556080801881034,
+      "load_Vrms": 2.009179364090124,
+      "load_Vpp": 4.07931258367922,
+      "channel_peak_mA": [
+        51.308198959991564,
+        28.60923120356833
+      ],
+      "channel_rms_mA": [
+        24.448551654070876,
+        24.0217402992302
+      ],
+      "power_led_mA": 1.824486659430795,
+      "led_rail_mA": 3.6161628425209407,
+      "state_drift_V": [
+        4.914749940354568e-09,
+        -1.5781842499507093e-09,
+        5.886655607412195e-10
+      ],
+      "solver_evaluations": 15,
+      "activity_led_mA": 1.791676183090145,
+      "R2_mean_mW": 13.648378553076617,
+      "detector_peak_mA": 11.973127619107494,
+      "resistor_mean_mW": [
+        5.977316779817715,
+        5.770440070036598
+      ],
+      "circulating_peak_mA": 23.709079923499566,
+      "circulating_rms_mA": 1.9676177897266918,
+      "channel_current_difference_rms_mA": 7.313187417471582,
+      "late_power_drift_percent": 1.8498190534899095e-06
+    },
+    {
+      "f_Hz": 50000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 66.38402701919753,
+      "third_harmonic_dBc": -9.707859204066034,
+      "fifth_harmonic_dBc": -14.241895513942893,
+      "raw_min_V": 0.4762272224825832,
+      "raw_max_V": 4.554679630347885,
+      "load_Vrms": 1.9894115809123305,
+      "load_Vpp": 4.075735011772567,
+      "channel_peak_mA": [
+        51.27011688642161,
+        28.714067151172078
+      ],
+      "channel_rms_mA": [
+        24.910602114743956,
+        24.164245608356982
+      ],
+      "power_led_mA": 1.8244866594307958,
+      "led_rail_mA": 3.6107283506891514,
+      "state_drift_V": [
+        -5.6736837450444e-12,
+        -2.663091969168363e-12,
+        1.3677947663381929e-13
+      ],
+      "solver_evaluations": 14,
+      "activity_led_mA": 1.7862416912583547,
+      "R2_mean_mW": 15.378492407981584,
+      "detector_peak_mA": 11.764401563159387,
+      "resistor_mean_mW": [
+        6.205380977190867,
+        5.839107658210001
+      ],
+      "circulating_peak_mA": 23.712442105597773,
+      "circulating_rms_mA": 2.634392660335798,
+      "channel_current_difference_rms_mA": 9.774873974669669,
+      "late_power_drift_percent": 1.4156944505572255e-07
+    },
+    {
+      "f_Hz": 70000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 66.04313290812118,
+      "third_harmonic_dBc": -9.749284793449718,
+      "fifth_harmonic_dBc": -14.43745980272637,
+      "raw_min_V": 0.47764032706491,
+      "raw_max_V": 4.553538327920057,
+      "load_Vrms": 1.9735641346332216,
+      "load_Vpp": 4.072910856854148,
+      "channel_peak_mA": [
+        51.23235184513719,
+        28.789248980941952
+      ],
+      "channel_rms_mA": [
+        25.21775968046784,
+        24.187732126769077
+      ],
+      "power_led_mA": 1.824486659430793,
+      "led_rail_mA": 3.6015488854240503,
+      "state_drift_V": [
+        -3.909317314310101e-12,
+        -2.0479173912235638e-12,
+        1.2612133559741778e-13
+      ],
+      "solver_evaluations": 14,
+      "activity_led_mA": 1.7770622259932578,
+      "R2_mean_mW": 16.00300754094935,
+      "detector_peak_mA": 11.587069393463814,
+      "resistor_mean_mW": [
+        6.359354033018293,
+        5.850463854363369
+      ],
+      "circulating_peak_mA": 24.22870412898975,
+      "circulating_rms_mA": 3.1221888991829982,
+      "channel_current_difference_rms_mA": 11.56780893987192,
+      "late_power_drift_percent": 6.637333571646309e-07
+    },
+    {
+      "f_Hz": 100000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 65.58562956033158,
+      "third_harmonic_dBc": -9.868906125553693,
+      "fifth_harmonic_dBc": -14.876560568877375,
+      "raw_min_V": 0.47962150437864354,
+      "raw_max_V": 4.551937246270286,
+      "load_Vrms": 1.9511515767167646,
+      "load_Vpp": 4.069082017471268,
+      "channel_peak_mA": [
+        51.14147039282328,
+        28.88619919008872
+      ],
+      "channel_rms_mA": [
+        25.595278863855405,
+        24.14947366713519
+      ],
+      "power_led_mA": 1.824486659430793,
+      "led_rail_mA": 3.5801705789323783,
+      "state_drift_V": [
+        -5.728750807065808e-14,
+        -3.084199562408685e-13,
+        1.7763568394002505e-15
+      ],
+      "solver_evaluations": 17,
+      "activity_led_mA": 1.7556839195015852,
+      "R2_mean_mW": 16.297750679813262,
+      "detector_peak_mA": 11.32304674654339,
+      "resistor_mean_mW": [
+        6.551183001185233,
+        5.831970783996584
+      ],
+      "circulating_peak_mA": 24.129496498797824,
+      "circulating_rms_mA": 3.732990170933974,
+      "channel_current_difference_rms_mA": 13.821403877638993,
+      "late_power_drift_percent": 5.762591737124012e-07
+    },
+    {
+      "f_Hz": 137000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 5e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 68.0949871643819,
+      "third_harmonic_dBc": -9.573347154995048,
+      "fifth_harmonic_dBc": -14.014999718091893,
+      "raw_min_V": 0.423317588396669,
+      "raw_max_V": 4.603269601895362,
+      "load_Vrms": 2.047753286437588,
+      "load_Vpp": 4.187290191712766,
+      "channel_peak_mA": [
+        123.40944538984309,
+        109.7996150097317
+      ],
+      "channel_rms_mA": [
+        23.151533365138807,
+        23.141407383604427
+      ],
+      "power_led_mA": 1.8244866594307965,
+      "led_rail_mA": 3.587566651078953,
+      "state_drift_V": [
+        -2.020982931183468e-05,
+        3.3712737046442953e-09,
+        1.7523500499549982e-06
+      ],
+      "solver_evaluations": 19,
+      "activity_led_mA": 1.7630799916481565,
+      "R2_mean_mW": 7.000344626890399,
+      "detector_peak_mA": 15.837428624723659,
+      "resistor_mean_mW": [
+        5.359934971571351,
+        5.3552473569394055
+      ],
+      "circulating_peak_mA": 109.7996150097317,
+      "circulating_rms_mA": 0.9997675242211055,
+      "channel_current_difference_rms_mA": 2.248554301737996,
+      "late_power_drift_percent": 2.5890230292979766e-05
+    },
+    {
+      "f_Hz": 137000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-09,
+      "step_factor": 1400,
+      "fundamental_mW": 68.09498125642767,
+      "third_harmonic_dBc": -9.57335167099014,
+      "fifth_harmonic_dBc": -14.015013298977529,
+      "raw_min_V": 0.4233222348872209,
+      "raw_max_V": 4.603266600418284,
+      "load_Vrms": 2.0476181958250987,
+      "load_Vpp": 4.187289619866846,
+      "channel_peak_mA": [
+        127.38312723604913,
+        120.68646555307764
+      ],
+      "channel_rms_mA": [
+        23.19573917884548,
+        23.180517086633003
+      ],
+      "power_led_mA": 1.8244866594307965,
+      "led_rail_mA": 3.5875650853750782,
+      "state_drift_V": [
+        -2.0050444250685473e-05,
+        9.07265829130921e-09,
+        1.3084954320063957e-06
+      ],
+      "solver_evaluations": 26,
+      "activity_led_mA": 1.7630784259442818,
+      "R2_mean_mW": 6.997935374634119,
+      "detector_peak_mA": 15.695356487974776,
+      "resistor_mean_mW": [
+        5.3804231605302695,
+        5.373363724036835
+      ],
+      "circulating_peak_mA": 120.68646555307764,
+      "circulating_rms_mA": 1.7020712848711532,
+      "channel_current_difference_rms_mA": 3.620702643489128,
+      "late_power_drift_percent": 2.3387250225326284e-05
+    },
+    {
+      "f_Hz": 137000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 5e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 55.37493457131052,
+      "third_harmonic_dBc": -9.586409532193134,
+      "fifth_harmonic_dBc": -14.03023045352468,
+      "raw_min_V": 0.6134465414940936,
+      "raw_max_V": 4.410684763980843,
+      "load_Vrms": 1.8460026990517582,
+      "load_Vpp": 3.7389477400494338,
+      "channel_peak_mA": [
+        79.84535335043088,
+        69.53005027656506
+      ],
+      "channel_rms_mA": [
+        20.759488321412473,
+        20.753670991745164
+      ],
+      "power_led_mA": 1.8244866594307965,
+      "led_rail_mA": 3.5873790267535317,
+      "state_drift_V": [
+        -3.70931444855227e-05,
+        5.453643092678817e-09,
+        4.851371902869772e-06
+      ],
+      "solver_evaluations": 42,
+      "activity_led_mA": 1.7628923673227352,
+      "R2_mean_mW": 5.217375402983349,
+      "detector_peak_mA": 14.123984429588186,
+      "resistor_mean_mW": [
+        9.48103981807093,
+        9.475726911939306
+      ],
+      "circulating_peak_mA": 69.53005027656506,
+      "circulating_rms_mA": 0.6325822758544611,
+      "channel_current_difference_rms_mA": 1.4646036997004241,
+      "late_power_drift_percent": 3.1786261045496644e-05
+    },
+    {
+      "f_Hz": 137000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-09,
+      "step_factor": 1400,
+      "fundamental_mW": 55.374931725170086,
+      "third_harmonic_dBc": -9.586414160378931,
+      "fifth_harmonic_dBc": -14.030244407688988,
+      "raw_min_V": 0.6134522574033306,
+      "raw_max_V": 4.410680329949191,
+      "load_Vrms": 1.8458820722707294,
+      "load_Vpp": 3.7389480960435773,
+      "channel_peak_mA": [
+        81.59031649026326,
+        75.67150747371491
+      ],
+      "channel_rms_mA": [
+        20.77943243661747,
+        20.77059439982349
+      ],
+      "power_led_mA": 1.8244866594307965,
+      "led_rail_mA": 3.5873772017071666,
+      "state_drift_V": [
+        -3.752682244972938e-05,
+        4.695448030389571e-09,
+        4.786943005985478e-06
+      ],
+      "solver_evaluations": 51,
+      "activity_led_mA": 1.7628905422763703,
+      "R2_mean_mW": 5.215436180080513,
+      "detector_peak_mA": 14.001550440259614,
+      "resistor_mean_mW": [
+        9.499265872534894,
+        9.49118701788354
+      ],
+      "circulating_peak_mA": 75.67150747371491,
+      "circulating_rms_mA": 1.0818062855946284,
+      "channel_current_difference_rms_mA": 2.3397315001648953,
+      "late_power_drift_percent": 3.212410837338808e-05
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 0,
+      "strength_mismatch_fraction": 0.1,
+      "resistor_tolerance_fraction": 0.01,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 79.89688738930573,
+      "third_harmonic_dBc": -10.096043191072674,
+      "fifth_harmonic_dBc": -15.626087526855985,
+      "raw_min_V": 0.2698569454334799,
+      "raw_max_V": 4.770776308792283,
+      "load_Vrms": 2.133786003042506,
+      "load_Vpp": 4.4923083320372745,
+      "channel_peak_mA": [
+        42.755262384533474,
+        25.890959498619512
+      ],
+      "channel_rms_mA": [
+        29.66794999042543,
+        23.156837342771997
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 3.542813732777707,
+      "state_drift_V": [
+        -5.524469770534779e-13,
+        -2.4147350785597155e-13,
+        -1.0391687510491465e-13
+      ],
+      "solver_evaluations": 17,
+      "activity_led_mA": 1.7183270733468925,
+      "R2_mean_mW": 20.060255026138066,
+      "detector_peak_mA": 12.137415714023989,
+      "resistor_mean_mW": [
+        0.0,
+        0.0
+      ],
+      "circulating_peak_mA": 4.008112110627748,
+      "circulating_rms_mA": 0.29817660484241393,
+      "channel_current_difference_rms_mA": 7.764326867421861,
+      "late_power_drift_percent": 2.9106017596092215e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 4.7,
+      "strength_mismatch_fraction": 0.1,
+      "resistor_tolerance_fraction": 0.01,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 72.25837004713424,
+      "third_harmonic_dBc": -10.103321891712898,
+      "fifth_harmonic_dBc": -15.641790285677244,
+      "raw_min_V": 0.3757752873722142,
+      "raw_max_V": 4.657679599793472,
+      "load_Vrms": 2.02888611224546,
+      "load_Vpp": 4.278262728272504,
+      "channel_peak_mA": [
+        37.875313435758166,
+        25.214613352236054
+      ],
+      "channel_rms_mA": [
+        27.27440369906889,
+        22.88244103873095
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 3.529987735846035,
+      "state_drift_V": [
+        -4.276579090856103e-13,
+        -1.6231460620019789e-13,
+        9.85878045867139e-14
+      ],
+      "solver_evaluations": 21,
+      "activity_led_mA": 1.70550107641522,
+      "R2_mean_mW": 18.12832746494763,
+      "detector_peak_mA": 11.525756706098377,
+      "resistor_mean_mW": [
+        3.4613345809914082,
+        2.4855581941585774
+      ],
+      "circulating_peak_mA": 3.040025811922968,
+      "circulating_rms_mA": 0.21219100611241615,
+      "channel_current_difference_rms_mA": 5.383391697937728,
+      "late_power_drift_percent": 2.8407325380896964e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0.1,
+      "resistor_tolerance_fraction": 0.01,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 64.90746485760386,
+      "third_harmonic_dBc": -10.110365311849158,
+      "fifth_harmonic_dBc": -15.657805664470565,
+      "raw_min_V": 0.4833352645042714,
+      "raw_max_V": 4.5487957032204305,
+      "load_Vrms": 1.922592931530862,
+      "load_Vpp": 4.061988039768758,
+      "channel_peak_mA": [
+        34.120560806718835,
+        24.268410279702767
+      ],
+      "channel_rms_mA": [
+        25.347729066166,
+        22.146046357702883
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 3.509921137121841,
+      "state_drift_V": [
+        4.787281682183675e-13,
+        2.1094237467877974e-13,
+        4.796163466380676e-14
+      ],
+      "solver_evaluations": 25,
+      "activity_led_mA": 1.6854344776910262,
+      "R2_mean_mW": 16.271525878165463,
+      "detector_peak_mA": 10.918353677293005,
+      "resistor_mean_mW": [
+        6.360822951236385,
+        4.953518429703022
+      ],
+      "circulating_peak_mA": 2.6725729860380367,
+      "circulating_rms_mA": 0.16254005138269637,
+      "channel_current_difference_rms_mA": 4.010739821132737,
+      "late_power_drift_percent": 2.4964190714626966e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0.1,
+      "resistor_tolerance_fraction": 0.01,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 51.91248516350511,
+      "third_harmonic_dBc": -10.124070848955146,
+      "fifth_harmonic_dBc": -15.690541584997735,
+      "raw_min_V": 0.6906659367634573,
+      "raw_max_V": 4.339207178632501,
+      "load_Vrms": 1.7188095855184673,
+      "load_Vpp": 3.6453995417061975,
+      "channel_peak_mA": [
+        28.487500243882252,
+        21.89063955196797
+      ],
+      "channel_rms_mA": [
+        22.196060880952874,
+        20.23311928933977
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 2.7355313194332664,
+      "state_drift_V": [
+        2.0472512574087887e-13,
+        1.8607337892717624e-13,
+        -1.9984014443252818e-14
+      ],
+      "solver_evaluations": 33,
+      "activity_led_mA": 0.9110446600024524,
+      "R2_mean_mW": 12.99824716177429,
+      "detector_peak_mA": 9.761828776280197,
+      "resistor_mean_mW": [
+        10.730246283782455,
+        9.096403961445246
+      ],
+      "circulating_peak_mA": 1.8958949399952782,
+      "circulating_rms_mA": 0.10790725836679797,
+      "channel_current_difference_rms_mA": 2.547531338428171,
+      "late_power_drift_percent": 2.2852815195761877e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 33,
+      "strength_mismatch_fraction": 0.1,
+      "resistor_tolerance_fraction": 0.01,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 43.13863861341777,
+      "third_harmonic_dBc": -10.135214958116737,
+      "fifth_harmonic_dBc": -15.717537388503475,
+      "raw_min_V": 0.8471660831849106,
+      "raw_max_V": 4.18110099887811,
+      "load_Vrms": 1.566405697637366,
+      "load_Vpp": 3.3310525280707504,
+      "channel_peak_mA": [
+        24.98543240934345,
+        20.206109400630638
+      ],
+      "channel_rms_mA": [
+        20.047962776051897,
+        18.610859220916176
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 1.917264375867261,
+      "state_drift_V": [
+        -1.1102230246251565e-13,
+        -7.172040739078511e-14,
+        -1.199040866595169e-14
+      ],
+      "solver_evaluations": 33,
+      "activity_led_mA": 0.09277771643644618,
+      "R2_mean_mW": 10.79950665090255,
+      "detector_peak_mA": 8.87311652380614,
+      "resistor_mean_mW": [
+        13.130752910723697,
+        11.544314817755579
+      ],
+      "circulating_peak_mA": 1.5603753325941747,
+      "circulating_rms_mA": 0.08422125242648068,
+      "channel_current_difference_rms_mA": 1.909535604637937,
+      "late_power_drift_percent": 2.727434278426699e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 4.7,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": true,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 72.22617922758529,
+      "third_harmonic_dBc": -10.145972727165235,
+      "fifth_harmonic_dBc": -15.76514625365341,
+      "raw_min_V": 0.3753075284003664,
+      "raw_max_V": 4.6581789458446625,
+      "load_Vrms": 2.0260289539990053,
+      "load_Vpp": 4.279215205804718,
+      "channel_peak_mA": [
+        61.768689130483516,
+        30.525985553520986
+      ],
+      "channel_rms_mA": [
+        28.941133026915765,
+        25.258264936003087
+      ],
+      "power_led_mA": 1.8244866594308091,
+      "led_rail_mA": 3.529849382662775,
+      "state_drift_V": [
+        -5.750955267558311e-13,
+        -1.2523315717771766e-13,
+        -2.220446049250313e-15
+      ],
+      "solver_evaluations": 25,
+      "activity_led_mA": 1.7053627232319657,
+      "R2_mean_mW": 18.075570804868992,
+      "detector_peak_mA": 11.477382967043566,
+      "resistor_mean_mW": [
+        3.938101367930512,
+        2.9989864825601953
+      ],
+      "circulating_peak_mA": 28.902878025381703,
+      "circulating_rms_mA": 5.830796093441111,
+      "channel_current_difference_rms_mA": 21.29933660582534,
+      "late_power_drift_percent": 2.0328312366757473e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": true,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 64.89014461617288,
+      "third_harmonic_dBc": -10.154722834801204,
+      "fifth_harmonic_dBc": -15.788574043932769,
+      "raw_min_V": 0.48271170752449416,
+      "raw_max_V": 4.549431576220905,
+      "load_Vrms": 1.9198970948334366,
+      "load_Vpp": 4.063233411352003,
+      "channel_peak_mA": [
+        51.917473418247226,
+        27.156438666827082
+      ],
+      "channel_rms_mA": [
+        26.3186868313018,
+        23.78533075411206
+      ],
+      "power_led_mA": 1.8244866594308091,
+      "led_rail_mA": 3.5097190366768496,
+      "state_drift_V": [
+        -3.672617765460018e-13,
+        -1.635247492970393e-12,
+        6.217248937900877e-15
+      ],
+      "solver_evaluations": 22,
+      "activity_led_mA": 1.6852323772460407,
+      "R2_mean_mW": 16.22426222237239,
+      "detector_peak_mA": 10.91801934848437,
+      "resistor_mean_mW": [
+        6.928954634431804,
+        5.658281711113456
+      ],
+      "circulating_peak_mA": 23.228697456613464,
+      "circulating_rms_mA": 4.3005937823778435,
+      "channel_current_difference_rms_mA": 16.574967282316678,
+      "late_power_drift_percent": 1.541446303932048e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": true,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 51.89766732302775,
+      "third_harmonic_dBc": -10.174188647917973,
+      "fifth_harmonic_dBc": -15.840776642830715,
+      "raw_min_V": 0.6900894123728916,
+      "raw_max_V": 4.339751558260877,
+      "load_Vrms": 1.7160670009660004,
+      "load_Vpp": 3.646515023793393,
+      "channel_peak_mA": [
+        39.04664775743638,
+        23.14981543260657
+      ],
+      "channel_rms_mA": [
+        22.536239208481167,
+        21.16935147571358
+      ],
+      "power_led_mA": 1.8244866594308091,
+      "led_rail_mA": 2.726476196001943,
+      "state_drift_V": [
+        -9.197087535994797e-13,
+        -4.963807143099075e-13,
+        1.8252066524837574e-13
+      ],
+      "solver_evaluations": 30,
+      "activity_led_mA": 0.9019895365711341,
+      "R2_mean_mW": 12.955331429368265,
+      "detector_peak_mA": 9.784110417400575,
+      "resistor_mean_mW": [
+        11.176247003860333,
+        9.860531083405634
+      ],
+      "circulating_peak_mA": 16.014370233064984,
+      "circulating_rms_mA": 2.61886835569955,
+      "channel_current_difference_rms_mA": 11.018850621243246,
+      "late_power_drift_percent": 1.1830896262665647e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 2800,
+      "fundamental_mW": 64.84604391782823,
+      "third_harmonic_dBc": -10.169549835745453,
+      "fifth_harmonic_dBc": -15.834153746944008,
+      "raw_min_V": 0.4828023592774957,
+      "raw_max_V": 4.5493382006397285,
+      "load_Vrms": 1.918420125223689,
+      "load_Vpp": 4.063050869249221,
+      "channel_peak_mA": [
+        50.99720755142118,
+        29.027621088421114
+      ],
+      "channel_rms_mA": [
+        26.07895072930193,
+        24.030092647569024
+      ],
+      "power_led_mA": 1.8244866594308133,
+      "led_rail_mA": 3.5095161246592905,
+      "state_drift_V": [
+        8.970602038971265e-14,
+        1.1324274851176597e-13,
+        -5.906386491005833e-14
+      ],
+      "solver_evaluations": 13,
+      "activity_led_mA": 1.685029465228477,
+      "R2_mean_mW": 16.198719904446655,
+      "detector_peak_mA": 10.883210586187907,
+      "resistor_mean_mW": [
+        6.801116711413554,
+        5.7744535265075
+      ],
+      "circulating_peak_mA": 24.37539422836715,
+      "circulating_rms_mA": 4.502509293062629,
+      "channel_current_difference_rms_mA": 16.6383748709656,
+      "late_power_drift_percent": 1.1705139080220306e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 5e-10,
+      "step_factor": 2800,
+      "fundamental_mW": 62.11226846390535,
+      "third_harmonic_dBc": -11.774031927642554,
+      "fifth_harmonic_dBc": -21.463939944846132,
+      "raw_min_V": 0.4843549633775211,
+      "raw_max_V": 4.548856462561229,
+      "load_Vrms": 1.8267783431891755,
+      "load_Vpp": 4.060941253055198,
+      "channel_peak_mA": [
+        120.61801672519978,
+        113.04398865200639
+      ],
+      "channel_rms_mA": [
+        44.68352528049974,
+        41.034451153314
+      ],
+      "power_led_mA": 1.8244866594308122,
+      "led_rail_mA": 3.490832977961734,
+      "state_drift_V": [
+        5.284661597215745e-14,
+        1.5198953207118393e-13,
+        5.417888360170764e-14
+      ],
+      "solver_evaluations": 13,
+      "activity_led_mA": 1.6663463185309206,
+      "R2_mean_mW": 14.654242335689482,
+      "detector_peak_mA": 10.709242473458197,
+      "resistor_mean_mW": [
+        19.96617431493057,
+        16.838261814537113
+      ],
+      "circulating_peak_mA": 113.04398865200639,
+      "circulating_rms_mA": 33.12238768513473,
+      "channel_current_difference_rms_mA": 73.11029618808523,
+      "late_power_drift_percent": 2.1913508785331715e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "series_ohms": 22,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 1e-10,
+      "step_factor": 2800,
+      "fundamental_mW": 51.86983819108981,
+      "third_harmonic_dBc": -10.185784053046197,
+      "fifth_harmonic_dBc": -15.875837734541886,
+      "raw_min_V": 0.6901558757503374,
+      "raw_max_V": 4.33967915224102,
+      "load_Vrms": 1.7150556102374468,
+      "load_Vpp": 3.6463695789848023,
+      "channel_peak_mA": [
+        38.59590266956772,
+        23.82838606659603
+      ],
+      "channel_rms_mA": [
+        22.439303552158954,
+        21.253335496617183
+      ],
+      "power_led_mA": 1.8244866594308133,
+      "led_rail_mA": 2.720701951177472,
+      "state_drift_V": [
+        -5.329070518200751e-15,
+        6.694644838489694e-14,
+        1.1102230246251565e-14
+      ],
+      "solver_evaluations": 17,
+      "activity_led_mA": 0.8962152917466583,
+      "R2_mean_mW": 12.939751921214997,
+      "detector_peak_mA": 9.757836035227568,
+      "resistor_mean_mW": [
+        11.077491565930536,
+        9.937493934098892
+      ],
+      "circulating_peak_mA": 16.43948782255615,
+      "circulating_rms_mA": 2.6893195370589176,
+      "channel_current_difference_rms_mA": 11.051024111483818,
+      "late_power_drift_percent": 7.43099803912628e-08
+    },
+    {
+      "f_Hz": 137000.0,
+      "detector": true,
+      "series_ohms": 10,
+      "strength_mismatch_fraction": 0,
+      "resistor_tolerance_fraction": 0,
+      "resistor_parasitics": false,
+      "skew_s": 0,
+      "step_factor": 2800,
+      "fundamental_mW": 68.09515621362743,
+      "third_harmonic_dBc": -9.5732587267693,
+      "fifth_harmonic_dBc": -14.014734783428352,
+      "raw_min_V": 0.4233097653484859,
+      "raw_max_V": 4.603272775249686,
+      "load_Vrms": 2.047836813901525,
+      "load_Vpp": 4.1872828618328795,
+      "channel_peak_mA": [
+        31.619400528654104,
+        31.544132105215603
+      ],
+      "channel_rms_mA": [
+        23.120359030746908,
+        23.120358498785304
+      ],
+      "power_led_mA": 1.8244866594307958,
+      "led_rail_mA": 3.587569245692754,
+      "state_drift_V": [
+        -2.0000801856934203e-05,
+        3.548384808205185e-09,
+        1.9265135837720493e-06
+      ],
+      "solver_evaluations": 33,
+      "activity_led_mA": 1.7630825862619581,
+      "R2_mean_mW": 7.00189731547061,
+      "detector_peak_mA": 15.912782650320992,
+      "resistor_mean_mW": [
+        5.345510017106386,
+        5.345509771123529
+      ],
+      "circulating_peak_mA": 0.05049585377791066,
+      "circulating_rms_mA": 4.023283082769482e-05,
+      "channel_current_difference_rms_mA": 0.0024549817480505145,
+      "late_power_drift_percent": 2.399397671659642e-05
+    }
+  ],
+  "timestep_checks": [
+    {
+      "f_Hz": 145000000.0,
+      "series_ohms": 10,
+      "skew_s": 1e-10,
+      "power_change_percent": -0.002040811450787494,
+      "peak_current_change_percent": -0.0018037126936709669
+    },
+    {
+      "f_Hz": 145000000.0,
+      "series_ohms": 10,
+      "skew_s": 5e-10,
+      "power_change_percent": -0.0021646825944077186,
+      "peak_current_change_percent": -0.01160413967132845
+    },
+    {
+      "f_Hz": 145000000.0,
+      "series_ohms": 22,
+      "skew_s": 1e-10,
+      "power_change_percent": -0.0024393622256702052,
+      "peak_current_change_percent": -0.01971914455611845
+    },
+    {
+      "f_Hz": 137000.0,
+      "series_ohms": 10,
+      "skew_s": 0,
+      "power_change_percent": 0.0002436344101797161,
+      "peak_current_change_percent": 0.0038751264499259364
+    }
+  ],
+  "resistor_parasitic_checks": [
+    {
+      "series_ohms": 4.7,
+      "power_change_percent": 0.07185107861966689,
+      "peak_current_change_percent": 2.6137244919638647
+    },
+    {
+      "series_ohms": 10,
+      "power_change_percent": 0.06596611027975818,
+      "peak_current_change_percent": 1.8027054203718862
+    },
+    {
+      "series_ohms": 22,
+      "power_change_percent": 0.05121118702431371,
+      "peak_current_change_percent": 1.1479079184806507
+    }
+  ],
+  "design_sha256": {
+    "Logic RF Driver.kicad_sch": "8b7e1b1681365000912c7480cebf1f8a94a473e3c711aaf3470764081208fd51",
+    "Logic RF Driver.kicad_pcb": "edb16ed18fcab776b529b57ebab273270aeaa0e00cdc232af858718e3f4137fe",
+    "Logic RF Driver.kicad_pro": "54762eb00b2e48a8ef3a50384c9a4646676ec849b9dd9a87c9a80882d41f50c7",
+    "Logic RF Driver.kicad_dru": "3d88d3960bf04f39ccf0242e6fb72310277eedcc77a8a4e27672e606c35314da",
+    "BOM.csv": "a3ebc76727661067550e497b5b436738b8a0bffb04b6d86023dc38b59bd93e88"
+  },
+  "model_and_script_sha256": {
+    "generated/comparison-samsung/runs/logic_475000_270_dc_bias_700.cir": "8486a1f9a6387deb1f7a58627d46b169435db903e37031e9748dc558ce7984ef",
+    "generated/comparison-samsung/runs/logic_137000_270_dc_bias_700.cir": "4bd486dbb63375be1785df67831749f76508a6c42eb466dcb7e70a66ed6f57cf",
+    "generated/comparison-samsung/runs/logic_7e+06_270_dc_bias_700.cir": "8256f7f80476bd75a2161217bb063345ca05b6b15c8c4a56589cfe7968075c4f",
+    "generated/comparison-samsung/runs/logic_7e+07_270_dc_bias_700.cir": "39832114f41e53028634bc662b203c9f49313163d54044f88eb50848510fc8b9",
+    "generated/comparison-samsung/runs/logic_1.45e+08_270_dc_bias_700.cir": "fb2a5cfb8dbb7f5d5a1de4431fabba4eff6500f035eaed6a391055194c012aab",
+    "generated/comparison-samsung/runs/logic_2.8e+07_270_dc_bias_700.cir": "90ef8486a079395f60c695e60e09f8240a42cc1169e7665d2382c2b66d00963b",
+    "generated/comparison-samsung/runs/logic_3.5e+06_270_dc_bias_700.cir": "31aba3d03ab11d614795e35025203781651002199fcbb38aff4c385879068838",
+    "generated/comparison-samsung/runs/logic_1e+08_270_dc_bias_700.cir": "e35d9db4f05e5ec0f573708bc6fa7bb8a9c07479d03decb5906da2301a226303",
+    "generated/comparison-samsung/runs/logic_1.4e+07_270_dc_bias_700.cir": "85e47b055e846bccc37573e280c7b877b57cbf2af5ade6bdcc77b0cbf7b4577c",
+    "generated/comparison-samsung/runs/logic_2.1e+07_270_dc_bias_700.cir": "acd335c43d057fd5bad9ffc23e1801a324c144909dd4e3da0dc2e21120f13a10",
+    "generated/comparison-samsung/runs/logic_5e+07_270_dc_bias_700.cir": "c0e5f6215adf282c6a6483d1c65f53afab46df6b7296bdb31eb0f99e937dbbb5",
+    "generated/comparison-samsung/runs/logic_1.8e+06_270_dc_bias_700.cir": "da5fca551b14f0bb475803ea7f2eb0f12cbccf0b3989c185043ca2680e36445c",
+    "generated/comparison-samsung/runs/logic_1e+07_270_dc_bias_700.cir": "32488fbfa601f3344e6bc3fdb5a6496dbca14028307742250624444afcfa2600",
+    "generated/comparison-samsung/logic_475000_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_137000_270_dc_bias_700.mod": "1816691bb161d1751a605d01d98ddbd2fe182e87421734afcaaa2456506d0828",
+    "generated/comparison-samsung/logic_7e+07_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_7e+06_270_dc_bias_700.mod": "71b8a747f0de066a5d7642ffb42f2a8cf60bc34570d09102a4069c2352b873bc",
+    "generated/comparison-samsung/logic_1.45e+08_270_dc_bias_700.mod": "772c9a8e3df17341dbcbb480dbba76a013863e07a0dcad2f7849f56cf2bf3b07",
+    "generated/comparison-samsung/logic_2.8e+07_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_3.5e+06_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_1.4e+07_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_1e+08_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_2.1e+07_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_5e+07_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_1.8e+06_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_1e+07_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/input-loading/models/BAT54S.txt": "31bd9a1e64a71ae4cf52fa1c0d434512c86838ab557e515f1035e3d17c141e06",
+    "generated/input-loading/models/MMBT3904.txt": "49c344a0aaa461869b9a6f7a67e8afc0afbb0050a6b4f7e19e44025b076a6d2d",
+    "external-research/simulate.py": "f1c87085a80924b06e7c8ddb23aaabe45039ef8932f39d8ac68f1119a0af62ab",
+    "external-research/models/SN74LVC2T45.ibs": "e3edf7aca38693b91b485a0c5063769c78ec84dae00a4d44d85654807b5b6ce5",
+    "scripts/run_output_sharing.py": "87750a2dbb1caa099a82bd7b65c6f2e31fa45eb9e2b6d916f85b9e608338f4ea",
+    "scripts/report_output_sharing.py": "0855de4ee1080e7ae9f4581c4f40c9a0f0e17a75fc85dc1cea758df053b24064",
+    "docs/board-simulation-results.json": "78b87bf24e45825a7f0dddfbdd22f863df92051221a70821f4e71732828e4658"
+  },
+  "cad_review": {
+    "source_sha256": {
+      "Logic RF Driver.kicad_sch": "8b7e1b1681365000912c7480cebf1f8a94a473e3c711aaf3470764081208fd51",
+      "Logic RF Driver.kicad_pcb": "edb16ed18fcab776b529b57ebab273270aeaa0e00cdc232af858718e3f4137fe",
+      "Logic RF Driver.kicad_pro": "54762eb00b2e48a8ef3a50384c9a4646676ec849b9dd9a87c9a80882d41f50c7",
+      "Logic RF Driver.kicad_dru": "3d88d3960bf04f39ccf0242e6fb72310277eedcc77a8a4e27672e606c35314da",
+      "BOM.csv": "a3ebc76727661067550e497b5b436738b8a0bffb04b6d86023dc38b59bd93e88"
+    },
+    "circuit_matches_unchanged_schematic": true,
+    "saved_board_drc": {
+      "$schema": "https://schemas.kicad.org/drc.v1.json",
+      "coordinate_units": "mm",
+      "ignored_checks": [
+        {
+          "description": "Footprint has no courtyard defined",
+          "key": "missing_courtyard"
+        },
+        {
+          "description": "Track endpoint not centered on via",
+          "key": "track_not_centered_on_via"
+        },
+        {
+          "description": "Tuning profile track geometries",
+          "key": "tuning_profile_track_geometries"
+        },
+        {
+          "description": "Footprint doesn't match symbol's footprint filters",
+          "key": "footprint_filters_mismatch"
+        },
+        {
+          "description": "Footprint component type doesn't match footprint pads",
+          "key": "footprint_type_mismatch"
+        }
+      ],
+      "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+      ],
+      "kicad_version": "10.0.6",
+      "schematic_parity": [],
+      "source": "Logic RF Driver.kicad_pcb",
+      "unconnected_items": [],
+      "violations": [
+        {
+          "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)",
+          "items": [
+            {
+              "description": "Track [+3V3] on F.Cu, length 2.2300 mm",
+              "pos": {
+                "x": 61.46,
+                "y": 53.5
+              },
+              "uuid": "aeca7694-2785-4fd9-90b2-aa1b6349d3dd"
+            },
+            {
+              "description": "Zone 'GND F.Cu' [GND] on F.Cu, priority 0",
+              "pos": {
+                "x": 50.46,
+                "y": 50.0
+              },
+              "uuid": "7813c3f6-e8e7-426e-b8d4-be399b61de72"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)",
+          "items": [
+            {
+              "description": "Track [+3V3] on F.Cu, length 2.1400 mm",
+              "pos": {
+                "x": 59.05,
+                "y": 53.68
+              },
+              "uuid": "eab916ac-42e3-4ab1-9cc8-b11bd239153a"
+            },
+            {
+              "description": "Zone 'GND F.Cu' [GND] on F.Cu, priority 0",
+              "pos": {
+                "x": 50.46,
+                "y": 50.0
+              },
+              "uuid": "7813c3f6-e8e7-426e-b8d4-be399b61de72"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)",
+          "items": [
+            {
+              "description": "Track [+3V3] on F.Cu, length 0.2546 mm",
+              "pos": {
+                "x": 59.23,
+                "y": 53.5
+              },
+              "uuid": "f7ac4f78-4521-4c7c-877c-46d0a137c32b"
+            },
+            {
+              "description": "Zone 'GND F.Cu' [GND] on F.Cu, priority 0",
+              "pos": {
+                "x": 50.46,
+                "y": 50.0
+              },
+              "uuid": "7813c3f6-e8e7-426e-b8d4-be399b61de72"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1500 mm)",
+          "items": [
+            {
+              "description": "Pad 2 [/CLK_IN] of U1 on F.Cu",
+              "pos": {
+                "x": 62.6,
+                "y": 57.7525
+              },
+              "uuid": "bfd0991f-d091-4390-8887-468bccea9e44"
+            },
+            {
+              "description": "Teardrop [+3V3] on F.Cu",
+              "pos": {
+                "x": 63.4,
+                "y": 57.3775
+              },
+              "uuid": "2d936510-58a2-4d70-adef-b9cfc8c7b761"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1500 mm)",
+          "items": [
+            {
+              "description": "Pad 6 [/RF_RAW] of U1 on F.Cu",
+              "pos": {
+                "x": 65.4,
+                "y": 58.2525
+              },
+              "uuid": "69b84dcb-c775-495e-a38a-f07636d70873"
+            },
+            {
+              "description": "Teardrop [+3V3] on F.Cu",
+              "pos": {
+                "x": 64.6,
+                "y": 58.6275
+              },
+              "uuid": "eb4709fa-9f51-4f27-8be9-2d4cd6df05d6"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)",
+          "items": [
+            {
+              "description": "Teardrop [+3V3] on F.Cu",
+              "pos": {
+                "x": 59.46,
+                "y": 53.25
+              },
+              "uuid": "4039187f-9b11-42ab-88ff-9ea510a85c17"
+            },
+            {
+              "description": "Zone 'GND F.Cu' [GND] on F.Cu, priority 0",
+              "pos": {
+                "x": 50.46,
+                "y": 50.0
+              },
+              "uuid": "7813c3f6-e8e7-426e-b8d4-be399b61de72"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        }
+      ]
+    },
+    "in_memory_refill_drc": {
+      "$schema": "https://schemas.kicad.org/drc.v1.json",
+      "coordinate_units": "mm",
+      "ignored_checks": [
+        {
+          "description": "Footprint has no courtyard defined",
+          "key": "missing_courtyard"
+        },
+        {
+          "description": "Track endpoint not centered on via",
+          "key": "track_not_centered_on_via"
+        },
+        {
+          "description": "Tuning profile track geometries",
+          "key": "tuning_profile_track_geometries"
+        },
+        {
+          "description": "Footprint doesn't match symbol's footprint filters",
+          "key": "footprint_filters_mismatch"
+        },
+        {
+          "description": "Footprint component type doesn't match footprint pads",
+          "key": "footprint_type_mismatch"
+        }
+      ],
+      "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+      ],
+      "kicad_version": "10.0.6",
+      "schematic_parity": [],
+      "source": "Logic RF Driver.kicad_pcb",
+      "unconnected_items": [],
+      "violations": []
+    },
+    "pcb_saved_by_agent": false
+  },
+  "conditions": {
+    "VCCA_V": 3.3,
+    "VCCB_V": 5,
+    "load_ohms": 50,
+    "R2_ohms": 220,
+    "C5_C6_F": 1e-08,
+    "clock_duty_cycle": 0.5,
+    "source_edge_s": 5e-10,
+    "illustrative_source_ohms": 50,
+    "temperature_C": 25,
+    "periods": 60,
+    "measurement_periods": 8,
+    "nominal_max_timestep_divisor": 1400,
+    "fine_max_timestep_divisor": 2800,
+    "relative_tolerance": 0.0001,
+    "absolute_tolerance": 1e-12,
+    "periodic_state_drift_limit_V": 5e-05,
+    "skew_s": [
+      0,
+      1e-10,
+      5e-10,
+      1e-09
+    ],
+    "hypothetical_strength_mismatch": [
+      1.1,
+      0.9
+    ],
+    "mismatch_resistor_multipliers": [
+      0.99,
+      1.01
+    ],
+    "illustrative_resistor_inductance_H": 5e-10,
+    "illustrative_resistor_parallel_capacitance_F": 5e-14
+  },
+  "limitations": [
+    "Nominal IBIS-derived behavioral surrogate; large current peaks are especially model-dependent.",
+    "Skew values and +/-10 percent drive strength are assumed stress tests, not TI limits or measured distributions.",
+    "Diodes semiconductor models and illustrative LED do not exactly model selected detector parts.",
+    "No extracted PCB, supply impedance, connector, external filter, internal crossover-loss, or thermal model.",
+    "C4 is a passive fit linearized near 2.515 V, with initial charge adjusted for periodic operation.",
+    "Parasitic RLC values are illustrative, not a selected resistor manufacturer model."
+  ]
+}

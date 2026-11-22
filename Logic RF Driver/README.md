@@ -48,15 +48,15 @@ The output capacitor has a different job: C4 removes the waveform's average volt
 | D2/D3 | KT-0603R / C2286 | Red LED; 0603 | Basic |
 | Q1 | MMBT3904(RANGE:100-300) / C20526 | NPN; 40 V; 200 mA; SOT-23 | Basic |
 
-The sixteen-component [BOM](BOM.csv) covers U1, Q1, R1-R5, C1-C6, and D1-D3. Every assembly position has a selected ordering code in the hidden `LCSC Part #` field. The saved **JLCPCB** BOM preset exports the assembly columns and groups matching parts; see the [BOM export instructions](LCSC-PARTS.md#jlcpcb-bom-export). D2 indicates driver-output activity, and D3 indicates the 3.3 V supply through its own R5. J1/J2/J3 are visible in the schematic, board, and rendering, but excluded from the BOM and not marked DNP. J1/J3 use the Amphenol 132289 edge-mount SMA footprint. J2 is a 1x3 header with 2.54 mm pitch. See [ordering codes and supplier information](LCSC-PARTS.md).
+The sixteen-component [BOM](BOM.csv) covers U1, Q1, R1-R5, C1-C6, and D1-D3. Every assembly position has a selected ordering code in the hidden `LCSC Part #` field. The saved **JLCPCB** BOM preset exports the assembly columns and groups matching parts; see the [BOM export instructions](LCSC-PARTS.md#jlcpcb-bom-export). D2 indicates driver-output activity, and D3 indicates the 3.3 V supply through its own R5. J1/J2/J3 are visible in the schematic, board, and rendering, but excluded from the BOM and not marked DNP. J1/J3 use the Adafruit 1865 edge-launch SMA footprint. J2 has a shared footprint for an Adafruit 2136 three-position screw terminal or a straight 1×3 pin header, with 2.54 mm pitch, 1.2 mm holes, and 2.0 mm pads. The screw terminal is the default assembly option. Its body overhangs the board edge by 1.25 mm. The footprint silkscreen ends inside the board edge, while the fab outline and courtyard show the full housing. C1–C3 lie outside its courtyard. See [ordering codes and supplier information](LCSC-PARTS.md) and the [connector and assembly notes](CONNECTORS.md).
 
 ## Layout and checks
 
-The board is 27.08 × 16.00 mm, with 1 mm corner radii and a nominal thickness of 1.57 mm. It has two copper layers, 103 track segments (91 front and 12 back), and 31 ground vias. Both layers have a filled ground zone, and stitching runs along both sides of the short RF paths. The placement grid is 0.25 mm, though several component anchors sit off it. See [layout details](PCB-LAYOUT.md).
+The board is 27.08 × 16.00 mm, with 1 mm corner radii and a nominal thickness of 1.57 mm. It has two copper layers, 87 front-layer track segments and 43 ground vias. Both layers have a filled ground zone, and stitching runs along both sides of the short RF paths. The placement grid is 0.25 mm, though several component anchors sit off it. See [layout details](PCB-LAYOUT.md).
 
 ![PCB assembly](docs/pcb-preview.png)
 
-The configured CAD checks report zero ERC violations, zero board-rule violations, zero unconnected items, and zero schematic-parity issues. All nineteen footprints are placed within the board arrangement, including the edge-mount connectors, and all connections are routed. [Validation](VALIDATION.md) lists the checks and ignored categories.
+The configured CAD checks report zero ERC violations, zero unconnected items, and zero schematic-parity issues. The saved PCB has filled ground zones and reports zero DRC violations, zero unconnected items, and zero schematic-parity issues. A local edge-contact rule covers the J1/J3 SMA lands, and all other copper retains the 0.50 mm edge setback. All connections are routed. Connector fit and RF performance remain unmeasured. [Validation](VALIDATION.md) lists the findings and ignored categories.
 
 ## Project text variables
 
@@ -65,6 +65,10 @@ The PCB Editor exposes these settings under **File → Board Setup → Text & Gr
 Edit the project file externally with the KiCad editors and the project closed. KiCad keeps settings in memory and can overwrite an external edit when it closes. Reopen the project to load the file, and check label fit and DRC for the resulting labels. See the [KiCad text-variable reference](https://docs.kicad.org/10.0/en/pcbnew/pcbnew.html#text_variables).
 
 ## Research and limitations
+
+The [output-sharing resistor study](OUTPUT-SHARING.md) evaluates independent resistors on B1/B2. Its preferred power-preserving candidate is 10 ohms per output, with about 65–68 mW into 50 ohms and reduced opposing current. Timing and current margin remain unqualified. These resistors are absent from the schematic, PCB, and BOM.
+
+The [board circuit simulation](BOARD-SIMULATION.md) includes the RF_RAW detector and both LED branches. Its nominal model predicts about 82.5 mW at 137 kHz and 79.9 mW at 145 MHz into 50 ohms, excluding filter and connector loss. Channel-skew stress cases show that nearly unchanged RF power can accompany much higher output-pin currents. The study has no extracted PCB or supply-network model and does not establish thermal or full-band reliability.
 
 The [SN74LVC2T45 versus BS170 comparison](COMPARISON.md) predicts about 84.32 mW at 137 kHz and 83.03 mW at 145 MHz for the paralleled logic stage, excluding filter loss. It uses a behavioral logic model, ideal supplies, and a bias-dependent C4 fit. These figures are simulated, not measured, and exclude the detector branch. The separate [detector study](INPUT-LOADING.md) gives about 82.48 mW at 137 kHz and 79.89 mW at 145 MHz with R2 at 220 ohms, using surrogate semiconductor and LED models. The ideal-choke BS170 results are diagnostic only because they fail numerical robustness checks. See [model scope](MODEL-SCOPE.md).
 

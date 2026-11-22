@@ -21,3 +21,11 @@
 (rule "U1 internal pad clearance"
   (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U1') && B.memberOfFootprint('U1')")
   (constraint clearance (min 0.15mm)))
+
+# Adafruit 1865 edge-launch lands intentionally meet the routed board edge.
+# A -0.01 mm tolerance permits exact edge contact in KiCad; actual lands stop at the edge.
+# Scope: pads 1/2 of J1/J3 using this exact local footprint, on either copper face.
+# Tracks, zones, vias, other footprints, and pad-to-pad clearance retain their rules.
+(rule "Adafruit 1865 SMA lands at board edge"
+  (condition "(A.Type == 'Pad' && (A.Pad_Number == '1' || A.Pad_Number == '2') && (A.memberOfFootprint('J1') || A.memberOfFootprint('J3')) && A.memberOfFootprint('SN74LVC2T45_Amp:SMA_Adafruit_1865_EdgeLaunch')) || (B.Type == 'Pad' && (B.Pad_Number == '1' || B.Pad_Number == '2') && (B.memberOfFootprint('J1') || B.memberOfFootprint('J3')) && B.memberOfFootprint('SN74LVC2T45_Amp:SMA_Adafruit_1865_EdgeLaunch'))")
+  (constraint edge_clearance (min -0.01mm)))

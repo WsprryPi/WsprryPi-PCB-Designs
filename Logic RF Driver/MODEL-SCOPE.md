@@ -20,3 +20,7 @@ The [manifest](docs/comparison-samsung-manifest.json) records ten source and scr
 The [parts and procurement page](LCSC-PARTS.md) lists the selected indicator parts. The separate detector study uses Diodes Incorporated models and an illustrative LED; it does not exactly simulate the selected Nexperia BAT54S, CJ MMBT3904, and KENTO KT-0603R.
 
 C6 sits beside D1 with a short cathode connection and a local ground via. The detector model uses lumped capacitors and omits extracted routing inductance; it does not assign a measured VHF benefit to the placement.
+
+The [board circuit study](BOARD-SIMULATION.md) includes the RF_RAW detector, the power LED branch, a 13-frequency sweep, and channel-skew sensitivity at 145 MHz. It searches periodic initial states for C4, C5, and C6 and retains the ideal-rail and surrogate-device limitations. Its current peaks are model-dependent stress indicators, not pulse-current ratings or thermal qualification.
+
+The [output-sharing study](OUTPUT-SHARING.md) evaluates per-output resistance, channel skew, hypothetical drive-strength mismatch, resistor parasitics, and numerical sensitivity. It covers a candidate circuit; the design retains directly paralleled outputs. Its current and LED estimates share the board study's behavioral-device, ideal-supply, and detector-model limitations.

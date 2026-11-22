@@ -1,0 +1,1062 @@
+{
+  "scope": "Circuit-level behavioral simulation matched to saved Logic RF Driver schematic; no PCB electromagnetic or supply-network extraction",
+  "conditions": {
+    "VCCA_V": 3.3,
+    "VCCB_V": 5,
+    "duty_cycle": 0.5,
+    "source_transition_s": 5e-10,
+    "illustrative_source_ohms": 50,
+    "load_ohms": 50,
+    "temperature_C": 25,
+    "output_pcb_capacitance_F": 2e-12,
+    "R2_ohms": 220,
+    "C5_F": 1e-08,
+    "C6_F": 1e-08,
+    "R3_ohms": 1000000.0,
+    "R4_R5_ohms": 680,
+    "periods": 60,
+    "measurement_periods": 8,
+    "solver": "ngspice, Gear, reltol=0.0001, abstol=1e-12",
+    "periodic_initialization": "C5, C6, and C4 main capacitor state; loaded cases below 50 microvolts state change over final 20 periods",
+    "C4_fit_bias_V": 2.51458238133
+  },
+  "cases": [
+    {
+      "f_Hz": 137000.0,
+      "detector": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 84.32324399095093,
+      "third_harmonic_dBc": -9.536408474802446,
+      "fifth_harmonic_dBc": -13.972885417794283,
+      "raw_min_V": 0.22071783675010903,
+      "raw_max_V": 4.814096690672741,
+      "load_Vrms": 2.280913692736847,
+      "load_Vpp": 4.806205728668504,
+      "channel_peak_mA": [
+        28.497824985928656,
+        28.328775477988838
+      ],
+      "channel_rms_mA": [
+        22.80944563134948,
+        22.809445374113114
+      ],
+      "power_led_mA": 1.8244866594307965,
+      "led_rail_mA": 1.824486659430797,
+      "state_drift_V": null,
+      "solver_evaluations": 1,
+      "late_power_drift_percent": 2.623640598109489e-05
+    },
+    {
+      "f_Hz": 137000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 82.47879491672111,
+      "third_harmonic_dBc": -9.557033620828062,
+      "fifth_harmonic_dBc": -13.996527290032773,
+      "raw_min_V": 0.23275063544903393,
+      "raw_max_V": 4.796249274397166,
+      "load_Vrms": 2.2546749566186617,
+      "load_Vpp": 4.665310001437778,
+      "channel_peak_mA": [
+        35.86656614377396,
+        35.691907690916764
+      ],
+      "channel_rms_mA": [
+        25.55816007524742,
+        25.558161379958005
+      ],
+      "power_led_mA": 1.8244866594307965,
+      "led_rail_mA": 3.5874509587341836,
+      "state_drift_V": [
+        -7.2147994623072975e-06,
+        2.0412774692779578e-08,
+        -2.823830547171724e-06
+      ],
+      "solver_evaluations": 35,
+      "activity_led_mA": 1.7629642993033865,
+      "R2_mean_mW": 9.117333954037818,
+      "detector_peak_mA": 17.74232965373858,
+      "late_power_drift_percent": 1.6673150504686873e-05
+    },
+    {
+      "f_Hz": 475000.0,
+      "detector": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 84.44975108466559,
+      "third_harmonic_dBc": -9.541593302996592,
+      "fifth_harmonic_dBc": -13.97837771322791,
+      "raw_min_V": 0.21467535444983935,
+      "raw_max_V": 4.8203275595984705,
+      "load_Vrms": 2.282097351352807,
+      "load_Vpp": 4.657369053534147,
+      "channel_peak_mA": [
+        27.658407156428446,
+        27.518511544863827
+      ],
+      "channel_rms_mA": [
+        22.821887076735567,
+        22.821885870801257
+      ],
+      "power_led_mA": 1.824486659430797,
+      "led_rail_mA": 1.8244866594307971,
+      "state_drift_V": null,
+      "solver_evaluations": 1,
+      "late_power_drift_percent": 0.0005235243346612961
+    },
+    {
+      "f_Hz": 475000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 82.21480462549917,
+      "third_harmonic_dBc": -9.545203952254163,
+      "fifth_harmonic_dBc": -13.982728190254933,
+      "raw_min_V": 0.2542360907636072,
+      "raw_max_V": 4.77802610267648,
+      "load_Vrms": 2.2514010449750184,
+      "load_Vpp": 4.546034573670682,
+      "channel_peak_mA": [
+        33.70429190095511,
+        33.532421415379126
+      ],
+      "channel_rms_mA": [
+        25.976553706836953,
+        25.976555495080405
+      ],
+      "power_led_mA": 1.824486659430797,
+      "led_rail_mA": 3.6116898929081658,
+      "state_drift_V": [
+        -1.3835198937606208e-05,
+        1.1316353987211869e-07,
+        1.1690951060572274e-06
+      ],
+      "solver_evaluations": 41,
+      "activity_led_mA": 1.7872032334773682,
+      "R2_mean_mW": 10.732281490563942,
+      "detector_peak_mA": 14.892894126576543,
+      "late_power_drift_percent": 3.5543103482638116e-05
+    },
+    {
+      "f_Hz": 1800000.0,
+      "detector": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 84.47280137701165,
+      "third_harmonic_dBc": -9.542173109869099,
+      "fifth_harmonic_dBc": -13.980305501516586,
+      "raw_min_V": 0.21252200919378203,
+      "raw_max_V": 4.822558777637048,
+      "load_Vrms": 2.281380410631982,
+      "load_Vpp": 4.612586134373917,
+      "channel_peak_mA": [
+        27.42064813373826,
+        27.256063220633827
+      ],
+      "channel_rms_mA": [
+        22.81709583178022,
+        22.8170906372952
+      ],
+      "power_led_mA": 1.8244866594307942,
+      "led_rail_mA": 1.824486659430795,
+      "state_drift_V": null,
+      "solver_evaluations": 1,
+      "late_power_drift_percent": 0.0001569794994216167
+    },
+    {
+      "f_Hz": 1800000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 82.17079805606554,
+      "third_harmonic_dBc": -9.543582195626376,
+      "fifth_harmonic_dBc": -13.98324527937369,
+      "raw_min_V": 0.2620719512732834,
+      "raw_max_V": 4.7714345424867375,
+      "load_Vrms": 2.249627614430719,
+      "load_Vpp": 4.512422126290067,
+      "channel_peak_mA": [
+        32.938089972352024,
+        32.76756638228592
+      ],
+      "channel_rms_mA": [
+        26.07489785338785,
+        26.074900284338167
+      ],
+      "power_led_mA": 1.8244866594307942,
+      "led_rail_mA": 3.6135242374836767,
+      "state_drift_V": [
+        -1.0170875461845696e-05,
+        7.303612303832807e-07,
+        -9.35708618143849e-07
+      ],
+      "solver_evaluations": 22,
+      "activity_led_mA": 1.7890375780528822,
+      "R2_mean_mW": 11.371022800035957,
+      "detector_peak_mA": 13.793816817815625,
+      "late_power_drift_percent": 8.299950127188538e-06
+    },
+    {
+      "f_Hz": 3500000.0,
+      "detector": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 84.48272150937676,
+      "third_harmonic_dBc": -9.544053707875555,
+      "fifth_harmonic_dBc": -13.9835652621712,
+      "raw_min_V": 0.21217061141540394,
+      "raw_max_V": 4.8228257371103345,
+      "load_Vrms": 2.280216035474662,
+      "load_Vpp": 4.604113878423895,
+      "channel_peak_mA": [
+        27.387476341876184,
+        27.211472513420237
+      ],
+      "channel_rms_mA": [
+        22.80851331812518,
+        22.808502630693976
+      ],
+      "power_led_mA": 1.8244866594307947,
+      "led_rail_mA": 1.8244866594307958,
+      "state_drift_V": null,
+      "solver_evaluations": 1,
+      "late_power_drift_percent": 4.91984578410154e-05
+    },
+    {
+      "f_Hz": 3500000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 82.16355036699272,
+      "third_harmonic_dBc": -9.547165985844474,
+      "fifth_harmonic_dBc": -13.991696237753754,
+      "raw_min_V": 0.26353653745251876,
+      "raw_max_V": 4.77005756086799,
+      "load_Vrms": 2.2479058263961016,
+      "load_Vpp": 4.506562415685449,
+      "channel_peak_mA": [
+        32.787951268634075,
+        32.615980721977884
+      ],
+      "channel_rms_mA": [
+        26.124463698558074,
+        26.12446596225349
+      ],
+      "power_led_mA": 1.8244866594307947,
+      "led_rail_mA": 3.6138592193566104,
+      "state_drift_V": [
+        3.8915241074022333e-07,
+        1.4849842233655153e-07,
+        3.113127844400765e-08
+      ],
+      "solver_evaluations": 36,
+      "activity_led_mA": 1.7893725599258155,
+      "R2_mean_mW": 11.851058149381434,
+      "detector_peak_mA": 13.551732463862225,
+      "late_power_drift_percent": 3.840549722688991e-06
+    },
+    {
+      "f_Hz": 7000000.0,
+      "detector": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 84.47492636309758,
+      "third_harmonic_dBc": -9.546976289915968,
+      "fifth_harmonic_dBc": -13.98813219520253,
+      "raw_min_V": 0.2116665679244051,
+      "raw_max_V": 4.822931937507184,
+      "load_Vrms": 2.2775865858744195,
+      "load_Vpp": 4.599861843458727,
+      "channel_peak_mA": [
+        27.373176315358368,
+        27.19966958058445
+      ],
+      "channel_rms_mA": [
+        22.788557042516505,
+        22.78853363567114
+      ],
+      "power_led_mA": 1.8244866594307971,
+      "led_rail_mA": 1.8244866594307974,
+      "state_drift_V": null,
+      "solver_evaluations": 1,
+      "late_power_drift_percent": 1.285488977487148e-05
+    },
+    {
+      "f_Hz": 7000000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 82.12593737067336,
+      "third_harmonic_dBc": -9.557136008880917,
+      "fifth_harmonic_dBc": -14.013381351612937,
+      "raw_min_V": 0.2643703624224725,
+      "raw_max_V": 4.769210476320907,
+      "load_Vrms": 2.244293588105514,
+      "load_Vpp": 4.503264522291522,
+      "channel_peak_mA": [
+        32.71114047107314,
+        32.53259541076721
+      ],
+      "channel_rms_mA": [
+        26.208269269380622,
+        26.208271036633132
+      ],
+      "power_led_mA": 1.8244866594307971,
+      "led_rail_mA": 3.614587908163575,
+      "state_drift_V": [
+        -7.350266839623032e-08,
+        8.342722845888773e-08,
+        -1.1599081251034704e-08
+      ],
+      "solver_evaluations": 40,
+      "activity_led_mA": 1.7901012487327774,
+      "R2_mean_mW": 12.747056357589669,
+      "detector_peak_mA": 13.39523345819512,
+      "late_power_drift_percent": 1.6856881446258853e-06
+    },
+    {
+      "f_Hz": 10000000.0,
+      "detector": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 84.4574559517025,
+      "third_harmonic_dBc": -9.54859972507669,
+      "fifth_harmonic_dBc": -13.99200373396888,
+      "raw_min_V": 0.2125107286826832,
+      "raw_max_V": 4.822970391235116,
+      "load_Vrms": 2.2752635157560213,
+      "load_Vpp": 4.598174932292644,
+      "channel_peak_mA": [
+        27.36104738350496,
+        27.198622045723017
+      ],
+      "channel_rms_mA": [
+        22.770700783382512,
+        22.770668079383658
+      ],
+      "power_led_mA": 1.8244866594308002,
+      "led_rail_mA": 1.8244866594308013,
+      "state_drift_V": null,
+      "solver_evaluations": 1,
+      "late_power_drift_percent": 8.519204119927792e-06
+    },
+    {
+      "f_Hz": 10000000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 82.07538702121617,
+      "third_harmonic_dBc": -9.56662037197887,
+      "fifth_harmonic_dBc": -14.034098184069972,
+      "raw_min_V": 0.26466755639821854,
+      "raw_max_V": 4.76892076623407,
+      "load_Vrms": 2.2411657541141925,
+      "load_Vpp": 4.502185512519448,
+      "channel_peak_mA": [
+        32.680612614940095,
+        32.509625789198445
+      ],
+      "channel_rms_mA": [
+        26.27635778316214,
+        26.276371848254737
+      ],
+      "power_led_mA": 1.8244866594308,
+      "led_rail_mA": 3.6151797546700113,
+      "state_drift_V": [
+        6.393870011223157e-08,
+        1.0659003428781233e-06,
+        -3.4938398840722584e-09
+      ],
+      "solver_evaluations": 47,
+      "activity_led_mA": 1.7906930952392106,
+      "R2_mean_mW": 13.495051878788022,
+      "detector_peak_mA": 13.340302272546037,
+      "late_power_drift_percent": 1.3411399324425588e-06
+    },
+    {
+      "f_Hz": 14000000.0,
+      "detector": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 84.43152117979194,
+      "third_harmonic_dBc": -9.550778387096994,
+      "fifth_harmonic_dBc": -13.998880181739024,
+      "raw_min_V": 0.21133343126619603,
+      "raw_max_V": 4.82298411684558,
+      "load_Vrms": 2.2721779915186837,
+      "load_Vpp": 4.597596552629375,
+      "channel_peak_mA": [
+        27.348731898638675,
+        27.19076312602922
+      ],
+      "channel_rms_mA": [
+        22.747010342887144,
+        22.74697338447938
+      ],
+      "power_led_mA": 1.8244866594307965,
+      "led_rail_mA": 1.8244866594307971,
+      "state_drift_V": null,
+      "solver_evaluations": 1,
+      "late_power_drift_percent": 2.6095244409773954e-06
+    },
+    {
+      "f_Hz": 14000000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 81.99526935294938,
+      "third_harmonic_dBc": -9.580076506967883,
+      "fifth_harmonic_dBc": -14.060098257028901,
+      "raw_min_V": 0.2649193586250148,
+      "raw_max_V": 4.768689876870189,
+      "load_Vrms": 2.23704128556207,
+      "load_Vpp": 4.501410649092003,
+      "channel_peak_mA": [
+        32.646810958889546,
+        32.47601888501311
+      ],
+      "channel_rms_mA": [
+        26.362671607577454,
+        26.362671228605787
+      ],
+      "power_led_mA": 1.8244866594307965,
+      "led_rail_mA": 3.615850944561157,
+      "state_drift_V": [
+        -1.2520984249420053e-09,
+        -5.717122331105884e-10,
+        6.403357843964841e-10
+      ],
+      "solver_evaluations": 63,
+      "activity_led_mA": 1.79136428513036,
+      "R2_mean_mW": 14.45581641731014,
+      "detector_peak_mA": 13.297061245837345,
+      "late_power_drift_percent": 6.754029779898474e-07
+    },
+    {
+      "f_Hz": 21000000.0,
+      "detector": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 84.3892965426349,
+      "third_harmonic_dBc": -9.556348207431501,
+      "fifth_harmonic_dBc": -14.017012509859923,
+      "raw_min_V": 0.2124276149727577,
+      "raw_max_V": 4.822848622088287,
+      "load_Vrms": 2.2668761011991365,
+      "load_Vpp": 4.595996466704445,
+      "channel_peak_mA": [
+        27.359183109121197,
+        27.186228645160895
+      ],
+      "channel_rms_mA": [
+        22.706733072915274,
+        22.706659863920212
+      ],
+      "power_led_mA": 1.8244866594307962,
+      "led_rail_mA": 1.8244866594307971,
+      "state_drift_V": null,
+      "solver_evaluations": 1,
+      "late_power_drift_percent": -2.77446373653234e-06
+    },
+    {
+      "f_Hz": 21000000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 81.84539429670377,
+      "third_harmonic_dBc": -9.60211670099697,
+      "fifth_harmonic_dBc": -14.089439010695576,
+      "raw_min_V": 0.2652651690283045,
+      "raw_max_V": 4.768401116922314,
+      "load_Vrms": 2.2301373360747556,
+      "load_Vpp": 4.500690235118277,
+      "channel_peak_mA": [
+        32.61139625216062,
+        32.441091040206146
+      ],
+      "channel_rms_mA": [
+        26.4917205206744,
+        26.491726917952704
+      ],
+      "power_led_mA": 1.8244866594307958,
+      "led_rail_mA": 3.616543551352979,
+      "state_drift_V": [
+        1.9935506578860895e-09,
+        6.188012324770398e-10,
+        5.288458559959963e-10
+      ],
+      "solver_evaluations": 39,
+      "activity_led_mA": 1.7920568919221822,
+      "R2_mean_mW": 15.934166937259086,
+      "detector_peak_mA": 13.22999280681305,
+      "late_power_drift_percent": 3.965199502076189e-07
+    },
+    {
+      "f_Hz": 28000000.0,
+      "detector": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 84.35098178499238,
+      "third_harmonic_dBc": -9.564710706712422,
+      "fifth_harmonic_dBc": -14.043098519733785,
+      "raw_min_V": 0.2123396052781844,
+      "raw_max_V": 4.822309446480589,
+      "load_Vrms": 2.261687257555789,
+      "load_Vpp": 4.59676919722571,
+      "channel_peak_mA": [
+        27.425682179152698,
+        27.287347102914772
+      ],
+      "channel_rms_mA": [
+        22.667537030940142,
+        22.66744415649469
+      ],
+      "power_led_mA": 1.8244866594307942,
+      "led_rail_mA": 1.8244866594307958,
+      "state_drift_V": null,
+      "solver_evaluations": 1,
+      "late_power_drift_percent": -3.48003992289847e-07
+    },
+    {
+      "f_Hz": 28000000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 81.70298723794266,
+      "third_harmonic_dBc": -9.61889308456556,
+      "fifth_harmonic_dBc": -14.104317141114244,
+      "raw_min_V": 0.2655943659715982,
+      "raw_max_V": 4.768140204134057,
+      "load_Vrms": 2.2236765753596845,
+      "load_Vpp": 4.500037244275539,
+      "channel_peak_mA": [
+        32.58087461725081,
+        32.376746599983576
+      ],
+      "channel_rms_mA": [
+        26.585181217014945,
+        26.585200096736354
+      ],
+      "power_led_mA": 1.824486659430795,
+      "led_rail_mA": 3.6165413411677547,
+      "state_drift_V": [
+        3.672280257660532e-10,
+        6.113254347184238e-11,
+        -6.894795845369117e-11
+      ],
+      "solver_evaluations": 34,
+      "activity_led_mA": 1.7920546817369587,
+      "R2_mean_mW": 17.084520435757323,
+      "detector_peak_mA": 13.163044739491871,
+      "late_power_drift_percent": 3.179739360703593e-07
+    },
+    {
+      "f_Hz": 50000000.0,
+      "detector": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 84.21911107358126,
+      "third_harmonic_dBc": -9.608991164012084,
+      "fifth_harmonic_dBc": -14.176127196864307,
+      "raw_min_V": 0.20985602589222893,
+      "raw_max_V": 4.824704597761354,
+      "load_Vrms": 2.2455805855753166,
+      "load_Vpp": 4.6001502980369455,
+      "channel_peak_mA": [
+        27.426113335254072,
+        27.282356496455126
+      ],
+      "channel_rms_mA": [
+        22.54638342604283,
+        22.5462394853096
+      ],
+      "power_led_mA": 1.8244866594307942,
+      "led_rail_mA": 1.824486659430795,
+      "state_drift_V": null,
+      "solver_evaluations": 1,
+      "late_power_drift_percent": -1.1036056069002598e-06
+    },
+    {
+      "f_Hz": 50000000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 81.33873272464552,
+      "third_harmonic_dBc": -9.657284390719314,
+      "fifth_harmonic_dBc": -14.198278983601922,
+      "raw_min_V": 0.2665459481153077,
+      "raw_max_V": 4.767405409800385,
+      "load_Vrms": 2.2052592947064125,
+      "load_Vpp": 4.497871040406807,
+      "channel_peak_mA": [
+        32.419953285151955,
+        32.27414081104823
+      ],
+      "channel_rms_mA": [
+        26.7007263056305,
+        26.700872885744594
+      ],
+      "power_led_mA": 1.824486659430795,
+      "led_rail_mA": 3.612748612457817,
+      "state_drift_V": [
+        3.729905273530676e-12,
+        -6.143974218275616e-13,
+        -2.113864638886298e-13
+      ],
+      "solver_evaluations": 22,
+      "activity_led_mA": 1.7882619530270223,
+      "R2_mean_mW": 19.086245083984412,
+      "detector_peak_mA": 12.965633287532688,
+      "late_power_drift_percent": 1.7896704118669504e-07
+    },
+    {
+      "f_Hz": 70000000.0,
+      "detector": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 84.05849990440964,
+      "third_harmonic_dBc": -9.671354036579382,
+      "fifth_harmonic_dBc": -14.36177722837237,
+      "raw_min_V": 0.20941735881119306,
+      "raw_max_V": 4.825266464465382,
+      "load_Vrms": 2.23099837114647,
+      "load_Vpp": 4.601464507538036,
+      "channel_peak_mA": [
+        27.49320686950444,
+        27.34913035372102
+      ],
+      "channel_rms_mA": [
+        22.437038210178226,
+        22.43694939421417
+      ],
+      "power_led_mA": 1.8244866594307927,
+      "led_rail_mA": 1.8244866594307931,
+      "state_drift_V": null,
+      "solver_evaluations": 1,
+      "late_power_drift_percent": -1.1528202947808097e-06
+    },
+    {
+      "f_Hz": 70000000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 81.06305941561118,
+      "third_harmonic_dBc": -9.706158755441063,
+      "fifth_harmonic_dBc": -14.376693593067266,
+      "raw_min_V": 0.26730560518205254,
+      "raw_max_V": 4.766831979292182,
+      "load_Vrms": 2.189751794789407,
+      "load_Vpp": 4.496242359756403,
+      "channel_peak_mA": [
+        32.44122878105246,
+        32.273871708016486
+      ],
+      "channel_rms_mA": [
+        26.6837361707861,
+        26.683819483649145
+      ],
+      "power_led_mA": 1.8244866594307927,
+      "led_rail_mA": 3.60554037863585,
+      "state_drift_V": [
+        -4.419575816427823e-12,
+        -3.464895037552651e-12,
+        3.4372504842394846e-13
+      ],
+      "solver_evaluations": 25,
+      "activity_led_mA": 1.781053719205057,
+      "R2_mean_mW": 19.812954125497033,
+      "detector_peak_mA": 12.796014401106074,
+      "late_power_drift_percent": 4.5012031879565484e-07
+    },
+    {
+      "f_Hz": 100000000.0,
+      "detector": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 83.72790913377189,
+      "third_harmonic_dBc": -9.803182574149831,
+      "fifth_harmonic_dBc": -14.756030041713364,
+      "raw_min_V": 0.20951149127266558,
+      "raw_max_V": 4.825304800258272,
+      "load_Vrms": 2.208994220993107,
+      "load_Vpp": 4.601670461252286,
+      "channel_peak_mA": [
+        27.538090537535947,
+        27.381756576116917
+      ],
+      "channel_rms_mA": [
+        22.273017739448182,
+        22.272875170678564
+      ],
+      "power_led_mA": 1.8244866594307974,
+      "led_rail_mA": 1.8244866594307976,
+      "state_drift_V": null,
+      "solver_evaluations": 1,
+      "late_power_drift_percent": -1.162888130235018e-06
+    },
+    {
+      "f_Hz": 100000000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 80.64289643453138,
+      "third_harmonic_dBc": -9.823936729459984,
+      "fifth_harmonic_dBc": -14.771078840424899,
+      "raw_min_V": 0.2683343487725773,
+      "raw_max_V": 4.7672610866398175,
+      "load_Vrms": 2.167172593882248,
+      "load_Vpp": 4.494177140855748,
+      "channel_peak_mA": [
+        32.366053037366065,
+        32.19618325317399
+      ],
+      "channel_rms_mA": [
+        26.572369073746476,
+        26.57255336769893
+      ],
+      "power_led_mA": 1.8244866594307974,
+      "led_rail_mA": 3.5886932430780405,
+      "state_drift_V": [
+        1.873612376357414e-12,
+        -3.4131586446051188e-12,
+        -2.184918912462308e-13
+      ],
+      "solver_evaluations": 25,
+      "activity_led_mA": 1.7642065836472416,
+      "R2_mean_mW": 20.161270095447076,
+      "detector_peak_mA": 12.54786678069159,
+      "late_power_drift_percent": 5.525559787500356e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": false,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 83.02701258875504,
+      "third_harmonic_dBc": -10.087134509701004,
+      "fifth_harmonic_dBc": -15.61477648915461,
+      "raw_min_V": 0.20969399540227132,
+      "raw_max_V": 4.825114727157898,
+      "load_Vrms": 2.1756035680037464,
+      "load_Vpp": 4.601351927025002,
+      "channel_peak_mA": [
+        27.56208879042888,
+        27.40993789590627
+      ],
+      "channel_rms_mA": [
+        22.024928726741816,
+        22.02457748365615
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 1.8244866594308151,
+      "state_drift_V": null,
+      "solver_evaluations": 1,
+      "late_power_drift_percent": -1.1101611629982244e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 1400,
+      "fundamental_mW": 79.89096506355887,
+      "third_harmonic_dBc": -10.09822529842944,
+      "fifth_harmonic_dBc": -15.630553820602156,
+      "raw_min_V": 0.2698526681299457,
+      "raw_max_V": 4.7689146297097444,
+      "load_Vrms": 2.133641289433382,
+      "load_Vpp": 4.4912596597684695,
+      "channel_peak_mA": [
+        32.24870011838538,
+        32.065990505293314
+      ],
+      "channel_rms_mA": [
+        26.325898982686414,
+        26.32601022951525
+      ],
+      "power_led_mA": 1.824486659430814,
+      "led_rail_mA": 3.542803231594166,
+      "state_drift_V": [
+        -3.7703173916270316e-13,
+        -1.1435297153639112e-13,
+        2.3714363805993344e-13
+      ],
+      "solver_evaluations": 25,
+      "activity_led_mA": 1.7183165721633515,
+      "R2_mean_mW": 20.057485734238185,
+      "detector_peak_mA": 12.128282265136354,
+      "late_power_drift_percent": 2.896430428833696e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "skew_s": 1e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 79.75617650590416,
+      "third_harmonic_dBc": -10.156408819660477,
+      "fifth_harmonic_dBc": -15.801996820433308,
+      "raw_min_V": 0.26996575963338204,
+      "raw_max_V": 4.764838135443538,
+      "load_Vrms": 2.1283412549899734,
+      "load_Vpp": 4.4910448479570775,
+      "channel_peak_mA": [
+        72.7066064038498,
+        42.55626219330422
+      ],
+      "channel_rms_mA": [
+        31.823999635187338,
+        27.796791356554177
+      ],
+      "power_led_mA": 1.8244866594308091,
+      "led_rail_mA": 3.542551329424719,
+      "state_drift_V": [
+        1.3322676295501878e-15,
+        4.75175454539567e-14,
+        -9.14823772291129e-14
+      ],
+      "solver_evaluations": 25,
+      "activity_led_mA": 1.7180646699939093,
+      "R2_mean_mW": 19.955243402439088,
+      "detector_peak_mA": 12.044205235202016,
+      "late_power_drift_percent": 1.5434620248555575e-07
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "skew_s": 5e-10,
+      "step_factor": 1400,
+      "fundamental_mW": 76.67462518092479,
+      "third_harmonic_dBc": -11.606727464497054,
+      "fifth_harmonic_dBc": -20.723586386929057,
+      "raw_min_V": 0.2705791915879716,
+      "raw_max_V": 4.764539094177366,
+      "load_Vrms": 2.0332906437118394,
+      "load_Vpp": 4.490050986387331,
+      "channel_peak_mA": [
+        212.67606022037117,
+        202.13719170298324
+      ],
+      "channel_rms_mA": [
+        69.73790446684772,
+        65.16504789905888
+      ],
+      "power_led_mA": 1.8244866594308065,
+      "led_rail_mA": 3.536269488855136,
+      "state_drift_V": [
+        2.6778579353958776e-13,
+        2.4369395390522186e-13,
+        -5.861977570020827e-14
+      ],
+      "solver_evaluations": 25,
+      "activity_led_mA": 1.7117828294243287,
+      "R2_mean_mW": 18.17295494885669,
+      "detector_peak_mA": 11.889417521802859,
+      "late_power_drift_percent": 1.6396959789943821e-06
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "skew_s": 1e-09,
+      "step_factor": 1400,
+      "fundamental_mW": 66.3064065608296,
+      "third_harmonic_dBc": -19.820946829358526,
+      "fifth_harmonic_dBc": -20.97029865757241,
+      "raw_min_V": 0.27166696743102386,
+      "raw_max_V": 4.763798385905769,
+      "load_Vrms": 1.8482576284301409,
+      "load_Vpp": 4.48806898477845,
+      "channel_peak_mA": [
+        220.69824910881184,
+        221.72452735265105
+      ],
+      "channel_rms_mA": [
+        103.30362918285506,
+        99.9526844673347
+      ],
+      "power_led_mA": 1.8244866594308087,
+      "led_rail_mA": 3.499965526885504,
+      "state_drift_V": [
+        -2.0796697697278432e-12,
+        3.5840219680949303e-12,
+        2.1320722964901506e-12
+      ],
+      "solver_evaluations": 37,
+      "activity_led_mA": 1.675478867454695,
+      "R2_mean_mW": 14.97871019255444,
+      "detector_peak_mA": 11.501179434407941,
+      "late_power_drift_percent": -7.469876939225628e-08
+    },
+    {
+      "f_Hz": 137000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 2800,
+      "fundamental_mW": 82.47899977304996,
+      "third_harmonic_dBc": -9.556946468519808,
+      "fifth_harmonic_dBc": -13.996266317152736,
+      "raw_min_V": 0.23275201329999312,
+      "raw_max_V": 4.796249004099845,
+      "load_Vrms": 2.254674871099613,
+      "load_Vpp": 4.66530502639228,
+      "channel_peak_mA": [
+        35.8016766122531,
+        35.628910334345534
+      ],
+      "channel_rms_mA": [
+        25.558163693652997,
+        25.558164961407204
+      ],
+      "power_led_mA": 1.8244866594307958,
+      "led_rail_mA": 3.587453052946719,
+      "state_drift_V": [
+        -8.35610750837823e-06,
+        1.1986360792803907e-09,
+        2.67184073976523e-07
+      ],
+      "solver_evaluations": 33,
+      "activity_led_mA": 1.7629663935159232,
+      "R2_mean_mW": 9.117352139135182,
+      "detector_peak_mA": 17.737312026619563,
+      "late_power_drift_percent": 1.6882471642887253e-05
+    },
+    {
+      "f_Hz": 145000000.0,
+      "detector": true,
+      "skew_s": 0,
+      "step_factor": 2800,
+      "fundamental_mW": 79.89025024583127,
+      "third_harmonic_dBc": -10.098610758538275,
+      "fifth_harmonic_dBc": -15.631696738098466,
+      "raw_min_V": 0.2698563901010801,
+      "raw_max_V": 4.768588734246583,
+      "load_Vrms": 2.133606947887492,
+      "load_Vpp": 4.491256735557709,
+      "channel_peak_mA": [
+        32.25689489479751,
+        32.07444535246138
+      ],
+      "channel_rms_mA": [
+        26.3250700848671,
+        26.325153704794698
+      ],
+      "power_led_mA": 1.8244866594308122,
+      "led_rail_mA": 3.5428051923549724,
+      "state_drift_V": [
+        9.636735853746359e-14,
+        -2.7533531010703882e-14,
+        7.460698725481052e-14
+      ],
+      "solver_evaluations": 25,
+      "activity_led_mA": 1.7183185329241586,
+      "R2_mean_mW": 20.056810091748464,
+      "detector_peak_mA": 12.128472692831561,
+      "late_power_drift_percent": 2.783665298267124e-07
+    },
+    {
+      "f_Hz": 145000000,
+      "detector": true,
+      "skew_s": 1e-10,
+      "step_factor": 2800,
+      "fundamental_mW": 79.75558446617936,
+      "third_harmonic_dBc": -10.15674182495156,
+      "fifth_harmonic_dBc": -15.80298310658371,
+      "raw_min_V": 0.2699658561063964,
+      "raw_max_V": 4.764837869301535,
+      "load_Vrms": 2.12831311707508,
+      "load_Vpp": 4.491043811743181,
+      "channel_peak_mA": [
+        72.6955600999725,
+        42.55703784242882
+      ],
+      "channel_rms_mA": [
+        31.821447311650346,
+        27.795644732162444
+      ],
+      "power_led_mA": 1.8244866594308133,
+      "led_rail_mA": 3.54255336050466,
+      "state_drift_V": [
+        -2.6290081223123707e-13,
+        -1.2279066652354231e-13,
+        1.900701818158268e-13
+      ],
+      "solver_evaluations": 25,
+      "activity_led_mA": 1.7180667010738464,
+      "R2_mean_mW": 19.95469717214419,
+      "detector_peak_mA": 12.043587098198204,
+      "late_power_drift_percent": 1.8914803057157314e-07
+    }
+  ],
+  "timestep_checks": [
+    {
+      "f_Hz": 137000.0,
+      "skew_s": 0,
+      "power_change_percent": 0.0002483745416670402,
+      "activity_led_change_percent": 0.0001187892765264209,
+      "channel_peak_change_percent": -0.1809192752401989
+    },
+    {
+      "f_Hz": 145000000.0,
+      "skew_s": 0,
+      "power_change_percent": -0.0008947416357152349,
+      "activity_led_change_percent": 0.00011410940445877316,
+      "channel_peak_change_percent": 0.025411183650958513
+    },
+    {
+      "f_Hz": 145000000,
+      "skew_s": 1e-10,
+      "power_change_percent": -0.0007423120700456032,
+      "activity_led_change_percent": 0.00011821906198417054,
+      "channel_peak_change_percent": -0.015192985099521383
+    }
+  ],
+  "design_sha256": {
+    "Logic RF Driver.kicad_sch": "8b7e1b1681365000912c7480cebf1f8a94a473e3c711aaf3470764081208fd51",
+    "Logic RF Driver.kicad_pcb": "4c1886828f27c4443ddb3f8d84575fd69d3e14e928139904c2bbde5138f454fd",
+    "Logic RF Driver.kicad_pro": "54762eb00b2e48a8ef3a50384c9a4646676ec849b9dd9a87c9a80882d41f50c7",
+    "Logic RF Driver.kicad_dru": "3d88d3960bf04f39ccf0242e6fb72310277eedcc77a8a4e27672e606c35314da",
+    "BOM.csv": "a3ebc76727661067550e497b5b436738b8a0bffb04b6d86023dc38b59bd93e88"
+  },
+  "model_and_script_sha256": {
+    "generated/comparison-samsung/runs/logic_475000_270_dc_bias_700.cir": "8486a1f9a6387deb1f7a58627d46b169435db903e37031e9748dc558ce7984ef",
+    "generated/comparison-samsung/runs/logic_137000_270_dc_bias_700.cir": "4bd486dbb63375be1785df67831749f76508a6c42eb466dcb7e70a66ed6f57cf",
+    "generated/comparison-samsung/runs/logic_7e+06_270_dc_bias_700.cir": "8256f7f80476bd75a2161217bb063345ca05b6b15c8c4a56589cfe7968075c4f",
+    "generated/comparison-samsung/runs/logic_7e+07_270_dc_bias_700.cir": "39832114f41e53028634bc662b203c9f49313163d54044f88eb50848510fc8b9",
+    "generated/comparison-samsung/runs/logic_1.45e+08_270_dc_bias_700.cir": "fb2a5cfb8dbb7f5d5a1de4431fabba4eff6500f035eaed6a391055194c012aab",
+    "generated/comparison-samsung/runs/logic_2.8e+07_270_dc_bias_700.cir": "90ef8486a079395f60c695e60e09f8240a42cc1169e7665d2382c2b66d00963b",
+    "generated/comparison-samsung/runs/logic_3.5e+06_270_dc_bias_700.cir": "31aba3d03ab11d614795e35025203781651002199fcbb38aff4c385879068838",
+    "generated/comparison-samsung/runs/logic_1e+08_270_dc_bias_700.cir": "e35d9db4f05e5ec0f573708bc6fa7bb8a9c07479d03decb5906da2301a226303",
+    "generated/comparison-samsung/runs/logic_1.4e+07_270_dc_bias_700.cir": "85e47b055e846bccc37573e280c7b877b57cbf2af5ade6bdcc77b0cbf7b4577c",
+    "generated/comparison-samsung/runs/logic_2.1e+07_270_dc_bias_700.cir": "acd335c43d057fd5bad9ffc23e1801a324c144909dd4e3da0dc2e21120f13a10",
+    "generated/comparison-samsung/runs/logic_5e+07_270_dc_bias_700.cir": "c0e5f6215adf282c6a6483d1c65f53afab46df6b7296bdb31eb0f99e937dbbb5",
+    "generated/comparison-samsung/runs/logic_1.8e+06_270_dc_bias_700.cir": "da5fca551b14f0bb475803ea7f2eb0f12cbccf0b3989c185043ca2680e36445c",
+    "generated/comparison-samsung/runs/logic_1e+07_270_dc_bias_700.cir": "32488fbfa601f3344e6bc3fdb5a6496dbca14028307742250624444afcfa2600",
+    "generated/comparison-samsung/logic_475000_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_137000_270_dc_bias_700.mod": "1816691bb161d1751a605d01d98ddbd2fe182e87421734afcaaa2456506d0828",
+    "generated/comparison-samsung/logic_7e+07_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_7e+06_270_dc_bias_700.mod": "71b8a747f0de066a5d7642ffb42f2a8cf60bc34570d09102a4069c2352b873bc",
+    "generated/comparison-samsung/logic_1.45e+08_270_dc_bias_700.mod": "772c9a8e3df17341dbcbb480dbba76a013863e07a0dcad2f7849f56cf2bf3b07",
+    "generated/comparison-samsung/logic_2.8e+07_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_3.5e+06_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_1.4e+07_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_1e+08_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_2.1e+07_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_5e+07_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_1.8e+06_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/comparison-samsung/logic_1e+07_270_dc_bias_700.mod": "98552d4f2097707b54a1cab02886596ced8653ac1c0c04e8bd9f971a0aface3c",
+    "generated/input-loading/models/BAT54S.txt": "31bd9a1e64a71ae4cf52fa1c0d434512c86838ab557e515f1035e3d17c141e06",
+    "generated/input-loading/models/MMBT3904.txt": "49c344a0aaa461869b9a6f7a67e8afc0afbb0050a6b4f7e19e44025b076a6d2d",
+    "external-research/simulate.py": "f1c87085a80924b06e7c8ddb23aaabe45039ef8932f39d8ac68f1119a0af62ab",
+    "external-research/models/SN74LVC2T45.ibs": "e3edf7aca38693b91b485a0c5063769c78ec84dae00a4d44d85654807b5b6ce5",
+    "scripts/run_board_simulation.py": "17aee4a81ffb85afda42bd3eb5debb4bb04c8888e210e500df5ce9461adeeb82",
+    "scripts/report_board_simulation.py": "cd581603afae5fea877216e94028db02106d74d73824d2a71cb42b76afe8b30a"
+  },
+  "limitations": [
+    "Nominal IBIS-derived behavioral U1 model; incomplete internal switching loss and no measured channel skew distribution.",
+    "Diodes Incorporated diode/transistor models and illustrative LED do not exactly represent selected Nexperia BAT54S, CJ transistor, or KENTO LEDs.",
+    "Ideal rails omit C1/C2/C3, supply wiring, ground bounce, and thermal response.",
+    "No extracted PCB traces, connector model, external filter, or impedance-mismatch sweep.",
+    "R1 and actual Pico/Pi/Si5351 source drivers are absent from switching-timing surrogate.",
+    "C4 fit is linear at selected DC bias; fitted initial charge is not an instantaneous nonlinear dielectric model."
+  ]
+}

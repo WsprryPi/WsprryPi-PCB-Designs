@@ -39,3 +39,7 @@ kicad-cli sch export bom --preset JLCPCB --output BOM.csv "Logic RF Driver.kicad
 ```
 
 JLCPCB uses the `C…` ordering codes to match parts in its assembly catalog. Check the matched parts and placement preview in the order interface. The BOM supplies part selection; assembly also requires a component placement (CPL) file. See [JLCPCB’s KiCad export guide](https://jlcpcb.com/help/article/how-to-generate-the-bom-and-centroid-file-from-kicad).
+
+J2 is hand-fitted as [Adafruit product 2136](https://www.adafruit.com/product/2136). Its local footprint and model remain visible in the design and assembly image. It has no LCSC ordering code and is excluded from the JLCPCB BOM.
+
+The [connector notes](CONNECTORS.md) identify J1/J3 as Adafruit 1865 SMA jacks and describe J2's shared Adafruit 2136 screw-terminal/header footprint. J1/J2/J3 are hand-fit parts excluded from the factory BOM.

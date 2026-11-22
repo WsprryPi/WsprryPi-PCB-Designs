@@ -760,7 +760,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SN74LVC2T45_Amp:SMA_Amphenol_132289_EdgeMount"
+		(property "Footprint" "SN74LVC2T45_Amp:SMA_Adafruit_1865_EdgeLaunch"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -771,7 +771,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1865/C2387-001_datasheet.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -804,7 +804,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+		(property "ki_fp_filters" "*:SMA_Adafruit_1865*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -946,7 +946,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SN74LVC2T45_Amp:PinHeader_1x03_P2.54mm_Vertical"
+		(property "Footprint" "SN74LVC2T45_Amp:Power_1x03_P2.54mm_Header_or_Adafruit_2136"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -957,7 +957,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2135/Kaweei_KF120-XP.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -990,7 +990,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "Connector*:*_1x??_*"
+		(property "ki_fp_filters" "*:Power_1x03_P2.54mm_Header_or_Adafruit_2136"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

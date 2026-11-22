@@ -43,34 +43,6 @@
       "model_path": "${KIPRJMOD}/libraries/SN74LVC2T45_Amp.3dshapes/R_0603_1608Metric.step"
     },
     {
-      "kind": "model",
-      "source": "KiCad/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
-      "file": "libraries/SN74LVC2T45_Amp.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
-      "sha256": "b91b4ac5acf1a0d28a676703db972d17b8f11ef26a85b58d60786a69246b921b"
-    },
-    {
-      "kind": "footprint",
-      "source": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
-      "source_sha256": "e5f24b6fea852f86171042806da48490229c9c8025b6d266b8cad6485b26e79f",
-      "file": "libraries/SN74LVC2T45_Amp.pretty/PinHeader_1x03_P2.54mm_Vertical.kicad_mod",
-      "sha256": "bfe7470ee75fc4b9e0b35c3274faa9ec51a7fbffa657f0d6c1032947c318ee55",
-      "model_path": "${KIPRJMOD}/libraries/SN74LVC2T45_Amp.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
-    },
-    {
-      "kind": "model",
-      "source": "KiCad/Connector_Coaxial.3dshapes/SMA_Amphenol_132289_EdgeMount.step",
-      "file": "libraries/SN74LVC2T45_Amp.3dshapes/SMA_Amphenol_132289_EdgeMount.step",
-      "sha256": "eab4ddd93a669662d28c0d8dcbc380584abc16b56d4afc77c31e75b579c82044"
-    },
-    {
-      "kind": "footprint",
-      "source": "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount",
-      "source_sha256": "4890dc98cac7074fff096522cf9651c62208595f7007b3ce581fc4cf1df8a57c",
-      "file": "libraries/SN74LVC2T45_Amp.pretty/SMA_Amphenol_132289_EdgeMount.kicad_mod",
-      "sha256": "e9f6b59ff4f2511b0e5e00acc8f631ed1c9b83d06cd91d4bd772fed86b881fda",
-      "model_path": "${KIPRJMOD}/libraries/SN74LVC2T45_Amp.3dshapes/SMA_Amphenol_132289_EdgeMount.step"
-    },
-    {
       "kind": "symbol",
       "source_library": "Logic_LevelTranslator",
       "source_symbol": "SN74LVC2T45DCUR",
@@ -92,13 +64,15 @@
       "kind": "symbol",
       "source_library": "Connector",
       "source_symbol": "Conn_Coaxial",
-      "source_file_sha256": "50b42bf755009d3d459c310182dca1c37e1ff1a01fa6ae23846b416fafffc914"
+      "source_file_sha256": "50b42bf755009d3d459c310182dca1c37e1ff1a01fa6ae23846b416fafffc914",
+      "local_adaptation": "Default footprint, datasheet, and filter target the local Adafruit 1865 edge-launch connector."
     },
     {
       "kind": "symbol",
       "source_library": "Connector_Generic",
       "source_symbol": "Conn_01x03",
-      "source_file_sha256": "b40057d620867e58e8c3d1be9ab822bba6955e76ccfc566fd0945eedcf527fd3"
+      "source_file_sha256": "b40057d620867e58e8c3d1be9ab822bba6955e76ccfc566fd0945eedcf527fd3",
+      "local_adaptation": "Default footprint and footprint filter target the local shared header / Adafruit 2136 footprint; datasheet links to the KF120-3P drawing."
     },
     {
       "kind": "symbol",
@@ -172,10 +146,72 @@
       "source_library": "power",
       "source_symbol": "+3V3",
       "source_file_sha256": "8113f8fe90853413603d619987cc744e33dc47ff27faac19a58d7caf8c334fd0"
+    },
+    {
+      "kind": "model",
+      "source": "Original project asset based on the Adafruit-linked Kaweei KF120-3P mechanical drawing",
+      "source_url": "https://cdn-shop.adafruit.com/product-files/2135/Kaweei_KF120-XP.pdf",
+      "source_sha256": "7dab63dcbdbc79258eac88dbc3e6b44cd7f51e0bd76e0a74bf2f7ee348f0d03d",
+      "file": "libraries/SN74LVC2T45_Amp.3dshapes/TerminalBlock_Adafruit_2136_KF120-3P_P2.54mm_Horizontal.step",
+      "sha256": "1f37e2aadcda635eba20bdf910bf144f5d6b58ba1703c4c15bf94f5f2f25a675",
+      "license": "MIT (original project geometry)",
+      "geometry_scope": "Dimensioned envelope with simplified housing, screws, and pins; not a manufacturer STEP model. CAD +Y is the wire-entry face; body 8.0 x 6.3 mm, installed height 8.6 mm, pin length 3.5 mm."
+    },
+    {
+      "kind": "footprint",
+      "source": "Original project asset based on the Adafruit-linked Kaweei KF120-3P mechanical drawing",
+      "source_url": "https://cdn-shop.adafruit.com/product-files/2135/Kaweei_KF120-XP.pdf",
+      "source_sha256": "7dab63dcbdbc79258eac88dbc3e6b44cd7f51e0bd76e0a74bf2f7ee348f0d03d",
+      "file": "libraries/SN74LVC2T45_Amp.pretty/Power_1x03_P2.54mm_Header_or_Adafruit_2136.kicad_mod",
+      "sha256": "9ccc88c4eb2f3d0bd26c9d7967844f43ed723a7741fb766c01d29841abd8c245",
+      "license": "MIT (original project geometry)",
+      "model_path": "${KIPRJMOD}/libraries/SN74LVC2T45_Amp.3dshapes/TerminalBlock_Adafruit_2136_KF120-3P_P2.54mm_Horizontal.step",
+      "hole_mm": 1.2,
+      "pad_mm": 2.0,
+      "body_bounds_mm": [
+        -1.46,
+        -3.5,
+        6.54,
+        2.8
+      ],
+      "assembly_options": [
+        "Adafruit 2136 / KF120-3P screw terminal",
+        "1x03 2.54 mm pin header"
+      ],
+      "alternate_model_path": "${KIPRJMOD}/libraries/SN74LVC2T45_Amp.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+      "silkscreen_scope": "Open front outline for J2 at Y=52.25 mm: side strokes end at local Y=-2.00 mm, 0.25 mm inside board edge. Full body remains on F.Fab and F.CrtYd."
+    },
+    {
+      "kind": "model",
+      "source": "KiCad/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+      "file": "libraries/SN74LVC2T45_Amp.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+      "sha256": "b91b4ac5acf1a0d28a676703db972d17b8f11ef26a85b58d60786a69246b921b",
+      "usage": "Alternate header model referenced by the shared J2 footprint and hidden by default."
+    },
+    {
+      "kind": "footprint",
+      "source": "Adafruit Eagle Library SMA_EDGELAUNCH package",
+      "source_url": "https://github.com/adafruit/Adafruit-Eagle-Library",
+      "source_sha256": "3d2af8aa33f0629a2b5c75b7fac3f5a1775724983b71f44c05028fa264d0e99e",
+      "file": "libraries/SN74LVC2T45_Amp.pretty/SMA_Adafruit_1865_EdgeLaunch.kicad_mod",
+      "sha256": "def9d0d1822ae4964bc112ec194ad387569ad90561aeab9247decff1bbdd5071",
+      "license": "Public Domain (Adafruit library); retain Adafruit attribution",
+      "model_path": "${KIPRJMOD}/libraries/SN74LVC2T45_Amp.3dshapes/SMA_Adafruit_1865_EdgeLaunch.step",
+      "conversion": "Eagle X/Y pads mapped to KiCad X/-Y; pad P=1, all GND pads=2; no paste apertures; edge origin; added courtyards and local model."
+    },
+    {
+      "kind": "model",
+      "source": "Original project simplified envelope based on Adafruit C2387-001 drawing",
+      "source_url": "https://cdn-shop.adafruit.com/product-files/1865/C2387-001_datasheet.pdf",
+      "source_sha256": "1bdebaaa5a424340d7d08b4511af09b9f43dee1d238ce706adcf5ba3e93bc3f2",
+      "file": "libraries/SN74LVC2T45_Amp.3dshapes/SMA_Adafruit_1865_EdgeLaunch.step",
+      "sha256": "80502a14418efd66d6dbe0854aa37bb7d8de5b6d62c69e1de4572c76ca004bea",
+      "license": "MIT (original project geometry)",
+      "geometry_scope": "Simplified 13.4 mm axial envelope with nominal 6.5 mm body, ground forks and signal contact; nominal 1.57 mm board slot; no thread/internal RF detail; not manufacturer geometry or fit proof."
     }
   ],
   "project_symbol_library": {
     "file": "libraries/SN74LVC2T45_Amp.kicad_sym",
-    "sha256": "6b79dbb7da318996c10b70822ee66eb7b179f6d1a09a91ba9349ed98b2fc8dd4"
+    "sha256": "f7b570e0b26a8f1cf26f55b397f68b1becaa5fec524b3af00a013fb2cd18a937"
   }
 }
