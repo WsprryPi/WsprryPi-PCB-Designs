@@ -66,6 +66,8 @@ Edit the project file externally with the KiCad editors and the project closed. 
 
 ## Research and limitations
 
+The [30 m transmitter/filter study](30M-TRANSMITTER.md) connects the board’s behavioral circuit model directly to the five-element L-first filter and the original seven-element C-first filter at 10.1401 MHz. The nominal L-first case predicts 65.5 mW into 50 ohms and a third harmonic near −76 dBc. Coil Q and line-length sensitivities and finer-timestep checks are included. The C-first comparison demands substantially higher modeled output current. Neither case establishes physical performance, safe current, or emissions compliance.
+
 The [single-chip THS3491 amplifier study](THS3491-STUDY.md) evaluates a separate gain-of-five PA driven by this board, with input and output low-pass filters, supply current, and thermal estimates. Its nominal half-voltage divider predicts about 231–247 mW at the filtered load; the higher-drive divider predicts about 331–356 mW. It does not establish 500 mW across the full range. The PA is absent from the schematic, PCB, and BOM.
 
 The [dual-chip THS3491 study](THS3491-DUAL-STUDY.md) evaluates TI's parallel RGT load-sharing core with inductor-first filters. It predicts about 335–357 mW at the filtered load with the 0.6 divider, compared with 330–344 mW from the matched single-RGT control. Each chip dissipates about 0.92 W, while total IC heat is about 1.84 W. Higher modeled output at 145 MHz requires a pin swing above TI's recommended linear envelope; the study does not establish 500 mW across the full range.

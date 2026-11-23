@@ -1,0 +1,626 @@
+{
+  "frequency_Hz": 10140100,
+  "comparison": "Five-element minimum-loss L-first versus original workbook seven-element C-first",
+  "cases": [
+    {
+      "case": "bare_q50_line0_step1400",
+      "first": "bare",
+      "inductor_Q": 50,
+      "line_m": 0,
+      "line_Z0_ohms": 50,
+      "line_velocity_m_per_s": 170000000.0,
+      "step_divisor": 1400,
+      "frequency_Hz": 10140100.0,
+      "fundamental_mW": 82.07300762061452,
+      "harmonics_dBc": {
+        "2": -72.04246730563193,
+        "3": -9.5669918595176,
+        "4": -72.71526277512514,
+        "5": -14.034805470114033,
+        "6": -73.57130847774081,
+        "7": -16.988310298211903,
+        "8": -74.55073097017889,
+        "9": -19.196323027434893
+      },
+      "load_Vpp": 4.502150158067815,
+      "mean_5V_pullup_mA": 27.56650409244051,
+      "mean_3V3_LED_mA": 3.6152058683310493,
+      "channel_peak_mA": [
+        32.67304917689036,
+        32.5014094470295
+      ],
+      "channel_rms_mA": [
+        26.279179254546523,
+        26.279182473094252
+      ],
+      "state_drift_V": [
+        1.4579018756677442e-06,
+        -7.837813131850169e-08,
+        -1.8441626004062073e-09
+      ],
+      "late_power_drift_percent": 1.0459578758670318e-06,
+      "filter_values_SI": [],
+      "filter_elements": 0,
+      "reused_from": "Logic RF Driver/generated/30m-filter-transmitter"
+    },
+    {
+      "case": "L_q25_line0.05_step1400",
+      "first": "L",
+      "inductor_Q": 25,
+      "line_m": 0.05,
+      "line_Z0_ohms": 50,
+      "line_velocity_m_per_s": 170000000.0,
+      "step_divisor": 1400,
+      "frequency_Hz": 10140100.0,
+      "fundamental_mW": 52.28063361795019,
+      "harmonics_dBc": {
+        "2": -99.79600772874932,
+        "3": -75.1773694898401,
+        "4": -145.49262393627353,
+        "5": -102.97211927916722,
+        "6": -156.50645242443042,
+        "7": -120.42397271063999,
+        "8": -160.05983727678458,
+        "9": -130.17174406920742
+      },
+      "load_Vpp": 4.572376470724665,
+      "mean_5V_pullup_mA": 22.762495660178985,
+      "mean_3V3_LED_mA": 3.6150829118306054,
+      "channel_peak_mA": [
+        45.3613311181158,
+        45.203241169956144
+      ],
+      "channel_rms_mA": [
+        23.747613340386664,
+        23.738828393045893
+      ],
+      "state_drift_V": [
+        5.760969612467193e-08,
+        -4.5187847352856636e-08,
+        -1.373653057967772e-08
+      ],
+      "late_power_drift_percent": -1.7137578067760728e-05,
+      "filter_values_SI": [
+        1.593411710215239e-06,
+        3.257479358898789e-10,
+        2.2397990834084976e-06,
+        3.257479358898789e-10,
+        1.593411710215239e-06
+      ],
+      "filter_elements": 5,
+      "reused_from": "Logic RF Driver/generated/30m-filter-transmitter"
+    },
+    {
+      "case": "L_q50_line0.05_step1400",
+      "first": "L",
+      "inductor_Q": 50,
+      "line_m": 0.05,
+      "line_Z0_ohms": 50,
+      "line_velocity_m_per_s": 170000000.0,
+      "step_divisor": 1400,
+      "frequency_Hz": 10140100.0,
+      "fundamental_mW": 65.4704598662242,
+      "harmonics_dBc": {
+        "2": -100.99402090063498,
+        "3": -76.14237083556591,
+        "4": -151.52659963557272,
+        "5": -103.99852587540303,
+        "6": -153.14984866898794,
+        "7": -121.71035590817418,
+        "8": -156.4150558533645,
+        "9": -131.0768258161064
+      },
+      "load_Vpp": 5.1167644601114795,
+      "mean_5V_pullup_mA": 23.385587698305063,
+      "mean_3V3_LED_mA": 3.6151159934195185,
+      "channel_peak_mA": [
+        47.77020914155336,
+        47.576270787424434
+      ],
+      "channel_rms_mA": [
+        24.216134975052416,
+        24.207751443668787
+      ],
+      "state_drift_V": [
+        2.1530721605600434e-07,
+        -7.481343766713167e-09,
+        5.973744165999051e-09
+      ],
+      "late_power_drift_percent": -6.95680709705826e-06,
+      "filter_values_SI": [
+        1.593411710215239e-06,
+        3.257479358898789e-10,
+        2.2397990834084976e-06,
+        3.257479358898789e-10,
+        1.593411710215239e-06
+      ],
+      "filter_elements": 5,
+      "reused_from": "Logic RF Driver/generated/30m-filter-transmitter"
+    },
+    {
+      "case": "L_q100_line0.05_step1400",
+      "first": "L",
+      "inductor_Q": 100,
+      "line_m": 0.05,
+      "line_Z0_ohms": 50,
+      "line_velocity_m_per_s": 170000000.0,
+      "step_divisor": 1400,
+      "frequency_Hz": 10140100.0,
+      "fundamental_mW": 73.31401273968656,
+      "harmonics_dBc": {
+        "2": -101.56071579933598,
+        "3": -76.6292733854863,
+        "4": -149.5762653493647,
+        "5": -104.51447410483863,
+        "6": -149.0653465506226,
+        "7": -122.30122827851977,
+        "8": -151.48523958462806,
+        "9": -131.67943098004923
+      },
+      "load_Vpp": 5.414598864539479,
+      "mean_5V_pullup_mA": 23.6337671944238,
+      "mean_3V3_LED_mA": 3.615130352075077,
+      "channel_peak_mA": [
+        49.25107860590961,
+        49.059724915604754
+      ],
+      "channel_rms_mA": [
+        24.421011221775448,
+        24.412837368917458
+      ],
+      "state_drift_V": [
+        2.3589016207026248e-07,
+        -5.183119267115899e-09,
+        -6.979679056939858e-10
+      ],
+      "late_power_drift_percent": -1.5196552372032102e-05,
+      "filter_values_SI": [
+        1.593411710215239e-06,
+        3.257479358898789e-10,
+        2.2397990834084976e-06,
+        3.257479358898789e-10,
+        1.593411710215239e-06
+      ],
+      "filter_elements": 5,
+      "reused_from": "Logic RF Driver/generated/30m-filter-transmitter"
+    },
+    {
+      "case": "C_q25_line0.05_step1400",
+      "first": "C",
+      "filter_values_SI": [
+        6.81e-10,
+        8.66e-07,
+        9.76e-10,
+        9.090000000000001e-07,
+        9.76e-10,
+        8.66e-07,
+        6.81e-10
+      ],
+      "filter_elements": 7,
+      "inductor_Q": 25,
+      "line_m": 0.05,
+      "line_Z0_ohms": 50,
+      "line_velocity_m_per_s": 170000000.0,
+      "step_divisor": 1400,
+      "frequency_Hz": 10140100.0,
+      "fundamental_mW": 21.177672833591693,
+      "harmonics_dBc": {
+        "2": -95.6602405809972,
+        "3": -87.58056736499647,
+        "4": -137.63915122346592,
+        "5": -124.18401850165876,
+        "6": -154.04089923334297,
+        "7": -132.4600747141816,
+        "8": -154.76891440762475,
+        "9": -133.29637697739315
+      },
+      "load_Vpp": 2.910440569588264,
+      "mean_5V_pullup_mA": 38.946453065251816,
+      "mean_3V3_LED_mA": 3.6152439822928666,
+      "channel_peak_mA": [
+        210.34217902921125,
+        210.32726246552005
+      ],
+      "channel_rms_mA": [
+        73.41299715834882,
+        73.41150839793313
+      ],
+      "state_drift_V": [
+        2.580902171978039e-07,
+        9.279349033608497e-08,
+        3.290132610800356e-09
+      ],
+      "late_power_drift_percent": 0.0002758032099592356
+    },
+    {
+      "case": "C_q50_line0.05_step1400",
+      "first": "C",
+      "filter_values_SI": [
+        6.81e-10,
+        8.66e-07,
+        9.76e-10,
+        9.090000000000001e-07,
+        9.76e-10,
+        8.66e-07,
+        6.81e-10
+      ],
+      "filter_elements": 7,
+      "inductor_Q": 50,
+      "line_m": 0.05,
+      "line_Z0_ohms": 50,
+      "line_velocity_m_per_s": 170000000.0,
+      "step_divisor": 1400,
+      "frequency_Hz": 10140100.0,
+      "fundamental_mW": 28.490881149430493,
+      "harmonics_dBc": {
+        "2": -96.22667468560061,
+        "3": -88.82296894426538,
+        "4": -137.60664918589836,
+        "5": -125.57398597084745,
+        "6": -165.22893172625555,
+        "7": -132.02335500856591,
+        "8": -176.97678133554848,
+        "9": -133.5978635304747
+      },
+      "load_Vpp": 3.3758097594292176,
+      "mean_5V_pullup_mA": 37.79719026000056,
+      "mean_3V3_LED_mA": 3.6152023166189697,
+      "channel_peak_mA": [
+        207.3222561888763,
+        207.30089398433904
+      ],
+      "channel_rms_mA": [
+        73.22504086421196,
+        73.2235530009404
+      ],
+      "state_drift_V": [
+        6.84092781533252e-07,
+        -6.260966001203627e-08,
+        -1.2737594534684149e-08
+      ],
+      "late_power_drift_percent": 1.6913986211619658e-06
+    },
+    {
+      "case": "C_q100_line0.05_step1400",
+      "first": "C",
+      "filter_values_SI": [
+        6.81e-10,
+        8.66e-07,
+        9.76e-10,
+        9.090000000000001e-07,
+        9.76e-10,
+        8.66e-07,
+        6.81e-10
+      ],
+      "filter_elements": 7,
+      "inductor_Q": 100,
+      "line_m": 0.05,
+      "line_Z0_ohms": 50,
+      "line_velocity_m_per_s": 170000000.0,
+      "step_divisor": 1400,
+      "frequency_Hz": 10140100.0,
+      "fundamental_mW": 33.263254856444256,
+      "harmonics_dBc": {
+        "2": -96.44276430761832,
+        "3": -89.4659649368402,
+        "4": -137.34019595678288,
+        "5": -125.82364205130432,
+        "6": -160.8331822949644,
+        "7": -131.6941296402317,
+        "8": -161.15296852083895,
+        "9": -133.1851458225953
+      },
+      "load_Vpp": 3.6476348383130723,
+      "mean_5V_pullup_mA": 36.96503220253027,
+      "mean_3V3_LED_mA": 3.615170023500977,
+      "channel_peak_mA": [
+        205.60135815302593,
+        205.5061585903914
+      ],
+      "channel_rms_mA": [
+        73.13089083968356,
+        73.12939913631052
+      ],
+      "state_drift_V": [
+        3.748221870658597e-07,
+        -2.0108210285751937e-07,
+        -2.1957556350926666e-07
+      ],
+      "late_power_drift_percent": 1.9945803919618754e-05
+    },
+    {
+      "case": "L_q50_line0_step1400",
+      "first": "L",
+      "inductor_Q": 50,
+      "line_m": 0,
+      "line_Z0_ohms": 50,
+      "line_velocity_m_per_s": 170000000.0,
+      "step_divisor": 1400,
+      "frequency_Hz": 10140100.0,
+      "fundamental_mW": 65.71770661176578,
+      "harmonics_dBc": {
+        "2": -100.85513554541562,
+        "3": -76.07573980029711,
+        "4": -153.6221883680334,
+        "5": -103.91858239503556,
+        "6": -156.06177453974294,
+        "7": -123.02350771417952,
+        "8": -158.4504197320209,
+        "9": -140.4262508947338
+      },
+      "load_Vpp": 5.126384111105859,
+      "mean_5V_pullup_mA": 23.21385460901812,
+      "mean_3V3_LED_mA": 3.615120342308213,
+      "channel_peak_mA": [
+        31.545031612917704,
+        31.54500177152992
+      ],
+      "channel_rms_mA": [
+        23.36854002797344,
+        23.368212924929615
+      ],
+      "state_drift_V": [
+        -5.3346203898740896e-08,
+        9.023550484599241e-08,
+        -8.18611445296824e-09
+      ],
+      "late_power_drift_percent": -7.259638445944461e-08,
+      "filter_values_SI": [
+        1.593411710215239e-06,
+        3.257479358898789e-10,
+        2.2397990834084976e-06,
+        3.257479358898789e-10,
+        1.593411710215239e-06
+      ],
+      "filter_elements": 5,
+      "reused_from": "Logic RF Driver/generated/30m-filter-transmitter"
+    },
+    {
+      "case": "L_q50_line0.2_step1400",
+      "first": "L",
+      "inductor_Q": 50,
+      "line_m": 0.2,
+      "line_Z0_ohms": 50,
+      "line_velocity_m_per_s": 170000000.0,
+      "step_divisor": 1400,
+      "frequency_Hz": 10140100.0,
+      "fundamental_mW": 64.70378191187024,
+      "harmonics_dBc": {
+        "2": -101.5944120349708,
+        "3": -76.14362587584108,
+        "4": -143.6364241362637,
+        "5": -103.24557769967889,
+        "6": -162.8680581197117,
+        "7": -120.4252229682106,
+        "8": -158.29802300088798,
+        "9": -134.09474160641304
+      },
+      "load_Vpp": 5.086798404460924,
+      "mean_5V_pullup_mA": 23.97748486235861,
+      "mean_3V3_LED_mA": 3.615108440648205,
+      "channel_peak_mA": [
+        53.26115622444749,
+        53.130649517526656
+      ],
+      "channel_rms_mA": [
+        28.10053712210043,
+        28.0949469091239
+      ],
+      "state_drift_V": [
+        3.0448692189821713e-07,
+        2.4863295644550476e-08,
+        7.264101098414244e-08
+      ],
+      "late_power_drift_percent": -1.283180585121002e-05,
+      "filter_values_SI": [
+        1.593411710215239e-06,
+        3.257479358898789e-10,
+        2.2397990834084976e-06,
+        3.257479358898789e-10,
+        1.593411710215239e-06
+      ],
+      "filter_elements": 5,
+      "reused_from": "Logic RF Driver/generated/30m-filter-transmitter"
+    },
+    {
+      "case": "C_q50_line0_step1400",
+      "first": "C",
+      "filter_values_SI": [
+        6.81e-10,
+        8.66e-07,
+        9.76e-10,
+        9.090000000000001e-07,
+        9.76e-10,
+        8.66e-07,
+        6.81e-10
+      ],
+      "filter_elements": 7,
+      "inductor_Q": 50,
+      "line_m": 0,
+      "line_Z0_ohms": 50,
+      "line_velocity_m_per_s": 170000000.0,
+      "step_divisor": 1400,
+      "frequency_Hz": 10140100.0,
+      "fundamental_mW": 28.51117205826428,
+      "harmonics_dBc": {
+        "2": -100.16282707106662,
+        "3": -90.97048767741435,
+        "4": -145.1381127965734,
+        "5": -126.7209314801519,
+        "6": -158.22291184332119,
+        "7": -146.64318547403502,
+        "8": -160.20761223338877,
+        "9": -143.0351485058735
+      },
+      "load_Vpp": 3.3770330155690953,
+      "mean_5V_pullup_mA": 37.878433168987705,
+      "mean_3V3_LED_mA": 3.614949030052389,
+      "channel_peak_mA": [
+        299.59145731838186,
+        300.95741047182565
+      ],
+      "channel_rms_mA": [
+        68.1895323105052,
+        68.19761432248963
+      ],
+      "state_drift_V": [
+        1.534067043618137e-06,
+        -7.11203448355846e-08,
+        -4.647414009184558e-09
+      ],
+      "late_power_drift_percent": -1.3955738731308287e-05
+    },
+    {
+      "case": "C_q50_line0.2_step1400",
+      "first": "C",
+      "filter_values_SI": [
+        6.81e-10,
+        8.66e-07,
+        9.76e-10,
+        9.090000000000001e-07,
+        9.76e-10,
+        8.66e-07,
+        6.81e-10
+      ],
+      "filter_elements": 7,
+      "inductor_Q": 50,
+      "line_m": 0.2,
+      "line_Z0_ohms": 50,
+      "line_velocity_m_per_s": 170000000.0,
+      "step_divisor": 1400,
+      "frequency_Hz": 10140100.0,
+      "fundamental_mW": 29.4299521323412,
+      "harmonics_dBc": {
+        "2": -90.75513993520858,
+        "3": -87.1238984378376,
+        "4": -140.02016619624987,
+        "5": -139.5213042469908,
+        "6": -164.88353511166912,
+        "7": -133.98436494611266,
+        "8": -162.2332294906742,
+        "9": -148.02870312607376
+      },
+      "load_Vpp": 3.430885230332195,
+      "mean_5V_pullup_mA": 31.91471572256206,
+      "mean_3V3_LED_mA": 3.6153724548297093,
+      "channel_peak_mA": [
+        135.4223682756281,
+        135.37883674891185
+      ],
+      "channel_rms_mA": [
+        66.07358960037023,
+        66.07173980725888
+      ],
+      "state_drift_V": [
+        5.064649322150672e-07,
+        -1.8566975623635074e-08,
+        1.3953384225828813e-08
+      ],
+      "late_power_drift_percent": 8.169489484899373e-06
+    },
+    {
+      "case": "L_q50_line0.05_step2800",
+      "first": "L",
+      "inductor_Q": 50,
+      "line_m": 0.05,
+      "line_Z0_ohms": 50,
+      "line_velocity_m_per_s": 170000000.0,
+      "step_divisor": 2800,
+      "frequency_Hz": 10140100.0,
+      "fundamental_mW": 65.46689212944125,
+      "harmonics_dBc": {
+        "2": -100.96969553558681,
+        "3": -76.12047244229078,
+        "4": -148.2887423260405,
+        "5": -103.78177688988706,
+        "6": -170.9087114481324,
+        "7": -121.72610671656257,
+        "8": -170.70756764853564,
+        "9": -135.10282295867188
+      },
+      "load_Vpp": 5.116615373458959,
+      "mean_5V_pullup_mA": 23.382569247338523,
+      "mean_3V3_LED_mA": 3.6151159669858495,
+      "channel_peak_mA": [
+        47.779647049585755,
+        47.582568006012885
+      ],
+      "channel_rms_mA": [
+        24.215787950014047,
+        24.207373642357865
+      ],
+      "state_drift_V": [
+        1.9403882500768077e-07,
+        -4.242470086346373e-08,
+        2.3561006035066612e-08
+      ],
+      "late_power_drift_percent": 4.511834905684964e-07,
+      "filter_values_SI": [
+        1.593411710215239e-06,
+        3.257479358898789e-10,
+        2.2397990834084976e-06,
+        3.257479358898789e-10,
+        1.593411710215239e-06
+      ],
+      "filter_elements": 5,
+      "reused_from": "Logic RF Driver/generated/30m-filter-transmitter"
+    },
+    {
+      "case": "C_q50_line0.05_step2800",
+      "first": "C",
+      "filter_values_SI": [
+        6.81e-10,
+        8.66e-07,
+        9.76e-10,
+        9.090000000000001e-07,
+        9.76e-10,
+        8.66e-07,
+        6.81e-10
+      ],
+      "filter_elements": 7,
+      "inductor_Q": 50,
+      "line_m": 0.05,
+      "line_Z0_ohms": 50,
+      "line_velocity_m_per_s": 170000000.0,
+      "step_divisor": 2800,
+      "frequency_Hz": 10140100.0,
+      "fundamental_mW": 28.494381087825683,
+      "harmonics_dBc": {
+        "2": -96.22829483294451,
+        "3": -88.79418800135929,
+        "4": -137.93191479449422,
+        "5": -123.37021769650768,
+        "6": -161.23969762015594,
+        "7": -156.01334619468864,
+        "8": -164.3901743365257,
+        "9": -149.39160866888025
+      },
+      "load_Vpp": 3.3760132259365525,
+      "mean_5V_pullup_mA": 37.79868581991552,
+      "mean_3V3_LED_mA": 3.6152023690719033,
+      "channel_peak_mA": [
+        207.3200413908127,
+        207.2889668206378
+      ],
+      "channel_rms_mA": [
+        73.22407037124982,
+        73.22251822996806
+      ],
+      "state_drift_V": [
+        6.388613469354709e-07,
+        -2.8484971492659383e-08,
+        -1.5488817339814887e-08
+      ],
+      "late_power_drift_percent": -1.0579669051935525e-05
+    }
+  ],
+  "limitations": [
+    "Behavioral IBIS-derived output model; not full transistor-level or complete IBIS simulation.",
+    "Ideal supply rails; 5 V estimate excludes internal switching/crossover power. 3.3 V estimate covers LEDs only, excluding VCCA internal power and the upstream clock source.",
+    "C4 uses the retained 10 MHz Samsung bias-dependent passive fit at 10.1401 MHz.",
+    "Filter capacitors are ideal; inductor ESR assumes constant resistance set by Q at the carrier. No SRF, coupling, tolerance, or PCB extraction.",
+    "50-ohm line is a ten-section lossless LC pi ladder, velocity 1.7e8 m/s, not measured board CPWG.",
+    "Nominal 50 percent duty cycle and matched outputs; actual source duty-cycle errors and semiconductor variation are not bounded.",
+    "Even-harmonic and deep-rejection values can be limited by model/numerical precision."
+  ]
+}
