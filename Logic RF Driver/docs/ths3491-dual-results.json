@@ -1,0 +1,4564 @@
+{
+  "scope": "TI THS3491RGT parallel load-sharing core adapted to the Logic RF Driver with inductor-first input and output filters; not an exact reproduction of the entire TIDA-060002 board",
+  "cases": [
+    {
+      "case": "f137000_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 137000.0,
+      "chips": 1,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 341.1075760391719,
+      "total_load_mW": 341.10794984873496,
+      "pa_join_Vpp": 13.890831894091605,
+      "chip": [
+        {
+          "plus_mA": 57.51495383999269,
+          "minus_mA": 57.49730112894085,
+          "plus_check_mA": 57.514822272276014,
+          "minus_check_mA": 57.49716956267302,
+          "dc_W": 1.725183824534003,
+          "heat_W": 1.265319127563625,
+          "external_real_output_W": 0.4227666661346651,
+          "feedback_loss_W": 0.03709803083571276,
+          "pin_Vpp": 14.468319247296769,
+          "pin_mean_V": 0.008766227921389395,
+          "peak_current_mA": 120.05582325106218,
+          "rms_current_mA": 83.6072915799696,
+          "mean_current_mA": 0.005267999257393365
+        }
+      ],
+      "plus_total_mA": 57.51495383999269,
+      "minus_total_mA": 57.49730112894085,
+      "dc_total_W": 1.725183824534003,
+      "heat_total_W": 1.265319127563625,
+      "branch_resistor_loss_W": [
+        0.017405546221291764
+      ],
+      "output_network_loss_W": 0.08165871628593019,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.823228031906595,
+      "logic_5V_pullup_mA": 18.840295502351836,
+      "logic_led_3V3_mA": 3.5878209144885442,
+      "logic_channel_peak_mA": [
+        36.37540964841399,
+        36.375409188845175
+      ],
+      "load_H3_dBc": -71.64090910989229,
+      "state_drift_V": [
+        -1.1263265812022638e-05,
+        5.947704551090283e-10,
+        -4.528792815428062e-05
+      ],
+      "periodic_initial_state_V": [
+        2.0517956834235,
+        0.69290443174742,
+        2.4913268745307
+      ],
+      "solver_runs": 1,
+      "transient_points": 141363,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 8.731595388944413e-05
+    },
+    {
+      "case": "f475000_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 475000.0,
+      "chips": 1,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 343.6726317999577,
+      "total_load_mW": 343.67349898935976,
+      "pa_join_Vpp": 13.907426869908896,
+      "chip": [
+        {
+          "plus_mA": 57.616255785820954,
+          "minus_mA": 57.717881863366785,
+          "plus_check_mA": 57.61613891979456,
+          "minus_check_mA": 57.71776499828141,
+          "dc_W": 1.730012064737816,
+          "heat_W": 1.26687798633193,
+          "external_real_output_W": 0.42594132259402867,
+          "feedback_loss_W": 0.037192755811857395,
+          "pin_Vpp": 14.488064332561969,
+          "pin_mean_V": 0.008844654094919687,
+          "peak_current_mA": 120.46449180701515,
+          "rms_current_mA": 83.91127787740905,
+          "mean_current_mA": -0.11411867748478573
+        }
+      ],
+      "plus_total_mA": 57.616255785820954,
+      "minus_total_mA": 57.717881863366785,
+      "dc_total_W": 1.730012064737816,
+      "heat_total_W": 1.26687798633193,
+      "branch_resistor_loss_W": [
+        0.0175323453619992
+      ],
+      "output_network_loss_W": 0.08226782360466889,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.97305277217343,
+      "logic_5V_pullup_mA": 19.27641562477057,
+      "logic_led_3V3_mA": 3.6114046412551333,
+      "logic_channel_peak_mA": [
+        36.30580244393528,
+        36.305801479154624
+      ],
+      "load_H3_dBc": -71.93719517196863,
+      "state_drift_V": [
+        -1.3770065526719222e-05,
+        2.246838937125517e-09,
+        -3.438231090946431e-07
+      ],
+      "periodic_initial_state_V": [
+        2.2679539253398673,
+        0.7240632171150844,
+        2.484455436267878
+      ],
+      "solver_runs": 1,
+      "transient_points": 128729,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -0.00015380604165837752
+    },
+    {
+      "case": "f1.8e+06_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 1800000.0,
+      "chips": 1,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 343.7786556316786,
+      "total_load_mW": 343.77992849256356,
+      "pa_join_Vpp": 13.91098648392553,
+      "chip": [
+        {
+          "plus_mA": 57.592723309200494,
+          "minus_mA": 57.73374012136517,
+          "plus_check_mA": 57.592516603487184,
+          "minus_check_mA": 57.733533417101775,
+          "dc_W": 1.729896951458485,
+          "heat_W": 1.2666476871502281,
+          "external_real_output_W": 0.42605358435457924,
+          "feedback_loss_W": 0.03719567995367767,
+          "pin_Vpp": 14.491608820574704,
+          "pin_mean_V": 0.00878525654562694,
+          "peak_current_mA": 120.35108256703022,
+          "rms_current_mA": 83.88839791798496,
+          "mean_current_mA": -0.15342521751502494
+        }
+      ],
+      "plus_total_mA": 57.592723309200494,
+      "minus_total_mA": 57.73374012136517,
+      "dc_total_W": 1.729896951458485,
+      "heat_total_W": 1.2666476871502281,
+      "branch_resistor_loss_W": [
+        0.017522785630062997
+      ],
+      "output_network_loss_W": 0.08227365586201568,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.974105982971366,
+      "logic_5V_pullup_mA": 19.66186918183785,
+      "logic_led_3V3_mA": 3.6131587958256994,
+      "logic_channel_peak_mA": [
+        36.12121039815536,
+        36.121206947628124
+      ],
+      "load_H3_dBc": -72.31257153170007,
+      "state_drift_V": [
+        2.818735983289855e-06,
+        -1.5146962750733906e-07,
+        3.352185906635441e-07
+      ],
+      "periodic_initial_state_V": [
+        1.9681563133395228,
+        0.7280635059784127,
+        2.50494636757674
+      ],
+      "solver_runs": 1,
+      "transient_points": 112478,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -3.6657444146825924e-05
+    },
+    {
+      "case": "f3.5e+06_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 3500000.0,
+      "chips": 1,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 342.8227743587416,
+      "total_load_mW": 342.82343573419,
+      "pa_join_Vpp": 13.905596408691341,
+      "chip": [
+        {
+          "plus_mA": 57.5449854288288,
+          "minus_mA": 57.63507299694524,
+          "plus_check_mA": 57.54488697571812,
+          "minus_check_mA": 57.634974545992684,
+          "dc_W": 1.7277008763866106,
+          "heat_W": 1.265708067398396,
+          "external_real_output_W": 0.42484939860229626,
+          "feedback_loss_W": 0.0371434103859183,
+          "pin_Vpp": 14.484928415412547,
+          "pin_mean_V": 0.008749328192556841,
+          "peak_current_mA": 120.00015956594382,
+          "rms_current_mA": 83.72716043811981,
+          "mean_current_mA": -0.10244899915449127
+        }
+      ],
+      "plus_total_mA": 57.5449854288288,
+      "minus_total_mA": 57.63507299694524,
+      "dc_total_W": 1.7277008763866106,
+      "heat_total_W": 1.265708067398396,
+      "branch_resistor_loss_W": [
+        0.017455491113626334
+      ],
+      "output_network_loss_W": 0.08202596286810626,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.88861442618716,
+      "logic_5V_pullup_mA": 19.897883392018606,
+      "logic_led_3V3_mA": 3.6135377329217797,
+      "logic_channel_peak_mA": [
+        36.01724589510385,
+        36.01723134662837
+      ],
+      "load_H3_dBc": -72.75433675994302,
+      "state_drift_V": [
+        -2.2969224389157716e-07,
+        -5.130950408993584e-08,
+        -5.97593669660057e-07
+      ],
+      "periodic_initial_state_V": [
+        2.0891230852533638,
+        0.7138726147374367,
+        2.5087352378596277
+      ],
+      "solver_runs": 1,
+      "transient_points": 106625,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -9.463675465504195e-06
+    },
+    {
+      "case": "f7e+06_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 7000000.0,
+      "chips": 1,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 340.47600724249025,
+      "total_load_mW": 340.4762984683588,
+      "pa_join_Vpp": 13.889259149548943,
+      "chip": [
+        {
+          "plus_mA": 57.39482209131246,
+          "minus_mA": 57.43769821884726,
+          "plus_check_mA": 57.394683929213905,
+          "minus_check_mA": 57.437560058150844,
+          "dc_W": 1.722487804652396,
+          "heat_W": 1.2635790552086448,
+          "external_real_output_W": 0.42189935364410497,
+          "feedback_loss_W": 0.0370093957996462,
+          "pin_Vpp": 14.465558942548817,
+          "pin_mean_V": 0.008736424499875576,
+          "peak_current_mA": 119.31245144970624,
+          "rms_current_mA": 83.34993266722853,
+          "mean_current_mA": -0.05521958994195315
+        }
+      ],
+      "plus_total_mA": 57.39482209131246,
+      "minus_total_mA": 57.43769821884726,
+      "dc_total_W": 1.722487804652396,
+      "heat_total_W": 1.2635790552086448,
+      "branch_resistor_loss_W": [
+        0.01729855607632251
+      ],
+      "output_network_loss_W": 0.08142305517574622,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.66758838632901,
+      "logic_5V_pullup_mA": 20.41937227281632,
+      "logic_led_3V3_mA": 3.6143553258858225,
+      "logic_channel_peak_mA": [
+        35.85679385002147,
+        35.85675894835637
+      ],
+      "load_H3_dBc": -73.6884654104708,
+      "state_drift_V": [
+        -5.0582822375133674e-08,
+        -5.092672961115596e-08,
+        -3.763221574359932e-07
+      ],
+      "periodic_initial_state_V": [
+        2.1184038582548967,
+        0.6981273336832349,
+        2.510909231122457
+      ],
+      "solver_runs": 1,
+      "transient_points": 109724,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -9.369115661073124e-06
+    },
+    {
+      "case": "f1e+07_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 10000000.0,
+      "chips": 1,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 338.34412184174,
+      "total_load_mW": 338.3443130950048,
+      "pa_join_Vpp": 13.872962464084107,
+      "chip": [
+        {
+          "plus_mA": 57.2478340877338,
+          "minus_mA": 57.27271161352533,
+          "plus_check_mA": 57.24769568876246,
+          "minus_check_mA": 57.27257321604411,
+          "dc_W": 1.7178081855188871,
+          "heat_W": 1.2617014353803686,
+          "external_real_output_W": 0.41922278513288025,
+          "feedback_loss_W": 0.036883965005638335,
+          "pin_Vpp": 14.446574535129738,
+          "pin_mean_V": 0.008758338635532367,
+          "peak_current_mA": 118.73563912392147,
+          "rms_current_mA": 83.01307203307775,
+          "mean_current_mA": -0.03725143215105311
+        }
+      ],
+      "plus_total_mA": 57.2478340877338,
+      "minus_total_mA": 57.27271161352533,
+      "dc_total_W": 1.7178081855188871,
+      "heat_total_W": 1.2617014353803686,
+      "branch_resistor_loss_W": [
+        0.017159013619638695
+      ],
+      "output_network_loss_W": 0.08087847203787546,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.45869169137088,
+      "logic_5V_pullup_mA": 20.86563410018144,
+      "logic_led_3V3_mA": 3.6150098660696255,
+      "logic_channel_peak_mA": [
+        35.74394173690133,
+        35.74386692716093
+      ],
+      "load_H3_dBc": -74.49865138507337,
+      "state_drift_V": [
+        -9.698628306242796e-06,
+        1.846936837579527e-06,
+        4.665189923258595e-08
+      ],
+      "periodic_initial_state_V": [
+        2.126499596884901,
+        0.6583177002850003,
+        2.5116450944145936
+      ],
+      "solver_runs": 1,
+      "transient_points": 111307,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -1.4737281828214321e-05
+    },
+    {
+      "case": "f1.4e+07_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 14000000.0,
+      "chips": 1,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 335.4442850570165,
+      "total_load_mW": 335.4444183509839,
+      "pa_join_Vpp": 13.849606776851463,
+      "chip": [
+        {
+          "plus_mA": 57.04213161670386,
+          "minus_mA": 57.05615662973611,
+          "plus_check_mA": 57.04200831740855,
+          "minus_check_mA": 57.05603333166751,
+          "dc_W": 1.7114743236965997,
+          "heat_W": 1.2591786560677303,
+          "external_real_output_W": 0.41558473193467527,
+          "feedback_loss_W": 0.036710935694194084,
+          "pin_Vpp": 14.419577675073008,
+          "pin_mean_V": 0.008670335552708165,
+          "peak_current_mA": 117.98247286978075,
+          "rms_current_mA": 82.55847986890981,
+          "mean_current_mA": -0.026276525567791833
+        }
+      ],
+      "plus_total_mA": 57.04213161670386,
+      "minus_total_mA": 57.05615662973611,
+      "dc_total_W": 1.7114743236965997,
+      "heat_total_W": 1.2591786560677303,
+      "branch_resistor_loss_W": [
+        0.016971597469680313
+      ],
+      "output_network_loss_W": 0.08014031358369139,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.16758829859981,
+      "logic_5V_pullup_mA": 21.453357940379412,
+      "logic_led_3V3_mA": 3.615744676547136,
+      "logic_channel_peak_mA": [
+        35.609406485676466,
+        35.60925889374138
+      ],
+      "load_H3_dBc": -75.59588777873887,
+      "state_drift_V": [
+        -3.8873887222123926e-05,
+        6.165216489217862e-06,
+        -8.092745344967511e-07
+      ],
+      "periodic_initial_state_V": [
+        2.140453374720307,
+        0.7117698298506406,
+        2.512256698896097
+      ],
+      "solver_runs": 1,
+      "transient_points": 109860,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -6.755843318106969e-06
+    },
+    {
+      "case": "f2.1e+07_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 21000000.0,
+      "chips": 1,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 330.3578147308218,
+      "total_load_mW": 330.3578930325746,
+      "pa_join_Vpp": 13.80699468426316,
+      "chip": [
+        {
+          "plus_mA": 56.67925666608407,
+          "minus_mA": 56.68099690690579,
+          "plus_check_mA": 56.679147950110114,
+          "minus_check_mA": 56.68088819364614,
+          "dc_W": 1.700403803594848,
+          "heat_W": 1.254788886522492,
+          "external_real_output_W": 0.4092088028857508,
+          "feedback_loss_W": 0.03640611418660516,
+          "pin_Vpp": 14.37054324752729,
+          "pin_mean_V": 0.008736550760254282,
+          "peak_current_mA": 116.69645229960153,
+          "rms_current_mA": 81.76585039129569,
+          "mean_current_mA": -0.014083848995810132
+        }
+      ],
+      "plus_total_mA": 56.67925666608407,
+      "minus_total_mA": 56.68099690690579,
+      "dc_total_W": 1.700403803594848,
+      "heat_total_W": 1.254788886522492,
+      "branch_resistor_loss_W": [
+        0.01664727918262726
+      ],
+      "output_network_loss_W": 0.07885090985317617,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 57.645843727899475,
+      "logic_5V_pullup_mA": 22.462727822597373,
+      "logic_led_3V3_mA": 3.616511662484181,
+      "logic_channel_peak_mA": [
+        35.41034457327234,
+        35.410009798764186
+      ],
+      "load_H3_dBc": -77.56207827192517,
+      "state_drift_V": [
+        -1.9120905677016964e-05,
+        7.307285930902019e-06,
+        -9.172286707936905e-08
+      ],
+      "periodic_initial_state_V": [
+        2.151490560100421,
+        0.7085185999509203,
+        2.51284414275476
+      ],
+      "solver_runs": 1,
+      "transient_points": 103676,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -1.2277972583074614e-05
+    },
+    {
+      "case": "f2.8e+07_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 28000000.0,
+      "chips": 1,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 330.256585207316,
+      "total_load_mW": 330.256646164497,
+      "pa_join_Vpp": 13.802821930130328,
+      "chip": [
+        {
+          "plus_mA": 56.689432330355665,
+          "minus_mA": 56.68573547126169,
+          "plus_check_mA": 56.68931155371956,
+          "minus_check_mA": 56.68561469533853,
+          "dc_W": 1.7006275170242604,
+          "heat_W": 1.2551633582967503,
+          "external_real_output_W": 0.4090934658586411,
+          "feedback_loss_W": 0.03637069286886897,
+          "pin_Vpp": 14.366574410492003,
+          "pin_mean_V": 0.008719516941495392,
+          "peak_current_mA": 116.62848462529118,
+          "rms_current_mA": 81.78018728983204,
+          "mean_current_mA": -0.00862314602339785
+        }
+      ],
+      "plus_total_mA": 56.689432330355665,
+      "minus_total_mA": 56.68573547126169,
+      "dc_total_W": 1.7006275170242604,
+      "heat_total_W": 1.2551633582967503,
+      "branch_resistor_loss_W": [
+        0.016653117592568416
+      ],
+      "output_network_loss_W": 0.07883681969414408,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 57.539872583668,
+      "logic_5V_pullup_mA": 23.548284451768,
+      "logic_led_3V3_mA": 3.6165633020884056,
+      "logic_channel_peak_mA": [
+        35.3779015469667,
+        35.37741178591425
+      ],
+      "load_H3_dBc": -78.3608283750012,
+      "state_drift_V": [
+        -1.4003883043844922e-05,
+        3.08578223113809e-05,
+        -1.5832072275401288e-07
+      ],
+      "periodic_initial_state_V": [
+        2.15909711242993,
+        0.6982459024353522,
+        2.513343396375193
+      ],
+      "solver_runs": 1,
+      "transient_points": 96818,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 2.3704991214401616e-05
+    },
+    {
+      "case": "f5e+07_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 50000000.0,
+      "chips": 1,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 331.0466732667642,
+      "total_load_mW": 331.04670612487945,
+      "pa_join_Vpp": 13.805380824824876,
+      "chip": [
+        {
+          "plus_mA": 56.79113571138533,
+          "minus_mA": 56.78018200892926,
+          "plus_check_mA": 56.79102019279872,
+          "minus_check_mA": 56.78006649177292,
+          "dc_W": 1.7035697658047189,
+          "heat_W": 1.257089977300547,
+          "external_real_output_W": 0.410113081885202,
+          "feedback_loss_W": 0.0363667066189698,
+          "pin_Vpp": 14.371020011286504,
+          "pin_mean_V": 0.008690940769497862,
+          "peak_current_mA": 116.70023766713342,
+          "rms_current_mA": 81.98278086868362,
+          "mean_current_mA": -0.0013264923226264961
+        }
+      ],
+      "plus_total_mA": 56.79113571138533,
+      "minus_total_mA": 56.78018200892926,
+      "dc_total_W": 1.7035697658047189,
+      "heat_total_W": 1.257089977300547,
+      "branch_resistor_loss_W": [
+        0.016735729133816865
+      ],
+      "output_network_loss_W": 0.07906637576032255,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 57.30296267655884,
+      "logic_5V_pullup_mA": 26.784576306286045,
+      "logic_led_3V3_mA": 3.6129952233168883,
+      "logic_channel_peak_mA": [
+        35.82356595604161,
+        35.822732465515614
+      ],
+      "load_H3_dBc": -80.79866468183603,
+      "state_drift_V": [
+        -1.7366962468123859e-06,
+        -2.9889876782540625e-06,
+        -1.617377143325882e-07
+      ],
+      "periodic_initial_state_V": [
+        2.174170090626038,
+        0.6768738397779273,
+        2.5144707161607833
+      ],
+      "solver_runs": 1,
+      "transient_points": 82300,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 3.2377442726883032e-06
+    },
+    {
+      "case": "f7e+07_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 70000000.0,
+      "chips": 1,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 332.2811045549566,
+      "total_load_mW": 332.281124866721,
+      "pa_join_Vpp": 13.81842738098597,
+      "chip": [
+        {
+          "plus_mA": 56.9109953360293,
+          "minus_mA": 56.89763440936101,
+          "plus_check_mA": 56.91082770312955,
+          "minus_check_mA": 56.89746677893194,
+          "dc_W": 1.7071294461808546,
+          "heat_W": 1.259006636721827,
+          "external_real_output_W": 0.4116793113122378,
+          "feedback_loss_W": 0.03644349814678981,
+          "pin_Vpp": 14.386106774339535,
+          "pin_mean_V": 0.008664660056040616,
+          "peak_current_mA": 116.89429881029015,
+          "rms_current_mA": 82.22682744278714,
+          "mean_current_mA": 0.0011172303803847518
+        }
+      ],
+      "plus_total_mA": 56.9109953360293,
+      "minus_total_mA": 56.89763440936101,
+      "dc_total_W": 1.7071294461808546,
+      "heat_total_W": 1.259006636721827,
+      "branch_resistor_loss_W": [
+        0.016835515366751673
+      ],
+      "output_network_loss_W": 0.07939818644551683,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 57.11763281411584,
+      "logic_5V_pullup_mA": 29.595724452063937,
+      "logic_led_3V3_mA": 3.606032533868069,
+      "logic_channel_peak_mA": [
+        35.77844927209848,
+        35.76684768846775
+      ],
+      "load_H3_dBc": -83.01389310893148,
+      "state_drift_V": [
+        9.71386743042757e-07,
+        4.295533425147102e-05,
+        -1.6376007172524965e-07
+      ],
+      "periodic_initial_state_V": [
+        2.1823338273475286,
+        0.6635975022554543,
+        2.5152993003445334
+      ],
+      "solver_runs": 1,
+      "transient_points": 74627,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 4.154632882169551e-06
+    },
+    {
+      "case": "f1e+08_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 100000000.0,
+      "chips": 1,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 332.4138945032734,
+      "total_load_mW": 332.4139126635126,
+      "pa_join_Vpp": 13.818475242546361,
+      "chip": [
+        {
+          "plus_mA": 56.93335152389509,
+          "minus_mA": 56.918055136020484,
+          "plus_check_mA": 56.93320604664144,
+          "minus_check_mA": 56.91790966247909,
+          "dc_W": 1.7077710998987337,
+          "heat_W": 1.2593525428271384,
+          "external_real_output_W": 0.4118812780811461,
+          "feedback_loss_W": 0.036537278990449236,
+          "pin_Vpp": 14.386663493177132,
+          "pin_mean_V": 0.008648861973185972,
+          "peak_current_mA": 116.86447219942737,
+          "rms_current_mA": 82.26721461643704,
+          "mean_current_mA": 0.00307469510899804
+        }
+      ],
+      "plus_total_mA": 56.93335152389509,
+      "minus_total_mA": 56.918055136020484,
+      "dc_total_W": 1.7077710998987337,
+      "heat_total_W": 1.2593525428271384,
+      "branch_resistor_loss_W": [
+        0.016852057555859817
+      ],
+      "output_network_loss_W": 0.07946736541763355,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 56.63746876757533,
+      "logic_5V_pullup_mA": 33.567942777811425,
+      "logic_led_3V3_mA": 3.590285584092082,
+      "logic_channel_peak_mA": [
+        35.83608787799701,
+        35.79416304115672
+      ],
+      "load_H3_dBc": -83.73592134112691,
+      "state_drift_V": [
+        9.44462730245732e-09,
+        6.9743947844758125e-06,
+        -1.3331542181305167e-07
+      ],
+      "periodic_initial_state_V": [
+        2.1900823980858632,
+        0.6515768211335166,
+        2.5163669328301133
+      ],
+      "solver_runs": 1,
+      "transient_points": 68672,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 6.316796152816551e-06
+    },
+    {
+      "case": "f1.45e+08_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 145000000.0,
+      "chips": 1,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 333.51917158147785,
+      "total_load_mW": 333.5191911954133,
+      "pa_join_Vpp": 13.840156509013081,
+      "chip": [
+        {
+          "plus_mA": 57.02814541642408,
+          "minus_mA": 57.01182943275566,
+          "plus_check_mA": 57.028026517083454,
+          "minus_check_mA": 57.01171053169901,
+          "dc_W": 1.710599622737696,
+          "heat_W": 1.2604417589082066,
+          "external_real_output_W": 0.41330750927970267,
+          "feedback_loss_W": 0.036850354549786773,
+          "pin_Vpp": 14.409830733956703,
+          "pin_mean_V": 0.008617300172042246,
+          "peak_current_mA": 116.99495590570247,
+          "rms_current_mA": 82.43986745187654,
+          "mean_current_mA": 0.004138085971412637
+        }
+      ],
+      "plus_total_mA": 57.02814541642408,
+      "minus_total_mA": 57.01182943275566,
+      "dc_total_W": 1.710599622737696,
+      "heat_total_W": 1.2604417589082066,
+      "branch_resistor_loss_W": [
+        0.0169228660462526
+      ],
+      "output_network_loss_W": 0.07978831808428932,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 55.82822468284593,
+      "logic_5V_pullup_mA": 39.485608789639564,
+      "logic_led_3V3_mA": 3.549014082641546,
+      "logic_channel_peak_mA": [
+        35.80076169586853,
+        35.754862813831565
+      ],
+      "load_H3_dBc": -85.24658392122555,
+      "state_drift_V": [
+        -6.339931344356842e-07,
+        7.368865645451805e-07,
+        -1.2562465467880202e-07
+      ],
+      "periodic_initial_state_V": [
+        2.19690975510184,
+        0.64146340014114,
+        2.5178893710048
+      ],
+      "solver_runs": 1,
+      "transient_points": 64671,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 1.2020494066788956e-05
+    },
+    {
+      "case": "f137000_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 137000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 354.5345685034865,
+      "total_load_mW": 354.5349632034811,
+      "pa_join_Vpp": 14.164962803125093,
+      "chip": [
+        {
+          "plus_mA": 39.11693895584581,
+          "minus_mA": 39.101654429599584,
+          "plus_check_mA": 39.11687780612995,
+          "minus_check_mA": 39.10159328083372,
+          "dc_W": 1.173278900781681,
+          "heat_W": 0.9210453484613612,
+          "external_real_output_W": 0.21518134916934706,
+          "feedback_loss_W": 0.03705220315097276,
+          "pin_Vpp": 14.4593807831396,
+          "pin_mean_V": 0.00903749765523413,
+          "peak_current_mA": 61.25254838216347,
+          "rms_current_mA": 42.6183696972228,
+          "mean_current_mA": 0.0025224548350322278
+        },
+        {
+          "plus_mA": 39.11693894467725,
+          "minus_mA": 39.10165444194841,
+          "plus_check_mA": 39.11687780637589,
+          "minus_check_mA": 39.101593280687084,
+          "dc_W": 1.173278900799385,
+          "heat_W": 0.9210453484785686,
+          "external_real_output_W": 0.21518134916983903,
+          "feedback_loss_W": 0.0370522031509774,
+          "pin_Vpp": 14.45938078319711,
+          "pin_mean_V": 0.009037497656206457,
+          "peak_current_mA": 61.252548391016006,
+          "rms_current_mA": 42.61836969732641,
+          "mean_current_mA": 0.002522455225552422
+        }
+      ],
+      "plus_total_mA": 78.23387790052305,
+      "minus_total_mA": 78.20330887154799,
+      "dc_total_W": 2.346557801581066,
+      "heat_total_W": 1.8420906969399298,
+      "branch_resistor_loss_W": [
+        0.004522650334766406,
+        0.0045226503347883945
+      ],
+      "output_network_loss_W": 0.07582773513570495,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.7967651656621,
+      "logic_5V_pullup_mA": 18.838967308613114,
+      "logic_led_3V3_mA": 3.5878213230784946,
+      "logic_channel_peak_mA": [
+        36.37723584254368,
+        36.377235837332094
+      ],
+      "load_H3_dBc": -71.80080970201172,
+      "state_drift_V": [
+        -1.0195811855351344e-05,
+        1.4791241786937803e-08,
+        -4.572901055288625e-05
+      ],
+      "periodic_initial_state_V": [
+        2.0517956834235,
+        0.69290443174742,
+        2.4913268745307
+      ],
+      "solver_runs": 1,
+      "transient_points": 138217,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 5.499741204673114e-05
+    },
+    {
+      "case": "f475000_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 475000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 357.2593501058827,
+      "total_load_mW": 357.26021925946185,
+      "pa_join_Vpp": 14.182755867140838,
+      "chip": [
+        {
+          "plus_mA": 39.176382020521324,
+          "minus_mA": 39.21997371711875,
+          "plus_check_mA": 39.176309126793335,
+          "minus_check_mA": 39.21990082481969,
+          "dc_W": 1.1759453360646008,
+          "heat_W": 0.9219659597096277,
+          "external_real_output_W": 0.21683392533190632,
+          "feedback_loss_W": 0.03714545102306693,
+          "pin_Vpp": 14.478824072331813,
+          "pin_mean_V": 0.009107287056913702,
+          "peak_current_mA": 61.453634512513574,
+          "rms_current_mA": 42.77683105090932,
+          "mean_current_mA": -0.05644983256737042
+        },
+        {
+          "plus_mA": 39.17638202182992,
+          "minus_mA": 39.21997371463785,
+          "plus_check_mA": 39.17630912894931,
+          "minus_check_mA": 39.21990082250995,
+          "dc_W": 1.1759453360470167,
+          "heat_W": 0.921965959692655,
+          "external_real_output_W": 0.21683392533130302,
+          "feedback_loss_W": 0.03714545102305864,
+          "pin_Vpp": 14.47882407224013,
+          "pin_mean_V": 0.00910728706798961,
+          "peak_current_mA": 61.45363448534245,
+          "rms_current_mA": 42.776831050690156,
+          "mean_current_mA": -0.05644982811923148
+        }
+      ],
+      "plus_total_mA": 78.35276404235125,
+      "minus_total_mA": 78.4399474317566,
+      "dc_total_W": 2.3518906721116175,
+      "heat_total_W": 1.8439319194022827,
+      "branch_resistor_loss_W": [
+        0.00455634461414752,
+        0.0045563446141008304
+      ],
+      "output_network_loss_W": 0.07640763140374751,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.9446545494642,
+      "logic_5V_pullup_mA": 19.274515606585943,
+      "logic_led_3V3_mA": 3.611404521740564,
+      "logic_channel_peak_mA": [
+        36.306483335128085,
+        36.306484433732095
+      ],
+      "load_H3_dBc": -72.09427988553209,
+      "state_drift_V": [
+        -1.4342918241982971e-05,
+        -9.498511088779082e-09,
+        -3.7800892389583396e-06
+      ],
+      "periodic_initial_state_V": [
+        2.2679539253398673,
+        0.7240632171150844,
+        2.484455436267878
+      ],
+      "solver_runs": 1,
+      "transient_points": 124908,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 9.651013359590621e-05
+    },
+    {
+      "case": "f1.8e+06_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 1800000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 357.3108108675207,
+      "total_load_mW": 357.3121549264206,
+      "pa_join_Vpp": 14.18502763473265,
+      "chip": [
+        {
+          "plus_mA": 39.16167099593851,
+          "minus_mA": 39.227822038067366,
+          "plus_check_mA": 39.161626257087335,
+          "minus_check_mA": 39.22777729895455,
+          "dc_W": 1.175842395510088,
+          "heat_W": 0.9218416401412644,
+          "external_real_output_W": 0.2168588848213679,
+          "feedback_loss_W": 0.037141870547455796,
+          "pin_Vpp": 14.481041244443265,
+          "pin_mean_V": 0.009001267367933679,
+          "peak_current_mA": 61.38969066026932,
+          "rms_current_mA": 42.76162334347676,
+          "mean_current_mA": -0.07886089233301169
+        },
+        {
+          "plus_mA": 39.16167099545729,
+          "minus_mA": 39.227822037605485,
+          "plus_check_mA": 39.16162625556377,
+          "minus_check_mA": 39.22777729956306,
+          "dc_W": 1.1758423954959416,
+          "heat_W": 0.9218416401341458,
+          "external_real_output_W": 0.21685888481438878,
+          "feedback_loss_W": 0.03714187054740706,
+          "pin_Vpp": 14.48104124444172,
+          "pin_mean_V": 0.00900126736264242,
+          "peak_current_mA": 61.38969062024387,
+          "rms_current_mA": 42.761623342142414,
+          "mean_current_mA": -0.07886089445801564
+        }
+      ],
+      "plus_total_mA": 78.32334199139581,
+      "minus_total_mA": 78.45564407567285,
+      "dc_total_W": 2.3516847910060297,
+      "heat_total_W": 1.8436832802754102,
+      "branch_resistor_loss_W": [
+        0.0045531055131137485,
+        0.004553105512829596
+      ],
+      "output_network_loss_W": 0.0764056147093361,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.93649929486376,
+      "logic_5V_pullup_mA": 19.657214415909547,
+      "logic_led_3V3_mA": 3.6131585335502057,
+      "logic_channel_peak_mA": [
+        36.11791439271168,
+        36.11791045148194
+      ],
+      "load_H3_dBc": -72.46145131803172,
+      "state_drift_V": [
+        2.2762758451477794e-06,
+        -1.5918881690613063e-07,
+        -4.208059101173944e-06
+      ],
+      "periodic_initial_state_V": [
+        1.9681563133395228,
+        0.7280635059784127,
+        2.50494636757674
+      ],
+      "solver_runs": 1,
+      "transient_points": 108853,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -2.819781523832887e-05
+    },
+    {
+      "case": "f3.5e+06_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 3500000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 356.2148010011233,
+      "total_load_mW": 356.2155050260964,
+      "pa_join_Vpp": 14.177314388468492,
+      "chip": [
+        {
+          "plus_mA": 39.13250546850642,
+          "minus_mA": 39.17289085045367,
+          "plus_check_mA": 39.132445518798384,
+          "minus_check_mA": 39.17283090143675,
+          "dc_W": 1.1745809447844013,
+          "heat_W": 0.9213113594372574,
+          "external_real_output_W": 0.21618850461443592,
+          "feedback_loss_W": 0.037081080732708015,
+          "pin_Vpp": 14.472622615850712,
+          "pin_mean_V": 0.008940821792729302,
+          "peak_current_mA": 61.200248594597376,
+          "rms_current_mA": 42.67333695181743,
+          "mean_current_mA": -0.05301316435326907
+        },
+        {
+          "plus_mA": 39.13250543698816,
+          "minus_mA": 39.17289087989947,
+          "plus_check_mA": 39.13244548779398,
+          "minus_check_mA": 39.172830930516845,
+          "dc_W": 1.1745809447533144,
+          "heat_W": 0.9213113594180729,
+          "external_real_output_W": 0.2161885046026544,
+          "feedback_loss_W": 0.03708108073258716,
+          "pin_Vpp": 14.472622615986662,
+          "pin_mean_V": 0.00894082164364688,
+          "peak_current_mA": 61.200248646945326,
+          "rms_current_mA": 42.67333695010292,
+          "mean_current_mA": -0.05301322422564513
+        }
+      ],
+      "plus_total_mA": 78.26501090549459,
+      "minus_total_mA": 78.34578173035314,
+      "dc_total_W": 2.349161889537716,
+      "heat_total_W": 1.8426227188553304,
+      "branch_resistor_loss_W": [
+        0.004534324079642334,
+        0.0045343240792779784
+      ],
+      "output_network_loss_W": 0.07616150419099388,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.838765294631024,
+      "logic_5V_pullup_mA": 19.88987537200827,
+      "logic_led_3V3_mA": 3.613537291920001,
+      "logic_channel_peak_mA": [
+        36.00889745012574,
+        36.00889496132735
+      ],
+      "load_H3_dBc": -72.9028573180697,
+      "state_drift_V": [
+        -6.295305507997284e-07,
+        -6.079939929293232e-08,
+        -3.844897535909553e-06
+      ],
+      "periodic_initial_state_V": [
+        2.0891230852533638,
+        0.7138726147374367,
+        2.5087352378596277
+      ],
+      "solver_runs": 1,
+      "transient_points": 104430,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -1.3799012255066856e-05
+    },
+    {
+      "case": "f7e+06_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 7000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 353.55545051486683,
+      "total_load_mW": 353.55576045972293,
+      "pa_join_Vpp": 14.155906317822858,
+      "chip": [
+        {
+          "plus_mA": 39.045020870126145,
+          "minus_mA": 39.06118758155532,
+          "plus_check_mA": 39.04495732131002,
+          "minus_check_mA": 39.06112403365341,
+          "dc_W": 1.171593126775222,
+          "heat_W": 0.9201015756136166,
+          "external_real_output_W": 0.2145625698315021,
+          "feedback_loss_W": 0.03692898133010321,
+          "pin_Vpp": 14.4495713923125,
+          "pin_mean_V": 0.00890414697906465,
+          "peak_current_mA": 60.827473784012476,
+          "rms_current_mA": 42.46782794427514,
+          "mean_current_mA": -0.028743441024782476
+        },
+        {
+          "plus_mA": 39.04502087946877,
+          "minus_mA": 39.06118757496474,
+          "plus_check_mA": 39.044957330894945,
+          "minus_check_mA": 39.061124026835536,
+          "dc_W": 1.1715931268165027,
+          "heat_W": 0.9201015756496446,
+          "external_real_output_W": 0.21456256983675878,
+          "feedback_loss_W": 0.03692898133009935,
+          "pin_Vpp": 14.449571392425185,
+          "pin_mean_V": 0.008904147019749873,
+          "peak_current_mA": 60.82747385559644,
+          "rms_current_mA": 42.46782794608962,
+          "mean_current_mA": -0.028743424685334112
+        }
+      ],
+      "plus_total_mA": 78.09004174959492,
+      "minus_total_mA": 78.12237515652006,
+      "dc_total_W": 2.3431862535917247,
+      "heat_total_W": 1.8402031512632613,
+      "branch_resistor_loss_W": [
+        0.004490755861658347,
+        0.00449075586204209
+      ],
+      "output_network_loss_W": 0.07556937920853796,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.592586369481566,
+      "logic_5V_pullup_mA": 20.404581914653,
+      "logic_led_3V3_mA": 3.6143545803499406,
+      "logic_channel_peak_mA": [
+        35.83821508880218,
+        35.838183984212336
+      ],
+      "load_H3_dBc": -73.82505861642242,
+      "state_drift_V": [
+        -8.692593582715347e-07,
+        2.9484936936441386e-08,
+        -2.434394489103653e-06
+      ],
+      "periodic_initial_state_V": [
+        2.1184038582548967,
+        0.6981273336832349,
+        2.510909231122457
+      ],
+      "solver_runs": 1,
+      "transient_points": 109466,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 1.1826475754261878e-05
+    },
+    {
+      "case": "f1e+07_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 10000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 351.1468988719903,
+      "total_load_mW": 351.14710219500887,
+      "pa_join_Vpp": 14.135118543568927,
+      "chip": [
+        {
+          "plus_mA": 38.960222802711236,
+          "minus_mA": 38.96714006769001,
+          "plus_check_mA": 38.96015601898928,
+          "minus_check_mA": 38.96707328479095,
+          "dc_W": 1.1689104430560189,
+          "heat_W": 0.9190319972762858,
+          "external_real_output_W": 0.21309088811004956,
+          "feedback_loss_W": 0.03678755766968351,
+          "pin_Vpp": 14.427327979194185,
+          "pin_mean_V": 0.00891289789150313,
+          "peak_current_mA": 60.514627254477276,
+          "rms_current_mA": 42.284473630463836,
+          "mean_current_mA": -0.01950616181791342
+        },
+        {
+          "plus_mA": 38.96022289141247,
+          "minus_mA": 38.96713997145115,
+          "plus_check_mA": 38.9601561077811,
+          "minus_check_mA": 38.96707318853038,
+          "dc_W": 1.1689104429429542,
+          "heat_W": 0.919031997195557,
+          "external_real_output_W": 0.2130908880778996,
+          "feedback_loss_W": 0.03678755766949762,
+          "pin_Vpp": 14.427327979016319,
+          "pin_mean_V": 0.008912898350676546,
+          "peak_current_mA": 60.514627137800595,
+          "rms_current_mA": 42.28447362280368,
+          "mean_current_mA": -0.019505977410885132
+        }
+      ],
+      "plus_total_mA": 77.92044569412371,
+      "minus_total_mA": 77.93428003914116,
+      "dc_total_W": 2.337820885998973,
+      "heat_total_W": 1.8380639944718427,
+      "branch_resistor_loss_W": [
+        0.004452062008411426,
+        0.004452062006798374
+      ],
+      "output_network_loss_W": 0.07503467399294028,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.36210114897103,
+      "logic_5V_pullup_mA": 20.845026700310303,
+      "logic_led_3V3_mA": 3.6150089729291603,
+      "logic_channel_peak_mA": [
+        35.71679879031293,
+        35.716731998421885
+      ],
+      "load_H3_dBc": -74.62545551173375,
+      "state_drift_V": [
+        -1.1282333983952952e-05,
+        1.8841290955196044e-06,
+        -1.5622951363702953e-06
+      ],
+      "periodic_initial_state_V": [
+        2.126499596884901,
+        0.6583177002850003,
+        2.5116450944145936
+      ],
+      "solver_runs": 1,
+      "transient_points": 111156,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 3.3117155995299186e-05
+    },
+    {
+      "case": "f1.4e+07_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 14000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 347.8715255963526,
+      "total_load_mW": 347.871667274879,
+      "pa_join_Vpp": 14.105667724571914,
+      "chip": [
+        {
+          "plus_mA": 38.84176490806331,
+          "minus_mA": 38.8432117247036,
+          "plus_check_mA": 38.841700185142855,
+          "minus_check_mA": 38.84314700264239,
+          "dc_W": 1.1652746494915036,
+          "heat_W": 0.9175917919420251,
+          "external_real_output_W": 0.21109037251980378,
+          "feedback_loss_W": 0.036592485029674715,
+          "pin_Vpp": 14.395873833720977,
+          "pin_mean_V": 0.008810916319748459,
+          "peak_current_mA": 60.10501246062121,
+          "rms_current_mA": 42.03687540392948,
+          "mean_current_mA": -0.013893858137350843
+        },
+        {
+          "plus_mA": 38.84176479363148,
+          "minus_mA": 38.84321182704768,
+          "plus_check_mA": 38.84170007111202,
+          "minus_check_mA": 38.843147104886874,
+          "dc_W": 1.1652746493101875,
+          "heat_W": 0.9175917918472651,
+          "external_real_output_W": 0.2110903724337679,
+          "feedback_loss_W": 0.036592485029154485,
+          "pin_Vpp": 14.39587383315514,
+          "pin_mean_V": 0.008810915783075357,
+          "peak_current_mA": 60.10501272590228,
+          "rms_current_mA": 42.03687538571471,
+          "mean_current_mA": -0.01389407366873371
+        }
+      ],
+      "plus_total_mA": 77.6835297016948,
+      "minus_total_mA": 77.68642355175129,
+      "dc_total_W": 2.3305492988016914,
+      "heat_total_W": 1.8351835837892903,
+      "branch_resistor_loss_W": [
+        0.004400076245376474,
+        0.004400076241563327
+      ],
+      "output_network_loss_W": 0.07430907767869277,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.04212697414406,
+      "logic_5V_pullup_mA": 21.42505363138742,
+      "logic_led_3V3_mA": 3.6157437383471622,
+      "logic_channel_peak_mA": [
+        35.57097370551914,
+        35.570843894588116
+      ],
+      "load_H3_dBc": -75.71007992556362,
+      "state_drift_V": [
+        -4.148528576219945e-05,
+        6.3134280766652395e-06,
+        -2.0785022112335128e-06
+      ],
+      "periodic_initial_state_V": [
+        2.140453374720307,
+        0.7117698298506406,
+        2.512256698896097
+      ],
+      "solver_runs": 1,
+      "transient_points": 109715,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 2.2142225941657045e-05
+    },
+    {
+      "case": "f2.1e+07_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 21000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 342.1172644995444,
+      "total_load_mW": 342.11734780622396,
+      "pa_join_Vpp": 14.051986571092545,
+      "chip": [
+        {
+          "plus_mA": 38.632388039575126,
+          "minus_mA": 38.62764127323195,
+          "plus_check_mA": 38.63233627378988,
+          "minus_check_mA": 38.6275895082126,
+          "dc_W": 1.1589004396921059,
+          "heat_W": 0.9150756997451923,
+          "external_real_output_W": 0.20757754571438655,
+          "feedback_loss_W": 0.036247194232526994,
+          "pin_Vpp": 14.338697102501367,
+          "pin_mean_V": 0.008853361017622451,
+          "peak_current_mA": 59.40411795057996,
+          "rms_current_mA": 41.604170252459404,
+          "mean_current_mA": -0.0077593170057845325
+        },
+        {
+          "plus_mA": 38.63238802093999,
+          "minus_mA": 38.62764131045531,
+          "plus_check_mA": 38.63233625523606,
+          "minus_check_mA": 38.62758954531809,
+          "dc_W": 1.1589004399709295,
+          "heat_W": 0.9150756999164298,
+          "external_real_output_W": 0.20757754582129584,
+          "feedback_loss_W": 0.036247194233203876,
+          "pin_Vpp": 14.33869710407066,
+          "pin_mean_V": 0.008853360879543618,
+          "peak_current_mA": 59.40411806754771,
+          "rms_current_mA": 41.604170277150516,
+          "mean_current_mA": -0.007759372459201712
+        }
+      ],
+      "plus_total_mA": 77.26477606051512,
+      "minus_total_mA": 77.25528258368726,
+      "dc_total_W": 2.3178008796630354,
+      "heat_total_W": 1.830151399661622,
+      "branch_resistor_loss_W": [
+        0.004309958386165113,
+        0.004309958391280835
+      ],
+      "output_network_loss_W": 0.07303774372945848,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 57.46970888017656,
+      "logic_5V_pullup_mA": 22.42123311588845,
+      "logic_led_3V3_mA": 3.616511132862506,
+      "logic_channel_peak_mA": [
+        35.35270369680172,
+        35.352386245782334
+      ],
+      "load_H3_dBc": -77.65276378050207,
+      "state_drift_V": [
+        -2.341653874271543e-05,
+        7.540572638187193e-06,
+        -1.096833089242466e-06
+      ],
+      "periodic_initial_state_V": [
+        2.151490560100421,
+        0.7085185999509203,
+        2.51284414275476
+      ],
+      "solver_runs": 1,
+      "transient_points": 103689,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -3.268256525412738e-05
+    },
+    {
+      "case": "f2.8e+07_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 28000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 341.6192401205544,
+      "total_load_mW": 341.6193049480976,
+      "pa_join_Vpp": 14.039391689587951,
+      "chip": [
+        {
+          "plus_mA": 38.623352454136544,
+          "minus_mA": 38.61596777603321,
+          "plus_check_mA": 38.62330145548704,
+          "minus_check_mA": 38.61591677807433,
+          "dc_W": 1.1585898034525461,
+          "heat_W": 0.9151440542333422,
+          "external_real_output_W": 0.20727770825716915,
+          "feedback_loss_W": 0.03616804096203469,
+          "pin_Vpp": 14.326049813284566,
+          "pin_mean_V": 0.008818442961739805,
+          "peak_current_mA": 59.33366213478814,
+          "rms_current_mA": 41.5875450684921,
+          "mean_current_mA": -0.005072899446335816
+        },
+        {
+          "plus_mA": 38.62335297173972,
+          "minus_mA": 38.61596730525947,
+          "plus_check_mA": 38.62330197311998,
+          "minus_check_mA": 38.61591630730661,
+          "dc_W": 1.1585898041549878,
+          "heat_W": 0.9151440546181017,
+          "external_real_output_W": 0.20727770857263864,
+          "feedback_loss_W": 0.03616804096424756,
+          "pin_Vpp": 14.32604981257072,
+          "pin_mean_V": 0.00881844541438491,
+          "peak_current_mA": 59.333661953547306,
+          "rms_current_mA": 41.58754513568579,
+          "mean_current_mA": -0.005071914448340702
+        }
+      ],
+      "plus_total_mA": 77.24670542587626,
+      "minus_total_mA": 77.23193508129268,
+      "dc_total_W": 2.317179607607534,
+      "heat_total_W": 1.8302881088514438,
+      "branch_resistor_loss_W": [
+        0.0043065145230114146,
+        0.00430651453692763
+      ],
+      "output_network_loss_W": 0.07293611188171023,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 57.31158963903497,
+      "logic_5V_pullup_mA": 23.493036449902423,
+      "logic_led_3V3_mA": 3.616563714643068,
+      "logic_channel_peak_mA": [
+        35.301032413647974,
+        35.3005953265751
+      ],
+      "load_H3_dBc": -78.43633769786867,
+      "state_drift_V": [
+        -1.8911127011467244e-05,
+        3.153222511143028e-05,
+        -9.991510849793883e-07
+      ],
+      "periodic_initial_state_V": [
+        2.15909711242993,
+        0.6982459024353522,
+        2.513343396375193
+      ],
+      "solver_runs": 1,
+      "transient_points": 96177,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 1.802597133782058e-05
+    },
+    {
+      "case": "f5e+07_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 50000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 341.05219893861295,
+      "total_load_mW": 341.0522339486723,
+      "pa_join_Vpp": 14.012977629476032,
+      "chip": [
+        {
+          "plus_mA": 38.62834036955256,
+          "minus_mA": 38.61790260942976,
+          "plus_check_mA": 38.62824630973926,
+          "minus_check_mA": 38.61780855050329,
+          "dc_W": 1.1586936446847347,
+          "heat_W": 0.91574145054387,
+          "external_real_output_W": 0.20694372092764582,
+          "feedback_loss_W": 0.036008473213218824,
+          "pin_Vpp": 14.299982371356966,
+          "pin_mean_V": 0.008722662365388151,
+          "peak_current_mA": 59.24571871911524,
+          "rms_current_mA": 41.606239884418564,
+          "mean_current_mA": -0.001886584547200679
+        },
+        {
+          "plus_mA": 38.62834012708899,
+          "minus_mA": 38.61790283379386,
+          "plus_check_mA": 38.628246067171915,
+          "minus_check_mA": 38.61780877506015,
+          "dc_W": 1.1586936444132427,
+          "heat_W": 0.9157414503941256,
+          "external_real_output_W": 0.20694372080671267,
+          "feedback_loss_W": 0.036008473212404545,
+          "pin_Vpp": 14.299982372057094,
+          "pin_mean_V": 0.008722661206298339,
+          "peak_current_mA": 59.245718831321426,
+          "rms_current_mA": 41.6062398607529,
+          "mean_current_mA": -0.0018870500452087512
+        }
+      ],
+      "plus_total_mA": 77.25668049664155,
+      "minus_total_mA": 77.23580544322363,
+      "dc_total_W": 2.3173872890979776,
+      "heat_total_W": 1.8314829009379956,
+      "branch_resistor_loss_W": [
+        0.0043103872013262575,
+        0.0043103871964227545
+      ],
+      "output_network_loss_W": 0.07283520778568614,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 56.90587143519552,
+      "logic_5V_pullup_mA": 26.68699442486471,
+      "logic_led_3V3_mA": 3.613000979575906,
+      "logic_channel_peak_mA": [
+        35.687538791760545,
+        35.686737748987014
+      ],
+      "load_H3_dBc": -80.82043433046164,
+      "state_drift_V": [
+        -6.967134317914514e-06,
+        -3.592049643286188e-07,
+        -8.144527354758679e-07
+      ],
+      "periodic_initial_state_V": [
+        2.174170090626038,
+        0.6768738397779273,
+        2.5144707161607833
+      ],
+      "solver_runs": 1,
+      "transient_points": 82295,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 3.788692843897934e-05
+    },
+    {
+      "case": "f7e+07_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 70000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 340.85432433465127,
+      "total_load_mW": 340.8543459770266,
+      "pa_join_Vpp": 13.995699237613461,
+      "chip": [
+        {
+          "plus_mA": 38.64184254868765,
+          "minus_mA": 38.630757311029605,
+          "plus_check_mA": 38.641770323709665,
+          "minus_check_mA": 38.63068508669579,
+          "dc_W": 1.1590889978957588,
+          "heat_W": 0.9163361966804353,
+          "external_real_output_W": 0.20683307501980383,
+          "feedback_loss_W": 0.035919726195519606,
+          "pin_Vpp": 14.283118979539324,
+          "pin_mean_V": 0.008640145414912273,
+          "peak_current_mA": 59.213397514015064,
+          "rms_current_mA": 41.64043257239996,
+          "mean_current_mA": -0.0011243860543696676
+        },
+        {
+          "plus_mA": 38.641842994174816,
+          "minus_mA": 38.63075686057381,
+          "plus_check_mA": 38.641770769310554,
+          "minus_check_mA": 38.630684636252425,
+          "dc_W": 1.1590889978212295,
+          "heat_W": 0.9163361966198242,
+          "external_real_output_W": 0.2068330750060191,
+          "feedback_loss_W": 0.03591972619538617,
+          "pin_Vpp": 14.283118980330283,
+          "pin_mean_V": 0.008640147638347674,
+          "peak_current_mA": 59.21339771084788,
+          "rms_current_mA": 41.6404325591292,
+          "mean_current_mA": -0.0011234931083990386
+        }
+      ],
+      "plus_total_mA": 77.28368554286246,
+      "minus_total_mA": 77.26151417160341,
+      "dc_total_W": 2.3181779957169883,
+      "heat_total_W": 1.8326723933002596,
+      "branch_resistor_loss_W": [
+        0.004317474805793303,
+        0.004317474803041354
+      ],
+      "output_network_loss_W": 0.07281180404879639,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 56.56119944481728,
+      "logic_5V_pullup_mA": 29.459764444157877,
+      "logic_led_3V3_mA": 3.60604490196156,
+      "logic_channel_peak_mA": [
+        35.592088778379775,
+        35.580423846099144
+      ],
+      "load_H3_dBc": -82.95603112085637,
+      "state_drift_V": [
+        -3.5566935672193267e-06,
+        4.665878399701118e-05,
+        -7.346956678588867e-07
+      ],
+      "periodic_initial_state_V": [
+        2.1823338273475286,
+        0.6635975022554543,
+        2.5152993003445334
+      ],
+      "solver_runs": 1,
+      "transient_points": 74241,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 1.1201032101837427e-06
+    },
+    {
+      "case": "f1e+08_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 100000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 338.38042640527334,
+      "total_load_mW": 338.3804458370578,
+      "pa_join_Vpp": 13.941340921692284,
+      "chip": [
+        {
+          "plus_mA": 38.56903490770573,
+          "minus_mA": 38.557843684363824,
+          "plus_check_mA": 38.56895572704247,
+          "minus_check_mA": 38.55776450410038,
+          "dc_W": 1.156903178881043,
+          "heat_W": 0.9158303225236695,
+          "external_real_output_W": 0.20534846249460179,
+          "feedback_loss_W": 0.0357243938627718,
+          "pin_Vpp": 14.22792774011522,
+          "pin_mean_V": 0.008540140889003458,
+          "peak_current_mA": 58.97233106691656,
+          "rms_current_mA": 41.5011495088464,
+          "mean_current_mA": -0.0008792230697822086
+        },
+        {
+          "plus_mA": 38.56903404152754,
+          "minus_mA": 38.557844542076026,
+          "plus_check_mA": 38.56895486182379,
+          "minus_check_mA": 38.557765363583215,
+          "dc_W": 1.1569031787540536,
+          "heat_W": 0.9158303223551407,
+          "external_real_output_W": 0.20534846253584377,
+          "feedback_loss_W": 0.03572439386306913,
+          "pin_Vpp": 14.227927740663262,
+          "pin_mean_V": 0.008540136609318124,
+          "peak_current_mA": 58.9723311190908,
+          "rms_current_mA": 41.501149515499016,
+          "mean_current_mA": -0.0008809418189607457
+        }
+      ],
+      "plus_total_mA": 77.13806894923326,
+      "minus_total_mA": 77.11568822643986,
+      "dc_total_W": 2.3138063576350967,
+      "heat_total_W": 1.8316606448788102,
+      "branch_resistor_loss_W": [
+        0.004288640072283499,
+        0.0042886400736584325
+      ],
+      "output_network_loss_W": 0.07231647919338774,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 55.83578295919778,
+      "logic_5V_pullup_mA": 33.3765483222169,
+      "logic_led_3V3_mA": 3.5903090547117817,
+      "logic_channel_peak_mA": [
+        35.58135477291018,
+        35.54037310229247
+      ],
+      "load_H3_dBc": -83.59143036253448,
+      "state_drift_V": [
+        -3.447844503234876e-06,
+        1.0606765715959199e-05,
+        -6.472521709710577e-07
+      ],
+      "periodic_initial_state_V": [
+        2.1900823980858632,
+        0.6515768211335166,
+        2.5163669328301133
+      ],
+      "solver_runs": 1,
+      "transient_points": 68571,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -2.490191018944543e-05
+    },
+    {
+      "case": "f1.45e+08_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 145000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 334.832288495609,
+      "total_load_mW": 334.8323106869841,
+      "pa_join_Vpp": 13.865784287614257,
+      "chip": [
+        {
+          "plus_mA": 38.47020516173509,
+          "minus_mA": 38.45984684935491,
+          "plus_check_mA": 38.47013216597576,
+          "minus_check_mA": 38.45977385455368,
+          "dc_W": 1.1539507801663498,
+          "heat_W": 0.9152203092064258,
+          "external_real_output_W": 0.2032199900754059,
+          "feedback_loss_W": 0.03551048088451799,
+          "pin_Vpp": 14.151117449437061,
+          "pin_mean_V": 0.008383482056815111,
+          "peak_current_mA": 58.631965156048246,
+          "rms_current_mA": 41.301045356938374,
+          "mean_current_mA": -0.0014943350211932568
+        },
+        {
+          "plus_mA": 38.47020400398926,
+          "minus_mA": 38.45984788068037,
+          "plus_check_mA": 38.47013100946001,
+          "minus_check_mA": 38.45977488378322,
+          "dc_W": 1.1539507782700447,
+          "heat_W": 0.9152203080222947,
+          "external_real_output_W": 0.20321998936835864,
+          "feedback_loss_W": 0.03551048087939132,
+          "pin_Vpp": 14.151117449021637,
+          "pin_mean_V": 0.008383476633115573,
+          "peak_current_mA": 58.63196623233965,
+          "rms_current_mA": 41.30104519664797,
+          "mean_current_mA": -0.0014965132137431615
+        }
+      ],
+      "plus_total_mA": 76.94040916572435,
+      "minus_total_mA": 76.91969473003527,
+      "dc_total_W": 2.307901558436394,
+      "heat_total_W": 1.8304406172287204,
+      "branch_resistor_loss_W": [
+        0.0042473831054639435,
+        0.00424738307249554
+      ],
+      "output_network_loss_W": 0.07160766875678043,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 54.64766099734799,
+      "logic_5V_pullup_mA": 39.21640045151667,
+      "logic_led_3V3_mA": 3.5490649733803075,
+      "logic_channel_peak_mA": [
+        35.4333360778287,
+        35.38747776500316
+      ],
+      "load_H3_dBc": -84.91849762321425,
+      "state_drift_V": [
+        -2.781705413124058e-06,
+        3.0847460443794716e-06,
+        -5.967671277140596e-07
+      ],
+      "periodic_initial_state_V": [
+        2.19690975510184,
+        0.64146340014114,
+        2.5178893710048
+      ],
+      "solver_runs": 1,
+      "transient_points": 64685,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 4.14907261436781e-05
+    },
+    {
+      "case": "f137000_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 137000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.5,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 246.17368501968653,
+      "total_load_mW": 246.17395879855027,
+      "pa_join_Vpp": 11.803383267042381,
+      "chip": [
+        {
+          "plus_mA": 35.3973773604475,
+          "minus_mA": 35.38251613756153,
+          "plus_check_mA": 35.39732149789081,
+          "minus_check_mA": 35.38246027605698,
+          "dc_W": 1.0616984024701355,
+          "heat_W": 0.886558096099161,
+          "external_real_output_W": 0.14941279634200788,
+          "feedback_loss_W": 0.025727510028966602,
+          "pin_Vpp": 12.048712647732913,
+          "pin_mean_V": 0.009032134947289942,
+          "peak_current_mA": 51.04037753129573,
+          "rms_current_mA": 35.51308521461752,
+          "mean_current_mA": 0.00210656684159249
+        },
+        {
+          "plus_mA": 35.39737735205656,
+          "minus_mA": 35.38251614376927,
+          "plus_check_mA": 35.397321498042835,
+          "minus_check_mA": 35.38246027571409,
+          "dc_W": 1.0616984024373874,
+          "heat_W": 0.8865580960671304,
+          "external_real_output_W": 0.14941279634130042,
+          "feedback_loss_W": 0.025727510028956554,
+          "pin_Vpp": 12.048712647752449,
+          "pin_mean_V": 0.009032134948521599,
+          "peak_current_mA": 51.04037751828517,
+          "rms_current_mA": 35.51308521445735,
+          "mean_current_mA": 0.0021065673362162954
+        }
+      ],
+      "plus_total_mA": 70.79475471250406,
+      "minus_total_mA": 70.7650322813308,
+      "dc_total_W": 2.123396804907523,
+      "heat_total_W": 1.7731161921662915,
+      "branch_resistor_loss_W": [
+        0.003140336261437107,
+        0.0031403362614087793
+      ],
+      "output_network_loss_W": 0.05265163388475805,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.81292281444562,
+      "logic_5V_pullup_mA": 18.83977509774459,
+      "logic_led_3V3_mA": 3.587821016125208,
+      "logic_channel_peak_mA": [
+        36.37615866567727,
+        36.37615882351897
+      ],
+      "load_H3_dBc": -71.80307658360476,
+      "state_drift_V": [
+        -1.0528517005781168e-05,
+        1.1540356448236366e-09,
+        -4.5635454534398434e-05
+      ],
+      "periodic_initial_state_V": [
+        2.0517956834235,
+        0.69290443174742,
+        2.4913268745307
+      ],
+      "solver_runs": 1,
+      "transient_points": 136546,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 0.0001366293547855335
+    },
+    {
+      "case": "f475000_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 475000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.5,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 248.07100867912803,
+      "total_load_mW": 248.0716133061592,
+      "pa_join_Vpp": 11.818365437035213,
+      "chip": [
+        {
+          "plus_mA": 35.44707825390807,
+          "minus_mA": 35.48135169941309,
+          "plus_check_mA": 35.44700029182779,
+          "minus_check_mA": 35.48127373896385,
+          "dc_W": 1.0639264492998173,
+          "heat_W": 0.8875703164531664,
+          "external_real_output_W": 0.15056333309146128,
+          "feedback_loss_W": 0.025792799755189506,
+          "pin_Vpp": 12.065078548401493,
+          "pin_mean_V": 0.009092644786701366,
+          "peak_current_mA": 51.20833330185172,
+          "rms_current_mA": 35.64549542045056,
+          "mean_current_mA": -0.047111461436191875
+        },
+        {
+          "plus_mA": 35.44707825339568,
+          "minus_mA": 35.481351699988856,
+          "plus_check_mA": 35.44700029361562,
+          "minus_check_mA": 35.481273736935506,
+          "dc_W": 1.0639264493007679,
+          "heat_W": 0.8875703164553692,
+          "external_real_output_W": 0.15056333309025216,
+          "feedback_loss_W": 0.025792799755146426,
+          "pin_Vpp": 12.065078548366284,
+          "pin_mean_V": 0.009092644796178198,
+          "peak_current_mA": 51.208333287331605,
+          "rms_current_mA": 35.64549542002273,
+          "mean_current_mA": -0.047111457630237136
+        }
+      ],
+      "plus_total_mA": 70.89415650730375,
+      "minus_total_mA": 70.96270339940195,
+      "dc_total_W": 2.127852898600585,
+      "heat_total_W": 1.7751406329085357,
+      "branch_resistor_loss_W": [
+        0.003163797345985711,
+        0.0031637973459097656
+      ],
+      "output_network_loss_W": 0.05305505287555426,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.96206645284514,
+      "logic_5V_pullup_mA": 19.275672598651273,
+      "logic_led_3V3_mA": 3.611404588741359,
+      "logic_channel_peak_mA": [
+        36.30610261132595,
+        36.30610316540079
+      ],
+      "load_H3_dBc": -72.09301491840557,
+      "state_drift_V": [
+        -1.4169657508888989e-05,
+        -5.814448589269716e-09,
+        -2.466715673499209e-06
+      ],
+      "periodic_initial_state_V": [
+        2.2679539253398673,
+        0.7240632171150844,
+        2.484455436267878
+      ],
+      "solver_runs": 1,
+      "transient_points": 123411,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -8.512396532101008e-05
+    },
+    {
+      "case": "f1.8e+06_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 1800000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.5,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 248.1302556266275,
+      "total_load_mW": 248.13119111151852,
+      "pa_join_Vpp": 11.820836983279285,
+      "chip": [
+        {
+          "plus_mA": 35.435722996504126,
+          "minus_mA": 35.48880300925354,
+          "plus_check_mA": 35.43565527596971,
+          "minus_check_mA": 35.48873528929892,
+          "dc_W": 1.063867890086365,
+          "heat_W": 0.8874801041136197,
+          "external_real_output_W": 0.15059502386532075,
+          "feedback_loss_W": 0.025792762107424587,
+          "pin_Vpp": 12.06750932111093,
+          "pin_mean_V": 0.009018259350594762,
+          "peak_current_mA": 51.157712630915846,
+          "rms_current_mA": 35.634532938355036,
+          "mean_current_mA": -0.06581406114366875
+        },
+        {
+          "plus_mA": 35.435722989055144,
+          "minus_mA": 35.488803017191,
+          "plus_check_mA": 35.43565526828968,
+          "minus_check_mA": 35.48873529765008,
+          "dc_W": 1.0638678900936924,
+          "heat_W": 0.8874801041181866,
+          "external_real_output_W": 0.15059502386807005,
+          "feedback_loss_W": 0.025792762107435835,
+          "pin_Vpp": 12.06750932103888,
+          "pin_mean_V": 0.009018259310835412,
+          "peak_current_mA": 51.15771266802994,
+          "rms_current_mA": 35.63453293917933,
+          "mean_current_mA": -0.06581407711128644
+        }
+      ],
+      "plus_total_mA": 70.87144598555926,
+      "minus_total_mA": 70.97760602644453,
+      "dc_total_W": 2.1277357801800574,
+      "heat_total_W": 1.7749602082318061,
+      "branch_resistor_loss_W": [
+        0.003161851644959428,
+        0.003161851645105707
+      ],
+      "output_network_loss_W": 0.05305885662187229,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.959452073173296,
+      "logic_5V_pullup_mA": 19.659974846544824,
+      "logic_led_3V3_mA": 3.6131586961921704,
+      "logic_channel_peak_mA": [
+        36.11991747773212,
+        36.119914644249654
+      ],
+      "load_H3_dBc": -72.46345642080674,
+      "state_drift_V": [
+        2.4545714523149798e-06,
+        -1.537108188509606e-07,
+        -2.5502577898350864e-06
+      ],
+      "periodic_initial_state_V": [
+        1.9681563133395228,
+        0.7280635059784127,
+        2.50494636757674
+      ],
+      "solver_runs": 1,
+      "transient_points": 108107,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 1.916867375939546e-05
+    },
+    {
+      "case": "f3.5e+06_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 3500000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.5,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 247.4002749481904,
+      "total_load_mW": 247.40076463556542,
+      "pa_join_Vpp": 11.815179928482271,
+      "chip": [
+        {
+          "plus_mA": 35.412597506573874,
+          "minus_mA": 35.44415240385646,
+          "plus_check_mA": 35.41253679614484,
+          "minus_check_mA": 35.44409169428362,
+          "dc_W": 1.0628512486564552,
+          "heat_W": 0.8869490954052599,
+          "external_real_output_W": 0.15014836349889865,
+          "feedback_loss_W": 0.02575378975229658,
+          "pin_Vpp": 12.061277996043795,
+          "pin_mean_V": 0.008975327390449775,
+          "peak_current_mA": 51.00293886153497,
+          "rms_current_mA": 35.5631860740087,
+          "mean_current_mA": -0.044230672921661114
+        },
+        {
+          "plus_mA": 35.412597473644254,
+          "minus_mA": 35.44415243423194,
+          "plus_check_mA": 35.41253676383424,
+          "minus_check_mA": 35.4440917240418,
+          "dc_W": 1.0628512486181427,
+          "heat_W": 0.8869490953759767,
+          "external_real_output_W": 0.15014836348990854,
+          "feedback_loss_W": 0.025753789752257502,
+          "pin_Vpp": 12.061277996003675,
+          "pin_mean_V": 0.008975327236446324,
+          "peak_current_mA": 51.00293890719769,
+          "rms_current_mA": 35.563186071883685,
+          "mean_current_mA": -0.044230734770438776
+        }
+      ],
+      "plus_total_mA": 70.82519498021813,
+      "minus_total_mA": 70.8883048380884,
+      "dc_total_W": 2.125702497274598,
+      "heat_total_W": 1.7738981907812366,
+      "branch_resistor_loss_W": [
+        0.003149203107299071,
+        0.0031492031069227204
+      ],
+      "output_network_loss_W": 0.05289596235324173,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.86922856594963,
+      "logic_5V_pullup_mA": 19.894731201011496,
+      "logic_led_3V3_mA": 3.6135375630968283,
+      "logic_channel_peak_mA": [
+        36.01394465892177,
+        36.01393226089907
+      ],
+      "load_H3_dBc": -72.90867737686096,
+      "state_drift_V": [
+        -4.849441497256635e-07,
+        -6.173814359744512e-08,
+        -2.6412712847978526e-06
+      ],
+      "periodic_initial_state_V": [
+        2.0891230852533638,
+        0.7138726147374367,
+        2.5087352378596277
+      ],
+      "solver_runs": 1,
+      "transient_points": 104235,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -4.518923124585683e-07
+    },
+    {
+      "case": "f7e+06_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 7000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.5,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 245.61664241552847,
+      "total_load_mW": 245.61685739756032,
+      "pa_join_Vpp": 11.798919445056033,
+      "chip": [
+        {
+          "plus_mA": 35.342134225676965,
+          "minus_mA": 35.35342140464192,
+          "plus_check_mA": 35.34207492834516,
+          "minus_check_mA": 35.353362108159786,
+          "dc_W": 1.0604333344547834,
+          "heat_W": 0.8857209790831437,
+          "external_real_output_W": 0.1490575871815522,
+          "feedback_loss_W": 0.025654768190087357,
+          "pin_Vpp": 12.043700943599895,
+          "pin_mean_V": 0.008954201796876421,
+          "peak_current_mA": 50.69856974503605,
+          "rms_current_mA": 35.396480663392126,
+          "mean_current_mA": -0.023933530200659154
+        },
+        {
+          "plus_mA": 35.34213423274372,
+          "minus_mA": 35.35342139539157,
+          "plus_check_mA": 35.342074935560866,
+          "minus_check_mA": 35.35336209878802,
+          "dc_W": 1.0604333344220294,
+          "heat_W": 0.8857209790722819,
+          "external_real_output_W": 0.14905758715978204,
+          "feedback_loss_W": 0.02565476818996551,
+          "pin_Vpp": 12.043700943248517,
+          "pin_mean_V": 0.008954201837991976,
+          "peak_current_mA": 50.698569499135836,
+          "rms_current_mA": 35.39648065860928,
+          "mean_current_mA": -0.023933513688372852
+        }
+      ],
+      "plus_total_mA": 70.68426845842069,
+      "minus_total_mA": 70.70684280003348,
+      "dc_total_W": 2.120866668876813,
+      "heat_total_W": 1.7714419581554255,
+      "branch_resistor_loss_W": [
+        0.003119747999951193,
+        0.0031197479991080996
+      ],
+      "output_network_loss_W": 0.052498316943773965,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.63832222721659,
+      "logic_5V_pullup_mA": 20.413513743971674,
+      "logic_led_3V3_mA": 3.614355038080968,
+      "logic_channel_peak_mA": [
+        35.84950570347444,
+        35.84946357784618
+      ],
+      "load_H3_dBc": -73.83684451430977,
+      "state_drift_V": [
+        -2.2911443853246283e-07,
+        -1.8503240162281998e-08,
+        -1.6429425984121337e-06
+      ],
+      "periodic_initial_state_V": [
+        2.1184038582548967,
+        0.6981273336832349,
+        2.510909231122457
+      ],
+      "solver_runs": 1,
+      "transient_points": 109423,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -5.396764923837338e-07
+    },
+    {
+      "case": "f1e+07_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 10000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.5,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 243.99721759375927,
+      "total_load_mW": 243.99735829416815,
+      "pa_join_Vpp": 11.782958854976062,
+      "chip": [
+        {
+          "plus_mA": 35.2735283108415,
+          "minus_mA": 35.27704855201822,
+          "plus_check_mA": 35.27347084002765,
+          "minus_check_mA": 35.276991082034854,
+          "dc_W": 1.0582586529428957,
+          "heat_W": 0.8846286029077188,
+          "external_real_output_W": 0.14806789313713814,
+          "feedback_loss_W": 0.02556215689803859,
+          "pin_Vpp": 12.02652666354664,
+          "pin_mean_V": 0.008967465110573848,
+          "peak_current_mA": 50.44302355073972,
+          "rms_current_mA": 35.24754819229127,
+          "mean_current_mA": -0.016185026920690522
+        },
+        {
+          "plus_mA": 35.27352839669214,
+          "minus_mA": 35.27704847016488,
+          "plus_check_mA": 35.273470926012536,
+          "minus_check_mA": 35.276991000167484,
+          "dc_W": 1.0582586530028553,
+          "heat_W": 0.8846286029504542,
+          "external_real_output_W": 0.14806789315415483,
+          "feedback_loss_W": 0.025562156898246247,
+          "pin_Vpp": 12.02652666311037,
+          "pin_mean_V": 0.008967465527100215,
+          "peak_current_mA": 50.44302341141698,
+          "rms_current_mA": 35.24754819700869,
+          "mean_current_mA": -0.016184859640969836
+        }
+      ],
+      "plus_total_mA": 70.54705670753364,
+      "minus_total_mA": 70.5540970221831,
+      "dc_total_W": 2.116517305945751,
+      "heat_total_W": 1.769257205858173,
+      "branch_resistor_loss_W": [
+        0.0030935502373840604,
+        0.003093550238212122
+      ],
+      "output_network_loss_W": 0.05213842799712484,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.42091109785151,
+      "logic_5V_pullup_mA": 20.8575071960407,
+      "logic_led_3V3_mA": 3.6150095233327875,
+      "logic_channel_peak_mA": [
+        35.73336926197365,
+        35.733299627227645
+      ],
+      "load_H3_dBc": -74.64225601809065,
+      "state_drift_V": [
+        -1.0070293287256504e-05,
+        1.8372453397530464e-06,
+        -8.979922734297929e-07
+      ],
+      "periodic_initial_state_V": [
+        2.126499596884901,
+        0.6583177002850003,
+        2.5116450944145936
+      ],
+      "solver_runs": 1,
+      "transient_points": 111068,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 3.060801683218983e-05
+    },
+    {
+      "case": "f1.4e+07_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 14000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.5,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 241.7921230483231,
+      "total_load_mW": 241.79222089818518,
+      "pa_join_Vpp": 11.760177048325179,
+      "chip": [
+        {
+          "plus_mA": 35.177511860718454,
+          "minus_mA": 35.17644780825734,
+          "plus_check_mA": 35.17745264486678,
+          "minus_check_mA": 35.17638859325588,
+          "dc_W": 1.055309395034637,
+          "heat_W": 0.883154571013587,
+          "external_real_output_W": 0.14672077210537526,
+          "feedback_loss_W": 0.025434051915674827,
+          "pin_Vpp": 12.002142866429343,
+          "pin_mean_V": 0.008885680091573932,
+          "peak_current_mA": 50.10893216037631,
+          "rms_current_mA": 35.04628607133246,
+          "mean_current_mA": -0.011486994785098278
+        },
+        {
+          "plus_mA": 35.17751176068851,
+          "minus_mA": 35.1764479084457,
+          "plus_check_mA": 35.17745254510723,
+          "minus_check_mA": 35.176388693242025,
+          "dc_W": 1.0553093950370132,
+          "heat_W": 0.8831545710102444,
+          "external_real_output_W": 0.14672077211110277,
+          "feedback_loss_W": 0.025434051915665938,
+          "pin_Vpp": 12.002142866370423,
+          "pin_mean_V": 0.00888567959589354,
+          "peak_current_mA": 50.10893207833787,
+          "rms_current_mA": 35.0462860756768,
+          "mean_current_mA": -0.011487193853592677
+        }
+      ],
+      "plus_total_mA": 70.35502362140696,
+      "minus_total_mA": 70.35289571670305,
+      "dc_total_W": 2.1106187900716504,
+      "heat_total_W": 1.7663091420238315,
+      "branch_resistor_loss_W": [
+        0.003058322996810242,
+        0.003058322997568461
+      ],
+      "output_network_loss_W": 0.05164932331829289,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.11831924178966,
+      "logic_5V_pullup_mA": 21.44245659550522,
+      "logic_led_3V3_mA": 3.6157443209545534,
+      "logic_channel_peak_mA": [
+        35.59444492582056,
+        35.59431548933834
+      ],
+      "load_H3_dBc": -75.73270544600217,
+      "state_drift_V": [
+        -3.9844683420664495e-05,
+        6.158334718397995e-06,
+        -1.553338478288424e-06
+      ],
+      "periodic_initial_state_V": [
+        2.140453374720307,
+        0.7117698298506406,
+        2.512256698896097
+      ],
+      "solver_runs": 1,
+      "transient_points": 109690,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -1.512719636220794e-05
+    },
+    {
+      "case": "f2.1e+07_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 21000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.5,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 237.91388681018788,
+      "total_load_mW": 237.913944089125,
+      "pa_join_Vpp": 11.718495128209906,
+      "chip": [
+        {
+          "plus_mA": 35.007665263551075,
+          "minus_mA": 35.00128166819033,
+          "plus_check_mA": 35.00762604601143,
+          "minus_check_mA": 35.00124245142563,
+          "dc_W": 1.0501342039761212,
+          "heat_W": 0.880574537185974,
+          "external_real_output_W": 0.14435275569387465,
+          "feedback_loss_W": 0.02520691109627256,
+          "pin_Vpp": 11.957575790868361,
+          "pin_mean_V": 0.00893501509541691,
+          "peak_current_mA": 49.536831193580646,
+          "rms_current_mA": 34.694375852601276,
+          "mean_current_mA": -0.0062360583264649315
+        },
+        {
+          "plus_mA": 35.0076652638879,
+          "minus_mA": 35.00128168550851,
+          "plus_check_mA": 35.00762604650513,
+          "minus_check_mA": 35.00124246869131,
+          "dc_W": 1.0501342042409463,
+          "heat_W": 0.8805745373729149,
+          "external_real_output_W": 0.14435275577127424,
+          "feedback_loss_W": 0.02520691109675707,
+          "pin_Vpp": 11.957575791112623,
+          "pin_mean_V": 0.008935015053816848,
+          "peak_current_mA": 49.53683070937395,
+          "rms_current_mA": 34.694375871007615,
+          "mean_current_mA": -0.006236075033330077
+        }
+      ],
+      "plus_total_mA": 70.01533052743898,
+      "minus_total_mA": 70.00256335369883,
+      "dc_total_W": 2.1002684082170675,
+      "heat_total_W": 1.761149074558889,
+      "branch_resistor_loss_W": [
+        0.00299721229234589,
+        0.0029972122955261
+      ],
+      "output_network_loss_W": 0.05079156737602389,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 57.576269342266684,
+      "logic_5V_pullup_mA": 22.446512762685767,
+      "logic_led_3V3_mA": 3.6165114515677863,
+      "logic_channel_peak_mA": [
+        35.38786729634131,
+        35.387622493990946
+      ],
+      "load_H3_dBc": -77.68788424989714,
+      "state_drift_V": [
+        -2.081624243022162e-05,
+        7.396781935842256e-06,
+        -6.596511541445693e-07
+      ],
+      "periodic_initial_state_V": [
+        2.151490560100421,
+        0.7085185999509203,
+        2.51284414275476
+      ],
+      "solver_runs": 1,
+      "transient_points": 103615,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -1.1436377977958045e-05
+    },
+    {
+      "case": "f2.8e+07_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 28000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.5,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 237.6868151909229,
+      "total_load_mW": 237.68685969192592,
+      "pa_join_Vpp": 11.711008784173076,
+      "chip": [
+        {
+          "plus_mA": 35.0047786902442,
+          "minus_mA": 34.996100942332745,
+          "plus_check_mA": 35.004735562359905,
+          "minus_check_mA": 34.99605781514813,
+          "dc_W": 1.0500131944886544,
+          "heat_W": 0.8806320419107432,
+          "external_real_output_W": 0.14421665701654748,
+          "feedback_loss_W": 0.02516449556136367,
+          "pin_Vpp": 11.950132245730336,
+          "pin_mean_V": 0.008915018269637219,
+          "peak_current_mA": 49.49013138366252,
+          "rms_current_mA": 34.68922254125642,
+          "mean_current_mA": -0.003914142746560194
+        },
+        {
+          "plus_mA": 35.00477917478784,
+          "minus_mA": 34.99610045294656,
+          "plus_check_mA": 35.004736046972035,
+          "minus_check_mA": 34.99605732581375,
+          "dc_W": 1.050013194416016,
+          "heat_W": 0.8806320417961371,
+          "external_real_output_W": 0.14421665705821846,
+          "feedback_loss_W": 0.02516449556166052,
+          "pin_Vpp": 11.950132246905898,
+          "pin_mean_V": 0.008915020686378283,
+          "peak_current_mA": 49.4901314628513,
+          "rms_current_mA": 34.6892225443451,
+          "mean_current_mA": -0.003913172167847444
+        }
+      ],
+      "plus_total_mA": 70.00955786503204,
+      "minus_total_mA": 69.9922013952793,
+      "dc_total_W": 2.1000263889046704,
+      "heat_total_W": 1.7612640837068803,
+      "branch_resistor_loss_W": [
+        0.002996321979686864,
+        0.00299632198022044
+      ],
+      "output_network_loss_W": 0.050746454382840006,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 57.4491504426819,
+      "logic_5V_pullup_mA": 23.52660529591116,
+      "logic_led_3V3_mA": 3.6165634622049323,
+      "logic_channel_peak_mA": [
+        35.34818587946374,
+        35.34772113202166
+      ],
+      "load_H3_dBc": -78.4747990733312,
+      "state_drift_V": [
+        -1.5801039927154648e-05,
+        3.112238820845992e-05,
+        -6.182394027831606e-07
+      ],
+      "periodic_initial_state_V": [
+        2.15909711242993,
+        0.6982459024353522,
+        2.513343396375193
+      ],
+      "solver_runs": 1,
+      "transient_points": 96408,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 4.638239214926898e-06
+    },
+    {
+      "case": "f5e+07_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 50000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.5,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 237.65675020954546,
+      "total_load_mW": 237.65677415675128,
+      "pa_join_Vpp": 11.698203360123863,
+      "chip": [
+        {
+          "plus_mA": 35.023130893443856,
+          "minus_mA": 35.01154927111002,
+          "plus_check_mA": 35.0230953326404,
+          "minus_check_mA": 35.011513711200095,
+          "dc_W": 1.050520202468308,
+          "heat_W": 0.8812228055868306,
+          "external_real_output_W": 0.14420544440194993,
+          "feedback_loss_W": 0.02509195247952746,
+          "pin_Vpp": 11.937781413546508,
+          "pin_mean_V": 0.008868100201705227,
+          "peak_current_mA": 49.453675519685504,
+          "rms_current_mA": 34.731454377710854,
+          "mean_current_mA": -0.0009449775300940258
+        },
+        {
+          "plus_mA": 35.02313068861875,
+          "minus_mA": 35.01154948175423,
+          "plus_check_mA": 35.02309512757281,
+          "minus_check_mA": 35.01151392188936,
+          "dc_W": 1.0505202025555946,
+          "heat_W": 0.8812228057303816,
+          "external_real_output_W": 0.14420544434611618,
+          "feedback_loss_W": 0.02509195247909688,
+          "pin_Vpp": 11.937781414523233,
+          "pin_mean_V": 0.00886809917009073,
+          "peak_current_mA": 49.453675490901745,
+          "rms_current_mA": 34.73145436914238,
+          "mean_current_mA": -0.0009453918331469394
+        }
+      ],
+      "plus_total_mA": 70.04626158206261,
+      "minus_total_mA": 70.02309875286426,
+      "dc_total_W": 2.1010404050239027,
+      "heat_total_W": 1.7624456113172122,
+      "branch_resistor_loss_W": [
+        0.003003622068745616,
+        0.00300362206726359
+      ],
+      "output_network_loss_W": 0.05075411459131479,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 57.1422344102593,
+      "logic_5V_pullup_mA": 26.746592517993758,
+      "logic_led_3V3_mA": 3.612997479868298,
+      "logic_channel_peak_mA": [
+        35.77138801373551,
+        35.7705077489799
+      ],
+      "load_H3_dBc": -80.89110799383748,
+      "state_drift_V": [
+        -3.719762183607145e-06,
+        -1.9735639021911666e-06,
+        -4.922971763576811e-07
+      ],
+      "periodic_initial_state_V": [
+        2.174170090626038,
+        0.6768738397779273,
+        2.5144707161607833
+      ],
+      "solver_runs": 1,
+      "transient_points": 82339,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 4.888559965721129e-05
+    },
+    {
+      "case": "f7e+07_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 70000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.5,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 237.83666201403642,
+      "total_load_mW": 237.83667678277047,
+      "pa_join_Vpp": 11.691700337127031,
+      "chip": [
+        {
+          "plus_mA": 35.04684282012448,
+          "minus_mA": 35.03442787562705,
+          "plus_check_mA": 35.046786113072045,
+          "minus_check_mA": 35.034371169255046,
+          "dc_W": 1.051219060436273,
+          "heat_W": 0.881834321292776,
+          "external_real_output_W": 0.14432114579089617,
+          "feedback_loss_W": 0.025063593352600926,
+          "pin_Vpp": 11.931784097790405,
+          "pin_mean_V": 0.008827349745244552,
+          "peak_current_mA": 49.459018724213394,
+          "rms_current_mA": 34.783240762162315,
+          "mean_current_mA": -5.502499159852843e-05
+        },
+        {
+          "plus_mA": 35.04684324400768,
+          "minus_mA": 35.03442744174077,
+          "plus_check_mA": 35.0467865374785,
+          "minus_check_mA": 35.03437073573737,
+          "dc_W": 1.0512190602862268,
+          "heat_W": 0.8818343211557765,
+          "external_real_output_W": 0.14432114577793256,
+          "feedback_loss_W": 0.025063593352517746,
+          "pin_Vpp": 11.931784097166373,
+          "pin_mean_V": 0.008827351874115194,
+          "peak_current_mA": 49.45901924722243,
+          "rms_current_mA": 34.78324076038361,
+          "mean_current_mA": -5.4170023553605204e-05
+        }
+      ],
+      "plus_total_mA": 70.09368606413216,
+      "minus_total_mA": 70.06885531736782,
+      "dc_total_W": 2.1024381207225,
+      "heat_total_W": 1.7636686424485526,
+      "branch_resistor_loss_W": [
+        0.003012585856417189,
+        0.003012585856109082
+      ],
+      "output_network_loss_W": 0.050805614786058245,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 56.88902534493253,
+      "logic_5V_pullup_mA": 29.54279713230813,
+      "logic_led_3V3_mA": 3.606037380118005,
+      "logic_channel_peak_mA": [
+        35.70743703672375,
+        35.69592067445794
+      ],
+      "load_H3_dBc": -83.0804763817836,
+      "state_drift_V": [
+        -7.560780219684204e-07,
+        4.4405251682921865e-05,
+        -4.422682193805372e-07
+      ],
+      "periodic_initial_state_V": [
+        2.1823338273475286,
+        0.6635975022554543,
+        2.5152993003445334
+      ],
+      "solver_runs": 1,
+      "transient_points": 74444,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 6.3757323198743165e-06
+    },
+    {
+      "case": "f1e+08_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 100000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.5,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 236.55919902830723,
+      "total_load_mW": 236.55921223461465,
+      "pa_join_Vpp": 11.657634927771864,
+      "chip": [
+        {
+          "plus_mA": 35.00364335728335,
+          "minus_mA": 34.99067256956194,
+          "plus_check_mA": 35.00358325632214,
+          "minus_check_mA": 34.990612469031355,
+          "dc_W": 1.0499147389026795,
+          "heat_W": 0.8813825581828488,
+          "external_real_output_W": 0.14355751733896052,
+          "feedback_loss_W": 0.024974663380870177,
+          "pin_Vpp": 11.897213768612293,
+          "pin_mean_V": 0.008787619256392447,
+          "peak_current_mA": 49.30311551529064,
+          "rms_current_mA": 34.69980901098964,
+          "mean_current_mA": 0.0005561342680778179
+        },
+        {
+          "plus_mA": 35.00364252872478,
+          "minus_mA": 34.99067340021147,
+          "plus_check_mA": 35.00358242692957,
+          "minus_check_mA": 34.9906132996721,
+          "dc_W": 1.0499147389340437,
+          "heat_W": 0.8813825582656714,
+          "external_real_output_W": 0.14355751728799165,
+          "feedback_loss_W": 0.024974663380380693,
+          "pin_Vpp": 11.897213767246198,
+          "pin_mean_V": 0.008787615137111859,
+          "peak_current_mA": 49.303115877934964,
+          "rms_current_mA": 34.69980898869799,
+          "mean_current_mA": 0.0005544799385434227
+        }
+      ],
+      "plus_total_mA": 70.00728588600813,
+      "minus_total_mA": 69.9813459697734,
+      "dc_total_W": 2.0998294778367232,
+      "heat_total_W": 1.76276511644852,
+      "branch_resistor_loss_W": [
+        0.0029981510960439034,
+        0.002998151092191793
+      ],
+      "output_network_loss_W": 0.05055582239233755,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 56.30159364741771,
+      "logic_5V_pullup_mA": 33.49354848876679,
+      "logic_led_3V3_mA": 3.5902948094537686,
+      "logic_channel_peak_mA": [
+        35.7411047271263,
+        35.6995312304861
+      ],
+      "load_H3_dBc": -83.76999384723166,
+      "state_drift_V": [
+        -1.3109823346901806e-06,
+        8.398477763793544e-06,
+        -3.703624869011435e-07
+      ],
+      "periodic_initial_state_V": [
+        2.1900823980858632,
+        0.6515768211335166,
+        2.5163669328301133
+      ],
+      "solver_runs": 1,
+      "transient_points": 68644,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -6.49480442760364e-06
+    },
+    {
+      "case": "f1.45e+08_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 145000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.5,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 234.68696259296019,
+      "total_load_mW": 234.6869773055437,
+      "pa_join_Vpp": 11.609736158193348,
+      "chip": [
+        {
+          "plus_mA": 34.94511311493967,
+          "minus_mA": 34.932127516902376,
+          "plus_check_mA": 34.94503701173211,
+          "minus_check_mA": 34.932051414713314,
+          "dc_W": 1.048158609477631,
+          "heat_W": 0.8808302455445746,
+          "external_real_output_W": 0.142438739149334,
+          "feedback_loss_W": 0.024889624783722378,
+          "pin_Vpp": 11.848592596510468,
+          "pin_mean_V": 0.008722260485001753,
+          "peak_current_mA": 49.080328866885665,
+          "rms_current_mA": 34.57734262269579,
+          "mean_current_mA": 0.0006617840618239992
+        },
+        {
+          "plus_mA": 34.945111909959486,
+          "minus_mA": 34.932128669903484,
+          "plus_check_mA": 34.94503580836896,
+          "minus_check_mA": 34.93205256586581,
+          "dc_W": 1.0481586086979446,
+          "heat_W": 0.8808302449547889,
+          "external_real_output_W": 0.1424387389608628,
+          "feedback_loss_W": 0.024889624782292955,
+          "pin_Vpp": 11.848592595543298,
+          "pin_mean_V": 0.008722254642608123,
+          "peak_current_mA": 49.08033099658378,
+          "rms_current_mA": 34.5773425549166,
+          "mean_current_mA": 0.0006594377190510432
+        }
+      ],
+      "plus_total_mA": 69.89022502489917,
+      "minus_total_mA": 69.86425618680586,
+      "dc_total_W": 2.0963172181755754,
+      "heat_total_W": 1.7616604904993634,
+      "branch_resistor_loss_W": [
+        0.0029770256308897644,
+        0.002977025619218515
+      ],
+      "output_network_loss_W": 0.05019050080465309,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 55.321512049325065,
+      "logic_5V_pullup_mA": 39.3821491678667,
+      "logic_led_3V3_mA": 3.5490341860151355,
+      "logic_channel_peak_mA": [
+        35.66445341900948,
+        35.61761137514541
+      ],
+      "load_H3_dBc": -85.17394529075445,
+      "state_drift_V": [
+        -1.4411155166982326e-06,
+        1.6622910758989917e-06,
+        -3.3158730472493403e-07
+      ],
+      "periodic_initial_state_V": [
+        2.19690975510184,
+        0.64146340014114,
+        2.5178893710048
+      ],
+      "solver_runs": 1,
+      "transient_points": 64642,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 2.3403676419064823e-05
+    },
+    {
+      "case": "f137000_n2_a0.6_loss0.5_rs40.2_rc30_rp0_step1000_off0",
+      "f_Hz": 137000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 40.2,
+      "common_ohms": 30,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 109.78479262242419,
+      "total_load_mW": 109.78482328012487,
+      "pa_join_Vpp": 11.811946594539199,
+      "chip": [
+        {
+          "plus_mA": 30.72699760052335,
+          "minus_mA": 30.71036508816157,
+          "plus_check_mA": 30.72695724532131,
+          "minus_check_mA": 30.710324733283333,
+          "dc_W": 0.9215604403302738,
+          "heat_W": 0.7629191175677296,
+          "external_real_output_W": 0.12158894300881026,
+          "feedback_loss_W": 0.037052379753733995,
+          "pin_Vpp": 14.459418506863877,
+          "pin_mean_V": 0.009037936223129709,
+          "peak_current_mA": 33.47039546112914,
+          "rms_current_mA": 23.715839626297218,
+          "mean_current_mA": 0.0038698323701009505
+        },
+        {
+          "plus_mA": 30.726997595826482,
+          "minus_mA": 30.710365092951207,
+          "plus_check_mA": 30.72695724539439,
+          "minus_check_mA": 30.71032473321473,
+          "dc_W": 0.9215604403316653,
+          "heat_W": 0.7629191175690633,
+          "external_real_output_W": 0.12158894300888251,
+          "feedback_loss_W": 0.03705237975371949,
+          "pin_Vpp": 14.45941850686846,
+          "pin_mean_V": 0.009037936228521526,
+          "peak_current_mA": 33.47039546144115,
+          "rms_current_mA": 23.715839626310405,
+          "mean_current_mA": 0.0038698325042299145
+        }
+      ],
+      "plus_total_mA": 61.45399519634984,
+      "minus_total_mA": 61.42073018111277,
+      "dc_total_W": 1.8431208806619392,
+      "heat_total_W": 1.525838235136793,
+      "branch_resistor_loss_W": [
+        0.022610130177046023,
+        0.022610130177071173
+      ],
+      "output_network_loss_W": 0.1333930627375679,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.79673982255149,
+      "logic_5V_pullup_mA": 18.838963575763202,
+      "logic_led_3V3_mA": 3.5878212763473103,
+      "logic_channel_peak_mA": [
+        36.37723698694263,
+        36.37723707374699
+      ],
+      "load_H3_dBc": -70.28138526050695,
+      "state_drift_V": [
+        -1.0772701554917496e-05,
+        1.1936827082337231e-09,
+        -4.555203784306627e-05
+      ],
+      "periodic_initial_state_V": [
+        2.0517956834235,
+        0.69290443174742,
+        2.4913268745307
+      ],
+      "solver_runs": 1,
+      "transient_points": 137812,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 0.0001352141999921841
+    },
+    {
+      "case": "f1.45e+08_n2_a0.6_loss0.5_rs40.2_rc30_rp0_step1000_off0",
+      "f_Hz": 145000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 40.2,
+      "common_ohms": 30,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 103.5242466418704,
+      "total_load_mW": 103.52425011354927,
+      "pa_join_Vpp": 11.529826690334225,
+      "chip": [
+        {
+          "plus_mA": 30.290515147675126,
+          "minus_mA": 30.280032378555315,
+          "plus_check_mA": 30.29046480196941,
+          "minus_check_mA": 30.279982032524444,
+          "dc_W": 0.9085582128934565,
+          "heat_W": 0.7588786214286368,
+          "external_real_output_W": 0.11436476084955872,
+          "feedback_loss_W": 0.035314830615260945,
+          "pin_Vpp": 14.115001227477325,
+          "pin_mean_V": 0.008382060790653586,
+          "peak_current_mA": 32.524360996638265,
+          "rms_current_mA": 22.96528582209959,
+          "mean_current_mA": -0.0013678459480257297
+        },
+        {
+          "plus_mA": 30.29051514597851,
+          "minus_mA": 30.280032381393365,
+          "plus_check_mA": 30.29046480070329,
+          "minus_check_mA": 30.27998203503067,
+          "dc_W": 0.9085582129105781,
+          "heat_W": 0.758878621440197,
+          "external_real_output_W": 0.11436476085464761,
+          "feedback_loss_W": 0.035314830615733456,
+          "pin_Vpp": 14.11500122622591,
+          "pin_mean_V": 0.008382060647363266,
+          "peak_current_mA": 32.52436100364222,
+          "rms_current_mA": 22.965285822937176,
+          "mean_current_mA": -0.0013678495124635134
+        }
+      ],
+      "plus_total_mA": 60.58103029365364,
+      "minus_total_mA": 60.56006475994868,
+      "dc_total_W": 1.8171164258040347,
+      "heat_total_W": 1.517757242868834,
+      "branch_resistor_loss_W": [
+        0.02120165498620729,
+        0.02120165498775381
+      ],
+      "output_network_loss_W": 0.12520527159065709,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 54.647662318678755,
+      "logic_5V_pullup_mA": 39.2164092562689,
+      "logic_led_3V3_mA": 3.549064976964763,
+      "logic_channel_peak_mA": [
+        35.43330050392649,
+        35.38735208267322
+      ],
+      "load_H3_dBc": -81.95381757690471,
+      "state_drift_V": [
+        -2.7777155087171934e-06,
+        3.0858111766951524e-06,
+        -5.960013100825279e-07
+      ],
+      "periodic_initial_state_V": [
+        2.19690975510184,
+        0.64146340014114,
+        2.5178893710048
+      ],
+      "solver_runs": 1,
+      "transient_points": 64688,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 6.581019618145945e-06
+    },
+    {
+      "case": "f137000_n2_a0.6_loss0.5_rs40_rc5_rp50_step1000_off0",
+      "f_Hz": 137000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 40,
+      "common_ohms": 5,
+      "shunt_ohms": 50,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 100.80371101708823,
+      "total_load_mW": 100.80376944667032,
+      "pa_join_Vpp": 8.923612393466758,
+      "chip": [
+        {
+          "plus_mA": 42.36380131604573,
+          "minus_mA": 42.28917824194056,
+          "plus_check_mA": 42.36373013774202,
+          "minus_check_mA": 42.289107064135386,
+          "dc_W": 1.2697946933697943,
+          "heat_W": 0.9780258554487494,
+          "external_real_output_W": 0.25471678044224183,
+          "feedback_loss_W": 0.037052057478803,
+          "pin_Vpp": 14.459351372598755,
+          "pin_mean_V": 0.009038116015033675,
+          "peak_current_mA": 69.60076332323898,
+          "rms_current_mA": 49.41366458134222,
+          "mean_current_mA": 0.06186014513565903
+        },
+        {
+          "plus_mA": 42.36380130387949,
+          "minus_mA": 42.28917825412378,
+          "plus_check_mA": 42.36373013777602,
+          "minus_check_mA": 42.289107064110645,
+          "dc_W": 1.269794693370049,
+          "heat_W": 0.978025855448963,
+          "external_real_output_W": 0.25471678044226265,
+          "feedback_loss_W": 0.03705205747882349,
+          "pin_Vpp": 14.459351372583203,
+          "pin_mean_V": 0.009038116017153732,
+          "peak_current_mA": 69.60076332342125,
+          "rms_current_mA": 49.413664581345245,
+          "mean_current_mA": 0.061860145188662584
+        }
+      ],
+      "plus_total_mA": 84.72760261992522,
+      "minus_total_mA": 84.57835649606434,
+      "dc_total_W": 2.539589386739843,
+      "heat_total_W": 1.9560517108977125,
+      "branch_resistor_loss_W": [
+        0.09766840989429579,
+        0.09766840989430775
+      ],
+      "output_network_loss_W": 0.4086297914378341,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.796748603884915,
+      "logic_5V_pullup_mA": 18.838962194319738,
+      "logic_led_3V3_mA": 3.5878212742487356,
+      "logic_channel_peak_mA": [
+        36.37727348567223,
+        36.37727364310122
+      ],
+      "load_H3_dBc": -70.44587582228175,
+      "state_drift_V": [
+        -1.095021343855418e-05,
+        1.2367833424065111e-09,
+        -4.5535318802247815e-05
+      ],
+      "periodic_initial_state_V": [
+        2.0517956834235,
+        0.69290443174742,
+        2.4913268745307
+      ],
+      "solver_runs": 1,
+      "transient_points": 137631,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 2.3458960574096466e-05
+    },
+    {
+      "case": "f1.45e+08_n2_a0.6_loss0.5_rs40_rc5_rp50_step1000_off0",
+      "f_Hz": 145000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 40,
+      "common_ohms": 5,
+      "shunt_ohms": 50,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 95.32167283209716,
+      "total_load_mW": 95.32167873884148,
+      "pa_join_Vpp": 8.737986672546235,
+      "chip": [
+        {
+          "plus_mA": 41.65562521836429,
+          "minus_mA": 41.58860014850772,
+          "plus_check_mA": 41.655545279514726,
+          "minus_check_mA": 41.588520210141745,
+          "dc_W": 1.2486633805030802,
+          "heat_W": 0.9720704698215205,
+          "external_real_output_W": 0.2410852329092497,
+          "feedback_loss_W": 0.035507677772310134,
+          "pin_Vpp": 14.147836303915543,
+          "pin_mean_V": 0.008381429137348404,
+          "peak_current_mA": 67.9186133590242,
+          "rms_current_mA": 48.04796997751341,
+          "mean_current_mA": 0.05517533113407685
+        },
+        {
+          "plus_mA": 41.6556251267693,
+          "minus_mA": 41.58860024308652,
+          "plus_check_mA": 41.655545188722805,
+          "minus_check_mA": 41.58852030382771,
+          "dc_W": 1.2486633805478373,
+          "heat_W": 0.9720704698383421,
+          "external_real_output_W": 0.24108523293507472,
+          "feedback_loss_W": 0.0355076777744204,
+          "pin_Vpp": 14.147836300556968,
+          "pin_mean_V": 0.008381422147679434,
+          "peak_current_mA": 67.91861321024595,
+          "rms_current_mA": 48.04796998131277,
+          "mean_current_mA": 0.05517515639235528
+        }
+      ],
+      "plus_total_mA": 83.3112503451336,
+      "minus_total_mA": 83.17720039159424,
+      "dc_total_W": 2.4973267610509176,
+      "heat_total_W": 1.9441409396598626,
+      "branch_resistor_loss_W": [
+        0.09234429675840121,
+        0.09234429677300532
+      ],
+      "output_network_loss_W": 0.386848787105483,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 54.64765376221833,
+      "logic_5V_pullup_mA": 39.21639244020159,
+      "logic_led_3V3_mA": 3.5490649794411997,
+      "logic_channel_peak_mA": [
+        35.43324250627531,
+        35.387346109732455
+      ],
+      "load_H3_dBc": -82.94912621597945,
+      "state_drift_V": [
+        -2.7800504445174568e-06,
+        3.0847996962402036e-06,
+        -5.960543503213955e-07
+      ],
+      "periodic_initial_state_V": [
+        2.19690975510184,
+        0.64146340014114,
+        2.5178893710048
+      ],
+      "solver_runs": 1,
+      "transient_points": 64694,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -4.852362788243525e-05
+    },
+    {
+      "case": "f137000_n2_a0.6_loss0_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 137000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 446.32217136501833,
+      "total_load_mW": 446.3226681172253,
+      "pa_join_Vpp": 15.004104824261336,
+      "chip": [
+        {
+          "plus_mA": 40.43866034053801,
+          "minus_mA": 40.42320199816158,
+          "plus_check_mA": 40.43859080671919,
+          "minus_check_mA": 40.423132465481345,
+          "dc_W": 1.2129279350804938,
+          "heat_W": 0.9299237185616034,
+          "external_real_output_W": 0.2414319311210613,
+          "feedback_loss_W": 0.04157228539782911,
+          "pin_Vpp": 15.315971536291709,
+          "pin_mean_V": 0.009053376895921506,
+          "peak_current_mA": 64.88121521449196,
+          "rms_current_mA": 45.1431550152843,
+          "mean_current_mA": 0.0026741974463059407
+        },
+        {
+          "plus_mA": 40.43866032262622,
+          "minus_mA": 40.42320201483168,
+          "plus_check_mA": 40.43859080689689,
+          "minus_check_mA": 40.42313246536948,
+          "dc_W": 1.2129279350618685,
+          "heat_W": 0.9299237185426918,
+          "external_real_output_W": 0.24143193112136424,
+          "feedback_loss_W": 0.041572285397812395,
+          "pin_Vpp": 15.315971536314862,
+          "pin_mean_V": 0.009053376896642195,
+          "peak_current_mA": 64.88121522124997,
+          "rms_current_mA": 45.1431550153728,
+          "mean_current_mA": 0.0026741977356880935
+        }
+      ],
+      "plus_total_mA": 80.87732066316423,
+      "minus_total_mA": 80.84640401299326,
+      "dc_total_W": 2.425855870142362,
+      "heat_total_W": 1.8598474371042952,
+      "branch_resistor_loss_W": [
+        0.005074382067387631,
+        0.005074382067407526
+      ],
+      "output_network_loss_W": 0.03654119412520018,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 65.96955121761412,
+      "logic_5V_pullup_mA": 18.83863369345635,
+      "logic_led_3V3_mA": 3.5878213595215853,
+      "logic_channel_peak_mA": [
+        36.37772144949836,
+        36.37772145005837
+      ],
+      "load_H3_dBc": -71.80283248212919,
+      "state_drift_V": [
+        -1.183739306731546e-05,
+        -5.066417285704006e-10,
+        -4.5329881802391725e-05
+      ],
+      "periodic_initial_state_V": [
+        2.0517956834235,
+        0.69290443174742,
+        2.4913268745307
+      ],
+      "solver_runs": 1,
+      "transient_points": 138674,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 0.0001122307504042297
+    },
+    {
+      "case": "f137000_n2_a0.6_loss1_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 137000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 1,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 281.6222172147214,
+      "total_load_mW": 281.62253051176367,
+      "pa_join_Vpp": 13.372714631599276,
+      "chip": [
+        {
+          "plus_mA": 37.869127810276574,
+          "minus_mA": 37.853991806714966,
+          "plus_check_mA": 37.86905821970951,
+          "minus_check_mA": 37.85392221710613,
+          "dc_W": 1.135846794254873,
+          "heat_W": 0.9110390272133622,
+          "external_real_output_W": 0.1917843029254046,
+          "feedback_loss_W": 0.03302346411610609,
+          "pin_Vpp": 13.650670305729381,
+          "pin_mean_V": 0.009024877718542523,
+          "peak_current_mA": 57.8266046609565,
+          "rms_current_mA": 40.23472435422696,
+          "mean_current_mA": 0.0023914688086023386
+        },
+        {
+          "plus_mA": 37.86912780012628,
+          "minus_mA": 37.85399181598733,
+          "plus_check_mA": 37.869058220222115,
+          "minus_check_mA": 37.85392221646286,
+          "dc_W": 1.135846794241704,
+          "heat_W": 0.9110390272009083,
+          "external_real_output_W": 0.19178430292469567,
+          "feedback_loss_W": 0.03302346411609997,
+          "pin_Vpp": 13.65067030573432,
+          "pin_mean_V": 0.009024877721415326,
+          "peak_current_mA": 57.82660466589321,
+          "rms_current_mA": 40.23472435407214,
+          "mean_current_mA": 0.0023914699623183984
+        }
+      ],
+      "plus_total_mA": 75.73825561040286,
+      "minus_total_mA": 75.7079836227023,
+      "dc_total_W": 2.2716935884965768,
+      "heat_total_W": 1.8220780544142705,
+      "branch_resistor_loss_W": [
+        0.004030894279212955,
+        0.004030894279181933
+      ],
+      "output_network_loss_W": 0.1019460753383366,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 52.40367937183932,
+      "logic_5V_pullup_mA": 18.83925112354913,
+      "logic_led_3V3_mA": 3.5878212051456218,
+      "logic_channel_peak_mA": [
+        36.376846895119655,
+        36.37684692101854
+      ],
+      "load_H3_dBc": -71.80142124888401,
+      "state_drift_V": [
+        -1.1465140472566304e-05,
+        3.794928815636922e-10,
+        -4.53795126680312e-05
+      ],
+      "periodic_initial_state_V": [
+        2.0517956834235,
+        0.69290443174742,
+        2.4913268745307
+      ],
+      "solver_runs": 1,
+      "transient_points": 137923,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 0.00011945775588717567
+    },
+    {
+      "case": "f1.45e+08_n2_a0.6_loss0_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 145000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 419.7141211319579,
+      "total_load_mW": 419.7141501561133,
+      "pa_join_Vpp": 14.655236590941481,
+      "chip": [
+        {
+          "plus_mA": 39.70364703695991,
+          "minus_mA": 39.69448669859081,
+          "plus_check_mA": 39.70355594049385,
+          "minus_check_mA": 39.694395603388855,
+          "dc_W": 1.1909720060332607,
+          "heat_W": 0.9242652258089799,
+          "external_real_output_W": 0.22703490139270788,
+          "feedback_loss_W": 0.039671878831572985,
+          "pin_Vpp": 14.95684060601478,
+          "pin_mean_V": 0.008246944494427592,
+          "peak_current_mA": 61.9745844407474,
+          "rms_current_mA": 43.65402176288275,
+          "mean_current_mA": -0.0025024039251822306
+        },
+        {
+          "plus_mA": 39.703646627027524,
+          "minus_mA": 39.69448681934269,
+          "plus_check_mA": 39.703555530552926,
+          "minus_check_mA": 39.694395724430784,
+          "dc_W": 1.1909720016955532,
+          "heat_W": 0.9242652233349345,
+          "external_real_output_W": 0.22703489954213493,
+          "feedback_loss_W": 0.03967187881848368,
+          "pin_Vpp": 14.956840605174254,
+          "pin_mean_V": 0.00824694317692095,
+          "peak_current_mA": 61.97458429884395,
+          "rms_current_mA": 43.65402143864375,
+          "mean_current_mA": -0.0025029330443630095
+        }
+      ],
+      "plus_total_mA": 79.40729366398743,
+      "minus_total_mA": 79.3889735179335,
+      "dc_total_W": 2.381944007728814,
+      "heat_total_W": 1.8485304491439143,
+      "branch_resistor_loss_W": [
+        0.00474512730402486,
+        0.004745127233536266
+      ],
+      "output_network_loss_W": 0.03435565077872954,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 61.051703911127326,
+      "logic_5V_pullup_mA": 39.15095282978189,
+      "logic_led_3V3_mA": 3.549077252591167,
+      "logic_channel_peak_mA": [
+        35.34216799758955,
+        35.29615105641025
+      ],
+      "load_H3_dBc": -84.841219460805,
+      "state_drift_V": [
+        -3.294930698505283e-06,
+        3.650194455695477e-06,
+        -6.967659818002403e-07
+      ],
+      "periodic_initial_state_V": [
+        2.19690975510184,
+        0.64146340014114,
+        2.5178893710048
+      ],
+      "solver_runs": 1,
+      "transient_points": 64707,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 7.941741551054093e-05
+    },
+    {
+      "case": "f1.45e+08_n2_a0.6_loss1_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 145000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 1,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 266.9934578667398,
+      "total_load_mW": 266.9934751095149,
+      "pa_join_Vpp": 13.115754887850152,
+      "chip": [
+        {
+          "plus_mA": 37.29842265119552,
+          "minus_mA": 37.287067042423104,
+          "plus_check_mA": 37.298352888981,
+          "minus_check_mA": 37.28699728118587,
+          "dc_W": 1.1187823454042796,
+          "heat_W": 0.9051921836538689,
+          "external_real_output_W": 0.18181923238517056,
+          "feedback_loss_W": 0.03177092936524007,
+          "pin_Vpp": 13.385667065767283,
+          "pin_mean_V": 0.008498409108369485,
+          "peak_current_mA": 55.45645971417654,
+          "rms_current_mA": 39.06588609816048,
+          "mean_current_mA": -0.0006567757751342988
+        },
+        {
+          "plus_mA": 37.2984199236939,
+          "minus_mA": 37.28706967448871,
+          "plus_check_mA": 37.29835016506998,
+          "minus_check_mA": 37.28699991344112,
+          "dc_W": 1.1187823439727393,
+          "heat_W": 0.9051921828234151,
+          "external_real_output_W": 0.181819231788534,
+          "feedback_loss_W": 0.031770929360790255,
+          "pin_Vpp": 13.385667064333813,
+          "pin_mean_V": 0.00849839581761196,
+          "peak_current_mA": 55.45646285637237,
+          "rms_current_mA": 39.06588595187972,
+          "mean_current_mA": -0.0006621134286737824
+        }
+      ],
+      "plus_total_mA": 74.59684257488942,
+      "minus_total_mA": 74.57413671691182,
+      "dc_total_W": 2.237564689377019,
+      "heat_total_W": 1.810384366477284,
+      "branch_resistor_loss_W": [
+        0.0038000972070197773,
+        0.003800097178561131
+      ],
+      "output_network_loss_W": 0.09664498906418967,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 48.89280012618017,
+      "logic_5V_pullup_mA": 39.27528857075875,
+      "logic_led_3V3_mA": 3.549054054702442,
+      "logic_channel_peak_mA": [
+        35.5146971202728,
+        35.46894168334025
+      ],
+      "load_H3_dBc": -84.982997892925,
+      "state_drift_V": [
+        -2.3036856817704177e-06,
+        2.581161528070197e-06,
+        -5.029669503109346e-07
+      ],
+      "periodic_initial_state_V": [
+        2.19690975510184,
+        0.64146340014114,
+        2.5178893710048
+      ],
+      "solver_runs": 1,
+      "transient_points": 64635,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -2.1050763965302366e-05
+    },
+    {
+      "case": "f137000_n2_a0.6_loss0.5_rs1_rc0_rp0_step1000_off0",
+      "f_Hz": 137000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 1,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 363.2227929997259,
+      "total_load_mW": 363.2231969125895,
+      "pa_join_Vpp": 14.339678295668612,
+      "chip": [
+        {
+          "plus_mA": 39.34736551606321,
+          "minus_mA": 39.332142631473104,
+          "plus_check_mA": 39.347306521503434,
+          "minus_check_mA": 39.33208363553274,
+          "dc_W": 1.180192622213045,
+          "heat_W": 0.9254585326232951,
+          "external_real_output_W": 0.21768191086334052,
+          "feedback_loss_W": 0.03705217872640928,
+          "pin_Vpp": 14.459370037137635,
+          "pin_mean_V": 0.00903744887746775,
+          "peak_current_mA": 62.02715193000241,
+          "rms_current_mA": 43.137328071845246,
+          "mean_current_mA": 0.0024608856189370022
+        },
+        {
+          "plus_mA": 39.34736552166964,
+          "minus_mA": 39.33214262743016,
+          "plus_check_mA": 39.347306522770864,
+          "minus_check_mA": 39.33208363443367,
+          "dc_W": 1.180192622236497,
+          "heat_W": 0.9254585326459475,
+          "external_real_output_W": 0.21768191086414376,
+          "feedback_loss_W": 0.037052178726405614,
+          "pin_Vpp": 14.459370037081406,
+          "pin_mean_V": 0.009037448879830599,
+          "peak_current_mA": 62.02715193272823,
+          "rms_current_mA": 43.137328072052085,
+          "mean_current_mA": 0.002460887981944446
+        }
+      ],
+      "plus_total_mA": 78.69473103773285,
+      "minus_total_mA": 78.66428525890326,
+      "dc_total_W": 2.360385244449542,
+      "heat_total_W": 1.8509170652692426,
+      "branch_resistor_loss_W": [
+        0.0018608290731780077,
+        0.0018608290731958526
+      ],
+      "output_network_loss_W": 0.07214062481489475,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.796734870303176,
+      "logic_5V_pullup_mA": 18.838962937386547,
+      "logic_led_3V3_mA": 3.5878212997158743,
+      "logic_channel_peak_mA": [
+        36.377224418111396,
+        36.377224312769044
+      ],
+      "load_H3_dBc": -71.90346570465282,
+      "state_drift_V": [
+        -1.1439403680313376e-05,
+        1.2964730622400111e-08,
+        -4.543843606574782e-05
+      ],
+      "periodic_initial_state_V": [
+        2.0517956834235,
+        0.69290443174742,
+        2.4913268745307
+      ],
+      "solver_runs": 1,
+      "transient_points": 138272,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 0.00013478282274714815
+    },
+    {
+      "case": "f137000_n2_a0.6_loss0.5_rs10_rc0_rp0_step1000_off0",
+      "f_Hz": 137000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 10,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 315.09334142976616,
+      "total_load_mW": 315.0936614364962,
+      "pa_join_Vpp": 13.345228068393798,
+      "chip": [
+        {
+          "plus_mA": 38.034120371054776,
+          "minus_mA": 38.01851677789228,
+          "plus_check_mA": 38.03405510753561,
+          "minus_check_mA": 38.018451514422004,
+          "dc_W": 1.1407895572342057,
+          "heat_W": 0.9003711449106611,
+          "external_real_output_W": 0.20336620045225606,
+          "feedback_loss_W": 0.03705221187128861,
+          "pin_Vpp": 14.459383559478589,
+          "pin_mean_V": 0.009038337146513307,
+          "peak_current_mA": 57.57957224593428,
+          "rms_current_mA": 40.178096348807806,
+          "mean_current_mA": 0.002840353578114696
+        },
+        {
+          "plus_mA": 38.03412036406166,
+          "minus_mA": 38.01851678330995,
+          "plus_check_mA": 38.034055107694684,
+          "minus_check_mA": 38.0184515142907,
+          "dc_W": 1.140789557210574,
+          "heat_W": 0.9003711448868262,
+          "external_real_output_W": 0.20336620045244577,
+          "feedback_loss_W": 0.03705221187130188,
+          "pin_Vpp": 14.45938355952602,
+          "pin_mean_V": 0.009038337149368095,
+          "peak_current_mA": 57.57957224206564,
+          "rms_current_mA": 40.178096348839155,
+          "mean_current_mA": 0.0028403538635996457
+        }
+      ],
+      "plus_total_mA": 76.06824073511643,
+      "minus_total_mA": 76.03703356120224,
+      "dc_total_W": 2.2815791144447797,
+      "heat_total_W": 1.8007422897974874,
+      "branch_resistor_loss_W": [
+        0.016142794262140832,
+        0.01614279426216602
+      ],
+      "output_network_loss_W": 0.09163873946820567,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.796742441733926,
+      "logic_5V_pullup_mA": 18.838961998426456,
+      "logic_led_3V3_mA": 3.587821264718933,
+      "logic_channel_peak_mA": [
+        36.37722208140038,
+        36.377222227273215
+      ],
+      "load_H3_dBc": -71.34548594472935,
+      "state_drift_V": [
+        -1.0831641397701652e-05,
+        8.914832205775269e-10,
+        -4.557142356853561e-05
+      ],
+      "periodic_initial_state_V": [
+        2.0517956834235,
+        0.69290443174742,
+        2.4913268745307
+      ],
+      "solver_runs": 1,
+      "transient_points": 138138,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 6.829455068135815e-05
+    },
+    {
+      "case": "f1.45e+08_n2_a0.6_loss0.5_rs1_rc0_rp0_step1000_off0",
+      "f_Hz": 145000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 1,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 343.060126283708,
+      "total_load_mW": 343.0601485695064,
+      "pa_join_Vpp": 14.036187863541858,
+      "chip": [
+        {
+          "plus_mA": 38.695066425541164,
+          "minus_mA": 38.68469773285544,
+          "plus_check_mA": 38.695015742091066,
+          "minus_check_mA": 38.6846470492097,
+          "dc_W": 1.160696462375949,
+          "heat_W": 0.9195705663237532,
+          "external_real_output_W": 0.205609636024901,
+          "feedback_loss_W": 0.03551626002729475,
+          "pin_Vpp": 14.152170160776926,
+          "pin_mean_V": 0.008382635659163952,
+          "peak_current_mA": 59.35480260884862,
+          "rms_current_mA": 41.80539760525529,
+          "mean_current_mA": -0.0014827560119712636
+        },
+        {
+          "plus_mA": 38.695066438573484,
+          "minus_mA": 38.684697490853374,
+          "plus_check_mA": 38.695015755219565,
+          "minus_check_mA": 38.684646807086345,
+          "dc_W": 1.1606964589414028,
+          "heat_W": 0.9195705642941236,
+          "external_real_output_W": 0.20560963462414608,
+          "feedback_loss_W": 0.03551626002313318,
+          "pin_Vpp": 14.152170160202125,
+          "pin_mean_V": 0.008382635914066745,
+          "peak_current_mA": 59.35480200933618,
+          "rms_current_mA": 41.805397346218854,
+          "mean_current_mA": -0.00148250110921518
+        }
+      ],
+      "plus_total_mA": 77.39013286411465,
+      "minus_total_mA": 77.3693952237088,
+      "dc_total_W": 2.3213929213173516,
+      "heat_total_W": 1.8391411306178769,
+      "branch_resistor_loss_W": [
+        0.001747691268933484,
+        0.0017476912472752426
+      ],
+      "output_network_loss_W": 0.06815912207954067,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 54.64767726264495,
+      "logic_5V_pullup_mA": 39.216376282083445,
+      "logic_led_3V3_mA": 3.5490649747929144,
+      "logic_channel_peak_mA": [
+        35.43341102298651,
+        35.38758883610541
+      ],
+      "load_H3_dBc": -85.01438974706085,
+      "state_drift_V": [
+        -2.778977905570912e-06,
+        3.086116169614961e-06,
+        -5.96925151086225e-07
+      ],
+      "periodic_initial_state_V": [
+        2.19690975510184,
+        0.64146340014114,
+        2.5178893710048
+      ],
+      "solver_runs": 1,
+      "transient_points": 64674,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 2.9960429515085707e-05
+    },
+    {
+      "case": "f1.45e+08_n2_a0.6_loss0.5_rs10_rc0_rp0_step1000_off0",
+      "f_Hz": 145000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 10,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 297.49762238602466,
+      "total_load_mW": 297.4976432148723,
+      "pa_join_Vpp": 13.065244133207653,
+      "chip": [
+        {
+          "plus_mA": 37.41312864571858,
+          "minus_mA": 37.402817940063166,
+          "plus_check_mA": 37.413057039415,
+          "minus_check_mA": 37.40274633408986,
+          "dc_W": 1.1222391987867262,
+          "heat_W": 0.8948130588515935,
+          "external_real_output_W": 0.19194249192006704,
+          "feedback_loss_W": 0.03548364801506566,
+          "pin_Vpp": 14.14632259049198,
+          "pin_mean_V": 0.00838298837090038,
+          "peak_current_mA": 55.261562664622005,
+          "rms_current_mA": 38.930480874654165,
+          "mean_current_mA": -0.001541211261437428
+        },
+        {
+          "plus_mA": 37.4131291657581,
+          "minus_mA": 37.402817446465626,
+          "plus_check_mA": 37.41305756105621,
+          "minus_check_mA": 37.40274583955402,
+          "dc_W": 1.1222391991833558,
+          "heat_W": 0.8948130590416149,
+          "external_real_output_W": 0.191942492121319,
+          "feedback_loss_W": 0.035483648020421935,
+          "pin_Vpp": 14.146322593785595,
+          "pin_mean_V": 0.008382998393231996,
+          "peak_current_mA": 55.26156315781673,
+          "rms_current_mA": 38.93048091510816,
+          "mean_current_mA": -0.0015402090282744905
+        }
+      ],
+      "plus_total_mA": 74.82625781147668,
+      "minus_total_mA": 74.80563538652879,
+      "dc_total_W": 2.2444783979700818,
+      "heat_total_W": 1.7896261178932082,
+      "branch_resistor_loss_W": [
+        0.015155823411318136,
+        0.01515582344281601
+      ],
+      "output_network_loss_W": 0.08638734082651373,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 54.647653982042556,
+      "logic_5V_pullup_mA": 39.216396859711004,
+      "logic_led_3V3_mA": 3.54906497539809,
+      "logic_channel_peak_mA": [
+        35.43331549857747,
+        35.387514084535766
+      ],
+      "load_H3_dBc": -84.42354899878933,
+      "state_drift_V": [
+        -2.78159525946009e-06,
+        3.084157482846628e-06,
+        -5.968903948883053e-07
+      ],
+      "periodic_initial_state_V": [
+        2.19690975510184,
+        0.64146340014114,
+        2.5178893710048
+      ],
+      "solver_runs": 1,
+      "transient_points": 64682,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 3.886089634530521e-05
+    },
+    {
+      "case": "f137000_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.0225",
+      "f_Hz": 137000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0.0225,
+      "fundamental_output_mW": 354.53455646371043,
+      "total_load_mW": 354.534951109076,
+      "pa_join_Vpp": 14.164952294966515,
+      "chip": [
+        {
+          "plus_mA": 34.764131313611486,
+          "minus_mA": 43.803498866972824,
+          "plus_check_mA": 34.76405235238349,
+          "minus_check_mA": 43.80341990463261,
+          "dc_W": 1.1785144527087648,
+          "heat_W": 0.9261596961798357,
+          "external_real_output_W": 0.2153024256856115,
+          "feedback_loss_W": 0.03705233084331752,
+          "pin_Vpp": 14.4593674500083,
+          "pin_mean_V": -0.013430481765660144,
+          "peak_current_mA": 70.27600397215812,
+          "rms_current_mA": 43.56260976902789,
+          "mean_current_mA": -9.020881466402189
+        },
+        {
+          "plus_mA": 43.84860797227721,
+          "minus_mA": 34.77866110401004,
+          "plus_check_mA": 43.848543100488634,
+          "minus_check_mA": 34.77859621274199,
+          "dc_W": 1.1794090361443088,
+          "heat_W": 0.9268899240836779,
+          "external_real_output_W": 0.21546564287689177,
+          "feedback_loss_W": 0.03705346918373918,
+          "pin_Vpp": 14.459367450018135,
+          "pin_mean_V": 0.03150609322534282,
+          "peak_current_mA": 69.47230756858806,
+          "rms_current_mA": 43.5636566936242,
+          "mean_current_mA": 9.025935799060845
+        }
+      ],
+      "plus_total_mA": 78.6127392858887,
+      "minus_total_mA": 78.58215997098287,
+      "dc_total_W": 2.3579234888530736,
+      "heat_total_W": 1.8530496202635136,
+      "branch_resistor_loss_W": [
+        0.004725275415022623,
+        0.004725502539454674
+      ],
+      "output_network_loss_W": 0.07623311745342726,
+      "circulating_peak_mA": 8.96934681072157,
+      "circulating_rms_mA": 1.6310329536141497,
+      "input_fundamental_equiv50_mW": 58.79675850408244,
+      "logic_5V_pullup_mA": 18.838961414655962,
+      "logic_led_3V3_mA": 3.5878212964087,
+      "logic_channel_peak_mA": [
+        36.37718087587875,
+        36.377181071557196
+      ],
+      "load_H3_dBc": -71.80122354000301,
+      "state_drift_V": [
+        -1.1482427223152847e-05,
+        1.308439856462229e-08,
+        -4.541701404336962e-05
+      ],
+      "periodic_initial_state_V": [
+        2.0517956834235,
+        0.69290443174742,
+        2.4913268745307
+      ],
+      "solver_runs": 1,
+      "transient_points": 137982,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 7.871575178342027e-05
+    },
+    {
+      "case": "f1.45e+08_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.0225",
+      "f_Hz": 145000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0.0225,
+      "fundamental_output_mW": 334.8322479150854,
+      "total_load_mW": 334.83227013583775,
+      "pa_join_Vpp": 13.865792527104269,
+      "chip": [
+        {
+          "plus_mA": 34.13588583627101,
+          "minus_mA": 43.18020162563204,
+          "plus_check_mA": 34.1358165692218,
+          "minus_check_mA": 43.18013235746839,
+          "dc_W": 1.1597413119285458,
+          "heat_W": 0.9208834992126945,
+          "external_real_output_W": 0.2033471559061849,
+          "feedback_loss_W": 0.03551065680966637,
+          "pin_Vpp": 14.151126596631379,
+          "pin_mean_V": -0.014086870345624605,
+          "peak_current_mA": 67.65516202869915,
+          "rms_current_mA": 42.2755940343655,
+          "mean_current_mA": -9.024916914789257
+        },
+        {
+          "plus_mA": 43.190809517448656,
+          "minus_mA": 34.12581295445951,
+          "plus_check_mA": 43.190732618465596,
+          "minus_check_mA": 34.12573605514528,
+          "dc_W": 1.1597493370786225,
+          "heat_W": 0.9207392780154832,
+          "external_real_output_W": 0.20349834595319116,
+          "feedback_loss_W": 0.03551171310994821,
+          "pin_Vpp": 14.151126595912746,
+          "pin_mean_V": 0.030849699463210985,
+          "peak_current_mA": 67.62056677819506,
+          "rms_current_mA": 42.274949745109986,
+          "mean_current_mA": 9.021898269482051
+        }
+      ],
+      "plus_total_mA": 77.32669535371966,
+      "minus_total_mA": 77.30601458009156,
+      "dc_total_W": 2.319490649007168,
+      "heat_total_W": 1.8416227772281777,
+      "branch_resistor_loss_W": [
+        0.004450192368886614,
+        0.0044500567261194215
+      ],
+      "output_network_loss_W": 0.0720132317235383,
+      "circulating_peak_mA": 9.019752936731555,
+      "circulating_rms_mA": 1.6433864024678713,
+      "input_fundamental_equiv50_mW": 54.647661439360405,
+      "logic_5V_pullup_mA": 39.216394311313024,
+      "logic_led_3V3_mA": 3.549064961080953,
+      "logic_channel_peak_mA": [
+        35.433138822512156,
+        35.387282795752455
+      ],
+      "load_H3_dBc": -84.91161167975058,
+      "state_drift_V": [
+        -2.783257265104311e-06,
+        3.0847769380004664e-06,
+        -5.96857973711451e-07
+      ],
+      "periodic_initial_state_V": [
+        2.19690975510184,
+        0.64146340014114,
+        2.5178893710048
+      ],
+      "solver_runs": 1,
+      "transient_points": 64678,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -2.7332522356537936e-05
+    },
+    {
+      "case": "f137000_n2_a0.75_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 137000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.75,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 554.0111225039115,
+      "total_load_mW": 554.0117395979685,
+      "pa_join_Vpp": 17.707003968494426,
+      "chip": [
+        {
+          "plus_mA": 44.69586029579588,
+          "minus_mA": 44.67988664993305,
+          "plus_check_mA": 44.69574832855545,
+          "minus_check_mA": 44.67977468362211,
+          "dc_W": 1.340636204185934,
+          "heat_W": 0.9464851773868895,
+          "external_real_output_W": 0.33625170789071807,
+          "feedback_loss_W": 0.05789931890832645,
+          "pin_Vpp": 18.0750341791731,
+          "pin_mean_V": 0.009073432030242074,
+          "peak_current_mA": 76.56995199518408,
+          "rms_current_mA": 53.275408004205204,
+          "mean_current_mA": 0.0031616812019963853
+        },
+        {
+          "plus_mA": 44.6958602802532,
+          "minus_mA": 44.67988666378988,
+          "plus_check_mA": 44.69574832892554,
+          "minus_check_mA": 44.679774683294085,
+          "dc_W": 1.340636204160646,
+          "heat_W": 0.9464851773613231,
+          "external_real_output_W": 0.3362517078909798,
+          "feedback_loss_W": 0.05789931890834308,
+          "pin_Vpp": 18.075034179130938,
+          "pin_mean_V": 0.009073432031973094,
+          "peak_current_mA": 76.56995199819248,
+          "rms_current_mA": 53.27540800428639,
+          "mean_current_mA": 0.003161681897117431
+        }
+      ],
+      "plus_total_mA": 89.39172057604908,
+      "minus_total_mA": 89.35977331372294,
+      "dc_total_W": 2.6812724083465804,
+      "heat_total_W": 1.8929703547482126,
+      "branch_resistor_loss_W": [
+        0.0070672900540561835,
+        0.007067290054077725
+      ],
+      "output_network_loss_W": 0.11849167618372936,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.76686122017602,
+      "logic_5V_pullup_mA": 18.837446359850535,
+      "logic_led_3V3_mA": 3.5878215563289118,
+      "logic_channel_peak_mA": [
+        36.37914651248353,
+        36.3791466703061
+      ],
+      "load_H3_dBc": -71.80105747770659,
+      "state_drift_V": [
+        -1.1625644748103348e-05,
+        2.152611422445716e-11,
+        -4.5370475516115505e-05
+      ],
+      "periodic_initial_state_V": [
+        2.0517956834235,
+        0.69290443174742,
+        2.4913268745307
+      ],
+      "solver_runs": 1,
+      "transient_points": 140256,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 0.00012785448437746538
+    },
+    {
+      "case": "f1.45e+08_n2_a0.75_loss0.5_rs2.49_rc0_rp0_step1000_off0",
+      "f_Hz": 145000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.75,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 1000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 513.7401379005397,
+      "total_load_mW": 513.7401827072547,
+      "pa_join_Vpp": 17.171907228469728,
+      "chip": [
+        {
+          "plus_mA": 43.63634137902014,
+          "minus_mA": 43.63250365004315,
+          "plus_check_mA": 43.63624464488779,
+          "minus_check_mA": 43.632406916795794,
+          "dc_W": 1.3090326754359494,
+          "heat_W": 0.9427434394010182,
+          "external_real_output_W": 0.3118047115990772,
+          "feedback_loss_W": 0.054484524435853894,
+          "pin_Vpp": 17.525432640265528,
+          "pin_mean_V": 0.007635419147422996,
+          "peak_current_mA": 72.64162870740725,
+          "rms_current_mA": 51.15873139763409,
+          "mean_current_mA": -0.006974368940264055
+        },
+        {
+          "plus_mA": 43.636340182376934,
+          "minus_mA": 43.63250468240504,
+          "plus_check_mA": 43.636243450784846,
+          "minus_check_mA": 43.63240794838169,
+          "dc_W": 1.3090326729717296,
+          "heat_W": 0.9427434382391646,
+          "external_real_output_W": 0.3118047103057268,
+          "feedback_loss_W": 0.0544845244268381,
+          "pin_Vpp": 17.525432639704004,
+          "pin_mean_V": 0.007635413624632124,
+          "peak_current_mA": 72.64163023588883,
+          "rms_current_mA": 51.1587312155851,
+          "mean_current_mA": -0.0069765869286590055
+        }
+      ],
+      "plus_total_mA": 87.27268156139706,
+      "minus_total_mA": 87.26500833244819,
+      "dc_total_W": 2.6180653484076792,
+      "heat_total_W": 1.885486877640183,
+      "branch_resistor_loss_W": [
+        0.006516867337556028,
+        0.006516867291175318
+      ],
+      "output_network_loss_W": 0.10986923919754943,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 53.45851878690467,
+      "logic_5V_pullup_mA": 38.91556386290616,
+      "logic_led_3V3_mA": 3.549121011634337,
+      "logic_channel_peak_mA": [
+        35.011888840886755,
+        34.96644338935193
+      ],
+      "load_H3_dBc": -84.48029059419588,
+      "state_drift_V": [
+        -5.167980897002877e-06,
+        5.6761104113567384e-06,
+        -1.057203618870517e-06
+      ],
+      "periodic_initial_state_V": [
+        2.19690975510184,
+        0.64146340014114,
+        2.5178893710048
+      ],
+      "solver_runs": 1,
+      "transient_points": 64816,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -2.559362577425617e-06
+    },
+    {
+      "case": "f137000_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step2000_off0",
+      "f_Hz": 137000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 2000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 354.52685585598266,
+      "total_load_mW": 354.52725119700307,
+      "pa_join_Vpp": 14.164676824825083,
+      "chip": [
+        {
+          "plus_mA": 39.11663214524866,
+          "minus_mA": 39.10134202877589,
+          "plus_check_mA": 39.116615193415164,
+          "minus_check_mA": 39.101325079727424,
+          "dc_W": 1.173269612610368,
+          "heat_W": 0.9210419338366284,
+          "external_real_output_W": 0.2151765268600649,
+          "feedback_loss_W": 0.03705115191367485,
+          "pin_Vpp": 14.459091485530152,
+          "pin_mean_V": 0.009037915459886709,
+          "peak_current_mA": 61.252329791919635,
+          "rms_current_mA": 42.617915330151654,
+          "mean_current_mA": 0.002527458986169597
+        },
+        {
+          "plus_mA": 39.116632140582674,
+          "minus_mA": 39.101342032454355,
+          "plus_check_mA": 39.11661519324708,
+          "minus_check_mA": 39.10132507961554,
+          "dc_W": 1.1732696125955553,
+          "heat_W": 0.9210419338231448,
+          "external_real_output_W": 0.21517652685874764,
+          "feedback_loss_W": 0.03705115191366281,
+          "pin_Vpp": 14.459091485515644,
+          "pin_mean_V": 0.009037915459747341,
+          "peak_current_mA": 61.25232977577868,
+          "rms_current_mA": 42.61791532988553,
+          "mean_current_mA": 0.0025274589302307308
+        }
+      ],
+      "plus_total_mA": 78.23326428583132,
+      "minus_total_mA": 78.20268406123024,
+      "dc_total_W": 2.346539225205923,
+      "heat_total_W": 1.842083867659773,
+      "branch_resistor_loss_W": [
+        0.004522553900649059,
+        0.0045225539005925765
+      ],
+      "output_network_loss_W": 0.07582580252180943,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 58.79509775543219,
+      "logic_5V_pullup_mA": 18.83883910450369,
+      "logic_led_3V3_mA": 3.587824560684007,
+      "logic_channel_peak_mA": [
+        36.37699632162117,
+        36.376996198941384
+      ],
+      "load_H3_dBc": -71.79032847971014,
+      "state_drift_V": [
+        -1.0689132760477449e-05,
+        1.4074893472937333e-09,
+        -4.5606537256936974e-05
+      ],
+      "periodic_initial_state_V": [
+        2.0517956834235,
+        0.69290443174742,
+        2.4913268745307
+      ],
+      "solver_runs": 1,
+      "transient_points": 197789,
+      "input_shunt_first": false,
+      "late_power_drift_percent": -2.655532493900381e-05
+    },
+    {
+      "case": "f1.45e+08_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step2000_off0",
+      "f_Hz": 145000000.0,
+      "chips": 2,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 2000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 334.8360965019048,
+      "total_load_mW": 334.8361187844171,
+      "pa_join_Vpp": 13.865746698737984,
+      "chip": [
+        {
+          "plus_mA": 38.470187462560084,
+          "minus_mA": 38.45992268821811,
+          "plus_check_mA": 38.47017354469781,
+          "minus_check_mA": 38.45990877098059,
+          "dc_W": 1.1539516522616728,
+          "heat_W": 0.9152192031475983,
+          "external_real_output_W": 0.2032218342113925,
+          "feedback_loss_W": 0.035510614902682085,
+          "pin_Vpp": 14.151088221426281,
+          "pin_mean_V": 0.008374304713163088,
+          "peak_current_mA": 58.63213488167311,
+          "rms_current_mA": 41.30122655867859,
+          "mean_current_mA": -0.0015750914274518268
+        },
+        {
+          "plus_mA": 38.47018619371063,
+          "minus_mA": 38.459924063472535,
+          "plus_check_mA": 38.470172276132615,
+          "minus_check_mA": 38.45991014740744,
+          "dc_W": 1.1539516538577475,
+          "heat_W": 0.915219204021722,
+          "external_real_output_W": 0.2032218349282188,
+          "feedback_loss_W": 0.03551061490780677,
+          "pin_Vpp": 14.151088224916233,
+          "pin_mean_V": 0.008374298149878686,
+          "peak_current_mA": 58.63213838910289,
+          "rms_current_mA": 41.30122669113783,
+          "mean_current_mA": -0.001577727284664365
+        }
+      ],
+      "plus_total_mA": 76.94037365627071,
+      "minus_total_mA": 76.91984675169064,
+      "dc_total_W": 2.30790330611942,
+      "heat_total_W": 1.8304384071693203,
+      "branch_resistor_loss_W": [
+        0.004247420374975733,
+        0.004247420402219963
+      ],
+      "output_network_loss_W": 0.07160755035519417,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 54.64790307471781,
+      "logic_5V_pullup_mA": 39.21639459580404,
+      "logic_led_3V3_mA": 3.5490653401150136,
+      "logic_channel_peak_mA": [
+        35.4199065962011,
+        35.37350224937313
+      ],
+      "load_H3_dBc": -84.8890121126,
+      "state_drift_V": [
+        -2.823885314917618e-06,
+        3.102710040003842e-06,
+        -6.029568164755972e-07
+      ],
+      "periodic_initial_state_V": [
+        2.19690975510184,
+        0.64146340014114,
+        2.5178893710048
+      ],
+      "solver_runs": 1,
+      "transient_points": 121835,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 1.3923494801559855e-06
+    },
+    {
+      "case": "f1.45e+08_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step2000_off0",
+      "f_Hz": 145000000.0,
+      "chips": 1,
+      "divider_voltage_ratio": 0.6,
+      "additional_loss_dB_each": 0.5,
+      "branch_ohms": 2.49,
+      "common_ohms": 0,
+      "shunt_ohms": 0,
+      "step_divisor": 2000,
+      "hypothetical_output_offset_each_V": 0,
+      "fundamental_output_mW": 333.52292178665925,
+      "total_load_mW": 333.5229413871823,
+      "pa_join_Vpp": 13.840142625148022,
+      "chip": [
+        {
+          "plus_mA": 57.02812970557111,
+          "minus_mA": 57.0120579206858,
+          "plus_check_mA": 57.02805807830301,
+          "minus_check_mA": 57.01198629467206,
+          "dc_W": 1.7106028143938536,
+          "heat_W": 1.2604411539202256,
+          "external_real_output_W": 0.41331116769841036,
+          "feedback_loss_W": 0.03685049277521782,
+          "pin_Vpp": 14.409803637569027,
+          "pin_mean_V": 0.00860473938645864,
+          "peak_current_mA": 116.99589745382212,
+          "rms_current_mA": 82.44021487725622,
+          "mean_current_mA": 0.003911424095955618
+        }
+      ],
+      "plus_total_mA": 57.02812970557111,
+      "minus_total_mA": 57.0120579206858,
+      "dc_total_W": 1.7106028143938536,
+      "heat_total_W": 1.2604411539202256,
+      "branch_resistor_loss_W": [
+        0.01692300868223037
+      ],
+      "output_network_loss_W": 0.07978822631122806,
+      "circulating_peak_mA": 0.0,
+      "circulating_rms_mA": 0.0,
+      "input_fundamental_equiv50_mW": 55.828497337128944,
+      "logic_5V_pullup_mA": 39.4858878455292,
+      "logic_led_3V3_mA": 3.5490143970494614,
+      "logic_channel_peak_mA": [
+        35.78685493843236,
+        35.739678506565134
+      ],
+      "load_H3_dBc": -85.21944143379237,
+      "state_drift_V": [
+        -6.925652713540842e-07,
+        7.51648626673429e-07,
+        -1.3464582782063417e-07
+      ],
+      "periodic_initial_state_V": [
+        2.19690975510184,
+        0.64146340014114,
+        2.5178893710048
+      ],
+      "solver_runs": 1,
+      "transient_points": 121893,
+      "input_shunt_first": false,
+      "late_power_drift_percent": 4.779785278685722e-06
+    }
+  ],
+  "timestep_checks": [
+    {
+      "case": "f137000_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step2000_off0",
+      "power_change_percent": -0.0021754289113218306,
+      "heat_change_percent": -0.0003707352829063204,
+      "peak_current_change_percent": -0.00035688163532165973
+    },
+    {
+      "case": "f1.45e+08_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step2000_off0",
+      "power_change_percent": 0.00113728765911425,
+      "heat_change_percent": -0.00012073920231392421,
+      "peak_current_change_percent": 0.00029362270157484716
+    },
+    {
+      "case": "f1.45e+08_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step2000_off0",
+      "power_change_percent": 0.0011244346655114867,
+      "heat_change_percent": -4.7998090890732925e-05,
+      "peak_current_change_percent": 0.0008047766780761023
+    }
+  ],
+  "rail_current_independent_check_max_difference_mA": 0.00020670571331038445,
+  "design_sha256": {
+    "Logic RF Driver.kicad_sch": "8b7e1b1681365000912c7480cebf1f8a94a473e3c711aaf3470764081208fd51",
+    "Logic RF Driver.kicad_pcb": "a805e78edd8975e0eda94be8c32f19b04774a1a61c297fe065c8f11f10827850",
+    "Logic RF Driver.kicad_pro": "c168d88064035d48fec59a086017dce9cc4d7223b6d78db7a753b6c8b95e1891",
+    "Logic RF Driver.kicad_dru": "3d88d3960bf04f39ccf0242e6fb72310277eedcc77a8a4e27672e606c35314da",
+    "BOM.csv": "a3ebc76727661067550e497b5b436738b8a0bffb04b6d86023dc38b59bd93e88"
+  },
+  "model_and_script_sha256": {
+    "generated/ths3491-dual/models/ti-rgt.zip": "09e9a217cad0c9fe5a05a014981bd5b3d4d963db18de1fd95b274275b4057ec2",
+    "generated/ths3491-dual/models/THS3491RGT.lib": "65db889f40c7de198c474ec0535b6455eb739837c84cbbd024c4dfce1436769a",
+    "generated/ths3491-dual/models/THS3491RGT-current-sign.lib": "9fcc06be332bcb2be8bc030bffea7a299b93fe2ee55d3ebdda829232b9f50d7e",
+    "generated/ths3491-dual/models/tidue75.pdf": "fe928b8febf9ffb9557846349fdce1c81f8d3fe1f0f9b16c97b08e23820dcdd4",
+    "generated/ths3491-dual/models/tidrxg3.pdf": "6a86704b5c128fb6d1057b4b39182dee6a2d03b0283490b174168edf7da8e569",
+    "scripts/simulate_ths3491_dual.py": "10b91cd2fc64234290d0fb84757b6fc8a7aae6e315e08a6ff18f32449c92b00f",
+    "scripts/report_ths3491_dual.py": "134515543e02242fba4dfa8191eae53b425f17656e2ead29bdca08ecd7baa897",
+    "docs/ths3491-results.json": "eba144e250510b3a8d57c922fcbc5171f943ddf6c5c7bd702c153c63931657ac",
+    "external-research/simulate.py": "f1c87085a80924b06e7c8ddb23aaabe45039ef8932f39d8ac68f1119a0af62ab",
+    "generated/ths3491-dual/runs/f1.45e+08_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "64c75c9a7f86de7ab5ef6256b017ec4445f85be6a04eee52ec44041a3d75bcc3",
+    "generated/ths3491-dual/runs/f1.45e+08_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step2000_off0.cir": "c97dcfbd0831f535b1912578df162fa50720f1d53cecdc08be7f03512e78b54f",
+    "generated/ths3491-dual/runs/f1.45e+08_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "12c7996e1dd0108dc96431eabb016393ac025ab2f98c03cd94b466b282c878bc",
+    "generated/ths3491-dual/runs/f1.45e+08_n2_a0.6_loss0.5_rs10_rc0_rp0_step1000_off0.cir": "7b80a91c9a5205289030089f75a81f752df7c0c561f64f093881874dbf2a23a6",
+    "generated/ths3491-dual/runs/f1.45e+08_n2_a0.6_loss0.5_rs1_rc0_rp0_step1000_off0.cir": "0cf024cb27729ffcca2d37042cb9f7846cb9e789e05a15da367a9ec8bdad38f6",
+    "generated/ths3491-dual/runs/f1.45e+08_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.0225.cir": "74184b5e5fbb597013c38323e115ee3d4f3c17a3bba9490a25631c0423b8ba7b",
+    "generated/ths3491-dual/runs/f1.45e+08_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "c7b8d7d918d94ddcf7d98e9fce2f4de943623d375a48565f88b7cf034dfe4eda",
+    "generated/ths3491-dual/runs/f1.45e+08_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step2000_off0.cir": "107774ac772315d91d48c8c7658a79b82f4c05dd3de8fd62fd3d77dbadde8bdc",
+    "generated/ths3491-dual/runs/f1.45e+08_n2_a0.6_loss0.5_rs40.2_rc30_rp0_step1000_off0.cir": "517f8d53720150f981d7efd96f1ceabd4ef46c14df71278a1cc1a68d7aaebe70",
+    "generated/ths3491-dual/runs/f1.45e+08_n2_a0.6_loss0.5_rs40_rc5_rp50_step1000_off0.cir": "13b52e28d4fd659b5c878d73ffff391825b76669a5a585581a3f826887c9b7c9",
+    "generated/ths3491-dual/runs/f1.45e+08_n2_a0.6_loss0_rs2.49_rc0_rp0_step1000_off0.cir": "f366b625ce9276fdb859dc6a89a1e3f8cd0e8f3be152e96f2491cbd78c21c008",
+    "generated/ths3491-dual/runs/f1.45e+08_n2_a0.6_loss1_rs2.49_rc0_rp0_step1000_off0.cir": "188037bc1da578efa658a51b20e69362ac1ff3ce21d944f92040b8c44ccca6f7",
+    "generated/ths3491-dual/runs/f1.45e+08_n2_a0.75_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "8fc0c8c3bfbf3c1a664a41ea50c1cef99e9a85d83c0db81ec277b70c70bc5a1a",
+    "generated/ths3491-dual/runs/f1.4e+07_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "a2cef8db2e7c6221038dcc7e2d67c272d5335b557247f3e67fd63b69937e4d95",
+    "generated/ths3491-dual/runs/f1.4e+07_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "b8bb813df5d8200d1514078a6bcc60b4f56f549b61ce1e942424bf98b68e7ce6",
+    "generated/ths3491-dual/runs/f1.4e+07_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "e0790eead2fac60f05a3d63d2c7439108326f0b584b007c1d5c619bd5df49294",
+    "generated/ths3491-dual/runs/f1.8e+06_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "b96e3f36c51fae8fdc13605e825d19e7c8cfd2202c703f161bea03f62f688765",
+    "generated/ths3491-dual/runs/f1.8e+06_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "a81c1cce64e363905635c45c44ab724fce5ffb75b1675ab78c71643266704650",
+    "generated/ths3491-dual/runs/f1.8e+06_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "db6642ffe15ae659d92ad24517736ca0af9fb1a30f91e66b0a6f224f5699e220",
+    "generated/ths3491-dual/runs/f137000_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "a8e216e69ada5d12beafdacf7fb026a82e5d3f1b35cbf078505cd2dab94caad8",
+    "generated/ths3491-dual/runs/f137000_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "76b1d094783ae5de648c36cf6f2d8f82a53ff10e5e3558d9a88dbc64a78402d8",
+    "generated/ths3491-dual/runs/f137000_n2_a0.6_loss0.5_rs10_rc0_rp0_step1000_off0.cir": "71c2582ba5a4026f21796c95eb321e065ca6043537c8f8d2954e869ce21975e8",
+    "generated/ths3491-dual/runs/f137000_n2_a0.6_loss0.5_rs1_rc0_rp0_step1000_off0.cir": "3a4513d031cede8ac9b4ab230e10137e867f7aa3ae20c130baffe9cf4453109d",
+    "generated/ths3491-dual/runs/f137000_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.0225.cir": "3dcbf2402f0d5c1dbc33fc403bd5d8f44f97e8437e35fddf3eb0e9c4b230682c",
+    "generated/ths3491-dual/runs/f137000_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "2d62c6482e1c1573c120e42cd0f7ce2bd460f68642e1bed6bdf31bfc22003e32",
+    "generated/ths3491-dual/runs/f137000_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step2000_off0.cir": "d62e7fc58f3fe23885f709aba7adca5d1ad9c82d2fa05ed6cf2a32fc248b1256",
+    "generated/ths3491-dual/runs/f137000_n2_a0.6_loss0.5_rs40.2_rc30_rp0_step1000_off0.cir": "451b37166e00c5b7af02f1a15d6c4ea26553c144d201c537a162e6c7cfec326d",
+    "generated/ths3491-dual/runs/f137000_n2_a0.6_loss0.5_rs40_rc5_rp50_step1000_off0.cir": "d0bb2f01eef28dbbdffe9e9f2b055dbca7d2042479565a76568b741d2a36bd29",
+    "generated/ths3491-dual/runs/f137000_n2_a0.6_loss0_rs2.49_rc0_rp0_step1000_off0.cir": "66fcd407b18f689305b4d597142ec5b27f0deab4bcd618bf6b62f7c68498a802",
+    "generated/ths3491-dual/runs/f137000_n2_a0.6_loss1_rs2.49_rc0_rp0_step1000_off0.cir": "ac8c07c463c5f057ce68dd5d1dac35cc3c474526bd4a4497ec963c65f0b54d0d",
+    "generated/ths3491-dual/runs/f137000_n2_a0.75_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "fa5afc322d90b01ba5927acafc26f9eecd74ba7e5afa120d5998fa3f60c4ce99",
+    "generated/ths3491-dual/runs/f1e+07_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "020951f7cdab8fe6f3a1afd7d3b828b9e80ac5b50befa4931f468bcf6bf62ae1",
+    "generated/ths3491-dual/runs/f1e+07_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "7e68d4c411726ddf1ab9dcd3a4637f5e12974561b9b5ce4f5c4f7895a11507a6",
+    "generated/ths3491-dual/runs/f1e+07_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "9b651665a52ffeedf029d035d957915a67150882dea99b52bb86a91a4ba6bd9d",
+    "generated/ths3491-dual/runs/f1e+08_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "2d56b30f517e258718935f794e884be03f267950c955649a8a1fba56ab518e59",
+    "generated/ths3491-dual/runs/f1e+08_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "321899bed1de4f379c905ab90e41c99668ae4633aa35a1d8a2e507fda730930c",
+    "generated/ths3491-dual/runs/f1e+08_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "2bccdd3359207bae7e484e2abf6ca59fe4017d632a3112e089b9965b8351969d",
+    "generated/ths3491-dual/runs/f2.1e+07_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "cde7736a5649c1d4a7430b4d3267885efd67f4622a49634c5ceb60afa00d535b",
+    "generated/ths3491-dual/runs/f2.1e+07_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "dd18057fddb8f97e1a8dde0c2beba2cc837d5790366c0a97cbb4ff948fe2d041",
+    "generated/ths3491-dual/runs/f2.1e+07_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "5c69b85ec6adade83797bc5737dd8e855465f891783a14aad074ce7c8aadd945",
+    "generated/ths3491-dual/runs/f2.8e+07_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "9a10b56bb58e65ffbc8e61639e44390d772a25c6aa37c7d53ee3584b03faf28b",
+    "generated/ths3491-dual/runs/f2.8e+07_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "0f5be2af6e3a8c14a00de7221e3c856c136c83331cc6f04a8b9f7f00bea8e312",
+    "generated/ths3491-dual/runs/f2.8e+07_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "8736e531e695a2bd64368a2428c32233dca7d9c42a3f599118fcc0410416543c",
+    "generated/ths3491-dual/runs/f3.5e+06_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "cc2848073fe8a2aac6d8f0e5addeb6b558134a31505b9b25f0095293816a0141",
+    "generated/ths3491-dual/runs/f3.5e+06_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "20ea72a9bdd9b08a19678c6aed601050e41608d78fb129b102f976dc4d3c7960",
+    "generated/ths3491-dual/runs/f3.5e+06_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "123a9cfb363da1cbbf415b25192ee0f49b5b14580baa476d8568935fe22679c1",
+    "generated/ths3491-dual/runs/f475000_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "6864ac68af923c4a08ef72307ec67c8f02fedd9aa6bbd746d804482a3691e40f",
+    "generated/ths3491-dual/runs/f475000_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "b2e5545df5bc0b8d819665c948b252eeb70c75ff26e1669c24b4488c0e9bc0d9",
+    "generated/ths3491-dual/runs/f475000_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "0431611cb090567aa441732ae13c914283b60170a0e2b45c65409149856f0352",
+    "generated/ths3491-dual/runs/f5e+07_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "f43f61ee81049d1da90773868c53df89b0b66d4a1af5686b07035b48ad5543ff",
+    "generated/ths3491-dual/runs/f5e+07_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "7b8fe842491debbbf0f394b09e84058b126856dff81b4c57f571546bf7704736",
+    "generated/ths3491-dual/runs/f5e+07_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "c545ead8b70f1e580ec7d537313e13b2250242cfd0e172a8bb88f4e7187d5e6e",
+    "generated/ths3491-dual/runs/f7e+06_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "bfb11ae85300ed24909b48207bdf12143b2bacf09492d7d7b1d483c1a5353ce3",
+    "generated/ths3491-dual/runs/f7e+06_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "85f45cfd5dbf466524ebb8dbbe70b575b86466d99be1c9b8719349cddb6bf1c5",
+    "generated/ths3491-dual/runs/f7e+06_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "abcb9094fe88a1d3b8ff7ddc980b09a61caad49a59bf51d81d7469e4383ec4a0",
+    "generated/ths3491-dual/runs/f7e+07_n1_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "73b27126490833a18552692a0c5f65b9c62bfe05373c79805e89b87481cd53d6",
+    "generated/ths3491-dual/runs/f7e+07_n2_a0.5_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "9c8a1c7c66b8528d8e155d90d1285a084e826ebedcfb1b3cc1b2d6c216b11fe0",
+    "generated/ths3491-dual/runs/f7e+07_n2_a0.6_loss0.5_rs2.49_rc0_rp0_step1000_off0.cir": "a68da2569d103ff6832770dcdf066698b9dbf576eec953709c48022033d36b34"
+  },
+  "conditions": {
+    "simulator": "ngspice 45.2 shared library, PSpice compatibility, native XSPICE models",
+    "supply_V": [
+      15,
+      -15
+    ],
+    "model_temperature_C": 25,
+    "feedback_ohms_each": 576,
+    "gain_ohms_each": 143,
+    "input_deQ_ohms_each": 24.9,
+    "nominal_output_branch_ohms": 2.49,
+    "input_divider_ratios": [
+      0.5,
+      0.6,
+      0.75
+    ],
+    "output_load_ohms": 50,
+    "filter_type": "Inductor-first fifth-order Butterworth on input and output, separately scaled for each test frequency",
+    "filter_cutoff_multiplier": 1.5,
+    "inductor_Q_at_test_f": 50,
+    "capacitor_Q_at_test_f": 1000,
+    "capacitor_ESL_H": 3e-10,
+    "inductor_parallel_C_limit_F": 2e-12,
+    "additional_loss_dB_each": [
+      0,
+      0.5,
+      1
+    ],
+    "output_capacitance_F": 1e-06,
+    "output_cap_ESR_ohms": 0.03,
+    "output_cap_ESL_H": 5e-10,
+    "RGT_reference_JEDEC_RthetaJA_C_per_W": 49.6,
+    "hypothetical_output_offset_each_V": 0.0225,
+    "periods": 60,
+    "measurement_periods": 8,
+    "periodic_state_drift_limit_V": 5e-05,
+    "late_power_drift_limit_percent": 0.1
+  },
+  "limitations": [
+    "TI has demonstrated the load-sharing topology; these results are simulations of its adaptation to a different source, filter network, and load.",
+    "Identical nominal RGT macro-models do not establish actual AC phase/gain/current matching; offset sensitivity is one explicit stress, not a complete process corner.",
+    "Supply-current sign correction is explicit; nominal 25 C model is not an electrothermal or extracted-PCB model.",
+    "TI maximum linear output envelope applies to each chip; more output current does not double the permitted voltage swing.",
+    "The RGT model joins FB to OUT through 1 microohm and is not a complete package-parasitic extraction.",
+    "Filter and source limitations from the single-chip study apply; no capacitor-first filters are used in this study."
+  ]
+}

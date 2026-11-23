@@ -1,0 +1,2420 @@
+[
+  {
+    "f_Hz": 137000.0,
+    "input": [
+      {
+        "kind": "L",
+        "family": "1812PS",
+        "code": "223",
+        "mpn": "1812PS-223JRC",
+        "count_parallel": 1,
+        "nominal": 2.2e-05,
+        "tol": 0.05,
+        "params": [
+          45,
+          0.33,
+          0.6,
+          2.28,
+          1e-06,
+          3.51e-05
+        ],
+        "isat_each_A": 0.54,
+        "irms_each_A": 1.2
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C273J5GACTU",
+        "nominal": 2.7e-08,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1812PS",
+        "code": "823",
+        "mpn": "1812PS-823JRC",
+        "count_parallel": 1,
+        "nominal": 8.2e-05,
+        "tol": 0.05,
+        "params": [
+          55,
+          1.3,
+          0.84,
+          7.51,
+          1e-06,
+          1e-06
+        ],
+        "isat_each_A": 0.28,
+        "irms_each_A": 0.65
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C273J5GACTU",
+        "nominal": 2.7e-08,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1812PS",
+        "code": "223",
+        "mpn": "1812PS-223JRC",
+        "count_parallel": 1,
+        "nominal": 2.2e-05,
+        "tol": 0.05,
+        "params": [
+          45,
+          0.33,
+          0.6,
+          2.28,
+          1e-06,
+          3.51e-05
+        ],
+        "isat_each_A": 0.54,
+        "irms_each_A": 1.2
+      }
+    ],
+    "output": [
+      {
+        "kind": "L",
+        "family": "1812PS",
+        "code": "393",
+        "mpn": "1812PS-393JRC",
+        "count_parallel": 1,
+        "nominal": 3.9e-05,
+        "tol": 0.05,
+        "params": [
+          55,
+          0.56,
+          1.08,
+          4.1,
+          0.683,
+          9e-06
+        ],
+        "isat_each_A": 0.4,
+        "irms_each_A": 1
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C223J5GACTU",
+        "nominal": 2.2e-08,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1812PS",
+        "code": "223",
+        "mpn": "1812PS-223JRC",
+        "count_parallel": 1,
+        "nominal": 2.2e-05,
+        "tol": 0.05,
+        "params": [
+          45,
+          0.33,
+          0.6,
+          2.28,
+          1e-06,
+          3.51e-05
+        ],
+        "isat_each_A": 0.54,
+        "irms_each_A": 1.2
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C273J5GACTU",
+        "nominal": 2.7e-08,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1812PS",
+        "code": "154",
+        "mpn": "1812PS-154JRC",
+        "count_parallel": 2,
+        "nominal": 7.5e-05,
+        "tol": 0.05,
+        "params": [
+          70,
+          2.2,
+          1.81,
+          18.4,
+          1e-06,
+          1e-06
+        ],
+        "isat_each_A": 0.2,
+        "irms_each_A": 0.51
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C273J5GACTU",
+        "nominal": 2.7e-08,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1812PS",
+        "code": "223",
+        "mpn": "1812PS-223JRC",
+        "count_parallel": 1,
+        "nominal": 2.2e-05,
+        "tol": 0.05,
+        "params": [
+          45,
+          0.33,
+          0.6,
+          2.28,
+          1e-06,
+          3.51e-05
+        ],
+        "isat_each_A": 0.54,
+        "irms_each_A": 1.2
+      }
+    ],
+    "coupling": {
+      "kind": "C",
+      "nominal": 2e-07,
+      "tol": 0.05,
+      "esl": 5.75e-10,
+      "esr_floor": 0.003,
+      "count_parallel": 2,
+      "mpn": "C3216C0G1H104J160AA"
+    },
+    "extra_loss_each_dB": 0.2
+  },
+  {
+    "f_Hz": 475000.0,
+    "input": [
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "6R8",
+        "mpn": "78F6R8J-RC",
+        "count_parallel": 1,
+        "nominal": 6.799999999999999e-06,
+        "tol": 0.05,
+        "params": [
+          0.45,
+          40,
+          28
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.47
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C682J5GACTU",
+        "nominal": 6.8e-09,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1812PS",
+        "code": "223",
+        "mpn": "1812PS-223JRC",
+        "count_parallel": 1,
+        "nominal": 2.2e-05,
+        "tol": 0.05,
+        "params": [
+          45,
+          0.33,
+          0.6,
+          2.28,
+          1e-06,
+          3.51e-05
+        ],
+        "isat_each_A": 0.54,
+        "irms_each_A": 1.2
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C682J5GACTU",
+        "nominal": 6.8e-09,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "6R8",
+        "mpn": "78F6R8J-RC",
+        "count_parallel": 1,
+        "nominal": 6.799999999999999e-06,
+        "tol": 0.05,
+        "params": [
+          0.45,
+          40,
+          28
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.47
+      }
+    ],
+    "output": [
+      {
+        "kind": "L",
+        "family": "1812PS",
+        "code": "103",
+        "mpn": "1812PS-103JRC",
+        "count_parallel": 1,
+        "nominal": 9.999999999999999e-06,
+        "tol": 0.05,
+        "params": [
+          29,
+          0.17,
+          0.28,
+          0.741,
+          0.0014,
+          5.09e-05
+        ],
+        "isat_each_A": 0.9,
+        "irms_each_A": 1.7
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C472J5GACTU",
+        "nominal": 4.7e-09,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "6R8",
+        "mpn": "78F6R8J-RC",
+        "count_parallel": 1,
+        "nominal": 6.799999999999999e-06,
+        "tol": 0.05,
+        "params": [
+          0.45,
+          40,
+          28
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.47
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C682J5GACTU",
+        "nominal": 6.8e-09,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1812PS",
+        "code": "223",
+        "mpn": "1812PS-223JRC",
+        "count_parallel": 1,
+        "nominal": 2.2e-05,
+        "tol": 0.05,
+        "params": [
+          45,
+          0.33,
+          0.6,
+          2.28,
+          1e-06,
+          3.51e-05
+        ],
+        "isat_each_A": 0.54,
+        "irms_each_A": 1.2
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C562J5GACTU",
+        "nominal": 5.6e-09,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "6R8",
+        "mpn": "78F6R8J-RC",
+        "count_parallel": 1,
+        "nominal": 6.799999999999999e-06,
+        "tol": 0.05,
+        "params": [
+          0.45,
+          40,
+          28
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.47
+      }
+    ],
+    "coupling": {
+      "kind": "C",
+      "nominal": 2e-07,
+      "tol": 0.05,
+      "esl": 5.75e-10,
+      "esr_floor": 0.003,
+      "count_parallel": 2,
+      "mpn": "C3216C0G1H104J160AA"
+    },
+    "extra_loss_each_dB": 0.2
+  },
+  {
+    "f_Hz": 1800000.0,
+    "input": [
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "1R8",
+        "mpn": "78F1R8K-RC",
+        "count_parallel": 1,
+        "nominal": 1.8e-06,
+        "tol": 0.1,
+        "params": [
+          0.23,
+          50,
+          125
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.655
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C182J5GACTU",
+        "nominal": 1.8e-09,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "5R6",
+        "mpn": "78F5R6J-RC",
+        "count_parallel": 1,
+        "nominal": 5.6e-06,
+        "tol": 0.05,
+        "params": [
+          0.4,
+          45,
+          32
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.5
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C182J5GACTU",
+        "nominal": 1.8e-09,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "1R8",
+        "mpn": "78F1R8K-RC",
+        "count_parallel": 1,
+        "nominal": 1.8e-06,
+        "tol": 0.1,
+        "params": [
+          0.23,
+          50,
+          125
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.655
+      }
+    ],
+    "output": [
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "2R7",
+        "mpn": "78F2R7K-RC",
+        "count_parallel": 1,
+        "nominal": 2.7e-06,
+        "tol": 0.1,
+        "params": [
+          0.28,
+          50,
+          95
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.595
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C152J5GACTU",
+        "nominal": 1.5e-09,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "1R8",
+        "mpn": "78F1R8K-RC",
+        "count_parallel": 1,
+        "nominal": 1.8e-06,
+        "tol": 0.1,
+        "params": [
+          0.23,
+          50,
+          125
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.655
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C182J5GACTU",
+        "nominal": 1.8e-09,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "5R6",
+        "mpn": "78F5R6J-RC",
+        "count_parallel": 1,
+        "nominal": 5.6e-06,
+        "tol": 0.05,
+        "params": [
+          0.4,
+          45,
+          32
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.5
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C182J5GACTU",
+        "nominal": 1.8e-09,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "1R8",
+        "mpn": "78F1R8K-RC",
+        "count_parallel": 1,
+        "nominal": 1.8e-06,
+        "tol": 0.1,
+        "params": [
+          0.23,
+          50,
+          125
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.655
+      }
+    ],
+    "coupling": {
+      "kind": "C",
+      "nominal": 2e-07,
+      "tol": 0.05,
+      "esl": 5.75e-10,
+      "esr_floor": 0.003,
+      "count_parallel": 2,
+      "mpn": "C3216C0G1H104J160AA"
+    },
+    "extra_loss_each_dB": 0.2
+  },
+  {
+    "f_Hz": 3500000.0,
+    "input": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "911",
+        "mpn": "1008CS-911XGRC",
+        "count_parallel": 1,
+        "nominal": 9.100000000000001e-07,
+        "tol": 0.02,
+        "params": [
+          53,
+          1.7,
+          0.155,
+          895,
+          0.00078
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.38
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C102J5GACTU",
+        "nominal": 1e-09,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "3R3",
+        "mpn": "78F3R3J-RC",
+        "count_parallel": 1,
+        "nominal": 3.2999999999999997e-06,
+        "tol": 0.05,
+        "params": [
+          0.3,
+          50,
+          60
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.575
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C102J5GACTU",
+        "nominal": 1e-09,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "911",
+        "mpn": "1008CS-911XGRC",
+        "count_parallel": 1,
+        "nominal": 9.100000000000001e-07,
+        "tol": 0.02,
+        "params": [
+          53,
+          1.7,
+          0.155,
+          895,
+          0.00078
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.38
+      }
+    ],
+    "output": [
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "1R5",
+        "mpn": "78F1R5K-RC",
+        "count_parallel": 1,
+        "nominal": 1.5e-06,
+        "tol": 0.1,
+        "params": [
+          0.2,
+          50,
+          150
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.7
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C681J5GACTU",
+        "nominal": 6.8e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "911",
+        "mpn": "1008CS-911XGRC",
+        "count_parallel": 1,
+        "nominal": 9.100000000000001e-07,
+        "tol": 0.02,
+        "params": [
+          53,
+          1.7,
+          0.155,
+          895,
+          0.00078
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.38
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C102J5GACTU",
+        "nominal": 1e-09,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "3R3",
+        "mpn": "78F3R3J-RC",
+        "count_parallel": 1,
+        "nominal": 3.2999999999999997e-06,
+        "tol": 0.05,
+        "params": [
+          0.3,
+          50,
+          60
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.575
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C102J5GACTU",
+        "nominal": 1e-09,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "911",
+        "mpn": "1008CS-911XGRC",
+        "count_parallel": 1,
+        "nominal": 9.100000000000001e-07,
+        "tol": 0.02,
+        "params": [
+          53,
+          1.7,
+          0.155,
+          895,
+          0.00078
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.38
+      }
+    ],
+    "coupling": {
+      "kind": "C",
+      "nominal": 2e-07,
+      "tol": 0.05,
+      "esl": 5.75e-10,
+      "esr_floor": 0.003,
+      "count_parallel": 2,
+      "mpn": "C3216C0G1H104J160AA"
+    },
+    "extra_loss_each_dB": 0.2
+  },
+  {
+    "f_Hz": 7000000.0,
+    "input": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "471",
+        "mpn": "1008CS-471XGRC",
+        "count_parallel": 1,
+        "nominal": 4.7000000000000005e-07,
+        "tol": 0.02,
+        "params": [
+          31,
+          1.2,
+          0.156,
+          465,
+          0.000427
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.47
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C471J5GACTU",
+        "nominal": 4.7e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "1R5",
+        "mpn": "78F1R5K-RC",
+        "count_parallel": 1,
+        "nominal": 1.5e-06,
+        "tol": 0.1,
+        "params": [
+          0.2,
+          50,
+          150
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.7
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C471J5GACTU",
+        "nominal": 4.7e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "471",
+        "mpn": "1008CS-471XGRC",
+        "count_parallel": 1,
+        "nominal": 4.7000000000000005e-07,
+        "tol": 0.02,
+        "params": [
+          31,
+          1.2,
+          0.156,
+          465,
+          0.000427
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.47
+      }
+    ],
+    "output": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "681",
+        "mpn": "1008CS-681XGRC",
+        "count_parallel": 1,
+        "nominal": 6.800000000000001e-07,
+        "tol": 0.02,
+        "params": [
+          37,
+          1.5,
+          0.139,
+          665,
+          0.00061
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.4
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C471J5GACTU",
+        "nominal": 4.7e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "471",
+        "mpn": "1008CS-471XGRC",
+        "count_parallel": 1,
+        "nominal": 4.7000000000000005e-07,
+        "tol": 0.02,
+        "params": [
+          31,
+          1.2,
+          0.156,
+          465,
+          0.000427
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.47
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C471J5GACTU",
+        "nominal": 4.7e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "1R5",
+        "mpn": "78F1R5K-RC",
+        "count_parallel": 1,
+        "nominal": 1.5e-06,
+        "tol": 0.1,
+        "params": [
+          0.2,
+          50,
+          150
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.7
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C471J5GACTU",
+        "nominal": 4.7e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "471",
+        "mpn": "1008CS-471XGRC",
+        "count_parallel": 1,
+        "nominal": 4.7000000000000005e-07,
+        "tol": 0.02,
+        "params": [
+          31,
+          1.2,
+          0.156,
+          465,
+          0.000427
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.47
+      }
+    ],
+    "coupling": {
+      "kind": "C",
+      "nominal": 2e-07,
+      "tol": 0.05,
+      "esl": 5.75e-10,
+      "esr_floor": 0.003,
+      "count_parallel": 2,
+      "mpn": "C3216C0G1H104J160AA"
+    },
+    "extra_loss_each_dB": 0.2
+  },
+  {
+    "f_Hz": 10000000.0,
+    "input": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "331",
+        "mpn": "1008CS-331XGRC",
+        "count_parallel": 1,
+        "nominal": 3.3e-07,
+        "tol": 0.02,
+        "params": [
+          20,
+          1.1,
+          0.132,
+          330,
+          0.000284
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.45
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C331J5GACTU",
+        "nominal": 3.3e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "1R0",
+        "mpn": "78F1R0K-RC",
+        "count_parallel": 1,
+        "nominal": 1e-06,
+        "tol": 0.1,
+        "params": [
+          0.15,
+          40,
+          180
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.815
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C331J5GACTU",
+        "nominal": 3.3e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "331",
+        "mpn": "1008CS-331XGRC",
+        "count_parallel": 1,
+        "nominal": 3.3e-07,
+        "tol": 0.02,
+        "params": [
+          20,
+          1.1,
+          0.132,
+          330,
+          0.000284
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.45
+      }
+    ],
+    "output": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "471",
+        "mpn": "1008CS-471XGRC",
+        "count_parallel": 1,
+        "nominal": 4.7000000000000005e-07,
+        "tol": 0.02,
+        "params": [
+          31,
+          1.2,
+          0.156,
+          465,
+          0.000427
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.47
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C331J5GACTU",
+        "nominal": 3.3e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "331",
+        "mpn": "1008CS-331XGRC",
+        "count_parallel": 1,
+        "nominal": 3.3e-07,
+        "tol": 0.02,
+        "params": [
+          20,
+          1.1,
+          0.132,
+          330,
+          0.000284
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.45
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C331J5GACTU",
+        "nominal": 3.3e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "78F",
+        "code": "1R0",
+        "mpn": "78F1R0K-RC",
+        "count_parallel": 1,
+        "nominal": 1e-06,
+        "tol": 0.1,
+        "params": [
+          0.15,
+          40,
+          180
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.815
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C331J5GACTU",
+        "nominal": 3.3e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "331",
+        "mpn": "1008CS-331XGRC",
+        "count_parallel": 1,
+        "nominal": 3.3e-07,
+        "tol": 0.02,
+        "params": [
+          20,
+          1.1,
+          0.132,
+          330,
+          0.000284
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.45
+      }
+    ],
+    "coupling": {
+      "kind": "C",
+      "nominal": 2e-07,
+      "tol": 0.05,
+      "esl": 5.75e-10,
+      "esr_floor": 0.003,
+      "count_parallel": 2,
+      "mpn": "C3216C0G1H104J160AA"
+    },
+    "extra_loss_each_dB": 0.2
+  },
+  {
+    "f_Hz": 14000000.0,
+    "input": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "221",
+        "mpn": "1008CS-221XGRC",
+        "count_parallel": 1,
+        "nominal": 2.2e-07,
+        "tol": 0.02,
+        "params": [
+          18,
+          0.8,
+          0.147,
+          224,
+          0.00019
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.5
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C271J5GACTU",
+        "nominal": 2.7e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "751",
+        "mpn": "1008CS-751XGRC",
+        "count_parallel": 1,
+        "nominal": 7.5e-07,
+        "tol": 0.02,
+        "params": [
+          44,
+          1.5,
+          0.138,
+          740,
+          0.00069
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.36
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C271J5GACTU",
+        "nominal": 2.7e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "221",
+        "mpn": "1008CS-221XGRC",
+        "count_parallel": 1,
+        "nominal": 2.2e-07,
+        "tol": 0.02,
+        "params": [
+          18,
+          0.8,
+          0.147,
+          224,
+          0.00019
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.5
+      }
+    ],
+    "output": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "331",
+        "mpn": "1008CS-331XGRC",
+        "count_parallel": 1,
+        "nominal": 3.3e-07,
+        "tol": 0.02,
+        "params": [
+          20,
+          1.1,
+          0.132,
+          330,
+          0.000284
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.45
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C181J5GACTU",
+        "nominal": 1.8e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "221",
+        "mpn": "1008CS-221XGRC",
+        "count_parallel": 1,
+        "nominal": 2.2e-07,
+        "tol": 0.02,
+        "params": [
+          18,
+          0.8,
+          0.147,
+          224,
+          0.00019
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.5
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C271J5GACTU",
+        "nominal": 2.7e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "751",
+        "mpn": "1008CS-751XGRC",
+        "count_parallel": 1,
+        "nominal": 7.5e-07,
+        "tol": 0.02,
+        "params": [
+          44,
+          1.5,
+          0.138,
+          740,
+          0.00069
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.36
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C271J5GACTU",
+        "nominal": 2.7e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "221",
+        "mpn": "1008CS-221XGRC",
+        "count_parallel": 1,
+        "nominal": 2.2e-07,
+        "tol": 0.02,
+        "params": [
+          18,
+          0.8,
+          0.147,
+          224,
+          0.00019
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.5
+      }
+    ],
+    "coupling": {
+      "kind": "C",
+      "nominal": 2e-07,
+      "tol": 0.05,
+      "esl": 5.75e-10,
+      "esr_floor": 0.003,
+      "count_parallel": 2,
+      "mpn": "C3216C0G1H104J160AA"
+    },
+    "extra_loss_each_dB": 0.2
+  },
+  {
+    "f_Hz": 21000000.0,
+    "input": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "151",
+        "mpn": "1008CS-151XGRC",
+        "count_parallel": 1,
+        "nominal": 1.5000000000000002e-07,
+        "tol": 0.02,
+        "params": [
+          14,
+          0.7,
+          0.136,
+          150,
+          0.00011
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.58
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C151J5GACTU",
+        "nominal": 1.5e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "471",
+        "mpn": "1008CS-471XGRC",
+        "count_parallel": 1,
+        "nominal": 4.7000000000000005e-07,
+        "tol": 0.02,
+        "params": [
+          31,
+          1.2,
+          0.156,
+          465,
+          0.000427
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.47
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C151J5GACTU",
+        "nominal": 1.5e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "151",
+        "mpn": "1008CS-151XGRC",
+        "count_parallel": 1,
+        "nominal": 1.5000000000000002e-07,
+        "tol": 0.02,
+        "params": [
+          14,
+          0.7,
+          0.136,
+          150,
+          0.00011
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.58
+      }
+    ],
+    "output": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "221",
+        "mpn": "1008CS-221XGRC",
+        "count_parallel": 1,
+        "nominal": 2.2e-07,
+        "tol": 0.02,
+        "params": [
+          18,
+          0.8,
+          0.147,
+          224,
+          0.00019
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.5
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C151J5GACTU",
+        "nominal": 1.5e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "151",
+        "mpn": "1008CS-151XGRC",
+        "count_parallel": 1,
+        "nominal": 1.5000000000000002e-07,
+        "tol": 0.02,
+        "params": [
+          14,
+          0.7,
+          0.136,
+          150,
+          0.00011
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.58
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C151J5GACTU",
+        "nominal": 1.5e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "471",
+        "mpn": "1008CS-471XGRC",
+        "count_parallel": 1,
+        "nominal": 4.7000000000000005e-07,
+        "tol": 0.02,
+        "params": [
+          31,
+          1.2,
+          0.156,
+          465,
+          0.000427
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.47
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C151J5GACTU",
+        "nominal": 1.5e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "151",
+        "mpn": "1008CS-151XGRC",
+        "count_parallel": 1,
+        "nominal": 1.5000000000000002e-07,
+        "tol": 0.02,
+        "params": [
+          14,
+          0.7,
+          0.136,
+          150,
+          0.00011
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.58
+      }
+    ],
+    "coupling": {
+      "kind": "C",
+      "nominal": 2e-07,
+      "tol": 0.05,
+      "esl": 5.75e-10,
+      "esr_floor": 0.003,
+      "count_parallel": 2,
+      "mpn": "C3216C0G1H104J160AA"
+    },
+    "extra_loss_each_dB": 0.2
+  },
+  {
+    "f_Hz": 28000000.0,
+    "input": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "121",
+        "mpn": "1008CS-121XGRC",
+        "count_parallel": 1,
+        "nominal": 1.2000000000000002e-07,
+        "tol": 0.02,
+        "params": [
+          13,
+          0.6,
+          0.136,
+          120,
+          0.000151
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.65
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C121J5GACTU",
+        "nominal": 1.2e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "391",
+        "mpn": "1008CS-391XGRC",
+        "count_parallel": 1,
+        "nominal": 3.9e-07,
+        "tol": 0.02,
+        "params": [
+          27,
+          1.1,
+          0.138,
+          380,
+          0.000349
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.47
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C121J5GACTU",
+        "nominal": 1.2e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "121",
+        "mpn": "1008CS-121XGRC",
+        "count_parallel": 1,
+        "nominal": 1.2000000000000002e-07,
+        "tol": 0.02,
+        "params": [
+          13,
+          0.6,
+          0.136,
+          120,
+          0.000151
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.65
+      }
+    ],
+    "output": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "181",
+        "mpn": "1008CS-181XGRC",
+        "count_parallel": 1,
+        "nominal": 1.8000000000000002e-07,
+        "tol": 0.02,
+        "params": [
+          18,
+          0.8,
+          0.13,
+          180,
+          0.00014
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.62
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H101GB01D",
+        "nominal": 1e-10,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "121",
+        "mpn": "1008CS-121XGRC",
+        "count_parallel": 1,
+        "nominal": 1.2000000000000002e-07,
+        "tol": 0.02,
+        "params": [
+          13,
+          0.6,
+          0.136,
+          120,
+          0.000151
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.65
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C121J5GACTU",
+        "nominal": 1.2e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "391",
+        "mpn": "1008CS-391XGRC",
+        "count_parallel": 1,
+        "nominal": 3.9e-07,
+        "tol": 0.02,
+        "params": [
+          27,
+          1.1,
+          0.138,
+          380,
+          0.000349
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.47
+      },
+      {
+        "kind": "C",
+        "mpn": "C1206C121J5GACTU",
+        "nominal": 1.2e-10,
+        "tol": 0.05,
+        "esl": 6e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "121",
+        "mpn": "1008CS-121XGRC",
+        "count_parallel": 1,
+        "nominal": 1.2000000000000002e-07,
+        "tol": 0.02,
+        "params": [
+          13,
+          0.6,
+          0.136,
+          120,
+          0.000151
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.65
+      }
+    ],
+    "coupling": {
+      "kind": "C",
+      "nominal": 2e-07,
+      "tol": 0.05,
+      "esl": 5.75e-10,
+      "esr_floor": 0.003,
+      "count_parallel": 2,
+      "mpn": "C3216C0G1H104J160AA"
+    },
+    "extra_loss_each_dB": 0.2
+  },
+  {
+    "f_Hz": 50000000.0,
+    "input": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "680",
+        "mpn": "1008CS-680XGRC",
+        "count_parallel": 1,
+        "nominal": 6.8e-08,
+        "tol": 0.02,
+        "params": [
+          6,
+          0.2,
+          0.137,
+          68,
+          9.2e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H680GB01D",
+        "nominal": 6.8e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "221",
+        "mpn": "1008CS-221XGRC",
+        "count_parallel": 1,
+        "nominal": 2.2e-07,
+        "tol": 0.02,
+        "params": [
+          18,
+          0.8,
+          0.147,
+          224,
+          0.00019
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.5
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H680GB01D",
+        "nominal": 6.8e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "680",
+        "mpn": "1008CS-680XGRC",
+        "count_parallel": 1,
+        "nominal": 6.8e-08,
+        "tol": 0.02,
+        "params": [
+          6,
+          0.2,
+          0.137,
+          68,
+          9.2e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      }
+    ],
+    "output": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "101",
+        "mpn": "1008CS-101XGRC",
+        "count_parallel": 1,
+        "nominal": 1.0000000000000001e-07,
+        "tol": 0.02,
+        "params": [
+          13,
+          0.6,
+          0.135,
+          100,
+          0.000125
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.65
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H510GB01D",
+        "nominal": 5.1e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "680",
+        "mpn": "1008CS-680XGRC",
+        "count_parallel": 1,
+        "nominal": 6.8e-08,
+        "tol": 0.02,
+        "params": [
+          6,
+          0.2,
+          0.137,
+          68,
+          9.2e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H680GB01D",
+        "nominal": 6.8e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "221",
+        "mpn": "1008CS-221XGRC",
+        "count_parallel": 1,
+        "nominal": 2.2e-07,
+        "tol": 0.02,
+        "params": [
+          18,
+          0.8,
+          0.147,
+          224,
+          0.00019
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.5
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H680GB01D",
+        "nominal": 6.8e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "680",
+        "mpn": "1008CS-680XGRC",
+        "count_parallel": 1,
+        "nominal": 6.8e-08,
+        "tol": 0.02,
+        "params": [
+          6,
+          0.2,
+          0.137,
+          68,
+          9.2e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      }
+    ],
+    "coupling": {
+      "kind": "C",
+      "nominal": 2e-07,
+      "tol": 0.05,
+      "esl": 5.75e-10,
+      "esr_floor": 0.003,
+      "count_parallel": 2,
+      "mpn": "C3216C0G1H104J160AA"
+    },
+    "extra_loss_each_dB": 0.2
+  },
+  {
+    "f_Hz": 70000000.0,
+    "input": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "470",
+        "mpn": "1008CS-470XGRC",
+        "count_parallel": 1,
+        "nominal": 4.7000000000000004e-08,
+        "tol": 0.02,
+        "params": [
+          9,
+          0.2,
+          0.118,
+          47,
+          6.4e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H510GB01D",
+        "nominal": 5.1e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "151",
+        "mpn": "1008CS-151XGRC",
+        "count_parallel": 1,
+        "nominal": 1.5000000000000002e-07,
+        "tol": 0.02,
+        "params": [
+          14,
+          0.7,
+          0.136,
+          150,
+          0.00011
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.58
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H510GB01D",
+        "nominal": 5.1e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "470",
+        "mpn": "1008CS-470XGRC",
+        "count_parallel": 1,
+        "nominal": 4.7000000000000004e-08,
+        "tol": 0.02,
+        "params": [
+          9,
+          0.2,
+          0.118,
+          47,
+          6.4e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      }
+    ],
+    "output": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "680",
+        "mpn": "1008CS-680XGRC",
+        "count_parallel": 1,
+        "nominal": 6.8e-08,
+        "tol": 0.02,
+        "params": [
+          6,
+          0.2,
+          0.137,
+          68,
+          9.2e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H390GB01D",
+        "nominal": 3.9e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "470",
+        "mpn": "1008CS-470XGRC",
+        "count_parallel": 1,
+        "nominal": 4.7000000000000004e-08,
+        "tol": 0.02,
+        "params": [
+          9,
+          0.2,
+          0.118,
+          47,
+          6.4e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H510GB01D",
+        "nominal": 5.1e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "151",
+        "mpn": "1008CS-151XGRC",
+        "count_parallel": 1,
+        "nominal": 1.5000000000000002e-07,
+        "tol": 0.02,
+        "params": [
+          14,
+          0.7,
+          0.136,
+          150,
+          0.00011
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.58
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H510GB01D",
+        "nominal": 5.1e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "470",
+        "mpn": "1008CS-470XGRC",
+        "count_parallel": 1,
+        "nominal": 4.7000000000000004e-08,
+        "tol": 0.02,
+        "params": [
+          9,
+          0.2,
+          0.118,
+          47,
+          6.4e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      }
+    ],
+    "coupling": {
+      "kind": "C",
+      "nominal": 2e-07,
+      "tol": 0.05,
+      "esl": 5.75e-10,
+      "esr_floor": 0.003,
+      "count_parallel": 2,
+      "mpn": "C3216C0G1H104J160AA"
+    },
+    "extra_loss_each_dB": 0.2
+  },
+  {
+    "f_Hz": 100000000.0,
+    "input": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "330",
+        "mpn": "1008CS-330XGRC",
+        "count_parallel": 1,
+        "nominal": 3.3000000000000004e-08,
+        "tol": 0.02,
+        "params": [
+          9,
+          0.1,
+          0.117,
+          33,
+          5.18e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H330GB01D",
+        "nominal": 3.3e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "101",
+        "mpn": "1008CS-101XGRC",
+        "count_parallel": 1,
+        "nominal": 1.0000000000000001e-07,
+        "tol": 0.02,
+        "params": [
+          13,
+          0.6,
+          0.135,
+          100,
+          0.000125
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.65
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H330GB01D",
+        "nominal": 3.3e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "330",
+        "mpn": "1008CS-330XGRC",
+        "count_parallel": 1,
+        "nominal": 3.3000000000000004e-08,
+        "tol": 0.02,
+        "params": [
+          9,
+          0.1,
+          0.117,
+          33,
+          5.18e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      }
+    ],
+    "output": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "470",
+        "mpn": "1008CS-470XGRC",
+        "count_parallel": 1,
+        "nominal": 4.7000000000000004e-08,
+        "tol": 0.02,
+        "params": [
+          9,
+          0.2,
+          0.118,
+          47,
+          6.4e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H300GB01D",
+        "nominal": 3e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "330",
+        "mpn": "1008CS-330XGRC",
+        "count_parallel": 1,
+        "nominal": 3.3000000000000004e-08,
+        "tol": 0.02,
+        "params": [
+          9,
+          0.1,
+          0.117,
+          33,
+          5.18e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H300GB01D",
+        "nominal": 3e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "101",
+        "mpn": "1008CS-101XGRC",
+        "count_parallel": 1,
+        "nominal": 1.0000000000000001e-07,
+        "tol": 0.02,
+        "params": [
+          13,
+          0.6,
+          0.135,
+          100,
+          0.000125
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 0.65
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H300GB01D",
+        "nominal": 3e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "330",
+        "mpn": "1008CS-330XGRC",
+        "count_parallel": 1,
+        "nominal": 3.3000000000000004e-08,
+        "tol": 0.02,
+        "params": [
+          9,
+          0.1,
+          0.117,
+          33,
+          5.18e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      }
+    ],
+    "coupling": {
+      "kind": "C",
+      "nominal": 2e-07,
+      "tol": 0.05,
+      "esl": 5.75e-10,
+      "esr_floor": 0.003,
+      "count_parallel": 2,
+      "mpn": "C3216C0G1H104J160AA"
+    },
+    "extra_loss_each_dB": 0.2
+  },
+  {
+    "f_Hz": 145000000.0,
+    "input": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "220",
+        "mpn": "1008CS-220XGRC",
+        "count_parallel": 1,
+        "nominal": 2.2000000000000002e-08,
+        "tol": 0.02,
+        "params": [
+          8,
+          0.1,
+          0.124,
+          22,
+          3.69e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H240GB01D",
+        "nominal": 2.4e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "680",
+        "mpn": "1008CS-680XGRC",
+        "count_parallel": 1,
+        "nominal": 6.8e-08,
+        "tol": 0.02,
+        "params": [
+          6,
+          0.2,
+          0.137,
+          68,
+          9.2e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H240GB01D",
+        "nominal": 2.4e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "220",
+        "mpn": "1008CS-220XGRC",
+        "count_parallel": 1,
+        "nominal": 2.2000000000000002e-08,
+        "tol": 0.02,
+        "params": [
+          8,
+          0.1,
+          0.124,
+          22,
+          3.69e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      }
+    ],
+    "output": [
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "330",
+        "mpn": "1008CS-330XGRC",
+        "count_parallel": 1,
+        "nominal": 3.3000000000000004e-08,
+        "tol": 0.02,
+        "params": [
+          9,
+          0.1,
+          0.117,
+          33,
+          5.18e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H200GB01D",
+        "nominal": 2e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "220",
+        "mpn": "1008CS-220XGRC",
+        "count_parallel": 1,
+        "nominal": 2.2000000000000002e-08,
+        "tol": 0.02,
+        "params": [
+          8,
+          0.1,
+          0.124,
+          22,
+          3.69e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H220GB01D",
+        "nominal": 2.1999999999999998e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "680",
+        "mpn": "1008CS-680XGRC",
+        "count_parallel": 1,
+        "nominal": 6.8e-08,
+        "tol": 0.02,
+        "params": [
+          6,
+          0.2,
+          0.137,
+          68,
+          9.2e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      },
+      {
+        "kind": "C",
+        "mpn": "GJM1555C1H220GB01D",
+        "nominal": 2.1999999999999998e-11,
+        "tol": 0.02,
+        "esl": 2e-10,
+        "esr_floor": 0.05,
+        "count_parallel": 1
+      },
+      {
+        "kind": "L",
+        "family": "1008CS",
+        "code": "220",
+        "mpn": "1008CS-220XGRC",
+        "count_parallel": 1,
+        "nominal": 2.2000000000000002e-08,
+        "tol": 0.02,
+        "params": [
+          8,
+          0.1,
+          0.124,
+          22,
+          3.69e-05
+        ],
+        "isat_each_A": null,
+        "irms_each_A": 1
+      }
+    ],
+    "coupling": {
+      "kind": "C",
+      "nominal": 2e-07,
+      "tol": 0.05,
+      "esl": 5.75e-10,
+      "esr_floor": 0.003,
+      "count_parallel": 2,
+      "mpn": "C3216C0G1H104J160AA"
+    },
+    "extra_loss_each_dB": 0.2
+  }
+]
