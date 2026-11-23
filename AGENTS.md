@@ -8,6 +8,7 @@ This is `WsprryPi/WsprryPi-PCB-Designs`, a KiCad hardware-design repository. Rea
 - `RPi Full-Size HAT Template`: reusable full-size Raspberry Pi HAT template.
 - `RPi Zero HAT Template`: reusable Zero-size Raspberry Pi HAT template.
 - `WsprryPi LPF`: low-pass filter board and supporting workbook.
+- `WsprryPi LPF-LCL`: independent five-element L-first LPF with minimum-loss WSPR/QRSS populations and complete local libraries. Preserve its inherited outline, headers, SMA arrangement, and original C-first project. Modeling results live under its `model/`; physical/RF qualification remains open.
 - `Pico 2W Wattmeter Shield`: ADL5904 RF wattmeter shield.
 - `Pico 2W Shield Template`: reusable unwired Pico shield template.
 - `WsprryPico GPIO Shield with GPS`: Pico 2 W direct-GPIO BS170 amplifier with onboard GNSS, independent project-local libraries and a placed/routed PCB; current checks and open findings are in its validation record.

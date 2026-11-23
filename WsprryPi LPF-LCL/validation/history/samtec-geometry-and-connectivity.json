@@ -1,0 +1,32 @@
+{
+  "fixed_outline_and_connectors_match": true,
+  "filter_placement_grid_mm": 0.25,
+  "schematic_connection_grid_mm": 1.27,
+  "fixed_connector_grid_exceptions": [
+    "J1",
+    "J2",
+    "J3"
+  ],
+  "capacitor_mounting": [
+    {
+      "pair": [
+        "CA2",
+        "CB2"
+      ],
+      "individual_pitch_mm": 2.5,
+      "cross_pair_pitch_mm": 5.0
+    },
+    {
+      "pair": [
+        "CA4",
+        "CB4"
+      ],
+      "individual_pitch_mm": 2.5,
+      "cross_pair_pitch_mm": 5.0
+    }
+  ],
+  "local_model_count": 4,
+  "local_symbol_count": 6,
+  "local_footprint_count": 4,
+  "independent_netlist_topology_verified": true
+}

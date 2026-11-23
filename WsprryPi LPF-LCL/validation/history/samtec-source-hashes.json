@@ -1,0 +1,11 @@
+{
+  "design_revision": "0.1.0",
+  "source_commit": "79b16fbc4cead7a90698ba5cb952b9d7eec6038f",
+  "files_sha256": {
+    "WsprryPi LPF-LCL.kicad_sch": "14b4f5d02bdcb8ecd9c5a0586c74cdee41b2a92a459423426f4ae7cf71f9fbd4",
+    "WsprryPi LPF-LCL.kicad_pcb": "b61ac5ed16ade372db70e998c418b9dbc0cc1667c55fba4d9bfeb9417eb4528b",
+    "WsprryPi LPF-LCL.kicad_pro": "c9a599b1520d3cb65f84d81fbeee33339ae345c841ac7215e009a9ef179e5f3c",
+    "sym-lib-table": "72459967aaaf07c1132ad2132ea94b115e8040dddd69992e11906e35644fe5e6",
+    "fp-lib-table": "851ec6ff829f6f2135fe742a654177410819bad251cb31d3883d83cd4b82d7f0"
+  }
+}

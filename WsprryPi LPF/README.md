@@ -14,17 +14,23 @@ The [filter workbook](./LPF-Values.xlsx) lists standard E96/E24 values for a sev
 
 The 2 m filter is fully specified as `47.5 pF – 60.4 nH – 68.1 pF – 63.4 nH – 68.1 pF – 60.4 nH – 47.5 pF`. Its modeled 3 dB cutoff is 148.279504 MHz and its modeled loss at the 144.4901 MHz upper WSPR edge is 0.376 dB. The row uses the 144.4899–144.4901 MHz transmit band in the [WSPR frequency list](https://www.wsprnet.org/drupal/sites/wsprnet.org/files/wspr-qrg.pdf). Only the 2 m QRSS frequency cell is blank; no 2 m QRSS operating frequency is asserted by this project.
 
+The [circuit-modeling study](../WsprryPi%20LPF-LCL/model/README.md), now maintained with the independent [WsprryPi LPF-LCL project](../WsprryPi%20LPF-LCL/README.md), reproduces this workbook's responses and compares seven- and five-element L-first alternatives. It includes minimum-loss WSPR/QRSS tuning, component targets, ideal harmonic rejection, illustrative coil-Q sensitivity, and shared-band limitations. The filter topology and band-value workbook remain unchanged by the connector replacement.
+
 ## Assembly
 
 The input and output connectors are hand-fitted male 1×4 headers with 2.54 mm pin pitch. The current schematic and PCB represent both headers as one component, **J1**, using the project-local paired-header footprint on the underside (B.Cu), with **33.02 mm centerline spacing**. The local symbol and footprint are named `LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm`; the matching BS170-board sockets use `LPF_HeaderPair_Female_2x1x04_P2.54mm_S33.02mm`. No manufacturer or purchasing part number is specified. The connector and filter components are excluded from the BOM; a default BOM export is not a complete hand-assembly purchasing list.
 
-### Optional edge-mount SMA connectors
+### Optional Adafruit edge-launch SMA connectors
 
-J2 (RF_IN) and J3 (RF_OUT) are hand-soldered **Samtec SMA-J-P-H-ST-EM1** 50 Ω female SMA jacks. Their center contacts connect to the same RF nets as J1; their shells connect to ground on both copper faces. The paired underside headers remain available, with their original 33.02 mm spacing and hole positions. Populate the connector arrangement needed for the assembly; the SMA jacks are included in the BOM, while the existing headers and filter components retain their previous BOM exclusions.
+J2 (RF_IN) and J3 (RF_OUT) are hand-soldered **[Adafruit 1865](https://www.adafruit.com/product/1865)** 50 Ω female edge-launch SMA connectors for **1.6 mm PCBs**. Pin 1 connects to the corresponding RF header net; pin 2 comprises the ground fingers on both copper faces. The paired underside headers retain their original 33.02 mm spacing and every hole location. SMAs remain included in the BOM; headers and filter components retain their previous exclusions.
 
-The PCB extends **4.58 mm at each end**, from 36.80 mm to **45.96 mm overall length**; its approximately **12.87 mm height**, rounded corners, and filter component positions are retained. Both SMA axes are at Y = 99.12 mm. The SMA origins are X = 116.10 mm (J2) and X = 157.86 mm (J3); the board ends are X = 114.00 mm and X = 159.96 mm. Each end was shortened equally by 1.42 mm from the initial SMA layout. The SMA and underside-header courtyards meet without overlap; further inward movement would overlap their existing assembly envelopes. The footprint's PCB-edge datum is aligned with each end of the outline. Short 0.80 mm traces join the center lands to the existing RF header contacts, with four additional ground stitching vias at each launch. These traces have not been qualified as controlled-impedance transitions.
+The outline remains **45.96 × approximately 12.873 mm**, with the original rounded corners and 1.60 mm stackup. The connector edge datums are J2 at **(114.00, 99.12) mm, −90°**, and J3 at **(159.96, 99.12) mm, +90°**. The footprint points outward along local +Y. Both axes remain at Y = 99.12 mm; the new origins lie on the board ends rather than at the former Samtec center-pad origins. The RF land centers are X = 116.057 mm and X = 157.903 mm. Existing launch traces have their endpoints repaired to those centers.
 
-The [Samtec drawing](https://suddendocs.samtec.com/prints/sma-j-p-x-st-em1-mkt.pdf) specifies a nominal **1.57 mm PCB thickness**. The saved board stackup remains 1.60 mm; confirm the connector slot, board fabrication tolerance, solder access on both faces, and assembled fit before ordering. Use this exact connector or independently verify the substitute's land pattern and board-thickness requirement. The SMA bodies project beyond the board ends. The larger outline and connector bodies require a fresh clearance check in any plug-in carrier or enclosure; the retained header spacing alone does not establish mechanical compatibility.
+Each independent local library contains `SMA_Adafruit_1865_EdgeMount`, adapted from the repository's Adafruit footprint and checked against the published public-domain `SMA_EDGELAUNCH` land pattern and [Adafruit drawing](https://cdn-shop.adafruit.com/product-files/1865/C2387-001_datasheet.pdf). Lands are 1.27 mm wide for signal and 1.524 mm wide for ground, at 2.54 mm transverse spacing. Their 4.014 mm length retains a **0.05 mm copper setback** from the physical board edge. No solder-paste apertures are provided; solder the top signal/ground fingers and underside ground fingers by hand.
+
+The project-local `.kicad_dru` file provides a **0 mm minimum edge-clearance override only for pads of J2/J3**. It handles either object order in the DRC comparison. All other copper retains the original **0.50 mm global edge clearance**, and pad-to-pad, via, hole, and other manufacturing rules are unchanged. The small physical setback keeps the lands clear of the drawn Edge.Cuts stroke; this is not a blanket DRC exclusion or severity change. Confirm that the chosen board fabricator accepts these near-edge copper lands.
+
+The attached project-local `SMA_Adafruit_1865_Preview.wrl` is an illustrative repository-owned model, not supplier CAD. Adafruit product 1865 is specified for 1.6 mm boards, matching the saved stackup. Confirm connector slot tolerance, solder access on both faces, external body/enclosure clearance, and actual fit before ordering. The SMA body projects beyond the outline. Launch impedance, insertion loss, and RF performance remain unmeasured.
 
 ### Connector pinouts and QRP Labs compatibility
 
@@ -88,6 +94,10 @@ These gaps distribute room for capacitor bodies and inductor windings while pres
 The toroid model is a generic axial-inductor visualization. Check the wound component dimensions against the footprint before assembly.
 
 ## Validation
+
+### Adafruit SMA replacement — 2026-11-22
+
+Both SMA positions now use Adafruit 1865 with independent local footprints and preview models, and a pad-only local edge-clearance rule. **KiCad 10.0.6**, run outside the sandbox with saved zone refill and schematic parity, reports **zero DRC violations, zero unconnected items, and zero parity issues**. ERC has no active issues; the two existing excluded four-way-junction warnings remain visible. Outline, stackup, header holes, and filter placement/connectivity are preserved. The current [validation record](VALIDATION.md) includes source hashes, raw reports, and control checks showing that the edge override does not apply to another reference. Earlier Samtec-specific records below are historical and do not describe the current connector.
 
 ### SMA extension — 2026-11-14
 

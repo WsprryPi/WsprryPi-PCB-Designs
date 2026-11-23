@@ -1,60 +1,35 @@
-# Project libraries
+# Project-local libraries
 
-This folder contains the project's symbol library, footprint library, and available 3D models. Library tables use `${KIPRJMOD}` paths; no sibling project folder is required. Open the project with KiCad 10.0.1 or newer to edit the local library assets.
+The independent `WsprryPi LPF` library supplies all used symbols, footprints, and available models. Library tables use `${KIPRJMOD}`; no sibling project or machine-specific path is required. Use KiCad 10.0.1 or newer; validation used 10.0.6.
 
 | Asset | Location | Contents |
 | --- | --- | --- |
-| Symbols | [Symbol library](symbols/WsprryPi%20LPF.kicad_sym) | 6 symbols, including all definitions used by the schematic |
-| Footprints | [Footprint library](footprints/WsprryPi%20LPF.pretty/) | 4 footprints, including all footprints used by the board |
-| Models | [3D models](3dmodels/) | 4 local STEP files |
+| Symbols | [Symbol library](symbols/WsprryPi%20LPF.kicad_sym) | Six: C, L, GND, PWR_FLAG, Conn_Coaxial, and paired LPF header |
+| Footprints | [Footprint library](footprints/WsprryPi%20LPF.pretty/) | Four types: capacitor, axial/toroid inductor, paired header, and Adafruit SMA |
+| Models | [3D models](3dmodels/) | Three STEP files and one illustrative SMA VRML file |
 
-The registered library nickname is `WsprryPi LPF`. Instance values and purchasing fields remain the design's responsibility; a generic library symbol does not select a component value or supplier part.
+## Adafruit 1865 SMA
 
-The local `PWR_FLAG` symbol documents the externally supplied ground connection at the input header ground connection.
+`SMA_Adafruit_1865_EdgeMount` replaces the previous Samtec footprint. J2/J3 use the generic passive `Conn_Coaxial` symbol, with **pin 1 = RF center** and **pin 2 = shell/ground**. Instance values and purchasing fields select **Adafruit 1865**, a female edge-launch connector for 1.6 mm boards.
 
-## Used asset inventory
+The footprint was copied from the repository's `WsprryPi Zero GPIO BS170` custom Adafruit footprint, checked against the [Adafruit Eagle Library](https://github.com/adafruit/Adafruit-Eagle-Library) `SMA_EDGELAUNCH` package and the [Adafruit 1865 drawing](https://cdn-shop.adafruit.com/product-files/1865/C2387-001_datasheet.pdf) on 2026-11-22. The signal land is 1.27 mm wide, ground lands 1.524 mm wide, with ground centers at ±2.54 mm from RF. Relative to the source package's 4.064 mm lands, this local variant has 4.014 mm lands and a **0.05 mm copper setback**, retaining the inland end of the lands. It is hand soldered, without paste apertures.
 
-Only assets referenced by the current schematic or PCB are retained. The local symbols are `Conn_Coaxial`, `C`, `GND`, `L`, `PWR_FLAG`, and `LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm`. The four local footprints are `SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount`, `C_Disc_D3.0mm_W1.6mm_P2.50mm`, `L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm`, and `LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm`.
+The origin is the PCB-edge datum, and the connector points outward along local +Y. A project-local `.kicad_dru` rule permits 0 mm edge clearance only for pads of J2/J3. It does not alter the 0.50 mm global limit or clearances between copper nets. Copy that intentional rule when reusing this edge-launch implementation; do not disable the board-wide check.
 
-The four retained STEP models represent the Samtec edge-mount SMA jack, the disc capacitor, generic axial inductor, and single four-pin header (instanced twice by the paired header). Every model path is rooted at `${KIPRJMOD}/libraries/3dmodels/`. The library symbol definitions are taken from the current schematic's embedded definitions, including its updated J1 pin names.
+The local `SMA_Adafruit_1865_Preview.wrl` follows the existing repository visualization, with approximate flange/barrel and rear-finger geometry. It is not supplier CAD or evidence of mechanical clearance. The model's dimensions, threads, internals, and tolerances are simplified. Connector fit and RF behavior remain unverified. No Samtec model is attached to the Adafruit connector, and unused Samtec footprint/model assets have been removed from this project.
 
-During the earlier cleanup, the unused `Conn_01x04` and `SMA_Adafruit_1865` symbols and the standalone header, SMA, and two optional capacitor footprints were removed. The unavailable optional capacitor model reference was removed with its unused footprint. No used model is missing; the generic inductor model limitation below remains.
+## Other footprints
 
-## Edge-mount SMA jacks
+`C_Disc_D3.0mm_W1.6mm_P2.50mm` retains 2.50 mm lead pitch. Each board shunt provides a parallel pair and two 5.00 mm cross-pair spanning combinations. Ground is pad 1 and signal pad 2.
 
-J2/J3 use the generic passive `Conn_Coaxial` symbol (pin 1 = center, pin 2 = shell) and `SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount` footprint, copied from the installed KiCad 10.0.6 Connector symbol and Connector_Coaxial footprint libraries on 2026-11-14. The matching STEP model was copied from the installed KiCad Connector_Coaxial model library. Only the model path was changed, to `${KIPRJMOD}/libraries/3dmodels/Connector_Coaxial.3dshapes/`; the footprint land geometry is unchanged. The symbol's instance value selects Samtec SMA-J-P-H-ST-EM1, rather than a mechanically interchangeable generic SMA.
+`L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm` retains the original axial/upright-toroid geometry and 0.8 mm holes, with two holes numbered 1 and two numbered 2. Use one hole of each electrical number for a winding. The generic axial STEP model does not represent a wound toroid or establish fit, core, turns, Q, or power handling.
 
-The [manufacturer drawing](https://suddendocs.samtec.com/prints/sma-j-p-x-st-em1-mkt.pdf) specifies 1.57 mm nominal board thickness. The PCB-edge datum is local X = +2.10 mm; the right jack is unrotated and the left jack is rotated 180°. Both use top center-contact lands and shell lands on both faces. The tightened layout places each SMA courtyard against the adjacent underside-header courtyard without overlap; the footprint geometry is unchanged. The saved 1.60 mm board requires a physical slot/tolerance and assembly-fit check. See the [assembly and current validation notes](../README.md#optional-edge-mount-sma-connectors).
+`LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm` represents two underside male 1×4 headers with 2.54 mm pin pitch and 33.02 mm centerline spacing. It instances the local single-header STEP twice. Pads 1/4/5/8 are GND, 2/3 RF_IN, and 6/7 RF_OUT. This WsprryPi pinout is not directly compatible with unmodified QRP Labs LPFs. No header manufacturer/MPN is specified.
 
-These additions retain the KiCad library license and exception described below. KiCad 10.0.6 DRC with refill and schematic parity reports no violations, unconnected pads, or parity issues; ERC retains only the two earlier excluded junction warnings. Physical and RF qualification remain open.
-
-## Paired LPF headers
-
-`WsprryPi LPF:LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm` is the placed combined symbol and footprint for two hand-fitted male 1×4 headers. Header centerlines are 33.02 mm (1.300 inches) apart; each header has 2.54 mm pin pitch, 1.7 mm pads, and 1.0 mm holes. The footprint origin is input-header pin 1; output-header pin 5 is at X = 33.02 mm. Both rows run in the same direction. Separate courtyards cover the two header bodies and leave the intervening filter area available.
-
-| Header | Pad numbers in row order | Intended connections |
-| --- | --- | --- |
-| Input | 1, 2, 3, 4 | GND, RF_IN, RF_IN, GND |
-| Output | 5, 6, 7, 8 | GND, RF_OUT, RF_OUT, GND |
-
-The symbol exposes all eight passive pins separately; connect the paired RF pins and ground pins explicitly when placing it. It assigns the combined footprint and defaults to exclusion from the BOM. The footprint reuses the existing local header geometry and STEP model twice. These are two physical headers represented as one KiCad component, not a selected eight-pin purchasing part.
-
-The spacing targets the QRP Labs LPF mechanical interface, independently corroborated by the QRP Labs-compatible T41 filter daughter-board [Gerbers](https://github.com/DRWJSCHMIDT/T41/blob/main/T41_V011_Files/Gerbers/T41_Filter_Daughter_V011_Gerber.zip) and [assembly manual](https://www.4sqrp.com/kits/T41/T41-Builders-Manual.pdf). The WsprryPi pinout is retained and is **not electrically interchangeable with the QRP Labs LPF**. Physical fit has not been checked with an assembled QRP Labs module.
-
-The combined header is now placed as J1 on the PCB underside (B.Cu). Flipping it about the midpoint of the pin rows preserves all eight hole locations and their nets because each row has a symmetric GND–RF–RF–GND assignment. Pad-number order reverses spatially on the underside; use the pad numbers rather than apparent top-view order. KiCad 10.0.6 DRC before and after the flip reported zero violations and zero unconnected items. These checks do not establish assembled fit or RF performance.
-
-## Cleanup validation
-
-On 2026-10-03, KiCad 10.0.6 loaded all three retained footprints and exported all five retained symbols. DRC with an in-memory zone refill and schematic parity reported zero violations, zero unconnected items, and zero parity issues. ERC reported only two explicitly excluded four-way-junction warnings, with no active violations. All referenced STEP files exist locally. Hash checks confirmed that the PCB, schematic, and project configuration were unchanged by cleanup. These checks do not qualify assembled fit or RF performance.
-
-## Model limits
-
-The toroidal-inductor footprint uses a generic axial-inductor model. That model is not a mechanical representation of the actual wound toroid; check dimensions against the assembled component.
-
-See the [project README](../README.md) for assembly requirements and ERC/DRC findings.
+See the [project README](../README.md) and [validation record](../VALIDATION.md) for population, assembly, and limitations.
 
 ## Sources and licenses
 
-Standard symbols, footprints, and STEP models derive from KiCad libraries. Local footprints include project-specific geometry. Part names and descriptions identify their original library families. Copyright KiCad Library Contributors; [CC BY-SA 4.0 with the KiCad library exception](https://www.kicad.org/libraries/license/) applies to those assets.
+KiCad-derived standard symbols, capacitor/header/inductor footprints, and STEP models retain Copyright KiCad Library Contributors and [CC BY-SA 4.0 with the KiCad library exception](https://www.kicad.org/libraries/license/). Project-specific combined-header and axial/toroid geometry is inherited from the original LPF.
 
-The repository MIT license does not replace third-party license terms.
+Adafruit's `SMA_EDGELAUNCH` library package is published as public domain by [Adafruit](https://github.com/adafruit/Adafruit-Eagle-Library). That attribution and source are retained here and in the footprint description. The local adaptation and original illustrative SMA VRML model use the repository MIT license; the model retains its license header. The MIT license does not replace third-party KiCad library terms.

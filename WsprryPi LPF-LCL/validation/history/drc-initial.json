@@ -1,0 +1,125 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-22T16:27:51",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [
+        {
+            "description": "Pad net (/RF_IN) doesn't match net given by schematic (unconnected-(J2-In-Pad1))",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.1,
+                        "y": 99.12
+                    },
+                    "uuid": "1695daed-842c-4565-89eb-2a006a45135c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        }
+    ],
+    "source": "WsprryPi LPF-LCL.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Items shorting two nets (nets /RF_OUT and GND)",
+            "items": [
+                {
+                    "description": "Track [/RF_OUT] on F.Cu, length 3.4100 mm",
+                    "pos": {
+                        "x": 147.88,
+                        "y": 95.65
+                    },
+                    "uuid": "90e271f1-d05f-420f-8cf0-7835bd392f7d"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 149.06,
+                        "y": 94.67
+                    },
+                    "uuid": "b30010dd-3d89-4fe3-bbc3-146b4d26d9f6"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1461 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 8 [GND] of J1",
+                    "pos": {
+                        "x": 153.49,
+                        "y": 95.31
+                    },
+                    "uuid": "62a81ce3-cc5c-465b-9c85-836df94da39e"
+                },
+                {
+                    "description": "Track [/RF_OUT] on F.Cu, length 3.1113 mm",
+                    "pos": {
+                        "x": 151.29,
+                        "y": 95.65
+                    },
+                    "uuid": "cf0c03ef-4d44-4491-ad27-000ef91d6085"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'WsprryPi\nLPF-LCL v0.1' on B.Silkscreen",
+                    "pos": {
+                        "x": 136.98,
+                        "y": 99.01
+                    },
+                    "uuid": "10239ec9-d266-49e7-8230-558d9806ab1a"
+                },
+                {
+                    "description": "PTH pad 2 [/LPF_NODE1] of L3",
+                    "pos": {
+                        "x": 133.19,
+                        "y": 97.37
+                    },
+                    "uuid": "57aa3429-398f-4c35-829d-e512f3183cf3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Zone [<no net>] on B.Silkscreen, priority 0",
+                    "pos": {
+                        "x": 149.66,
+                        "y": 96.44
+                    },
+                    "uuid": "8a3d1cf1-c829-4410-aa37-6a816770aefa"
+                },
+                {
+                    "description": "PTH pad 1 [/RF_OUT] of L5",
+                    "pos": {
+                        "x": 147.88,
+                        "y": 95.65
+                    },
+                    "uuid": "f3574bb3-4756-4590-ac95-4391916902df"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+  "part": "Adafruit 1865",
+  "preserved_outline": true,
+  "preserved_header_geometry": true,
+  "preserved_all_filter_footprints": true,
+  "preserved_stackup": true,
+  "project_settings_byte_identical": true,
+  "global_copper_edge_clearance_mm": 0.5,
+  "connector_pad_override_mm": 0,
+  "copper_setback_mm": 0.05,
+  "override_references": [
+    "J2",
+    "J3"
+  ],
+  "override_type": "Pad",
+  "rule_controls": {
+    "no-override": {
+      "expected_edge_violations": 10,
+      "observed_edge_violations": 10
+    },
+    "other-reference": {
+      "expected_edge_violations": 5,
+      "observed_edge_violations": 5
+    }
+  }
+}

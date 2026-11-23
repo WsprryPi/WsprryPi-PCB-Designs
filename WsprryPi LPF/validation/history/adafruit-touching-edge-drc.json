@@ -1,0 +1,262 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-22T16:44:29",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "WsprryPi LPF.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Board edge clearance violation",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 104.556447
+                    },
+                    "uuid": "bc20b9d6-930a-459a-9497-952c96461ff3"
+                },
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 104.556447
+                    },
+                    "uuid": "bc20b9d6-930a-459a-9497-952c96461ff3"
+                },
+                {
+                    "description": "Pad 2 [GND] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 96.58
+                    },
+                    "uuid": "c1630948-3012-458e-b7e0-ea05ad6f4719"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 104.556447
+                    },
+                    "uuid": "bc20b9d6-930a-459a-9497-952c96461ff3"
+                },
+                {
+                    "description": "Pad 2 [GND] of J2 on B.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 96.58
+                    },
+                    "uuid": "3e2affad-341f-41f2-b62a-265e7485eee5"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 104.556447
+                    },
+                    "uuid": "bc20b9d6-930a-459a-9497-952c96461ff3"
+                },
+                {
+                    "description": "Pad 2 [GND] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 101.66
+                    },
+                    "uuid": "4455db53-e842-4dc6-8f08-61403c8bed29"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 104.556447
+                    },
+                    "uuid": "bc20b9d6-930a-459a-9497-952c96461ff3"
+                },
+                {
+                    "description": "Pad 2 [GND] of J2 on B.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 101.66
+                    },
+                    "uuid": "c8486a9b-42c0-41f1-971a-39bac0509795"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 159.96,
+                        "y": 93.683554
+                    },
+                    "uuid": "d1a95262-ad07-490e-a29b-2ddc58ee2e32"
+                },
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 159.96,
+                        "y": 93.683554
+                    },
+                    "uuid": "d1a95262-ad07-490e-a29b-2ddc58ee2e32"
+                },
+                {
+                    "description": "Pad 2 [GND] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 101.66
+                    },
+                    "uuid": "924a3b05-5037-4819-9b47-0a2c4f79a976"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 159.96,
+                        "y": 93.683554
+                    },
+                    "uuid": "d1a95262-ad07-490e-a29b-2ddc58ee2e32"
+                },
+                {
+                    "description": "Pad 2 [GND] of J3 on B.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 101.66
+                    },
+                    "uuid": "9cb3e581-44f3-4436-9d4e-fcecd04abba6"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 159.96,
+                        "y": 93.683554
+                    },
+                    "uuid": "d1a95262-ad07-490e-a29b-2ddc58ee2e32"
+                },
+                {
+                    "description": "Pad 2 [GND] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 96.58
+                    },
+                    "uuid": "c2f1f710-7c71-4b38-abc8-4d958a6fd51a"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 159.96,
+                        "y": 93.683554
+                    },
+                    "uuid": "d1a95262-ad07-490e-a29b-2ddc58ee2e32"
+                },
+                {
+                    "description": "Pad 2 [GND] of J3 on B.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 96.58
+                    },
+                    "uuid": "a815672f-6dd1-400f-8a03-95173b707b1b"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Footprint 'SMA_Adafruit_1865_EdgeMount' does not match copy in library 'WsprryPi LPF'",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 99.12
+                    },
+                    "uuid": "2a0a25bb-33ef-4985-984b-8a286b1a9a40"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

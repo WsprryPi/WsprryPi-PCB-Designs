@@ -1,0 +1,8 @@
+{
+  "source_project": "WsprryPi LPF",
+  "source_sha256": {
+    "LPF-Values.xlsx": "81c4be700aa428d060b01774c1893331926b2678cd5036d4897329bfc4bf7716",
+    "WsprryPi LPF.kicad_sch": "2bf5be8e47d62f34e8925256cd1d7e2ac6317eb9dfd123d48c5f3ca48082b926",
+    "WsprryPi LPF.kicad_pcb": "71d07f4c1c3ce349d6332b148bc60bb166bf606bc16359bd0d3ee0ebf388aca6"
+  }
+}

@@ -2289,8 +2289,8 @@
 				)
 			)
 		)
-		(property "Value" "SMA-J-P-H-ST-EM1"
-			(at 163.83 120.65 0)
+		(property "Value" "Adafruit 1865"
+			(at 163.83 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2300,7 +2300,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WsprryPi LPF:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+		(property "Footprint" "WsprryPi LPF:SMA_Adafruit_1865_EdgeMount"
 			(at 163.83 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2311,7 +2311,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://suddendocs.samtec.com/prints/sma-j-p-x-st-em1-mkt.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1865/C2387-001_datasheet.pdf"
 			(at 163.83 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2322,7 +2322,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Adafruit 1865, 50 ohm SMA female edge-launch, 1.6 mm PCB, hand solder"
 			(at 163.83 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2331,6 +2331,7 @@
 					(size 1.27 1.27)
 				)
 			)
+			(hide yes)
 		)
 		(pin "1"
 			(uuid "87fe68bf-98af-45c5-b314-0071d9c692d0")
@@ -2343,6 +2344,28 @@
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "J3")
 					(unit 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Adafruit"
+			(at 163.83 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "1865"
+			(at 163.83 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -3399,8 +3422,8 @@
 				)
 			)
 		)
-		(property "Value" "SMA-J-P-H-ST-EM1"
-			(at 110.49 120.65 0)
+		(property "Value" "Adafruit 1865"
+			(at 110.49 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3410,7 +3433,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WsprryPi LPF:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+		(property "Footprint" "WsprryPi LPF:SMA_Adafruit_1865_EdgeMount"
 			(at 110.49 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -3421,7 +3444,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://suddendocs.samtec.com/prints/sma-j-p-x-st-em1-mkt.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1865/C2387-001_datasheet.pdf"
 			(at 110.49 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -3432,7 +3455,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Adafruit 1865, 50 ohm SMA female edge-launch, 1.6 mm PCB, hand solder"
 			(at 110.49 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3441,6 +3464,7 @@
 					(size 1.27 1.27)
 				)
 			)
+			(hide yes)
 		)
 		(pin "1"
 			(uuid "1735da60-0281-475f-8ec2-2fb742ee73c0")
@@ -3453,6 +3477,28 @@
 				(path "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e"
 					(reference "J2")
 					(unit 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Adafruit"
+			(at 110.49 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "1865"
+			(at 110.49 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)

@@ -1,0 +1,17 @@
+{
+  "connector_update": "Adafruit 1865, 2026-11-22",
+  "files_sha256": {
+    "WsprryPi LPF-LCL.kicad_pcb": "43d18550e739cf188bf4f967f7fc86cb216b3f045c720c090b414f2d078a4c47",
+    "WsprryPi LPF-LCL.kicad_sch": "ab02e02c8714b2da2d356031deaf23d4e4975c7391b47967cb9eec2136fe2579",
+    "WsprryPi LPF-LCL.kicad_pro": "c9a599b1520d3cb65f84d81fbeee33339ae345c841ac7215e009a9ef179e5f3c",
+    "WsprryPi LPF-LCL.kicad_dru": "dbb45709283736af61af6e2d589f7dd07f1a0611368a511fbc6f9ba96a5e01cc",
+    "sym-lib-table": "72459967aaaf07c1132ad2132ea94b115e8040dddd69992e11906e35644fe5e6",
+    "fp-lib-table": "851ec6ff829f6f2135fe742a654177410819bad251cb31d3883d83cd4b82d7f0",
+    "libraries/footprints/WsprryPi LPF-LCL.pretty/C_Disc_D3.0mm_W1.6mm_P2.50mm.kicad_mod": "d7cda60713f9b3f55ed73ece0e7f7c3952f0c47dcd3612fdf534d4662c2ada9e",
+    "libraries/footprints/WsprryPi LPF-LCL.pretty/SMA_Adafruit_1865_EdgeMount.kicad_mod": "9ca60ee52028bb84b32e753f1aeb95cf3c2adea9946182b24e2ad1dcd6122d98",
+    "libraries/footprints/WsprryPi LPF-LCL.pretty/L_Axial_Horiz_Torroid_Vert_12mm_D5mm_P10.2mm.kicad_mod": "98e163fcb9dc5213b38c0732b89922ec41a4a946614ef995e78559fa98f11a31",
+    "libraries/footprints/WsprryPi LPF-LCL.pretty/LPF_HeaderPair_Male_2x1x04_P2.54mm_S33.02mm.kicad_mod": "4182a60c8fd7ae9827322f1a564a32f929ad941b582a650dfbd05e4de721bc66",
+    "libraries/3dmodels/Connector_Coaxial.3dshapes/SMA_Adafruit_1865_Preview.wrl": "f2548d5574882c6c8fa3d44f0e6234e6ae5a3ec83e958f028d385645aace4a81"
+  },
+  "commit_preparation_verified": "2026-11-23"
+}

@@ -1,0 +1,247 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-22T16:35:31",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "WsprryPi LPF-LCL.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of CB2",
+                    "pos": {
+                        "x": 139.5,
+                        "y": 93.7
+                    },
+                    "uuid": "663b65c5-a6ff-470a-a099-86d9b389f76c"
+                },
+                {
+                    "description": "Segment of CB2 on F.Silkscreen",
+                    "pos": {
+                        "x": 138.735,
+                        "y": 93.83
+                    },
+                    "uuid": "af33bc1f-f28c-49dd-9bf3-96d18e1c2c1b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of CB4",
+                    "pos": {
+                        "x": 139.5,
+                        "y": 104.75
+                    },
+                    "uuid": "44fdc54b-c312-4d82-9a74-e292b4693320"
+                },
+                {
+                    "description": "Segment of CB4 on F.Silkscreen",
+                    "pos": {
+                        "x": 140.265,
+                        "y": 104.42
+                    },
+                    "uuid": "658f18d6-d055-4f72-8ec4-3dd8012d0ad5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of CA4 on F.Silkscreen",
+                    "pos": {
+                        "x": 135.265,
+                        "y": 104.42
+                    },
+                    "uuid": "7387cc42-533d-4515-bb2b-d439f8c2e5c3"
+                },
+                {
+                    "description": "Reference field of CA4",
+                    "pos": {
+                        "x": 134.47857,
+                        "y": 104.75
+                    },
+                    "uuid": "aa719f07-10bb-45a0-975f-78a111db1f83"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of CA2 on F.Silkscreen",
+                    "pos": {
+                        "x": 133.735,
+                        "y": 93.83
+                    },
+                    "uuid": "7bad6989-1d95-4583-a14b-58b0e84068c4"
+                },
+                {
+                    "description": "Reference field of CA2",
+                    "pos": {
+                        "x": 134.5,
+                        "y": 93.7
+                    },
+                    "uuid": "7eaf5bb6-cff1-4995-af88-e068e13a271f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of CB2",
+                    "pos": {
+                        "x": 139.5,
+                        "y": 93.7
+                    },
+                    "uuid": "663b65c5-a6ff-470a-a099-86d9b389f76c"
+                },
+                {
+                    "description": "PTH pad 2 [/LPF_NODE1] of CB2",
+                    "pos": {
+                        "x": 138.25,
+                        "y": 94.75
+                    },
+                    "uuid": "f884d9f6-8b2f-4dc5-baed-71821b00b6e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of CB2",
+                    "pos": {
+                        "x": 139.5,
+                        "y": 93.7
+                    },
+                    "uuid": "663b65c5-a6ff-470a-a099-86d9b389f76c"
+                },
+                {
+                    "description": "PTH pad 1 [GND] of CB2",
+                    "pos": {
+                        "x": 140.75,
+                        "y": 94.75
+                    },
+                    "uuid": "17cfac94-fd1d-49e3-8bba-f51893174481"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of CB4",
+                    "pos": {
+                        "x": 139.5,
+                        "y": 104.75
+                    },
+                    "uuid": "44fdc54b-c312-4d82-9a74-e292b4693320"
+                },
+                {
+                    "description": "PTH pad 1 [GND] of CB4",
+                    "pos": {
+                        "x": 140.75,
+                        "y": 103.5
+                    },
+                    "uuid": "aeed9d25-3e89-48ff-bd22-1a1ac7167468"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of CA2",
+                    "pos": {
+                        "x": 134.5,
+                        "y": 93.7
+                    },
+                    "uuid": "7eaf5bb6-cff1-4995-af88-e068e13a271f"
+                },
+                {
+                    "description": "PTH pad 1 [GND] of CA2",
+                    "pos": {
+                        "x": 133.25,
+                        "y": 94.75
+                    },
+                    "uuid": "61b53e27-440f-467e-bb8d-6dcc5180b8ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of CA2",
+                    "pos": {
+                        "x": 134.5,
+                        "y": 93.7
+                    },
+                    "uuid": "7eaf5bb6-cff1-4995-af88-e068e13a271f"
+                },
+                {
+                    "description": "PTH pad 2 [/LPF_NODE1] of CA2",
+                    "pos": {
+                        "x": 135.75,
+                        "y": 94.75
+                    },
+                    "uuid": "b4121815-bad5-456a-aa01-aeaedce15b26"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of CB4",
+                    "pos": {
+                        "x": 139.5,
+                        "y": 104.75
+                    },
+                    "uuid": "44fdc54b-c312-4d82-9a74-e292b4693320"
+                },
+                {
+                    "description": "PTH pad 2 [/LPF_NODE2] of CB4",
+                    "pos": {
+                        "x": 138.25,
+                        "y": 103.5
+                    },
+                    "uuid": "099cbf7d-76f3-4fc9-a21c-d1c034a4ec5a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

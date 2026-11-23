@@ -1,0 +1,1090 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-22T16:43:30",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [
+        {
+            "description": "Field 'Description' differs (PCB: 'Adafruit 1865 SMA female edge-launch, 1.6 mm PCB', Schematic: 'Adafruit 1865, 50 ohm SMA female edge-launch, 1.6 mm PCB, hand solder')",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 99.12
+                    },
+                    "uuid": "2a0a25bb-33ef-4985-984b-8a286b1a9a40"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: 'Adafruit 1865 SMA female edge-launch, 1.6 mm PCB', Schematic: 'Adafruit 1865, 50 ohm SMA female edge-launch, 1.6 mm PCB, hand solder')",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 159.96,
+                        "y": 99.12
+                    },
+                    "uuid": "9dd951ac-8b1a-465d-ba2c-10f819f6591b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        }
+    ],
+    "source": "WsprryPi LPF.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1720 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 159.035,
+                        "y": 97.67
+                    },
+                    "uuid": "02f3c0cd-f6e7-4a5c-8fd1-511790a7b9a0"
+                },
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1955 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 158.0675,
+                        "y": 97.67
+                    },
+                    "uuid": "22adb147-fb04-4da8-9e4c-e0a52b9283ae"
+                },
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1770 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 114.92,
+                        "y": 100.54
+                    },
+                    "uuid": "265945fa-8677-4e31-b929-5d87bac0522c"
+                },
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1720 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 159.035,
+                        "y": 100.55
+                    },
+                    "uuid": "43aa3b09-bf95-4839-8af1-7e6cf641707a"
+                },
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and /RF_IN)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.855,
+                        "y": 100.54
+                    },
+                    "uuid": "31940658-69bb-4d23-97f8-9ea318f4ba8b"
+                },
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /RF_OUT and GND)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 157.1,
+                        "y": 97.67
+                    },
+                    "uuid": "565bda46-3ed4-4ffd-9007-cac9d57819f8"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1770 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 114.92,
+                        "y": 97.7
+                    },
+                    "uuid": "7d27891e-4df5-4dda-94e2-cec41f3e1a93"
+                },
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /RF_IN and GND)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.855,
+                        "y": 97.7
+                    },
+                    "uuid": "8f5bbe19-8253-4fd3-a461-ae369889dd1c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1905 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.8875,
+                        "y": 97.7
+                    },
+                    "uuid": "93a23158-62a4-4b10-8e2c-f24ea4169282"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1905 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.8875,
+                        "y": 100.54
+                    },
+                    "uuid": "8f77237f-c7dc-4aac-a1e5-15b820e1c092"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /RF_OUT and GND)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 157.1,
+                        "y": 100.55
+                    },
+                    "uuid": "edb9196b-5229-4d65-875c-358317e2fdf5"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1955 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 158.0675,
+                        "y": 100.55
+                    },
+                    "uuid": "ef2264c7-4171-4a2d-88bf-4868bb4d38c3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and /RF_OUT)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 101.66
+                    },
+                    "uuid": "924a3b05-5037-4819-9b47-0a2c4f79a976"
+                },
+                {
+                    "description": "Track [/RF_OUT] on F.Cu, length 4.4380 mm",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "a6650d6e-6626-411f-b6d3-5b16c180bfbf"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and /RF_IN)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 101.66
+                    },
+                    "uuid": "4455db53-e842-4dc6-8f08-61403c8bed29"
+                },
+                {
+                    "description": "Track [/RF_IN] on F.Cu, length 4.4380 mm",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "ced04a9b-e123-4f15-878b-e88a3cf62e43"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0380 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.855,
+                        "y": 97.7
+                    },
+                    "uuid": "8f5bbe19-8253-4fd3-a461-ae369889dd1c"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0380 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.855,
+                        "y": 100.54
+                    },
+                    "uuid": "31940658-69bb-4d23-97f8-9ea318f4ba8b"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.8875,
+                        "y": 100.54
+                    },
+                    "uuid": "8f77237f-c7dc-4aac-a1e5-15b820e1c092"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /RF_IN and GND)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                },
+                {
+                    "description": "Pad 2 [GND] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 101.66
+                    },
+                    "uuid": "4455db53-e842-4dc6-8f08-61403c8bed29"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.8875,
+                        "y": 97.7
+                    },
+                    "uuid": "93a23158-62a4-4b10-8e2c-f24ea4169282"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0430 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 157.1,
+                        "y": 100.55
+                    },
+                    "uuid": "edb9196b-5229-4d65-875c-358317e2fdf5"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /RF_IN and GND)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                },
+                {
+                    "description": "Pad 2 [GND] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 96.58
+                    },
+                    "uuid": "c1630948-3012-458e-b7e0-ea05ad6f4719"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 158.0675,
+                        "y": 100.55
+                    },
+                    "uuid": "ef2264c7-4171-4a2d-88bf-4868bb4d38c3"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /RF_OUT and GND)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                },
+                {
+                    "description": "Pad 2 [GND] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 101.66
+                    },
+                    "uuid": "924a3b05-5037-4819-9b47-0a2c4f79a976"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 158.0675,
+                        "y": 97.67
+                    },
+                    "uuid": "22adb147-fb04-4da8-9e4c-e0a52b9283ae"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0430 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 157.1,
+                        "y": 97.67
+                    },
+                    "uuid": "565bda46-3ed4-4ffd-9007-cac9d57819f8"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /RF_OUT and GND)",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                },
+                {
+                    "description": "Pad 2 [GND] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 96.58
+                    },
+                    "uuid": "c2f1f710-7c71-4b38-abc8-4d958a6fd51a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 158.0675,
+                        "y": 97.67
+                    },
+                    "uuid": "22adb147-fb04-4da8-9e4c-e0a52b9283ae"
+                },
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.855,
+                        "y": 100.54
+                    },
+                    "uuid": "31940658-69bb-4d23-97f8-9ea318f4ba8b"
+                },
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 157.1,
+                        "y": 100.55
+                    },
+                    "uuid": "edb9196b-5229-4d65-875c-358317e2fdf5"
+                },
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 157.1,
+                        "y": 97.67
+                    },
+                    "uuid": "565bda46-3ed4-4ffd-9007-cac9d57819f8"
+                },
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/RF_OUT] on F.Cu, length 4.4380 mm",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "a6650d6e-6626-411f-b6d3-5b16c180bfbf"
+                },
+                {
+                    "description": "Pad 2 [GND] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 101.66
+                    },
+                    "uuid": "924a3b05-5037-4819-9b47-0a2c4f79a976"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.855,
+                        "y": 97.7
+                    },
+                    "uuid": "8f5bbe19-8253-4fd3-a461-ae369889dd1c"
+                },
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                },
+                {
+                    "description": "Pad 2 [GND] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 96.58
+                    },
+                    "uuid": "c1630948-3012-458e-b7e0-ea05ad6f4719"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.8875,
+                        "y": 100.54
+                    },
+                    "uuid": "8f77237f-c7dc-4aac-a1e5-15b820e1c092"
+                },
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/RF_OUT] on F.Cu, length 4.4380 mm",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "a6650d6e-6626-411f-b6d3-5b16c180bfbf"
+                },
+                {
+                    "description": "Pad 2 [GND] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 96.58
+                    },
+                    "uuid": "c2f1f710-7c71-4b38-abc8-4d958a6fd51a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.8875,
+                        "y": 97.7
+                    },
+                    "uuid": "93a23158-62a4-4b10-8e2c-f24ea4169282"
+                },
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_IN] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "8dde1e49-16bb-4689-ae45-a10eea26e202"
+                },
+                {
+                    "description": "Pad 2 [GND] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 101.66
+                    },
+                    "uuid": "4455db53-e842-4dc6-8f08-61403c8bed29"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 158.0675,
+                        "y": 100.55
+                    },
+                    "uuid": "ef2264c7-4171-4a2d-88bf-4868bb4d38c3"
+                },
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/RF_IN] on F.Cu, length 4.4380 mm",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "ced04a9b-e123-4f15-878b-e88a3cf62e43"
+                },
+                {
+                    "description": "Pad 2 [GND] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 96.58
+                    },
+                    "uuid": "c1630948-3012-458e-b7e0-ea05ad6f4719"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/RF_IN] on F.Cu, length 4.4380 mm",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 99.12
+                    },
+                    "uuid": "ced04a9b-e123-4f15-878b-e88a3cf62e43"
+                },
+                {
+                    "description": "Pad 2 [GND] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 101.66
+                    },
+                    "uuid": "4455db53-e842-4dc6-8f08-61403c8bed29"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                },
+                {
+                    "description": "Pad 2 [GND] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 101.66
+                    },
+                    "uuid": "924a3b05-5037-4819-9b47-0a2c4f79a976"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_OUT] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 99.12
+                    },
+                    "uuid": "4f3b6570-c2fd-4403-ac89-36215fc2cd50"
+                },
+                {
+                    "description": "Pad 2 [GND] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 96.58
+                    },
+                    "uuid": "c2f1f710-7c71-4b38-abc8-4d958a6fd51a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Footprint 'SMA_Adafruit_1865_EdgeMount' does not match copy in library 'WsprryPi LPF'",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 99.12
+                    },
+                    "uuid": "2a0a25bb-33ef-4985-984b-8a286b1a9a40"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SMA_Adafruit_1865_EdgeMount' does not match copy in library 'WsprryPi LPF'",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 159.96,
+                        "y": 99.12
+                    },
+                    "uuid": "9dd951ac-8b1a-465d-ba2c-10f819f6591b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of J3",
+                    "pos": {
+                        "x": 157.86,
+                        "y": 94.5
+                    },
+                    "uuid": "ef02a57a-2b7a-4183-9c64-2c15675fb2a8"
+                },
+                {
+                    "description": "Pad 2 [GND] of J3 on F.Cu",
+                    "pos": {
+                        "x": 157.928,
+                        "y": 96.58
+                    },
+                    "uuid": "c2f1f710-7c71-4b38-abc8-4d958a6fd51a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of J2",
+                    "pos": {
+                        "x": 116.1,
+                        "y": 94.5
+                    },
+                    "uuid": "57846d32-d5b4-4750-b536-f67d1df47a26"
+                },
+                {
+                    "description": "Pad 2 [GND] of J2 on F.Cu",
+                    "pos": {
+                        "x": 116.032,
+                        "y": 96.58
+                    },
+                    "uuid": "c1630948-3012-458e-b7e0-ea05ad6f4719"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

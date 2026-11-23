@@ -1,0 +1,37 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-23T05:43:44",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/a5c3480f-f07b-4318-b0ac-3cbcb5b2943e",
+            "violations": [
+                {
+                    "comment": "",
+                    "description": "Four connection points are joined together",
+                    "excluded": true,
+                    "items": [],
+                    "severity": "warning",
+                    "type": "four_way_junction"
+                },
+                {
+                    "comment": "",
+                    "description": "Four connection points are joined together",
+                    "excluded": true,
+                    "items": [],
+                    "severity": "warning",
+                    "type": "four_way_junction"
+                }
+            ]
+        }
+    ],
+    "source": "WsprryPi LPF.kicad_sch"
+}

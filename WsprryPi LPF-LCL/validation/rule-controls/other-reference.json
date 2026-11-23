@@ -1,0 +1,132 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-22T16:45:58",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "WsprryPi LPF-LCL.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 104.556447
+                    },
+                    "uuid": "4aaf5dca-ae06-432d-b0fb-c8658e720fc9"
+                },
+                {
+                    "description": "Pad 1 [/RF_IN] of J99 on F.Cu",
+                    "pos": {
+                        "x": 116.057,
+                        "y": 99.12
+                    },
+                    "uuid": "d9011f38-cd5a-41a0-8ab2-2b4b20247583"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 104.556447
+                    },
+                    "uuid": "4aaf5dca-ae06-432d-b0fb-c8658e720fc9"
+                },
+                {
+                    "description": "Pad 2 [GND] of J99 on F.Cu",
+                    "pos": {
+                        "x": 116.057,
+                        "y": 96.58
+                    },
+                    "uuid": "298de5e7-fdd6-4244-9bd1-bff4ac788b6e"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 104.556447
+                    },
+                    "uuid": "4aaf5dca-ae06-432d-b0fb-c8658e720fc9"
+                },
+                {
+                    "description": "Pad 2 [GND] of J99 on B.Cu",
+                    "pos": {
+                        "x": 116.057,
+                        "y": 96.58
+                    },
+                    "uuid": "e0e9d581-9443-4860-9c65-984693272e5c"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 104.556447
+                    },
+                    "uuid": "4aaf5dca-ae06-432d-b0fb-c8658e720fc9"
+                },
+                {
+                    "description": "Pad 2 [GND] of J99 on F.Cu",
+                    "pos": {
+                        "x": 116.057,
+                        "y": 101.66
+                    },
+                    "uuid": "aa000fbc-d32f-4722-9f62-956d56f09d9b"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 104.556447
+                    },
+                    "uuid": "4aaf5dca-ae06-432d-b0fb-c8658e720fc9"
+                },
+                {
+                    "description": "Pad 2 [GND] of J99 on B.Cu",
+                    "pos": {
+                        "x": 116.057,
+                        "y": 101.66
+                    },
+                    "uuid": "0f78b70a-003a-4f45-973c-6570d2cfe20d"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        }
+    ]
+}
