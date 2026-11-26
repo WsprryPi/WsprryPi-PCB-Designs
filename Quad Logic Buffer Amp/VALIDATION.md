@@ -4,10 +4,10 @@ Quad Logic Buffer Amp is a placed, unrouted prototype. Its schematic and PCB hav
 
 | Check | Current result |
 | --- | --- |
-| Active ERC findings | 2 |
+| Active ERC findings | 0 |
 | ERC exclusions | 2; the two paralleled inverter-output pairs |
 | Board-rule findings | 0 |
-| Unconnected PCB items | 205 |
+| Unconnected PCB items | 206 |
 | Schematic parity | 0 issues |
 | Physical footprints | 65 |
 | Routed tracks and vias | Zero |
@@ -16,11 +16,11 @@ Quad Logic Buffer Amp is a placed, unrouted prototype. Its schematic and PCB hav
 
 ## Electrical findings
 
-- `pin_not_connected`: 2.
+ERC reports zero active findings.
 
 U8 pins 4/6 and U59 pins 4/6 have individual ERC exclusions for their paralleled output pairs. The reports retain these exclusions and the existing ignored rule categories. No rule thresholds or exclusions are relaxed for this review.
 
-R12 pin 1 and D5 pin 1 are open in the schematic. Their physical connections remain unresolved; routing is on hold. The transformer uses the BN43-1502 footprint with measured lead pitches of 6.5 mm across each pair and 17.5 mm between rows.
+R12 pin 1 is assigned to raw X1 VBUS on the connector side of Q6. This tap is inferred from the reported in-circuit measurement. D5 pin 1 is intentionally unused on the production board and carries a no-connect marker. Routing is on hold. The transformer uses the BN43-1502 footprint with measured lead pitches of 6.5 mm across each pair and 17.5 mm between rows.
 
 ## PCB findings
 
