@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "buffered-bs170-torroid") (type "KiCad") (uri "${KIPRJMOD}/libraries/buffered-bs170-torroid.kicad_sym") (options "") (descr "Local prototype library"))
+)

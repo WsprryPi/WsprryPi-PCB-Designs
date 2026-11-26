@@ -1,0 +1,465 @@
+{
+  "board": {
+    "3dviewports": [],
+    "ipc2581": {
+      "bom_rev": "",
+      "dist": "",
+      "distpn": "",
+      "internal_id": "",
+      "mfg": "",
+      "mpn": "",
+      "sch_revision": "${PROJECT_REVISION}"
+    },
+    "layer_pairs": [],
+    "layer_presets": [],
+    "viewports": []
+  },
+  "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
+  "cvpcb": {
+    "equivalence_files": []
+  },
+  "erc": {
+    "erc_exclusions": [],
+    "meta": {
+      "version": 0
+    },
+    "pin_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    "rule_severities": {
+      "bus_definition_conflict": "error",
+      "bus_entry_needed": "error",
+      "bus_to_bus_conflict": "error",
+      "bus_to_net_conflict": "error",
+      "different_unit_footprint": "error",
+      "different_unit_net": "error",
+      "duplicate_reference": "error",
+      "duplicate_sheet_names": "error",
+      "endpoint_off_grid": "warning",
+      "extra_units": "error",
+      "field_name_whitespace": "warning",
+      "footprint_filter": "warning",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "warning",
+      "ground_pin_not_ground": "warning",
+      "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
+      "label_dangling": "error",
+      "label_multiple_wires": "warning",
+      "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
+      "missing_bidi_pin": "warning",
+      "missing_input_pin": "warning",
+      "missing_power_pin": "error",
+      "missing_unit": "warning",
+      "multiple_net_names": "warning",
+      "net_not_bus_member": "warning",
+      "no_connect_connected": "warning",
+      "no_connect_dangling": "warning",
+      "pin_not_connected": "error",
+      "pin_not_driven": "error",
+      "pin_to_pin": "warning",
+      "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
+      "similar_labels": "warning",
+      "similar_power": "warning",
+      "simulation_model_issue": "warning",
+      "single_global_label": "warning",
+      "stacked_pin_name": "warning",
+      "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
+      "unit_value_mismatch": "error",
+      "unresolved_variable": "error",
+      "wire_dangling": "error"
+    }
+  },
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "meta": {
+    "filename": "Buffered BS170 Torroid Prototype.kicad_pro",
+    "version": 3
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      }
+    ],
+    "meta": {
+      "version": 5
+    },
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": []
+  },
+  "pcbnew": {
+    "last_paths": {
+      "idf": "",
+      "netlist": "",
+      "plot": "",
+      "specctra_dsn": "",
+      "step": "",
+      "vrml": ""
+    },
+    "page_layout_descr_file": ""
+  },
+  "schematic": {
+    "annotate_start_num": 80,
+    "annotation": {
+      "method": 0,
+      "sort_order": 1
+    },
+    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_fmt_presets": [],
+    "bom_fmt_settings": {
+      "field_delimiter": ",",
+      "keep_line_breaks": false,
+      "keep_tabs": false,
+      "name": "CSV",
+      "ref_delimiter": ",",
+      "ref_range_delimiter": "",
+      "string_delimiter": "\""
+    },
+    "bom_presets": [],
+    "bom_settings": {
+      "exclude_dnp": false,
+      "fields_ordered": [
+        {
+          "group_by": false,
+          "label": "Reference",
+          "name": "Reference",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Simulation",
+          "name": "${EXCLUDE_FROM_SIM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Position Files",
+          "name": "${EXCLUDE_FROM_POS_FILES}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": true
+        }
+      ],
+      "filter_string": "",
+      "group_symbols": true,
+      "include_excluded_from_bom": true,
+      "name": "Default Editing",
+      "sort_asc": true,
+      "sort_field": "Reference"
+    },
+    "bus_aliases": {},
+    "connection_grid_size": 50.0,
+    "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
+      "default_line_thickness": 6.0,
+      "default_text_size": 50.0,
+      "field_names": [],
+      "hop_over_size_choice": 0,
+      "intersheets_ref_own_page": false,
+      "intersheets_ref_prefix": "",
+      "intersheets_ref_short": false,
+      "intersheets_ref_show": false,
+      "intersheets_ref_suffix": "",
+      "junction_size_choice": 3,
+      "label_size_ratio": 0.375,
+      "operating_point_overlay_i_precision": 3,
+      "operating_point_overlay_i_range": "~A",
+      "operating_point_overlay_v_precision": 3,
+      "operating_point_overlay_v_range": "~V",
+      "overbar_offset_ratio": 1.23,
+      "pin_symbol_size": 25.0,
+      "text_offset_ratio": 0.15
+    },
+    "legacy_lib_dir": "",
+    "legacy_lib_list": [],
+    "meta": {
+      "version": 1
+    },
+    "page_layout_descr_file": "",
+    "plot_directory": "",
+    "reuse_designators": true,
+    "subpart_first_id": 65,
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "Buffered BS170 Torroid Prototype.kicad_sch",
+        "name": "Buffered BS170 Torroid Prototype",
+        "uuid": "05069234-29c2-5bb9-bf85-62e4203e12ea"
+      }
+    ],
+    "used_designators": "T81,J11,J51,J81,L81,U21,U31,U51,U61,TP21-22,Q41,Q71-72,D41-43,#PWR2-28,C21-25,C31-32,C41-42,C51,C61-63,C81,R7,R21-23,R31-32,R41-44,R51,R61,R63,R71-72,#FLG1-3",
+    "variants": []
+  },
+  "sheets": [
+    [
+      "05069234-29c2-5bb9-bf85-62e4203e12ea",
+      "Buffered BS170 Torroid Prototype"
+    ]
+  ],
+  "text_variables": {
+    "BS170_AMPLIFIER_HEADING": "Parallel BS170s",
+    "CLOCK_BUFFER_HEADING": "Clock Buffer",
+    "CLOCK_INPUT_HEADING": "Clock input",
+    "CLOCK_WATCHDOG_HEADING": "Clock watchdog",
+    "CLOCK_WATCHDOG_NOTE": "Nominal RC time constant = @{if((beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \"), \" \") == \"kΩ\") + (beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \"), \" \") == \"Ω\") + (beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \"), \" \") == \"mΩ\"), if((beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \"), \" \") == \"pF\") + (beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \"), \" \") == \"nF\") + (beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \"), \" \") == \"µF\"), if(beforefirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \") * beforefirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \") * if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \"), \" \") == \"mΩ\", 0.001, if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \"), \" \") == \"Ω\", 1, 1000)) * if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \"), \" \") == \"pF\", 1, if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \"), \" \") == \"nF\", 1000, 1e6)) >= 1e6, concat(round(beforefirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \") * beforefirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \") * if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \"), \" \") == \"mΩ\", 0.001, if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \"), \" \") == \"Ω\", 1, 1000)) * if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \"), \" \") == \"pF\", 1, if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \"), \" \") == \"nF\", 1000, 1e6)) / 1000) / 1000, \" µs\"), if(beforefirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \") * beforefirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \") * if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \"), \" \") == \"mΩ\", 0.001, if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \"), \" \") == \"Ω\", 1, 1000)) * if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \"), \" \") == \"pF\", 1, if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \"), \" \") == \"nF\", 1000, 1e6)) >= 1000, concat(round(beforefirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \") * beforefirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \") * if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \"), \" \") == \"mΩ\", 0.001, if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \"), \" \") == \"Ω\", 1, 1000)) * if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \"), \" \") == \"pF\", 1, if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \"), \" \") == \"nF\", 1000, 1e6))) / 1000, \" ns\"), concat(fixed(beforefirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \") * beforefirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \") * if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \"), \" \") == \"mΩ\", 0.001, if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}\", \" \"), \" \") == \"Ω\", 1, 1000)) * if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \"), \" \") == \"pF\", 1, if(beforefirst(afterfirst(\"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\", \" \"), \" \") == \"nF\", 1000, 1e6)), 6), \" ps\"))), concat(\"Check \", \"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:REFERENCE}\", \" units\")), concat(\"Check \", \"${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:REFERENCE}\", \" units\"))}\n${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:REFERENCE} = ${/05069234-29c2-5bb9-bf85-62e4203e12ea/8066888c-a218-5505-ac3c-2ccaab736dd9:VALUE}  ·  ${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:REFERENCE} = ${/05069234-29c2-5bb9-bf85-62e4203e12ea/8b0c9d8f-3d07-55e3-aa56-f338d26f86fa:VALUE}\nA missing clock forces ${/05069234-29c2-5bb9-bf85-62e4203e12ea/b449a0ab-074b-5bef-9390-7a1d47955055:SHORT_NET_NAME(4)} (${/05069234-29c2-5bb9-bf85-62e4203e12ea/b449a0ab-074b-5bef-9390-7a1d47955055:REFERENCE}) low via ${/05069234-29c2-5bb9-bf85-62e4203e12ea/25082ed4-3ddf-5493-b45a-5c2302eef2f3:SHORT_NET_NAME(5)}.",
+    "DRAIN_CURRENT_NOTE": "${/05069234-29c2-5bb9-bf85-62e4203e12ea/5bfbb0c0-ee1f-5a78-8416-15334cf72deb:REFERENCE}/${/05069234-29c2-5bb9-bf85-62e4203e12ea/7baa8ff4-2687-5cbb-afe7-99b62717e45a:REFERENCE} measure the drop across ${/05069234-29c2-5bb9-bf85-62e4203e12ea/1bdd6abb-6e94-5622-b8ff-8d772c6d8ad9:REFERENCE}.",
+    "INDICATORS_HEADING": "Power and RF detector LEDs",
+    "LOAD_SWITCH_HEADING": "5 V Load Switch and PA Feed",
+    "PA_ENABLE_NOTE": "Keep ${/05069234-29c2-5bb9-bf85-62e4203e12ea/fa675b8d-1493-5f40-a81e-16c5f4e52f09:SHORT_NET_NAME(4)} low at power-up.\nRaise ${/05069234-29c2-5bb9-bf85-62e4203e12ea/fa675b8d-1493-5f40-a81e-16c5f4e52f09:SHORT_NET_NAME(4)} to turn on ${/05069234-29c2-5bb9-bf85-62e4203e12ea/b81681a7-6688-5ad8-aac4-c408045ec9da:SHORT_NET_NAME(6)} for the buffer output and amplifier.\nFor on/off QRSS, keep ${/05069234-29c2-5bb9-bf85-62e4203e12ea/fa675b8d-1493-5f40-a81e-16c5f4e52f09:SHORT_NET_NAME(4)} high for the whole message.\nRun the clock for dots and dashes. Hold it low during spaces.\nPull ${/05069234-29c2-5bb9-bf85-62e4203e12ea/fa675b8d-1493-5f40-a81e-16c5f4e52f09:SHORT_NET_NAME(4)} low when finished.",
+    "POWER_INPUT_HEADING": "Power and Enable Input",
+    "POWER_INPUT_PINOUT": "1 ${/05069234-29c2-5bb9-bf85-62e4203e12ea/fa675b8d-1493-5f40-a81e-16c5f4e52f09:SHORT_NET_NAME(1)}\n2 ${/05069234-29c2-5bb9-bf85-62e4203e12ea/fa675b8d-1493-5f40-a81e-16c5f4e52f09:SHORT_NET_NAME(2)}\n3 ${/05069234-29c2-5bb9-bf85-62e4203e12ea/fa675b8d-1493-5f40-a81e-16c5f4e52f09:SHORT_NET_NAME(3)}\n4 ${/05069234-29c2-5bb9-bf85-62e4203e12ea/fa675b8d-1493-5f40-a81e-16c5f4e52f09:SHORT_NET_NAME(4)}",
+    "PROJECT_DATE": "2026-11-25",
+    "PROJECT_REVISION": "Prototype B",
+    "PROJECT_TITLE": "Buffered BS170 Torroid Prototype",
+    "RF_LOAD_NOTE": "External band C-L-C LPF and 50 Ω load",
+    "RF_OUTPUT_HEADING": "Series-aiding winding and filtered RF interface"
+  },
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
+  }
+}
